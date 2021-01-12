@@ -1,0 +1,132 @@
+{
+  "jobs": {
+    "BE": {
+      "employer": "Bullseye Ubercenter",
+      "code": "BE",
+      "skills": "Cleaning and Communication",
+      "desc": "This job involves a whole series of different tasks, usually involving cleaning or interacting with customers.",
+      "img": "IMG-JobCover-Bullseye",
+      "title": "Cashier",
+      "apply": ["CL", 10, "OG", 10],
+      "pcJob": "bullseye",
+	  "loc": ["bullseye", "custserv", false],
+      "wallPaper": "IMG_BullseyeWall",
+      "jobPercept": 1,
+      "schedWorkTime": [30,
+        [0, 0, 0, 0],
+        [15, 30, 22, 0],
+        [15, 30, 22, 0],
+        [0, 0, 0, 0],
+        [15, 30, 22, 0],
+        [15, 30, 22, 0],
+        [15, 30, 22, 0]
+      ],
+      "schedWorkDays": [6, false, true, true, false, true, true, true],
+      "rulesWorktime": [30, 0, 6, 6, 0, 6, 6, 6],
+      "rulesBreaktime": 30,
+      "rulesTaskratio": [35, 25, 25, 15],
+      "rulesTasks": 4,
+      "rulesStrict": true,
+      "rulesTaskA": {
+        "type": "CL",
+        "DC": 8,
+        "retry": true,
+        "effect": 1,
+        "stress": 5,
+        "hap": 0,
+        "desc": ["emptying the trash", "sweeping the aisles", "tidying shelves", "mopping the hallways", "cleaning windows"]
+      },
+      "rulesTaskB": {
+        "type": "CL",
+        "DC": 10,
+        "retry": true,
+        "effect": 1,
+        "stress": 8,
+        "hap": -1,
+        "desc": ["cleaning the bathroom", "wiping down the urinals", "mopping up a spill", "returning carts from the parking lot"]
+      },
+      "rulesTaskC": {
+        "type": "CM",
+        "DC": 12,
+        "retry": false,
+        "effect": 2,
+        "stress": 10,
+        "hap": -1,
+        "desc": ["dealing with a screaming customer", "helped a customer find a 'thing' that does 'stuff'", "handle a customer too dumb to figure out the self checkout.", "answer the same question from the same customer five times"]
+      },
+      "rulesTaskD": {
+        "type": "OG",
+        "DC": 10,
+        "retry": true,
+        "effect": 1,
+        "stress": 5,
+        "hap": 0,
+        "desc": ["refilling toilet paper dispensers", "refilling the hand sanitizer", "stocking new paper towels", "returning loose items to the shelves"]
+      },
+      "events": [{
+        "rank": [0, 1],
+        "image": "none",
+        "random": true,
+        "odds": [1, 4],
+        "title": "A Special Opportunity",
+        "condition": "(function(rank) {return true;})",
+        "content": "<<silently>><<if ↂ.flag.jobEvents.bullseye == null>><<set _times = 1>><<set ↂ.flag.jobEvents.bullseye = 1>><<else>><<set ↂ.flag.jobEvents.bullseye += 1>><<set _times = ↂ.flag.jobEvents.bullseye>><</if>><</silently>> <<f y>>ou are working on straightening up the goods in the <<print either('grocery department', 'housewares department', 'electronics department')>>, when your boss walks up. @@.pc;Hey boss, what's up?@@<br><br>He gives you a wolfish stare, his eyes traveling up and down your body before he finally replies. <<if _times == 1>>@@.npc;Hey there <<print ↂ.pc.main.name>>. How'd you like to come in the back with me for a little one-on-one instruction? Bullseye demands the best from its employees, after all!@@<br><br>You start thinking about it for a moment. @@.mono;Based on the rumors, Todd lets the sexier girls give him a blowjob--or maybe even more--for some preferential treatment... <<if ↂ.pc.kink.slut || ↂ.pc.status.bimbo > 30>>I get to give a blowjob, <b>AND</b> work gets easier too? Sounds like a great deal!<<else>>It might be worth it...<</if>>@@<<else>>@@.npc;Hey there <<print ↂ.pc.main.name>>. How'd you like to come in the back with me for a break with your favorite snack?@@<</if>><br><<dialogchoice>> <<dbutt 'Sure'>><<SCX>><<arouse 3>><<SC 'OR' 15>><<intreplace>><center>[img[modIMG-BullseyeBossBJ]]<br><<print $SCtext[1]>></center><<f y>>ou give Todd an enthusiastic blowjob. <<if $SCresult[1]>>He seemed to really enjoy it, as it didn't take long before he started spraying the back of your throat with cum.<<set ↂ.job.stats.boss += 5>><<else>><<SC 'OR' 14>><<if $SCresult[2]>>Despite your best effort, Todd doesn't seem to find your blowjob to be anything special. He still ends up filling your mouth with cum though, so at least it wasn't bad.<<else>>Despite your best effort, your blowjob just isn't doing it for Todd. Eventually he pulls away and starts stroking himself the rest of the way to orgasm. Just as he's about to cum, he stops stroking and quickly shoves his cock back in your mouth. A moment later and he's grabbed your head, roughly thrusting his cock down your throat to spew his load.<<set ↂ.job.stats.boss -= 10>><</if>><</if>> @@.mono;Yum! Todd's cum tastes really good!@@<</intreplace>> <<dtext 'slut'>>Hey, it's definitely better than the work I'm doing right now. Give Todd a blowjob. <<dbutt 'no thanks'>><<intclose>> <<dtext 'sleepy'>>Politely decline the offer this time. <</dialogchoice>>"
+      }],
+      "jobContent": [{
+        "rank": [0, 1, 2],
+        "image": "modIMG-BullseyeFuckers",
+        "content": "Once again you ran into a couple fucking like rabbits in the store. @@.mono;Yes, I know there's subliminal messaging all over the place, as well as those hypno flashers, to get you aroused and ready to buy... but could you at least fuck outside so I don't have to mop up your juices afterward?@@"
+      }, {
+        "rank": [0, 1, 2],
+        "image": "modIMG-BullseyeCreampie",
+        "content": "<<arouse 2>><<set _grl = either('Sparkle','Brittney,'Tiffany')>><<f t>>oday you went into the back storeroom to pretend to look for something for a customer, as if the store would keep other brands in storage without actually displaying them. You walk in on your boss Todd going at it with one of your coworkers. <<print _grl>> is a stereotypical teenager, and probably needs Todd to cover for her to avoid being fired by the store manager.<br><br>You need to kill time so it seems like you're actually looking for stuff, so you decide to watch for a bit; it looks like they're almost done anyway. Between her moans, <<print _grl>> calls out. @@.npc;You'd better not cum in me Todd!@@<br><br>On closer inspection you realize that Todd isn't wearing a condom, and you know she's too young to be on birth control. It looks like Todd's almost there, judging by how fast he's pounding <<print _grl>>'s pussy. Suddenly his pace slows for a few shuddering thrusts. @@.mono;Like that's gonna fool anyone Todd...@@ He yanks himself out, forcing a final weak spurt onto her bush, and then letting the dregs dribble there as well. You can tell that <<print _grl>> wasn't fooled by this and decide that the show is over. You head back to your waiting idiot customer, so that you can tell them you were unable to find anything in the back."
+      }, {
+        "rank": [0, 1, 2],
+        "image": "modIMG-BullseyeProduce",
+        "content": "<<f o>>nce again you stumble upon a customer in the produce section using vegetables in ways that were never intended. While it seemed incredibly odd the first time you saw it, it has happened so many times now that you don't really think anything of it anymore. @@.mono;I still don't get why they can't just buy a dildo, or at least wait until they're in their car or something...@@"
+      }, {
+        "rank": [0, 1, 2],
+        "image": "modIMG-BullseyeShoplifter",
+        "content": "<<f t>>he security system caught another shoplifter today, and one of the security bots apprehended her. When the officer from APD arrived, you escorted him to the back where the bot was keeping watch over the girl. She must've met his standards, because he offered her the 'get out of jail free' option."
+      }],
+      "ranks": 2,
+      "rank0": {
+        "rulesCutoffs": [20, 35, 50, 65, 80],
+        "vacationRate": 0,
+        "vacationRatePaid": 0,
+        "sickRate": 0,
+        "pay": [7.5],
+        "statsRank": 0,
+        "name": "Trainee Cashier",
+        "rulesBoss": "Todd Semenhöl",
+        "promotionBonus": 1
+      },
+      "rank1": {
+        "rulesCutoffs": [20, 35, 50, 65, 80],
+        "vacationRate": 0,
+        "vacationRatePaid": 0,
+        "sickRate": 0,
+        "pay": [8],
+        "statsRank": 1,
+        "name": "Probationary Cashier",
+        "rulesBoss": "Todd Semenhöl",
+        "promotionBonus": 1
+      },
+      "rank2": {
+        "rulesCutoffs": [25, 40, 55, 70, 85],
+        "vacationRate": 4,
+        "vacationRatePaid": 0,
+        "sickRate": 4,
+        "pay": [8.5],
+        "statsRank": 2,
+        "name": "Cashier",
+        "rulesBoss": "Todd Semenhöl",
+        "promotionBonus": 1
+      },
+      "acceptance": []
+    }
+  }
+}
+
+
+
