@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Tomfuckery</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    font-family: VT323;
+    font-size: 20px;
+  }
+  body {
+    background: black;
+    color: lightblue;
+    overflow: hidden;
+    font-family: VT323;
+    line-height: 1;
+  }
+  canvas {
+    border: 2px solid deepskyblue;
+    border-bottom: 5px solid rgb(214, 255, 214);
+    /*width: 90%;
+    height: 90%;*/
+    margin: 10px 50px;
+    background-image: url("lib/Background.jpg");
+    background-position: bottom left;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  div#mainCunt {
+    position: relative;
+  }
+  div#fueldiv {
+    display: inline-block;
+    width: 500px;
+    padding: 2px;
+    height: 25px;
+    background-color:#505050;
+    text-align: left;
+    color: black;
+    border: 2px solid #808080;
+    border-radius: 2px;
+  }
+  span#fuelspan {
+    background-color: yellowgreen;
+    height: 22px;
+    display: inline-block;
+    text-align: left;
+  }
+  div#menu {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    z-index: 50;
+    background-color: #303030;
+    border: 3px solid #808080;
+    font-size: 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    line-height: 1.2;
+  }
+  p{
+    width: 90%;
+    text-align: justify;
+    margin: 10px auto;
+  }
+  input[type="button"] {
+    width: 150px;
+    height: 50px;
+    font-size: 30px;
+    font-family: VT323;
+    text-align: center;
+    background-color: rgba(0,255,0,0.2);
+    color: lightblue;
+    border: 3px solid lightblue;
+    border-radius: 6px;
+  }
+  input[type="button"]:hover {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  select {
+    width: 300px;
+    height: 40px;
+    font-size: 24px;
+    font-family: VT323;
+    text-align: center;
+    color: lightblue;
+    background-color: rgba(0, 119, 255, 0.2);
+    border: 3px solid lightblue;
+    border-radius: 6px;
+  }
+  </style>
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/tomfuckery.js"></script>
+</head>
+<body>
+  <div id="UIdiv"></div>
+  <div id="mainCunt">
+    <h2 style="margin-top:5px;">Tomfuckery: The Game!</h2>
+    <div style="margin-left:50px">
+    Fuel: <div id="fueldiv"><span id="fuelspan" style="width: 100%; font-size: 18px;">&nbsp;1000</span></div>
+    &nbsp;&nbsp;&nbsp;
+    Speed: <span id="speedo" style="width:75px;">0</span>
+    &nbsp;&nbsp;&nbsp;
+    Bonus Check: <span id="scorespan" style="width:75px;">0</span>₢
+    &nbsp;&nbsp;&nbsp;
+    Score: <span id="pointspan" style="width:75px;">0</span>
+    &nbsp;&nbsp;&nbsp;
+    Highest Score: <span id="hiscorespan" style="width:75px;">0</span>
+    &nbsp;&nbsp;&nbsp;
+    </div>
+    <canvas id="game"></canvas>
+    <div style="margin-left:50px;"><span id="outputdiv">Good Luck...</span>
+    <div style="float: right; margin-right:75px;width:50%;text-align: right;">
+      Max Fuel: <span id="fuelmax">2000</span>kg
+    &nbsp;&nbsp;&nbsp;
+    C.O.N.D.O.M.: <span id="condom">None</span>
+    &nbsp;&nbsp;&nbsp;
+    Landing Gear: <span id="gearname">Chicken Leg</span>
+    </div></div>
+    <div style="position:fixed; top:5px; right:5px; height:20px; text-align: right;">by ThaumX - v1.0</div>
+  </div>
+</body>
+</html>

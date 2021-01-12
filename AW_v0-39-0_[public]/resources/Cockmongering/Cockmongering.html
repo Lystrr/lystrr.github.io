@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="eng">
+<head>
+  	<meta charset="utf-8" />
+ 	<title>Cockmongering!</title>
+	<style>
+		body {
+		 	background-color: #171717;
+		 	color: hotpink;
+		 	font-family: Tahoma, sans;
+		 	overflow: hidden;
+		}
+		#container {
+			width: 400px;
+			margin: 0 auto;
+		}
+		#container #text {
+			text-align: left;
+		}
+		#can {
+			background-color: #0e0e0e;
+		  	border: 2px solid hotpink;
+		  	border-radius: 10px;
+		  	margin-top: 10px;
+		}
+		.nope {
+		  	display: none;
+		}
+		#text {
+		 	color: rgb(203, 48, 128);
+		 	position: relative;
+		 	top: 165px;
+		 	left: 10px;
+		 	font-size: 19px;
+		}
+		#fail {
+		 	color: hotpink;
+		 	position: relative;
+		 	top: 165px;
+		 	left: 20px;
+		 	font-size: 19px;
+		}
+		.rulez {
+			font-size: 12px;
+		}
+		#tops {
+			position: relative;
+			top: -380px;
+			left: 170px;
+		}
+		#rights {
+			position: relative;
+			top: -230px;
+			left: 310px;
+		}
+		#downs {
+			position: relative;
+			top: -120px;
+			left: 170px;
+		}
+		#lefts {
+			position: relative;
+			top: -300px;
+			left: 30px;
+		}
+		.bar {
+			background-color: hotpink;
+			border-radius: 5px;
+			font-size: 10px;
+			z-index: 901;
+			box-shadow: 0px 0px 5px black;
+		}
+		h1 {
+			margin-bottom: 0px;
+			font-weight: 300;
+			font-size: 56px;
+		}
+		#endgame {
+			position: relative;
+			top: -537px;
+			left: 2px;
+			border-radius: 7px;
+			z-index: 1000;
+			display: none;
+			font-size: 30px;
+			width: 398px;
+			height: 398px;
+			opacity: 0.7;
+			background: black;
+			text-align: center;
+		}
+		#upgirl {
+			position: relative;
+			top: -537px;
+			left: 2px;
+			display: none;
+			z-index: 900;
+		}
+		#rightgirl {
+			position: relative;
+			top: -537px;
+			left: 2px;
+			display: none;
+			z-index: 900;
+		}
+		#downgirl {
+			position: relative;
+			top: -537px;
+			left: 2px;
+			display: none;
+			z-index: 900;
+		}
+		#leftgirl {
+			position: relative;
+			top: -537px;
+			left: 2px;
+			display: none;
+			z-index: 900;
+		}
+		#centergirl {
+			position: relative;
+			top: -567px;
+			left: 10px;
+			display: none;
+			z-index: 900;
+		}
+		#logo {
+			position: relative;
+			top: -1080px;
+			left: 320px;
+			width: 200px;
+			height: 200px;
+			z-index: -100;
+			opacity: 0.2;
+		}
+	</style>
+</head>
+<body>
+<br><br>
+		<div id="container">
+		<span id="text">❤ 0</span>
+		<span id="fail">❌ 0</span>
+		<center>
+			<h1>Cockmongering!</h1>
+			<span class="rulez">Use arrows to control the hooker and satisfy as much cocks as you can!</span>
+		</center>
+			<canvas id="can" width="400" height="400"></canvas>
+			
+
+			<br><span id="tops" class="bar"></span><br>
+			<br><span id="rights" class="bar"></span><br>
+			<br><span id="downs" class="bar"></span><br>
+			<br><span id="lefts" class="bar"></span><br>
+			<div id="endgame">
+				<br><br><br><br>
+				<h3>GAME OVER!</h3>
+				You have serviced <span id="served"></span> cocks.
+			</div>
+			<img src="girlup.png" id="upgirl">
+			<img src="girlright.png" id="rightgirl">
+			<img src="girldown.png" id="downgirl"">
+			<img src="girlleft.png" id="leftgirl">
+			<img src="girlcenter.png" id="centergirl">
+			<img src="logo.png" id="logo">
+		</div>
+
+
+
+<img src="cockup.jpg" id="upcock" class="nope">
+<img src="cockright.jpg" id="rightcock" class="nope">
+<img src="cockdown.jpg" id="downcock" class="nope">
+<img src="cockleft.jpg" id="leftcock" class="nope">
+
+<img src="eup.jpg" id="upe" class="nope">
+<img src="eright.jpg" id="righte" class="nope">
+<img src="edown.jpg" id="downe" class="nope">
+<img src="eleft.jpg" id="lefte" class="nope">
+
+<img src="back.png" id="back" class="nope">
+
+
+
+
+   
+<script type="text/javascript">
+
+let SpeedMult = 1;
+let SpeedIncrement = 1;
+let BaseSpeed = 100;
+let Speed = 100;
+let DestroyerSpeed = 3000;
+let PlayerPosition = "none";
+let PlayerDesiredPosition = [0, 0, 0, 0];// Up,right,down,left
+let CockPosition = [0, 0, 0, 0]; // Up,right,down,left
+let CockService = [0, 0, 0, 0]; // same, from 0 to 100 where 100 is orgasm
+let Score = 0;
+let Failures = 0;
+
+var Canvas = document.getElementById("can");
+var Canvas_context = Canvas.getContext("2d");
+var Text = document.getElementById("text");
+var Fail = document.getElementById("fail");
+var Served = document.getElementById("served");
+var Endgame = document.getElementById("endgame");
+
+
+var TopS = document.getElementById("tops");
+var RightS = document.getElementById("rights");
+var DownS = document.getElementById("downs");
+var LeftS = document.getElementById("lefts");
+
+var UpCock = document.getElementById("upcock");
+var RightCock = document.getElementById("rightcock");
+var DownCock = document.getElementById("downcock");
+var LeftCock = document.getElementById("leftcock");
+
+var UpE = document.getElementById("upe");
+var RightE = document.getElementById("righte");
+var DownE = document.getElementById("downe");
+var LeftE = document.getElementById("lefte");
+
+var UpGirl = document.getElementById("upgirl");
+var RightGirl = document.getElementById("rightgirl");
+var DownGirl = document.getElementById("downgirl");
+var LeftGirl = document.getElementById("leftgirl");
+var CenterGirl = document.getElementById("centergirl");
+
+var Back = document.getElementById("back");
+
+Destroyer = function(Position, Serviced) {
+	if (CockPosition[Position] != 0) {
+		switch (Position) {
+	      case 0:
+	        CockPosition[0] = 0;
+	        Canvas_context.drawImage(UpE, 150, 10);
+	        TopS.innerHTML = "";
+	        if (Serviced === false && PlayerPosition !== "up") {
+	        	Failures++
+	        	Fail.innerHTML = "❌ " +Failures;
+	        	Fail.style.color = "crimson";
+	        }
+	        break;
+	      case 1:
+	        CockPosition[1] = 0;
+	        Canvas_context.drawImage(RightE, 290, 150);
+	        RightS.innerHTML = "";
+	        if (Serviced === false && PlayerPosition !== "right") {
+	        	Failures++
+	        	Fail.innerHTML = "❌ " +Failures;
+	        	Fail.style.color = "crimson";
+	        }
+	        break;
+	      case 2:
+	        CockPosition[2] = 0;
+	        Canvas_context.drawImage(DownE, 150, 290);
+	        DownS.innerHTML = "";
+	        if (Serviced === false && PlayerPosition !== "down") {
+	        	Failures++
+	        	Fail.innerHTML = "❌ " +Failures;
+	        	Fail.style.color = "crimson";
+	        }
+	        break;
+	      case 3:
+	        CockPosition[3] = 0;
+	        Canvas_context.drawImage(LeftE, 10, 150);
+	        LeftS.innerHTML = "";
+	        if (Serviced === false && PlayerPosition !== "left") {
+	        	Failures++
+	        	Fail.innerHTML = "❌ " +Failures;
+	        	Fail.style.color = "crimson";
+	        }
+	        break;
+	    }
+	}
+    CockPosition[Position] = 0;
+};
+
+Check = function() {
+	if (PlayerPosition === "up" & CockPosition[0] === 1){ // добавить прогрессбары
+		CockService[0] += 10;
+		TopS.innerHTML += "&nbsp;&nbsp;&nbsp;"
+		if (CockService[0] > 70){
+			Destroyer(0);
+			Score++
+			Text.innerHTML = "❤ " + Score
+			Text.style.color = "#ffaed6";
+			TopS.innerHTML = ""
+		}
+	}
+	if (PlayerPosition === "right" & CockPosition[1] === 1){
+		CockService[1] += 10;
+		RightS.innerHTML += "&nbsp;&nbsp;&nbsp;"
+		if (CockService[1] > 70){
+			Destroyer(1);
+			Score++
+			Text.innerHTML = "❤ " + Score
+			Text.style.color = "#ffaed6";
+			RightS.innerHTML = ""
+		}
+	}
+	if (PlayerPosition === "down" & CockPosition[2] === 1){
+		DownS.innerHTML += "&nbsp;&nbsp;&nbsp;"
+		CockService[2] += 10;
+		if (CockService[2] > 70){
+			Destroyer(2);
+			Score++
+			Text.innerHTML = "❤ " + Score
+			Text.style.color = "#ffaed6";
+			DownS.innerHTML = ""
+		}
+	}
+	if (PlayerPosition === "left" & CockPosition[3] === 1){
+		LeftS.innerHTML += "&nbsp;&nbsp;&nbsp;"
+		CockService[3] += 10;
+		if (CockService[3] > 70){
+			Destroyer(3);
+			Score++
+			Text.innerHTML = "❤ " + Score
+			Text.style.color = "#ffaed6";
+			LeftS.innerHTML = ""
+		}
+	}
+};
+
+Keyboard = function(e) {
+	let KPlayerDesPos = PlayerDesiredPosition;
+  switch (e.keyCode) {
+    case 38: // up
+    	KPlayerDesPos = [1, 0, 0, 0];
+      break;
+    case 39: // right
+    	KPlayerDesPos = [0, 1, 0, 0];
+      break;
+    case 40: // down
+    	KPlayerDesPos = [0, 0, 1, 0];
+      break;
+	case 37: // left
+		KPlayerDesPos = [0, 0, 0, 1];
+	break;
+  }
+  PlayerOrientation(KPlayerDesPos);
+};
+KeyboardUp = function(e) {
+	let KPlayerDesPos = PlayerDesiredPosition;
+	switch (e.keyCode) {
+    case 38: // up
+    	KPlayerDesPos[0] = 0
+      break;
+    case 39: // right
+    	KPlayerDesPos[1] = 0
+      break;
+    case 40: // down
+    	KPlayerDesPos[2] = 0
+      break;
+	case 37: // left
+		KPlayerDesPos[3] = 0
+	break;
+  }
+  PlayerOrientation(KPlayerDesPos);
+};
+
+PlayerOrientation = function(KPlayerDesPos){
+ if (KPlayerDesPos !== PlayerDesiredPosition) {
+ 	PlayerDesiredPosition = KPlayerDesPos;
+ 	}
+ 	if (PlayerDesiredPosition[0] === 1) {
+ 		PlayerPosition = "up";
+    	UpGirl.style.display = "block";
+    	RightGirl.style.display = "none";
+    	DownGirl.style.display = "none";
+    	LeftGirl.style.display = "none";
+    	CenterGirl.style.display = "none";
+ 	} else if (PlayerDesiredPosition[1] === 1) {
+ 		PlayerPosition = "right";
+    	UpGirl.style.display = "none";
+    	RightGirl.style.display = "block";
+    	DownGirl.style.display = "none";
+    	LeftGirl.style.display = "none";
+    	CenterGirl.style.display = "none";
+ 	} else if (PlayerDesiredPosition[2] === 1) {
+ 		PlayerPosition = "down";
+    	UpGirl.style.display = "none";
+    	RightGirl.style.display = "none";
+    	DownGirl.style.display = "block";
+    	LeftGirl.style.display = "none";
+    	CenterGirl.style.display = "none";
+ 	} else if (PlayerDesiredPosition[3] === 1) {
+ 		PlayerPosition = "left";
+    	UpGirl.style.display = "none";
+    	RightGirl.style.display = "none";
+    	DownGirl.style.display = "none";
+    	LeftGirl.style.display = "block";
+    	CenterGirl.style.display = "none";
+ 	} else {
+ 		PlayerPosition = "none";
+ 		CenterGirl.style.display = "block";
+		UpGirl.style.display = "none";
+		RightGirl.style.display = "none";
+		DownGirl.style.display = "none";
+		LeftGirl.style.display = "none";
+ 	}
+ 	
+}
+
+CockCreate = function(Position) {
+  if (CockPosition[Position] !== 1) {
+  	CockService[Position] = 0;
+    switch (Position) {
+      case 0:
+        CockPosition[0] = 1;
+        Canvas_context.drawImage(UpCock, 150, 10);
+        break;
+      case 1:
+        CockPosition[1] = 1;
+        Canvas_context.drawImage(RightCock, 290, 150);
+        break;
+      case 2:
+        CockPosition[2] = 1;
+        Canvas_context.drawImage(DownCock, 150, 290);
+        break;
+      case 3:
+        CockPosition[3] = 1;
+        Canvas_context.drawImage(LeftCock, 10, 150);
+        break;
+    }
+    setTimeout(Destroyer, DestroyerSpeed, Position, false);
+  }
+};
+
+MainLoop = setInterval(function() {
+	if (Speed === 100) {
+		Canvas_context.drawImage(Back, 0, 0);
+		CenterGirl.style.display = "block";
+		Speed--
+	}
+    const Random = Math.floor(Math.random() * (100 - 1)) + 1;
+  	if (Random < 8) {
+    	const RandomPosition = Math.floor(Math.random() * (5 - 1));
+    	CockCreate(RandomPosition);
+  	}
+  	PlayerOrientation(PlayerDesiredPosition);
+  	Text.style.color = "hotpink";
+  	Fail.style.color = "hotpink";
+  	Check();
+
+  	SpeedIncrement++
+  	if (SpeedIncrement > 15) {
+  		Speed --
+  		DestroyerSpeed = Math.round(Speed * 30);
+  		SpeedIncrement = 1;
+  		console.log("Speeding up, speed is " + Speed + ". DestroyerSpeed is " + DestroyerSpeed)
+  	}
+  	if (Speed < 40) {
+  		Speed = 40;
+  		DestroyerSpeed = Math.round(Speed * 30);
+  	}
+  	if (Failures>9) {
+  		Endgame.style.display = "block";
+  		Served.innerHTML = Score;
+  		UpGirl.style.display = "none";
+    	RightGirl.style.display = "none";
+    	DownGirl.style.display = "none";
+    	LeftGirl.style.display = "none";
+    	CenterGirl.style.display = "none";
+    	clearInterval(MainLoop);
+    	removeEventListener("keydown", Keyboard);
+		removeEventListener("keyup", KeyboardUp);
+    	return false;
+  	}
+}, Speed);
+
+
+addEventListener("keydown", Keyboard);
+addEventListener("keyup", KeyboardUp);
+
+</script>   
+</body>
+</html>

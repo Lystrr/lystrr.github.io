@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>1</title>
+
+	<style>
+	body {
+		margin: 0px;
+		font-family: segoe ui, sans-serif;
+		font-weight: 600;
+		font-size: 18px;
+	}
+	a {
+		color: #4e161f;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #a52a3e;
+	}
+	h3 {
+		margin-top: 0px;
+	}
+	hr {
+		background: #4e161f;
+		border: 0;
+		height: 1px;
+	}
+	#left {
+		position: absolute;
+		left: 10px;
+		top: 10px;
+		width: 200px;
+		height: 700px;
+		background-color: #b687b4;
+		border-radius: 5px;
+	}
+	#menu {
+		position: absolute;
+		left: 230px;
+		top: 10px;
+		width: 650px;
+		height: 60px;
+		background-color: #b687b4;
+		border-radius: 5px;
+	}
+	#center {
+		position: absolute;
+		left: 230px;
+		top: 90px;
+		width: 650px;
+		min-height: 620px;
+		background-color: #b687b4;
+		border-radius: 5px;
+	}
+	#leftInner {
+		padding: 10px;
+	}
+	#menuInner {
+		padding: 17px;
+	}
+	#centerInner {
+		padding: 10px;
+	}
+	.cowCard {
+		background-color: #d8bcd7;
+		border-radius: 5px;
+		padding: 10px; 
+		height: 195px;
+		margin-bottom: 10px;
+	}
+	.cowBuyCard {
+		background-color: #d8bcd7;
+		border-radius: 5px;
+		padding: 10px; 
+		height: 195px;
+		margin: 10px;
+		float: left;
+		width: 170px;
+	}
+	.cowCardLeft {
+		float: left;
+	}
+	.cowCardRight {
+		float: right;
+	}
+	.button {
+		background-color: #c0263c;
+		border-radius: 5px;
+		padding: 5px;
+	}
+	.button:hover {
+		background-color: #981b2d;
+		border-radius: 5px;
+		padding: 5px;
+		color: white;
+	}
+	.button a {
+		color: white;
+	}
+	.button a:hover {
+		color: white;
+	}
+	#shopFix {
+		position: absolute;
+		top: 245px;
+		width: 91%;
+	}
+	.shopBlock {
+		background-color: #d8bcd7;
+		border-radius: 5px;
+		padding: 10px; 
+		height: 25px;
+		margin: 10px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.nightBlock {
+		background-color: #d8bcd7;
+		border-radius: 5px;
+		padding: 10px; 
+		min-height: 25px;
+		margin: 10px;
+		margin-bottom: 15px;
+	}
+	.labBlock {
+		background-color: #b687b4;
+		border-radius: 5px;
+		width: 106px; 
+		padding: 10px; 
+		height: 140px;
+		margin: 10px;
+		float: left;
+		margin-bottom: 25px;
+	}
+	.marginFix {
+		margin-top: 7px;
+		margin-bottom: 7px;
+	}
+	input {
+		height: 35px;
+		font-size: 30px;
+		border-radius: 5px;
+	}
+</style>
+
+</head>
+<body>
+	<div id="left">
+		<div id="leftInner">
+		</div>
+	</div>
+	<div id="menu">
+		<div id="menuInner">
+		</div>
+	</div>
+	<div id="center">
+		<div id="centerInner">
+		</div>
+	</div>
+
+	<script>
+		let folk = {};
+		const tits = ["none", "A-cup", "B-cup", "C-cup", "D-cup", "E-cup", "F-cup", "J-cup", "H-cup"];
+		let game = {
+			prices : {
+				normalMilk: 10,
+				painMilk: 16,
+				edgeMilk: 17,
+				slaveMilk: 27,
+				superMilk: 35,
+			},
+			day: 1,
+			ownedCows: [],
+			itemsChest: {
+				money: 1000,
+				simpleBed: 0,
+				oldMilker: 1,
+				goodMilker: 0,
+				smallBarrel: 1,
+				mediumBarrel: 0,
+				largeBarrel: 0,
+				teasingStation: 0,
+				shocker: 0,
+				normalFood: 5,
+				cowCream: 0,
+				normalMilk: 0,
+				painMilk: 0,
+				edgeMilk: 0,
+				slaveMilk: 0,
+				superMilk: 0,
+				cowBell: 0,
+				firstAid: 0,
+			},
+			items: {
+				cowBell: {
+					price: 300,
+				},
+				simpleBed: {
+					price: 100,
+				},
+				oldMilker: {
+					price: 200,
+					force: 0.6,
+				},
+				goodMilker: {
+					price: 1000,
+					force: 0.8,
+				},
+				smallBarrel: {
+					price: 300,
+					capacity: 100,
+				},
+				mediumBarrel: {
+					price: 600,
+					capacity: 250,
+				},
+				largeBarrel: {
+					price: 1500,
+					capacity: 750,
+				},
+				normalFood: {
+					price: 20,
+				},
+				cowCream: {
+					price: 50,
+				},
+				firstAid: {
+					price: 80,
+				},
+				teasingStation: {
+					price: 1200,
+				},
+				shocker: {
+					price: 1000,
+				},
+			},
+			setups: {
+    		first: ["Nothing", "Nothing", "Nothing", "Nothing"], //milker, barrel, device one, device two
+    		second: ["Nothing", "Nothing", "Nothing", "Nothing"], //milker, barrel, device one, device two
+    		third: ["Nothing", "Nothing", "Nothing", "Nothing"], //milker, barrel, device one, device two
+    	}
+    }
+    let nom = 0;
+    let arm = 0;
+    let stm = 0;
+    let slm = 0;
+
+    Array.prototype.remove = function(value) {
+    	var idx = this.indexOf(value);
+    	if (idx != -1) {
+    		return this.splice(idx, 1);
+    	}
+    	return false;
+    }
+
+    function random(min, max) {
+    	return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function cowGen() {
+    	const temp = {};
+    	const names = ["Elsie", "Buttercup", "Rose", "Darla", "Meg", "Dahlia", "Margie", "Lois", "Flower", "Maggie", "Jasmine", "Minnie", "Esmeralda", "Bella", "Daisy", "Shelly", "Candie", "Bessie", "Clarabelle", "Betty", "Henrietta", "Ella", "Penelope", "Nettie", "Anna", "Bella", "Dorothy", "Molly", "Gertie", "Annie", "Honeybun", "Cookie", "Pinky", "Sweetie", "Sunny", "Blue", "LovaBull", "Sunshine", "Sugar", "Cupcake", "Cocoa", "Booboo", "Muffin", "Princess"];
+    	const bacupnames = ["Bertha", "Cowlick", "MooMoo"];
+    	let smallTempName = names[random(0, names.length)];
+    	if (smallTempName === undefined) {
+    		smallTempName = "Creamy"
+    	}
+    	if (game.ownedCows.indexOf(smallTempName) !== -1) {
+    		smallTempName = bacupnames[random(0, bacupnames.length)];
+    	}
+    	temp[smallTempName] = {};
+    	temp[smallTempName].name  = smallTempName;
+    	temp[smallTempName].key = smallTempName;
+    	const breastDist = [0, 10, 25, 20, 15, 10, 5, 5, 3];
+    	temp[smallTempName].breast = 1;
+    	let rand = random(0, 98);
+    	for (let i = 0; i < 9; i++){
+    		if (rand < breastDist[i]){
+    			temp[smallTempName].breast = i;
+    			break;
+    		} else {
+    			rand -= breastDist[i];
+    		}
+    	}
+    	temp[smallTempName].milkMax = temp[smallTempName].breast*100;
+    	temp[smallTempName].milkCur = (temp[smallTempName].milkMax-random(20, 60));
+    	const traitsDist = ["pain lover", "", "", "", "", "", "", ""];
+    	temp[smallTempName].traits = traitsDist[random(0,7)];
+    	temp[smallTempName].production = 0.8;
+    	temp[smallTempName].health = random(80, 100);
+    	temp[smallTempName].happy = random(5, 90);
+    	temp[smallTempName].arousal = random(0, 55);
+    	temp[smallTempName].stress = random(0, 55);
+    	temp[smallTempName].cost = (temp[smallTempName].breast*150)+(temp[smallTempName].health*2)+(temp[smallTempName].happy);
+    	temp[smallTempName].dead= false;
+    	temp[smallTempName].owned= false;
+    	temp[smallTempName].milked= false;
+    	temp[smallTempName].image = false;
+    	temp[smallTempName].preggy = false;
+    	temp[smallTempName].foodEffect = 0;
+    	temp[smallTempName].foodType = "normalFood";
+    	folk[smallTempName] = temp[smallTempName];
+    	return temp;
+    }
+
+    function setFood(id, food) {
+    	folk[id].foodType = food;
+    	print(printCows(), "centerInner");
+    }
+
+    function milkPriceChange(curPrice) {
+    	const base = 16;
+    	const max = 26;
+    	const min = 6;
+    	const dev = 2;
+      // let's say that current price of milk is curPrice
+      const pdif = max - curPrice;
+      let increase = true;
+      if (random(min, max) > pdif) {
+      	increase = false;
+      }
+      const ratio = [4,6,8,4,2,1];
+      let dmult = 0;
+      let rand = random(0, 24);
+      for (let i = 0; i < 6; i++){
+      	if (rand < ratio[i]){
+      		dmult = i;
+      		break;
+      	} else {
+      		rand -= ratio[i];
+      	}
+      }
+      let amt = 0;
+      switch (dmult) {
+      	case 0:
+          amt = 0;
+          break;
+      	case 1:
+          amt = Math.round(dev / 2);
+          break;
+      	case 2:
+          amt = dev;
+          break;
+      	case 3:
+          amt = Math.round(dev * 1.5);
+          break;
+      	case 4:
+          amt = dev * 2;
+          break;
+        case 5:
+          amt = dev * 3;
+          break;
+      }
+      curPrice += (increase) ? amt : amt * -1;
+      if (curPrice > max) {
+      	curPrice = max;
+      } else if (curPrice < min) {
+      	curPrice = min;
+      }
+      return curPrice;
+    }
+
+    function calcCow(id) {
+    	let output = `<div class="nightBlock"><b>${folk[id].name}</b><br>`;
+    	folk[id].milked = false;
+    	if (folk[id].foodType === "cowCream") {
+    		if (game.itemsChest.cowCream > 0) {
+    			game.itemsChest.cowCream--;
+    			folk[id].health += random(6,11);
+    			folk[id].foodEffect += random(0,1);
+    			folk[id].stress -= random (0,2);
+    			if (folk[id].foodEffect > 6) {
+    				folk[id].foodEffect = 0;
+    				if (folk[id].breast < 9){
+    					folk[id].breast++;
+    					output += "Cow Creme caused her breast size to increase!<br>";
+    				}
+    			}
+    		} else {
+    			output += "No Cow Creme in the storage, hucow was assigned to eat normal food instead.<br>";
+    			folk[id].foodType = "normalFood";
+    			folk[id].health -= random(8,12);
+    			folk[id].stress += random(3,10);
+    		}
+    	} 
+    	if (folk[id].foodType === "normalFood") {
+    		if (game.itemsChest.normalFood > 0) {
+    			game.itemsChest.normalFood--;
+    			folk[id].health += random(5,10);
+    		} else {
+    			output += "No food in the storage, hucow is starving!<br>";
+    			folk[id].happy -= random(4,20);
+    			folk[id].health -= random(10,20);
+    			folk[id].stress += random(3,10);
+    		}
+    	} 
+    	if (folk[id].foodType == null) {
+    		folk[id].foodType === "normalFood";
+    		output += "Error in food type :( Hucow was set to eat normal food to fix it.";
+    	}
+    	folk[id].happy -= random(0,8);
+    	folk[id].arousal -= random(5,10);
+    	if (folk[id].stress > 100) {
+    		folk[id].stress = random(82,94);
+    		folk[id].happy = random(4,20);
+    		output += "Hucow had a mental breakdown due to stress!<br>";
+    	}
+    	if (folk[id].arousal > 100) {
+    		folk[id].arousal = random(62,78);
+    		folk[id].happy += random(4,20);
+    		output += "Hucow went mad with lust overnight; she humped the barn door until she climaxed!<br>";
+    	}
+    	folk[id].milkCur += Math.round((((folk[id].health + (folk[id].happy*2)) / 3.5) * folk[id].breast * folk[id].production));
+    	folk[id].milkMax = folk[id].breast*100;
+    	if (folk[id].milkCur > folk[id].milkMax) {
+    		folk[id].health -= random(8, 17);
+    		output += "Health dropped, udders are too full.<br>";
+    		if (random(0,15) === 15) {
+    			if (folk[id].breast < 9){
+    				folk[id].breast++;
+    				output += "Stretching from being full of milk caused breast size to increase!<br>";
+    			}	
+    		}
+    		folk[id].milkCur = folk[id].milkMax;
+    	}
+    	if (folk[id].milkMax < folk[id].breast*100) {
+    		output += "Breast capacity increased.<br>";
+    	}
+    	if (folk[id].health > 100) {folk[id].health = 100};
+    	if (folk[id].happy < 0) {folk[id].happy = 0};
+    	if (folk[id].happy > 100) {folk[id].happy = 100};
+    	if (folk[id].arousal < 0) {folk[id].arousal = 0};
+    	if (folk[id].stress < 0) {folk[id].stress = 0};
+    	if (folk[id].health < 1) {
+    		folk[id].dead = true;
+    		game.ownedCows.remove(id);
+    		output += `<b>Hucow died</b>! Consider this hucow dead. She rests in peace. This hucow is no more. She has ceased to be. ${folk[id].name} is an ex-hucow.`;
+    	}
+    	if (folk[id].dead === true) {
+    		game.ownedCows.remove(id);
+    	}
+    	output += "</div>"
+    	return output;
+    };
+    
+    function nightCalc() {
+    	for (key in folk) {
+    		if (folk[key].owned === false) {
+    			console.log(`${folk[key].name} was deleted and her owned flag was ${folk[key].owned}`);
+    			delete folk[key];
+    		}
+    	}
+    	cowGen();
+    	cowGen();
+    	cowGen();
+    	game.day++;
+    	game.itemsChest.money = Math.round(game.itemsChest.money);
+    	let output = "<h3>Night has passed.</h3>";
+    	output+=genEvent();
+    	if (game.ownedCows.length > 0) {
+    		game.ownedCows.forEach(function(id, i, arr) {
+    			if (folk[id].dead === false) {
+    				output+=calcCow(id);
+    			}
+    		});
+    	} else {
+    		output+= "No hucows in the barn!";
+    	}
+    	for (key in game.prices) {
+    		game.prices[key] = milkPriceChange(game.prices[key]);
+    	}
+
+    	print(printInfo(), "leftInner");
+    	return output;
+    };
+
+    function genEvent() {
+    	let output = ""
+    	
+    	if (random(0,4) === 1) {
+    		const eventDist = [5, 3, 1];
+    		let rnd = random(0, 9);
+    		let chance = 0;
+    		for (let i = 0; i < 9; i++){
+    			if (rnd < eventDist[i]){
+    				chance = i;
+    				break;
+    			} else {
+    				rnd -= eventDist[i];
+    			}
+    		}
+    		let usableCows = [];
+    		let txt = "";
+    		game.ownedCows.forEach(function(item, i, arr) {
+    			if (folk[item].owned === true && folk[item].dead === false) {
+    				usableCows.push(item);
+    			}
+    		});
+    		switch (chance) {
+    			case 0:
+    			if (usableCows.length > 1) {
+    				txt += `${folk[usableCows[0]].name} and ${folk[usableCows[1]].name} had a fight after boobs measuring competition gone wrong. They both bited and bruised each other furiously until you managed to stop them.`;
+    				folk[usableCows[0]].health -= random(3, 23);
+    				folk[usableCows[0]].stress += random(3, 23);
+    				folk[usableCows[1]].health -= random(3, 23);
+    				folk[usableCows[1]].stress += random(3, 23);
+    			} else {
+    				const txt = `Weather was particulary sunny today.`;
+    			}
+    			break;
+    			case 1:
+    			if (usableCows.length > 0) {
+    				console.log(`us cows lenght: ${usableCows.length}`)
+    				console.log(`us cows: ${usableCows}`);
+    				const futa = random(0, usableCows.length);
+    				console.log(`random futa: ${futa}`);
+    				folk[usableCows[futa]].milkCur = 0;
+    				folk[usableCows[futa]].stress += random(2, 15);
+    				txt += `Somebody crawled into the barn at night and milked ${folk[usableCows[futa]].name}! Poor hucow was to frightened to call for help and just softly moo while intruder sqeezed her milk out of her udders.`;
+    			} else {
+    				const txt = `You spent the whole evening reading "Daily Dairy" newspapper.`;
+    			}
+    			break;
+    			case 2:
+    			let cowName = "ERROR";
+    			let blyat = [];
+    			for (id in folk) {
+    				blyat.push(folk[id].key);
+    			}
+    			blyat.some(function(el) {
+    				if (folk[el].owned === false) {
+    					console.log(`${folk[el].name} was added`);
+    					game.ownedCows.push(folk[el].key);
+    					folk[el].owned = true;
+    					cowName = folk[el].name;
+    					print(printInfo(), "leftInner");
+    					return true;
+    				}
+    			});
+    			txt += `New girl, ${cowName} came to the barn at night. She is wannabe hucow and run from her family to aplly as a milk cow attracted by rumors about your florishing dairy. She has nowhere else to go and after listening to her story you invite ${cowName} to join the other hucows in the barn. She is very happy.`;
+    			cowGen();
+    			break;
+    		}
+    		output += `<div class="nightBlock">${txt}</div>`
+    	}
+    	return output;
+    }
+
+    function sellMilk(type) {
+    	let output = ""
+    	let sold = false;
+    	if (game.itemsChest.normalMilk !== 0) {
+    		const income = (game.itemsChest.normalMilk * game.prices.normalMilk) / 10;
+    		game.itemsChest.money += income;
+    		print(printInfo(), "leftInner");
+    		output += `Successfuly sold ${game.itemsChest.normalMilk} ml of hucow milk for ${income} ᚬ!<br>`;
+    		game.itemsChest.normalMilk = 0;
+    		sold = true;
+    	}
+    	if (game.itemsChest.edgeMilk !== 0) {
+    		const income = (game.itemsChest.edgeMilk * game.prices.edgeMilk) / 10;
+    		game.itemsChest.money += income;
+    		print(printInfo(), "leftInner");
+    		output += `Successfuly sold ${game.itemsChest.edgeMilk} ml of arousal milk for ${income} ᚬ!<br>`;
+    		game.itemsChest.edgeMilk = 0;
+    		sold = true;
+    	}
+    	if (game.itemsChest.painMilk !== 0) {
+    		const income = (game.itemsChest.painMilk * game.prices.painMilk) / 10;
+    		game.itemsChest.money += income;
+    		print(printInfo(), "leftInner");
+    		output += `Successfuly sold ${game.itemsChest.painMilk} ml of stess milk for ${income} ᚬ!<br>`;
+    		game.itemsChest.painMilk = 0;
+    		sold = true;
+    	}
+    	if (game.itemsChest.slaveMilk !== 0) {
+    		const income = (game.itemsChest.slaveMilk * game.prices.slaveMilk) / 10;
+    		game.itemsChest.money += income;
+    		print(printInfo(), "leftInner");
+    		output += `Successfuly sold ${game.itemsChest.slaveMilk} ml of slave milk for ${income} ᚬ!<br>`;
+    		game.itemsChest.slaveMilk = 0;
+    		sold = true;
+    	}
+    	if (game.itemsChest.superMilk !== 0) {
+    		const income = (game.itemsChest.superMilk * game.prices.superMilk) / 10;
+    		game.itemsChest.money += income;
+    		print(printInfo(), "leftInner");
+    		output += `Successfuly sold ${game.itemsChest.superMilk} ml of super hucow milk for ${income} ᚬ!<br>`;
+    		game.itemsChest.superMilk = 0;
+    		sold = true;
+    	}
+    	if (sold === false) {
+    		output = "Nothing to sell!";
+    	}
+    	return output;
+    };
+
+    function printInfo() {
+    	let output = `<center><img src = "img/logo.png" width = "170px"><i></center><center><b>Day: ${game.day}</b></center><br><hr>`;
+    	output += `<b>Money:</b> ${game.itemsChest.money} ᚬ<hr>`;
+    	output += `<b>Stock:</b><br>Hucow milk: ${game.itemsChest.normalMilk}<br>Arousal milk: ${game.itemsChest.edgeMilk}<br>Stress milk: ${game.itemsChest.painMilk}<br>Slave milk: ${game.itemsChest.slaveMilk}<br>Super milk: ${game.itemsChest.superMilk}<hr>Normal food: ${game.itemsChest.normalFood}<br>Cow Cream: ${game.itemsChest.cowCream}<br>Bells: ${game.itemsChest.cowBell}<br>Medkit: ${game.itemsChest.firstAid}<hr>`;
+    	output += `<b>Cows:</b> ${game.ownedCows.length}<br><hr>`;
+    	output += `<b>Prices</b> <small>(per 10ml)</small><br>Hucow milk: ${game.prices.normalMilk}<br>Arousal milk: ${game.prices.edgeMilk}<br>Stress milk: ${game.prices.painMilk}<br>Slave milk: ${game.prices.slaveMilk}<br>Super milk: ${game.prices.superMilk}<br><br>`;
+    	return output;
+    };
+
+    function getItems(setup, thing) {
+    	let output = "";
+    	if (thing === "milkers") {
+    		if (game.itemsChest.oldMilker > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 0, 'oldMilker')">Old milker</a>&nbsp;`;
+    		}
+    		if (game.itemsChest.goodMilker > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 0, 'goodMilker')">Good milker</a>&nbsp;`;
+    		}
+    		if (game.setups[setup][0] !== "Nothing") {
+    			output += `| <a href="#" onclick="setItem('${setup}', 0, 'Nothing')">Nothing</a>&nbsp;`
+    		}
+    	} else if (thing === "barrels") {
+    		if (game.itemsChest.smallBarrel > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 1, 'smallBarrel')">Small barrel-100</a>&nbsp;`;
+    		}
+    		if (game.itemsChest.mediumBarrel > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 1, 'mediumBarrel')">Medium barrel-250</a>&nbsp;`;
+    		}
+    		if (game.itemsChest.largeBarrel > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 1, 'largeBarrel')">Large barrel-750</a>&nbsp;`;
+    		}
+    		if (game.setups[setup][1] !== "Nothing") {
+    			output += `| <a href="#" onclick="setItem('${setup}', 1, 'Nothing')">Nothing</a>&nbsp;`
+    		}
+    	} else if (thing === "device1") {
+    		if (game.itemsChest.teasingStation > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 2, 'teasingStation')">Teasing station</a>&nbsp;`;
+    		}
+    		if (game.setups[setup][2] !== "Nothing") {
+    			output += `| <a href="#" onclick="setItem('${setup}', 2, 'Nothing')">Nothing</a>&nbsp;`
+    		}
+    	} else if (thing === "device2") {
+    		if (game.itemsChest.shocker > 0) {
+    			output += `| <a href="#" onclick="setItem('${setup}', 3, 'shocker')">Shocker</a>&nbsp;`;
+    		}
+    		if (game.setups[setup][3] !== "Nothing") {
+    			output += `| <a href="#" onclick="setItem('${setup}', 3, 'Nothing')">Nothing</a>&nbsp;`
+    		}
+    	}
+    	return output;
+    }
+
+    function setItem(setup, thing, item) {
+    	console.log(`got ${setup}, ${thing}, ${item}`)
+    	const old = game.setups[setup][thing];
+    	console.log(item + old + thing);
+    	console.log(game.setups[setup][thing]);
+    	game.itemsChest[old]++;
+    	game.setups[setup][thing] = item;
+    	game.itemsChest[item]--;
+    	print(manage(), "centerInner");
+    };
+
+    function manage() {
+    	let output = `<h3>Manage chambers:</h3>`;
+    	output +=`
+    	<div class="nightBlock"><b>Chamber 1</b><br>
+    	Milker: ${game.setups.first[0]} ${getItems("first", "milkers")}<br>
+    	Barrel: ${game.setups.first[1]} ${getItems("first", "barrels")}<br>
+    	Sexual: ${game.setups.first[2]} ${getItems("first", "device1")}<br>
+    	Device: ${game.setups.first[3]} ${getItems("first", "device2")}<br>
+    	</div>
+    	<div class="nightBlock"><b>Chamber 2</b><br>
+    	Milker: ${game.setups.second[0]} ${getItems("second", "milkers")}<br>
+    	Barrel: ${game.setups.second[1]} ${getItems("second", "barrels")}<br>
+    	Sexual: ${game.setups.second[2]} ${getItems("second", "device1")}<br>
+    	Device: ${game.setups.second[3]} ${getItems("second", "device2")}<br>
+    	</div>
+    	<div class="nightBlock"><b>Chamber 3</b><br>
+    	Milker: ${game.setups.third[0]} ${getItems("third", "milkers")}<br>
+    	Barrel: ${game.setups.third[1]} ${getItems("third", "barrels")}<br>
+    	Sexual: ${game.setups.third[2]} ${getItems("third", "device1")}<br>
+    	Device: ${game.setups.third[3]} ${getItems("third", "device2")}<br>
+    	</div>
+    	`;
+    	return output;
+    };
+
+    function milkCow(id, setup) {
+    	if (folk[id].milked === true) {
+    		return `${folk[id].name} was already milked today. She needs rest.`;
+    	}
+    	if (game.setups[setup][0] === "Nothing") {
+    		return "No milker on the setup!";
+    	} else {
+    		let milkType = 3;
+    		let milkAmt = 0;
+    		let output = "";
+    		if (folk[id].happy < 1000 && folk[id].happy > 80) {
+    			output += `${folk[id].name} eagerly jogs to the chamber and takes her place in the machine in a state of bliss. `;
+    		} else if (folk[id].happy < 81 && folk[id].happy > 50) { 
+    			output += `${folk[id].name} is happy to be milked and goes to her chamber with anticipaton. `;
+    		} else if (folk[id].happy < 51 && folk[id].happy > 30) {
+    			output += `${folk[id].name} is indifferent about her milking but reluctantly lets you put her into the chamber. `;
+    		} else if (folk[id].happy < 31 && folk[id].happy > 15) {
+    			output += `${folk[id].name} is not in the mood to be milked and you have to force her into the chamber. `;
+    		} else {
+    			output += `${folk[id].name} furiously fights you trying to avoid getting milked, so you cuff her to the machine. `;
+    		}
+    		if (game.setups[setup][3] === "shocker") {
+    			if ((find(folk[id].traits, "pain lover")) !== -1){
+    				output += `When you attach the electro shocker connectors to her thighs she starts mooing with arousal. `;
+    				folk[id].arousal += random(2,8);
+    				folk[id].happy += random(2,10);
+    				folk[id].health -= random(2,6);
+    				folk[id].stress += random(20,30);
+    			} else {
+    				output += `When you attach the electro shocker connectors to her thighs she starts cowering and whimpering in horror. She begs you to let her go. `;
+    				folk[id].happy -= random(8,15);
+    				folk[id].health -= random(2,6);
+    				folk[id].stress += random(22,34);
+    			}
+    		}
+    		if (game.setups[setup][2] === "teasingStation") {
+    			output += `the Teasing station installed on ${folk[id].name}'s groin makes her pant heavily while the insidious device starts working. It mercilessly stuffs her holes while teasing her pleasure nub, but the device never lets her going over the edge. The device effectively adds to her desperate arousal. `;
+    			folk[id].arousal += random(15,25);
+    		}
+    		if (game.setups[setup][0] === "oldMilker") {
+    			output += `The old rusty milker starts sucking on her udders, barely extracting any milk. `;
+    		} else if (game.setups[setup][0] === "goodMilker") {
+    			output += `The shiny milker starts sucking on her udders, extracting milk. `;
+    		}
+    		if (folk[id].milkCur > (folk[id].milkMax - 30)) {
+    			output += `She sighs with relief as milk start to leave her overfull tits. `;
+    		} else if (folk[id].milkCur < 50) {
+    			output += `She wiggles with pain while the pumps ruthlessly suck from her almost-empty udders.`;
+    		} else {
+    			output += `She breathes heavily while the pumps extract white nectar from her tits. `;
+    		}
+        //choose milk type
+        if (folk[id].arousal > 70 && folk[id].stress > 70) {
+        	milkType = 0;
+        } else if (folk[id].arousal > 70 && folk[id].stress < 71) {
+        	milkType = 1;
+        } else if (folk[id].arousal < 71 && folk[id].stress > 70) {
+        	milkType = 2;
+        } else {
+        	milkType = 3;
+        }
+        const names = ["milk that is rich with both stress and arousal hormones", "milk that is rich with arousal hormones", "milk that is rich with stress hormones", "pretty standard hucow milk", ];
+        //calc effectivness
+        milkAmt = Math.round((folk[id].milkCur*game.items[game.setups[setup][0]].force)-random(0,20));
+        console.log(game.items[game.setups[setup][0]].force);
+        folk[id].milkCur -= milkAmt;
+        if (game.setups[setup][1] !== "Nothing") { 
+        	if (milkAmt < game.items[game.setups[setup][1]].capacity){
+        		output += `Through the transparent tubes her ${names[milkType]} goes into the barrel, slowly filling it. `;
+        	} else {
+        		output += `Her ${names[milkType]} overflows the container and all the surplus pours on the floor so you lose it. `;
+        		milkAmt = game.items[game.setups[setup][1]].capacity;
+        	}
+        } else {
+        	output += `Without any container to store her ${names[milkType]}, the pumps just pour it on the floor of the chamber.`;
+        	milkAmt = 0;
+        }
+        output += `When the long milking session finally ends, you remove the bondage and let the exhausted cow to go back to her stall to relax.<br><br>You got <b>${milkAmt}</b> of ${names[milkType]}.`;
+        if (milkType === 0) {
+        	game.itemsChest.slaveMilk += milkAmt;
+        } else if (milkType === 1) {
+        	game.itemsChest.edgeMilk += milkAmt;
+        } else if (milkType === 2) {
+        	game.itemsChest.painMilk += milkAmt;
+        } else if (milkType === 3) {
+        	game.itemsChest.normalMilk += milkAmt;
+        }
+        print(printInfo(), "leftInner");
+        folk[id].milked = true;
+        return output;
+      }
+    };
+
+    function present(id, item) {
+    	let output = "";
+    	if (item === "cowBell" && game.itemsChest.cowBell > 0) {
+    		game.itemsChest.cowBell--;
+    		folk[id].happy += random(40, 60);
+    		if (folk[id].happy > 100) {folk[id].happy = 100};
+    		output += `${folk[id].name} was happy to receive a new pretty cow bell. The bell's chimes cheer her up.`;
+    	} else if (item === "firstAid" && game.itemsChest.firstAid > 0) {
+    		game.itemsChest.firstAid--;
+    		folk[id].health += random(40, 60);
+    		if (folk[id].health > 100) {folk[id].health = 100};
+    		folk[id].happy += random(10, 15);
+    		if (folk[id].happy > 100) {folk[id].happy = 100};
+    		output += `You adminestred medical kit to heal ${folk[id].name} wounds. She seems much more healthy and thankful now.`; 
+    	} else {
+    		output += "Insufficient items!";
+    	}
+    	print(printInfo(), "leftInner");
+    	return output;
+    }
+
+    function printCows() {
+    	let output = "";
+    	if (game.ownedCows.length > 0) {
+    		game.ownedCows.forEach(function(id, i, arr) {
+    			if (folk[id].dead === false) {
+    				output += `<div class="cowCard"><div class="cowCardLeft"><b>${folk[id].name}</b><br>Udders: ${tits[folk[id].breast]}<br>Milk: ${folk[id].milkCur} / ${folk[id].milkMax}<br>Health: ${folk[id].health} / 100<br>Arousal: ${folk[id].arousal} / 100<br>Stress: ${folk[id].stress} / 100<br>Mood: ${folk[id].happy} / 100<br>Traits: ${folk[id].traits}</div><div class="cowCardRight">Milk her (chamber)<div class="marginFix"><a href = '#' class = "button" onclick = 'print(milkCow("${id}", "first"), "centerInner");'>First</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(milkCow("${id}", "second"), "centerInner");'>Second</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(milkCow("${id}", "third"), "centerInner");'>Third</a></div>Present:<div class="marginFix"><a href = '#' class = "button" onclick = 'print(present("${id}", "cowBell"), "centerInner");'> Cow bell</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(present("${id}", "firstAid"), "centerInner");'> Medical kit </a></div>Food (${folk[id].foodType})<div class="marginFix"><a href = '#' class = "button" onclick = 'setFood("${id}", "normalFood");'>Normal</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'setFood("${id}", "cowCream");'>Cow Cream</a></div></div></div>`;
+    			}
+    		});
+    	} else {
+    		output+= "No hucows in the barn!";
+    	}
+    	return output;
+    };
+
+    function menu() {
+    	let output = "<a href = '#' onclick = 'print(printCows(), `centerInner`);'>🐄 Cows</a>&nbsp;&nbsp;";
+    	output += "|&nbsp;&nbsp;<a href = '#' onclick = 'print(manage(), `centerInner`);'>🔧 Manage</a>&nbsp;&nbsp;";
+    	output += "|&nbsp;&nbsp;<a href = '#' onclick = 'print(lab(), `centerInner`);'>🍸 Lab</a>&nbsp;&nbsp;";
+    	output += "|&nbsp;&nbsp;<a href = '#' onclick = 'print(shop(), `centerInner`);'><b>ᚬ</b> Shop</a>&nbsp;&nbsp;";
+    	output += `|&nbsp;&nbsp;<a href = '#' onclick = 'print(sellMilk("normalMilk"), "centerInner");'><b>ᚬ</b> Sell milk</a>&nbsp;&nbsp;`;
+    	output += "|&nbsp;<a href = '#' onclick = 'print(nightCalc(), `centerInner`);'><b>🌙 End day</b></a>&nbsp;&nbsp;";
+    	return output;
+    };
+
+    function lab() {
+    	nom = 0;
+    	arm = 0;
+    	stm = 0;
+    	slm = 0;
+    	let output = "";
+    	output += `<div class="nightBlock"><b>Mix milk</b><br>
+    	<small>Mix different kinds of milk to get more valuable types.</small><br>
+    	<div class="labBlock"><center>Hucow milk<br><br><small>Amount:</small><br><input type = "text" size = "2" name = "testInput" id = "Input1" oninput = "nom = this.value"></center></div>
+    	<div class="labBlock"><center>Arousal milk<br><br><small>Amount:</small><br><input type = "text" size = "2" name = "testInput" id = "Input1" oninput = "arm = this.value"></center></div>
+    	<div class="labBlock"><center>Stress milk<br><br><small>Amount:</small><br><input type = "text" size = "2" name = "testInput" id = "Input1" oninput = "stm = this.value"></center></div>
+    	<div class="labBlock"><center>Slave milk<br><br><small>Amount:</small><br><input type = "text" size = "2" name = "testInput" id = "Input1" oninput = "slm = this.value"></center></div>
+    	<center><a href = '#' class="button" onclick = 'print(mixMilk(nom, arm, stm, slm), "centerInner");'>MIX!</a></center><br>
+    	</div>`;
+    	output += `<div style="width: 95%; border-radius: 5px; background-color: gold; padding: 5px; margin: 10px;">Sorry, milk mixing is not fully implemented yet!</div>`
+    	return output;
+    };
+
+    function mixMilk(nom, arm, stm, slm) {
+    	nom = parseInt(nom);
+    	arm = parseInt(arm);
+    	stm = parseInt(stm);
+    	slm = parseInt(slm);
+    	let output="";
+    	if (nom+arm+stm+slm === 0) {
+    		return "Nothing to mix!";
+    	}
+    	console.log (`${nom} ${arm} ${stm} ${slm}`);
+    	if (nom !== nom || arm !== arm || stm !== stm || slm !== slm) {
+    		return "That was not a number you insidious bastard :)";
+    	} else if (nom < 0 || arm < 0 || stm < 0 || slm < 0) {
+    		return "You not gonna trick me :)";
+    	} else {
+    		if (nom > game.itemsChest.normalMilk) {
+    			return "Not enough hucow milk!";
+    		}
+    		if (arm > game.itemsChest.edgeMilk) {
+    			return "Not enough arousal milk!";
+    		}
+    		if (stm > game.itemsChest.painMilk) {
+    			return "Not enough stress milk!";
+    		}
+    		if (slm > game.itemsChest.slaveMilk) {
+    			return "Not enough slave milk!";
+    		}
+        //mixing!
+        let supmilk = 0;
+        const bowl = nom+arm+stm+slm;
+        const parts = [nom, arm, stm, slm];
+        for (i = 0; i < bowl; i++) {
+        	if (arm > 0 && stm > 0) {
+        		slm++
+        		arm--
+        		stm--
+        	}
+        	if (nom > 0 && slm > 0) {
+        		supmilk++
+        		nom--
+        		slm--
+        	}
+        }
+        game.itemsChest.normalMilk += nom;
+        game.itemsChest.edgeMilk += arm;
+        game.itemsChest.painMilk += stm;
+        game.itemsChest.slaveMilk += slm;
+        game.itemsChest.superMilk += supmilk;
+        print(printInfo(), "leftInner");
+        output = `<b>After mixing you got this results:</b><br>Normal milk: ${nom}<br>Arousal milk: ${arm}<br>Stress milk: ${stm}<br>Slave milk: ${slm}<br>Super milk: ${supmilk}`;
+        return output;
+      }
+      return "Error";
+    }
+
+    function shop() {
+    	let output = "";
+    	let traits = "none";
+    	for (id in folk) {
+    		if (folk[id].owned === false) {
+    			if (folk[id].traits === "") {
+    				traits = "none"
+    			} else {
+    				traits = folk[id].traits
+    			}
+    			output += `<div class="cowBuyCard"><b>${folk[id].name}</b><br>Udders: ${tits[folk[id].breast]}<br>Milk: ${folk[id].milkMax}<br>Health: ${folk[id].health}<br>Traits: ${traits}<br><br><center><a href = '#' class = "button" onclick = 'print(buyCow("${folk[id].key}"), "centerInner");'>Buy for ${folk[id].cost} ᚬ</a></center></div>`;
+    		}
+    	}
+    	output += "<div id='shopFix'>";
+		 //output += `Simple bed for your hucows. ${game.items.simpleBed.price} ᚬ <a href = '#' onclick = 'print(buyItem("simpleBed"), "centerInner");'>Buy</a><br>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Milkers:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("oldMilker"), "centerInner");'>Old rusty milker (${game.items.oldMilker.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(buyItem("goodMilker"), "centerInner");'>Good milker (${game.items.goodMilker.price}  ᚬ)</a></div></div>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Barrels:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("smallBarrel"), "centerInner");'>Small (${game.items.smallBarrel.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(buyItem("mediumBarrel"), "centerInner");'>Medium (${game.items.mediumBarrel.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(buyItem("largeBarrel"), "centerInner");'>Large (${game.items.largeBarrel.price}  ᚬ)</a></div></div>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Devices:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("teasingStation"), "centerInner");'>Teasing station (${game.items.teasingStation.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#' class = "button" onclick = 'print(buyItem("shocker"), "centerInner");'>Shocker (${game.items.shocker.price}  ᚬ)</a></div></div>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Normal food:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("normalFood"), "centerInner");'>1 (${game.items.normalFood.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#'  class = "button" onclick = 'print(buyItem("normalFood", true), "centerInner");'>10 (${game.items.normalFood.price*10}  ᚬ)</a></div></div>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Cow Cream food:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("cowCream"), "centerInner");'>1 (${game.items.cowCream.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#'  class = "button" onclick = 'print(buyItem("cowCream", true), "centerInner");'>10 (${game.items.cowCream.price*10}  ᚬ)</a></div></div>`;
+		 output += `<div class="shopBlock"><div class="cowCardLeft">Different:</div><div class="cowCardRight"><a href = '#'  class = "button" onclick = 'print(buyItem("cowBell"), "centerInner");'>Cow Bell (${game.items.cowBell.price}  ᚬ)</a>&nbsp;&nbsp;<a href = '#'  class = "button" onclick = 'print(buyItem("firstAid"), "centerInner");'>Medical kit (${game.items.firstAid.price}  ᚬ)</a></div></div>`;
+
+		 return output;
+		};
+
+		function buyItem(item, ten) {
+			console.log(ten);
+			let mult = 1;
+			if (ten === undefined) {
+				mult = 1;
+			}
+			if (ten === true) {
+				mult = 10; 
+			}
+			if (game.items[item].price*mult > game.itemsChest.money) {
+				return `Not enough money! <a href = '#' class="button" onclick = 'print(shop(), "centerInner");'>Back</a>`;
+			} else {
+				game.itemsChest.money -= game.items[item].price*mult;
+				game.itemsChest[item] += mult;
+				print(printInfo(), "leftInner");
+				return `You will not regret this purchase, sir! <a href = '#' class="button" onclick = 'print(shop(), "centerInner");'>Back</a>`;
+			}
+		};
+		function buyCow(id) {
+			if (folk[id].cost > game.itemsChest.money) {
+				return `Not enough money! <a href = '#' class="button" onclick = 'print(shop(), "centerInner");'>Back</a>`;
+			} else {
+				game.itemsChest.money -= folk[id].cost;
+				game.ownedCows.push(folk[id].key);
+				folk[id].owned = true;
+				print(printInfo(), "leftInner");
+				return `You will not regret this purchase, sir! <a href = '#' class="button" onclick = 'print(shop(), "centerInner");'>Back</a>`;
+			}
+		};
+
+		function start() {
+			const output = "<center><img src='img/logo.png'>Welcome to the Happy Hucow Farm!</center><p>Not so long ago, your strict redneck of a grandmother departed this world. You were surprised when you found out that she left her farm to you in the will. The farm is in somewhat shitty condition, but you have some savings, so you decide to become a dairy farmer. Your new future awaits!</p><p><b>Besty's Instructions:</b> So, you buy cows in the shop, setup some milking chambers, and then milk your cows in the chambers. Don't forget that they need food and different conditions may result in different outcomes including milk change and even harsh consequences for a hucow.</p>";
+			return output;
+		}
+
+		function startGame() {
+			cowGen();
+			cowGen();
+			cowGen();
+			print(start(), `centerInner`);
+			print(menu(), `menuInner`);
+			print(printInfo(), "leftInner");
+		};
+
+		function print(what, where) {
+			document.getElementById(where).innerHTML = what;
+		};
+		startGame();
+	</script>
+</body>
+</html>
