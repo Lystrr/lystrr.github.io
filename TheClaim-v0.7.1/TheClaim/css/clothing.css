@@ -1,0 +1,170 @@
+.emoji-label {
+  font-size: xxx-large;
+}
+
+.zoom:hover,
+.clothing-item.zoom:hover {
+  transform: scale(2);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 5;
+}
+
+.item-group {
+  font-size: x-large;
+}
+
+.item-indent {
+  padding-left: 20px;
+}
+
+.clothing,
+.profile-row > * {
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.clothing-options .clothing-item {
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+}
+
+.outfit-label {
+  padding: 4px 4px;
+  background-color: #00B6B9;
+  color: #fff;
+  border-radius: 128px;
+  margin-right: 10px;
+}
+
+.clothing.removed .clothing-item {
+  outline: 4px solid red;
+  outline-offset: -4px;
+}
+
+.active-clothing .clothing-item {
+  border-style: solid;
+  border-color: green;
+  border-width: 3px;
+}
+
+.clothing-group {
+  padding-right: 20px;
+}
+
+.clothing-options-row > * {
+  vertical-align: middle;
+}
+
+.character-portrait,
+.clothing-item {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  background: white;
+}
+
+.outfits {
+  padding-left: 40px;
+}
+
+.shop-item-image .clothing-item,
+.clothing-options .clothing-item,
+.outfits .clothing-item {
+  width: 80px;
+  height: 80px;
+}
+
+.outfits .clothing-item {
+  width: 40px;
+  height: 40px;
+}
+
+.wardrobe-row {
+  padding-top: 10px;
+}
+
+.wardrobe-name {
+  display: inline-block;
+  min-width: 100px;
+}
+
+.wardrobe-actions > * {
+  padding-right: 20px;
+}
+
+.portrait {
+  width: 100px;
+  height: 100px;
+}
+
+#ui-bar-body .clothing-item,
+#ui-bar-body .character-portrait {
+  width: 80px;
+  height: 80px;
+}
+
+.slot-label {
+  text-align: center;
+}
+
+.outfit-error {
+  color: red;
+}
+
+.awkward-outfit-warning,
+.awkward-outfit-description {
+  color: yellow;
+}
+
+.feminine-outfit-description {
+  color: pink;
+}
+
+.masculine-outfit-description {
+  color: skyblue;
+}
+
+.clothing-explanation-table {
+  border-collapse: separate;
+  border-spacing: 20px 20px;
+}
+.clothing-explanation-table .item-valid-column,
+.clothing-explanation-table .item-id-column {
+  width: 40px;
+}
+.clothing-explanation-table img.tiny {
+  width: 32px;
+  height: 32px;
+}
+
+.clothing {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.clothing img.clothing-item {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.clothing .clothing-item.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  visibility: collapse;
+}
+
+.clothing.zoom:hover .clothing-item.overlay {
+  visibility: visible;
+}
+
+.item-emoji {
+  padding-left: 1px;
+  font-size: 8px;
+  color: black;
+}
+
+/*# sourceMappingURL=clothing.css.map */

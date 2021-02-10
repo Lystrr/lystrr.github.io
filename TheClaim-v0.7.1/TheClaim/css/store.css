@@ -1,0 +1,14 @@
+.shop-item-price > * {
+  display: inline;
+}
+
+.shop-item {
+  display: inline-block;
+  padding: 5px;
+}
+.shop-item .shop-item-image {
+  height: 80px;
+  width: 80px;
+}
+
+/*# sourceMappingURL=store.css.map */

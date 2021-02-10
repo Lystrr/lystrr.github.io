@@ -1,0 +1,61 @@
+.message {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message table {
+  margin: 0px;
+}
+
+.message .message-portrait {
+  height: 80px;
+  width: 80px;
+}
+
+.message td {
+  vertical-align: top;
+}
+
+.message .label {
+  padding-right: 32px;
+  font-weight: 700;
+}
+
+.speaker {
+  color: GREEN;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.drone {
+  color: PINK;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+
+.humantext {
+  font-style: italic;
+}
+
+.sue {
+  color: #b1a1d0;
+}
+
+.heir {
+  color: #f7cfcf;
+}
+
+.endOfLine {
+  color: darkred;
+  font: status-bar;
+  font-size: medium;
+  font-weight: 700;
+  letter-spacing: 16px;
+}
+
+.developerMessage {
+  font: status-bar;
+}
+
+/*# sourceMappingURL=dialogue.css.map */
