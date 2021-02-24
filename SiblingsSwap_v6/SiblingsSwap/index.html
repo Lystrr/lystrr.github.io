@@ -1,0 +1,73 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Siblings Swap</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="fontawesome.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+      <div id="iconbar">
+        <div class="icon-button" id="sidebar-button"><i class="fas fa-2x fa-save"></i></div>
+        <div class="icon-button active" id="story-button"><i class="fas fa-2x fa-book"></i></div>
+        <div class="icon-button" id="statsbar-button"><i class="fas fa-2x fa-thermometer-half"></i></div>
+      </div>
+      <div class="flow">
+        <div id="sidebar" class="inactive">
+          <div>
+            <h3>Siblings Swap</h3>
+            <hr>
+            <button id="save-button">Save</button>
+            <hr id="save-hr">
+            <div id="saves"></div>
+            <hr>
+            <button id="save-file-button">Export saves</button>
+            <button id="load-file-button">Import saves</button>
+            <input id="load-file-input" type="file" onchange='loadFromFileHandler(this)' />
+            <hr>
+            <h4>Settings</h4>
+            <div id="settings">
+              <div class="setting" id="setting-fade">
+                  <input type="checkbox" checked/> Fade-in text animation
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="https://yourevicky.tumblr.com" target="_blank">Tumblr</a>
+            <center>
+            <style>.bmc-button img{width: 27px !important;margin-bottom: 1px !important;box-shadow: none !important;border: none !important;vertical-align: middle !important;}.bmc-button{line-height: 36px !important;height:37px !important;text-decoration: none !important;display:inline-flex !important;color:#ffffff !important;background-color:#BB5794 !important;border-radius: 3px !important;border: 1px solid transparent !important;padding: 1px 9px !important;font-size: 23px !important;letter-spacing: 0.6px !important;box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;margin: 0 auto !important;font-family:'Cookie', cursive !important;-webkit-box-sizing: border-box !important;box-sizing: border-box !important;-o-transition: 0.3s all linear !important;-webkit-transition: 0.3s all linear !important;-moz-transition: 0.3s all linear !important;-ms-transition: 0.3s all linear !important;transition: 0.3s all linear !important;}.bmc-button:hover, .bmc-button:active, .bmc-button:focus {-webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;text-decoration: none !important;box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;opacity: 0.85 !important;color:#ffffff !important;}</style><link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet"><a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/ekaterina"><img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span></a>
+            </center>
+            <hr>
+            Version 6, released on September 9th, 2018.
+          </div>
+        </div>
+
+        <div id="main">
+            <div id="story" class="container">
+                <h1>Siblings Swap</h1>
+            </div>
+        </div>
+
+        <div id="statsbar" class="inactive">
+          <div><h2 id="statsbar-weekday" style="color: #f4daf5"></h2></div>
+          <div><h2 id="statsbar-time" style="color: #f4daf5"></h2></div>
+          <div id="statsbar-stats"></div>
+          <div id="statsbar-needs"></div>
+          <h3>Outfit</h3>
+          <div id="statsbar-outfit"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="ink.js"></script>
+    <script src="SiblingsSwap.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
