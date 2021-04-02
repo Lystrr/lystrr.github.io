@@ -1,0 +1,253 @@
+::Wake up
+<<silently>><<passTime>><</silently>><<if $player.skillCurse is 2>><<display "WakeUp SkillCurse">><<set $player.skillCurse to 3>><<elseif visited("Dream Marco") and not $wakeUpMarco>><<display "WakeUpMarco">><<elseif $day is 2>><<display WakeUp2>><<elseif $day is 3>><<display WakeUp3>><<elseif $day is 4>><<display WakeUp4>><<elseif $day is 5>><<display WakeUp5>><<elseif $day is 7>><<display WakeUp7>><<elseif $day is 8>><<display WakeUp8>><<elseif $day is 14>><<display WakeUp14>><<elseif $day is 18>><<display WakeUp18>><<else>>You wake up, <<if $hadDream>>trying to remember the details of your dream<<else>>glad to have had a dreamless sleep for once<</if>>. In a daze, you stumble to the shower, and wash yourself. You're no longer surprised to see nothing when you look down. It's still //weird//, but you're starting to accept it as more normal.<</if>>
+<<if $day is 5>>
+[[Bathroom|Shower]]<<elseif $day is not 14>>
+[[Shower]]<</if>>
+
+::Shower
+<<getTfProgress boobs>><<set $player.pants to null>><<set $player.underwear to null>><<set $player.shirt to null>><<set $player.bra to null>><<set $player.shoes to null>><<set $player.socks to null>><<if $day is 3>><<display Shower3>><<elseif $day is 4>><<display ShowerRealizePussy>><<elseif $day is 5>><<display Shower5>><<elseif $player.feminine<2>>You stumble to the shower and step inside, letting the water pour down on you. @@.thought;This feels so nice.@@
+
+You stand there for a couple minutes, slowly feeling more alive.<<elseif $tempTfValue>=2 and $player.arousal>=50>>You're just going to wash your hair and get clean. Nothing else.
+
+That's hard to do. As you're washing your body, your hand drifts over your chest, and you feel a tinge of pleasure.
+
+[[Touch your breasts some more|Shower Boobs]]
+[[Just finish the shower|Wash thoroughly]]<<else>>You're just going to wash your hair and get clean. Nothing else.
+
+<<if $player.arousal>50>>That's hard to do. You've been on edge, and your pussy is slick with your juices. You reach down to clean them up, but your hand lingers for longer than it has to.
+
+@@.thought;I'm already in the shower. It won't hurt to just keep my hand here.@@ You start to reach for your crotch.
+
+@@.thought;No!@@ With superhuman effort, you wrench your hand away. Whenever you masturbate, your body changes. You're not going to risk it, no matter how horny you are.
+
+@@.thought;I need to get off, though. Fuck! What can I do?@@<<else>>You soap up and start to rinse yourself off, pointedly avoiding looking down.<</if>><</if>>
+<<if $day is not 3 and $day is not 5>>
+[[Wash thoroughly]]<<if $player.arousal>50 and not visited("Masturbate 2 Orgasm")>>
+[[Masturbate|Masturbate Shower]]<<elseif visited("Masturbate 2 Orgasm")>>
+==Masturbate== @@.thought;There's no way I'm doing that after what happened the last time I masturbated.@@<<else>>
+==Masturbate== (You're not in the mood)<</if>><</if>>
+
+::Wash thoroughly
+<<if $day is 2>><<display WashThoroughly2>><<else>>@@.thought;No, I've got to stop. I don't want to get...tempted.@@
+
+You finish up your shower and dry off, hurrying into your dorm room.<</if>>
+
+<<if $witch.invitation is true>><<link "Head back to your room" "Witch Dorm Meeting">><<set $currentPassage to "Get Dressed">><</link>><<else>>[[Get Dressed]]<</if>>
+<<if visited("Shower Boobs Cover")>><<set $player.towel to 2>><<else>><<set $player.towel to 1>><</if>>
+
+::Masturbate Shower
+<<if $day is 2>><<display ShowerMasturbate2>><<elseif $day is 4>><<display ShowerMasturbateFemale>><<elseif visited("Masturbate 2 Orgasm")>>Your fingers trace over your pussy. Just that touch alone is enough to turn you on, and it's not long before a finger slips inside. Just as you find your clit, you have a moment of clarity.
+
+@@.thought;Why am I doing this? It'll just transform me@@ you realize suddenly.
+
+@@.thought;But I need this. Can't I do it just once?@@ You snap yourself out of it. @@.thought;No, <<print $player.firstname>>. Focus.@@
+
+With a monumental effort, you remove your hand and finish up the shower.<<else>>Your fingers trace over your pussy. Just that touch alone is enough to turn you on, and it's not long before a finger slips inside.
+
+<<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">>Suddenly, the bathroom door opens, and you jump. Embarrassed, you remove your hand from your pussy.
+
+Moments later, you hear the sound of pee hitting the urinal. @@.thought;It's just @@<<if $player.masculinity>=50>>@@.thought;another @@<<else>>@@.thought;a @@<</if>>@@.thought;guy using the bathroom. I could have kept going!@@
+
+The guy washes his hands and leaves, but the mood has been ruined.<<else>>Just then, the bell rings. @@.thought;Fuck!@@ You'll have to finish later.<</if>><</if>>
+
+<<if $witch.invitation is true>><<link "Head back to your room" "Witch Scorned">><<set $currentPassage to "Get Dressed">><</link>><<else>>[[Get Dressed]]<</if>>
+<<if $day is 2>><<set $player.arousal to 0>><<else>><<increaseArousal 5>><</if>>\
+<<if visited("Shower Boobs Cover")>><<set $player.towel to 2>><<else>><<set $player.towel to 1>><</if>>\
+
+::Shower Boobs Cover
+@@.thought;I can't risk them seeing my boobs!@@
+
+You feel a little humiliated as you wrap the towel around your chest. You're well aware that this is how girls do it.
+
+@@.thought;I hope I don't transform this. But I can't let anyone see my chest.@@
+
+You look down at your body. With the towel wrapped around you in this way, <<if $player.legs>=3>>along with your smooth legs, <<elseif $player.legs is 2>>along with your smooth leg, <</if>>and what you have underneath, you feel extremely feminine.
+
+<<if visited("Shower Boobs Cover")<2>>You're about to step out of the shower, when you feel it.
+
+<<link "You're cold. And it's not just because you stepped out of the shower" TfPassagePicker>><<set $tfRecoverPassage to "Get Dressed">><<set $tfReason to "towel">><<set $tfCircumstances.location to "boys bathroom">><<set $tfCircumstances.locationType to "bathroom">><<set $tfCircumstances.witnesses to "the guys">><<set $tfCircumstances.extraClothing to "naked">><</link>><<else>>You hesitate as you step out of the shower, but you don't transform.
+
+You slowly exhale and make your way back to your room.
+
+[[Get Dressed]]<</if>>
+<<set $player.towel to 2>>
+
+::Shower Boobs Uncovered
+<<getTfProgress voice>>You wrap your towel around your waist and exit the stall, hastily making your way towards the exit.
+
+@@.male;"Hey, <<print $player.firstname>>!"@@
+
+@@.player;"Hey!"@@ you call back, not turning around.
+
+<<if $tempTfValue>=2>>@@.male;"<<print $player.firstname>>? Are you okay? Your voice sounds different."@@
+
+@@.player;"Just a cold,"@@ you say.<<else>>@@.male;"You're not going to say hello?"@@
+
+@@.player;"I just did,"@@ you say, feeling uncomfortable. If you turn around, they might see your boobs.
+
+@@.male;"What, are you in a rush or something?"@@
+
+@@.player;"Yeah,"@@ you say, seizing the excuse. @@.player;"Sorry. I've gotta get going."@@<</if>>
+
+<<if $player.arousal>0>>The other guy starts to say something, but you don't give him a chance. The bathroom door closes behind you. Luckily, the hallway is empty, and you make it back to your room.<<else>>@@.male;"I bet you do,"@@ says the other guy, giving you  a wink.
+
+@@.thought;Was he flirting with me? No, he must have heard me in the shower.@@<</if>>
+
+@@.thought;That was too close.@@
+
+[[Get Dressed]]
+<<set $player.towel to 1>>
+
+::Shower Boobs
+<<getTfProgress voice>>You take your hands and move them to your breasts, the shower forgotten. It feels so good, and you let out a little moan. Who knew that they would feel so sensitive?
+
+You're not really sure how to do this, so you take turns squeezing each of your boobs. It feels good though, especially when your hands touch your nipples. They've gotten longer since you started the shower, and you're pretty sure that you're wet down there, though you don't dare find out.
+
+<<if $player.arousal<75>>The bathroom door closes, and you snap back to reality. @@.thought;Oh man, I'm in the boys shower, touching my boobs.@@ That thought sobers you up, and you finish the shower, and grab your towel.
+
+You're getting ready to go back to your dorm room when you hear a pair of male voices.
+
+@@.male;"Are you ready for the test?"@@
+
+@@.male;"No way man, I'm going to fail."@@<<increaseArousal 5>><<else>>The bathroom door closes, but you're so caught up in your pleasure that you hardly notice. You continue rubbing your boobs and tweaking your nipples until you suddenly start to shake.
+
+You clasp a hand over your mouth, but it's too late. You let out a moan, and an orgasm follows soon after. You collapse against the shower wall, panting heavily.
+
+Slowly, you become aware that you're not alone in the bathroom.
+
+<<if $tempTfValue is 4>>@@.male;"It sounds like some chick just got off."@@<<elseif $tempTfValue>=2>>@@.male;"It sounds like someone just got off."@@<<else>>@@.male;"It sounds like some dude just got off."@@<</if>>
+
+@@.male;"Hello?"@@ says his friend.<<set $player.arousal to 0>><</if>>
+
+@@.thought;Shit! I have to get past them, and they're going to notice my boobs!@@
+
+[[Wrap your towel around your chest and waist|Shower Boobs Cover]]
+[[Wrap your towel normally and hope they don't notice|Shower Boobs Uncovered]]
+[[Wait until they leave|Shower Boobs Wait]]
+
+::Shower Boobs Wait
+@@.thought;I'm not going to risk it. I'll wait them out.@@
+
+You turn off the water and dry off, while the boys continue talking. @@.thought;Come on. Finish up already!@@
+
+After what feels like an hour, the bathroom door closes, and you peek your head around the curtain. They're gone, thankfully, and you hurry back to your room.
+
+@@.thought;That was too close.@@
+
+[[Get Dressed]]
+<<set $player.towel to 1>>
+
+::Get Dressed
+<<set $player.towel to 0>><<set $changeEndPassage to "Wear">><<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">><<set $expectedOutfit to "casual">><<else>><<set $expectedOutfit to "school">><</if>><<display Clothes>>
+
+::Wear
+<<getTfProgress ass>><<set $tempAss to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<if $tempAss>=4 and $player.ownsGirlPants is false>><<display WearTorn>><<elseif $day is 2>><<display Wear2>><<elseif $day is 3>><<display Wear3>><<elseif $day is 4>><<display Wear4>><<elseif $day is 5>><<display Wear5>><<elseif $day is 8>><<display Wear8>><<elseif $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">>You automatically put on your school uniform, changing in the middle of your dorm room since Patrick and Marco are long gone. <<if $tempAss>1>>You notice that it fits a little differently. Before, it was slightly baggy on you. But now, your ass fills it out pretty well. <<else>>It still fits pretty well. Despite the other changes, your body is still the same as it was before the curse.<</if>><<if $day is 7 and $player.hasPanties>>Your boxers feel uncomfortable, and you wonder what it would be like to wear panties.
+
+@@.thought;No! I'm not going to wear them!@@<</if>><<if $player.hasBra and $player.bra>>
+
+You're especially glad when you put your <<print $player.shirt.informalName>> on. The sight of your new chest with your <<print $player.bra.informalName>> looked way too feminine. @@.thought;At least my boobs won't bounce around@@ you think, before realizing how alien that thought should be to you.<<set $player.hasWornBra to true>><<elseif $player.hasBra>>
+
+You wonder if you'll regret not wearing a bra. It //would// be more comfortable. @@.thought;No. I draw the line at wearing a bra.@@<<elseif $tempBoobs>=2>>
+
+Your shirt feels rough and uncomfortable against your new breasts, and when you move around, you can feel them moving too. @@.thought;I need to do something about this.@@<</if>><<else>>You put on your <<print $outfit>> <<if $outfit is "casual">>clothes<<else>>uniform<</if>>, looking forward to lounging around during the weekend. At least these clothes are comfy<<if $outfit is not "school">>, unlike your school uniform<</if>>. To anyone else, you're wearing the same clothes as any other guy. <<if $player.underwear.panties is true and $player.bra>>Only you know that you're wearing a bra and panties. It feels like you have a kinky secret underneath your clothes.<<elseif $player.underwear.panties is true>>Only you know that you're wearing panties. It feels like you have a kinky secret underneath your <<print $player.pants.informalName>>.<<elseif $player.bra>>Only you know that you're wearing a bra. It feels like you have a kinky secret underneath your <<print $player.shirt.informalName>>.<<else>>They don't know that underneath your <<print $player.pants.informalName>> and <<print $player.underwear.informalName>> is a pussy.<</if>><</if>>
+
+<<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">>[[Think of something to do]]<<elseif $day is not 8>>[[Go to class]]<</if>>
+
+::Think of something to do
+<<showArousal>><<if $day is 2>><<display WeekendPlan2>>
+
+<<elseif $day>3>>What are you going to do? You've been looking forward to the weekend, but now that it's here, it feels like it would be a waste to just play video games when you can figure out about this curse or train. @@.thought;Would <<print $qb.firstname>> even want to train now? Probably not. I should wait until later.@@
+
+<</if>><<if $day is 2>>[[Play video games][$activity1 to "videogames"]]
+[[Explore Campus|ExploreCampus]]<<else>><<display ExploreCampus>><</if>>
+<<set $currentPassage to "Lunch">>
+
+::Go to class
+<<getTfProgress ass>><<set $tempAss to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<if $day is not 18>><<showArousal>><</if>><<if $day is 18>><<display MorningClassPeriod>><<elseif $tempAss>=4 and $timeOfDay is 1 and $player.ownsGirlPants is false>><<display MorningClassPants>><<elseif $player.feet is 2 and $player.ownsGirlShoes is false and $timeOfDay is 1>><<display MorningClassShoes>><<elseif $day is 4>><<display MorningClass4>><<elseif $day is 5>><<display MorningClass5>><<elseif $day is 6>><<display MorningClass6>><<elseif $day is 7>><<display MorningClass7>><<elseif $day is 8>><<display MorningClass8>><<elseif $tempBoobs>=4 and $player.bra is not null and not visited("MorningClassHeat Remove")>><<display MorningClassHeat>><<else>>You walk into bio. Some of the guys nod at you, and you give them a nod back, but your heart isn't in it. Usually, you would go talk and joke with them before class started, but now something seems different.
+
+They don't know anything's different about you, at least as far as you can tell, so that's not it. @@.thought;No, it's more that I don't have that much in common with them anymore.@@
+
+That thought makes you feel a little sad. You've lost your muscles<<if $player.cock is 0>> and your masculinity<</if>>, and now you're losing your friends too.
+
+The classes themselves pass uneventfully. You're a little nervous about History, but luckily, <<print $witch.firstname>> ignores you.
+
+[[Soon, it's time for lunch|Lunch]]
+<<set $team.respect to $team.respect-1>><</if>>
+
+::Play video games
+<<if $day is 2>><<display VideoGames2>><<else>>[[Lunch]]<</if>>
+
+::ExploreCampus
+<<if $day is 2>><<display ExploreCampus2>><<if not visited("Weight Room")>>
+[[Weight Room][$activity1 to "gym"]]<</if>><<elseif $day is 3>><<display ExploreCampus3>><<if not visited("Weight Room")>>
+[[Weight Room][$activity1 to "gym"]]<</if>><<else>><<display ExploreCampusNormal>><</if>>
+
+::Weight Room
+<<display WeightRoomIntro>>
+
+::Lunch
+<<set $timeOfDay to 2>><<if $day is 2>><<display Lunch2>><<elseif $day is 3>><<display Lunch3>><<elseif $day is 31>><<display "Lunch Halloween">><<elseif $dayOfDate and $day is $dayOfDate and $qb.date is $player.firstname>><<if $qb.dateHelp is $girlfriend.firstname>><<display "QBDate Girlfriend Makeover">><<else>><<display "QBDate Witch Makeover">><</if>><<elseif $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">><<display LunchWeekday>><<else>><<display LunchWeekend>><</if>>
+<<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">><<set $currentPassage to "Afternoon">><<else>><<set $currentPassage to "Gym">><</if>>
+
+::Afternoon
+<<passTime>><<if $day is 2>><<display HomecomingIntro>><<elseif $day is 3>><<display Dinner3>><<else>><<display DinnerWeekend>><</if>><<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">><<set $currentPassage to "Night">><<else>><<set $currentPassage to "Evening">><</if>><<spyOnClub>>
+
+::Gym
+<<getTfProgress boobs>><<if $day is 4>><<display Gym4>><<elseif $day is 5>><<display Gym5>><<elseif $day>=18 and $day<=22>><<display GymPeriod>><<elseif $tempTfValue>=3 and not visited("Gym Shirt Finish")>><<display "Gym Shirt Introduce">><<elseif $player.wearsShirtForSwimming and not visited("Gym Onepiece Realize")>><<display "Gym Onepiece Start">><<elseif visited("Gym Onepiece Realize") and $player.wearsOnepiece is false>><<display "Gym DecideNoToOnepiece">><<elseif visited("Girlfriend Girltalk DateQB") and not visited("Gym Morgan Talk")>><<display "Gym Morgan">><<elseif $player.wearsOnepiece>><<display "Gym Onepiece Regular">><<elseif $day>=7 and not visited("Gym Day 7 Lose Trunks")>><<display Gym7>><<elseif $player.bra>><<display "Gym Bra">><<else>><<display GymNormal>><</if>>
+
+::AfternoonClass
+<<if $player.pants is null>><<finishSexScene>><</if>><<showArousal>><<if $day is 4>><<display Swimming4>><<elseif $day is 5>><<display Swimming5>><<elseif $day is 6>><<display LanguageProject>><<elseif $day is 7>><<display LanguageProjectPressure>><<elseif $day is 8>><<display LanguageProjectBlamed>><<elseif $day is 29>><<display PepRally>><<else>>You walk into Spanish and sit down with your group. It's a workday, and the three of you get to work on your project in peace. <<if visited("Panty Raid Intro")>>A couple of your group members shoot you dirty looks, but you try to ignore them.<<else>>As you work, you talk with your group a little bit. They're not usually the people you'd hang out with, but they're pretty cool.<</if>>
+
+[[Finish school|Evening]]<</if>>
+
+::Evening
+<<showArousal>><<shouldSeeTherapist>><<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">>You force yourself to do homework. It's not fun, and you feel a little stupid when you have to reread the same paragraph in the textbook for the third time, but you finish it and feel productive.
+
+[[Continue|Night]]<<else>><<set $timeOfDay to 3>><<if $shouldSeeTherapist>><<display "AfterSchool Therapist">><<elseif $day is 4>><<display AfterSchool4>><<elseif $day is 5>><<display AfterSchool5>><<elseif $day is 6>><<display AfterSchool6>><<elseif $day is 7>><<display RaidOrProject>><<elseif $day is 8>><<display AfterSchool8>><<elseif $day is 11 or $day is 13>><<display AfterSchool11>><<elseif $day is 15 or $day is 22 or $day is 29>><<display AfterSchoolGame>><<elseif $day is 18 and $garcia.detention is true>><<display AfterSchoolDetention>><<elseif $day>=18 and $day<=19 and ($player.isWearingTampon is false or ($player.underwear.panties is false and (not $pantyRaid or $pantyRaid.takenFrom is "")))>><<display AfterSchoolShopping>><<else>><<display AfterSchool5>><</if>><</if>><<spyOnClub>>
+
+::Night
+<<set $timeOfDay to 4>><<if $day is 8>><<display "Game 2">><<elseif $day is 15>><<display "Game 3">><<elseif $day is 22>><<display "Game 4">><<elseif $day is 29>><<if $player.skillCurse<4>><<display "Game 5">><<else>><<display "Game 5 NotAllowed">><</if>><<elseif $day is 18>><<display "Team Practice 5">><<elseif $day is 20>><<display "Team Practice 6">><<elseif $day is 25>><<display "Team Practice 7">><<elseif ($dayOfWeek is "Monday" or $dayOfWeek is "Wednesday") and $day>25 and $player.skillCurse<4>><<display "Team Practice Default">><<else>>@@.thought;It's nighttime already? How did the time pass so fast?@@ You're annoyed at yourself for not doing more during the day. You've got to figure out a way to reverse this curse!
+
+On the other hand, you've been feeling a lot less social since your transformation. @@.thought;If I shut myself up in my room and play video games, I just have to wait until the end of the football season. But then I'd need me or <<print $qb.firstname>> to win the championship or I'd be stuck like this!@@
+
+That idea is too horrible to think about, so you turn your mind back to picking an activity to do.
+
+<<IsWitchContentAvailable>><<link "Work out in the gym" $workoutPassage>><</link>>
+<<link "Research witches" $libraryPassage>><</link>><<if $curseActive and $pantyRaid.takenFrom is "Elvira" and $day>7>>
+<<link "Ask Elvira to remove the curse" "Elvira Panties Remove Intro">><<set $currentPassage to "Sleep">><</link>><<if not visited("Library Elvira Panties Read")>>
+<<link "Go to the library and figure it out yourself" "Library Elvira Panties">><<set $currentPassage to "Sleep">><</link>><</if>><</if>><<if $witch.contentAvailable>>
+<<link "Talk to $witch.firstname" "WitchPassagePicker">><</link>><</if>><<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<link "Go see $qb.firstname" "QBPassagePicker">><</link>><</if>>
+<<link "Do homework" $homeworkPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Sleep">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>><</if>>
+<<set $currentPassage to "Sleep">>
+<<increaseArousal 10>>
+
+::Sleep
+<<showArousal>><<if $day is 29 and $player.skillCurse is 4>><<display "Game 5 News">><<elseif $day is 31>><<display "Sleep Halloween">><<elseif $girlfriend.dateMarcoPermission>0 and not visited("Dream Marco")>><<display "Sleep Marco Conversation">><<elseif $player.buttplugCurse is true>><<display "Patrick Masturbate">><<else>><<if $day is 2>><<display Sleep2>><<elseif $day is 4>><<display Sleep4>><<elseif $day is 5>><<display Sleep5>><<elseif $day is 6>><<display Sleep6>><<elseif $day is 7>><<display Sleep7>><<elseif visited("Keep Teddy")>>You're still feeling tired and humiliated, but when you see your life-size teddy bear in your bed, everything feels better. You wrap an arm around him, and you're still cuddling him when you fall asleep.<<else>>You're feeling tired from the day, the humiliation, and everything you've been through recently. When you lie down to sleep, you're out like a light.<</if>>
+
+[[Sleep|Dream]]<<if $girlfriend.dateMarcoPermission is 1>>
+[[Tell Marco you changed your mind|Sleep Marco ChangedMind]]<</if>><</if>>
+
+::Dream
+<<if $player.skillCurse is 1>><<set $player.skillCurse to 2>><<display "Dream KickedOffTeam">><<set $hadDream to true>><<skillCurse>><<elseif $day is 2>><<display Dream2>><<set $hadDream to true>><<elseif $day is 3>><<display Dream3>><<set $hadDream to true>><<elseif $day is 4>><<display Dream4>><<set $hadDream to true>><<elseif $day is 6>><<display Dream6>><<set $hadDream to true>><<elseif $day is 7>><<display Dream7>><<set $hadDream to true>><<elseif $dayOfDate and $day+1 is $dayOfDate and $qb.date is $player.firstname>><<display "Dream QBDate">><<set $hadDream to true>><<else>>You have a dreamless sleep.<<set $hadDream to false>><</if>><<if $day>=29 and ($dayOfDate and $day+1 is $dayOfDate and $qb.date is $player.firstname) is false>>
+
+<<IsNewGFContentAvailable>><<IsNewWitchContentAvailable>><<AreNewTfsAvailable>><<IsNewQBContentAvailable>><<if visited($endPassage.game) and visited($endPassage.team) and $newTfsAvailable is false and $witch.newContentAvailable is false and $girlfriend.newContentAvailable is false and $qb.newContentAvailable is false>>''Warning: It looks like you have accessed all of the content. You can continue to play if you would like, but there may not be much to do.''<<else>>''Warning: You are running out of content to explore. You can continue to play if you would like, but the remaining content may be sparse.''
+
+Here's what it looks like you have left:
+<<if $newTfsAvailable>>* Transformations
+<</if>><<if not visited($endPassage.game)>>* Football games
+<</if>><<if not visited($endPassage.team)>>* Team Practices
+<</if>><<if $qb.newContentAvailable>>* <<print $qb.firstname>> content
+<</if>><<if $girlfriend.newContentAvailable>>* <<print $girlfriend.firstname>> content
+<</if>><<if $witch.newContentAvailable>>* <<print $witch.firstname>> content<</if>>
+
+Note: Some content may be unavailable due to choices you have made or bugs in the game.<</if>><</if>>
+
+[[Wake up]]
+
+::End of Current Content
+Sorry, this is the end of current content for this path. Press back and choose another option.
+
+<<back>>
+<<passTime>>

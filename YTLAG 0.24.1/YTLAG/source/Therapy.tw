@@ -1,0 +1,1347 @@
+::Therapist 1
+<<set $countSecret to 0>><<if $qb.knowsSecret>><<set $countSecret to 1>><</if>><<if $witch.knowsSecret>><<set $countSecret to $countSecret+1>><</if>><<if $girlfriend.knowsSecret>><<set $countSecret to $countSecret+1>><</if>>You knock tentatively on Mrs. Garcia's office door. You're surprised that you showed up at all. Two adults, one of whom you don't even know, are about to talk to you about your transformation. @@.thought;What am I doing? I can't talk about this!@@ <<if $countSecret is 0>>You haven't even told anyone you were transformed<<elseif $countSecret is 1>>The only person who knows your secret is <<if $qb.knowsSecret>><<print $qb.firstname>><<elseif $witch.knowsSecret>><<print $witch.firstname>><<else>><<print $girlfriend.firstname>><</if>><<elseif $countSecret is 2>>The only people who know your secret are <<if $qb.knowsSecret is false>><<print $witch.firstname>> and <<print $girlfriend.firstname>><<elseif $girlfriend.knowsSecret is false>><<print $witch.firstname>> and <<print $qb.firstname>><<else>><<print $qb.firstname>> and <<print $girlfriend.firstname>><</if>><<else>>Sure, you've told <<print $witch.firstname>>, <<print $qb.firstname>> and <<print $girlfriend.firstname>>, but you didn't have a choice<</if>>. And now Mrs. Garcia and her husband are going to find out too! @@.thought;Well, they won't find out exactly. Mrs. Garcia just thinks I'm transitioning.@@
+
+You take a deep breath and force yourself to calm down. @@.thought;This guy is a professional therapist. I can trust him. And who knows. Maybe it will help.@@
+
+You start thinking about what you'll tell Mr. Garcia, only to be interrupted by his wife. @@.female;"Come in, <<print $player.firstname>>. Mr. Garcia is on his way over here."@@
+
+@@.player;"Oh, okay. Do you know how much longer he'll be?"@@
+
+She checks the clock. @@.female;"Not too long. Maybe five more minutes."@@ She looks around, as if suddenly realizing that you're still standing in the doorway. @@.female;"Why don't you come in, and we can talk in my office?"@@
+
+@@.player;"Thank you"@@ you say, stepping in. It's a little small, but it's probably the best place to meet. School's out, and there's unlikely to be any people around. You would die if anyone eavesdropped.
+
+[[Wait for Mr. Garcia|Therapist 1 Wait]]
+<<set $therapistPassage to "Therapist 2">>
+
+::Therapist 1 Wait
+There's silence in the room as you and Mrs. Garcia wait for her husband to show up. She glances over a few times, but you're lost in thought.
+
+@@.thought;What should I tell him? He's going to ask me all sorts of questions. I can't tell him about magic or the curse. He wouldn't believe me. Do I just make up a story about why I'm transitioning? No, he's just trying to help, and I don't want to waste time. I could talk about some of the other things that are stressing me out, and try to avoid the changes altogether. Would he let me get away with that?@@
+
+Mrs. Garcia makes small talk with you. You engage with her politely, but your mind is elsewhere.
+
+@@.thought;Or do I just tell him about <<print $witch.firstname>>, and my transformations? He probably wouldn't believe me, but if he did, this could actually be helpful.@@
+
+[[Mr. Garcia walks in|Therapist 1 Start]]
+
+::Therapist 1 Start
+@@.male;"Hi, <<print $player.firstname>>. It's nice to meet you."@@ You take a look at him. He's a big, beefy guy, and you wonder if he played any football when he was in school. He looks like he's in his mid-forties.
+
+He reaches out to shake your hand. You take it<<if $player.armStrength>40>>. @@.thought;He has a strong grip.@@<<else>> and wince at his tight grip.<</if>>
+
+@@.male;"Our paths haven't crossed yet, but I'm the therapist for Pinewood Prep."@@ You nod. You know that already. @@.male;"Now why don't you tell me a little bit about you."@@
+
+@@.player;"Um..."@@
+
+@@.male;"Mrs. Garcia told me a little bit about what was going on. I understand that you're transitioning?"@@
+
+[[Deny it|Therapist 1 Deny]]<<if $player.masculinity<70>>
+[[Deflect|Therapist 1 Deflect]]<</if>><<if $player.masculinity<=40>>
+[[Say nothing|Therapist 1 Silent]]<</if>>
+
+::Therapist 1 Silent
+You're about to nod your head when you realize that doing so would mean another transformation. Instead, you sit silently and stare at the floor.
+
+@@.female;"Brad, you have to be more gentle with him. He doesn't know you yet."@@
+
+Mr. Garcia looks a little embarrassed to be told what to do by his wife. But he turns to you, he says, @@.male;"I'm sorry. I don't want you to feel like you're being interrogated."@@
+
+@@.player;"Thanks. But, uh, I don't feel that way,"@@ you say, not wanting to tell him the real reason why you were silent.
+
+@@.male;"It's okay, <<print $player.firstname>>. I'll give you a chance to talk."@@
+
+@@.player;"About anything?"@@
+
+@@.male;"Sure. We can do that later. But for now, let's stay on this topic."@@
+
+@@.player;"So anything I want, as long as it's about, uh, gender?"@@
+
+@@.male;"You got it."@@
+
+<<getTfProgress boobs>><<if $player.hasBra is false and $tempTfValue>=2>>[[Your boobs|Therapist 1 Boobs]]<<else>>[[Your clothes|Therapist 1 Clothes]]<</if>><<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>
+<<link "Sex with $qb.firstname" "Therapist 1 QBSex">><</link>><<elseif $player.homosexuality>2>>
+[[Thoughts about men|Therapist 1 Gay]]<</if>>
+[[He did say you could talk about anything. Tell him about your curse|Therapist 1 Witch]]
+
+::Therapist 1 Deflect
+@@.player;"No! Not really."@@
+
+@@.male;"Then why did you come here?"@@
+
+@@.player;"I, uh, Mrs. Garcia saw me wearing panties and she set this session up. But that doesn't mean I'm a girl, does it?"@@
+
+@@.male;"It depends. Do you feel like a girl?"@@
+
+@@.player;"No,"@@ you say after way too long of a pause.
+
+Seeing how uncomfortable you're getting, Mr. Garcia changes the subject. @@.male;"It's okay, <<print $player.firstname>>. I'll give you a chance to talk."@@
+
+@@.player;"About anything?"@@
+
+@@.male;"Sure. We can do that later. But for now, let's stay on this topic."@@
+
+@@.player;"So anything I want, as long as it's about, uh, gender?"@@
+
+@@.male;"You got it."@@
+
+<<getTfProgress boobs>><<if $player.hasBra is false and $tempTfValue>=2>>[[Your boobs|Therapist 1 Boobs]]<<else>>[[Your clothes|Therapist 1 Clothes]]<</if>><<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>
+<<link "Sex with $qb.firstname" "Therapist 1 QBSex">><</link>><<elseif $player.homosexuality>2>>
+[[Thoughts about men|Therapist 1 Gay]]<</if>>
+[[He did say you could talk about anything. Tell him about your curse|Therapist 1 Witch]]
+
+::Therapist 1 Deny
+@@.player;"No! I'm not turning myself into a girl like some kind of sissy!"@@
+
+@@.male;"Then why did you come here?"@@
+
+@@.player;"Your wife set this up. Ask her."@@
+
+@@.male;"She said she saw you wearing panties."@@
+
+You look down, embarrassed.
+
+@@.male;"Usually if a guy wears panties, maybe they don't feel so comfortable being a guy. But there are certainly men who wear panties and are still men."@@
+
+@@.thought;It's not my fault I wore panties! It's this stupid period. And boxers don't fit on me anymore anyway.@@
+
+Mr. Garcia changes the subject. @@.male;"It's okay, <<print $player.firstname>>. I'll give you a chance to talk."@@
+
+@@.player;"About anything?"@@
+
+@@.male;"Sure. We can do that later. But for now, let's stay on this topic."@@
+
+@@.player;"So anything I want, as long as it's about, uh, gender?"@@
+
+@@.male;"You got it."@@
+
+<<getTfProgress boobs>><<if $player.hasBra is false and $tempTfValue>=2>>[[Your boobs|Therapist 1 Boobs]]<<else>>[[Your clothes|Therapist 1 Clothes]]<</if>><<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>
+<<link "Sex with $qb.firstname" "Therapist 1 QBSex">><</link>><<elseif $player.homosexuality>2>>
+[[Thoughts about men|Therapist 1 Gay]]<</if>>
+[[He did say you could talk about anything. Tell him about your curse|Therapist 1 Witch]]
+
+::Therapist 1 Boobs
+@@.player;"Um, I was wondering..."@@ you begin, not sure how to phrase what you want to say without revealing everything about <<print $witch.firstname>> and the curse.
+
+@@.male;"You can tell me,"@@ Mr. Garcia says encouragingly.
+
+@@.player;"Um, my chest has changed,"@@ you begin. @@.player;"I'm growing boobs, and I don't know..."@@
+
+@@.male;"<<print $player.firstname>>, I'm going to stop you right there. Now, I know that you want to transition, and that having female breasts are a part of that. But self-medicating is dangerous, and I would strongly recommend against it."@@
+
+@@.player;"Um,"@@ you say, taken aback. @@.thought;Wow, he's completely wrong. I don't //want// to transform, it just keeps happening to me. And I'm not self-medicating or whatever he was talking about!@@
+
+@@.male;"I'll get back to your question, but first, I want you to promise me you'll stop."@@
+
+@@.player;"Fine. I promise I won't give myself hormones."@@ You feel a little bad. It's not technically a lie, but it's not the truth either.<<if $player.controlQuestKnowledge is true>> @@.thought;I can control my transformations now. If I made sure my boobs didn't get bigger, then I would be telling the truth.@@<</if>>
+
+Mr. Garcia nods, apparently satisfied. @@.male;"Now, I have to say that I noticed some chest development myself. How does that feel?"@@
+
+[[It's uncomfortable, especially when I'm playing football|Therapist 1 Boobs Uncomfortable]]
+[[I haven't noticed|Therapist 1 Boobs Unbothered]]
+
+::Therapist 1 Clothes
+@@.player;"Um, I've been wearing different clothes lately."@@
+
+@@.male;"Yes, my wife told me."@@
+
+You look at Mrs. Garcia. @@.female;"I'm sorry, <<print $player.firstname>>. He needed to know what you were going to talk about."@@
+
+@@.male;"Anyway, there's nothing wrong with wearing panties. If female underwear makes you feel girly, then by all means keep wearing it."@@
+
+@@.player;"Yeah, but I'm not wearing it for that."@@
+
+@@.male;"That's fine too,"@@ Mr. Garcia says. @@.male;"Many men wear women's underwear. One time, all of my underwear was in the laundry, and I..."@@
+
+@@.female;"Brad!"@@
+
+@@.player;"Wait, really?"@@ you ask. You can't believe that this masculine man would have ever worn panties.
+
+@@.male;"Yes, that's my point. Wear whatever you want. Nobody's stopping you."@@
+
+<<if $curseActive>>@@.thought;Something is stopping me. The curse that <<print $pantyRaid.takenFrom>> put on my panties.@@ Still, this talk has made you feel a little bit better.<<else>>You smile. @@.thought;That was actually helpful.@@<</if>>
+
+@@.male;"Is there anything else you want to talk about?"@@ Mr. Garcia asks.
+
+[[The football team|Therapist 1 Football]]<<if $player.relationship is "" or visited("Girlfriend Hang Out Crush") or $player.gotFucked>>
+[[$girlfriend.firstname|Therapist 1 Girlfriend]]<</if>>
+
+::Therapist 1 Witch
+@@.player;"You said I could talk about anything, right? As long as it's related to, uh, my gender?"@@
+
+@@.male;"That's right."@@
+
+@@.player;"Okay."@@ You take a deep breath. @@.player;"Well, the truth is, I'm not transitioning."@@
+
+@@.male;"Oh. So you're a guy who likes to wear panties?"@@
+
+@@.player;"No,"@@ you say. @@.thought;Wait, did I just say that I //wasn't// a guy?@@
+
+@@.player;"Sorry, that's not what I meant. What I mean is, yes, I'm a guy. But the reason that all of this,"@@ you say, gesturing at your body, @@.player;"has been happening is that I was cursed."@@
+
+The Garcias look at you with a blank look on their face.
+
+@@.player;"Um, basically I was cursed by...a witch,"@@ you say, deciding not to mention <<print $witch.firstname>>'s name. If she somehow found out you were telling teachers about what she did, you know she wouldn't be happy.
+
+Mr. Garcia smirks. You decide to go on. @@.player;"I know it sounds unbelievable, but I swear I'm telling the truth. Now whenever I do anything that's even a little bit feminine, I transform."@@
+
+@@.female;"Transform?"@@ Mr. Garcia asks, skeptically.
+
+@@.player;"Yeah. I become more feminine. My butt will get bigger, or..."@@ you trail off, not wanting to talk about the exact nature of your transformations.
+
+[[Mrs. Garcia opens her mouth to speak|Therapist 1 Witch Reject]]
+
+::Therapist 1 QBSex
+@@.player;"Um, before this year, I thought that I was straight. But then this happened, and I've been thinking more and more about guys."@@
+
+@@.male;"Well, that's normal."@@
+
+@@.player;"Sure. But it didn't stop there."@@ You take a deep breath. @@.player;"I've been helping <<print $qb.firstname>> get better at quarterback."@@
+
+@@.male;"That's very generous of you."@@
+
+@@.player;"And then one day, after practice, one thing led to another and..."@@ Mr. Garcia gives you an encouraging smile. @@.player;"We had sex."@@
+
+Both of the Garcias look surprised to hear this.
+
+Mr. Garcia is the first to recover. @@.male;"You know that there's nothing wrong with that, right?"@@
+
+@@.player;"Yeah, I know. I can have sex with whoever I want. But I feel so gay."@@
+
+@@.male;"That's not gay."@@
+
+@@.player;"How is it not gay?"@@
+
+@@.male;"If two men were having sex, then yes, that would be gay. But if a girl has sex with a guy, that doesn't make her gay."@@
+
+Your face flushes. <<if visited("Therapist 1 Silent") or visited("Therapist 1 Deflect")>>He just called you a girl to your face! @@.thought;I have been feeling more feminine lately, and I look more girly, but does that make me a girl? I'm still a guy, aren't I?@@ His logic does make at least a little bit of sense, though. If you're a girl, then wanting to have sex with a man would make you straight. If you fucked <<print $girlfriend.firstname>>, then that would be gay.<<else>>@@.player;"I'm not a girl!"@@
+
+@@.male;"Sorry,"@@ he says, holding up his hands. @@.male;"Then I guess you're gay. Or at least bi."@@<</if>>
+
+You sigh. You don't know if his talk has made you feel better or not.
+
+@@.male;"Is there anything else you want to talk about?"@@ Mr. Garcia asks.
+
+[[The football team|Therapist 1 Football]]<<if $player.relationship is "" or visited("Girlfriend Hang Out Crush") or $player.gotFucked>>
+[[$girlfriend.firstname|Therapist 1 Girlfriend]]<</if>>
+
+::Therapist 1 Gay
+@@.player;"Um, before this year, I thought that I was straight. But then this happened, and I've been thinking more and more about guys."@@
+
+@@.male;"Well, that's normal."@@
+
+@@.player;"Sure. But it didn't stop there."@@ You take a deep breath. @@.player;"I've seen some guys and thought they were good looking. And I even..."@@ You look at Mr. Garcia. He gives you an encouraging smile. @@.player;"Thought about what it would be like to, um, have sex with a guy."@@
+
+@@.male;"Yeah."@@
+
+@@.player;"You don't seem surprised."@@
+
+@@.male;"I figured that when you said you were thinking about guys."@@
+
+@@.player;"You don't think this is a big deal?"@@
+
+@@.male;"It's not. So what if you like guys?"@@
+
+@@.player;"I don't...I don't know."@@
+
+@@.male;"Nothing. It's not a big deal. In fact, if you were a girl, then liking a guy would make you straight."@@
+
+You fall silent. You hadn't thought about it like that. But his implication isn't making you feel any better. @@.thought;I don't even like guys. Okay, maybe I've thought about how good they looked, or imagined one of them kissing me, or undressing me, and then...@@
+
+You look up. Mr. Garcia is looking at you with a raised eyebrow.
+
+@@.male;"Is there anything else you want to talk about?"@@ Mr. Garcia asks.
+
+[[The football team|Therapist 1 Football]]<<if $player.relationship is "" or visited("Girlfriend Hang Out Crush") or $player.gotFucked>>
+[[$girlfriend.firstname|Therapist 1 Girlfriend]]<</if>>
+
+::Therapist 1 Boobs Uncomfortable
+@@.player;"It's uncomfortable, especially when I'm playing football or running! They bounce around, and..."@@ you stop, suddenly aware that you're telling two adults how it feels to have tits.
+
+@@.male;"I can't undo the hormones that you've taken, but have you thought about getting a bra?"@@
+
+@@.player;"What? No!"@@
+
+@@.female;"It really does help,"@@ Mrs. Garcia says, speaking for the first time.
+
+You give it some thought. @@.thought;If no one saw, and I was more comfortable...@@
+
+@@.female;"Maybe you could go shopping in the mall?"@@
+
+You picture yourself wandering around the lingerie store, surrounded by women. @@.player;"N...no. I can't do that."@@
+
+@@.female;"What if one of your female friends helped you?"@@
+
+<<if $girlfriend.knowsSecret or visited("Girlfriend Strapon")>>@@.thought;<<print $girlfriend.firstname>> might be able to help. That would be so embarrassing though. I was...am her boyfriend!@@ <</if>><<if visited("Witch ControlTf Witch Shave")>>@@.thought;<<print $witch.firstname>> helped me shave. Maybe she would help me with this too.@@ <<elseif $witch.knowsSecret>>@@.thought;I wonder if <<print $witch.firstname>> would be willing to help.@@ <</if>><<if $girlfriend.knowsSecret is false and not visited("Girlfriend Strapon") and not visited("Witch ControlTf Witch Shave") and $witch.knowsSecret is false>>You shake your head. @@.player;"I don't have anyone I could ask."@@
+
+@@.male;"Maybe you should be more open with them. They can give you some great advice about your transition.@@<<else>>
+
+@@.player;"Yeah, that's a good idea."@@<</if>>
+
+You nod, feeling a little bit better. @@.thought;If they get really uncomfortable, maybe I'll take her up on it. Or I could just not go, and she would probably understand.@@
+
+@@.male;"Is there anything else you want to talk about?"@@ Mr. Garcia asks.
+
+[[The football team|Therapist 1 Football]]<<if $player.relationship is "" or visited("Girlfriend Hang Out Crush") or $player.gotFucked>>
+[[$girlfriend.firstname|Therapist 1 Girlfriend]]<</if>>
+
+::Therapist 1 Boobs Unbothered
+@@.player;"What, having boobs? No, I haven't really noticed."@@
+
+@@.male;"Okay. If it starts getting uncomfortable, or if you self-medicate more,"@@ he says, looking at you, @@.male;"I would recommend wearing a bra."@@
+
+@@.player;"What? I can't do that!"@@
+
+@@.female;"You might not need it now,"@@ Mrs. Garcia says. @@.female;"Or maybe you do. For me, it definitely helps."@@
+
+You give it some thought. @@.thought;If no one saw, and I was more comfortable...@@
+
+@@.female;"Maybe you could go shopping in the mall?"@@
+
+You picture yourself wandering around the lingerie store, surrounded by women. @@.player;"N...no. I can't do that."@@
+
+@@.female;"What if one of your female friends helped you?"@@
+
+<<if $girlfriend.knowsSecret or visited("Girlfriend Strapon")>>@@.thought;<<print $girlfriend.firstname>> might be able to help. That would be so embarrassing though. I was...am her boyfriend!@@ <</if>><<if visited("Witch ControlTf Witch Shave")>>@@.thought;<<print $witch.firstname>> helped me shave. Maybe she would help me with this too.@@ <<elseif $witch.knowsSecret>>@@.thought;I wonder if <<print $witch.firstname>> would be willing to help.@@ <</if>><<if $girlfriend.knowsSecret is false and not visited("Girlfriend Strapon") and not visited("Witch ControlTf Witch Shave") and $witch.knowsSecret is false>>You shake your head. @@.player;"I don't have anyone I could ask."@@
+
+@@.male;"Maybe you should be more open with them. They can give you some great advice about your transition.@@<<else>>
+
+@@.player;"Yeah, that's a good idea."@@<</if>>
+
+@@.male;"Is there anything else you want to talk about?"@@ Mr. Garcia asks.
+
+[[The football team|Therapist 1 Football]]<<if $player.relationship is "" or visited("Girlfriend Hang Out Crush") or $player.gotFucked>>
+[[$girlfriend.firstname|Therapist 1 Girlfriend]]<</if>>
+
+::Therapist 1 Witch Reject
+@@.female;"I'm disappointed in you, <<print $player.firstname>>."@@
+
+@@.player;"What?"@@
+
+@@.female;"My husband is a very busy man, and he's taking time out of his day because I thought that you had an actual problem. But instead, you just want to spin fantastical tales of witches."@@
+
+@@.player;"No, no,"@@ you say, trying to reassure her. @@.player;"I'm telling the truth. Don't I look different than I did at the beginning of the year?"@@
+
+She looks you over. @@.female;"Well, yes."@@ Then her face gets stern again. @@.female;"I don't know what you're doing to yourself, but there's no such thing as magic."@@
+
+@@.player;"But..."@@
+
+@@.female;"Why don't you take off your clothes."@@ That didn't sound like a question.
+
+@@.player;"What? Why?"@@
+
+@@.female;"I'm giving you a short detention. You're going to be spanked for making fun of transgender girls and for wasting our time."@@
+
+@@.player;"I wasn't making fun of anyone!"@@
+
+The look she gives you tells you that it's no use arguing.
+
+[[Take off your clothes|Therapist 1 Witch Spank]]
+
+::Therapist 1 Football
+@@.player;"Yeah. I'm used to being the star quarterback and being, well, being the kind of guy who can lead my team."@@
+
+@@.male;"Okay,"@@ Mr. Garcia says, looking confused. @@.male;"You're talking like that's changed somehow."@@
+
+@@.player;"It has."@@
+
+@@.male;"But how would, uh, struggling with your gender affect how well you can throw a football?"@@
+
+You blush. @@.thought;I decided not to tell him about <<print $witch.firstname>>.@@
+
+@@.player;"I don't know. I guess that I...lost my confidence."@@ You look at him anxiously, waiting to see if he'll buy it.
+
+Luckily, he seems to believe you. @@.male;"I can see how that would happen. What about your leadership?"@@
+
+<<if $team.respect>75>>@@.player;"It's taken a hit. I'm not really a leader, but they see me as one of them at least."@@
+
+@@.male;"Why wouldn't they see you as one of them?"@@
+
+@@.player;"Well, you know, all of this,"@@ you say, gesturing to your body.<<else>>@@.player;"Pretty bad. Some of them see me as a joke."@@
+
+He nods sympathetically. @@.male;"I'm sorry to hear that."@@
+
+@@.player;"Thanks. I don't know what I can do. They've already seen me struggle and now their minds are made up about me."@@<</if>>
+
+@@.male;"Take it from someone who played football,"@@ he tells you. @@.male;"How good you are on the football field is all that matters. If you go out in the next game and completely whoop the defense, nobody's going to care if you wear panties."@@
+
+<<if $playerStarter>>@@.player;"Thanks,"@@ you say. @@.thought;I'd better train for the game@@ you think. @@.thought;Palm Ridge is one of the better teams in the conference.@@<<else>>@@.player;"I can't,"@@ you say. @@.player;"I'm not even the starter."@@
+
+@@.male;"Then put one hundred and ten percent into practicing. Work so hard that Coach won't have a chance but to make you the starter."@@
+
+@@.thought;How is it even possible to give 110%? And Coach thinks that if I don't throw the football far enough that it's me being lazy when it's just me being weak.@@
+
+@@.male;"You don't seem convinced."@@
+
+@@.player;"Umm..."@@ you say, trying to think of something to say without giving away the fact that you were cursed. @@.player;"It's a confidence issue,"@@ you finally say.
+
+@@.male;"I think I see what's happening."@@
+
+@@.player;"You do?"@@
+
+@@.male;"Yeah. You're ashamed, aren't you?"@@
+
+@@.player;"Yeah, I guess."@@
+
+@@.male;"Well, teams aren't going to follow someone who can't even lead themselves."@@
+
+@@.player;"Ouch,"@@ you say. @@.thought;He has a point though.@@
+
+@@.male;"I'm sorry, that was harsh. But if you go and say, I like to wear panties, and this is who I am, well, some of them might laugh at you, but they'll also respect you."@@
+
+@@.player;"Really?"@@ you ask, dubiously.
+
+@@.male;"Yeah! That takes guts."@@
+
+@@.player;"Hmm, okay."@@<</if>>
+
+@@.male;"Well, we're out of time today. Do you want to talk at the same time next week?"@@
+
+You nod.
+
+<<link "You have a lot to think about as you leave the office" $currentPassage>><</link>>
+
+::Therapist 1 Girlfriend
+<<if visited("Girlfriend Results Discussion Breakup")>>@@.player;"<<print $girlfriend.firstname>> and I broke up,"@@ you say flatly.
+
+@@.male;"I'm sorry. What happened?"@@
+
+You pause. You can't tell them about your secret spy mission. The clock ticks by as you try to think of something to say.
+
+@@.female;"You told her, didn't you?"@@ Mrs. Garcia asks, jumping in. @@.female;"And she wanted a relationship with someone more..."@@
+
+@@.male;"Manly?"@@
+
+@@.player;"Yeah,"@@ you say, happy to not have to think of a story.
+
+@@.male;"First of all, I want to congratulate you on opening up to her. I know it didn't turn out the way you wanted, but she would have found out eventually."@@
+
+You nod.
+
+@@.male;"I don't think you'll be single long. There are plenty of..."@@ He pauses, looking at you as if he's waiting for you to say something.
+
+<<if $player.homosexuality>=10 or visited("Therapist 1 Gay") or visited("Therapist 1 QBSex")>>You look at him, confused.
+
+@@.male;"There's plenty of people, girls and guys, whichever you prefer, that would date you. You're a star quarterback."@@<<else>>@@.player;"Girls,"@@ you say quickly.
+
+@@.male;"There's plenty of girls that would date you. You're a star quarterback."@@<</if>>
+
+@@.player;"Was a star quarterback."@@
+
+@@.male;"I know you play football, and you think everyone's attracted to raw masculinity, but that's not true. Plenty of people are attracted to guys who are more feminine."@@
+
+You blush. @@.player;"I don't care about finding someone else,"@@ you say, eager to change the subject. @@.player;"I want <<print $girlfriend.firstname>>. And now she's going to @@<<if visited("Girlfriend Hang Out Crush")>>@@.player;date Marco. At least, he's going to try to date her."@@<<else>>@@.player;date someone else."@@<</if>>
+
+Your eyes well up with tears at the thought of your girlfriend...no, ex-girlfriend, dating someone else. Mrs. Garcia comes over and gives you a hug. It feels nice, but you also feel weirdly vulnerable.<<elseif $player.relationship is "">>@@.player;"<<print $girlfriend.firstname>> and I broke up,"@@ you say flatly.
+
+@@.male;"I'm sorry. What happened?"@@
+
+@@.player;"I couldn't tell her about me. And she kept being horny and wanting sex..."@@ You stop suddenly, feeling embarrassed to be talking about sex in front of a teacher.
+
+@@.male;"I see lots of students, and been told about lots of relationship problems. Go on."@@
+
+@@.player;"Okay. And I couldn't do that, because..."@@ you trail off. @@.thought;I can't tell them about my pussy.@@
+
+Luckily, Mr. Garcia jumps in. @@.male;"Because you'd have to come out to her?"@@
+
+@@.player;"Yeah, I guess."@@
+
+@@.male;"Well, why don't you do that?"@@
+
+@@.player;"No way! I couldn't do that!"@@
+
+@@.male;"Why not? She doesn't seem like the kind of girl to gossip. And if you had support from her...and I think she'd be supportive...you'd feel a lot better."@@<<elseif $player.gotFucked>>@@.player;"So I told <<print $girlfriend.firstname>> about me."@@
+
+@@.male;"You did? Excellent! It's important not to bottle these kinds of things up. How did she take it?"@@
+
+@@.player;"Well, she took it good. I was worried about our sex life, but it's actually been really good. We even..."@@ You stop suddenly, feeling embarrassed to be talking about sex in front of a teacher.
+
+@@.male;"I see lots of students, and been told about lots of relationship problems. Go on."@@
+
+@@.player;"Okay. Um, she had sex with me. Using a strap-on."@@
+
+@@.male;"Well, good for both of you! She seems like she's being very understanding about your new...preferences. And you're being open about trying new things."@@
+
+@@.player;"Yeah, I guess."@@
+
+@@.male;"What's wrong?"@@
+
+@@.player;"Well while we were having sex, I got the feeling that she didn't really think of me as a man."@@
+
+@@.male;"But you're transitioning, right?"@@
+
+@@.player;"No..."@@
+
+@@.male;"Look,"@@ he says, trying a different tack. @@.male;"Her using a strap-on on you doesn't make you gay or any less of a man. If you //are// gay or are trans, then that's totally fine, but what you do in the bedroom has nothing to do with it."@@
+
+You nod. @@.thought;That's a good point. But it's not really true, is it? I changed after I came from being fucked.@@
+
+@@.male;"You don't look convinced."@@
+
+@@.thought;Wait, I remember. I didn't transform from getting fucked. I transformed after I felt feminine from being filled. So is he right? The transformations only happen based on what I feel? No, I've been transformed after I did girly things."@@
+
+You look up, only to realize that Mr. Garcia has been looking at you the entire time you've been reflecting on the nature of your transformations. @@.player;"No, you made a good point. Really,"@@ you tell him.<<else>>@@.player;"My roommate asked <<print $girlfriend.firstname>> out."@@
+
+@@.male;"I thought you two were still together."@@
+
+@@.player;"We are! She said no, but she also said that she missed feeling filled."@@ You clap your hand over your mouth, worried that you said too much.
+
+@@.male;"I see lots of students, and been told about lots of relationship problems. Go on."@@
+
+@@.player;"Okay. Um, I've been worrying that I can't give her what she needs."@@
+
+Mr. Garcia looks confused. @@.male;"But how would this affect the size of your penis?"@@
+
+You let out a laugh. @@.thought;He's trying his best, but he has no idea what I'm going through.@@ He looks like he's about to start asking questions, though, so you say the first thing that pops into your head.
+
+@@.player;"I haven't really been interested in sex with her."@@
+
+@@.male;"Oh, I see. Well, there's nothing wrong with not being interested in girls."@@
+
+@@.player;"It's not that."@@
+
+@@.male;"So being the one in charge makes you feel manly, and you're trying to get away from that?"@@
+
+You bury your face in your hands. No matter what you say, he always takes it the wrong way.
+
+@@.male;"Anyway, if you're not comfortable with the kind of sex you're used to anymore, why don't you try different positions? There's lots of different ways to have sex."@@
+
+<<if visited("Girlfriend Strapon Sex")>>@@.thought;I could let <<print $girlfriend.firstname>> use the strap-on on me.@@<<elseif $player.hasStrapon>>@@.thought;I could use the strap-on I got.@@<<else>>@@.thought;I could get a strap-on and fuck <<print $girlfriend.firstname>> with it.@@<</if>><</if>>
+
+@@.male;"Well, we're out of time today. Do you want to talk at the same time next week?"@@
+
+You nod.
+
+<<link "You have a lot to think about as you leave the office" $currentPassage>><</link>>
+
+::Therapist 1 Witch Spank
+You sigh, and remove your <<print $player.pants.informalName>> and your <<print $player.shirt.informalName>>. <<if $player.isWearingPanties is true>>@@.male;"Honey, he's wearing panties. Do you think he really is telling the truth?"@@
+
+@@.female;"About there being a witch?"@@
+
+@@.male;"Well, no,"@@ he admits. @@.male;"But he could really be transitioning."@@<<else>>@@.female;"See? You're not even wearing panties."@@<</if>>
+
+@@.female;"Bend over,"@@ Mrs. Garcia commands. You comply, feeling very vulnerable being in such a compromising position, wearing only your <<print $player.underwear.informalName>>.
+
+@@.female;"One!"@@ Mrs. Garcia calls as she spanks you. Suddenly you're too focused on the pain of the slap to feel embarrassed.
+
+@@.female;"Two!"@@
+
+@@.thought;Why did I tell them the truth? I knew they were never going to believe it!@@
+
+@@.female;"Three!"@@
+
+@@.thought;And now I'm stuck getting spanked.@@
+
+@@.female;"Four!"@@
+
+@@.thought;And now two adults are watching me get spanked.@@
+
+@@.female;"Five!"@@
+
+@@.thought;Especially Mr. Garcia. He's so manly.@@
+
+@@.female;"Six!"@@
+
+@@.thought;Wait. Am I getting turned on by this?@@
+
+@@.female;"Seven! Okay, that can be enough for today."@@
+
+You put your clothes back on, your face flushed.
+
+@@.male;"I think we should call the session there. <<print $player.firstname>>, if you're going to take this more seriously, you should see me next week."@@
+
+<<link "Do something else" $currentPassage>><<increaseArousal 5>><<set $player.homosexuality to $player.homosexuality+1>><</link>>
+
+::Therapist 2
+<<getTfProgress height>>@@.male;"Good to see you back, <<print $player.firstname>>,"@@ Mr. Garcia says when you arrive.
+
+@@.player;"I thought about not coming,"@@ you say.
+
+He laughs. @@.male;"I'm glad you did. Why don't you take a seat."@@ You do so, sitting on a chair that's shorter than the one he's on. <<if $tempTfValue>0>>He's already bigger than you, and sitting in this chair makes you feel tiny.<<else>>You know that you're the same height as him, but sitting in this chair makess you feel like you're smaller.<</if>>
+
+@@.male;"What would you like to talk about?"@@
+<<if $player.skillCurse is 4>>
+@@.thought;I should start with getting kicked off the team.@@
+
+[[Talk about that|Therapist 2 KickedOff]]<<else>><<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>><<set $therapistQuestionsRemaining to 3>><</if>>
+
+::Therapist 2 KickedOff
+@@.player;"There's something I wanted to talk to you about,"@@ you start. @@.player;"About the football team."@@
+
+@@.male;"Oh, good. I was hoping we'd get to talk about that today."@@
+
+You look at him, surprised. @@.male;"I heard the news from Coach,"@@ he explains. @@.male;"I'm sorry about you not being on the team anymore."@@
+
+@@.player;"Thank you,"@@ you say.
+
+@@.male;"So now that some time has passed, how are you feeling?"@@
+
+@@.player;"I'm still upset,"@@ you say. @@.player;"I liked being on the team, and now that I'm not, I don't know. I feel like some part of me is missing."@@
+
+@@.male;"What do you miss most?"@@
+
+<<if $player.masculinity>=50>>[[The other guys|Therapist 2 KickedOff Friends]]<<else>>[[The guys|Therapist 2 KickedOff Friends]]<</if>>
+[[Playing football|Therapist 2 KickedOff Football]]
+[[Being popular|Therapist 2 KickedOff Popular]]
+
+::Therapist 2 KickedOff Friends
+@@.player;"I miss the @@<<if $player.masculinity>=50>>@@.player;other @@<</if>>@@.player;guys,"@@ you say. @@.player;"They were my friends. We'd hang out, talk shit and play football together. Now, I can't do that."@@
+
+@@.male;"You can still be their friend, right?"@@ Mr. Garcia asks. @@.male;"Sure, you can't play football with them, and you won't spend as much timee with them as you used to. But nothing says you can't have any friends on the team."@@
+
+@@.player;"I guess."@@
+
+@@.male;"What's wrong?"@@
+
+@@.player;"Well, they're kind of...treating me differently now that..."@@
+
+@@.male;"Now that you're not on the team?"@@
+
+@@.player;"No, it's not just that. Even before I got kicked off, they were treating me differently. Less like I was another guy and more like I was, uh, not as manly."@@
+
+@@.male;"They made fun of you."@@ It's a statement, not a question.
+
+@@.player;"Well, yeah. And I know they didn't mean anything by it. Not really. We give each other shit and with me getting, uh, more feminine, it's easy to give me shit about that."@@
+
+@@.male;"Did you try telling them that you don't want them to do that?"@@
+
+@@.player;"No,"@@ you say, feeling a little skeptical. @@.player;"I didn't know I could."@@
+
+@@.male;"Of course you can. Why don't you try it next time?"@@ You nod.
+
+@@.male;"And it's not like you're off the team for good. I talked to Coach. Don't tell him I said this, but if you practice and work hard in the gym, you can get back on the team."@@
+
+You're silent, trying to react to this news. @@.thought;That would be nice. But I can't get back on the team. My talent at football is gone for good.@@
+
+@@.male;"Would you like that?"@@
+
+[[Yes|Therapist 2 KickedOff Rejoin]]
+[[No|Therapist 2 KickedOff Quit]]
+
+::Therapist 2 KickedOff Football
+@@.player;"I miss playing football,"@@ you say. @@.player;"It's...it was really fun. I liked picking apart defenses and throwing touchdowns, and, and now I can't do that anymore."@@
+
+He nods. @@.male;"I understand. I'm sorry about that. Hey, did you ever think about playing football with you friends? It won't be as part of the Stallions, and there won't be any fans in the stands, but it'll still be fun."@@
+
+You smile, picturing the thought of getting to throw the football around with the <<if $player.masculinity>=50>>other <</if>>guys. Then you snap back to reality. @@.thought;I can't even do that. I can't throw the football at all.@@
+
+@@.player;"No,"@@ you say, shaking your head.
+
+@@.male;"It won't be the same?"@@
+
+@@.player;"No! Well, yes."@@ <<if visited("Therapist 1 Witch")>>@@.thought;I can't tell him about the curse. The last time I did that, I got spanked.@@<<else>>@@.thought;I can't tell him about the curse. He'll think I'm crazy.@@<</if>> @@.player;"It wouldn't be the same, but, uh, that's not really it. I'm just, uh, not as good at football as I used to be."@@
+
+@@.male;"I heard. Coach was saying that you @@<<if visited("Team Practice KickedOff Forgot")>>@@.male;forgot how to throw a football?"@@<<else>>@@.male;weren't taking it seriously. But I feel like there's more to it than that."@@<</if>>
+
+@@.player;"Yeah,"@@ you say. @@.player;"I'm not the same quarterback I used to be."@@
+
+@@.male;"You've lost your confidence."@@
+
+@@.player;"Uh, sure. But my throws aren't as accurate as they used to be, and I can barely throw the football at all."@@
+
+He frowns. @@.male;"What if there was a way to work through this problem? You work out, practice, do whatever you have to do. And then you're just as good as you used to be."@@
+
+@@.player;"That sounds pretty good."@@
+
+@@.male;"You didn't hear it from me, but I talked to Coach. If you can show him you're serious about this, he'll let you back on the team. Is that something you'd want?"@@
+
+[[Yes|Therapist 2 KickedOff Rejoin]]
+[[No|Therapist 2 KickedOff Quit]]
+
+::Therapist 2 KickedOff Popular
+@@.player;"I miss being popular,"@@ you say. @@.player;"I was the star quarterback. I was the homecoming king. I had everything. And now, well, now that's all gone.@@<<if $player.relationship is $girlfriend.firstname>>@@.player;"@@
+
+@@.male;"You've still got your girlfriend."@@
+
+@@.player;"Yeah,"@@ you say, feeling a rush of affection for <<print $girlfriend.firstname>>.<<else>> @@.player;I had a girlfriend."@@
+
+@@.male;"You've still got your friends."@@
+
+@@.player;"Yeah, but..."@@<</if>>
+
+@@.male;"I know. It's not the same."@@ You nod. @@.male;"You don't need football to be popular though."@@
+
+@@.player;"I don't?"@@
+
+@@.male;"Of course not! The popular people in the school, are they all football players?"@@
+
+You do some math. @@.player;"Most of them."@@
+
+@@.male;"But not all of them. And the popular girls, they're not football players."@@ That draws a laugh from you. @@.male;"See? I knew I could get you to laugh."@@
+
+@@.player;"So what do I need to do to be popular again?"@@
+
+He smiles. @@.male;"That's a hard question. It's been a while since I was in high school."@@
+
+You nod. @@.thought;I'll have to figure it out on my own.@@
+
+@@.male;"But let's say you got back on the team."@@ You raise an eyebrow. @@.male;"You didn't hear this from me, but I talked to Coach. If you practice and work hard in the gym, you can get back on the team."@@
+
+You're silent, trying to react to this news. @@.thought;That would be nice. But I can't get back on the team. My talent at football is gone for good.@@
+
+@@.male;"Would you like that?"@@
+
+[[Yes|Therapist 2 KickedOff Rejoin]]
+[[No|Therapist 2 KickedOff Quit]]
+
+::Therapist 2 KickedOff Rejoin
+@@.player;"Yes, I would,"@@ you say. You're not lying. You know that your talent is gone for good, but you're not happy about that. You miss <<if visited("Therapist 2 KickedOff Friends")>>your friends<<elseif visited("Therapist 2 KickedOff Football")>>playing football<<else>>being popular<</if>>, and you know that if somehow you could get back on the team, you'd have it again.
+
+Mr. Garcia smiles. @@.male;"Great! Well, you know what you need to do."@@
+
+@@.player;"I do?"@@
+
+@@.male;"Yes. Work out, practice, whatever you need to do to get back on the team."@@
+
+Your heart sinks. @@.thought;I can work out all I want, but I'm not going to get back on the team.@@
+
+Instead, you say, @@.player;"Thanks, Mr. Garcia."@@
+
+He looks at his watch. @@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]
+<<set $therapistQuestionsRemaining to 2>>
+
+::Therapist 2 KickedOff Quit
+@@.player;"No, I don't think I would."@@
+
+@@.male;"What?"@@
+
+@@.player;"I don't want to get back on the team. Even if I could. Sure, I miss @@<<if visited("Therapist 2 KickedOff Friends")>>@@.player;my friends@@<<elseif visited("Therapist 2 KickedOff Football")>>@@.player;playing football@@<<else>>@@.player;being popular@@<</if>>@@.player;, but a star quarterback isn't really who I am anymore. I, uh, I guess I should move on. Right?"@@
+
+Mr. Garcia smiles. @@.male;"It's good to hear you say that, <<print $player.firstname>>. It's important to know what you want and what you don't want."@@
+
+@@.player;"I...I guess. I can't believe I said that. When I, uh, I started losing my skills, the thing I wanted most...one of the things I wanted most was to get them back. And now I don't even want to be on the team. What's happening?"@@
+
+He puts a meaty hand on your shoulder. <<if $day is 28>>@@.male;"You're supposed to have a game tomorrow, right? Instead of being on the bench, you'll be in the stands. How do you think it'll feel?"@@
+
+@@.player;"I don't know. Like you said, even if I was on the team, I'd be on the bench.@@<<else>>@@.male;"It's been a little while since you were on the team. How did it feel the first time you were supposed to have practice?"@@
+
+@@.player;It was hard. I was ready to go, but then I realized I wasn't supposed to be there. But I guess it's not all bad. If we were going to practice, I wouldn't get to throw much.@@<</if>> @@.player;I, uh, I guess I wasn't really a part of the team anyway. I'd only play if <<print $qb.firstname>> got injured or we were up by a lot, but I still felt like I should be playing. I guess now, it'll be less confusing."@@
+
+He smiles and looks at his watch. @@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]
+<<set $therapistQuestionsRemaining to 2>>
+
+::Therapist 2 QB
+@@.player;"I guess I'd like to talk about <<print $qb.firstname>>."@@
+
+@@.male;"Go on."@@
+<<if (visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught")) and not visited("Therapist 2 QB Caught")>>
+[[Talk about getting caught in bed with him|Therapist 2 QB Caught]]<</if>><<if $player.crush is $qb.firstname>><<if $qb.date and $qb.date is $player.firstname and not visited("Therapist 2 QB AskOut")>>
+[[Talk about him asking you out|Therapist 2 QB AskOut]]<<elseif $qb.date and $qb.date is "Morgan" and not visited("Therapist 2 QB Morgan")>>
+[[Talk about him choosing Morgan over you|Therapist 2 QB Morgan]]<<elseif $qb.date is null and not visited("Therapist 2 QB Crush")>>
+[[Talk about your crush on him|Therapist 2 QB Crush]]<</if>><</if>>
+[[Change the subject|Therapist 2 Questions]]
+[[End the session early|Therapist 2 End]]
+
+::Therapist 2 QB Caught
+@@.player;"I was caught with him."@@
+
+@@.male;"By that, you mean...in bed?"@@
+
+You nod, trying not to meet his eyes. But when you sneak a peek at his face, he's looking at you with compassion instead of laughing. Slowly, you raise your head.
+
+@@.male;"That must have been embarrassing."@@
+
+@@.player;"It was! I got caught by a couple @@<<if $player.masculinity>=50>>@@.player;other@@<<else>>@@.player;of@@<</if>> @@.player;guys on the team. And now, whenever I look at them, I know they know."@@
+
+@@.male;"They know what? That you had sex?"@@
+
+@@.player;"With a guy!"@@
+
+@@.male;"And what's wrong with having sex with a guy?"@@
+
+@@.player;"Well, I'm not supposed to. I@@<<if $playerStarter>>@@.player;'m@@<<else>>@@.player; am...was@@<</if>> @@.player;the star quarterback. I'm supposed to get girls, not take some guy's dick in my mouth!"@@
+
+You look at Mr. Garcia, suddenly aware that you just blurted out some details about your sex life that you'd rather keep hidden. Mr. Garcia doesn't look surprised. @@.thought;He probably already suspected. I mean, look at me. @@<<if visited("QB Practice 6 Angry")>>@@.thought;Even those guys knew I was the bottom.@@<<elseif visited("QB Practice 6 Deny")>>@@.thought;I sucked <<print $qb.firstname>>'s dick, and Brent and Joe know that.@@<<else>>@@.thought;I don't look like I'd be on top.@@<</if>>
+
+@@.male;"Sure, the stereotype is that the quarterback has to like girls. But that's just a stereotype. When I was on the Stallions, our quarterback was gay."@@
+
+@@.player;"Really?"@@
+
+He nods. @@.thought;Well, that makes me feel better. I'm still not sure if I'm gay or not, but if I am, Mr. Garcia is right. There's nothing wrong with that.@@
+
+He checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about $qb.firstname" "Therapist 2 QB">><</link>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 QB AskOut
+@@.player;"He, uh,"@@ you start, looking at Mr. Garcia cautiously. He motions for you to continue. @@.player;"He asked me out!"@@ you continue excitedly.
+
+@@.male;"That's great, <<print $player.firstname>>! What happened?"@@
+
+@@.player;"We had just finished practicing, and I was about to ask whether we should go to his..."@@ you trail off, still feeling self-conscious about telling Mr. Garcia about your sex life. @@.player;"We had just finished practice,"@@ you say, starting again. @@.player;"And then, he asked me if I wanted to go out on a date this saturday!"@@
+
+@@.male;"This saturday? That's in only two days."@@
+
+@@.player;"Oh. You're right,"@@ you say, suddenly feeling overwhelmed. @@.player;"I didn't realize how close it was. What am I going to wear? What are we going to talk about? What if he doesn't have a good time and goes out with Morgan instead?"@@
+
+@@.male;"<<print $player.firstname>>, look at me."@@ You do so. @@.male;"He asked you out because he liked you. It's going to be okay."@@
+
+@@.player;"Yeah, I guess,"@@ you say, not feeling entirely convinced. @@.player;"But what are we going to talk about?"@@
+
+@@.male;"You've spent time with him before he asked you out, right?"@@
+
+@@.player;"Well, yeah."@@
+
+@@.male;"So just talk about the things you talked about then."@@ He pauses. @@.male;"Are you seeing a movie?"@@
+
+@@.player;"Yeah."@@
+
+@@.male;"So if conversation slows down, just talk about that."@@
+
+You nod, feeling slightly better.
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about $qb.firstname" "Therapist 2 QB">><</link>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 QB Morgan
+@@.player;"I was spending more time with <<print $qb.firstname>>, and I, uh..."@@ You scratch the back of your neck. @@.player;"I liked him, and I was thinking he was going to ask me out."@@
+
+@@.male;"It sounds like there's a but in there."@@
+
+@@.player;"Yeah. Just when I thought he was going to ask me, it turned out that he had already asked Morgan."@@
+
+@@.male;"I'm sorry."@@
+
+@@.player;"Of course he'd go out with her! She's a bitch, but she's so pretty and popular. How could I think I could stand a chance?"@@
+
+@@.male;"You know <<print $player.firstname>>, he's not the only guy out there."@@
+
+@@.player;"What? No! It's not that I like guys!@@<<if $player.homosexuality>=75>> @@.player;Well, maybe I do. I'm still not sure about that.@@<</if>> @@.player;It's that I like <<print $qb.firstname>>, even though he's a guy."@@
+
+He nods. @@.male;"That makes sense."@@
+
+@@.player;"It does?"@@
+
+@@.male;"Yeah. It sounds like you're going through a lot, and you're still trying to work out your sexuality. You don't need a boyfriend right now. Or a girlfriend."@@
+
+@@.player;"But I miss dating. Ever since me and <<print $girlfriend.firstname>> broke up, it's been hard."@@
+
+@@.male;"But it's not just dating, right? It's dating the right person?"@@
+
+@@.player;"Yeah. That's why I was so excited about <<print $qb.firstname>>. He liked me, and I liked him. Morgan likes him because he's @@<<if $playerStarter>>@@.player;a football player@@<<else>>@@.player;the quarterback@@<</if>>@@.player;, but it's more than that for me. He's so nice, and handsome, and understanding, and..."@@ You stop, suddenly aware that you're gushing about <<print $qb.firstname>> to a teacher.
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about $qb.firstname" "Therapist 2 QB">><</link>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 QB Crush
+@@.player;"I was spending more time with <<print $qb.firstname>>, and I, uh..."@@ You scratch the back of your neck. @@.player;"I think I like him."@@
+
+He smiles. @@.male;"Good for you. The <<print $player.firstname>> I first saw would have taken the whole session to say that."@@
+
+@@.player;"I...I feel like I should be ashamed,"@@ you admit. @@.player;"But, I don't know. I guess I'm not."@@
+
+His smile gets even brighter. @@.male;"Good for you! Now, are you going to do anything about it?"@@
+
+@@.player;"//Do// anything?"@@ you ask, feeling scared.
+
+@@.male;"Yeah. It's great that you can tell me about your crush on him, but you want it to be more than a crush, right?"@@
+
+@@.player;"I guess. But then, people would know, and I...I couldn't deal with that."@@
+
+@@.male;"What about this? Can you picture going on a date with him?"@@
+
+@@.player;"People would see..."@@
+
+@@.male;"And if you weren't around anyone you knew?"@@
+
+@@.player;"Well, I would like that, I guess."@@
+
+@@.male;"Good! And now, before you go on this date, would you have asked him out? Or would he have asked you?"@@
+
+@@.player;"He would have asked me,"@@ you say firmly. @@.player;"It's weird, I didn't use to have a problem with asking girls out."@@
+
+@@.male;"You know, girls can ask guys out too."@@
+
+You look at him, alarmed. @@.thought;Girls ask guys out? Was he referring to me as a girl?@@
+
+Luckily, Mr. Garcia seems to have sensed that you want to change the subject. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>,"@@ he says. @@.male;"I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about $qb.firstname" "Therapist 2 QB">><</link>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 QB Relationship
+@@.player;"It's about <<print $qb.firstname>>,"@@ you start.
+
+@@.male;"I remember you talking about him last time,"@@ he says. @@.male;"So, how's that going?"@@
+
+@@.player;"Uh, it's going the same as before, I guess,"@@ you say.
+
+@@.male;"With the two of you practicing and having sex? I hope you don't mind me asking that."@@
+
+@@.player;"No, it's fine. Uh, yeah, we are."@@
+
+@@.male;"And nothing more than that?"@@
+
+You look at him, confused. @@.player;"What do you mean, more than that?"@@
+
+@@.male;"Well, would you like to date him?"@@
+
+@@.player;"What? No! Then people will know, and my family will know, and I...I couldn't."@@
+
+@@.male;"And nobody's saying you have to date him. If you don't want to, you don't have to."@@
+
+You nod, feeling a little less terrified.
+
+<<if $playerStarter>>@@.male;"But he's a football player.@@<<else>>@@.male;"But he's the quarterback.@@<</if>> @@.male;It probably won't be long before girls are all over him."@@
+
+@@.player;"I guess you're right,"@@ you say. You don't want to date him, but you know that if he dated somebody else, you wouldn't be able to have whatever it is you have now.
+
+@@.male;"Just think about what you want. You don't have to decide now."@@
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+<<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Clothes
+@@.player;"I guess I'd like to talk about my clothes."@@
+
+@@.male;"Go on."@@
+<<if $player.ownsGirlPants is true and not visited("Therapist 2 Clothes Pants")>>
+[[Talk about your new pants|Therapist 2 Clothes Pants]]<</if>><<if $player.wearsOnepiece is true and not visited("Therapist 2 Clothes Onepiece")>>
+[[Talk about your new swimsuit|Therapist 2 Clothes Onepiece]]<</if>><<if $player.bra is not null and not visited("Therapist 2 Clothes Bra")>>
+[[Talk about your bra|Therapist 2 Clothes Bra]]<</if>>
+[[Change the subject|Therapist 2 Questions]]
+[[End the session early|Therapist 2 End]]
+
+::Therapist 2 Clothes Pants
+<<if $player.pants.female is true>>You gesture to your <<print $player.pants.informalName>>. @@.player;"I got new pants."@@ He looks at them and then looks back at you, confused about why you're telling him this. @@.player;"And I got them from, uh, the womens store."@@<<else>>@@.player;"I got new pants,"@@ you say. @@.player;"I'm not wearing them now, but, uh, I got them from the womens store."@@<</if>>
+
+He looks at you in surprise, but that look only lasts for a second before it's replaced with a look of compassion. @@.male;"Good for you!"@@ he says. @@.male;"And you went shopping for them all by yourself?"@@
+
+@@.player;"Uh, yeah,"@@ you say. @@.player;"It was scary, and I was really embarrassed."@@
+
+@@.male;"But you got them."@@
+
+@@.player;"Yeah."@@
+
+<<if $player.pants.female is true>>@@.male;"And I didn't notice."@@ You shake your head. @@.male;"So you can wear the pants that are right for you, and nobody will know."@@
+
+<<if visited("Lunch Friends Pants")>>@@.player;"Well, not really,"@@ you say. @@.player;"I don't think guys notice, but something happened, at lunch..."@@
+
+@@.male;"Go on."@@
+
+@@.player;"We were sitting at the table talking about fashion, and I was wondering whether I should ask if anyone knew I was weearing girls pants. But before I could, one of the girls said she knew."@@
+
+@@.male;"Wow. That must have been really embarrassing."@@
+
+@@.player;"It was! Everybody looked at me and I had to @@<<if visited("Lunch Friends Pants Stand")>>@@.player;show@@<<else>>@@.player;tell@@<</if>> @@.player;them."@@
+
+@@.male;"I'm sorry."@@ He thinks for a second. @@.male;"Then how come you walked over here wearing your <<print $player.pants.informalName>>?"@@
+
+You look at him and try to decide what to say. @@.thought;I can't tell him about my old pants not fitting. Then I'd have to tell him about my curse.@@
+
+@@.male;"What I'm getting at is, even after you were made fun of, you're still wearing your new pants. They must be right for you."@@
+
+@@.thought;That's not why!@@ you think. @@.thought;But I guess I'm getting used to these pants. I didn't even realize I was wearing them until I started talking about it.@@<<else>>@@.player;"Yeah, I guess so. I'm just worried that girls are going to notice."@@
+
+He frowns. @@.male;"And what would you do if they did?"@@
+
+@@.player;"I don't know! It would be so embarrassing!"@@
+
+@@.male;"But you're still wearing your <<print $player.pants.informalName>>."@@
+
+You look down. Sure enough, he's right. @@.thought;That's because my other pants odn't fit. But I can't tell him that! Then I'd have to tell him about my curse.@@
+
+@@.male;"What I'm getting at is, even though someone //might// notice and //might// make fun of you, you're still wearing your new pants. They must be right for you."@@
+
+@@.thought;That's not why!@@ you think. @@.thought;But I guess I'm getting used to these pants. I didn't even realize I was wearing them until I started talking about it.@@<</if>><<else>>@@.male;"How come you're not wearing them now?"@@
+
+<<if visited("Lunch Friends Pants")>>@@.player;"Because something happened at lunch. We were sitting at the table talking about fashion, and I was wondering whether I should ask if anyone knew I was weearing girls pants. But before I could, one of the girls said she knew."@@
+
+@@.male;"Wow. That must have been really embarrassing."@@
+
+@@.player;"It was! Everybody looked at me and I had to @@<<if visited("Lunch Friends Pants Stand">>@@.player;show@@<<else>>@@.player;tell@@<</if>> @@.player;them."@@
+
+@@.male;"I'm sorry,"@@ he says. @@.male;"So that's why you're not wearing them? You don't want anyone to make fun of you again?"@@
+
+@@.player;"Yeah."@@
+
+@@.male;"Tell me, how does it feel, wearing your <<print $player.pants.informalName>>?"@@
+
+@@.player;"Well, uh, not very good. They're kind of uncomfortable."@@
+
+He laughs. @@.male;"Then why are you wearing clothes you don't like?"@@ You start to answer, but he keeps going. @@.male;"These people already know you were wearing girls clothes. Wearing uncomfortable pants won't remove that memory. You might as well wear clothes you like."@@
+
+@@.thought;I guess that's a good point.@@<<else>>@@.player;"I'm not sure. This morning, I looked at my new pants and I could have put them on, but I didn't. I guess I was embarrassed."@@
+
+@@.male;"That someone you know would have seen them?"@@
+
+@@.player;"Yeah."@@
+
+@@.male;"And what would happen if they did?"@@
+
+@@.player;"Well, they'd make fun of me! It would be so embarrassing!"@@
+
+@@.male;"Most people aren't that observant. I bet you could wear them, and nobody would notice."@@
+
+@@.player;"Really?"@@
+
+@@.male;"And another thing. How does it feel to wear these <<print $player.pants.informalName>>?"@@
+
+@@.player;"Well, uh, not very good. They're kind of uncomfortable."@@
+
+He laughs. @@.male;"Then why are you wearing clothes you don't like?"@@
+
+@@.thought;I don't know if I'm ready to wear womens clothes yet, but he makes a good point.@@<</if>><</if>>
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about clothes" "Therapist 2 Clothes">><</link>><<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Clothes Onepiece
+You squirm in your seat. You can't believe you're about to tell him this. @@.male;"Go on, <<print $player.firstname>>."@@
+
+@@.player;"Well, I was getting ready for gym class, and I opened my locker to get my trunks. But my trunks weren't there."@@
+
+<<if $player.feminine>=14>>@@.male;"The guys hid them?"@@<<else>>@@.male;"The other guys hid them?"@@<</if>>
+
+@@.player;"Yeah. But that's not all. Instead of the trunks, there was something else. A onepiece."@@
+
+@@.male;"I know @@<<if $player.feminine<14>>@@.male;other @@<</if>>@@.male;guys your age like to do pranks, but that's going too far. I'm going to talk to Coach."@@
+
+@@.player;"No!"@@ you say, worried about what the <<if $player.masculinity>=50>>other <</if>>guys will do if they know you got them in trouble. @@.player;"Coach already knows. And, uh, I wore the swimsuit."@@
+
+Mr. Garcia looks at you. @@.male;"You just put it on?"@@
+
+<<if visited("Gym DecideNoToOnepiece")>>@@.player;"No! I didn't wear it at first. But they left it in my locker. I didn't have a choice."@@<<elseif visited("Gym Onepiece Change")>>@@.player;"Uh, yeah, I did. I guess I wanted to show them that their prank didn't bother me."@@<<else>>@@.player;"I didn't. Not at first. I went to get Coach, and he said that the @@<<if $player.masculinity>=50>>@@.player;other @@<</if>>@@.player;guys were pulling a prank and showing them it didn't bother me was the only way out."@@<</if>>
+
+@@.male;"And did it work?"@@
+
+@@.player;"No! The next day, I went to class. I thought my trunks were going to be back in my locker, but they weren't. I have no idea where they are."@@
+
+@@.male;"So you're just going to wear the girls swimsuit to class from now on?"@@
+
+@@.player;"Uh, yeah. I guess so. Why?"@@
+
+He taps his chin.@@.male;"Tell me, how did it feel when you were wearing that swimsuit?"@@
+
+@@.player;"It was actually more comfortable. I used to be worried that my trunks would fall off when I dove. @@<<if visited("Gym Day 7 Lose Trunks")>>@@.player;That actually happened once. @@<</if>>@@.player;"But with this swimsuit, I can actually focus on diving, and everything fits so much better."@@ You look at him suddenly, worried that you said too much.
+
+Mr. Garcia nods understandingly. <<if visited("Gym Onepiece Regular")>>@@.male;"Then it's a good thing your trunks haven't turned up, right?"@@<<else>>@@.male;"Hopefully your trunks won't show up tomorrow."@@<</if>>
+
+@@.player;"What do you mean?"@@
+
+@@.male;"Then you'd have to wear them, right? But if all you have is the onepiece, you can just keep wearing it."@@
+
+You're about to say something when Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about clothes" "Therapist 2 Clothes">><</link>><<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Clothes Bra
+@@.player;"I got a bra,"@@ you blurt out.
+
+<<if visited("Therapist 1 Boobs")>>@@.male;"Good! I'm glad you listened to my wife and I."@@<<else>>Mr. Garcia looks at you and frowns. @@.male;"<<print $player.firstname>>, I'm going to stop you right there. Now, I know that you want to transition, and that having female breasts are a part of that. But self-medicating is dangerous, and I would strongly recommend against it."@@
+
+@@.player;"Um,"@@ you say, taken aback. @@.thought;Wow, he's completely wrong. I don't //want// to transform, it just keeps happening to me. And I'm not self-medicating or whatever he was talking about!@@ @@.player;"Uh, it's a little too late for that,"@@ you finally say.
+
+He doesn't look happy. @@.male;"Well, I'm glad that at least you're taking care of your chest, now that you have them."@@<</if>>
+
+@@.player;"Uh, yeah, me too I guess. I just can't believe I'm actually wearing it."@@
+
+@@.male;"It feels a lot better than no bra, doesn't it?"@@
+
+@@.player;"Yeah, it does,"@@ you say. You're ashamed to admit it, but it's true.<<if $player.skillCurse<4>>@@.player;"It's much easier to play football now that they're not bouncing all over,"@@ you say. @@.player;"I knew football would be easier, but I'm surprised how big of a difference it makes the rest of the day, even when I'm just walking to class."@@<<else>>@@.player;"I thought it would make a big differencee when I'm doing something athletic. I'm not playing football anymore, of course, but I'm surprised how big of a difference it makes the rest of the day, even when I'm just walking to class."@@<</if>>
+
+Mr. Garcia looks at you, starts to say something and then closes his mouth. @@.thought;What's going on?@@
+
+You don't have to wait long to find out. @@.male;"I'm sorry, <<print $player.firstname>>,"@@ he sighs. @@.male;"You should talk to my wife about this. I'm not used to talking to high school gi...students about their breasts."@@
+
+@@.thought;Was he about to call me a girl?@@
+
+@@.player;"Um, okay,"@@ you say. @@.player;"Should we talk about something else then?"@@
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+
+<<link "Continue talking about clothes" "Therapist 2 Clothes">><</link>><<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Clothes Encourage
+@@.player;"So last time, you and Mrs. Garcia @@<<if visited("Therapist 1 Boobs")>>@@.player;tried to get me to buy a bra."@@<<else>>@@.player;talked about my, uh, my underwear."@@<</if>>
+
+@@.male;"Yeah, I remember that. So how did that go?"@@
+
+<<if visited("Therapist 1 Boobs")>>@@.player;"Uh, I didn't go, actually."@@
+
+@@.male;"Why not?"@@
+
+@@.player;"Well, uh, I guess I was too nervous. I knew there'd be a lot of women in the shop, and they'd see me looking at bras. And I'd need to ask the salesgirl for help, and...and everyone would laugh at me!"@@
+
+Mr. Garcia puts his hand on your shoulder. @@.male;"If you're not comfortable going, don't. No one's forcing you. But most of these people won't even notice."@@
+
+@@.player;"They won't notice @@<<if $player.masculinity>=50>>@@.player;a guy@@<<else>>@@.player;someone who looks like a guy@@<</if>> @@.player;buying a bra?"@@ you ask incredulously.
+
+@@.male;"I don't think so. To you, it seems like everyone's watching you. But they're all caught up in their own lives."@@
+
+@@.player;"Really?"@@
+
+@@.male;"Yeah. Can you think of anything embarrassing that any of the other kids did this year?"@@
+
+You think for a bit. @@.player;"No. The only embarrassing things I can think of are all stuff I did."@@
+
+@@.male;"That's what I'm talking about! If you feel embarrassed, just remember that everyone else either doesn't notice or is going to forget."@@
+
+You nod, thinking it over. @@.thought;Maybe he's right, and getting a bra wouldn't really be that embarrassing.@@<<else>><<if $player.isWearingPanties>>@@.player;"Good. Actually, I'm..."@@ You look at Mr. Garcia, trying to judge his expression.
+
+@@.male;"Go on, <<print $player.firstname>>."@@
+
+@@.thought;He's a grownup and he's so manly. I can't tell him.@@
+
+@@.male;"You were going to say that you were wearing panties, right?"@@
+
+Cheeks red, you nod.
+
+@@.male;"Good for you!"@@
+
+You let out a breath. You were worried about telling him, but he didn't laugh at you, and he didn't even seem surprised. @@.thought;Of course he wasn't surprised. He knew I was wearing them last session.@@
+
+@@.male;"Have you thought about getting more clothes?"@@
+
+@@.player;"I already have enough clothes."@@
+
+@@.male;"No. Girls clothes. Not just a bra and panties."@@
+
+@@.player;"What? Like girls pants?"@@
+
+@@.male;"Or a top."@@<<else>>@@.player;"Good. Well, actually, I'm not wearing them."@@
+
+He raises an eyebrow. @@.male;"Why not?"@@
+
+@@.player;"I'm not supposed to. I'm a guy. And guys don't wear panties. And when I change in the locker room, everyone will be able to see!"@@
+
+He nods understandingly. @@.male;"I know it sounds scary, but I think you can wear panties."@@<</if>>
+
+@@.player;"I couldn't do that!"@@
+
+@@.male;"I don't think so. To you, it seems like everyone's watching you. But they're all caught up in their own lives."@@
+
+@@.player;"Really?"@@
+
+@@.male;"Yeah. Can you think of anything embarrassing that any of the other kids did this year?"@@
+
+You think for a bit. @@.player;"No. The only embarrassing things I can think of are all stuff I did."@@
+
+@@.male;"That's what I'm talking about! If you feel embarrassed, just remember that everyone else either doesn't notice or is going to forget."@@
+
+You nod, thinking it over. @@.thought;Maybe he's right, and @@<<if $player.isWearingPanties>>@@.thought;getting a girls shirt@@<<else>>@@.thought;wearing panties@@<</if>> @@.thought;wouldn't really be that embarrassing.@@<<if $player.isWearingPanties>> @@.thought;But when will I even wear it?@@<</if>><</if>>
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Breakup
+@@.player;"I don't know if you knew this, but <<print $girlfriend.firstname>> and I broke up."@@
+
+@@.male;"I didn't. I'm so sorry to hear that. What happened?"@@
+
+You look down. @@.thought;I can't tell him we did it so <<print $girlfriend.firstname>> could get into the Witchcraft Club. That'll bring up a lot of questions. But then what do I say? I could lie to him@@<<if visited("Lunch Witch Breakup")>>@@.thought;, like I did with <<print $witch.firstname>>@@<</if>>@@.thought;, but if I lie to him, then what's even the point of talking about this?@@
+
+[[Tell him you don't want to talk about what happened|Therapist 2 Breakup Refuse]]<<if $girlfriend.dateMarcoPermission is 2>>
+[[Change the subject to her relationship with Marco|Therapist 2 Breakup Marco]]<</if>>
+
+::Therapist 2 Breakup Refuse
+@@.playeer;"I, uh, don't really want to talk about what happened,"@@ you say.
+
+@@.male;"Understandable."@@ He pauses for a second. <<if visited("Therapist 2 QB AskOut")>>@@.male;"Well, I'm glad you're moving on."@@
+
+@@.player;"What do you mean? Oh, <<print $qb.firstname>>."@@
+
+@@.male;"Yeah. I'm not sure what happened between you and <<print $girlfriend.firstname>>, but breaking up with her, or being broken up with, doesn't mean you have to feel sorry for yourself. Not that anyone would blame you if you did."@@
+
+@@.player;"I'm surprised he asked me out. I wasn't expecting anyone to like me, not...not since recently."@@<<elseif visited("Therapist 2 QB")>>@@.male;"Well, I'm glad you at least seem to be moving on."@@
+
+@@.player;"What do you mean? Oh, to <<print $qb.firstname>>? He's not my boyfriend."@@
+
+@@.male;"Sure, but he could be. I'm not sure what happened between you and <<print $girlfriend.firstname>>, but breaking up with her, or being broken up with, doesn't mean you have to feel sorry for yourself. Not that anyone would blame you if you did."@@
+
+@@.player;"I just don't know if he likes me. Nobody really likes me like that. At least, not since recently."@@<<else>>@@.male;"So are you going to take a break from dating for a while?"@@
+
+<<if $player.crush is $qb.firstname>>@@.player;"No, I was actually thinking about dating, uh, someone else. If they feel the samee way."@@
+
+@@.male;"Good for you for moving on! I'm not sure what happened between you and <<print $girlfriend.firstname>>, but breaking up with her, or being broken up with, doesn't mean you have to feel sorry for yourself. Not that anyone would blame you if you did."@@
+
+@@.player;"I just don't know if he likes me. Nobody really likes me like that. At least, not since recently."@@<<else>>@@.player;"Yeah, I guess so. But it's not really my plan, it's just, well, ever since recently, nobody's really been interested."@@<</if>><</if>>
+
+@@.male;"Oh, I think I understand. You're talking about your changes, aren't you? How you're not the same @@<<if $player.feminine<7>>@@.male;guy@@<<else>>@@.person@@<</if>> @@.male;you were at the start of the year, and now the girls aren't as interested as they used to be?"@@
+
+@@.player;"Yeah, exactly."@@
+
+@@.male;"That's not going to stop someone from liking you."@@
+
+@@.player;"Sure."@@
+
+@@.male;"No, I mean it. You may think nobody likes you in that way, but @@<<if visited("Therapist 2 QB AskOut")>>@@.male;obviously <<print $qb.firstname>> does.@@<<else>>@@.male;I promise you, somebody will.@@<</if>> @@.male;But if you feel ashamed and think @@<<if visited("Therapist 2 QB AskOut")>>@@.male;<<print $qb.firstname>> doesn't like you@@<<elseif visited("Therapist 2 QB") or visited("Therapist 1 Gay")>>@@.male;guys won't like you@@<<else>>@@.male;girls won't like you@@<</if>> @@.male;then it's a self-fulfilling prophecy."@@
+
+@@.player;"So I need to stop feeling ashamed."@@
+
+@@.male;"Exactly. You're discovering who you are. Be proud of that."@@
+
+@@.thought;Hmm, I never thought of it that way.@@ <<if visited("Therapist 2 QB AskOut")>>@@.thought;But I don't know if he's right about <<print $qb.firstname>> not liking me if I feel ashamed. Well, I guess he is @@<<if $playerStarter>>@@.thought;a football player@@<<else>>@@.thought;the quarterback@@<</if>>@@.thought;. I have some competition for him.@@<<else>>@@.thought;But I couldn't date anyone. They'd find out about my pussy. Unless I found someone who didn't mind.@@<</if>>
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Breakup Marco
+@@.player;"She asked me if it would be okay if she dated Marco,"@@ you say, changing the subject. @@.player;"And I said yes."@@ That's technically true, you're just leaving out the part where you let her date Marco so she could get into the Witchcraft Club.
+
+@@.male;"That's very big of you. So they're dating now?"@@
+
+@@.player;"Yeah. I thought I could handle it, but it's difficult, you know, seeing Marco and <<print $girlfriend.firstname>> together."@@
+
+@@.male;"I can imagine. And of course, it's too late to take your permission back?"@@
+
+@@.player;"Yeah. I can't ask them to stop dating."@@
+
+<<if visited("Therapist 2 QB AskOut")>>@@.male;"At least you're going on a date with <<print $qb.firstname>>. So it's not like you're alone."@@
+
+@@.player;"Yeah,"@@ you agree. @@.player;"That helps. And <<print $qb.firstname>> is great."@@
+
+@@.male;"But he's not <<print $qb.firstname>>?"@@
+
+@@.player;"Yeah. Well, I don't know. They're both good in different ways."@@
+
+@@.male;"Hey, maybe the four of you can go on a double date."@@
+
+You look at him in horror, imagining all the shit Marco would give you if he saw you going out with a guy. Especially if you accepted <<print $qb.dateHelp>>'s offer to make you look feminine.
+
+@@.male;"I'm sorry, <<print $player.firstname>>. That was a joke."@@
+
+@@.player;"Oh,"@@ you say, laughing.<<else>>@@.male;"I'm sorry. You must be feeling alone, right?"@@ You nod. @@.male;"Maybe getting a @@<<if visited("Therapist 1 Gay") or visited("Therapist 2 QB Caught") or visited("Therapist 2 QB Morgan") or visited("Therapist 2 QB Crush")>>@@.male;boyfriend@@<<else>>@@.male;girlfriend@@<</if>> @@.male;would help."@@
+
+@@.player;"Yeah, I guess so,"@@ you say<<if visited("Therapist 1 Gay") or visited("Therapist 2 QB Caught") or visited("Therapist 2 QB Morgan") or visited("Therapist 2 QB Crush")>>, trying to ignore him suggesting you get a boyfriend<<if $player.crush is $qb.firstname>>. Besides, if things go well with <<print $qb.firstname>>, you //will// have a boyfriend<</if>><</if>>. <<if $player.crush is $qb.firstname>><<if visited("Therapist 1 Gay") or visited("Therapist 2 QB Caught") or visited("Therapist 2 QB Morgan") or visited("Therapist 2 QB Crush")>>@@.player;"I'd like to go out with <<print $qb.firstname>>, but he probably doesn't feel the same way."@@<<else>>@@.player;"There's a guy I like, but he probably doesn't feel the same way."@@<</if>>
+
+@@.male;"Well, why not?"@@
+
+@@.player;"He's pretty popular, and girls are all over him. I don't know why he'd pick me."@@<<else>>@@.player;"I don't know who I'd even go out with anyway. Ever since, uh, recently, @@<<if $player.homosexuality<50>>@@.player;girls@@<<else>>@@.player;people@@<</if>> have stopped liking me."@@
+
+@@.male;"Why not?"@@
+
+@@.player;"Well, I'm not exactly the same @@<<if $player.masculinity>=50>>@@.player;guy@@<<else>>@@.player;person@@<</if>> @@.player;I was before."@@<</if>>
+
+@@.male;"<<print $player.firstname>>, listen to me. There's nothing wrong with you."@@
+
+You laugh. @@.player;"Well, I'm not getting the same attention the old <<print $player.firstname>> used to."@@
+
+@@.male;"The old <<print $player.firstname>> had confidence. It's understandable, really. You're struggling with your gender@@<<if visited("Therapist 1 Gay") or visited("Therapist 2 QB Caught") or visited("Therapist 2 QB Morgan") or visited("Therapist 2 QB Crush")>>@@.male; and orientation@@<</if>>@@.male;. That's what's different."@@
+
+You think it over. @@.thought;Would I be more popular if I had more confidence? Everyone thinks I'm a sissy, but if I wasn't ashamed about that, would I still be popular? I don't know.@@<</if>>
+
+Mr. Garcia checks his watch. <<if $therapistQuestionsRemaining<=1>>@@.male;"We're out of time, <<print $player.firstname>>. I'll see you next thursday, okay?"@@
+
+<<link "You nod" $currentPassage>><</link>><<else>><<if $therapistQuestionsRemaining is 2>>@@.male;"We've got time to talk about one more thing."@@<<else>>@@.male;"We've still got some time. Is there anything else you'd like to talk about?"@@<</if>>
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]<</if>>
+<<set $therapistQuestionsRemaining to $therapistQuestionsRemaining-1>>
+
+::Therapist 2 Questions
+You consider what you want to talk about.
+<<if visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught") or $player.crush is $qb.firstname>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB">><</link>><<elseif visited("Therapist 1 QBSex") and not visited("Therapist 2 QB Relationship")>>
+<<link "Talk about $qb.firstname" "Therapist 2 QB Relationship">><</link>><</if>><<if $player.ownsGirlPants is true or $player.wearsOnepiece is true or $player.bra is not null>>
+[[Talk about your new clothes|Therapist 2 Clothes]]<<elseif (visited("Therapist 1 Clothes") or visited("Therapist 1 Boobs")) and not visited("Therapist 2 Clothes Encourage")>>
+[[Talk about your clothes|Therapist 2 Clothes Encourage]]<</if>><<if $player.relationship is "" and not visited("Therapist 2 Breakup")>>
+<<link "Talk about your recent breakup" "Therapist 2 Breakup">><</link>><</if>>
+[[You can't think of anything else to talk about|Therapist 2 End]]
+
+::Therapist 2 End
+@@.player;"Actually, I think I want to call it here."@@
+
+Mr. Garcia looks surprised. @@.male;"We've still got some time left."@@
+
+@@.player;"I know. It's just that I don't have anything else to talk about."@@
+
+For a second, it seems like he's about to stop you. Instead, he says, @@.male;"Well, if you think of anything, we can talk about it next week."@@
+
+<<link "Do something else" $currentPassage>><</link>>

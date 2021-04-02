@@ -1,0 +1,370 @@
+::Sleep2
+@@.player;"Uh, no thanks. It's kind of weird."@@
+
+<<print $girlfriend.firstname>> looks a little surprised. @@.girlfriend;"I didn't think you'd say that. But yeah, it is pretty weird."@@
+
+She turns to head out. @@.girlfriend;"Oh, <<print $player.firstname>>? Let's do it tomorrow."@@
+
+You nod. It's not like there's anything stopping you from having sex tomorrow.
+
+It's a little hard to get to sleep now, with two couples fucking in your room. You pull the covers over your head, and imagine a sea of sheep jumping over a fence.
+
+At long last, you're off to sleep.<<set $girlfriend.relationship to $girlfriend.relationship-3>>
+
+::Sleep4
+<<print $girlfriend.firstname>> is waiting for you when you get back to your room.
+
+@@.player;"<<print $girlfriend.firstname>>? What's going on?"@@
+
+<<if not visited("Girlfriend Partial Breakup")>>@@.girlfriend;"I couldn't stop thinking about you all day,"@@ she says, putting her hand on your shoulder. @@.girlfriend;"And I've been so horny."@@
+
+You're frozen in place. She's asking to have sex with you, but you can't. Not like this. Not with your new anatomy.
+
+@@.girlfriend;"So will we, or not?"@@
+
+You grunt noncommitally. <<print $girlfriend.firstname>> rolls her eyes. @@.girlfriend;"Good night then."@@ Her voice is flat.
+
+@@.player;"Good night,"@@ you say back.
+
+@@.thought;I'm not going to be able to get away with it forever@@ you think as she walks out. @@.thought;She's going to get fed up soon.@@ You feel bad. It's not your fault, of course, but you're leading her on. If you had told her sex wouldn't happen, she could use a vibrator or something. @@.thought;She still can. Girls love that.@@
+
+<<set $girlfriend.relationship to $girlfriend.relationship-5>><<else>>@@.girlfriend;"I came all the way over here hoping we could fuck,"@@ she begins. @@.girlfriend;"And then once I got here, I realized that we couldn't do it."@@
+
+@@.player;"Not so loud!"@@
+
+@@.girlfriend;"Sorry,"@@ <<print $girlfriend.firstname>> says, looking at your roommates.
+
+@@.player;"So what do you want?"@@
+
+@@.girlfriend;"I don't know! I really need to get off. I guess I'll have to go back to Busch and use my..."@@ she trails off, looking at your roommates once more, before getting up and leaving.
+
+You're feeling like crap. Worst of all, neither you nor her are satisfied.
+
+@@.thought;She's still horny. I really wish I could help her out. Well, I know she has toys. And girls are supposed to love them.@@ <</if>>In your mind, you picture pleasuring yourself with a vibrator. @@.thought;No. No! I can't do that.@@
+
+It comes as a relief when you fall asleep.
+
+::Sleep5
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress ass>><<set $tempAss to $tempTfValue>>You're ready to go to bed, but for some reason you can't fall asleep. You've focused so much on <<print $witch.firstname>>'s curse, and the changes that have come from it, that you completely forgot about what's happening later in the week.
+
+Tomorrow, you have another practice. You have no idea how you're going to get out of that one. You're a quarterback who can't throw the ball. How long can you keep your job?
+
+And on friday, you have another game. Ordinarily, you would be looking forward to it, but you hadn't even thought about it until now. You start to stress out as you finally think about it. You're going to be hit by big, heavy linemen, and you're no longer strong enough to take the hits. And if you //do// have time to throw, you'll just embarrass yourself.
+
+And then there's the matter of your pussy. <<if $tempFace is 0>>You're really horny, but you can't stand the thought of masturbating like a girl.<<elseif $tempAass is 0>>The last time you masturbated, your face changed. It's probably a coincidence, but you're worried about getting off again.<<else>>Every time you've orgasmed, something about you has become more feminine. You can't masturbate any more, of course, but how are you going to get off now?<</if>>
+
+You toss and turn for a while until sleep finally takes you.
+
+::Sleep6
+It's nighttime, and you're ready to go to sleep. Unfortunately, sleep doesn't come. You toss and turn for a while, thinking about the game tomorrow, <<print $girlfriend.firstname>>, and the panty raid tomorrow.
+
+<<if visited("Language Project Family")>>@@.thought;I got the project rescheduled so I could go to the panty raid. But I don't really want to go to the panty raid. Damn, I feel bad. I lied to Norm, and he's missing nerd club because of me.@@<<else>>@@.thought;Can I skip the panty raid? My group needs me to do their project. I don't really want to do the project, but I'm not sure if I want to be part of the panty raid either anymore.@@<</if>>
+
+You turn onto your side. This isn't helping. @@.thought;Okay, <<print $player.firstname>>. Focus.@@ You manage to clear out all your worries, and imagine a scene of sheep jumping backwards over the fence.
+
+::Sleep7
+<<showQBSkill true>><<showQBSkill false>>You're feeling tired from your long day, and you find yourself nodding off to sleep as soon as you get into your bed. @@.thought;At least tomorrow's going to be an easy day. Classes will be easy and then after that is the weekend. And the football game.@@
+
+You sit straight up in bed, fully awake. This is going to be your first game since your transformation. Everyone's going to expect you to lead the Stallions to another victory, and you're going to make a fool out of yourself in front of the whole school. <<if $player.qbSkill>=40>>@@.thought;Or maybe I won't? I've been practicing. I think I can fake it well enough to get by.<<elseif $player.qbSkill>$qb.qbSkill>>@@.thought;At least I'm better than <<print $qb.firstname>>@@ you think. Not that it's a high bar.<<else>>@@.thought;I bet even <<print $qb.firstname>> is better than me now@@ you think miserably. @@.thought;Maybe I should just let him be the starter.<</if>>
+
+You can hear your father reminding you to get sleep before a big game, but you just can't fall asleep. You'll get close, and then sit up, worried about something else.
+
+Finally, at around 3 AM, sleep overtakes you.
+
+::Dream2
+//You're standing naked in your dorm room. It's something you do every day, but now, something feels off.
+
+Patrick and Marco come into the room. @@.player;"Hello,"@@ you say, your voice cracking at the end.
+
+Your roommates don't respond. They're just staring at you and laughing.
+
+@@.player;"What?"@@ You feel self-conscious.
+
+Then, you realize that they're looking at your crotch. You look down, and see what they're laughing at.
+
+You have a vagina.//
+
+::Dream3
+//You're sitting in your biology class. Something feels strange, but you can't tell what it is. You're more worried about the test that Miss Williams is handing out.
+
+The guy in front of you passes a copy of the test to you, and you take it. Hunched over your desk, you flip through the test, looking first for a question that looks easy and then for a question you can actually understand.
+
+It's no use. It might as well have been written in a foreign language. And you're horny. So horny. 
+
+You can't resist it anymore. Your right hand snakes down between your legs, pulls your panties to the side, and touches your pussy. It feels good, but not good enough.
+
+Nobody is paying attention to you. Feeling bold, you slowly extend your index finger and stick it inside. @@.thought;Oh my god!@@ You lose yourself in waves of pleasure as you continue to finger yourself.
+
+You shake yourself out of it. Something is wrong. Then it comes back to you. @@.thought;I have a pussy! And I'm wearing panties! Wait, but how did I get in so easily? I'm in school. I'm wearing my uniform.@@
+
+You quickly look down at yourself. You're wearing //a// school uniform, but not the one you're used to wearing. Instead of dress pants, you're wearing a skirt and stockings, just like the other girls in the class.
+
+You look around again, but no one is paying any attention to you. It's almost like they think it's normal.//
+
+::Dream4
+//You're in your room, having sex with <<print $girlfriend.firstname>>. Your big cock pumps into her, as she...
+
+@@.thought;Wait. Big cock?@@
+
+You withdraw from <<print $girlfriend.firstname>> and look down. Yes! Your huge, eight inch cock is back!
+
+@@.girlfriend;"What's wrong, <<print $player.firstname>>?"@@
+
+@@.player;"Absolutely nothing,"@@ you say, beaming.
+
+You enter her again, and pump away. Her face screws up with pleasure, and you both get close to orgasm...//
+
+::Dream6
+//It's time for the panty raid. You and the rest of the team huddle in the locker room. As the quarterback and the leader, everyone turns to you.
+
+@@.player;Okay, guys! Most of the girls are at clubs or the library. We're going to go into their dorm, break into their rooms, and steal their panties. I want everyone to get two panties from two girls!"@@
+
+@@.male;"What if we break in and they're in their room?"@@
+
+@@.player;"Then we take their panties anyway!"@@
+
+The boys all cheer, and everyone heads for the girls dorms. Everyone is out, and all the boys split up, each taking a different room.
+
+You find yourself alone, in front of a closed door. You turn the handle and the door swings open. You walk in, purposefully striding towards the dresser. You find a pair of royal blue panties, and you reach out and grab them.
+
+Something is wrong. //You// feel wrong. You're feeling claustrophobic in your loose, sweaty clothes. You //need// to get your clothes off.
+
+Your pants are the first to go, then your shirt, and then your boxers. Now you're standing naked in some random girl's dorm room, holding nothing but a pair of panties.
+
+There's a strong gust of wind through the open window, and you shiver. You're cold. You slide your underwear up your legs, not realizing that you're putting on panties until you're wearing them.
+
+@@.thought;What am I doing? I've got to take these off!@@
+
+Before you can do so, the door starts to swing open...//
+
+::Dream7
+//You yawn and open your eyes. You're awake. But didn't you just go to sleep? Weird.
+
+You get up and strip off your clothes. It's time for another day of school. You take some time to admire your cute pussy, and then walk over to the dresser. Without thinking, you reach for <<if visited("Spanish Project Start")>>your boxers, and you slide them up your legs.
+
+They look out of place, though. You have a pussy, now, and it's only right for you to wear panties too.<<elseif $pantyRaid and $pantyRaid.takenFrom is $witch.firstname>>the <<print $pantyRaid.panties.informalName>>.
+
+@@.thought;Wait! I don't wear panties!@@ You try to put them back, but your fingers don't obey you. As if in a trance, they move down. Your legs step into the <<print $pantyRaid.panties.informalName>> and you slide them up your legs.
+
+Suddenly, the trance is broken, and you try to tear the panties off of you. They don't budge.
+
+They do look cute on you, though.<<elseif $pantyRaid and $pantyRaid.takenFrom is $girlfriend.firstname>>the <<print $pantyRaid.panties.informalName>> and slide them up your legs. They look cute on you, and they fit well.
+
+Wait! They fit well? You snap out of it, and slide them back down your legs.
+
+It's too bad. They looked cute on you.<<else>>your boxers, and you slide them up your legs.
+
+They look out of place, though. You have a pussy, now, and it's only right for you to wear panties too.<</if>>//
+
+Suddenly, your alarm blares, and you wake up.
+
+::Sleep Marco Conversation
+You tuck yourself into bed, and get ready for sleep.
+
+@@.male;"<<print $player.firstname>>?"@@ Marco asks.
+
+@@.player;"Yeah?"@@
+
+@@.male;"I spoke to <<print $girlfriend.firstname>>."@@
+
+@@.thought;Here we go.@@
+
+@@.male;"Are you sure?"@@
+
+@@.thought;I guess it's nice that he's asking me first. He's not a bad friend. But this is so embarrassing!@@
+
+@@.male;"What's going on, man?"@@ Patrick asks. @@.thought;Oh, great. I thought he was asleep.@@
+
+@@.male;"I want to ask <<print $girlfriend.firstname>> out, but I wanted to make sure it was alright with <<print $player.firstname>>."@@
+
+@@.male;"You don't have to do that, man,"@@ Patrick says to you.
+
+[[I know, but Marco can date who he wants|Sleep Marco Approve]]
+[[You're right|Sleep Marco Deny]]
+
+::Sleep Marco Approve
+@@.player;"I know, but Marco can date who he wants."@@
+
+@@.male;"Thanks, <<print $player.firstname>>. I'll try not to fuck her in our room."@@
+
+@@.player;"Why would you mention fucking her?"@@
+
+@@.male;"Oh. Sorry. But that's cool of you."@@
+
+[[You nod and turn off the lights|Dream Marco]]
+<<set $girlfriend.dateMarcoPermission to 2>>
+
+::Sleep Marco Deny
+@@.player;"You're right,"@@ you say to Patrick.
+
+@@.male;"Hey, why are you getting in the middle of this?"@@ Marco asks Patrick. @@.male;"This is between <<print $player.firstname>> and me."@@
+
+@@.male;"<<print $player.firstname>> is my friend too. And if he won't stand up for himself, I will."@@
+
+@@.thought;That's touching. I always thought of Patrick as this dumb jock.@@
+
+@@.male;"Fine,"@@ Marco says, ignoring Patrick. @@.male;"I won't date her."@@ He doesn't sound happy about it, though.
+
+[[You turn off the lights|Dream Marco]]
+
+::Dream Marco
+//You're in your dorm room, doing your homework, when the door opens. You turn to greet your roommate, only to find that it's <<print $girlfriend.firstname>> and Marco.
+
+They stagger to Marco's bed, <<print $girlfriend.firstname>> straddles him, and they start making out. You try your best to tune them out and focus on your homework, but it's difficult. The textbook becomes all fuzzy and you're unable to get any reading done, so you decide that you might as well watch the show in front of you.
+
+Marco and <<print $girlfriend.firstname>> have moved on from just making out. Marco is just in his boxers, and <<print $girlfriend.firstname>> is in her bra and panties. <<print $girlfriend.firstname>> gets up to take off Marco's boxers, and you take the opportunity to <<if $player.isWearingPanties is true>>strip down to your panties.<<else>>get naked yourself.<</if>>
+
+Neither of them seem to notice. In fact, while you were removing your clothes, Marco must have taken off <<print $girlfriend.firstname>>'s underwear too, because they'ree now having sex. Your hand slips to your pussy and you start rubbing yourself, trying to imagine yourself in Marco's place, getting to fuck your ex with a real cock. She bounces up and down on Marco's dick, and you close your eyes, imagining her doing the same to you.
+
+Your angle isn't that good, though, and you have a much better view of <<print $girlfriend.firstname>> than you do of Marco. As they continue to fuck, you start to imagine yourself in <<print $girlfriend.firstname>>'s place, bouncing up and down on Marco's large cock, enjoying the sensation of being filled. You know it's wrong, but as you continue to rub yourself, you find that you don't care.
+
+Marco sees you looking. @@.male;"Do you want to join us?"@@ he asks.//
+
+Suddenly, your alarm blares, and you wake up.
+
+[[Look around|Wake up]]
+
+::Sleep Marco ChangedMind
+@@.player;"Marco?"@@ you say.
+
+@@.male;"Yeah?"@@
+
+@@.player;"I was thinking about <<print $girlfriend.firstname>>..."@@
+
+@@.male;"And you changed your mind?"@@
+
+@@.player;"Yeah."@@
+
+@@.male;"Come on, dude!"@@ Patrick says.
+
+@@.player;"No, it's okay. I'm not good...uh, I mean, me and <<print $girlfriend.firstname>> aren't dating anymore, and it's not my place to say who she can't date, so..."@@
+
+@@.male;"Thanks. That's cool of you."@@ Turning to you, he adds, @@.male;"I'll try not to fuck her in our room."@@
+
+@@.player;"Why would you bring that up?"@@ you say with a hollow laugh. Insidde, you're wondering what would happen if he //did// bring her back to your room, and if he would ask you to join in.
+
+[[Go to sleep|Dream Marco]]
+<<set $girlfriend.dateMarcoPermission to 2>>
+
+::Dream KickedOffTeam
+//You're on the football field, in the middle of a close game. You take the snap and look around you.
+
+Defenders are running towards you, but you're not worried about them. You spot a receiver open deep towards the end zone, and release a pass in his direction.
+
+It's a weak throw, only going a couple yards before dropping like a stone.
+
+All around you, you can hear the sounds of laughter: your teammates, the other team, the fans, the cheerleaders.
+
+Suddenly, Coach is on the field. @@.male;"You're coming with me,"@@ he says, picking you up off the ground. You try to shake yourself loose, but you're not strong enough.
+
+The two of you walk down winding corridors before coming to a stop outside the stadium. Coach lets you go and then walks back inside, shaking his head.
+
+You've got to get back inside the stadium. You know that. But the door that Coach just went in has disappeared. You run all around the field, trying to find an entrance, but everything is locked.//
+
+::Patrick Masturbate
+You lay down in bed and close your eyes, weary of what another day will bring. It's been so long since <<print $witch.firstname>> has cursed you, but you haven't gotten any closer to figuring out how to reverse it. Instead, your body has been affected more and more, and now you've got this damn plug in you.
+
+You shift into a different position, hoping that it will make it easier to fall asleep. Time passes, yet you remain awake. The plug, which was strangely erotic during the day, is back to being uncomfortable now that you're trying to sleep.
+
+@@.thought;Why isn't this working? I just want to get this thing out of my ass!@@
+
+You're about to shift into another position when you hear noises coming from the next bed over. You open an eye and try your best to look around. Marco looks sound asleep, but Patrick...what is he doing?
+
+[[Try to focus|Patrick Masturbate Focus]]
+
+::Patrick Masturbate Focus
+You open your other eye, and try to focus on Patrick. It's hard, since you're half-asleep, but you can tell from his deep breaths and grunts, and the way his covers are moving back and forth exactly what he's doing.
+
+@@.thought;He's jerking off //now//? That's gross. Wait a minute, does he always jerk off when he thinks we're asleep?@@
+
+You sit up in bed. If Patrick was paying attention, he would have realized that you're awake, but his attention is clearly elsewhere. 
+
+<<if $player.masculinity>=25>>You feel a pang of envy as he furiously strokes his dick. He has something that you want, and he doesn't even know how good he has it.<<else>>You expect to feel envious of Patrick as he furiously strokes his dick, but strangely, you don't. Maybe after you were first transformed, you would have. But ever since then, you've realized that there are a lot of advantages which come with having a pussy.<</if>>
+
+Suddenly, Patrick leans back and jerkily reaches for a tissue. The covers have stopped moving now, and you can't see what Patrick is doing.
+
+@@.thought;If he's not jerking off anymore, he could see that I'm watching him!@@ you think, quickly lying back in bed. It's not a moment too soon. You can hear the sound of a tissue bouncing off the trash can and hitting the floor. You wait for the sound of Patrick stepping out of bed to pick it up, but you don't hear it.
+
+You stay lying down for a while, afraid to open your eyes. When you finally work up the nerve, Patrick is sound asleep.
+
+[[Go to sleep|Dream]]
+[[Put the tissue into the trashcan|Patrick Masturbate Tissue]]
+
+::Patrick Masturbate Tissue
+You get out of bed as quietly as you can, and walk over to the trashcan. Sure enough, a wadded up tissue is laying right by it. You pick it up and get ready to toss it into the trashcan, when suddenly you're overcome with curiosity. @@.thought;What does Patrick's cum look like?@@
+
+You turn the tissue over, and look at it. It's thick and goopy, the smell is overpowering, and it looks similar to how your cum looks like -- used to look like.
+
+@@.thought;I could just have a quick taste. No one would know. And then I'd get rid of the curse.@@
+
+[[Go to sleep|Dream]]
+[[Have a quick taste|Patrick Masturbate Taste]]
+<<set $player.homosexuality to $player.homosexuality+1>>
+
+::Patrick Masturbate Taste
+You look around furtively. Marco and Patrick are both still asleep. Satisfied that nobody will see, you reach out a finger and scoop up some cum. Then, before you can stop yourself, you bring your finger up to your mouth and lick it.
+
+It's not bad. It's salty and it has a weird texture. You're not tempted to taste any more, but you're also not about to spit it out.
+
+You feel ashamed as the magnitude of what you just did washes over you. @@.thought;I can't believe I just did that! I tasted Patrick's cum! How can I look at him again?@@ You feel so disgusting and perverted. Even worse is the fact that you didn't entirely hate the taste of his cum.
+
+The buttplug shifts in your butt. You had forgotten all about it. You reach down and gently remove it from your ass.
+
+@@.thought;At least I can go to sleep now. But I feel kind of empty now.@@
+
+[[Go to sleep|Dream]]
+<<set $player.homosexuality to $player.homosexuality+2>><<set $player.buttplugCurse to false>><<set $player.isWearingButtplug to false>>
+
+::Dream QBDate
+//You're sitting in a crowded movie theater, watching a movie. The details of the movie are fuzzy, but other than that, it's a normal movie, and you don't know why you're having a dream about something so ordinary.
+
+You feel a breeze on your legs. You look down, only to discover that you're wearing a dress. Frantically, you look around.
+
+@@.qb;"What's the matter, <<print $player.firstname>>?"@@ <<print $qb.firstname>> asks, putting his arm around your shoulder. He's wearing a nice shirt and you realize that you're on a date. @@.qb;"Aren't you having a nice time?"@@
+
+You nod. <<print $qb.firstname>> smiles, and puts his hand behind your head, pulling your lips into his. You kiss him back enthusiastically.
+
+When you pull away, you realize that the movie theater is filled with couples, all of whom are making out with each other. Some of the girls even have their hands on their boyfriends' lap.
+
+You're not scared anymore. You mirror the <<if $player.masculinity<=0>>other <</if>>girls, putting your hand on <<print $qb.firstname>>'s nice pants. You can feel his hardness.
+
+You start to stroke...//
+<<increaseArousal 10>>
+
+::Dream AfterQBDate
+<<getTfProgress ass>>//You're <<if $player.isWearingDress>>wearing a dress and <</if>>walking to class. Other students pass by you, <<if $player.isWearingDress>>not even commenting on your dress<<else>>not paying you any attention<</if>>. Up ahead, you see the confident figure of <<print $qb.firstname>>. He looks even more attractive in your dream than he does in person.
+
+You run forward, <<if $player.isWearingDress>>your little black dress fluttering, <</if>>eager to reach <<print $qb.firstname>>. He stands there, smiling, waiting for you.
+
+You finally reach him, and put your hand on his chest. He puts a hand on your <<if $tempTfValue>=2 or $temporarilyTransformed>>round <<elseif $tempTfValue is 1>>pert <</if>>ass, and sweeps you up into a kiss.
+
+You eagerly kiss him back, dimly aware that people are watching. The kiss ends, and you look around you. Morgan and a couple other popular girls are looking at you with jealousy.
+
+@@.female;"How come he's going out with her and not me?"@@
+
+As the dream starts to fade away, you reflect on how lucky you are to have such a hot boyfriend.//
+
+[[Wake up|QBDate MorningAfter]]
+
+::Sleep Halloween
+//You're sitting in class like normal, and Mrs. Reed is droning on about trigonometry. Just as you're about to fall asleep, a girl leans over to you and whispers, @@.female;"I like your costume."@@
+
+You look down, but you're still wearing your normal school uniform.
+
+You look at her in confusion. Just then, a guy leans in and whispers, @@.male;"nice costume."@@
+
+The bell rings and you file out of the classroom. In the hallway, everyone is going up to you and complimenting you on your costume.
+
+@@.player;"But I'm not wearing a costume!"@@ you say.
+
+In response, they just laugh.
+
+You push past the crowd and duck into the nearest classroom, but Morgan is there. You hold your breath as she walks up to you, and she rips off your uniform!
+
+@@.player;"Wh...what?"@@ You look down, and somehow you're wearing your <<print $costume>> costume from tonight.//
+
+<<if $boughtGirlsCostume is false>>//@@.female;"No, that's not quite right,"@@ Morgan says. She rips off your costume again, and now you're wearing a cheerleader outfit!//
+
+<</if>>//@@.female;"Much better,"@@ Morgan says, laughing. @@.female;"Now you're finally out of your ridiculous costume@@//<<if $boughtGirlsCostume is false>>//@@.female;s@@//<</if>>//@@.female;."@@//
+
+[[Wake up]]

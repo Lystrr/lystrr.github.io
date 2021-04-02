@@ -1,0 +1,1093 @@
+::Witch Club Spy 1
+You get to the woods about half an hour early. Everything is eerily silent. Most students steer clear of the woods. There are the occasional hikers, but there's nothing there that really interests high school kids. @@.thought;Probably why the Witchcraft Club chose it for their meetings.@@
+
+You spend some time looking for a good hiding place. You need some place where you can see the forest without being seen. Especially because, as you're now realizing, you have no idea //where// in the woods the club is going to meet.
+
+Finally, you spot a tree that looks suitable. It's a large oak tree with sturdy-looking branches, and the thickness of the trunk makes it a good place to hide behind. There's a branch about halfway up that you think would give a good view of the forest.
+
+[[Climb it|Witchcraft Club Spy 1 Climb]]
+
+::Witchcraft Club Spy 1 Climb
+You eagerly start up the tree. For the first time, it feels like you're taking action against this curse. You're going to climb this tree and spy on the meeting and figure out how to change yourself back.
+
+You've gotten a few feet off the ground, and you grab a hold of the first branch. You try to pull yourself up, but nothing happens. You pull harder with the same result.
+
+@@.thought;Fuck! I'm not strong enough!@@ You bow your head, feeling defeated. How are you supposed to get your strength back if you're too weak to even spy on the club?
+
+Desperately, you firmly grab the branch and put your right leg on top of it. If you can just pull yourself up to here, you could have a pretty good view of the forest. It won't be as nice as the branch you were eyeing, but it's something.
+
+However, you're feeling something else that you're not used to. Fear. You're not used to this body, and if you tried to reach the branch, you could easily fall. You look down. It's not that far, but just the act of looking down makes you feel more scared.
+
+<<if $player.armStrength>=40>>[[Climb up anyway|Witchcraft Club Spy 1 Succeed]]<<else>>[[Climb up anyway|Witchcraft Club Spy 1 Fail]]<</if>>
+[[Look for another hiding place|Witchcraft Club Spy 1 Look]]
+
+::Witchcraft Club Spy 1 Succeed
+@@.thought;I've already got two arms and a leg up there. I just need one more leg. Just don't look down.@@ As you say that, you automatically look down.
+
+@@.thought;It's nothing. I can do this.@@
+
+You take a breath and shoot your leg up. It lands on the branch, but you find yourself losing balance. Your hands shoot out to the tree for support.
+
+It works! You're now sitting on the branch!
+
+If you could move, you would be dancing now. You were strong enough to climb a tree! Sort of. Maybe your trips to the gym really worked?
+
+@@.thought;Wait. Could I do it because of my strength or because I'm more flexible? I don't think the old me could have gotten my legs up there like that.@@ You wonder what you must have looked like if anyone was passing underneath, with your legs stretched apart.
+
+Fortunately, your thoughts are interrupted by the arrival of a group of girls. @@.thought;The Witchcraft Club!@@
+
+[[Listen in|Witchcraft Club Spy 1 Listen]]
+<<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+4>><</if>>
+
+::Witchcraft Club Spy 1 Listen
+@@.witch;"Thank you for coming,"@@ comes <<print $witch.firstname>>'s voice. @@.witch;"I see that we have five of us today. Who's missing?"@@
+
+@@.female;"Heather,"@@ comes another voice. 
+
+@@.witch;"Again? She was sick last time too."@@
+
+@@.female;"She says she's feeling under the weather."@@
+
+@@.witch;"If she keeps missing meetings, we'll have to kick her out of the club. Okay, whatever. Let's start progress reports."@@
+
+@@.girlfriend;"Do you have room for one more?"@@
+
+@@.thought;She made it!@@
+
+@@.female;"Who are you?"@@
+
+@@.female;"Don't you know? She's <<print $girlfriend.firstname>> <<print $girlfriend.lastname>>."@@
+
+@@.female;"No."@@
+
+@@.female;"Cheerleader? Homecoming queen?"@@
+
+@@.female;"I don't pay attention to the popular people,"@@ the girl says disdainfully.
+
+@@.female;"Dating <<print $player.firstname>> <<print $player.lastname>>?"@@
+
+@@.female;"Blech."@@
+
+@@.thought;Hey! I don't even know that girl!@@
+
+@@.girlfriend;"I'm right here,"@@ <<print $girlfriend.firstname>> says.
+
+@@.witch;"Okay, so what do you want?"@@
+
+@@.girlfriend;"I was thinking about joining your club."@@
+
+You hear a chorus of laughter.
+
+[[This doesn't seem to be going well|Witchcraft Club Spy 1 Ultimatum]]
+
+::Witchcraft Club Spy 1 Ultimatum
+@@.female;"What, you?"@@ asks Elvira. @@.female;"You want to be a witch? Seriously?"@@
+
+@@.girlfriend;"Yeah!"@@
+
+@@.witch;"And what do you know about witchcraft? Tell me how you would cast a spell that gives you more money."@@
+
+@@.girlfriend;"You can do that?"@@
+
+@@.witch;"See? She doesn't know anything about witchcraft."@@
+
+@@.girlfriend;"But I can learn! Just because I'm popular doesn't mean I can't like the same things you girls do!"@@
+
+@@.female;"That's a good point."@@
+
+@@.female;"Yeah. And Heather's sick. We need one more."@@
+
+@@.witch;"No! <<print $girlfriend.firstname>>, you're dating <<print $player.firstname>>, right?"@@
+
+@@.thought;Oh no.@@
+
+@@.girlfriend;"Uh, yeah."@@
+
+@@.witch;"I just cursed him. What if he sent you?"@@
+
+That gives <<print $girlfriend.firstname>> pause. @@.girlfriend;"No, I wouldn't do anything like that. And he's not smart enough to come up with that plan."@@
+
+@@.thought;Hey!@@
+
+@@.witch;"How do we know that, though? Maybe you're trying to infiltrate the club to change <<print $player.firstname>> back to a...change him back. And he's spying on us right now."@@
+
+@@.thought;Holy shit! How did she do that?@@
+
+<<print $witch.firstname>> looks around like she's expecting you to come out from behind the bushes. You cling tightly to the tree.
+
+@@.girlfriend;"Don't be ridiculous."@@
+
+@@.witch;I'm sorry, but we can't let you in while you're dating <<print $player.firstname>>."@@
+
+<<link "The meeting breaks up soon after that" $currentPassage>><</link>>
+
+::Witchcraft Club Spy 1 Fail
+@@.thought;I've already got two arms and a leg up there. I just need one more leg. Just don't look down.@@ As you say that, you automatically look down.
+
+Panic settles in. @@.thought;What am I doing? I'm not going to be able to get up here but how do I get down?@@
+
+You shake yourself and turn back to the tree. Taking a deep breath, you shoot your leg up. It lands on the branch, but you find yourself losing balance. Your hands shoot out to the tree for support, but you're not strong enough to hold on.
+
+Your hands slip, and for a brief moment, you're dangling from the branch by your legs.
+
+Then you fall.
+
+[[You land on the ground, bruised but mostly unharmed|Witchcraft Club Spy 1 Look]]
+<<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+1>><</if>>
+
+::Witchcraft Club Spy 1 Look
+@@.thought;That's not going to work@@ you think, and set out to look for other hiding spots. After what seems like forever, you finally find one in the bushes. It doesn't give you a great view of the rest of the forest, and if anyone looks in your direction, they'll spot you. But you're running out of time and options, and this is the best spot you've found.
+
+Now there's nothing left to do except for wait. You crouch in the bushes for a while, hoping that the witches show up soon. You imagine what it would look like if anyone caught you, hovering in the bushes, looking at nothing.
+
+Finally, you hear a commotion to your right. You can see that a group of girls have arrived in the woods. @@.thought;The Witchcraft Club!@@
+
+Unfortunately, they're too far away for you to really hear them.
+
+[[Try to come closer|Witchcraft Club Spy 1 Far]]
+[[Stay where you are|Witchcraft Club Spy 1 Miss]]
+
+::Witchcraft Club Spy 1 Miss
+@@.witch;"Thank you...coming,"@@ comes <<print $witch.firstname>>'s voice. You're only able to hear snippets of the conversation. @@.thought;I'd better find a way to get closer. But it's so risky. What if they catch me?@@ You shudder, imagining what a group of witches would do to you.
+
+@@.witch;"I see...five ...Who's missing?"@@ she continues.
+
+@@.female;"Heather,"@@ comes another voice.
+
+@@.witch;"Again?...sick...too."@@
+
+@@.female;"...says...under the weather."@@
+
+The rest of the meeting goes like that. The most you can tell is that a someone named Heather is sick. You thought you heard <<print $girlfriend.firstname>>'s voice, but you're not sure.
+
+You're getting more and more frustrated. You can only hear little bits of conversation but you can't tell what's actually happening.
+
+@@.thought;Fuck. I'm just wasting my time.@@
+
+<<link "Eventually, you decide to leave" $currentPassage>><</link>>
+
+::Witchcraft Club Spy 1 Far
+@@.witch;"Thank you...coming,"@@ comes <<print $witch.firstname>>'s voice. You're only able to hear snippets of the conversation. @@.thought;I'd better find a way to get closer.@@ @@.witch;"I see...five ...Who's missing?"@@ she continues.
+
+You slowly rise up, only to hit your head. @@.thought;Fuck! I'll have to be more careful!@@
+
+@@.female;"Heather,"@@ comes another voice.
+
+You spot a tree near the bush you're hiding behind. You could move over to that tree pretty easily.
+
+@@.witch;"Again?...sick...too."@@
+
+You decide to go for it. You get up and briskly walk over, trying not to make noise. You hold your breath, waiting to see if any of the witches have noticed you, but it doesn't seem like they have.
+
+@@.female;"...says...under the weather."@@
+
+@@.witch;"...missing meetings,...kick her out...progress reports."@@
+
+@@.thought;Where's <<print $girlfriend.firstname>>?@@
+
+@@.girlfriend;"Do you have room for one more?"@@
+
+@@.thought;She made it!@@
+
+You're still having a hard time hearing what's going on, but it sounds like the girls are arguing. If you want to spy on them, you'll have to get closer. You spy another tree. It's closer to the witches, but it's a ways away from where you are. You'll have to hope that the witches are too focused on whatever they're arguing about to look closely.
+
+[[Make a break for it|Witchcraft Club Spy 1 Caught]]
+
+::Witchcraft Club Spy 1 Caught
+You decide to make a break for it. You crouch and quickly walk to the next tree.
+
+@@.female;"You want to be a witch?"@@ asks Elvira. @@.female;"Seriously?"@@
+
+@@.thought;It worked! I can hear so much more now!@@
+
+@@.girlfriend;"Yeah!"@@
+
+@@.witch;"And what do you know about witchcraft? Tell me how you would cast a spell that gives you more money."@@
+
+At that moment, you step on a twig. @@.thought;Fuck!@@ you think.
+
+@@.witch;"What was that?"@@
+
+@@.female;"What was what?"@@
+
+@@.witch;"Is someone listening to us?"@@ She takes a couple of steps cautiously out of the clearing. You hide behind the tree, holding your breath.
+
+@@.thought;Is she walking towards me? I can't tell. Do I look? No, that's too risky.@@
+
+You decide to close your eyes until the meeting resumes. If you can't see them, they can't see you, right?
+
+[[You feel a tap on your shoulder|Witchcraft Club Spy 1 Questioned]]
+
+::Witchcraft Club Spy 1 Questioned
+With a sinking feeling, you open your eyes.
+
+@@.witch;"So you're going to spy on us?"@@ <<print $witch.firstname>> asks.
+
+@@.player;"Uh..."@@ you start. You look around. The other witches are looking questioningly at you. <<print $girlfriend.firstname>> looks nervous and a little annoyed. @@.thought;Is she mad at me? Well, I did mess up our plan.@@
+
+@@.witch;"I know what's going on here."@@
+
+@@.player;"You do?"@@
+
+@@.witch;"Yeah. You're upset about my little spell, and you're going to spy on my club."@@
+
+@@.player;"Um..."@@ She already knows. There's no use in denying it. @@.player;"Yeah. I was."@@
+
+@@.witch;"Well, you're not going to find anything."@@
+
+@@.female;"Should we still let <<print $girlfriend.firstname>> join?"@@
+
+@@.witch;"After her boyfriend spied on us? No way."@@
+
+@@.girlfriend;"Hey! I didn't do anything wrong!"@@ <<print $girlfriend.firstname>> yells, doing a good job of sounding convincing.
+
+@@.witch;"I'm sorry, but as long as you're dating <<print $player.firstname>>, I just can't risk it."@@
+
+<<print $girlfriend.firstname>> sighs. You can't help but feel responsible. There goes your plan to infiltrate the witchcraft club.
+
+@@.thought;Though she said <<print $girlfriend.firstname>> can't join as long as she's dating me...No! Why am I thinking about that?@@
+
+@@.witch;"As for you..."@@ <<print $witch.firstname>> says, looking menacingly at you. You gulp. You don't want to test her again. @@.witch;"...You should go."@@
+
+<<link "You take off before she has a chance to change her mind" $currentPassage>><</link>>
+<<set $girlfriend.relationship to $girlfriend.relationship-3>>
+
+::Witch Club Spy 2
+You and <<print $girlfriend.firstname>> head over to the forest. The woods are empty and actually pretty beautiful, but you don't have time to admire the scenery now. You have to get set up to spy on the witches.
+
+@@.girlfriend;"This is where they met last time,"@@ <<print $girlfriend.firstname>> says. @@.girlfriend;"I recognize this tree."@@
+
+@@.player;"Okay. So, what, we'll just leave a phone here and come back later and check on it?"@@
+
+@@.girlfriend;"Yeah, that's what I was thinking."@@
+
+You shrug, and try to climb the tree. <<if $player.armStrength>=40>>It takes some effort, but after struggling, you're able to manage it. You pull out your phone, set it to record and leave it on a sturdy branch.<<else>>You're able to get halfway up the trunk, and you can //just// reach the branches, but you're not able to pull yourself up.
+
+@@.girlfriend;"Want me to try?"@@
+
+Embarrassed, you nod. She easily climbs the tree, sets her phone to record, and climbs back down.
+
+@@.thought;She's stronger than me.@@<</if>>
+
+[[Now, you have to wait|Witch Club Spy 2 Wait]]
+
+::Witch Club Spy 2 Wait
+You and <<print $girlfriend.firstname>> go back to her dorm and she picks out a romcom for the two of you to watch.
+
+@@.player;"Seriously? Why can't we watch an action movie? There's one that just came out on DVD."@@
+
+@@.girlfriend;"You never want to watch the movies I pick out. At least give this one a chance."@@
+
+@@.player;"Fine."@@
+
+To your surprise, you find yourself actually getting into it. When <<print $girlfriend.firstname>> pauses the movie right before the end, you look at her in surprise and disappointment.
+
+@@.player;"What did you do that for?"@@
+
+@@.girlfriend;"It's been an hour and a half. They're probably done with their meeting by now."@@
+
+You stand up, wondering why you had gotten so invested in a romantic comedy.
+
+[[Go to the woods|Witch Club Spy 2 Watch]]
+
+::Witch Club Spy 2 Watch
+Luckily, <<if $player.armStrength>=40>>your<<else>><<print $girlfriend.firstname>>'s<</if>> phone is lying undisturbed on the branch.
+
+You nervously hit the play button as <<print $girlfriend.firstname>> leans over your shoulder.
+
+And...nothing. You skip forward in the recording, but you still have the same view of the empty forest path as before. You skip even further ahead, and still nothing happens.
+
+@@.girlfriend;"I guess they went to a different spot,"@@ <<print $girlfriend.firstname>> says with a sigh.
+
+@@.player;"Yeah. Damn. I really wanted this to work."@@
+
+@@.girlfriend;"Mhm. Now we can't spy on them."@@
+
+[[You have an idea on how to infiltrate the club, but you don't want to discuss it|Girlfriend Results Discussion Choice]]
+
+::Witch Club Spy 3
+You know that <<print $girlfriend.firstname>> will tell you what happened at the meeting, but that means that you'd have to wait for over an hour while these witches talk and do spells.
+
+You try to watch a TV show but you've barely gotten through the intro when you turn it off. Instead of enjoying the show and laughing at the jokes, you're imagining Elvira talking about <<print $girlfriend.firstname>>. And when the theme song comes on, you're imagining <<print $witch.firstname>> casting a spell.
+
+Finally, you can't take it anymore, and you decide to find out what's happening.
+
+[[Go to the forest|Witch Club Spy 3 Forest]]
+
+::Witch Club Spy 3 Forest
+Excitedly, you close your computer, leave your dorm, and walk across the quad. You're going to find out what they're saying! And if <<print $girlfriend.firstname>> is in danger from those witches, you could save her.
+
+@@.thought;Could I though? I don't know magic and @@<<if $player.armStrength<25>>@@.thought;they're probably stronger than me.@@<<else>>@@.thought;I'm not as strong as I used to be.@@<</if>>
+
+It's only once you've made it to the forest that you realize that it was a bad idea to come here. You're pretty sure you know the general area the meeting takes place in, but actually finding it could take some time. And if the meeting's already started, you'd have to work harder to find a good hiding place.
+
+[[Don't give up|Witch Club Spy 3 Search]]
+<<link "Turn back" $currentPassage>><</link>>
+
+::Witch Club Spy 3 Search
+@@.thought;I'm not going to give up. It's a forest! There's got to be a good hiding place!@@
+
+You walk over to the area where they usually meet. It takes a couple minutes, but you see a group of girls up ahead in a clearing, and quickly duck down behind a tree.
+
+@@.thought;Okay, I found them. Now I just have to get closer so I can hear what's going on.@@
+
+[[Climb up this tree. At least you can see what's going on|Witch Club Spy 3 Climb]]
+[[Look for a hiding spot that's closer so you can hear them|Witch Club Spy 3 Closer]]
+
+::Witch Club Spy 3 Climb
+@@.thought;I don't want to get caught@@<<if visited("Witchcraft Club Spy 1 Questioned")>>@@.thought; again@@<</if>>@@.thought;. I'll just stay here. At least I can see what's going on.@@
+
+<<if $player.armStrength>=25>>You <<if $player.armStrength>=50>>easily <</if>>climb the tree<<else>>You were worried that you're no longer strong enough to climb trees, but luckily this one has some well-placed knots in its trunk. Carefully, you make your way up.<</if>> Now, you have a good view of what's happening.
+
+To your relief, it doesn't look like <<print $girlfriend.firstname>> is in danger. She's talking with the witches, and you can tell from their relaxed body posture that they feel comfortable with her.
+
+@@.thought;Does this mean that she got in?@@
+
+You focus in on the group, trying to make out what's going on. @@.thought;If only I knew how to read lips. Wait, it looks like they're arguing now. What are they talking about?@@
+
+[[Stay here|Witch Club Spy 3 Stay]]
+[[Get closer|Witch Club Spy 3 Closer]]
+
+::Witch Club Spy 3 Closer
+@@.thought;I need to get closer. I'll never be able to figure out what's going on if I stay here.@@
+
+<<if visited("Witch Club Spy 3 Climb")>>You gingerly climb down the tree, and<<else>>You<</if>> sneak closer to the clearing, trying to stay hidden behind the trees. You don't want to be caught<<if visited("Witchcraft Club Spy 1 Questioned")>> again<</if>> by these witches.
+
+You're about halfway there when you start to hear them talking.
+
+@@.female;"...don't know why we can't..."@@
+
+@@.witch;"Are you stupid?"@@
+
+@@.girlfriend;"...<<print $player.firstname>>...dating anymore..."@@
+
+@@.thought;This is better, but I could hear more if I was closer. That would be dangerous, though. What if I climbed a tree?@@
+
+You look around for a good tree to climb. You spot one with some knots you could put your feet in, but the first branch is pretty high up.
+
+[[Climb it|Witch Club Spy 3 Closer Climb]]
+[[Hide in the bushes|Witch Club Spy 3 Bushes]]
+
+::Witch Club Spy 3 Stay
+@@.thought;I'm not going to risk it@@ you think to yourself. You stay up on this tree until the meeting breaks up.
+
+@@.thought;I wonder what they talked about. Should I have gotten closer? No, I would only have gotten caught. I'll have to hear it from <<print $girlfriend.firstname>>.@@
+
+[[Meet her on campus|Witch Club Spy 3 Discuss]]
+
+::Witch Club Spy 3 Closer Climb
+<<getTfProgress height>>You put your left foot on the tree and reach an arm up to one of the knots. Determined, you start to climb.
+
+It's more difficult than you imagined. When you were standing on the forest floor, it looked like there were lots of footholds and handholds. But now that you're actually climbing it, the knots you saw are spaced further apart than you realized.
+
+<<if $player.armStrength>=45 and $tempTfValue<3>>You grit your teeth and keep climbing. You're not going to let something silly like a curse sapping you of your strength stop you from climbing this tree.
+
+You have to stretch but uckily, your arms and legs are barely long enough to reach the footholds and handholds. It's hard work but you manage to do it.
+
+Once you've made it, you swing your legs onto the lowest branch and listen. The meeting is going on normally. If any of the witches heard anything weird, they don't think it's concerning enough to check it out.
+
+[[Listen|Witch Club Spy 3 Listen]]<<elseif $player.armStrength<45>>You try your best, but it's hard work. It takes a lot of upper body strength to pull yourself up. Upper body strength that you don't have.<<if $tempTfValue<3>> To make matters worse, your arms and legs aren't long enough to reach the footholds and handholds.<</if>>
+
+You keep climbing, not wanting to give up, but you're getting tired and the first branch seems so far away.
+
+You reach for a spot in the tree that you think you could put your hand, but you don't make it. You get up on your tiptoes. Your fingers brush it, and you try your best to hang on, but your palms are too sweaty.
+
+[[You fall|Witch Club Spy 3 Fall]]<<else>>You try your best, but it's hard work. You're stronger than you look, and it's not that hard to pull yourself up the tree.
+
+What makes it so difficult are the knots. They're spaced far apart, and your arms and legs are no longer long enough to reach them.
+
+You grit your teeth and keep going. You're not going to give up, but it's hard.
+
+You reach for a spot in the tree that you think you could put your hand, but you don't make it. You get up on your tiptoes. Your fingers brush it, just barely. You reach for it again...
+
+[[And you fall|Witch Club Spy 3 Fall]]<</if>><<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+2>><</if>>
+
+::Witch Club Spy 3 Bushes
+@@.thought;I'm not going to climb that tree. I don't think I'm strong enough to do it. And I already get enough of a workout in practice.@@
+
+You spot some bushes up ahead and you sneak forward, and hide in them.
+
+This is much better! You can't see <<print $girlfriend.firstname>> or the witches, but you're able to hear them better.
+
+@@.girlfriend;"I'm telling you...can trust me,"@@ <<print $girlfriend.firstname>> is saying.
+
+@@.witch;"I don't know,"@@ <<print $witch.firstname>> says.
+
+@@.female;"What's...the harm?"@@
+
+@@.female;"...could we take her in...probation..."@@
+
+@@.thought;That means that she got in! At least, I think she did!@@
+
+You start to pump your fist, but then remember where you are. If you make any noise, the witches could find you, and then all the work <<print $girlfriend.firstname>> did to get into the club would be wasted.
+
+Just then, a mosquito lands on your face.
+
+[[Brush it away|Witch Club Spy 3 Brush]]
+[[Don't make a move|Witch Club Spy 3 Still]]
+
+::Witch Club Spy 3 Listen
+You sit as still as you can on the branch, and hold your breath. You're glad that you decided to climb the tree: you can clearly see the girls in the clearing, and you can hear what they're saying.
+
+@@.girlfriend;"I'm telling you girls, you can trust me,"@@ <<print $girlfriend.firstname>> is saying.
+
+@@.witch;"I don't know,"@@ <<print $witch.firstname>> says.
+
+@@.female;"What's stopping you, <<print $witch.firstname>>? What's the harm?"@@
+
+@@.female;"We could take her in. Maybe we could put her on probation."@@
+
+@@.witch;"Well, I guess."@@
+
+@@.thought;Yes! She got in!@@
+
+@@.girlfriend;"Thank you!"@@ <<print $girlfriend.firstname>> says.
+
+@@.female;"What about <<print $player.firstname>>?"@@ Elvira asks.
+
+@@.girlfriend;"We're not dating."@@
+
+@@.witch;"What if you're just pretending not to date him?"@@
+
+@@.thought;Crap.@@
+
+@@.female;"<<print $witch.firstname>>! Go easy on her!"@@
+
+@@.witch;"Okay. I'm sorry."@@
+
+<<print $girlfriend.firstname>> nods.
+
+@@.witch;"If you're not dating anyone, then there's nothing stopping you from getting into another relationship, right? With another guy?"@@
+
+@@.girlfriend;"I...I guess not. Actually, someone already asked me out."@@
+
+@@.thought;Someone asked her out? How come she didn't tell me?@@
+
+@@.witch;"Great."@@
+
+The meeting breaks up soon after that. You wait until everyone has left, and then climb down from the tree.
+
+<<link "Discuss the meeting with $girlfriend.firstname" "Witch Club Spy 3 Discuss">><</link>>
+
+::Witch Club Spy 3 Fall
+You tumble to the ground with a thud. It was a hard fall, and you lay there, stunned, for a moment.
+
+@@.female;"Did you hear that?"@@
+
+@@.female;"Hear what?"@@
+
+@@.witch;"I heard it. It sounded like it came from over there."@@
+
+@@.thought;Uh oh.@@
+
+You try to get up and run away, but your body isn't cooperating.
+
+@@.witch;"<<link "Hello, $player.firstname" "Witch Club Spy 3 Caught">><</link>>"@@
+
+::Witch Club Spy 3 Brush
+The mosquito on your face is really annoying. Unable to stand it any longer, you brush it off.
+
+@@.female;"Did you hear that?"@@
+
+@@.female;"Hear what?"@@
+
+@@.witch;"I heard it. It sounded like it came from over there."@@
+
+The voices go silent, and you can only hear the sound of footsteps.
+
+@@.thought;Uh oh.@@
+
+You stand up out of the brush, ready to run away, only to come face to face with <<print $girlfriend.firstname>> and the witches.
+
+@@.witch;"<<link "Hello, $player.firstname" "Witch Club Spy 3 Caught">><</link>>"@@
+
+::Witch Club Spy 3 Still
+The mosquito on your face is really annoying. @@.thought;I can't get rid of it@@ you think. @@.thought;I can't make a sound, or they'll hear me.@@
+
+You stay as still as you can. You're able to hear bits and pieces of the conversation, but you're unable to focus on it.
+
+The mosquito remains on your face. Unable to take it anymore, your hand moves on its own and brushes it off.
+
+@@.female;"Did you hear that?"@@
+
+@@.female;"Hear what?"@@
+
+@@.witch;"I heard it. It sounded like it came from over there."@@
+
+The voices go silent, and you can only hear the sound of footsteps.
+
+@@.thought;Uh oh.@@
+
+You stand up out of the brush, ready to run away, only to come face to face with <<print $girlfriend.firstname>> and the witches.
+
+@@.witch;"<<link "Hello, $player.firstname" "Witch Club Spy 3 Caught">><</link>>"@@
+
+::Witch Club Spy 3 Caught
+<<if not visited("Witch Club Spy 4 Caught")>>You sigh. @@.player;"Hi, <<print $witch.firstname>>."@@
+
+@@.witch;"What are you doing?"@@<<else>>@@.female;"What are you doing?"@@ Elvira asks.<</if>>
+
+You figure you might as well tell the truth. @@.player;"I was trying to eavesdrop on your club,"@@ you admit, careful to leave <<print $girlfriend.firstname>> out of it.
+
+@@.female;"What about <<print $girlfriend.firstname>>? Was she in on it?"@@
+
+@@.player;"No!"@@ you lie.
+
+The witches walk off a couple of feet and start talking amongst themselves, leaving you alone with <<print $girlfriend.firstname>>. @@.player;"Sorry,"@@ you whisper to her.
+
+@@.witch;"Okay,"@@ <<print $witch.firstname>> says, rejoining you. The other witches follow behind her. @@.witch;"<<print $girlfriend.firstname>>, do you still want to join our club?"@@
+
+She nods.
+
+@@.witch;"Okay. We've decided that you can join our club on a probationary period..."@@
+
+@@.girlfriend;"Thank you!"@@
+
+@@.witch;"''But'', you'll have to date someone else. Not <<print $player.firstname>>."@@
+
+@@.girlfriend;"Who?"@@
+
+@@.witch;"That's up to you. But we'd be more comfortable if there wasn't a chance you could date <<print $player.firstname>>."@@
+
+<<print $witch.firstname>> turns to you, and you gulp. @@.thought;What is she going to do? Is she going to curse me?@@
+
+@@.witch;"<<print $player.firstname>>, you've got to stop spying on us."@@
+
+You nod.
+
+@@.witch;"Do you promise?"@@
+
+@@.player;"I promise."@@
+
+@@.witch;"Good. And if you don't, I'll have to..."@@ she trails off, trying to think of a suitable punishment.
+
+<<if $player.feminine>=14>>@@.female;"We could make him wear a buttplug."@@
+
+@@.female;"Elvira!"@@
+
+@@.female;"You have to admit, he does look girlier."@@ The other witches nod.
+
+@@.thought;Is she kidding about the buttplug? I think she's kidding. If she had one, why would she make //me// wear one? She doesn't even @@<<if visited("Panty Raid Elvira")>>@@.thought;really @@<</if>>@@.thought;know me!@@<<else>>@@.witch;"I don't know, I'll think of something,"@@ <<print $witch.firstname>> tells you, a glint in her eye.
+
+You shudder.<</if>>
+
+[[You promise again not to spy on them|Witch Club Spy 3 Discuss]]
+
+::Witch Club Spy 3 Discuss
+<<if visited("Witch Club Spy 3 Caught")>>@@.player;"I promise,"@@ you say again.
+
+@@.witch;"Fine."@@
+
+@@.female;"I think the meeting's over."@@ The other witches murmur their agreement, and they all begin walking back to campus. You follow them, feeling awkward. There's only one path back to campus, as far as you know, and you don't want to get lost. You can't even walk next to <<print $girlfriend.firstname>>, becausee that will make them more suspicious.
+
+Once you're back on campus, you head up to your room. Several minutes later, <<print $girlfriend.firstname>> joins you.<<else>>You walk back to campus. @@.thought;Where should I go to meet up with <<print $girlfriend.firstname>>? <<print $witch.firstname>> lives in Busch, so if I went there, she might see me. I'll go up to my dorm room.@@
+
+<<print $girlfriend.firstname>> must have had the same thought, because as soon as you walk in, you see her.<</if>>
+
+<<if visited("Witch Club Spy 3 Caught")>>@@.girlfriend;"Why did you have to spy on them? Everything was going fine until they caught you."@@
+
+@@.player;"I'm sorry,"@@ you tell her. @@.player;"I kept thinking about you being surrounded by witches, and I kept imagining something going wrong, and then one of them would curse you,"@@ you say, talking fast. You're near tears, but you don't want <<print $girlfriend.firstname>> to see you cry.
+
+@@.girlfriend;"Oh, that's sweet,"@@ <<print $girlfriend.firstname>> says, her expression changing. @@.girlfriend;"You're trying to protect me. It's like you're still my boyfriend."@@
+
+@@.player;"Can I still be your boyfriend?"@@ you ask hopefully.
+
+@@.girlfriend;"No,"@@ she says. @@.girlfriend;"Not if we want this to work."@@
+
+You nod. @@.girlfriend;"Besides, I need a boyfriend who can protect me. If those girls //were// going to curse me, what would you have done?"@@
+
+You admit that you don't know.
+
+@@.girlfriend;"Well, that's what I wanted to talk to you about. @@<<else>>@@.girlfriend;"I have so much to tell you,"@@ <<print $girlfriend.firstname>> says.<<if visited("Witch Club Spy 3 Listen")>>
+
+@@.thought;Should I tell her that I already know?@@
+
+You don't get the chance to make a decision, because <<print $girlfriend.firstname>> keeps talking.<<else>> <</if>>@@.girlfriend;"It was scary at first. They weren't being very friendly, and I was scared they were going to, I don't know, do something. Like curse me. But I kept saying that I wanted to join and then they seemed to relax. They actually seem nice. Am I doing the wrong thing?"@@
+
+@@.player;"No! They cursed me, remember?"@@
+
+@@.girlfriend;"Yeah, I guess you're right,"@@ <<print $girlfriend.firstname>> says. @@.girlfriend;"So, anyway, they said that I could join but that I'd be on probation, whatever that means. But..."@@ she trails off.
+
+@@.player;"What?"@@
+
+@@.girlfriend;"@@<</if>>@@.girlfriend;I can only join if I'm dating someone else."@@
+
+You nod. @@.player;"So what are you going to do about it?"@@
+
+@@.girlfriend;"Well,"@@ she says, biting her lip. @@.girlfriend;"I guess I have to, right?"@@
+
+[[I guess so|Witch Club Spy 3 Approve]]
+[[Absolutely not|Witch Club Spy 3 NoDate]]
+
+::Witch Club Spy 3 Approve
+@@.player;"I guess so,"@@ you say, hating yourself for agreeing to it. @@.player;"Who are you going to pick?"@@
+
+@@.girlfriend;"Well, um, somebody already asked me out,"@@ she says, biting her lip again. @@.girlfriend;"Your roommate Marco."@@
+
+<<if visited("Girlfriend Crush Marco")>>You nod. You knew that he had a crush on her. And with you and <<print $girlfriend.firstname>> apparently broken up, and you no longer a threat, you're not surprised that he made his move.<<else>>@@.player;"Marco?"@@ you ask, surprised. He's your roommate. You didn't think he would date your ex immediately after the two of you broke up.<</if>>
+
+@@.girlfriend;"So, um, I guess I'll go tell him that I changed my mind?"@@ she asks.
+
+@@.player;"Sure,"@@ you say flatly.
+
+@@.player;"[[But what about me?|Witch Club Spy 3 PlayerDate]]"@@ you ask.
+
+::Witch Club Spy 3 PlayerDate
+<<if visited("QB Practice 6 Caught")>>@@.girlfriend;"What about <<print $qb.firstname>>?"@@ she asks with a smile.
+
+You turn crimson.
+
+@@.girlfriend;"Everyone knows,"@@ she says in response.
+
+That just makes you blush even harder.
+
+@@.girlfriend;"It's okay,"@@ she says. @@.girlfriend;"Marco's pretty cute. And since we're not dating anymore, you can date <<print $qb.firstname>>. He's cute too."@@
+
+@@.player;"<<print $girlfriend.firstname>>!"@@
+
+@@.girlfriend;"What? Don't think I haven't seen you checking him out.@@<<if $playerStarter>>@@.girlfriend;"@@<<else>> @@.girlfriend;You should just be careful."@@
+
+@@.player;"Why's that?"@@
+
+@@.girlfriend;"You know how much attention the star quarterback gets?"@@
+
+@@.player;"Yeah,"@@ you say, fondly recalling the days when every girl wanted to jump your bones. It seems like so far away ago.
+
+@@.girlfriend;"That's what it's going to be like for him. I know there's some girls who are already sizing him up."@@
+
+@@.player;"Really? Who?"@@
+
+She laughs. @@.girlfriend;"See? I know you're into him, @@<<if $player.feminine>=18 and $player.masculinity<=25>>@@.girlfriend;girl."@@<<else>>@@.girlfriend;<<print $player.firstname>>."@@<</if>><</if>><<set $girlfriend.relationship to $girlfriend.relationship-5>><<else>>@@.girlfriend;"There aren't any girls in Pinewood that you like?"@@
+
+@@.player;"Uh..."@@
+
+@@.girlfriend;"What about any guys?"@@
+
+@@.player;"What?"@@
+
+She laughs. @@.girlfriend;"I'm just kidding, <<print $player.firstname>>. But you are a girl. Physically. And with the right makeup, you could turn some heads."@@
+
+@@.player;"No,"@@ you say firmly. But inside, you wonder if she's right. @@.thought;Is there a guy who would want to date me? If there was, would I even want to date him?@@<<set $girlfriend.relationship to $girlfriend.relationship+5>><</if>>
+
+<<link "You'd better end this conversation before you get even more embarrassed" $currentPassage>><<set $girlfriend.dateMarcoPermission to 1>><<set $player.masculinity to $player.masculinity-5>><</link>>
+
+::Witch Club Spy 3 NoDate
+@@.player;"Absolutely not,"@@ you say firmly.
+
+@@.girlfriend;"Really? But what about the club?"@@ There's something hopeful in her voice that makes you doubt that this is just about the witchcraft club.
+
+@@.player;"Do you have a crush on him?"@@ you ask.
+
+She twirls her hair and looks down. @@.girlfriend;"I'm sorry! But @@<<if visited("QB Practice 6 Caught")>>@@.girlfriend;is there anything wrong with that?"@@
+
+@@.player;"Yeah! Even if we're telling those witches that we're not dating, we still are."@@
+
+@@.girlfriend;"Really? What about <<print $qb.firstname>>?"@@
+
+You turn crimson. @@.thought;How did she find out about that?@@
+
+@@.girlfriend;"Everyone knows,"@@ she says in response to your look.
+
+That just makes you blush even harder.
+
+@@.girlfriend;"It's okay,"@@ she says. @@.girlfriend;"Marco's pretty cute. How come I can't date him since you're fucking <<print $qb.firstname>>?"@@
+
+@@.player;"<<print $girlfriend.firstname>>!"@@
+
+@@.girlfriend;"Come on. You're being such a hypocrite right now. You've got to see that, right?"@@
+
+[[Agree and give her permission to date Marco|Witch Club Spy 3 QB Approve]]
+[[Stand firm|Witch Club Spy 3 QB Deny]]<<set $girlfriend.relationship to $girlfriend.relationship-10>><<else>>@@.girlfriend;you're, well, you don't really have what I need."@@
+
+You grimace. You know exactly what she's talking about. @@.girlfriend;"I know it wasn't your fault, but a girl has needs. You'll see what I mean soon."@@
+
+@@.player;"Why do you always do that?"@@
+
+@@.girlfriend;"Do what?"@@
+
+@@.player;"You know what. Imply that I want to get fucked by a guy."@@<<if visited("QB Practice 5 Sex") or visited("QB Practice 4 Sex") or visited("Team Practice 4 Blowjob Start")>> You don't tell her about <<print $qb.firstname>>, and how sometimes you've imagined him fucking you.<</if>>
+
+@@.girlfriend;"I don't know. I guess I want you to be happy. And if you're dating a guy, then I won't have to feel guilty."@@
+
+@@.player;"About dating Marco?"@@
+
+@@.girlfriend;"Having a crush on him,"@@ she corrects you. @@.girlfriend;"If you don't want me to date him, then I won't."@@
+
+Okay, now you're feeling bad.
+
+<<link "Say goodbye to $girlfriend.firstname" $currentPassage>><<set $girlfriend.relationship to $girlfriend.relationship-5>><<set $player.masculinity to $player.masculinity+3>><</link>><</if>>
+
+::Witch Club Spy 3 QB Approve
+@@.player;"You're right,"@@ you admit. @@.player;"I guess I'm being a bit of a hypocrite."@@
+
+@@.girlfriend;"Thank you!"@@
+
+@@.player;"So, uh..."@@ you begin. You can't believe that you're about to do this. She is...was your girlfriend. And you're giving her permission to date <<if $player.masculinity>=50>>another<<else>>a<</if>> man!
+
+@@.girlfriend;"<<print $player.firstname>>?"@@
+
+@@.player;"Sorry. Yeah, I guess you can date Marco."@@
+
+@@.girlfriend;"Thanks!"@@ she says, kissing you on the cheek.
+
+She turns to go. @@.girlfriend;"Good luck with <<print $qb.firstname>>,"@@ she says just before she heads out.
+
+<<link "Blush and do something else" $currentPassage>><<set $girlfriend.relationship to $girlfriend.relationship+5>><<set $girlfriend.dateMarcoPermission to 1>><<set $player.masculinity to $player.masculinity-5>><</link>>
+
+::Witch Club Spy 3 QB Deny
+@@.player;"No, you're wrong,"@@ you say stubbornly.
+
+@@.girlfriend;"Oh, come on. You can fuck <<print $qb.firstname>>, you don't even tell me about it, but I can't date anyone else?"@@
+
+@@.player;"When you put it like that, I look like an asshole."@@
+
+@@.girlfriend;"That's because you are!"@@ she says, slamming the door behind her.
+
+@@.thought;That could have gone better. Is she right? Am I being an asshole?@@
+
+<<link "Turn your attention to something else" $currentPassage>><<set $girlfriend.relationship to $girlfriend.relationship-15>><<set $player.masculinity to $player.masculinity+3>><</link>>
+
+::Witch Club Spy Buttplug
+You pace back and forth on the quad. You know that people are staring at you, but you have other things on your mind.
+
+@@.thought;I shouldn't go. Elvira said she would make me wear a buttplug if they caught me again.@@
+
+@@.thought;She was just joking about that. And who says they're going to catch me again? I just need to get there early, find the spot where they're going to talk, and then hide there //before// they start.@@
+
+Now that you have a plan, you feel better. What could go wrong? @@.thought;And if she wasn't kidding about making me wear a buttplug, is that so bad?@@
+
+@@.thought;Yes! It is bad!@@ you answer yourself. @@.thought;I don't know why I thought that. I guess I'm kind of curious to see what it would be like. But that's it!@@
+
+You should probably make up your mind before you argue with yourself any more.
+
+[[Go to the woods|Witch Club Spy Buttplug Start]]
+<<back>>
+
+::Witch Club Spy Buttplug Start
+You walk quickly to the woods. You know that you don't have a lot of time before the witches get there, and you don't want them to discover you. You've always been caught when you were climbing a tree or moving around while the meeting was going on. So if you can get a good spot early, you can stay hidden.
+
+You walk quickly through the woods, not taking the time to look at the trees or animals. You have a mission.
+
+You get to the clearing where the Witchcraft Club usually meets, and scan the area for a good place to hide.
+
+There! There's a nice big tree just at the edge of the clearing. You've spied on, or attempted to spy on, them enough times to know that this is close enough to be able to hear what they're saying.
+
+@@.thought;Okay. I'll just climb this tree, and...@@
+
+[[The witches are waiting for you|Witch Club Spy Buttplug Confront]]
+
+::Witch Club Spy Buttplug Confront
+You look back the way you came, trying to decide whether you should make a break for it, but the girls have surrounded you. <<print $witch.firstname>>, Elvira, <<print $girlfriend.firstname>> and a couple other girls you recognize are all there.
+
+@@.witch;"What are you doing, <<print $player.firstname>>?"@@ <<print $witch.firstname>> asks.
+
+@@.player;"Uhh..."@@
+
+@@.female;"Here to spy on us again?"@@ Elvira asks.
+
+You nod your head, feeling ashamed. @@.thought;It's no use lying. They know why I'm here.@@
+
+@@.female;"I told you last time. If you tried to spy on us again, I'd make you wear a buttplug."@@
+
+@@.female;"You were serious, Elvira?"@@
+
+@@.female;"Of course!"@@ she says, reaching into her bag with a laugh.
+
+[[Promise not to spy on them anymore|Witch Club Spy Buttplug Promise]]
+[[Get it over with|Witch Club Spy Buttplug Spell]]
+
+::Witch Club Spy Buttplug Promise
+@@.player;"Elvira, I promise. I won't go near your club again."@@
+
+@@.female;"I'm sorry, <<print $player.firstname>>. That's what you said last time."@@
+
+You look down. She's right. @@.thought;Why did I even come?@@
+
+@@.female;"No, you have to learn your lesson."@@
+
+[[She approaches you|Witch Club Spy Buttplug Spell]]
+
+::Witch Club Spy Buttplug Spell
+@@.player;"Fine,"@@ you sigh. @@.player;"So, uh, can I at least put it in?"@@
+
+@@.female;"No. I want to make sure it stays in. Besides, it's a good chance to practice."@@
+
+@@.player;"Practice? Wait, you're going to use //magic// for this?"@@
+
+Elvira doesn't answer. Instead, she closes her eyes, and looks deep in thought. You look around at the others helplessly, but all of them are just standing around, watching you and Elvira. Even <<print $girlfriend.firstname>> gives you an apologetic shrug when you look in her direction.
+
+@@.thought;If she helped me get away, they'd kick her out of the club.@@
+
+Finally, Elvira starts to speak.
+
+@@.female;"//Goddess, my wish I will chant to thee
+<<print $player.firstname>> <<print $player.lastname>>, sneaking and snooping
+Who we caught trying to climb that tree
+Give him a punishment sound.
+
+Take this buttplug, and stick it deep in his bum
+To stay in until he swallows cum//"@@
+
+[[With that, the buttplug disappears|Witch Club Spy Buttplug In]]
+
+::Witch Club Spy Buttplug In
+Moments later, you feel something plunging into your butt. Your sphincter resists and resists, but this intruder keeps pushing, and you let out a cry of pain.
+
+@@.thought;Oh, fuck! This hurts!@@
+
+Finally, your sphincter gives way and your ass begins to stretch to accomodate this new object. The buttplug slides in, stretching your ass even more. When it's all the way in, the pressure stops, and you catch your breath.
+
+@@.female;"Did it work?" Elvira asks you excitedly.
+
+[[Tell her it worked|Witch Club Spy Buttplug AfterSpell]]
+[[Tell her to fuck off|Witch Club Spy Buttplug AfterSpell]]
+
+::Witch Club Spy Buttplug AfterSpell
+She just smiles at your response.
+
+@@.witch;"Great job, Elvira! You did it!"@@ <<print $witch.firstname>> shouts excitedly.
+
+@@.female;"Yeah! That was so cool how it just disappeared like that!"@@ another girl says.
+
+@@.female;"<<print $girlfriend.firstname>>?"@@ Elvira asks.
+
+<<print $girlfriend.firstname>> gulps, realizing that she's supposed to say something. @@.girlfriend;"Uh, how do you know that it's all the way in?"@@
+
+@@.thought;<<print $girlfriend.firstname>>! No!@@
+
+@@.witch;"Good point. Let me check,"@@ she says, stepping up to you and touching your butt through your <<print $player.pants.informalName>>. Her fingers toy with the base of the buttplug, and you squirm under her touch.
+
+@@.witch;"No, it's not all the way in. Let me do it."@@ She grabs the base and pushes it in another inch. You gasp as it pushes into you even farther. Even more alarming is the fact that, after <<print $witch.firstname>> finishes, you can feel your ass closing around the plug.
+
+@@.witch;"There, that should be good."@@
+<<if visited("QB Practice 5 Sex") or visited("QB Practice 4 Sex") or visited("Team Practice 4 Blowjob Start")>>
+<<link "Ask if you need to swallow $qb.firstname's cum" "Witch Club Spy Buttplug QBCum">><</link>><<else>>
+[[Complain that you don't have anyone whose cum you can swallow|Witch Club Spy Buttplug Complain]]<</if>>
+[[Protest that you're not into boys|Witch Club Spy Buttplug Protest]]
+
+::Witch Club Spy Buttplug QBCum
+@@.player;"So I need to swallow <<print $qb.firstname>>'s cum?"@@
+
+@@.witch;"It doesn't have to be him. But since the two of you have been hooking up, that would be the easiest,"@@ <<print $witch.firstname>> says with a smirk.
+
+@@.player;"Uh, well, okay,"@@ you say, feeling conflicted. @@.thought;It'll be nice to taste his cum, but it feels dirty that I have an ulterior motive@@ you think, before realizing that something seems wrong. @@.thought;And I'm going to be tasting the cum of @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;@@<</if>> @@.thought;guy!@@ you tell yourself. @@.thought;That's why I don't like it!@@
+
+Even to you, your protests feel a bit weak.
+
+@@.female;"Why did you have to tell us that?"@@ one of the girls asks, laughing.
+
+You look around at all the witches, suddenly aware that they've been there for this interaction. @@.thought;Oh my god. I barely know them, and they know I have a buttplug up my ass, and that I'm going to suck <<print $qb.firstname>>'s dick...And <<print $girlfriend.firstname>> knows it too!@@
+
+@@.female;"Why don't you run along?"@@ Elvira says. @@.female;"And don't bother us again."@@
+
+@@.player;"I won't,"@@ you say. You mean it.
+
+[[Walk back to campus|Witch Club Spy Buttplug Finish]]
+
+::Witch Club Spy Buttplug Complain
+@@.player;"So I can only get it out if I swallow cum?"@@ you complain. @@.player;"Whose cum am I supposed to get?"@@
+
+@@.female;"Why not your own?"@@ one of the witches asks.
+
+@@.player;"Because I don't have a..."@@ You stop, catching yourself. @@.thought;They don't know that I don't have a dick anymore?@@
+
+Unfortunately, you stopped yourself too late. @@.female;"You don't have a dick?"@@ the witch asks, her eyes wide.
+
+Ignoring her, you turn to <<print $witch.firstname>>. @@.player;"What am I supposed to do?"@@
+
+She shrugs. @@.witch;"Get a boyfriend. Or get your roommate's cum. Or you can just leave it in."@@
+
+@@.thought;Well, I'm not going to do that! But I don't want to swallow cum either.@@
+
+@@.female;"Why don't you run along?"@@ Elvira says. @@.female;"And don't bother us again."@@
+
+@@.player;"I won't,"@@ you say. You mean it.
+
+[[Walk back to campus|Witch Club Spy Buttplug Finish]]
+<<set $witch.knowsSecret to true>><<set $girlfriend.knowsSecret to true>>
+
+::Witch Club Spy Buttplug Protest
+@@.player;"So I can only get it out if I swallow cum?"@@ you ask. @@.player;"How am I supposed to do that? I'm not even into boys!"@@
+
+@@.female;"Why don't you just jerk off?"@@ one of the witches asks, confused.
+
+@@.player;"Because I don't have a..."@@ You stop, catching yourself. @@.thought;They don't know that I don't have a dick anymore?@@
+
+Unfortunately, you stopped yourself too late. @@.female;"You don't have a dick?"@@ the witch asks, her eyes wide.
+
+<<print $witch.firstname>> cuts her off. <<if visited("QB Practice 5 Sex") or visited("QB Practice 4 Sex") or visited("Team Practice 4 Blowjob Start")>>@@.witch;"That's bullshit. Of course you're into boys,"@@ she tells you. @@.witch;"I know you've been fucking my brother,"@@ she tells you in a matter-of-fact tone.
+
+@@.female;"<<print $qb.firstname>>?"@@ one of the witches asks, sounding impressed.
+
+@@.player;"Uh, well, just because we've hooked up doesn't mean..."@@
+
+@@.female;"So go suck his dick then,"@@ Elvira says, laughing.
+
+@@.thought;It'll be nice to taste his cum, but it feels dirty that I have an ulterior motive@@ you think, before realizing how weird it is that you're considering tasting <<print $qb.firstname>>'s cum as a positive.<<elseif $player.homosexuality>=15>>@@.witch;"Are you sure you're not? I've seen you checking some guys out?"@@
+
+@@.thought;How has she seen that? I haven't even checked any guys out! Have I?@@
+
+@@.player;"Uh, I don't think that's right..."@@ you start.
+
+@@.female;"<<print $player.firstname>>, everyone knows you're gay. Or at least bi,"@@ Elvira says, cutting in.
+
+@@.witch;"Great! That's settled. Go find a boyfriend or taste your roommate's cum or something. Or just leave it in. It's almost like a real cock,"@@ she says, winking at you.
+
+@@.thought;Why does that turn me on?@@<<else>>@@.witch;"Anyway, I'm not sure what you should do. You seem straight enough to me, but are you sure you haven't wondered what it would be like to taste cum?"@@
+
+@@.player;"No!"@@ you say with a shudder.
+
+@@.witch;"No, you're not sure you haven't wondered?"@@
+
+@@.player;"No, I don't want to taste cum,"@@ you say firmly.
+
+She shrugs. @@.witch;"Guess you'll have to leave it in then."@@
+
+You wait for her to say more, but she's clearly done talking. @@.thought;So that's it? Elvira sticks a buttplug in me, and nobody's going to help me get it out?@@<</if>>
+
+@@.female;"Why don't you run along?"@@ Elvira says. @@.female;"And don't bother us again."@@
+
+@@.player;"I won't,"@@ you say. You mean it.
+
+[[Walk back to campus|Witch Club Spy Buttplug Finish]]
+<<set $witch.knowsSecret to true>><<set $girlfriend.knowsSecret to true>>
+
+::Witch Club Spy Buttplug Finish
+You walk back through the woods, feeling dejected. You feel so stupid, coming to the woods after already being caught spying on a group of powerful witches.
+
+@@.thought;I thought Elvira was kidding about the buttplug. And now I'm going to have it in for who knows how long.@@
+
+You take a couple more steps, suddenly feeling aware of the buttplug shifting side to side as you walk. You feel //full//, but it doesn't feel wrong. Now that your ass has gotten accustomed to it, it actually feels kind of...nice.
+
+You shudder at that thought, but you can't deny it. It feels so erotic having it in you, being reminded of its presence with each step. And it's hidden safely inside of your <<print $player.underwear.informalName>>, <<if $player.feminine>1>>which means it'll be easier to hide than your other transformations.<<elseif $player.feminine is 1>>which means that it'll be easier to hide than your slightly effeminate face.<<else>>which makes it a little bit better. You don't want to get teased by your teammates.<</if>>
+
+@@.male;"Hey, <<print $player.firstname>>,"@@ a voice says.
+
+You jump, the buttplug moving in you as you do so. You hadn't even noticed that you'd gotten back to the quad.
+
+@@.male;"Everything okay?"@@
+
+@@.player;"Yeah, everything's fine,"@@ you say, quickly walking by him. @@.thought;Did he know?@@
+
+<<link "Do something else" $currentPassage>><<set $player.isWearingButtplug to true>><<set $player.hasButtplug to true>><<set $player.buttplugCurse to true>><</link>>
+
+::Witch Club Spy 4
+You start walking towards the woods, checking the time as you step out of the door. You're still early, although not by much.
+
+@@.thought;Okay, good. I'm on schedule. I can get there early, find a good tree, and spy on them.@@
+
+You're about to leave campus when you run into Coach.
+
+@@.male;"Oh, hi, <<print $player.lastname>>. Where are you going?"@@
+
+@@.player;"I...uh...I was going to take a walk in the woods,"@@ you stammer out.
+
+<<if $player.skilLCurse is 4>>@@.male;"Okay,"@@ he says, not listening to you. @@.male;"Listen, I was feeling bad about what happened."@@
+
+@@.player;"When you kicked me off the team?"@@ you ask, feeling a little bitter at the memory.
+
+@@.male;"Yeah. I don't want you to take it the wrong way. I just need boys on this team who will give it their all."@@
+
+@@.player;"Uh, that's okay,"@@ you say, trying to end the conversation.
+
+@@.male;"I want you back on the team by the end of the year."@@
+
+@@.player;"Really?"@@ you ask excitedly.
+
+@@.male;"Yeah! If I see improvement, I'll let you back on."@@
+
+You feel like you had the wind knocked out of you. @@.thought;Of course he won't see improvement! I can't get any better. Why did I have to let <<print $witch.firstname>> do another spell?@@
+
+@@.male;"Now, what's your workout routine like?"@@<<else>>@@.male;"Oh, nice. Going to go for a run?"@@
+
+@@.player;"Uh, what? What do you mean, a run?"@@
+
+@@.male;"In the woods. Got to stay in shape, you know. I can go running with you."@@
+
+@@.player;"Uh, no, I wasn't going to run. Not now."@@
+
+@@.male;"Oh,"@@ Coach says, sounding disappointed. @@.male;"What's your workout routine like?"@@<</if>>
+
+You look at him blankly. <<if visited("QB Practice 4") or $visitedQBPractice>=4>>@@.player;"Uh, I practice with <<print $qb.firstname>>."@@<<else>>@@.player;"Well, I've been meaning to practice with <<print $qb.firstname>>..."@@<</if>>
+
+@@.male;"What about weights?"@@
+
+Coach goes on to list the different exercises you should be doing. By the time he's finished, you have a bad feeling that you missed your chance to spy on the Witchcraft Club.
+
+[[Hopefully you can still make it|Witch Club Spy 4 Caught]]
+<<link "Better not risk it" $currentPassage>><</link>>
+
+::Witch Club Spy 4 Caught
+You say goodbye to Coach and then hurry into the woods. @@.thought;Why did he have to keep talking for so long? I hope I'm still early.@@
+
+Your hopes are dashed when you get to the clearing. <<print $witch.firstname>>, Elvira, and all the other witches are already there. <<print $girlfriend.firstname>> is there, looking uncomfortable.
+
+As soon as you see the witches, you turn around and start walking in the other direction.
+
+@@.female;"Do you see someone? That looks like <<print $player.firstname>>."@@
+
+@@.witch;"I think you're right, Elvira."@@
+
+You start walking faster, looking behind you a couple times to make sure that they're not following. They are, but you're outgaining them.
+
+@@.thought;That was too close@@ you think, right before you run into a witch.
+
+@@.female;"You okay, Heather?"@@ Elvira asks the witch. @@.female;"We're lucky you were late."@@
+
+[[She turns to you|Witch Club Spy 3 Caught]]
+
+::Witch Club 4 Discuss
+<<if visited("Witch Club Spy Buttplug Confront") or visited("Witch Club Spy 4 Caught")>><<print $girlfriend.firstname>> isn't happy when you meet her in her room. @@.girlfriend;"You've got to stop trying to spy on us,"@@ she tells you sternly. @@.girlfriend;"You're making it hard for me to join them."@@
+
+@@.player;"I'm sorry,"@@ you say. @@.player;"I won't do it again.@@<<if $player.hasButtplug>> @@.player;I can't believe they stuck a buttplug in me!"@@
+
+@@.girlfriend;"You had it coming,"@@ she says.
+
+You look at her. She has a point, but still, you expected more support from <<if $player.relationship is $girlfriend.firstname>>your girlfriend<<else>>her<</if>>.<</if>>
+
+@@.player;"I'm sorry,"@@ you say again. @@.player;"So, how did it go? Did you learn anything good, or did I mess it up for you?"@@<<set $girlfriend.relationship to $girlfriend.relationship-2>><<else>>@@.girlfriend;"Hey, <<print $player.firstname>>!"@@ she greets you warmly, pulling you into a hug. @@.girlfriend;"I missed you."@@
+
+@@.player;"I missed you too,"@@ you say, surprised at this show of affection. @@.player;"How did it go with the witches?"@@<<set $girlfriend.relationship to $girlfriend.relationship-2>><</if>>
+
+@@.girlfriend;"It went well! They inducted me. I'm an official witch now!"@@
+
+@@.player;"Inducted? That sounds culty."@@
+
+@@.girlfriend;"Yeah, it does,"@@ she says, laughing. @@.girlfriend;"But it wasn't bad. I stood in the middle of the clearing, and then they placed candles all around me and said a few spells. I don't feel any different, but I guess I'm a witch now."@@
+
+[[Ask if she can do spells|Witch Club 4 Discuss Spells]]
+
+::Witch Club 4 Discuss Spells
+@@.player;"Wow, that's amazing! So can you do spells now?"@@
+
+@@.girlfriend;"Yeah! Nothing big, but...actually, let me show you."@@
+
+You sit down on her bed and lean forward. @@.thought;She can do spells now? This is going even better than I thought.@@
+
+She closes her eyes and begins to speak.
+
+@@.girlfriend;"//God and goddess, king and queen,
+Make this room more clean!//"@@
+
+She collapses next to you on the bed. @@.player;"<<print $girlfriend.firstname>>? Are you okay?"@@
+
+You pause. Something else has grabbed your attention. A sock that was lying on her floor has lifted itself off the ground, and starts moving through the air, towards her hamper. You hold your breath as it hovers near the edge, and you think that it's going to just fall unceremoniously to the floor, but then it drops into the hamper.
+
+@@.girlfriend;"Did I do it?"@@ she asks groggily.
+
+@@.player;"Yeah! You did,"@@ you answer. @@.player;"Listen, why don't you get some rest, okay?"@@ When she doesn't protest, you help her get under the covers and tuck her into bed.
+
+@@.player;"Good night, <<print $girlfriend.firstname>>,"@@ you say.
+
+@@.girlfriend;"Good night, <<print $player.firstname>>."@@
+
+[[Close the door|Witch Club 4 Discuss Reflect]]
+
+::Witch Club 4 Discuss Reflect
+<<getTfProgress boobs>>@@.thought;Should I be asking her to help me? This is a lot for her.@@ you think. @@.thought;But today was the first time she's ever casted a spell. She's going to get stronger. And I need to figure out how to change back.@@<<if $player.masculinity<0>>
+
+You close the door and think about that. All this time, you were focused on getting <<print $girlfriend.firstname>> into the Witchcraft Club so she could change you back. But now you're realizing for the first time that that might not be what you want.
+
+@@.thought;I didn't like this at first, but there are some things about being a girl that aren't so bad. I'm not popular like I used to be, and @@<<if $player.skillCurse is 4>>@@.thought;getting kicked off the team sucks@@<<elseif $player.armStrength<50>>@@.thought;I don't like feeling so weak@@<<else>>@@.thought;now I have to work so hard just to get back to the quarterback I was@@<</if>>@@.thought;, but@@<<set $goodThingsAboutGirl to 0>><<if $player.isWearingPanties is true>><<set $goodThingsAboutGirl to 1>><<set $lastGoodThingAboutGirl to "panties">><</if>><<if $tempTfValue>=3>><<set $goodThingsAboutGirl to $goodThingsAboutGirl+1>><<set $lastGoodThingAboutGirl to "boobs">><</if>><<if $player.crush is $qb.firstname>><<set $goodThingsAboutGirl to $goodThingsAboutGirl+1>><<set $lastGoodThingAboutGirl to "qb">><</if>><<if $tempTfValue>=4>><<set $goodThingsAboutGirl to $goodThingsAboutGirl+1>><<set $lastGoodThingAboutGirl to "orgasm">><</if>><<if $goodThingsAboutGirl>=2>> @@.thought;there are some good things: @@<<if $player.underwear.panties>>@@.thought;my panties are so much more comfortable than those boring boxers, @@<</if>><<if $player.crush is $qb.firstname>><<if $lastGoodThingAboutGirl is "qb">>@@.thought;and @@<</if>>@@.thought;<<print $qb.firstname>>@@<<if $lastGoodThingAboutGirl is not "qb">>@@.thought;, @@<</if>><</if>><<if $lastGoodThingAboutGirl is "orgasm">>@@.thought;my boobs actually feel kind of nice and sensitive, and a female orgasm is so much better@@<<elseif $lastGoodThingAboutGirl is "boobs">>@@.thought;and my boobs actually feel nice and kind of sensitive.@@<</if>><<elseif $goodThingsAboutGirl is 1>><<if $player.underwear.panties>> @@.thought;my panties are so much more comfortable than those boring boxers@@<<elseif $player.crush is "qb">> @@.thought;<<print $qb.firstname>> won't like me if I go back to being male@@<<else>> @@.thought;my boobs actually feel nice and kind of sensitive@@<</if>><<else>>@@.thought;...actually, I can't think of anything good about being a girl right now. I guess I'm just getting used to it@@<</if>>@@.thought;.@@<</if>>
+
+<<link "Feeling confused, you go back to your dorm" $currentPassage>><</link>>

@@ -1,0 +1,3092 @@
+::LunchWitchPicker
+<<if $player.skillCurse is 1 or $player.skillCurse is 2 or $player.skillCurse is 3>><<display "Lunch QB AfterSacrifice">><<elseif visited("Gym Morgan Talk") and not visited("Lunch QB Morgan Witch")>><<display "Lunch QB Morgan">><<elseif $day is 8 or $day is 15 or $day is 22 or ($day is 29 and $player.skillCurse<4)>><<display "Lunch QB UpcomingGame">><<elseif visited("Lunch Day 4 Witch Lie") or visited("Lunch Day 4 Witch Admit")>><<if $witch.ignored>><<display "Witch Ignored">><<elseif $day is 11 or $day is 18 or $day is 25>><<display "Lunch QB DiscussGame">><<else>><<display "Lunch Witch Discussion">><</if>><<else>><<display "Lunch Day 4 Witch">><</if>>
+
+::LunchFriendsPicker
+<<if $team.playerOnTeam is false and not visited("Lunch Friends KickedOff Discuss")>><<display "Lunch Friends KickedOff">><<elseif visited("Gym Morgan Talk") and not visited("Lunch Friends Morgan Overhear")>><<display "Lunch Friends Morgan">><<elseif $day is 8 or $day is 15 or $day is 22 or ($day is 29 and $player.skillCurse<4)>><<display "Lunch Friends UpcomingGame">><<elseif not visited("Lunch Day 4 Friends Tell") and not visited("Lunch Day 4 Friends Lie") and not visited("Lunch Day 4 Friends Dominant")>><<display "Lunch Day 4 Friends">><<elseif $day is 11 or $day is 18 or $day is 25>><<display "Lunch Friends DiscussGame">><<else>><<display "Lunch Regular Friends">><</if>>
+
+::Lunch Day 4 Witch
+<<if $witch.ignored>><<display "Witch Ignored">><<else>>You look longingly at your friends. <<print $girlfriend.firstname>> looks even hotter today, and you really want to sit with her and hang out with your friends. @@.thought;I really need to figure out how to reverse this though. I'd do anything to get my dick back. Even sit with <<print $witch.firstname>>.@@
+
+<<print $girlfriend.firstname>> looks a little hurt as you sit with <<print $qb.firstname>> and <<print $witch.firstname>>. @@.thought;I'll have to smooth that over later.@@
+
+@@.witch;"Why are you sitting here, <<print $player.firstname>>? Are you going to grill me about //it//<<if visited("Backstory Main")>> again<</if>>?@@
+
+You look down guiltily. That was exactly what you came here to do. @@.player;"Why do you think it's about you? I came to talk to <<print $qb.firstname>>,"@@ you say, recovering. @@.player;"We're going to be seeing each other a lot when I help him practice."@@
+
+@@.qb;"Oh yeah,"@@ <<print $qb.firstname>> says, brightening. @@.qb;"Do you want to practice after school?"@@
+
+There's nothing scheduled after school. You //could// help him. If you wanted to, that is.
+
+[[I'd be happy to help|Lunch Day 4 Witch Agree]]
+[[Think of an excuse|Lunch Day 4 Witch Excuse]]
+<<set $girlfriend.relationship to $girlfriend.relationship-1>><</if>>
+
+::Lunch Day 4 Witch Agree
+@@.player;"Sure, <<print $qb.firstname>>. I'd be happy to help."@@
+
+@@.qb;"Great! Thank you for being so cool about this. I can't imagine what it's like for you."@@
+
+@@.player;"Neither can I,"@@ you say ruefully.
+
+<<print $witch.firstname>> looks around. Satisfied that nobody's listening, she says, @@.witch;"<<if visited("Witch Question End")>>Remember when you promised that you'd tell me everything that happened? <<if visited("Witch Encounter 2") or visited("Witch Question End")>>Have there been any more changes with, uh, you know, down there?<<else>>Were there any changes last night?<</if>><<else>>Sometimes with these, uh, things, there are changes on the third night. Did anything happen last night?<</if>>"@@
+
+<<print $qb.firstname>> looks at you with curiosity. You squirm in your seat. So far, nobody else knows that you have a vagina. Do you really want to tell two people? Before friday, they were just acquaintances.
+
+[[Tell them|Lunch Day 4 Witch Admit]]
+[[Play it off|Lunch Day 4 Witch Lie]]
+<<set $qb.relationship to $qb.relationship+1>>
+<<set $qb.promisedPractice to true>>
+
+::Lunch Day 4 Witch Excuse
+@@.player;"Sorry, man. I should be working on homework. <<if visited("Bio Study")>>I'm trying to do better in school<<else>>I bombed my bio test<</if>>."@@
+
+@@.qb;"That's okay. Maybe some other time. There's always the real practice later today."@@
+
+@@.thought;That's right. The whole team is practicing tonight. How am I going to get out of it? I'm weaker, so I probably can't throw the football like I used to.@@
+
+<<print $witch.firstname>> looks around. Satisfied that nobody's listening, she says, @@.witch;"<<if visited("Witch Question End")>>Remember when you promised that you'd tell me everything that happened? <<if visited("Witch Encounter 2") or visited("Witch Question End")>>Have there been any more changes with, uh, you know, down there?<<else>>Were there any changes last night?<</if>><<else>>Sometimes with these, uh, things, there are changes on the third night. Did anything happen last night?<</if>>"@@
+
+<<print $qb.firstname>> looks at you with curiosity. You squirm in your seat. So far, nobody else knows that you have a vagina. Do you really want to tell two people? Before friday, they were just acquaintances.
+
+[[Tell them|Lunch Day 4 Witch Admit]]
+[[Play it off|Lunch Day 4 Witch Lie]]
+
+::Lunch Day 4 Witch Admit
+It's your turn to look around furtively. Nobody is looking at you, not even <<print $girlfriend.firstname>>. @@.thought;That's good, right? I don't want her to be staring at me while I eat.@@
+
+@@.witch;"Nobody's listening. But if you want, you can whisper it in my ear."@@
+
+She leans in, and you do the same. @@.thought;Fuck it. I hate her but she's the only one who can help me.@@ @@.player;"Yeah, there were changes,"@@ you whisper.
+
+@@.witch;"What kind of changes?"@@ she whispers back.
+
+@@.thought;So you're really going to make me admit it? Fine.@@ @@.player;"I've changed...down there. I now have, uh..."@@ You can't make yourself say the word //pussy//.
+
+@@.witch;"All the way?"@@ she whispers. You nod.
+
+<<print $witch.firstname>> leans back. Anxiously, you await her reaction. @@.witch;"That is so...COOL!"@@ she squeals.
+
+@@.player;"Excuse me?"@@
+
+@@.witch;"That's the most powerful...thing...I've ever done! I didn't know I could do it. Imagine what I could do if I was trying!"@@
+
+You stare at her in disbelief. @@.player;"What about me?"@@
+
+She looks at you as if she only just realized that you were there. @@.witch;"Oh. Uh, sorry. I didn't mean to offend you. It's just, this is a really big deal for..."@@ she looks around again, @@.witch;"someone like me."@@
+
+@@.player;"Can you help?"@@ you ask impatiently.
+
+@@.witch;"I'll try. I'm not sure. If it's woven in to the, uh, //thing//, then I can't disentagle it unless you...you know, there's too many people around. It's really annoying not being able to talk."@@
+
+@@.player;"Oh good, so it wasn't just me."@@
+
+@@.witch;"Why don't you meet me, uh, how about right after school?"@@
+
+<<if visited("Lunch Day 4 Witch Agree")>>@@.qb;"He can't. We're practicing."@@
+
+@@.witch;"Sorry, <<print $qb.firstname>>. I forgot."@@<<else>>@@.player;"Sure. I think I'm free then."@@
+
+@@.qb;"You just told me you were studying then,"@@ <<print $qb.firstname>> says. He sounds hurt.
+
+@@.thought;Busted.@@ @@.player;"Oh yeah, I forgot I was busy,"@@ you say, playing it off.<<set $qb.relationship to $qb.relationship-2>><<set $qb.confidence to $qb.confidence-1>><</if>>
+
+Finally, the two of you agree that she'll meet you in your dorm room tomorrow morning before school. You're not keen on the idea of her coming to your room, but she's firm on not letting you in hers.
+
+<<link "Time for gym" $currentPassage>><</link>>
+<<set $lunchwitchPassage to "Lunch Witch Discussion">>\
+<<set $witch.relationship to $witch.relationship+2>>\
+<<set $witch.invitation to true>>\
+<<set $witch.knowsSecret to true>>\
+<<set $qb.knowsSecret to true>>\
+
+::Lunch Day 4 Witch Lie
+There's no way you can tell <<print $witch.firstname>> that you have a vagina. You barely knew her before friday, and she's the one who did this to you.
+
+@@.player;"I've lost all my muscles, <<if visited("Weight Room")>>I can't lift heavy weights<<else>>I don't feel strong<</if>>, and I feel like shit. But no physical changes."@@
+
+@@.witch;"Shh! Not so loud!"@@
+
+You look around. Nobody seems to be looking at you, not even <<print $girlfriend.firstname>>. Still, you suppose that she has a point. You don't want anyone knowing how weak you are.
+
+@@.witch;"That's good. I guess it would have been kind of cool if I was powerful enough for more physical changes but, uh, you wouldn't like that. If you notice any other side effects, let me know."@@
+
+You nod. @@.thought;Did I blow it by lying to her? Maybe she could have helped. Oh well, I can always <<if visited("Library")>>do research at the library<<else>>do my own research<</if>>.@@
+
+<<link "Time for gym" $currentPassage>><</link>>
+<<set $lunchwitchPassage to "Lunch Witch Discussion">>\
+
+::Witch Ignored
+@@.player;"Hey,"@@ you say, plopping yourself down at <<print $witch.firstname>> and <<print $qb.firstname>>'s table.
+
+@@.witch;"Hey yourself."@@
+
+@@.player;"What?"@@
+
+@@.witch;"So now you're going to grace us with your presence?"@@ she says, half shouting at you. You rack your brains, trying to figure out what she's so mad about. @@.witch;"Don't you remember? I came to your dorm to help you with...your condition, but you weren't there."@@
+
+@@.player;"Oh, I'm sorry,"@@ you say, remembering now. @@.player;"I was going to meet you but I was..."@@ you trail off, blushing as you remember what you were doing while <<print $witch.firstname>> was waiting. But you can't tell her that, right?
+
+[[Tell her. She was waiting and she should know why|Witch Tell Masturbate]]
+[[Don't tell her, it's too embarrassing|Witch Apologize Masturbate]]
+<<set $witch.ignored to false>>
+
+::Witch Tell Masturbate
+@@.player;"I was going to meet you, but I was, uh, taking a shower. And it felt really nice and I was..."@@ you lower your voice, @@.player;"horny, and I couldn't help myself. I'm sorry."@@
+
+@@.witch;"Seriously? You couldn't meet me because you were too busy jilling off? Did you at least come?"@@
+
+<<if $player.submission>=3>>@@.player;"No,"@@ you admit. @@.thought;I can't believe she asked that. And I can't believe I told her!@@
+
+She chuckles. @@.witch;"So, have you come at all?"@@
+
+<<getTfProgress face>><<if $tempTfValue>0>>@@.player;"Yes,"@@ you admit. You pause, thinking of <<if visited("New Face")>>how your face changed<<else>>that weird feeling you got<</if>> after you came, but you're feeling uncomfortable with her line of questioning, and you're eager to change the subject.<<else>>@@.player;"No."@@
+
+<<print $witch.firstname>> smiles. @@.witch;"You must be feeling so tense."@@
+
+@@.thought;Is she coming onto me? No, she's just teasing me.@@ Either way, you're eager to change the subject.<</if>><<else>>@@.player;"Really? Isn't that a little private?"@@
+
+@@.witch;"I guess so,"@@ she says, backing off.<</if>>
+
+@@.player;"Anyway, what were you going to tell me?"@@
+
+@@.witch;"You're sure you want me to talk about this //here//? Well, okay."@@ She sighs. @@.witch;"So basically, there's no way to undo the...last change. You're stuck like this until the curse is broken. But if you get pregnant..."@@
+
+@@.player;"Pregnant? I'm not going to fuck anybody!"@@
+
+@@.witch;"If that happens,"@@ she repeats patiently, @@.witch;"then you'll be stuck like this for good. And you can get periods too."@@
+
+Out of the corner of your eye, you see Ryan Callahan walk by your table. @@.thought;Crap. I wonder how much he heard?@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $witch.relationship to $witch.relationship+1>>
+<<set $team.suspicion to $team.suspicion+1>>
+<<set $team.respect to $team.respect-1>>
+<<set $player.expectsPeriod to true>>
+
+::Witch Apologize Masturbate
+@@.player;"I was, uh, busy. And I'm sorry. It's my fault."@@
+
+@@.witch;"Can you at least tell me what you were so busy with."@@
+
+@@.player;"Taking a shower."@@
+
+@@.witch;"Okay? But I was waiting a while. You know what, forget it."@@
+
+@@.player;"I know, and I'm sorry. Uh, if I had made it, what were you going to tell me?"@@
+
+<<print $witch.firstname>> snorts. @@.witch;"You can't show up on time or tell me what you were doing, but I'm supposed to tell you all my information?"@@
+
+@@.player;"Uh, yes? I mean, it's your fault I'm in this situation."@@
+
+She rolls her eyes. @@.witch;"Look, just forget it. Okay?"@@ Finishing her lunch, she gets up and storms off.
+
+@@.qb;"She'll get over it,"@@ <<print $qb.firstname>> says. You had almost forgotten that he was there. @@.qb;"Just give her time."@@
+
+You thank him for his advice, and finish eating.
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $witch.relationship to $witch.relationship-2>>
+
+::Lunch Witch Discussion
+<<print $qb.firstname>> and <<print $witch.firstname>> don't seem very surprised when you sit down at their table. @@.thought;Is this becoming my table? I liked sitting at the cool kids table.@@
+
+@@.qb;"Hey, <<print $player.firstname>>. What's up?"@@<<if visited("Girlfriend Results Discussion Breakup") and $witch.knowsAboutBreakup is false>>
+
+@@.thought; Now's my chance to tell <<print $witch.firstname>> about my breakup.@@
+
+[[Talk about your breakup|Lunch Witch Breakup]]<<else>>
+<</if>><<if visited("QB Practice 1") and not visited("Lunch QB Practice")>>
+[[Talk about practice|Lunch QB Practice]]<</if>><<getTfProgress face>><<if $tempTfValue>0 and not visited("Lunch Witch Face")>>
+[[Talk about the changes to your face|Lunch Witch Face]]<</if>>
+[[Make small talk|Lunch Witch Small Talk]]<<nobr>>
+<<set $witch.relationship to $witch.relationship+1>>
+<<set $qb.relationship to $qb.relationship+1>>
+<<set $team.respect to $team.respect-1>><</nobr>>
+
+::Lunch QB Practice
+@@.player;"How did you like our practice?"@@ you ask <<print $qb.firstname>>
+
+<<if visited("QB Practice 1 Work")>>@@.qb;"I liked it! You really helped me."@@
+
+@@.player;"Really?"@@
+
+@@.qb;"Yeah! I threw better in the real practice."@@
+
+You remember <<print $qb.firstname>> missing every receiver. @@.player;"If you say so."@@
+
+@@.qb;"I know I have a long way to go. But I feel a little better about myself."@@
+
+@@.player;"That's great,"@@ you say, being mostly sincere. @@.thought;If he's more confident, that's good for me. Maybe he can actually win the championship.@@
+
+@@.qb;"How about you?"@@
+
+@@.player;"I thought it was helpful too. It felt weird being a teacher. But I think I got something out of it too."@@
+
+@@.witch;"Really?"@@
+
+@@.player;"Yeah, when I started, I kept underthrowing <<print $qb.firstname>>. But by the time we got to practice, I was more accurate."@@
+
+<<print $witch.firstname>> gives you a look. @@.thought;Oh yeah, she wants her brother to be the quarterback. I shouldn't have said that.@@
+
+The moment passes though, and you chat with <<print $witch.firstname>> and <<print $qb.firstname>> until the bell rings, signalling the end of lunch.
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $qb.relationship to $qb.relationship+1>><<else>>@@.qb;"It was pretty good. It wasn't really much of a practice, though."@@
+
+You blush, recalling how you broke down crying and <<print $qb.firstname>> had to console you.
+
+@@.witch;"What do you mean, wasn't much of a practice?"@@
+
+As you're debating whether to answer her, <<print $qb.firstname>> speaks up. @@.qb;"<<print $player.firstname>> had a moment, and I sat with him and tried to cheer him up.<<if visited("QB Practice 1 Ice Cream")>> I even brought him ice cream.<</if>>"@@
+
+@@.witch;"Moment? Like, crying?"@@
+
+You blush again. @@.qb;"Sorry, <<print $player.firstname>>,"@@ <<print $qb.firstname>> says apologetically.
+
+<<print $witch.firstname>> isn't letting go. @@.witch;"So you're telling me <<print $qb.firstname>> didn't practice at all?"@@
+
+[[Tell her to mind her own business|Lunch QB Blast]]
+[[Promise to practice tonight|Lunch QB Practice Promise]]<</if>>
+
+::Lunch QB Blast
+@@.player;"You know what, <<print $witch.firstname>>? Why don't you mind your own business?"@@
+
+<<print $witch.firstname>> looks stunned. @@.witch;"Wow. I just want my brother to get the best practice. It helps you too, you know."@@
+
+@@.player;"The only reason it helps me is because you cursed me. I'm going through a lot, okay? I tried to help <<print $qb.firstname>> practice, but it wasn't a good time for me. And he gets to practice with the team at 7 like everyone else."@@
+
+@@.witch;"Fine. But he doesn't get to practice with the team. His only chance of getting actual coaching is with you."@@
+
+@@.player;"What do you mean? Everybody gets to practice with the team!"@@
+
+@@.qb;"She's right. Coach barely lets me practice. He just cares about you."@@
+
+You think that over. You had just assumed that <<print $qb.firstname>> was getting enough practice time. @@.thought;I didn't notice that Coach was playing favorites.@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $witch.relationship to $witch.relationship-5>>
+<<set $qb.relationship to $qb.relationship-1>>
+<<set $player.confidence to $player.confidence+3>>
+
+::Lunch QB Practice Promise
+@@.player;"Not really,"@@ you admit. @@.player;"But I'll make it up to you, <<print $qb.firstname>>. Can you practice tonight?"@@
+
+@@.qb;"Yeah, I think I'm free."@@
+
+@@.player;"Cool, I am too. Text me when you're free. And I'll try not to cry this time,"@@ you say with a laugh.
+
+@@.qb;"Okay!"@@ <<print $qb.firstname>> says, sounding excited.
+
+@@.witch;"Great. If <<print $qb.firstname>> actually has a good practice, I'll be happy."@@
+
+@@.thought;Actually?@@ You want to tell her to fuck off, but the bell rings, signalling the end of the lunch period.
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $witch.relationship to $witch.relationship+1>>
+<<set $qb.relationship to $qb.relationship+2>>
+<<set $player.confidence to $player.confidence-2>>
+<<set $qb.promisedPractice to true>>
+
+::Lunch Witch Face
+@@.player;"Um, I wanted to talk to you about something,"@@ you say, addressing <<print $witch.firstname>>. She raises an eyebrow. @@.player;"I thought the curse was supposed to be over, but it's not."@@
+
+@@.witch;"Don't say that word!"@@
+
+@@.player;"Curse?"@@
+
+@@.witch;"Yeah. And of course it's over. It only lasts three days."@@
+
+@@.player;"I know. But it's not. I've noticed some, uh, changes to my face."@@
+
+Both <<print $witch.firstname>> and <<print $qb.firstname>> lean in for a closer look. @@.witch;"It looks the same to me."@@
+
+@@.qb;"Really? I think I see a difference."@@
+
+You pull out your phone, and find the photo of you and <<print $girlfriend.firstname>> at prom. @@.player;"See? That's what it looked like before."@@
+
+@@.witch;"Can I see?"@@ <<print $witch.firstname>> asks, taking your phone. She looks from your phone to your face and back. @@.witch;"Yeah, I see what you mean,"@@ she says, setting the phone on the table. @@.witch;"But that can't be."@@
+
+@@.player;"But it happened!"@@
+
+@@.witch;"Yeah. I don't know how. It should be over after three days. I'll try to find out what's going on."@@
+
+@@.player;"Thanks,"@@ you say. @@.player;"Shouldn't you know more about this though? No offense, but you're the..."@@ you catch yourself before saying the word witch. @@.player;"You're the one who did this."@@
+
+@@.witch;"To tell you the truth, I took another spell and modified it. I thought I knew what it was going to do, but I guess I was wrong."@@
+
+You nod. Growing a vagina when you were supposed to just lose your muscles is pretty fucking wrong.
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $witch.relationship to $witch.relationship+1>>
+
+::Lunch Witch Small Talk
+You're not in the mood to talk about your curse. In fact, you really want something to take your mind off of it. And you don't want to have to spend your lunch period sitting there while <<print $witch.firstname>> lectures you about practicing with <<print $qb.firstname>>.
+
+You settle for making small talk. You've always been very social, and it's easy to pass the time talking with <<print $witch.firstname>> and <<print $qb.firstname>> about nothing in particular.
+
+<<link "The bell rings. It's time for gym." $currentPassage>><</link>>
+<<set $qb.relationship to $qb.relationship+1>>\
+<<set $witch.relationship to $witch.relationship+1>>\
+
+::Lunch Witch Breakup
+@@.player;"I'm not doing too good,"@@ you say, trying to sound convincing. It's not hard. You //are// really sad about it. @@.player;"<<print $girlfriend.firstname>> and I broke up."@@
+
+@@.qb;"I'm so sorry to hear that!"@@ <<print $qb.firstname>> says.
+
+@@.player;"Thanks."@@
+
+@@.witch;"What happened?"@@
+
+@@.thought;I didn't think this far. Me and <<print $girlfriend.firstname>> never agreed on a story.@@
+
+[[She said I was too girly|Lunch Witch Breakup Girly]]
+[[She found out I was cheating on her|Lunch Witch Breakup PlayerCheat]]
+[[I found out she was cheating on me|Lunch Witch Breakup GirlfriendCheat]]
+<<set $witch.knowsAboutBreakup to true>>
+
+::Lunch Witch Breakup Girly
+@@.player;"She said I was too girly."@@
+
+<<if $player.feminine>12>><<print $witch.firstname>> and <<print $qb.firstname>> look you up and down. @@.witch;"Yeah,"@@ they say in unison.
+
+You blush.<<elseif $player.feminine>5>>@@.qb;"Yeah, I can see how that would be a problem."@@
+
+You glare at him.<<elseif $qb.knowsSecret and $witch.knowsSecret>>@@.witch;"You don't look that feminine to me."@@
+
+@@.player;"Thanks,"@@ you say, touched.
+
+@@.qb;"I think he means his pussy."@@
+
+@@.witch;"Oh."@@ You blush.<<else>>@@.qb;"You don't look that feminine to me. I mean, there's the strength and all that, but I don't get what she's talking about."@@
+
+@@.player;"Thanks,"@@ you say, touched.<</if>>
+
+@@.witch;"I'm sorry, <<print $player.firstname>>. I feel like it's all my fault."@@
+
+@@.thought;That's because it is.@@<<if $witch.knowsSecret>>
+
+<<print $witch.firstname>> seems to know what you're thinking, because she gets defensive. @@.witch;"Hey, I didn't know it was going to //change// you! All I wanted was to take away your strength!@@
+
+@@.player;"We're in the middle of the lunchroom,"@@ you say under your breath.
+
+@@.witch;"Right, sorry."@@<</if>>
+
+Thankfully, <<print $witch.firstname>> at least seems to buy that you and <<print $girlfriend.firstname>> have broken up.
+
+@@.thought;Now I just need for <<print $girlfriend.firstname>> to try to join the club again.@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch Witch Breakup PlayerCheat
+@@.player;"Um, she found out I was cheating on her."@@
+
+<<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>><<print $qb.firstname>> looks guilty. @@.qb;"I'm sorry. I thought we were just fooling around. I didn't realize it would be a problem for you."@@
+
+You're confused for a moment, and then it hits you. <<print $qb.firstname>> thinks that he's the reason you and <<print $girlfriend.firstname>> broke up. @@.thought;I said I cheated on her because it was the first thing that came to mind. But, I guess I did. Does it count if it's with a guy?@@
+
+@@.witch;"<<print $qb.firstname>>? You and <<print $player.firstname>>?"@@
+
+@@.thought;He didn't tell his sister about us? Wow, maybe there's a...wait, he said we were fooling around.@@
+
+@@.player;"Fooling around?"@@
+
+<<print $qb.firstname>>'s cheeks go red, as he's faced with two people asking him questions. He turns to <<if $qb.relationship>80>>you first.
+
+@@.qb;"I'm sorry, it came out wrong. I didn't mean that."@@<<else>>his sister first. @@.qb;"Yeah, me and <<print $player.firstname>> hooked up,"@@ he says shyly.<</if>>
+
+By how excited <<print $witch.firstname>> is getting, you've forgotten that she was the witch who changed your life. She just seems like a schoolgirl who wants to gossip. <<if $qb.relationship>80>>@@.witch;"So you do want to date him?"@@<<else>>@@.witch;"So was it just a one time thing or something more serious?"@@<</if>>
+
+@@.qb;"No! I mean, I..."@@
+
+Now it's your turn to blush. @@.thought;Now that <<print $girlfriend.firstname>> and I are broken up, maybe we could...but then the whole school would know I was dating a guy.@@<<set $witch.relationship to $witch.relationship+4>><<set $qb.relationship to $qb.relationship+4>><<set $player.homosexuality to $player.homosexuality+1>><<else>>@@.witch;"Figures,"@@ <<print $witch.firstname>> says with a scoff. @@.witch;"I felt bad for you, but you're just a typical jock."@@
+
+@@.player;"Hey! I'm not like that!"@@ But from what you just told her, you //are// like that. @@.thought;I talked myself into a corner.@@
+
+@@.qb;"I didn't know you were seeing someone else. What's her name?"@@
+
+@@.player;"Uh..."@@ You //really// didn't think this through. @@.player;"I don't really want to talk about this."@@
+
+<<print $witch.firstname>> and <<print $qb.firstname>> look a little disgusted with you, but they do drop the subject.<<set $witch.relationship to $witch.relationship-6>><<set $qb.relationship to $qb.relationship-2>><</if>>
+
+@@.thought;At least <<print $witch.firstname>> seems to buy that me and <<print $girlfriend.firstname>> broke up. Now I just need <<print $girlfriend.firstname>> to try to join the club again.@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch Witch Breakup GirlfriendCheat
+@@.player;"Uh, she cheated on me, and I found out. So we broke up."@@
+
+@@.witch;"Oh shit! I'm sorry to hear that!"@@ You look at her in surprise. You always got the impression that she disliked you. @@.thought;Why is she being empathetic?@@
+
+@@.qb;"Sorry, man. That sucks."@@
+
+@@.player;"Yeah. It does suck."@@
+
+You look over at <<print $girlfriend.firstname>>, who is sitting at the table you used to sit at. @@.thought;I hope she's not mad at me for making her out to be the bad guy.@@
+
+<<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>><<print $qb.firstname>> is looking at you with a look that you can't quite place. @@.thought;Wait, is he...interested...in me? I guess I'm single now but I can't date a guy!@@<<set $player.homosexuality to $player.homosexuality+1>><<elseif $qb.knowsSecret>>@@.qb;"Don't let this keep you down. I know that you probably don't want to think about dating right after a bad breakup, but there's plenty of girls out there. I'm sure you can...oh,"@@ he trails off, looking straight at your crotch.
+
+You blush. @@.thought;Oh is right. Even if I'm not the quarterback I once was, I could still probably get a girlfriend. But then she'd want to have sex and then I'd have to tell her I have a pussy and...no. I can't do it.@@<<else>>@@.qb;"Don't let this keep you down. I know that you probably don't want to think about dating right after a bad breakup, but there's plenty of girls out there. I'm sure you can find someone. There's so many girls who would be dying to date you."@@
+
+@@.player;"Thanks, <<print $qb.firstname>>,"@@ you say half-heartedly. You appreciate him trying to cheer you up, but you couldn't date someone else. Not with your condition. @@.thought;Oh is right. Even if I'm not the quarterback I once was, I could still probably get a girlfriend. But then she'd want to have sex and then I'd have to tell her I have a pussy and...no. I can't do it.@@<</if>>
+
+@@.thought;At least <<print $witch.firstname>> seems to buy that me and <<print $girlfriend.firstname>> broke up. Now I just need <<print $girlfriend.firstname>> to try to join the club again.@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch QB UpcomingGame
+@@.player;"Hey,"@@ you say, greeting <<print $qb.firstname>> and <<print $witch.firstname>> as you sit down with them.
+
+@@.qb;"So, are you ready for the game?"@@ <<print $qb.firstname>> asks.
+<<if $playerStarter>>
+[[Not really|Lunch QB UpcomingGame Nervous]]
+[[Yeah|Lunch QB UpcomingGame Ready]]<<else>>
+@@.player;"Why would I be ready?"@@ you ask with a laugh. @@.player;"You're the starter."@@
+
+@@.qb;"Oh yeah,"@@ <<print $qb.firstname>> says, looking embarrassed. @@.qb;"Sometimes I forget."@@
+
+You don't understand how he could forget. Football, up until recently, was your life. If you suddenly became the starter again, well, you don't know what you would do. It would be exciting for sure, but you don't know if you're ready for it.
+
+@@.qb;"Everything okay, <<print $player.firstname>>?"@@ <<print $qb.firstname>> asks.
+
+[[Yeah|Lunch QB UpcomingGame NotJealous]]
+[[I miss starting|Lunch QB UpcomingGame Jealous]]<</if>>
+
+::Lunch QB UpcomingGame Nervous
+@@.player;"Not really,"@@ you say.
+
+@@.witch;"Well,"@@ <<print $witch.firstname>> says, a gleam in her eye. @@.witch;"If you're not ready, maybe <<print $qb.firstname>> should be the quarterback?"@@
+
+@@.qb;"Give it a rest, <<print $witch.firstname>>."@@
+
+You look awkwardly at the two of them. @@.player;"No, I still want to be the quarterback,"@@ you say. @@.player;"But I'm just nervous, that's all. So much is riding on this game...on every game this season."@@
+
+@@.qb;"You've got this,"@@ <<print $qb.firstname>> says. @@.qb;"So you don't have all the skills you used to. You still //know// how to play and how to read defenses."@@
+
+@@.player;"Thanks,"@@ you tell him. @@.player;"That's helpful."@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch QB UpcomingGame Ready
+@@.player;"I'm ready,"@@ you say.
+
+<<print $witch.firstname>> looks a little disappointed, like she was looking for a reason to convince you that <<print $qb.firstname>> should be the starter.
+
+@@.qb;"That's great!"@@ <<print $qb.firstname>> says. @@.qb;"We need you to beat @@<<if $day<2>>@@.qb;Bear Valley@@<<elseif $day<9>>@@.qb;Spring Gardens@@<<elseif $day<16>>@@.qb;Upper Lake@@<<else>>@@.qb;Southview@@<</if>>@@.qb;."@@
+
+You nod. @@.player;"I think I can do it. @@<<if $day<2 or $day>=16>>@@.player;They're a good team though, and that's scary."@@
+
+@@.qb;"So are we,"@@ <<print $qb.firstname>> says. @@.qb;"It's not all about the quarterback."@@
+
+@@.player;"Yeah, I guess you're right. For some reason, I was feeling like our success all hinged on me."@@<<else>>@@.player;They're not that good."@@
+
+@@.qb;"Yeah, they're not,"@@ <<print $qb.firstname>> says, smiling. @@.qb;"I just hope that the others don't get cocky."@@
+
+@@.player;"What do you mean?"@@
+
+@@.qb;"Well, we're worse than we were at the beginning of the season. If the other players don't take the game seriously, we could lose."@@
+
+@@.player;"Oh yeah,"@@ you say, panic seizing you. @@.player;"You're right."@@
+
+@@.thought;If we can't even win this game, how can we win the championship?@@<</if>>
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch QB UpcomingGame NotJealous
+@@.player;"Yeah. Everything's okay,"@@ you tell him. You mean it, too. @@.player;"It sucks to not be the quarterback anymore, but, you know, I think I'm actually okay with it."@@
+
+@@.qb;"Really?"@@
+
+@@.witch;"I'm so happy to hear that!"@@
+
+You ignore her. @@.player;"Yeah. Being the quarterback, and having the whole school praise me if we win or blame me if we lose is so stressful."@@
+
+<<print $qb.firstname>> looks around nervously, and you realize that wasn't the best thing to say to him. @@.player;"And you're much better than me!"@@ you add.
+
+@@.qb;"The whole school's going to blame me if we lose?"@@
+
+@@.witch;"And praise you if we win,"@@ <<print $witch.firstname>> adds. @@.witch;"But don't go getting a big head,"@@ she says, punching his arm.
+
+<<link "Go to gym" $currentPassage>><<set $qb.confidence to $qb.confidence-1>><<set $witch.relationship to $witch.relationship+1>><</link>>
+
+::Lunch QB UpcomingGame Jealous
+@@.player;"I miss starting,"@@ you say, looking off into the distance.
+
+@@.qb;"Yeah, <<print $qb.firstname>>, I'm sorry..."@@ <<print $player.firstname>> begins, but he's quickly cut off by <<print $witch.firstname>>.
+
+@@.witch;"Does that mean that you want to go back to being the starter?"@@ she asks you. @@.witch;"I thought you agreed that <<print $qb.firstname>> was better than you."@@
+
+@@.player;"I never said that,"@@ you say, feeling annoyed<<showQBSkill true>><<showQBSkill false>><<if $player.qbSkill<$qb.qbSkill>>, even though she's right: he //is// better than you.<<else>>. Besides, it's not even true. <<print $qb.firstname>> is //not// better than you.<</if>>
+
+@@.witch;"Well, I hope you're not going to try to get your job back."@@
+
+@@.player;"All that happened was that <<print $qb.firstname>> asked me if I was okay, and I just said what was on my mind."@@
+
+@@.witch;"Okay,"@@ she says, having the decency to look ashamed. @@.witch;"But I'm sure that there are some parts to being the starting quarterback that you don't miss."@@
+
+[[You don't miss the pressure|Lunch QB UpcomingGame Pressure]]
+[[You can't think of anything|Lunch QB UpcomingGame Longing]]
+
+::Lunch QB UpcomingGame Pressure
+@@.player;"I don't miss the pressure,"@@ you admit. @@.player;"It was so stressful knowing that the whole school would be singing my praises if I won, and blaming me if I lost."@@
+
+<<print $qb.firstname>> looks around nervously, and you realize that wasn't the best thing to say to him. @@.player;"And you're much better than me!"@@ you add.
+
+@@.qb;"The whole school's going to blame me if we lose?"@@
+
+@@.witch;"And praise you if we win,"@@ <<print $witch.firstname>> adds. @@.witch;"But don't go getting a big head,"@@ she says, punching his arm.
+
+<<link "Go to gym" $currentPassage>><<set $qb.confidence to $qb.confidence-1>><</link>>
+
+::Lunch QB UpcomingGame Longing
+@@.player;"I can't think of anything,"@@ you say after a moment. @@.player;"I really miss it."@@
+
+You ignore <<print $witch.firstname>>'s look. @@.player;"I had everything then. I was popular, good-looking, and I was getting recruited by colleges."@@
+
+<<if $player.feminine>=18>>@@.qb;"You're still good-looking,"@@ <<print $qb.firstname>> says.<<elseif $player.feminine<2>>@@.witch;"You're still good-looking,"@@ <<print $witch.firstname>> offers.<<else>>You look to <<print $witch.firstname>> and <<print $qb.firstname>> to comment, but neither of them say anything.<</if>>
+
+@@.player;"Now look at me. I'm some...some kind of freak. I can't even play football!"@@
+
+@@.witch;"I'm sorry, <<print $player.firstname>>,"@@ <<print $witch.firstname>> says after a while. @@.witch;"I, uh, I wasn't thinking about you when I did, you know. I just wanted to make <<print $qb.firstname>> successful."@@
+
+<<link "Thank her for apologizing and go to gym" $currentPassage>><<set $witch.relationship to $witch.relationship+2>><</link>>
+
+::Lunch QB DiscussGame
+<<if $stallionsscore>$defensescore>>@@.player;"Can you believe that we won?"@@ you ask <<print $qb.firstname>> when he sits down.
+
+@@.qb;"I know!"@@ he says, excitedly. <<print $witch.firstname>> rolls her eyes, but the two of you ignore her. <<if $playerStarter>>@@.qb;"You did so good,"@@ he says.
+
+@@.player;"Thanks. It's been hard getting used to this body. I need to put extra effort in to make the same throws I was making before."@@
+
+@@.qb;"It's paid off."@@<<else>>@@.player;"You did so good,"@@ you say, excitedly.
+
+@@.qb;"Thanks. I couldn't have done it without you."@@
+
+@@.player;"Oh, thanks."@@
+
+@@.qb;"No, I mean it. I know I'm asking you to do a lot by helping me practice when you're used to being the quarterback, but I really appreciate it."@@<</if>>
+
+The two of you chat about the throws that <<if $playerStarter>>you<<else>>he<</if>> made, and <<if $playerStarter>>he gives you<<else>>you give him<</if>> some pointers.
+
+<<if $opponent is "Upper Lake" or $opponent is "Spring Gardens">>@@.player;"I'm just nervous about what's going to happen when we play good teams,"@@ you say.
+
+@@.qb;"We'll be fine,"@@ he says. @@.qb;"We won this game, didn't we?"@@
+
+@@.player;"Yeah. But, I don't know, I keep thinking that we only won //because// <<print $opponent>> was a bad team. And if we play a good team, they'll be able to cover @@<<if $playerStarter>>@@.player;my@@<<else>>@@.player;your@@<</if>>@@.player; receivers, and they could sack @@<<if $playerStarter>>@@.player;me@@<<else>>@@.player;you@@<</if>>@@.player;."@@
+
+@@.qb;"<<print $player.firstname>>?"@@
+
+@@.player;"Yeah?"@@
+
+@@.qb;"Relax."@@
+
+@@.player;"Okay,"@@ you say, attempting to take his advice.<<else>>@@.player;"I was worried about what would happen when we played good teams, but we did, and we won!"@@
+
+@@.qb;"I told you that you should relax."@@
+
+@@.player;"Yeah. I wonder how good our team really is now."@@
+
+@@.qb;"It's hard to say. @@<<if $playerStarter>>@@.qb;I'm@@<<else>>@@.qb;You're@@<</if>> @@.qb;improving all the time."@@
+
+@@.player;"Yeah. Right after <<print $witch.firstname>> cursed me..."@@
+
+@@.witch;"I'm right here!"@@
+
+@@.player;"Sorry,"@@ you say. You had gotten so wrapped up in talking football with <<print $qb.firstname>> that you had forgotten that she was at your table too.
+
+@@.qb;"I think we could win the championship,"@@ <<print $qb.firstname>> says, changing the subject.
+
+@@.player;"Totally,"@@ you say, starting to think about it. You did just beat <<print $opponent>>, a good team. If <<if $playerStarter>>you<<else>>he<</if>> can keep it up, the Stallions could actually win. And then the curse would be over<<if $player.masculinity>=10>>, and you would finally have your dick back!<<else>>, and you would have your dick back. You're not sure if you want that, though.<</if>>
+
+@@.qb;"Everything okay? You look like you drifted off into your own world."@@
+
+@@.player;"Yeah, I was just thinking,"@@ you respond.<</if>><<else>>@@.player;"Can you believe that we lost?"@@ you ask <<print $qb.firstname>> when he sits down.
+
+@@.qb;"I know!"@@ he says. <<print $witch.firstname>> rolls her eyes, but the two of you ignore her. <<if $playerStarter>>@@.qb;"You've gotten so much better. @@<<else>>@@.qb;"You've helped me get so much better. @@<</if>>@@.qb;I thought for sure that we were good enough to win."@@
+
+@@.player;"This is still a team game."@@
+
+@@.qb;"That's what I'm saying. We're a good team. And @@<<if $playerStarter>>@@.qb;I@@<<else>>@@.qb;you@@<</if>>@@.qb;'ve been practicing. That should have been enough to beat @@<<if $opponent is "Upper Lake" or $opponent is "Spring Gardens">>@@.qb;a team like <<print $opponent>>."@@<<else>>@@.qb;win, even if we were playing a good team like <<print $opponent>>."@@<</if>>
+
+You think back to the game. The team around <<if $playerStarter>>you<<else>><<print $qb.firstname>><</if>> did fine. But when you think about the specific plays that led to your loss, you picture a highlight reel of <<if $playerStarter>>your<<else>><<print $qb.firstname>>'s<</if>> mistakes.
+
+@@.player;"You're right. @@<<if $playerStarter>>@@.player;I'm keeping the team back."@@
+
+@@.qb;"I didn't mean it like that?"@@
+
+@@.player;"Then how else did you mean it?"@@
+
+@@.witch;"Have you thought about <<print $qb.firstname>> being the quarterback?"@@ <<print $witch.firstname>> asks, cutting in.
+
+@@.player;"Yes. I think about it every time you ask it."@@
+
+@@.witch;"Well?"@@
+
+<<showQBSkill true>><<showQBSkill false>><<if $player.qbSkill>$qb.qbSkill>>@@.player;"We'd be even worse if <<print $qb.firstname>> was the quarterback,"@@ you tell her. @@.player;"No offense, <<print $qb.firstname>>,"@@ you add quickly.<<else>>@@.player;"I don't know,"@@ you say. @@.player;"Me being the starter isn't working, but I don't know if <<print $qb.firstname>> would be better."@@
+
+@@.witch;"He would be,"@@ she says.<</if>><<else>>@@.player;But that would mean that you're holding the team back..."@@
+
+@@.qb;"Yeah, I guess I am."@@
+
+@@.witch;"Don't talk like that, <<print $qb.firstname>>,"@@ <<print $witch.firstname>> says.
+
+@@.qb;"Yeah, I know. But it's true."@@
+
+@@.witch;"And I guess you think you'd be a better quarterback?"@@
+
+<<showQBSkill true>><<showQBSkill false>><<if $player.qbSkill>$qb.qbSkill>>@@.player;"Well, uh..."@@ you start, looking at <<print $witch.firstname>>. You know she won't like what you have to say. @@.player;"I am. I sucked at first, but I've been practicing, and I've gotten better."@@
+
+@@.witch;"Those practices were supposed to help <<print $qb.firstname>>!"@@
+
+You look around awkwardly. @@.player;"We're practicing,"@@ you say, trying to defend yourself. @@.player;"If we're throwing the ball back and forth, then we're both practicing."@@
+
+@@.qb;"I get that you want to be the quarterback and you want to practice,"@@ <<print $qb.firstname>> says. @@.qb;"But you could be helping me more."@@
+
+@@.witch;"What about not throwing the ball back? Or standing by <<print $qb.firstname>> and helping correct his posture or whatever?"@@
+
+@@.player;"Uh, I don't know,"@@ you say. @@.player;"I guess I can help <<print $qb.firstname>> more next practice. But I'm not going to stop practicing."@@<<else>>@@.player;"I'm not saying that,"@@ you say.
+
+@@.qb;"Yeah. The problem is that neither of us are good enough."@@
+
+You nod. @@.player;"We need to practice more."@@
+
+@@.qb;"Yeah. Do you want to practice after school?"@@
+
+@@.player;"Sure."@@<</if>><</if>><</if>>
+
+The bell rings, signalling that lunch is over.
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch QB AfterSacrifice
+You feel awkward as you sit down next to <<print $qb.firstname>> and <<print $witch.firstname>>. Before, you and <<print $qb.firstname>> had football to bond over, but now that's changed. You're still on the team, sure, but it's not like you would be of any use if you had to step into a game.
+
+<<if visited("Witch QBSkillSpell Caught")>>@@.thought;And that's not all. <<print $witch.firstname>> forced me to stand still while she took away my ability!@@<<elseif visited("Witch QBSkillSpell Improve Options")>>@@.thought;And that's not all. I went to her room thinking I'd get better at football, but then she convinced me to sacrifice my abilities for <<print $qb.firstname>>!@@<<else>>@@.thought;And I just let her do it. I didn't even try to stop her.@@<</if>>
+
+@@.qb;"How are you feeling, <<print $player.firstname>>?"@@
+
+[[You feel weird|Lunch QB AfterSacrifice Weird]]
+[[You feel good|Lunch QB AfterSacrifice Good]]
+
+::Lunch QB AfterSacrifice Weird
+@@.player;"I feel weird,"@@ you say. @@.player;"My whole body...everything feels off. Opening doors, carrying my books around...they're so heavy. They're not that heavy. I can still carry them, of course, but I don't know how to explain it.  It's different."@@
+
+@@.witch;"You'll get used to it,"@@ <<print $witch.firstname>> says.
+
+@@.player;"That's easy for you to say! You're not the one who has to go through all of these changes!"@@
+
+@@.witch;"You got used to it when I took away your strength, back at the beginning of the year."@@
+
+@@.player;"Well, yeah. But that was different. I could still play football. Now, I don't know. I have a feeling I won't be able to play football again."@@
+
+@@.qb;"What are you going to do about that? @@<<if $dayOfWeek is "Thursday" or $dayOfWeek is "Friday">>@@.qb;We've got a game coming up!"@@<<else>>@@.qb;We've got practice @@<<if $dayOfWeek is "Monday" or $dayOfWeek is "Wednesday">>@@.qb;tonight!"@@<<else>>@@.qb;tomorrow!"@@<</if>><</if>>
+
+@@.player;"You're right,"@@ you say, sighing. @@.player;"I had forgotten about that."@@
+
+@@.qb;"How are you going to explain it to Coach? Or the guys?"@@
+
+@@.player;"[[I'm going to fake my way through practice|Lunch QB AfterSacrifice Fake]]"@@
+@@.player;"[[I'm going to skip practice|Lunch QB AfterSacrifice Skip]]"@@
+
+::Lunch QB AfterSacrifice Good
+@@.player;"I feel good."@@
+
+@@.qb;"What?"@@
+
+@@.witch;"What?"@@
+
+@@.player;"No, really. This past @@<<if $day>=30>>@@.player;month@@<<else>>@@.player;couple weeks@@<</if>> @@.player;I've been struggling with whether I want to be the quarterback or whether I want us to win the title. And it's been tough to deal with. But now, I've made up my mind, and I feel, I don't know, at peace I guess."@@
+
+<<print $witch.firstname>> beams. @@.witch;"That's what I've been trying to tell you! That it would be easier if you just accepted that <<print $qb.firstname>> should be the quarterback, and do whatever it takes to support him. And you did! I'm so proud of you!"@@ she says, getting out of her chair and giving you a hug.
+
+@@.player;"Uh, thanks, I think,"@@ you say, feeling confused over this uncharacteristic show of affection from <<print $witch.firstname>>.
+
+@@.qb;"Yeah, thanks, <<print $player.firstname>>. I really appreciate it. I guess it's all up to me now. We'll see how good I am at @@<<if $dayOfWeek is "Thursday" or $dayOfWeek is "Friday">>@@.qb;the game."@@<<elseif $dayOfWeek is "Monday" or $dayOfWeek is "Wednesday">>@@.qb;practice tonight."@@<<else>>@@.qb;practice tomorrow."@@<</if>>
+
+@@.player;"That's right,"@@ you say, sighing. @@.player;"I had forgotten about that."@@
+
+@@.qb;"How are you going to explain it to Coach? Or the guys?"@@
+
+@@.player;"[[I'm going to fake my way through practice|Lunch QB AfterSacrifice Fake]]"@@
+@@.player;"[[I'm going to skip practice|Lunch QB AfterSacrifice Skip]]"@@
+<<set $witch.relationship to $witch.relationship+5>>
+
+::Lunch QB AfterSacrifice Fake
+@@.player;"I'm going to fake my way through."@@
+
+@@.witch;"How are you going to do that?"@@ she asks incredulously.
+
+@@.qb;"No, he has a chance. @@<<if $playerStarter>>@@.qb;If I become the starter, @@<<else>>@@.qb;I'm the starter, so @@<</if>>@@.qb;Coach wouldn't ask <<print $player.firstname>> to do all that much."@@
+
+@@.witch;"Like how he ignored you when <<print $player.firstname>> was the quarterback."@@
+
+@@.player;"He'll still have me do some stuff though, right? @@<<if $dayOfWeek is "Thursday" or $dayOfWeek is "Friday">>@@.player;If we start winning by a lot, he'll put me and the other benchwarmers in."@@<<else>>@@.player;He always made you do a couple throws."@@<</if>>
+
+@@.qb;"I'm not sure,"@@ he admits. @@.qb;"Maybe you can say you're not feeling well."@@
+
+@@.player;"I don't know. I don't want to run from this. @@<<if $playerStarter>>@@.player;I don't even know how I'm going to tell Coach that you should be the starter."@@<<else>>@@.player;Maybe he just won't notice? I lost my strength after our first game, and I'm still on the team."@@<</if>>
+
+Before <<print $qb.firstname>> can respond, the bell rings.
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch QB AfterSacrifice Skip
+@@.player;"I'm going to skip practice,"@@ you say. @@.player;"I lost my strength before, but this is different. I already feel so weak. If I go to practice, I'll just get embarrassed."@@
+
+<<if $player.homosexuality>=30>>@@.thought;I'm going to be sad not to change with the other players though.@@<<else>>@@.thought;It'll be nice not to have to change with the other players. I keep getting these confusing thoughts.@@<</if>>
+
+<<print $witch.firstname>> nods. @@.witch;"I think that's smart. If they figure out how weak and unskilled you are, the news will spread all over the school."@@
+
+@@.player;"You didn't have to put it like that,"@@ you say in protest. @@.player;"Do you think I'd be kicked off the team?"@@
+
+@@.witch;"Probably."@@
+
+@@.qb;"How are you going to keep getting away with this? Won't they start wondering why you never show up to practice?"@@
+
+@@.player;"I don't know,"@@ you admit. @@.player;"I'll have to figure that out."@@
+
+Before <<print $qb.firstname>> can respond, the bell rings.
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch Day 4 Friends
+There's no way you're going to sit with that bitch, no matter what she may know. Besides, you're not sure you would have been able to contain your disdain.
+
+With a smile, you walk over to your group of friends. They seem genuinely excited to see you, and you relax. It's nice to be sitting with them again. You had shut them out a little bit over the weekend, and you resolve to not take it out on them. @@.thought;I can't tell them everything, of course.@@
+
+The only negative is that your pussy is rubbing against the lunch bench. It's not uncomfortable, it's just a weird feeling. You scoot forward a little and straighten your posture.
+
+@@.female;"So, <<print $player.firstname>>,"@@ one of the girls is saying. @@.female;"@@<<if visited("Girlfriend Fight")>>@@.female;I heard you and <<print $girlfriend.firstname>> got into a fight."@@
+
+You cringe and try not to look at <<print $girlfriend.firstname>>, who is sitting across from you.
+
+[[Tell her about the fight|Lunch Day 4 Friends Tell]]
+[[Try to play it off|Lunch Day 4 Friends Lie]]
+[[Tell her to mind her own business|Lunch Day 4 Friends Dominant]]<<else>>@@.female;I heard you and <<print $girlfriend.firstname>> hooked up."@@
+
+You cringe and try not to look at <<print $girlfriend.firstname>>, who is sitting across from you.
+
+[[Tell her the embarrassing details|Lunch Day 4 Friends Tell]]
+[[Make a joke|Lunch Day 4 Friends Lie]]
+[[Tell her to mind her own business|Lunch Day 4 Friends Dominant]]<</if>>
+
+::Lunch Day 4 Friends Tell
+<<if visited("Girlfriend Fight")>>@@.player;"Yeah, we got into a little fight."@@
+
+@@.male;"Well, what happened?"@@
+
+<<print $girlfriend.firstname>> avoids your eyes. @@.player;"She wanted to have sex, and I didn't feel like it. So then she got insecure, and..."@@
+
+@@.girlfriend;"Insecure?"@@ <<print $girlfriend.firstname>> interrups.
+
+@@.player;"Well, you thought I didn't like you,"@@ you offer.
+
+@@.girlfriend;"Yeah, because you didn't want to fuck! You always want to fuck! What changed, huh?"@@
+
+You look down at the part of your body that //did// change. But of course, you can't tell her that. @@.thought;Or can I? Maybe later, when all these people aren't around.@@
+
+There's an awkward silence, and then the conversation resumes. This time, you make more of an effort to participate, but your heart isn't in it.
+<<set $girlfriend.relationship to $girlfriend.relationship-2>><<set $team.respect to $team.respect-1>><<else>>@@.player;"Yeah, we hooked up."@@
+
+@@.female;"Well, what was it like?"@@
+
+@@.player;"Good. We started, only <<if $preferredType is "eatOut">>I couldn't get hard, so I ate her pussy<<elseif $preferredType is "blowjob">>she tried to suck my dick to get me hard, but it didn't work<<else>>I came as soon as we started<</if>>."@@
+
+You clap your hand over your mouth, not believing you just blurted out those details. Everybody laughs, and <<print $girlfriend.firstname>> smiles.
+
+There's an awkward silence, and then the conversation resumes. You enjoy hanging out with your friends, until lunch is over.
+<<set $player.submission to $player.submission+1>><<set $team.respect to $team.respect-4>><</if>>
+<<link "Time for gym" $currentPassage>><</link>>
+<<set $lunchfriendsPassage to "Lunch Regular Friends">>\
+
+::Lunch Day 4 Friends Lie
+<<if visited("Girlfriend Fight")>>@@.player;"It's not a big deal. We, uh, had a disagreement, but we worked it out."@@
+
+@@.female;"Did you, <<print $girlfriend.firstname>>?"@@
+
+@@.girlfriend;"No! We didn't!"@@ <<print $girlfriend.firstname>> says, frustrated. @@.girlfriend;"You keep saying it's not a big deal, and that you can't understand why I feel that way! You're not listening to me!"@@
+
+@@.player;Shit. I messed up.@@ Awkwardly, you look down. All this time you had been so worried about your own issues that you hadn't considered how <<print $girlfriend.firstname>> was feeling. Sure, it's silly that she's worried that she's the reason you don't want to fuck when the reason is that you don't have a dick anymore. But she doesn't know that.
+
+@@.male;"What was the fight about?"@@
+
+@@.girlfriend;"I don't want to talk about it!"@@
+
+@@.thought;What would it be like if my boyfriend, I mean, my girlfriend started acting differently and stopped wanting to fuck me?@@
+
+You consider telling <<print $girlfriend.firstname>> the truth. Not here, of course. But maybe you could do it later, when you're alone?
+
+There's an awkward silence, and then the conversation resumes. This time, you make more of an effort to participate, but your heart isn't in it.<<set $girlfriend.relationship to $girlfriend.relationship-5>><<else>>@@.player;"We're dating. I'd hope we'd hook up."@@
+
+Everyone laughs at your joke, and you smile, feeling a little more confident. @@.thought;We're not going to be hooking up, though. We can't@@ you think sadly. You wonder what's going to happen to your relationship with <<print $girlfriend.firstname>>.<<set $friends.relationship to $friends.relationship+2>><<set $team.respect to $team.respect+2>><</if>>
+
+<<link "Time for gym" $currentPassage>><</link>>
+<<set $lunchfriendsPassage to "Lunch Regular Friends">>\
+
+::Lunch Day 4 Friends Dominant
+@@.player;"Mind your own business!"@@ you snap.
+
+@@.female;"Woah, I didn't know it was a big deal."@@ But she backs off.
+
+The conversation resumes after a little while, and you enjoy hanging out with your friends for the rest of the period. <<print $girlfriend.firstname>> keeps looking at you, though, and you feel like she wants to talk.
+
+@@.thought;I'll have to put off having sex again. Unless I tell her the truth?@@
+
+<<link "Time for gym" $currentPassage>><</link>>
+<<set $lunchfriendsPassage to "Lunch Regular Friends">>\
+<<set $friends.relationship to $friends.relationship-3>>\
+<<set $player.dominance to $player.dominance+1>>\
+<<set $team.respect to $team.respect+1>>\
+
+::Lunch Regular Friends
+<<showQBSkill true>><<showQBSkill false>>You automatically turn and sit with your friends. Maybe <<print $witch.firstname>> or <<print $qb.firstname>> could be able to help, but you can't imagine //not// sitting with your friends. You've got your social status to maintain. And besides, just because you've been cursed doesn't mean that you're going to abandon them.
+
+They <<if $player.confidence+$team.respect>=80>>greet you<<elseif $player.confidence+$team.respect>=0>>give you a half-hearted greeting<<else>>ignore you<</if>> when you sit down. They're in the middle of <<print either("a conversation about sports", "gossiping about another student")>>, but that topic doesn't interest you anymore.
+
+Finally, there's a break in the conversation, and you consider changing the subject.
+<<if $playerStarter and $qb.qbSkill>$player.qbSkill and $qb.qbSkill>=25 and not visited("Lunch Friends QBBetter") and $player.skillCurse<4>>
+<<link "Talk about $qb.firstname becoming better than you" "Lunch Friends QBBetter">><</link>><<elseif $playerStarter is false and not visited("Lunch Friends Backup") and $player.skillCurse<4>>
+[[Talk about becoming a backup|Lunch Friends Backup]]<</if>><<if visited("Team Practice 6 Start") and not visited("Lunch Friends BenchPress") and $player.skillCurse<4>>
+[[Talk about what happened during practice|Lunch Friends BenchPress]]<</if>><<if visited("Team Practice 3 Admit") and $player.skillCurse<4 and not visited("Lunch Friends Caught")>>
+[[You spot Daniel and look away awkwardly|Lunch Friends Caught]]<</if>><<if visited("Game 4 QB Injured End") and not visited("Lunch Friends QBInjury") and $player.skillCurse<4>>
+<<link "Talk about entering the game when $qb.firstname got injured" "Lunch Friends QBInjury">><</link>><<elseif visited("Game 4 End") and not visited("Lunch Friends PlayerInjury") and $player.skillCurse<4>>
+[[Talk about your injury|Lunch Friends PlayerInjury]]<</if>><<if (visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")) and not visited("Lunch Friends QBCute") and not visited("Gym Morgan Talk")>>
+<<link "Ask if they think $qb.firstname is cute" "Lunch Friends QBCute">><</link>><<elseif visited("Lunch Friends QBCute") and not visited("Lunch Friends QBKiss Tell")>>
+<<link "Talk about kissing $qb.firstname" "Lunch Friends QBKiss">><</link>><<elseif (visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught")) and not visited("Lunch Friends BrentJoe")>>
+[[You spot Brent and Joe at the table, and look away uncomfortably|Lunch Friends BrentJoe]]<</if>><<if $qb.date and $qb.date is $player.firstname and not visited("Lunch Friends AskOut")>>
+[[Talk about getting asked out|Lunch Friends AskOut]]<</if>><<if visited("Work Out Selfie Send") and not visited("Lunch Friends Selfie")>><<if $day>$dayOfDate>>
+[[Ask if anyone has sent a selfie to their boyfriend|Lunch Friends Selfie]]<<else>>
+[[Ask if anyone has sent a selfie to their crush|Lunch Friends Selfie]]<</if>><</if>><<if visited("Gym Day 7 Lose Trunks") and not visited("Lunch Friends Trunks")>>
+[[Talk about losing your trunks|Lunch Friends Trunks]]<</if>><<if visited("Panty Raid Intro") and not visited("Lunch Friends PantyRaid ElviraCaught") and not visited("Lunch Friends PantyRaid Elvira") and not visited("Lunch Friends PantyRaid Girlfriend") and not visited("Lunch Friends PantyRaid Witch") and not visited("Lunch Friends PantyRaid Emptyhanded")>><<if visited("Panty Raid Elvira Seen")>>
+[[You lock eyes with the guy that caught you outside Elvira's room|Lunch Friends PantyRaid ElviraCaught]]<<elseif $pantyRaid.takenFrom is "Elvira">>
+[[Tell them what happened in Elvira's room|Lunch Friends PantyRaid Elvira]]<<elseif $pantyRaid.takenFrom is $girlfriend.firstname>>
+[[Talk about the panty raid|Lunch Friends PantyRaid Girlfriend]]<<elseif $pantyRaid.takenFrom is $witch.firstname>>
+<<link "Try to tell them that $witch.firstname put a ward on her panties" "Lunch Friends PantyRaid Witch">><</link>><<else>>
+[[Complain about not getting any panties during the raid|Lunch Friends PantyRaid Emptyhanded]]<</if>><</if>><<if $player.legs>0 and not visited("Lunch Friends Legs")>>
+[[Ask the guys if any of them have ever shaved their legs|Lunch Friends Legs]]<</if>><<if visited("MorningClassHeat Remove") and not visited("Lunch Friends Bra")>>
+[[Talk about everyone seeing your bra|Lunch Friends Bra]]<</if>><<if $player.pants.female is true and not visited("Lunch Friends Pants")>>
+[[Try to see if anyone knows you're wearing womens pants|Lunch Friends Pants]]<</if>><<if visited("Game 3 Diner Agree") and not visited("Lunch Friends DinerGirl")>>
+[[Talk about the girl you saw in the diner|Lunch Friends DinerGirl]]<</if>><<if $player.wearsOnepiece is true and not visited("Lunch Friends OnePiece")>>
+[[Ask the guys why they switched your swimsuit|Lunch Friends OnePiece]]<</if>><<if $day>=18 and not visited("Lunch Friends Period")>>
+[[You see one girl talking about her period|Lunch Friends Period]]<</if>>
+[[Think better of it|Lunch Friends Silent]]
+
+::Lunch Friends QBBetter
+You look around awkwardly. You don't know how to start a conversation around your friends. Or, rather, you do know but you aren't used to it.
+
+@@.thought;I should just go for it. I'm their friend too.@@
+
+@@.player;"<<print $qb.firstname>> has gotten better than me,"@@ you say. @@.player;"As a quarterback."@@
+
+Everyone turns towards you, and you blush under their gaze.
+
+@@.male;"How is that possible?"@@ someone asks. @@.male;"He sucks. And you, you're our quarterback!"@@
+
+@@.player;"Uh, well, I..."@@ you stutter. You're not sure how to respond without talking about <<print $witch.firstname>>'s curse. @@.player;"Uh, I haven't been able to throw a football,"@@ you continue. @@.player;"Some kind of injury, I think."@@
+
+@@.female;"Then he's not better than you! When you've recovered from the injury, you'll be amazing again."@@
+
+@@.player;"Yeah, thank you,"@@ you say, feeling slightly better. @@.player;"I'm just worried that, uh, my injury isn't going to be something that'll go away soon."@@
+
+@@.male;"What happened@@<<if $player.feminine<10 and $player.masculinity>=50>>@@.male;, man@@<</if>>@@.male;?"@@
+
+@@.player;"Uh,"@@ you start, looking around you helplessly. Everyone is looking at you with a mixture of curiosity and pity. @@.player;"I'm not sure yet. And, uh, that's the hardest part."@@
+
+@@.male;"That sucks@@<<if $player.feminine<10 and $player.masculinity>=50>>@@.male;, man@@<</if>>@@.male;"@@
+
+@@.thought;Good. He seems to buy it. I feel bad, though. I'm lying to my friends. But I definitely can't tell them the truth.@@
+
+@@.male;"Yeah. And if you can't play, then we have to count on //<<print $qb.firstname>>//,"@@ he says, sounding disgusted.
+
+<<if $qb.qbSkill>=35>>@@.male;"I don't know. He doesn't seem that bad."@@<<else>>@@.female;"I know. Did you see him against Bear Valley?"@@<</if>>
+
+As your friends <<if $qb.qbSkill>=35>>debate<<else>>bash<</if>> <<print $qb.firstname>>'s skills, you smile for the first time this period. @@.thought;I was worried about starting a conversation with these popular people, but they're my friends. Even though I've changed, they're still being nice to me.@@
+
+<<link "The bell rings" $currentPassage>><</link>>
+<<set $player.confidence to $player.confidence+2>>\
+<<set $team.respect to $team.respect+2>>\
+
+::Lunch Friends Backup
+@@.player;"I can't believe I'm a backup now,"@@ you say to no one.
+
+<<if $player.qbSkill>=30>>@@.male;"Yeah, I know! Coach says that you've gotten worse but I haven't seen anything."@@
+
+@@.male;"That's because you're on defense,"@@ another football player cuts in. @@.male;"<<print $player.firstname>>'s gotten worse, but @@<<if $player.qbSkill>$qb.qbSkill>>@@.male;I know@@<<else>>@@.male;I think@@<</if>> @@.male;he's still better than <<print $qb.firstname>>."@@<<else>>@@.male;"I don't know. I don't even practice with you guys, but I can see it."@@
+
+@@.male;"Yeah, Coach wouldn't do it for no reason. And, uh, no offense man, but your throws aren't always making it to us."@@<</if>>
+
+@@.player;"It's not me, it's because of my, uh, my injury. If it wasn't for that, Coach wouldn't even think about making me a backup."@@
+
+@@.female;"Maybe Coach is looking out for you? If you're injured, you should get rest, right?"@@
+
+@@.female;"What's going on with your injury, anyway? You've had it for a while."@@
+
+@@.player;"Uh, yeah,"@@ you say. You want to just tell them about the curse, but you know that would never work. They wouldn't believe you, and you don't want to think about what <<print $witch.firstname>> would do if she found out you told them. @@.player;"Uh, I'm feeling a little better but I'm still having trouble throwing. When I try, it's like someone else, someone weaker is throwing it."@@
+
+Besides the part about your injury, that wasn't a lie. <<if $player.qbSkill>=30>>Even though you've gotten better, you're still nowhere close to how strong you were before.<<else>>You've basically been replaced with someone weaker, who can barely throw the football. @@.thought;What if it really is a replacement? What if there's no going back to how strong I was before?@@<</if>>
+
+@@.male;"I think it's mental."@@
+
+@@.female;"What? Like there's something wrong with him?"@@
+
+@@.male;"It's not mental,"@@ someone else says, @@.male;"He just hasn't been putting time in the gym. You can't just take your muscles for granted or they'll disappear."@@
+
+You're not liking the way this conversation is going. You're right at this table, and they're talking //about// you, like you're some kind of experiment. @@.thought;If I get rid of this curse, will I still fit in like I used to?@@
+
+[[Ask if you'd still have their respect if you recovered from your injury|Lunch Friends Backup Respect]]
+[[Ask if you'd still be the quarterback if you recovered from your injury|Lunch Friends Backup Starter]]
+
+::Lunch Friends Backup Respect
+@@.player;"Uh, I have a question,"@@ you start. Everyone continues talking. @@.player;"Guys!"@@ you say, trying to get their attention. @@.player;"If I, uh, recovered from my injury, would I still be respected by you guys?"@@
+
+@@.female;"What do you mean, <<print $player.firstname>>? We respect you now."@@
+
+@@.thought;That's not true@@ you think. Back when you were still the star quarterback, you used to be surrounded by admirers. Now, your friends are talking about what's wrong with you while you're still at the table, and you're having trouble getting their attention.
+
+@@.player;"I mean, I feel like the football team's been treating me differently. How could they not? One day, I'm their leader and the next, I'm having trouble throwing a football. Anyone would look at me differently."@@
+
+<<if $player.feminine>=7 or $player.isWearingPanties>>@@.male;"It's not just that. It's like, well, I don't know how to say it..."@@
+
+@@.male;"All the guys, well, we tell the same kind of jokes and tease each other, and, well, you're not really doing that anymore."@@
+
+@@.male;"He's saying you're not really one of the guys anymore."@@
+
+@@.female;"Ted!"@@
+
+@@.male;"Sorry! But he asked. I thought he'd want us to be honest with him."@@
+
+@@.player;"No, it's fine. Thank you,"@@ you say, your cheeks red.
+
+@@.thought;Is that true? I've been blaming everything on <<print $witch.firstname>>'s curse. But if I had acted like myself, he's saying it wouldn't matter if I had a pussy or if I couldn't throw the football? They'd treat me as one of their own?@@ You shake your head as a disturbing thought pops into your head. @@.thought;I couldn't control the curse, but I //can// control how I act after it's happened. And look at me now! @@<<if $player.feminine>=7 and $player.isWearingPanties>>@@.thought;I'm wearing panties, and I've been transformed so many times. Those transformations only happen when I act like a girl.@@<<elseif $player.feminine>=7>>@@.thought;I've been transformed so many times. Those transformations only happen when I act like a girl.@@<<else>>@@.thought;I'm wearing panties!@@<</if>>
+
+@@.female;"You okay, <<print $player.firstname>>?"@@<<else>>The guys look at each other. @@.male;"Well, I guess we've been hard on you. I always give people shit and well, when one of your buddies sucks overnight, you give him a lot of shit, you know?"@@
+
+@@.player;"Yeah, I guess so."@@
+
+@@.male;"I can try going easier on you. You're one of the guys, after all."@@
+
+@@.player;"Thanks,"@@ you say gratefully. @@.thought;I'm one of the guys? Great!@@<</if>>
+
+@@.player;"This is getting too serious,"@@ you say. @@.player;"Let's talk about something else."@@
+
+<<link "The bell rings" $currentPassage>><</link>>
+<<if $player.feminine<7 and $player.isWearingPanties is false>><<set $team.respect to $team.respect+3>><<set $player.confidence to $player.confidence+2>><<else>><<set $team.respect to $team.respect-4>><<set $player.confidence to $player.confidence+1>><</if>>\
+
+::Lunch Friends Backup Starter
+@@.player;"Uh, I have a question,"@@ you start. Everyone continues talking. @@.player;"Guys!"@@ you say, trying to get their attention. @@.player;"If I, uh, recovered from my injury, would I still be the quarterback?"@@
+
+<<if $team.respect-$qb.qbSkill<=25>>@@.male;"Uh..."@@
+
+@@.player;"What?"@@
+
+@@.male;"I don't know. <<print $qb.firstname>> has been getting better..."@@
+
+@@.male;"Yeah. And it's kind of hard to remember what you used to be like, you know? I mean, I know you were good, but I don't remember how good."@@
+
+You nod. @@.thought;All this time, I thought that if I could just lift the curse, I'd be the quarterback again and everything would be back to normal. But what if that doesn't happen?@@
+
+<<if $qb.qbSkill<=85>>@@.male;"Hey! If you got over your injury now, you'd definitely be the quarterback."@@
+
+@@.male;"Yeah. <<print $qb.firstname>> has been getting better, but he still has a long way to go."@@
+
+You smile. @@.thought;That makes me feel better. As long as <<print $qb.firstname>> doesn't get better than me by the end of the season, I'll still be the quarterback. And it doesn't matter anyway. This is my last season, and then I'm graduating. I hope colleges will still take me.@@<<else>>@@.male;"Yeah. I think <<print $qb.firstname>> is even better than you used to be."@@
+
+You look at him in shock. @@.thought;I guess he is. I didn't even think about that. But it doesn't matter anyway. This is my last season, and then I'm graduating. I hope colleges will still take me.@@<</if>><<else>>@@.male;"Yeah, of course, man."@@
+
+@@.male;"Yeah. <<print $qb.firstname>> is better than someone who's injured, but come on. He still sucks."@@
+
+@@.thought;I know I shouldn't feel good to hear them talking shit about <<print $qb.firstname>>...but it's nice to know that I'll still have my job back. I just hope <<print $qb.firstname>> can win us the championship.@@<</if>>
+
+<<link "The bell rings" $currentPassage>><</link>>
+<<if $team.respect-$qb.qbSkill>25>><<set $team.respect to $team.respect+2>><<set $player.confidence to $player.confidence+3>><<set $team.qbRespect to $team.qbRespect-2>><<else>><<set $team.respect to $team.respect-2>><<set $player.confidence to $player.confidence-1>><<set $team.qbRespect to $team.qbRespect+2>><</if>>\
+
+::Lunch Friends BenchPress
+@@.player;"So about practice,"@@ you start.
+
+<<if visited("Team Practice 6 Girls Bar")>>@@.male;"Yeah! I can't believe it!"@@ your teammate says, laughing.
+
+@@.female;"What happened?"@@
+
+@@.player;"We were all supposed to do the bench press, and I was having trouble, so, uh..."@@
+
+@@.male;"He asked to use the girls bar!"@@
+
+Your other teammates break out laughing, and you blush.
+
+@@.female;"That's not that bad. It's only a little bit lighter."@@
+
+@@.male;"No, you don't get it. He didn't even put any weight on."@@
+
+@@.female;"What?"@@ another girl pipes up. @@.female;"I can put a good thirty pounds on the bar!"@@
+
+@@.male;"Yeah, but you're on the volleyball team."@@
+
+@@.male;"What about you, <<print $girlfriend.firstname>>?"@@
+
+<<print $girlfriend.firstname>> looks uncomfortable. @@.girlfriend;"Uh, yeah. I can bench twenty to thirty pounds."@@
+
+<<if $player.relationship is $girlfriend.firstname>>@@.thought;My girlfriend is stronger than me.@@<<else>>@@.thought;She's stronger than me.@@<</if>>
+
+@@.female;"I can't put any weight on,"@@ another girl announces, patting your shoulder.
+
+The conversation continues like that, with all the girls sharing how strong they are. @@.thought;I knew that I was weaker than everyone else on the team, but I thought I'd at least be stronger than everyone else.@@ <<if $player.armStrength>=20>>@@.thought;At least I'm stronger than most girls.@@<<elseif $player.armStrength>=0>>@@.thought;Now I'm about as strong as a typical girl.@@<<else>>@@.thought;Now I'm even weaker than most girls.@@<</if>><<set $team.respect to $team.respect-5>><<set $player.confidence to $player.confidence-2>><<elseif visited("Team Practice 6 Bar Finish") or visited("Team Practice 6 Remove")>>@@.male;"Yeah, I can't believe it!"@@ your teammate says, laughing.
+
+@@.female;"What happened?"@@
+
+@@.player;"We were all supposed to do the bench press, and, uh, I was having trouble but I finished the set."@@
+
+She looks unimpressed. @@.female;"That's it?"@@
+
+@@.male;"No, you don't get it. He didn't even put any weight on."@@
+
+@@.female;"What?"@@ another girl pipes up. @@.female;"I can put a good thirty pounds on the bar!"@@
+
+@@.player;"That's the girls bar, right?"@@ you ask, desperate to defend yourself. @@.player;"The bar we use is heavier."@@
+
+<<if visited("Team Practice 6 Bar Finish")>>@@.male;"I told him he'd be more comfortable with the girls bar, but he didn't seem to like it,"@@ another guy says, laughing.
+
+@@.thought;I'm so glad I didn't take him up on that. I would never live it down.@@
+
+<</if>>@@.male;"No weight? That's pretty weak, bro,"@@ another guy says. @@.male;"I can do a hundred, easy."@@
+
+The other guys all start sharing how much they can bench. To your dismay, they're all able to do more weight than you. Even the one unathletic guy at the table announces that he can do forty pounds.
+
+@@.thought;I knew I was weak, but I didn't realize how weak. I wonder if I'm still stronger than the girls.@@<<set $team.respect to $team.respect-3>><<set $player.confidence to $player.confidence-1>><<elseif visited("Team Practice 6 Normal Quit")>>@@.male;"I can't believe you put all that weight on. What were you thinking?"@@
+
+@@.player;"Hey! That's how much I usually do!"@@
+
+@@.male;"Yeah, but you, well, you look different now."@@
+
+You flush at that reminder of your physical changes. @@.thought;Of course people are going to notice. It's obvious. I can't bench my normal weight anymore.@@
+
+@@.female;"What happened?"@@
+
+@@.male;"He tried putting on his usual weight, but he couldn't do it,"@@ he tells her.
+
+Luckily, nobody seems to care that much, not even the football players. Maybe it's because they think you're injured, or maybe they respect you a little for trying, even if you failed. Either way, the conversation soon drifts to another topic.<<set $team.respect to $team.respect+1>><<else>>@@.male;"I can't believe you finished the set. I didn't think you had it in you."@@
+
+@@.female;"What happened?"@@
+
+<<if visited("Team Practice 6 Normal")>>@@.male;"He put his normal weight on, like nothing had changed."@@<<else>>@@.male;"He didn't put that much weight on, but I still didn't think he could do it, because, well, you know,"@@ he says, indicating your arms.<</if>>
+
+@@.female;"But he did it?"@@
+
+@@.male;"Yeah! Sure, he struggled, but he finished."@@
+
+You smile at the memory. @@.thought;At least all my work with <<print $qb.firstname>> and in the gym got put to good use. But they shouldn't be making a big deal out of this. I should be one of the guys, and if I finish a set, it shouldn't be a surprise.@@<<set $team.respect to $team.respect+2>><</if>>
+
+<<link "The bell rings" $currentPassage>><</link>>
+
+::Lunch Friends Caught
+You look at Daniel, and instantly, the memory of being caught in the locker room wearing a <<if visited("Team Practice 3 Change Bra")>>bra<<else>>panties<</if>> comes rushing back. Unable to meet his eyes, you look away awkwardly.
+
+@@.thought;Please don't say anything. Please.@@
+
+Daniel notices your awkwardness and chuckles. @@.male;"Hey, <<print $player.firstname>>, are you still wearing it?"@@
+
+You groan. The other people at the table look at you with confusion, but you know that won't last. @@.thought;Daniel's going to tell them, just like he told my team about it.@@
+
+@@.player;"Hey, Daniel, can you not talk about it? Please?"@@ you ask.
+
+@@.female;"What's going on?"@@
+
+Daniel opens his mouth to talk, and you want the earth to swallow you up. @@.thought;Unless I say something, he's going to tell everyone that I was wearing @@<<if visited("Team Practice 3 Change Bra")>>@@.thought;a bra!@@<<else>>@@.thought;panties!@@<</if>>
+
+<<if visited("Team Practice 3 Change Bra")>>[[Admit that you were wearing a bra|Lunch Friends Caught Admit]]<<else>>[[Admit that you were wearing panties|Lunch Friends Caught Admit]]<</if>>
+[[Give him a warning glare|Lunch Friends Caught Glare]]
+
+::Lunch Friends Caught Admit
+<<if visited("Team Practice 3 Change Bra")>>@@.player;"Someone dared me to wear a bra,@@<<else>>@@.player;"I was out of underwear, so I borrowed some,@@<</if>> @@.player;and then when I changed for practice, my teammates found out,"@@ you say quickly before Daniel can say anything.
+
+The guys chuckle, and the girls look amused. @@.female;"I can't believe it!"@@
+
+@@.female;"Really? You haven't noticed //anything// different about <<print $player.firstname>> lately?"@@
+
+<<display "Lunch Friends Caught Story">>
+
+::Lunch Friends Caught Glare
+You give Daniel a glare, warning him not to say anything. You're not sure what you're even threatening him with. <<if $player.armStrength>=40>>Sure, you've gotten stronger, but you're probably still weaker than him<<else>>He's much stronger than you<</if>>, but somehow it works, and Daniel backs off.
+
+You breathe a sigh of relief.
+
+@@.male;"<<print $player.firstname>> was changing with us, and we saw that he was wearing @@<<if visited("Team Practice 3 Change Bra")>>@@.male;a bra!"@@<<else>>@@.male;panties!"@@<</if>> another teammate says.
+
+You blush. @@.thought;I had forgotten there were other people who knew!@@
+
+<<display "Lunch Friends Caught Story">>
+
+::Lunch Friends Caught Story
+You jump to the defensive. @@.player;"That was a one time thing!"@@
+
+Daniel looks skeptical. <<if visited("Team Practice 3 Change Bra")>>@@.male;"Then who dared you?"@@
+
+@@.player;"What?"@@
+
+@@.male;"You said you were dared to wear a bra? Who dared you?"@@
+
+@@.player;"Uh..."@@<<else>>@@.male;"Then whose underwear did you borrow? And why didn't you borrow some boxers from your roommates?"@@
+
+@@.player;"Uh..."@@
+
+@@.male;"No, I remember. You said you borrowed some from <<print $girlfriend.firstname>>, right?"@@
+
+You look over at <<print $girlfriend.firstname>>, feeling bad for involving her in your lie.
+
+@@.girlfriend;"<<print $player.firstname>>, what?...Oh, uh, that's right. He needed to do laundry, so I, uh, let him borrow my panties."@@<<set $girlfriend.relationship to $girlfriend.relationship-1>><</if>>
+
+@@.male;"See? You're full of shit!"@@
+
+Everyone at the table is laughing now, even the girls.
+
+@@.male;"Tell me,"@@ Daniel continues, <<if visited("Team Practice 3 Change Bra")>>@@.male;"are you wearing a bra now?"@@<<else>>@@.male;"are you wearing panties now?"@@<</if>>
+
+<<if (visited("Team Practice 3 Change Bra") and $player.bra is not null) or (visited("Team Practice 3 Change Panties") and $player.isWearingPanties)>>You blush. You //are// wearing <<if visited("Team Practice 3 Change Bra")>>a bra<<else>>panties<</if>>, and you're pretty sure Daniel knows that.
+
+[[Admit it|Lunch Friends Caught Confirm]]
+[[Deny it|Lunch Friends Caught Lie]]<<else>>Daniel looks at you smugly, waiting for your response. You just smile. You're not wearing <<if visited("Team Practice 3 Change Bra")>>a bra<<else>>panties<</if>>.
+
+@@.player;"No, I'm not,"@@ you say truthfully. @@.player;"It really was a one-time thing."@@
+
+Daniel starts to protest, but looks at you and decides against it. @@.male;"Yeah, whatever,"@@ he says instead.
+
+<<link "The bell rigns" $currentPassage>><<set $team.respect to $team.respect-5>><</link>><</if>>
+
+::Lunch Friends Caught Confirm
+@@.player;"Uh, yeah,"@@ you say softly. @@.player;"I'm wearing @@<<if visited("Team Practice 3 Change Bra")>>@@.player;a bra."@@<<else>>@@.player;panties."@@<</if>>
+
+@@.male;"Right now?"@@
+
+You nod your head. @@.thought;I should have lied. But they would have found out...somehow.@@
+
+Everybody laughs even more. @@.female;"What a sissy!"@@
+
+@@.female;"And are you wearing @@<<if visited("Team Practice 3 Change Bra")>>@@.female;panties too?"@@<<else>>@@.female;a bra too?"@@<</if>>
+
+<<if (visited("Team Practice 3 Change Bra") and $player.underwear.panties is true) or (visited("Team Practice 3 Change Panties") and $player.bra is not null)>>You nod your head. You don't see any point in lying, and you just want to get this conversation over with.<<else>>You shake your head, glad that at least <<if visited("Team Practice 3 Change Bra") and $player.hasWornPanties>>you didn't wear them today<<elseif visited("Team Practice 3 Change Panties") and $player.hasWornBra>>you didn't wear it today<<else>>your clothes aren't that feminine<</if>>.
+
+It doesn't seem to make a difference.<</if>>
+
+@@.male;"I can't believe that sissy was ever our quarterback!"@@
+
+That's too much for you. You stand up abruptly from the table, and run to the bathroom, leaving your half-eaten food behind. Once you're in the safety of the stalls, you break down and start crying.
+
+@@.thought;Why am I wearing girls underwear? Why did I //tell// them I was wearing girls underwear? And why am I crying now? A real man would go out there and face them. I feel so weak.@@
+
+You reach for some toilet paper to wipe away your tears. @@.thought;I used to be really popular. Even after the curse, even though I was different, I was still popular. Even if they noticed my changes, I guess I had some, I don't know, leftover popularity? I feel like that's gone now. How can I sit at that table and face them now that they think I'm...no, now that they know I'm a sissy?@@
+
+<<link "The bell rings, and you head to gym" $currentPassage>><<set $team.respect to $team.respect-10>><<set $player.masculinity to $player.masculinity-2>><<set $player.submission to $player.submission+2>><</link>>
+
+::Lunch Friends Caught Lie
+@@.player;"No,"@@ you say defiantly. @@.player;"I'm not wearing that. I told you, it was a one time thing!"@@
+
+@@.male;"You're such a liar!"@@
+
+@@.player;"Prove it then."@@
+
+He stares at you, and for a moment, you think he's going to tear off your <<if visited("Team Practice 3 Change Bra")>>shirt<<else>>pants<</if>> in the middle of the lunch room, but he just goes back to eating his food.
+
+@@.thought;Did I...actually get away with that?@@ you wonder. When the conversation changes, you let out a sigh of relief. Even the fact that everybody at the table avoids your eyes doesn't bother you that much.
+
+@@.thought;I hope the rest of them believe that it was a one time thing, and they don't think I'm some sissy...I mean, I guess I kind of am a sissy, they're not going to find that out. I just hope I'm still popular.@@
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-5>><<set $player.submission to $player.submission-1>><</link>>
+
+::Lunch Friends QBInjury
+@@.player;"I hope <<print $qb.firstname>> is feeling better,"@@ you say. @@.player;"That was scary when he went down."@@
+
+<<if visited("Game 4 Win")>>@@.male;"I know. I thought you were going to blow the game."@@
+
+@@.player;"Hey!"@@
+
+@@.male;"He didn't mean it like that. It's just, you know, you're the backup and he's the starter. Of course we're better off with the starter in."@@
+
+<<if $player.qbSkill>=40>>@@.player;"But I did well, right? I got a touchdown and a field goal."@@
+
+@@.male;"Yeah. With talent like that, what are you doing as the backup?"@@
+
+You smile, and consider his words. @@.thought;That's a good point. I got thrown into the game suddenly, and I still did well. Maybe I could be the starter again.@@ <<if $player.qbSkill>$qb.qbSkill>>@@.thought;I'm better than <<print $qb.firstname>> anyway.@@<<else>>@@.thought;<<print $qb.firstname>> is better than me right now, but maybe if I work hard enough, I could be the quarterback.@@<</if>><<set $team.respect to $team.respect+6>><<set $player.confidence to $playre.confidence+3>><<elseif $player.qbSkill>=25>>@@.player;"But I did good, right?"@@
+
+@@.male;"You did okay, I guess. You got us a field goal, and didn't lose us the game."@@
+
+@@.female;"Stop being so hard on him. He did good for a backup."@@
+
+You feel even more deflated by that. @@.thought;Is that all I am now? A backup? I guess so. And I was feeling so good about the game too.@@<<else>>@@.player;"But we still won, right?"@@
+
+@@.male;"Yeah, I guess so. Thanks to <<print $qb.firstname>>."@@
+
+@@.female;"Stop being so hard on him. He's the backup, and he's doing his best."@@
+
+You feel even more deflated by that. <<if $player.skillCurse>0>>@@.thought;It's a good thing I went ahead with the curse. Now, <<print $qb.firstname>> can be the only quarterback, and me, well, I won't even be a backup anymore.@@<<set $team.respect to $team.respect+2>><<else>>@@.thought;I'm just a backup. Should I go ahead and do the curse? We can only win the championship if <<print $qb.firstname>> wins it for us.@@<<set $team.respect to $team.respect-3>><<set $player.confidence to $player.confidence-2>><</if>><</if>><<else>><<if $player.qbSkill>=40>><<set $qbScore to $stallionsscore-10>><<elseif $player.qbSkill>=25>><<set $qbScore to $stallionsscore-3>><<else>><<set $qbScore to $stallionsscore>><</if>><<if $defensescore-$stallionsscore>1>><<set $beforeDefenseScore to $defensescore-7>><<else>><<set $beforeDefenseScore to $defensescore-8>><</if>><<if $qbScore>=$beforeDefenseScore>>@@.male;"Yeah. We would have won if he stayed in the game."@@
+
+You look down, aware of what he's saying: if you didn't come into the game and mess it up, the Stallions would have won.
+
+@@.player;"Look, I'm sorry about what happened,"@@ you say. @@.player;"I was trying my best. It's just, you know, it's scary out there, with all those big linemen coming at you, and I wasn't sure what to do, and I..."@@ You stop suddenly, aware that you're rambling.
+
+@@.male;"Scary?"@@ he scoffs. @@.male;"It's football. You're the quarterback. What, are you afraid of getting hit?"@@
+
+You flash back to the game, and shudder at the thought of one of the huge linemen colliding into you. @@.player;"Uh, yeah. I guess so. It hurts, and those guys are really big too."@@ You look around awkwardly at the rest of your friends. @@.player;"Is anyone with me on this?"@@
+
+@@.female;"I'm with you,"@@ a cheerleader says. @@.female;"I wouldn't want one of those guys tackling me either. No offense, Brandon,"@@ she says to the only linebacker at the table.
+
+@@.male;"Yeah, but you're a cheerleader. <<print $player.firstname>> is a football player. Or he's supposed to be,"@@ Brandon says.
+
+@@.player;"Are you guys mad at me?"@@ you ask, trying to change the conversation. Brandon is right. A football player shouldn't be afraid of getting hit, but each time you're pinned to the ground by a big manly linebacker, you feel submissive and small, and more than a little turned on.
+
+<<if $player.skillCurse is 0>>@@.thought;Maybe I'm not cut out for football@@ you think sadly. @@.thought;Maybe I should take <<print $witch.firstname>> up on her offer.@@<<else>>@@.thought;It's a good thing I took <<print $witch.firstname>> up on her offer. I'm not cut out for football.@@<</if>>
+
+<<if $player.qbSkill>=25>>@@.male;"No, I'm not mad at you,"@@ Brandon says, sighing. @@.male;"You did your best. It's just bad luck <<print $qb.firstname>> got injured."@@<<else>>@@.male;"A little, honestly. But not because you lost us the game. Because you're taking up the spot of someone who'd be a better backup."@@<</if>><<set $team.respect to $team.respect-8>><<set $player.confidence to $player.confidence-4>><<else>>@@.male;"Yeah, I know. That was scary. At least he's going to be ready for the next game."@@
+
+<<if $player.qbSkill>=40>>@@.player;"Yeah, I'm glad too. We didn't do too badly with him out though, right?"@@
+
+@@.male;"Yeah, I was surprised you did so well,"@@ another teammate says to you. @@.male;"No offense."@@
+
+@@.player;"No, it's fine."@@
+
+@@.thought;Well, that wasn't really what I was looking for, but at least he sees that I did well.@@<<set $team.respect to $team.respect+2>><<set $player.confidence to $player.confidence+1>><<else>>@@.player;"Yeah, I'm glad too. With how I ended up doing, we need him back,"@@ you say, watching him closely for his reaction.
+
+@@.male;"Yeah,"@@ he chuckles. @@.male;"What happened out there, man? You looked terrified."@@
+
+@@.player;"I was trying my best. It's just, you know, it's scary out there, with all those big linemen coming at you, and I wasn't sure what to do, and I..."@@ You stop suddenly, aware that you're rambling.
+
+@@.male;"Scary?"@@ he scoffs. @@.male;"It's football. You're the quarterback. What, are you afraid of getting hit?"@@
+
+You flash back to the game, and shudder at the thought of one of the huge linemen colliding into you. @@.player;"Uh, yeah. I guess so. It hurts, and those guys are really big too."@@ You look around awkwardly at the rest of your friends. @@.player;"Is anyone with me on this?"@@
+
+@@.female;"I'm with you,"@@ a cheerleader says. @@.female;"I wouldn't want one of those guys tackling me either. No offense, Brandon,"@@ she says to the only linebacker at the table.
+
+@@.male;"Yeah, but you're a cheerleader. <<print $player.firstname>> is a football player. Or he's supposed to be,"@@ Brandon says.
+
+@@.player;"Are you guys mad at me?"@@ you ask, trying to change the conversation. Brandon is right. A football player shouldn't be afraid of getting hit, but each time you're pinned to the ground by a big manly linebacker, you feel submissive and small, and more than a little turned on.
+
+<<if $player.skillCurse is 0>>@@.thought;Maybe I'm not cut out for football@@ you think sadly. @@.thought;Maybe I should take <<print $witch.firstname>> up on her offer.@@<<else>>@@.thought;It's a good thing I took <<print $witch.firstname>> up on her offer. I'm not cut out for football.@@<</if>>
+
+@@.male;"No, I'm not,"@@ he says. @@.male;"We were going to lose that game anyway."@@<<set $team.respect to $team.respect-5>><<set $player.confidence to $player.confidence-3>><</if>><</if>><</if>>
+
+<<link "The bell rings" $currentPassage>><</link>>
+
+::Lunch Friends PlayerInjury
+@@.player;"I'm feeling better,"@@ you say, thinking about when you were sacked and <<print $qb.firstname>> had to finish the game. @@.player;"I'll be good to go for the next game."@@
+
+<<if $player.qbSkill>=60>>@@.male;"That's good,"@@ your teammate says, looking relieved. @@.male;"When you went down, we were worried."@@
+
+<<if visited("Game 4 Win")>>@@.male;"Yeah. At least <<print $qb.firstname>> didn't blow the game."@@
+
+@@.male;"I thought he was going to."@@<<else>><<if $qb.qbSkill>=40>><<set $qbScore to $stallionsscore-10>><<elseif $qb.qbSkill>=25>><<set $qbScore to $stallionsscore-3>><<else>><<set $qbScore to $stallionsscore>><</if>><<if $defensescore-$stallionsscore>1>><<set $beforeDefenseScore to $defensescore-7>><<else>><<set $beforeDefenseScore to $defensescore-8>><</if>><<if $qbScore>=$beforeDefenseScore>>@@.male;"If only you hadn't gotten injured. It cost us the game."@@
+
+@@.male;"Yeah. Once <<print $qb.firstname>> came in, I knew it was over."@@<<else>>@@.male;"Yeah. I thought <<print $qb.firstname>> could have lead us to a comeback though."@@
+
+You blush at the reminder that you were losing, even before you got injured. @@.thought;I need to practice more.@@
+
+@@.male;"What are you talking about, man? Of course <<print $qb.firstname>> couldn't have led a comeback."@@
+
+@@.male;"Yeah, but we were losing. Maybe we needed a change of scenery."@@<</if>>
+
+You frown. <<if $qb.relationship>=75>>You don't like them talking shit about <<print $qb.firstname>><<else>>Even though you're competing with <<print $qb.firstname>>, you can't help but feel a little bad to hear them talking shit about him.<</if>> At least they don't seem to be mad at you for the loss.<<set $team.respect to $team.respect+3>><<set $player.confidence to $player.confidence+2>><<set $qb.teamRespect to $qb.teamRespect-3>><</if>><<elseif $qb.qbSkill+5<$player.qbSkill>>@@.male;"That's great,"@@ your teammate says, looking relieved. @@.male;"When you went down, we were worried."@@
+
+You smile. You haven't been practicing as much, but it's nice to know that your teammates still want you to be the quarterback.
+
+@@.male;"Yeah, as soon as <<print $qb.firstname>> came in, I knew we were fucked."@@
+
+Your smile fades. @@.thought;So it's not about me. It's that I'm just better than <<print $qb.firstname>>."@@
+
+<<if visited("Game 4 Win")>>@@.player;"But we still won,"@@ you say.
+
+@@.male;"Yeah. I thought <<print $qb.firstname>> was going to blow it, but we pulled it out."@@<<else>><<if $qb.qbSkill>=40>><<set $qbScore to $stallionsscore-10>><<elseif $qb.qbSkill>=25>><<set $qbScore to $stallionsscore-3>><<else>><<set $qbScore to $stallionsscore>><</if>><<if $defensescore-$stallionsscore>1>><<set $beforeDefenseScore to $defensescore-7>><<else>><<set $beforeDefenseScore to $defensescore-8>><</if>><<if $qbScore>=$beforeDefenseScore>>@@.male;"I can't believe we lost. <<print $player.firstname>> was actually doing pretty well. I thought we were going to win it."@@
+
+@@.male;"That's what I was saying. As soon as <<print $qb.firstname>> came in, I knew he was going to blow it."@@<<else>>@@.male;"You didn't think <<print $qb.firstname>> could have led a comeback?"@@
+
+The other guy laughs. @@.male;"No, man. Have you seen him? He's even worse than <<print $player.firstname>>."@@<</if>><</if>>
+
+You frown. <<if $qb.relationship>=75>>You don't like them talking shit about <<print $qb.firstname>><<else>>Even though you're competing with <<print $qb.firstname>>, you can't help but feel a little bad to hear them talking shit about him.<</if>><<if not visited("Game 4 Win")>> At least they don't seem to be mad at you for the loss.<</if>><<set $team.respect to $team.respect+1>><<set $player.confidence to $player.confidence+1>><<set $team.qbRespect to $team.qbRespect-2>><<else>>@@.male;"Oh, cool,"@@ your teammate says.
+
+You feel a little miffed at that reaction. @@.player;"I thought you'd be happier,"@@ you laugh, trying to play it off as a joke.
+
+@@.male;"Yeah, of course I'm happy."@@
+
+@@.player;"But?"@@
+
+He shrugs. <<if $player.qbSkill>=$qb.qbSkill>>@@.male;"It's just, there's not much of a difference between you and <<print $qb.firstname>>, you know?"@@<<else>>@@.male;"It's just, sometimes I think <<print $qb.firstname>> should be the starter."@@<</if>>
+
+You nod, avoiding his eyes. You know that he's right: <<print $qb.firstname>> is <<if $player.qbSkill>$qb.qbSkill>>almost as good as<<elseif $player.qbSkill<$qb.qbSkill>>better than<<else>>just as good<</if>> as you, but it hurts hearing it from someone else, especially someone who's supposed to be on your team.
+
+<<if visited("Game 4 Win")>>@@.male;"Chill, man. We won. Choosing who starts is coach's job."@@
+
+You smile a little, glad that at least someomne stuck up for you.<<else>><<if $qb.qbSkill>=40>><<set $qbScore to $stallionsscore-10>><<elseif $qb.qbSkill>=25>><<set $qbScore to $stallionsscore-3>><<else>><<set $qbScore to $stallionsscore>><</if>><<if $defensescore-$stallionsscore>1>><<set $beforeDefenseScore to $defensescore-7>><<else>><<set $beforeDefenseScore to $defensescore-8>><</if>><<if $qbScore>=$beforeDefenseScore>>@@.male;"Chill, man. We were winning until he got injured."@@
+
+You smile a little, glad that at least someone stuck up for you.<<else>>@@.male;"Yeah, I know what you mean, man. We're better than Southview, but we never had a chance."@@
+
+@@.thought;Is he saying that he wants <<print $qb.firstname>> to be the starter?@@<</if>><</if>><<set $team.respect to $team.respect-2>><<set $player.confidence to $player.confidence-1>><<set $team.qbRespect to $team.qbRespect+2>><</if>>
+
+<<link "The bell rings" $currentPassage>><</link>>
+
+::Lunch Friends QBCute
+You look at your friends awkwardly. @@.thought;How am I going to ask this? I'm supposed to be straight! I'm not supposed to ask if @@<<if $player.masculinity>=50>>@@.thought;other @@<</if>>@@.thought;guys are cute! And they'll laugh at me.@@
+
+You take a deep breath. <<if $playerStarter>>@@.player;"I'm surprised <<print $qb.firstname>> doesn't have a girlfriend yet, with him being a football player and all."@@<<else>>@@.player;"Now that <<print $qb.firstname>> is the starting quarterback, I'm surprised that girls aren't all over him."@@<</if>>
+
+@@.male;"I guess, but he's also <<print $qb.firstname>>. I don't see it."@@
+
+@@.male;"Yeah, it's not like he's some stud or anything."@@
+
+@@.player;"What about the girls here?"@@ you ask. The masculine part of your brain is yelling for you to stop, but you continue on. @@.player;"Anyone think he's cute?"@@
+
+@@.female;"I guess he's good looking."@@
+
+@@.male;"Why do you want to know, <<print $player.firstname>>?"@@ someone laughs. @@.male;"Are you gay or something?"@@
+
+@@.player;"You wish!"@@ you say, trying to laugh it off.
+
+Luckily, you're saved by Morgan, a cheerleader who you briefly dated. @@.female;"I see it. He's hot, and he's @@<<if $playerStarter>>@@.female;on the team@@<<else>>@@.female;the starting quarterback@@<</if>>@@.female;, and I bet he's got a big dick too."@@
+
+@@.male;"Look at Morgan, slobbering over <<print $qb.firstname>>!"@@
+
+She laughs. @@.female;"No! But you guys are naked in the locker room all the time. You guys have to notice how big each other are, right?"@@
+
+@@.male;"No, not really."@@
+
+A lightbulb goes off in your head. @@.thought;I know how big he is! But I probably shouldn't tell her.@@
+
+[[Tell her|Lunch Friends QBCute Tell]]
+[[Don't tell her|Lunch Friends QBCute Silent]]
+
+::Lunch Friends QBCute Tell
+@@.player;"<<print $qb.firstname>> is about seven inches,"@@ you pipe up.
+
+All the guys start laughing. <<if $player.homosexuality>=20>>@@.male;"Of course //<<print $player.firstname>>// knows that!"@@
+
+@@.thought;What does that mean?@@<<else>>@@.male;"How do you even know that?"@@<</if>>
+
+@@.player;"Well, she's right,"@@ you say defensively. @@.player;"<<print $qb.firstname>>'s locker is right by mine. And when you're in the locker room, you notice these things."@@
+
+@@.male;"Maybe you do, but I sure as hell don't."@@
+
+@@.male;"Did you @@<<if visited("Team Practice 4 Blowjob")>>@@.male;suck his dick?@@"<<else>>@@.male;kiss him?"@@<</if>>
+
+@@.player;"No!"@@ you say, a little too quickly. In your mind, you're picturing <<if visited("Team Practice 4 Blowjob")>>being on your knees in the shower with his dick in your mouth.<<else>>sitting on his bed, kissing him, and taking off his clothes.<</if>>
+
+@@.female;"Seven inches is big,"@@ she says, sounding impressed. @@.female;"And he's single, right?"@@
+
+You start to tell her no, and then stop yourself. Sure, you've fooled around with <<print $qb.firstname>>, but you don't want a boyfriend. You're supposed to be a guy!
+
+@@.male;"Yeah, he's single. So you're going to flirt with him?"@@
+
+Morgan smiles. @@.female;"No. I'm going to let him come to me."@@
+
+@@.thought;Fuck! I fucked up. If she starts going out with <<print $qb.firstname>>, I can't make out with him anymore. Which is good. @@<<if visited("Team Practice 4 Blowjob Start")+visited("QB Practice 4 Sex")+visited("QB Practice 5 Sex")>1>>@@.thought;I've made out with him a couple times, but I've got to put a stop to it!@@<<else>>@@.thought;It was just a one time thing. It's not going to happen again!@@<</if>> Still, you can't help but feel validated by Morgan's interest. @@.thought;If you're going to be making out with a guy, I want to at least do it with a desirable one. Right?@@
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-4>><<set $player.homosexuality to $player.homosexuality+4>><<set $player.masculinity to $player.masculinity-1>><</link>>
+
+::Lunch Friends QBCute Silent
+You start to tell her that he has a seven inch dick, but you stop yourself just in time. The guys are already starting to think you're gay. If you admit that you know how big his dick is, it'll just confirm it.
+
+@@.player;"I don't know,"@@ you lie.
+
+@@.male;"I never even look there,"@@ your teammate says. @@.male;"I couldn't even tell you if anyone's big or small."@@
+
+@@.male;"Hell, a girl could sneak in, and I'd never know."@@
+
+@@.male;"Are you blind, man? I think I would know if a girl sneaked in."@@
+
+@@.male;"No shit. I mean, what if she looked like a guy? She could have a pussy and I'd never know."@@
+
+You're feeling uncomfortable at this change in conversation. <<if $player.masculinity<=10>>@@.thought;I guess he's right. He wouldn't know. But am I a girl?@@<<else>>@@.thought;I'm not a girl, but I've got a pussy.@@<</if>> @@.thought;It's a good thing they're not looking at my crotch.@@
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-2>><<set $player.homosexuality to $player.homosexuality+2>><</link>>
+
+::Lunch Friends QBKiss
+You look around uncomfortably. It's one thing to casually mention that it's weird that <<print $qb.firstname>> hasn't found some girl to date, but it's entirely different to admit that //you// are that girl. @@.thought;Well, not really. @@<<if $player.masculinity<=10>>@@.thought;I don't know if I'm a girl, but @@<<else>>@@.thought;I'm not a girl, and @@<</if>>@@.thought;I'm not dating him. But it's still weird for someone who's supposed to be a guy to talk about kissing @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;a@@<</if>> @@.thought;guy!@@
+
+You look at your friends, who have started talking about something else, and aren't paying any attention to you. @@.thought;They already don't see me as one of the guys. I don't really feel like I'm part of the group anymore. I need to know if they'd still be my friends, even if they know that @@<<if $player.homosexuality>=40>>@@.thought;I like guys.@@<<else>>@@.thought;I made out with a guy.@@<</if>> @@.thought;But how am I going to bring it up? The conversation's already moved on. I can't just randomly announce that I kissed <<print $qb.firstname>>!@@
+
+@@.female;"So how did your date with Dominic go?"@@ one of the cheerleaders asks her friend.
+
+@@.female;"Good! We saw a movie together, and then we went back to his room, and..."@@
+
+@@.male;"On the first date?"@@
+
+@@.female;"No! We just kissed."@@
+
+@@.female;"How was it?"@@
+
+@@.female;"Good! He's a great kisser. And, uh,"@@ she runs her fingers through her hair, @@.female;"it'd been too long since I got kissed."@@
+
+@@.thought;This is the best chance I'll get to tell them. But...I don't know. They're not talking to me. Would it be too awkward?@@
+
+[[Tell them|Lunch Friends QBKiss Tell]]
+[[Stay silent|Lunch Friends QBKiss Silent]]
+
+::Lunch Friends QBKiss Tell
+@@.player;"I kissed <<print $qb.firstname>>,"@@ you say quickly, before you can stop yourself.
+
+@@.female;"What?"@@
+
+@@.player;"I, uh, I kissed someone recently,"@@ you say.
+
+You hold your breath, waiting for her to tell you that she was in the middle of a conversation, and that you were being rude by interrupting, but instead she seems interested. @@.thought;I'd rather she told me off.@@
+
+<<if $player.relationship is $girlfriend.firstname>>@@.female;"You kissed <<print $girlfriend.firstname>>?"@@
+
+You look over at her guiltily. @@.thought;Oh yeah. I'm dating her, and I kissed <<print $qb.firstname>>. And she's right there.@@
+
+@@.girlfriend;"No, he didn't kiss me,"@@ she says, sounding confused.<<else>>@@.female;"I didn't know you and <<print $girlfriend.firstname>> got back together."@@
+
+@@.girlfriend;"No, we didn't,"@@ she says, looking at you with a look that you can't decipher. @@.thought;Is she hurt that I kissed someone else?@@<</if>>
+
+Everyone's looking at you. @@.female;"Who did you kiss then?"@@
+
+@@.player;"<<print $qb.firstname>>,"@@ you say softly. Instantly, you regret your admission. You just told the most popular people at school that you kissed a guy!
+
+<<if $player.homosexuality>=50 or visited("QB Practice 5 Yell") or visited("QB Practice 6 Caught")>>You're expecting everyone to look shocked and laugh at you, but to your surprise, you don't get much of a reaction.
+
+@@.female;"Makes sense."@@
+
+@@.player;"What do you mean?"@@
+
+@@.female;"Well, it's pretty obvious that you like <<print $qb.firstname>>."@@
+
+@@.player;"It is?"@@ You thought you had done such a good job of hiding your feelings.
+
+@@.male;"Yeah. You're always looking at him. And I've seen you looking at us too. In the locker room."@@<<else>>@@.male;"What?"@@
+
+@@.female;"What?"@@
+
+You squirm in your seat. @@.thought;It was a mistake to tell them.@@
+
+Everybody at the table looks at each other. You get the feeling that if you got up and left right now, they would all start gossiping.
+
+@@.female;"Well, I guess I can see it,"@@ a cheerleader says, breaking the silence.
+
+@@.male;"<<print $player.firstname>> and <<print $qb.firstname>>?"@@
+
+@@.female;"Yeah. Remember when he asked if I thought <<print $qb.firstname>> was cute?"@@
+
+@@.female;"Oh yeah! I remember that! That was weird."@@
+
+@@.male;"And I thought I saw him checking me out in the locker room."@@<</if>>
+
+One of the girls turns to you. @@.female;"So, <<print $player.firstname>>, are you gay?"@@
+
+[[Insist that you're straight|Lunch Friends QBKiss Straight]]
+[[Say that you like girls too|Lunch Friends QBKiss Bi]]
+[[Come out as gay|Lunch Friends QBKiss Gay]]
+
+::Lunch Friends QBKiss Straight
+@@.player;"No! I'm straight!"@@ you say.
+
+The girl who spoke looks at you in confusion.
+
+@@.player;"Okay, I kissed <<print $qb.firstname>>, but that was only once! I've gone out with lots of girls!"@@
+
+She doesn't look convinced. @@.female;"And what was it like to kiss <<print $qb.firstname>>?"@@
+
+@@.player;"It was different, much different from...no! I don't want to talk about that!"@@ you say, not wanting to sound like you liked the kiss. @@.player;"And I wouldn't do it again!"@@
+
+@@.male;"I don't know. You sound pretty gay, man."@@
+
+@@.female;"There's nothing wrong with it, if you are gay."@@
+
+@@.player;"I know. But I'm not,"@@ you say in a firm voice. @@.player;"I like girls."@@
+
+The others at the table just shrug. You smile, feeling a little more confident from standing up for your sexuality. @@.thought;I don't know if I convinced them. I don't know if I even convinced myself. Kissing <<print $qb.firstname>> was nice, but it was also really nice to kiss <<print $girlfriend.firstname>>. If I had to choose, I'd rather kiss a girl.@@
+
+The conversation turns to another topic, but you notice that your friends at the table make an effort to include you. @@.thought;I told them I kissed a guy, and they're still my friends. That wasn't so bad.@@
+
+<<link "The bell rings" $currentPassage>><<set $player.confidence to $player.confidence+3>><<set $team.respect to $team.respect-1>><<set $player.homosexuality to $player.homosexuality-10>><</link>>
+
+::Lunch Friends QBKiss Bi
+@@.player;"No! I like girls too!"@@
+
+@@.female;"So you're bi then?"@@
+
+@@.player;"Uh..."@@ You hadn't thought about it like that. Kissing <<print $qb.firstname>> was nice, and you find yourself getting turned on whenever you look at a half-naked guy, but you're still turned on by pretty girls.
+
+@@.player;"Yeah,"@@ you say finally. @@.player;"I guess I'm bi."@@
+
+@@.female;"Good for you!"@@ a girl at the table says supportively.
+
+A lineman gives you a hearty pat on the back<<if $player.homosexuality>=50>>, and you can't help but react to the feel of his large, meaty hand on your body<</if>>. @@.male;"Yeah. Good for you."@@
+
+@@.player;"So this won't make it awkward in the locker room?"@@
+
+@@.male;"Why would it? I don't care who you like@@<<if $player.skillCurse<4>>@@.male;, I just care how good you are at football."@@
+
+<<if $player.qbSkill>=40>>You nod at that.<<else>>You force a smile. You're not very good at football either.<</if>><<else>>@@.male;."@@<</if>>
+
+@@.female;"So how was it to kiss <<print $qb.firstname>>?"@@
+
+@@.player;"It was different, much different from all the girls I've kissed. He felt different, and it was like I was the one being kissed instead of..."@@ You trail off, realizing that it sounds like you liked it. @@.thought;They already know that I like guys. I don't have to watch what I say around them. Well, I still can't tell them about the curse. But I can tell them about this.@@ You take a deep breath and continue, @@.player;"It was like I was the one being kissed instead of doing the kissing, and it was kind of...nice."@@
+
+The guys all laugh at that, and you blush. @@.thought;Maybe I overshared?@@
+
+Luckily, the conversation turns to another topic, but you notice that your friends at the table make an effort to include you. @@.thought;I told them I kissed a guy, they know that I like guys, and they're still my friends. I was really worried about if they'd laugh at me if they found out, but I told them and it wasn't that bad.@@
+
+<<link "The bell rings" $currentPassage>><<set $player.confidence to $player.confidence+3>><<set $team.respect to $team.respect-2>><<set $player.homosexuality to $player.homosexuality+5>><</link>>
+
+::Lunch Friends QBKiss Gay
+You had never given your sexuality much thought before. You always thought of yourself as straight, and had never even considered doing anything with a guy. But now that you have, you've realized that you actually enjoyed it. And when you think about <<print $qb.firstname>>, you get butterflies in your stomach, and you wonder when you'll get to feel his lips on yours again.
+
+You take a deep breath. @@.player;"Yeah, I guess I'm gay."@@
+
+@@.female;"Good for you!"@@ a girl at the table says supportively.
+
+A lineman gives you a hearty pat on the back, and you can't help but react to the feel of his large, meaty hand on your body. @@.male;"Yeah. Good for you."@@
+
+@@.player;"So this won't make it awkward in the locker room?"@@
+
+@@.male;"Why would it? I don't care who you like@@<<if $player.skillCurse<4>>@@.male;, I just care how good you are at football."@@
+
+<<if $player.qbSkill>=40>>You nod at that.<<else>>You force a smile. You're not very good at football either.<</if>><<else>>@@.male;."@@<</if>>
+
+@@.male;"Remember that running back who ended up transfering? We all thought he was gay, and nobody gave him a hard time."@@
+
+@@.player;"Yeah, you're right. I forgot about that."@@
+
+@@.female;"So how was it to kiss <<print $qb.firstname>>?"@@
+
+@@.player;"It was different, much different from all the girls I've kissed. He felt different, and it was like I was the one being kissed instead of..."@@ You trail off, realizing that it sounds like you liked it. @@.thought;They already @@<<if $player.homosexuality>=70>>@@.thought;know@@<<else>>@@.thought;think@@<</if>> @@.thought;I'm gay. I don't have to watch what I say around them. Well, I still can't tell them about the curse. But I can tell them about this.@@ You take a deep breath and continue, @@.player;"It was like I was the one being kissed instead of doing the kissing, and it was kind of...nice."@@
+
+You clap a hand over your mouth, worried that you just overshared. The guys all laugh, but it's a good-natured laugh, not a laugh at your expense.
+
+@@.male;"If you hook up with him, don't go telling us the details,"@@ he laughs.
+
+You nod, your cheeks red.
+
+The conversation turns to another topic, but you notice that your friends at the table make an effort to include you. @@.thought;I told them I kissed a guy, they @@<<if $player.homosexuality>=70>>@@.thought;know@@<<else>>@@.thought;think@@<</if>> @@.thought;that I'm gay, and they're still my friends. I was really worried about if they'd laugh at me if they found out, but I told them and it wasn't that bad.@@
+
+<<link "The bell rings" $currentPassage>><<set $player.confidence to $player.confidence+5>><<set $team.respect to $team.respect-3>><<set $player.homosexuality to $player.homosexuality+10>><</link>>
+
+::Lunch Friends QBKiss Silent
+You decide to stay silent. @@.thought;It would be too awkward. I'm not even a part of this conversation, and I'd be butting in and telling them about my kiss. And not just any kiss, but a kiss with a //guy//. No.@@
+
+The cheerleader continues talking about her date, and you can't help but listen in, feeling a little jealous. @@.thought;How come she can talk about kissing a guy and nobody gives her any shit, but I can't?@@ You'd like to talk about your kiss with <<print $qb.firstname>>.
+
+@@.thought;I //could// talk about it, but everyone would start asking lots of questions. I'd like to talk about it, and not have anyone react to it any more than they would have if I was kissing a girl.@@
+
+<<link "The bell rings" $currentPassage>><<set $player.confidence to $player.confidence-1>><</link>>
+
+::Lunch Friends BrentJoe
+You catch Brent's eye and quickly look down at your food. Ever since he caught you in <<print $qb.firstname>>'s room, you've been avoiding him. @@.thought;What am I going to say? What are we even going to talk about?@@
+
+After a moment, you look up, only to find Brent and Joe still looking at you and smirking. @@.male;"Hey, <<print $player.firstname>>. How's it going with <<print $qb.firstname>>?"@@
+
+You blush. @@.thought;Why can't they just leave me alone?@@
+
+Joe doesn't wait for you to respond. @@.male;"We saw you in <<print $qb.firstname>>'s room."@@
+
+Once again, everyone turns to look at you, waiting for you to respond.
+
+<<link "Admit that you hooked up with $qb.firstname" "Lunch Friends BrentJoe Hookup">><</link>>
+[[Tell them you were just studying|Lunch Friends BrentJoe Study]]
+<<if visited("QB Practice 6 Angry") and $player.submission<10>><<link "Tell them off for standing outside $qb.firstname's door" "Lunch Friends BrentJoe Angry">><</link>><</if>>
+
+::Lunch Friends BrentJoe Study
+@@.player;"Uh, we were just studying. Why, what did you think?"@@
+
+<<if visited("QB Practice 6 Angry")>>Joe laughs. @@.male;"No way, man. Me and Brent were going to see <<print $qb.firstname>> and then we heard two people having sex."@@
+
+@@.player;"It could have been the next door down,"@@ you say defensively.
+
+@@.male;"Nope. You came out of the room, and then <<print $qb.firstname>> admitted you two were fucking."@@
+
+Your cheeks turn an even darker shade of red as you think back and realize that he's right. And that everyone at the table now knows that you were fucking <<print $qb.firstname>>.<<elseif visited("QB Practice 6 Deny")>>Joe looks skeptical. @@.male;"Really? When we came to <<print $qb.firstname>>'s room, it sure looked like you two had just finished having sex."@@
+
+@@.player;"No. We were studying."@@
+
+<<if visited("QB Practice 6 CumFace")>>@@.male;"What about when you wiped <<print $qb.firstname>>'s cum off your face?"@@
+
+Your cheeks turn an even darker shade of red as you think back and realize that he's right. And that everyone at the table now knows that you sucked <<print $qb.firstname>>'s dick.<<else>>@@.male;"What about when I joked about you having cum on your face, and then you tried to wipe it off."@@
+
+@@.player;"I was..."@@
+
+@@.female;"Go easy on him, Joe."@@
+
+You turn to her and mouth a silent thank you. The look on her face tells you that she doesn't believe you, but at least she got Brent and Joe to stop pestering you.<</if>><<else>>Joe laughs. @@.male;"No way, man. We knocked on the door and you wouldn't open it for a good minute."@@
+
+@@.player;"It was because, uh..."@@
+
+@@.male;"And your shirt was backward."@@
+
+Your cheeks turn an even darker shade of red as you think back and realize that he's right. And that everyone at the table now knows that you were naked in front of <<print $qb.firstname>>.<</if>><<if not visited("QB Practice 6 Deny") or visited("QB Practice 6 CumFace")>>
+
+@@.female;"<<print $player.firstname>>!"@@ a girl says, laughing.
+
+<<if visited("Lunch Friends QBKiss Straight")>>@@.male;"I thought you said this was a one time thing?"@@
+
+@@.player;"It was supposed to be! But then we finished practicing, and we came back to his room, and, uh, one thing led to another. But it's not going to happen again."@@
+
+They don't look convinced. @@.female;"That's what you said last time."@@
+
+@@.player;"But this time I mean it,"@@ you say, though as you say it, you're not sure that you do.
+
+@@.male;"Are you sure? Maybe @@<<if $dayOfWeek is "Friday">>@@.male;on monday@@<<else>>@@.male;tomorrow@@<</if>> @@.male;you'll tell us you two are going out."@@<<else>>@@.female;"So he's your boyfriend now?"@@
+
+@@.player;"No! I don't want a boyfriend!"@@
+
+@@.female;"Yeah. You just kiss him and blow him. But you're not doing anything gay."@@
+
+@@.player;"Okay, maybe we did, uh..."@@
+
+@@.male;"Did you fuck?"@@<</if>>
+
+@@.player;"No!"@@ you say emphatically. @@.player;"We're not dating. I don't want to date him. It's just, uh, something fun we do."@@
+
+@@.male;"So you're fuckbuddies?"@@
+
+@@.player;"No! Well, I guess that is a good name for it, actually."@@
+
+You frown. @@.thought;Is that what I want from <<print $qb.firstname>>? To be fuckbuddies? Or do I want something more?@@<</if>>
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-5>><<set $player.confidence to $player.confidence-2>><</link>>
+
+::Lunch Friends BrentJoe Hookup
+You start to deny it, but then look at Brent and Joe. They look back at you expectantly. @@.thought;I can't deny it. @@<<if visited("QB Practice 6 Angry")>>@@.thought;<<print $qb.firstname>> basically admitted that we were hooking up.@@<<elseif visited("QB Practice 6 Deny") and visited("QB Practice 6 CumFace")>>@@.thought;They saw <<print $qb.firstname>>'s cum on my face.@@<<elseif visited("QB Practice 6 Deny")>>@@.thought;They tricked me into basically admitting I sucked <<print $qb.firstname>> off.@@<<else>>They saw that my shirt was backwards.@@<</if>>
+
+@@.female;"<<print $player.firstname>>?"@@
+
+@@.player;"Yeah, it's true,"@@ you say, avoiding everyone's eyes. @@.player;"Me and <<print $qb.firstname>> hooked up."@@
+
+Everyone laughs at your admission, but they don't look as shocked as you expected.
+
+@@.male;"I called it!"@@
+
+@@.player;"You...you did?"@@
+
+@@.male;"Yeah! @@<<if visited("Lunch Friends QBKiss Straight")>>@@.male;It was obvious it wasn't just a one time thing."@@<<else>>@@.male;You're @@<<if visited("Lunch Friends QBKiss Bi")>>@@.male;bi@@<<else>>@@.male;gay@@<</if>>@@.male;, and <<print $qb.firstname>> is a good-looking guy. It was obvious."@@
+
+@@.male;"<<print $qb.firstname>>'s a good-looking guy? You sound almost as gay as <<print $player.firstname>>!"@@<</if>>
+
+@@.female;"So is he your boyfriend now?"@@
+
+@@.player;"No! I don't want a boyfriend!"@@
+
+<<if visited("Lunch Friends QBKiss Straight")>>@@.female;"Sure. You're totally straight. It's just a one time thing. Do I have that right?"@@
+
+@@.player;"Uh, well, not really,"@@ you admit. Your pussy tingles when you think about seeing him again.
+
+@@.male;"So what is he then? You're sure you're not dating?"@@<<else>><<if visited("Lunch Friends QBKiss Bi")>>@@.female;"I thought you liked guys?"@@
+
+@@.player;"I do,"@@ you say shyly. You still can't believe that you're out.<<else>>@@.female;"I thought you were gay?"@@
+
+@@.player;"I am,"@@ you say shyly. You still can't believe that you're out.<</if>>
+
+@@.female;"Then what's the problem? Go out with him already."@@<</if>>
+
+@@.player;"No!"@@ you say emphatically. @@.player;"We're not dating. I don't want to date him. It's just, uh, something fun we do."@@
+
+@@.male;"So you're fuckbuddies?"@@
+
+@@.player;"No! Well, I guess that is a good name for it, actually."@@
+
+You frown. @@.thought;Is that what I want from <<print $qb.firstname>>? To be fuckbuddies? Or do I want something more?@@
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-2>><<set $player.confidence to $player.confidence-1>><<set $player.homosexuality to $player.homosexuality+2>><</link>>
+
+::Lunch Friends BrentJoe Angry
+@@.player;"That's not what I remember? What..."@@
+
+@@.male;"What happened was..."@@
+
+@@.player;"Was that you and Joe were hanging outside <<print $qb.firstname>>'s room, listening in,"@@ you say, cutting him off. @@.player;"That's not cool. You were spying on us!"@@
+
+@@.female;"Brent?"@@
+
+@@.male;"We weren't spying! We stopped by to see <<print $qb.firstname>>, and when we realized he was having sex, we wanted to see who he was fucking."@@
+
+@@.player;"And so what if it was me? I don't want you hanging around outside the door."@@
+
+@@.female;"Brent, that's creepy."@@
+
+@@.male;"No! You wouldn't understand. <<print $qb.firstname>> is our teammate, and..."@@
+
+You tune the rest of the conversation out. You're just happy that Brent and Joe being creepy has taken the focus off of you and <<print $qb.firstname>> hooking up. @@.thought;I guess I admitted that <<print $qb.firstname>> was fucking me. @@<<if visited("Lunch Friends QBKiss Straight")>>@@.thought;Now they definitely aren't going to think that I'm straight.@@<<elseif visited("Lunch Friends QBKiss Bi")>>@@.thought;But I guess that's okay. They already know I like guys.@@<<else>>@@.thought;But I guess that's okay. They already know I'm gay.@@<</if>> @@.thought;And it felt good to stand up for myself.
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect+1>><<set $player.confidence to $player.confidence+3>><<set $player.submission to $player.submission-2>><</link>>
+
+::Lunch Friends AskOut
+<<getTfProgress voice>>You look around awkwardly. You're really excited at getting asked out by <<print $qb.firstname>>, and you want to share it with <<if visited("QB Practice 8 AskOut Morgan")>>more people.<<else>>someone else besides <<print $qb.dateHelp>>.<</if>>
+
+@@.thought;But I'd have to tell these people, these popular people, about it. What am I thinking? Who else can I tell? Well, besides @@<<if $qb.dateHelp is $girlfriend.firstname>>@@.thought;<<print $witch.firstname>>@@<<else>>@@.thought;<<print $girlfriend.firstname>>@@<</if>> @@.thought;and <<print $qb.dateHelp>>, most of my friends are at this table.@@
+
+<<if visited("QB Practice 8 AskOut Morgan")>>@@.thought;No, I'm going to do it. They're my friends, so they should be happy for me. Right?@@<<else>>@@.female;"So how's it going with <<print $qb.firstname>>?"@@ a girl asks.
+
+You start to answer, only to realize that she was talking to Morgan. @@.female;"Great!"@@ Morgan replies. @@.female;"We're supposed to work on a project together after school."@@
+
+Her friend pokes her in the ribs. @@.female;"You know what that means!"@@
+
+@@.thought;That does it. I'll tell them.@@<</if>>
+
+@@.player;"Um, actually,"@@ you say, waiting for everyone to look at you. They don't. @@.player;"Actually!"@@ you say, trying to talk more loudly.<<if $tempTfValue>=2>> As you speak, you realize that your voice had a higher pitch than you intended.<</if>>
+
+A couple people turn and look at you. @@.player;"Actually,"@@ you continue, @@.player;"I was practicing with <<print $qb.firstname>>, and, uh, he asked me out!"@@
+
+Your friends look at you in astonishment. <<if visited("Lunch Friends BrentJoe")>>@@.thought;I don't get why they're reacting like this. They already know I hooked up with him.@@<<elseif visited("Lunch Friends QBKiss Tell")>>@@.thought;I don't get why they're reacting like this. They already know I kissed him.@@<<else>>@@.thought;I must have told them I liked him. Right?@@ You rack your brains, trying to remember. @@.thought;No, I don't think I did.@@<</if>>
+
+<<if visited("Lunch Friends BrentJoe") or visited("Lunch Friends QBKiss Tell")>>@@.female;"<<print $qb.firstname>> asked //you// out?"@@
+
+@@.thought;What's that supposed to mean?@@ you think. @@.player;"Uh, yeah. He did."@@
+
+<<if $playerStarter>>@@.female;"But he's on the team, and he's getting so popular!"@@<<else>>@@.female;"But he's the start quarterback! And he's so popular!"@@<</if>>
+
+@@.player;"So am I,"@@ you counter. You're not sure what her problem is. Does she not believe you? This isn't something you'd lie about.
+
+@@.female;"Yeah, but you're a sissy."@@
+
+You gasp. Here's this popular girl, and she's calling you a sissy straight to your face. @@.thought;Maybe I'm not as popular as I thought.@@ What disturbs you even more is that you suspect that she's right. @@.thought;I'm going on a date with a real guy@@<<if $player.isWearingPanties or $player.bra is not null or $player.pants.female is true>>@@.thought; and I'm wearing girl clothes.@@<<elseif $player.hasWornPanties or $player.hasWornBra or $player.ownsGirlPants>>@@.thought;, and I've worn girl clothes.@@<<else>>@@.thought;.@@<</if>> @@.thought;But technically, I have a pussy, so I guess I'm not really a sissy. But then what am I?@@<<else>>@@.male;"You're gay?"@@
+
+@@.female;"You and <<print $qb.firstname>>?"@@
+
+@@.female;"He likes //you//?"@@
+
+@@.male;"Guys. Why are you surprised? It was obvious."@@
+
+@@.male;"Really?"@@
+
+@@.male;"Yeah! We've had practice together with <<print $player.firstname>>. @@<<if $player.qbSkill<50>>@@.male;He's not much of a quarterback anymore.@@<<else>>@@.male;We've spent time around him.@@<</if>> @@.male;Don't tell me you haven't noticed that he's...different recently."@@
+
+@@.male;"Yeah,"@@ the other guy says, thinking. @@.male;"And I think I saw him looking at me in the locker room."@@
+
+@@.player;"Uh, I don't think I did that,"@@ you say, but they're not listening. @@.thought;Did I? My sexuality has changed so much. Maybe I did check him out.@@
+
+@@.female;"But <<print $qb.firstname>>? I don't see it."@@
+
+@@.male;"They've been practicing together."@@<</if>>
+
+<<if visited("QB Practice 8 AskOut Morgan")>>Morgan just glares at you. You feel uncomfortable under the intensity of her gaze.<<else>>Morgan looks hurt, and you can't help but feel bad for her. Even though she was being a bitch to you, she seemed excited about <<print $qb.firstname>>.<</if>> @@.female;"I can't believe he doesn't want to go out with a real girl,"@@ she says finally.
+
+<<if visited("QB Practice 8 AskOut Morgan")>>@@.thought;What a bitch.@@<<else>>@@.thought;I don't feel bad for her anymore. She's a bitch.@@<</if>>
+
+@@.male;"So <<print $qb.firstname>>'s going out with a sissy. I can't wait for practice."@@
+
+@@.male;"Bro, remember when I made fun of you for dating an ugly chick? This is so much funnier!"@@
+
+@@.male;"She wasn't ugly!"@@
+
+Another girl turns to you. @@.female;"So you said yes, right? What are you doing?"@@
+
+[[Go into detail|Lunch Friends AskOut Detail]]
+[[Keep it brief|Lunch Friends AskOut Brief]]
+
+::Lunch Friends AskOut Detail
+You look at her uncomfortably. It was a mistake to mention your date with <<print $qb.firstname>>, but she actually sounds interested. @@.player;"We didn't really make any plans,"@@ you tell her. @@.player;"He said we were going to go to a movie. I'm not sure if we're doing anything else."@@
+
+@@.female;"What movie are you seeing?"@@
+
+@@.player;"I don't know,"@@ you admit.
+
+@@.female;"Do you know anything?"@@ she asks, laughing.
+
+@@.player;"Uh, not really,"@@ you say. @@.player;"Maybe he's just going to wing it."@@
+
+@@.female;"Or he planned it all out."@@
+
+@@.player;"But why wouldn't he tell me? Is it going to be a surprise?"@@
+
+She shrugs. @@.female;"My boyfriend's like that. He likes to take me on dates, but he never tells me what we're doing. He pays for everything though, so I don't mind."@@
+
+You look at her, realizing that you're taking the feminine role on this date. @@.player;"Do you think <<print $qb.firstname>> is going to pay for my movie ticket?"@@
+
+@@.female;"And dinner? He'd better take you to dinner."@@
+
+@@.player;"I guess."@@
+
+She looks you up and down. @@.female;"Yeah. I think he will. You look like you're the girl in the relationship."@@
+
+<<link "Before you can ask her what she means, the bell rings" $currentPassage>><<set $team.respect to $team.respect+2>><<set $player.homosexuality to $player.homosexuality+2>><</link>>
+
+::Lunch Friends AskOut Brief
+You look at her uncomfortably. It was a mistake to mention your date with <<print $qb.firstname>>, and you can't wait to leave the conversation. @@.player;"We're going to watch a movie together."@@
+
+@@.female;"Anything else?"@@
+
+@@.player;"What do you mean?"@@
+
+@@.female;"What about dinner? Or, you know..."@@ she says, making the international gesture for sex.
+
+@@.player;"No!"@@ you say, turning red.
+
+<<link "Before she can ask anything else, the bell rings" $currentPassage>><<set $team.respect to $team.respect-2>><<set $player.homosexuality to $player.homosexuality-2>><</link>>
+
+::Lunch Friends Selfie
+@@.player;"I was, uh, wondering something,"@@ you say.
+
+<<if visited("Lunch Friends AskOut") or visited("Lunch Friends BrentJoe") or visited("Lunch Friends QBKiss Tell")>>@@.male;"No, I won't let you suck my cock."@@ Everybody laughs.
+
+You turn red. <<else>>@@.male;"Yeah, <<print $player.firstname>>, what's up?"@@
+
+<</if>>@@.player;"I was asking the girls at the table, actually,"@@ you say.
+
+<<if visited("Lunch Friends AskOut") or visited("Lunch Friends BrentJoe") or visited("Lunch Friends QBKiss Tell")>>@@.male;"So they can show you how to be a better sissy?"@@
+
+@@.player;"No! Well..."@@ you trail off, realizing that's //exactly// what you are going to be asking.
+
+@@.male;"Watch, he's going to ask you girls how to suck a cock, or how to take a picture of his butt."@@
+
+@@.player;"Uh, it's kind of about that,"@@ you say. @@.player;"Not sucking a cock."@@ you say quickly. @@.player;"But taking a picture. Have any of you taken a picture and then sent it to your @@<<if $day>$dayOfDate>>@@.player;boyfriend?"@@<<else>>@@.player;crush?"@@<</if>>
+
+The guys all laugh. @@.male;"See! I knew it!"@@
+
+@@.female;"Don't listen to those assholes, <<print $player.firstname>>. What kind of picture do you mean?"@@<<else>>@@.female;"Is this going to be a pervy question?"@@
+
+@@.thought;Is it? No, I'm really just asking them how to flirt.@@ You shake your head.
+
+@@.female;"Then go ahead."@@
+
+@@.player;"Have any of you ever, uh, sent a photo to @@<<if $day>$dateOfDay>>@@.player;your boyfriend?"@@<<else>>@@.player;a guy you liked?"@@<</if>>
+
+@@.female;"What kind of photo?"@@<</if>>
+
+<<if $workOutSelfieAss is true>>@@.player;"Uh, a photo of your butt."@@<<else>>@@.player;"Uh..."@@ you say, trying to think. You don't think many of them have ever sent their <<if $day>$dayOfDate>>boyfriend<<else>>crush<</if>> a photo of their smaller muscles, and you don't want to raise any questions by asking it. @@.player;"Uh, I guess a photo of you in the gym."@@<</if>>
+
+@@.female;"Yeah, I've sent one or two."@@
+
+@@.female;"Just one or two? You've sent more than that!"@@
+
+@@.female;"Shut up!"@@
+
+You smile, feeling better with the knowledge that it's normal for people to send a selfie to the person <<if $day>$dayOfDate>>they're dating<<else>>they like<</if>>. Of course, it's //females// who are sending the pictures, but you're too focused on your next question to worry about that.
+
+[[Ask if the guy always replies back|Lunch Friends Selfie Reply]]
+
+::Lunch Friends Selfie Reply
+@@.player;"And then, once you send it, does the guy always reply back."@@
+
+@@.female;"Yeah. He sends one of himself. Or he should, if you didn't turn him off."@@
+
+You nod. @@.thought;<<print $qb.firstname>> sent me a picture of himself shirtless.@@
+
+@@.player;"And then after that, if you give him a compliment or something, does he write back?"@@
+
+@@.female;"Yeah. If I compliment him, then he has to compliment me."@@
+
+@@.thought;I had already complimented him.@@
+
+@@.female;"Not really. It's not like we're going to get into a whole conversation, you know?"@@
+
+@@.thought;Okay, that makes me feel better.@@
+
+@@.female;When I send a picture to David, he never replies. I'm starting to think he's jerking off."@@
+
+@@.female;"Isabella!"@@
+
+@@.thought;Okay, that //doesn't// make me feel better. Is that what he was doing? No, he just didn't see a need to respond.@@
+
+@@.player;"So if the guy doesn't text me back, well, he sends a picture but he doesn't say anything else, that doesn't mean he doesn't like me?"@@ you ask, hoping for confirmation.
+
+@@.male;"Let me guess, this is for a //friend//, right?"@@ a guy asks, making air quotes around the word friend.
+
+<<if visited("Lunch Friends QBKiss Tell") or visited("Lunch Friends BrentJoe") or visited("Lunch Friends AskOut")>>@@.male;"Is it <<print $qb.firstname>>?"@@
+
+<<if visited("Lunch Friends AskOut")>>@@.player;"Uh, n...well, actually, yes,"@@ you say, looking around. Nobody looks surprised.
+
+@@.thought;That actually felt pretty good. Saying it out loud like that.@@<<else>>@@.player;"Uh..."@@ you stammer.
+
+@@.female;"Look at him blush. It totally was!"@@
+
+That only makes you blush harder.<</if>><<else>>@@.male;"Who was it?"@@
+
+@@.player;"Uh, I don't want to say."@@
+
+@@.male;"I bet it was <<print $qb.firstname>>. They're always practicing."@@
+
+@@.male;"Yeah, and <<print $player.firstname>> is basically drooling over him!"@@
+
+@@.thought;I don't drool!@@<</if>>
+
+<<link "The bell rings" $currentPassage>><<set $player.homosexuality to $player.homosexuality+1>><<set $team.respect to $team.respect+2>><</link>><<if visited("Lunch Friends AskOut")>><<set $player.confidence to $player.confidence+2>><<else>><<set $player.confidence to $player.confidence-1>><</if>>
+
+::Lunch Friends Trunks
+@@.player;"Gym class was so embarrassing,"@@ you say. @@.player;"I lost my trunks, and then I was standing there, //naked// in front of everybody!"@@
+
+@@.male;"That was so funny, bro!"@@
+
+You feel annoyed. That was the most embarrassing moment of your life. Well, one of them, at least. And he's treating it like it was just a big joke. @@.player;"That wasn't funny! It was embarrassing. How would you feel, being naked in front of the whole class?"@@
+
+@@.male;"Then I'd show them my package."@@
+
+@@.player;"What?"@@
+
+@@.male;"Oh, come on. Hey, you used to be the same way, didn't you? You were always flashing us in the locker room. And now, you lose your trunks in the middle of class, and you @@<<if visited("Gym Day 7 Retrieve Trunks")>>@@.male;try to get them back right away. What changed?"@@<<else>>@@.male;hide behind a pillar. What changed?"@@<</if>>
+
+@@.thought;My dick@@ you think bitterly. @@.player;"Uh, there were girls there,"@@ you say quickly. @@.player;"It's different when you're changing in front of guys."@@
+
+<<if $changeInOpen is true>>@@.male;"Maybe,"@@ he says, frowning. You can tell he doesn't totally believe you.<<else>>@@.male;"No, that's not it. You're always changing in the stalls."@@<</if>>
+
+Eager to change the subject, you say, <<if visited("Gym Day 7 Retrieve Trunks")>>@@.player;"You were behind me when I finally got my trunks back. Did you see anything?"@@<<else>>@@.player;"Did you see anything when I was waiting for my trunks?"@@<</if>>
+
+@@.thought;Wait, why did I ask that? What if he //did// see my pussy? Then he's going to tell everyone!@@
+
+@@.male;"No, I didn't see your dick, <<print $player.firstname>>. Nobody's going to know that it's tiny."@@
+
+Everybody laughs, and you breathe a sigh of relief.
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-1>><</link>>
+
+::Lunch Friends PantyRaid ElviraCaught
+He smirks as you lock eyes with him, and you instantly flash back to that moment outside of Elvira's room: you had just been attacked by Elvira's clothes, and you were standing in the hallway in nothing but a bra and panties, when you ran into him.
+
+@@.male;"Are you still wearing those panties?"@@ he asks.
+
+Everybody turns to look at you hesitantly, not sure whether he's teasing you or telling the truth. You just blush. <<if $player.underwear.properName is "Lacey purple panties">>Even worse, you realize that you //are// wearing those panties! @@.player;"You don't understand. She made me wear them!"@@<<else>>@@.player;"No I'm not. And it wasn't my fault. She made me wear them!"@@<</if>>
+
+He laughs, and a couple of the girls laugh. @@.male;"What? Why would you do that, man?"@@
+
+Your eyes well up with frustration. @@.player;"You don't get it! Elvira's a witch!"@@ You pause, realizing that it might not be a good idea to tell your friends that witches are real. But right now, they're laughing at you, and you want to get them to stop.
+
+@@.male;"Yeah, yeah, she's in Witchcraft Club. So what?"@@
+
+@@.player;"No! I'm saying she's actually a witch?"@@
+
+@@.female;"And, what? She just forced you to wear panties?"@@
+
+@@.male;"And a bra."@@
+
+@@.player;"Uh, yeah,"@@ you say, grateful that at least he left before you were forced into the princess outfit. @@.player;"I tried to take her panties, and then her clothes started attacking me, and..."@@
+
+@@.male;"Sounds like bullshit to me."@@
+
+@@.player;"No! I swear, I'm telling the truth!"@@
+
+This isn't how you imagined your conversation going. You thought that you'd calmly explain that Elvira forced you into her clothes, and everyone else would agree that the witches were acting strange and may have actual magic.
+
+@@.female;"I bet you're wearing panties now."@@
+
+<<if $player.underwear.panties is true>><<if $player.underwear.properName is "Lacey purple panties">>You look around uncomfortably, painfully aware that you have Elvira's panties on.<<else>>You're about to tell her to fuck off when you realize that you //are// wearing panties.<</if>>
+
+[[Admit it|Lunch Friends PantyRaid Admit]]
+[[Deny it|Lunch Friends PantyRaid Deny]]<<else>>@@.player;"No. I'm not,"@@ you say truthfully.
+
+Luckily, you're saved by the bell ringing.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-1>><</link>><</if>>
+
+::Lunch Friends PantyRaid Elvira
+@@.player;"So how did the panty raid go for everyone?"@@ you ask. You know that you probably shouldn't bring it up, given what you did, but you need to get their assurance that being forced into Elvira's clothes doesn't make you gay.
+
+@@.male;"It went great, bro! The first door I tried was unlocked. I just snuck in and grabbed them."@@
+
+@@.thought;Why couldn't I have had that luck?@@
+
+@@.female;"I still can't believe that you guys would go and do that to us."@@
+
+@@.male;"What about you, <<print $player.firstname>>?"@@ he asks, brushing her off.
+
+You look at him. It's now or never. @@.player;"I was in Elvira's room, trying to take her panties."@@
+
+@@.male;"She's in that witch club, man. She's weird."@@
+
+@@.player;"You're right!"@@ you say, spurred on by his comment. @@.player;"I never should have gone in. But I did, and then...then, when I tried to take her panties, her clothes started attacking me!"@@
+
+You look around at a sea of blank faces.
+
+@@.female;"Attacking?"@@
+
+@@.player;"Yeah! They started forcing themselves onto me! Her panties, her bra, a princess dress. It was terrible!"@@
+
+@@.male;"Sounds like bullshit to me."@@
+
+@@.male;"You know she's not an actual witch, right? She's just weird."@@
+
+@@.player;"No! She is a witch!"@@
+
+@@.male;"Sounds like you just wanted to wear her clothes."@@ Several people at the table nod in agreement.
+
+This isn't how you imagined your conversation going. You thought that you'd calmly explain that Elvira forced you into her clothes, and everyone else would agree that the witches were acting strange and may have actual magic.
+
+@@.female;"I bet you're wearing panties now."@@
+
+<<if $player.underwear.panties is true>>You're about to tell her to fuck off when you realize that you //are// wearing panties.
+
+[[Admit it|Lunch Friends PantyRaid Admit]]
+[[Deny it|Lunch Friends PantyRaid Deny]]<<else>>@@.player;"No. I'm not,"@@ you say truthfully.
+
+Luckily, you're saved by the bell ringing.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-1>><</link>><</if>>
+
+::Lunch Friends PantyRaid Girlfriend
+@@.player;"So how did the panty raid go for everyone?"@@ you ask. You know that you probably shouldn't bring it up, given what you did, but you need to get their assurance that being forced into Elvira's clothes doesn't make you gay.
+
+@@.male;"It went great, bro! The first door I tried was unlocked. I just snuck in and grabbed them."@@ You stare at him, envious of how lucky he was.
+
+@@.female;"I still can't believe that you guys would go and do that to us."@@
+
+@@.male;"What about you, <<print $player.firstname>>?"@@ he asks, brushing her off.
+
+You look at <<print $girlfriend.firstname>>, and start to wonder whether you made a mistake bringing it up.
+
+@@.player;"Uh, nothing interesting..."@@
+
+@@.male;"Hey, you got <<print $girlfriend.firstname>>'s panties, right?"@@
+
+@@.male;"I still can't believe that counts. He probably went right to her room, and she just handed them over."@@
+
+<<print $girlfriend.firstname>> blushes. @@.girlfriend;"I wouldn't do that! I made him work for it."@@
+
+@@.thought;No! Don't talk about it!@@
+
+@@.male;"Work for it?"@@
+
+@@.female;"<<print $girlfriend.firstname>>, you slut!"@@
+
+She blushes even harder. @@.girlfriend;"No! It's not like that!"@@ Everybody stares at her, waiting for her to go on. @@.girlfriend;"Uh, I told <<print $player.firstname>> that if he wanted my panties, he'd have to take another pair and, uh, wear them."@@
+
+Everybody turns to look at you. @@.male;"<<print $player.firstname>>, is that true?"@@
+
+@@.female;"I bet he's wearing panties right now."@@
+
+<<if $player.underwear.panties is true>>You're about to tell her to fuck off when you realize that you //are// wearing panties.
+
+[[Admit it|Lunch Friends PantyRaid Admit]]
+[[Deny it|Lunch Friends PantyRaid Deny]]<<else>>@@.player;"Yes, I did wear her panties out,"@@ you say. You wait for the laughter to die down. @@.player;"But I'm not wearing them now,"@@ you say firmly.
+
+Luckily, you're saved by the bell ringing.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-1>><</link>><</if>>
+
+::Lunch Friends PantyRaid Witch
+@@.player;"So how did the panty raid go for everyone?"@@ you ask. You know that you probably shouldn't bring it up, given what you did, but you need to get their assurance that being forced into Elvira's clothes doesn't make you gay.
+
+@@.male;"It went great, bro! The first door I tried was unlocked. I just snuck in and grabbed them."@@ You stare at him, envious of how lucky he was.
+
+@@.female;"I still can't believe that you guys would go and do that to us."@@
+
+@@.male;"What about you, <<print $player.firstname>>?"@@ he asks, brushing her off.
+
+You look at him. It's now or never. @@.player;"Uh, I went to <<print $witch.firstname>>'s room..."@@
+
+@@.male;"<<print $witch.firstname>>? Are you crazy?"@@
+
+@@.thought;Maybe@@ you think. @@.player;"I never should have gone in. But I did, I took her panties, and then when I tried to leave, she...she was there."@@
+
+Your friends are leaning forward, listening intently. @@.player;"She knew that I tried to take her panties, and she told me she put a curse on them."@@
+
+@@.male;"A curse? On her panties?"@@
+
+@@.player;"Yeah. It, uh, forced me to wear them the next morning."@@
+
+Everyone laughs at that. @@.male;"You know <<print $witch.firstname>>'s not an actual witch, right?"@@
+
+@@.player;"No! She is a witch!"@@
+
+@@.male;"Sounds like bullshit to me."@@
+
+@@.male;"Sounds like you just wanted to wear her clothes."@@ Several people at the table nod in agreement.
+
+This isn't how you imagined your conversation going. You thought that you'd calmly explain that Elvira forced you into her clothes, and everyone else would agree that the witches were acting strange and may have actual magic.
+
+@@.female;"I bet you're wearing panties now."@@
+
+<<if $player.underwear.panties is true>>You're about to tell her to fuck off when you realize that you //are// wearing panties.
+
+[[Admit it|Lunch Friends PantyRaid Admit]]
+[[Deny it|Lunch Friends PantyRaid Deny]]<<else>>@@.player;"No. I'm not,"@@ you say truthfully.
+
+Luckily, you're saved by the bell ringing.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-1>><</link>><</if>>
+
+::Lunch Friends PantyRaid Emptyhanded
+@@.player;"I can't believe I didn't get any panties during the raid,"@@ you complain.
+
+@@.female;"I can't believe you guys did the raid at all."@@
+
+@@.male;"How come you didn't get any panties, bro?"@@ your teammate asks, ignoring her. @@.male;"It was so easy. The first room I saw was unlocked. I just went in there and grabbed them."@@
+
+@@.player;"It, uh, it wasn't that easy for me,"@@ you say, thinking about the events of the raid. You're too embarrassed to tell them what happened.
+
+<<link "The conversation moves onto a different topic. You just wait until the bell rings" $currentPassage>><</link>>
+
+::Lunch Friends PantyRaid Admit
+You look around, feeling defeated. @@.player;"Yeah. You're right."@@
+
+@@.female;"Wait. So you're wearing panties?"@@
+
+You nod, trying your best to avoid everyone's stares.
+
+@@.male;"What a sissy."@@
+
+You look over to the girls for help, but they're busy giggling. @@.female;"What kind of panties?"@@
+
+@@.player;"They're...no! I'm not going to tell you!"@@
+
+She laughs. @@.female;"Come on. At least let me see."@@
+
+@@.male;"Do you want me to pants him?"@@
+
+You gulp, realizing that you're outnumbered. Even if you weren't, the <<if $player.masculinity>=50>>other <</if>>guys here are stronger than you. If they wanted to show the world your panties, you wouldn't be able to stop them.
+
+@@.girlfriend;"Leave him alone. So what if he likes to wear panties? They're comfortable,"@@ <<print $girlfriend.firstname>> says, coming to your rescue.
+
+@@.male;"Maybe to you. But I've got a dick. It'd never fit."@@
+
+@@.male;"Hey, I thought <<print $player.firstname>> had a big dick. How come he can fit it into a pair of panties now?"@@
+
+You summon the last of your courage and ask, @@.player;"I have a big dick? How come you're looking?"@@
+
+@@.male;"Well, I don't mean to! But you used to walk around the locker room naked. It's like you wanted us to look."@@
+
+@@.male;"He doesn't walk around naked anymore. Have you noticed that?"@@
+
+@@.male;"Yeah. He doesn't want us to see his panties."@@
+
+@@.thought;And because I don't want anyone to see my new pussy.@@
+
+@@.male;"<<print $player.firstname>>, you have gym next, right?"@@
+
+@@.male;"That's going to be an interesting class."@@
+
+You groan, realizing that you're going to have to change around them. And they'll be looking at you, eager to see the panties you have on under your <<print $player.pants.informalName>>.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-3>><<set $player.submission to $player.submission+1>><</link>>
+
+::Lunch Friends PantyRaid Deny
+You summon the last of your courage, and say, @@.player;"No! I'm not wearing panties!"@@
+
+You're lying, of course, but you could never tell them the truth. If they knew what you had on under your <<print $player.pants.informalName>>, they'd want you to show them right now. @@.thought;I'd never hear the end of it.@@
+
+@@.male;"You're such a liar."@@
+
+@@.player;"Uh, no I'm not."@@
+
+He glares at you, clearly not believing you, but also looking frustrated. @@.thought;He can't prove that I'm wearing <<print $pantyRaid.takenFrom>>'s panties. And I'm not about to tell him.@@
+
+<<link "You're saved by the bell" $currentPassage>><<set $team.respect to $team.respect-1>><</link>>
+
+::Lunch Friends Legs
+You look at the guys. They're all wearing long dress pants, but you're pretty sure that none of them have shaved their legs. Still, you're desperate to find out. When you shaved your legs, you felt feminine. But if even one of these guys have shaved their legs before, then you wouldn't feel so bad.
+
+@@.player;"I've got a question,"@@ you say. A couple people turn to you, looking slightly amused. @@.player;"I was wondering if any guys have, uh, shaved?"@@
+
+@@.male;"Yeah, I shave."@@ @@.thought;Oh, good!@@ @@.male;"I can't stand having a beard,"@@ he continues.
+
+@@.player;"No, that's not what I meant,"@@ you say. @@.player;"I meant, uh, shaving your legs."@@
+
+He laughs. @@.male;"Why would I do that?"@@
+
+@@.player;"I wasn't saying you'd done it. I was just wondering if anyone had."@@
+
+@@.male;"Why would any of us shave our legs?"@@ another guy asks.
+
+@@.player;"Well, swimmers do it, right? Doesn't it help them swim faster or something?"@@
+
+@@.male;"Do any of us look like swimmers to you?"@@
+
+@@.player;"Well, no, but..."@@
+
+@@.male;"There you go. How come you're so interested, anyway?"@@
+
+@@.male;"I bet <<print $player.firstname>> shaves his legs."@@
+
+<<if $player.legs is 1>>@@.male;"He does,"@@ Patrick says. @@.male;"One time, I walked into our room, and he was sitting on the floor, using some tweezers on his legs."@@
+
+Everyone laughs at that. @@.player;"Uh, I can explain."@@<<else>>You consider denying it. You could just say that you were curious, and the girls would probably consider it. But you have gym class next, and the <<if $player.masculinity>=50>>other <</if>>guys would definitely notice your hairless legs.
+
+@@.player;"Um, yeah. You're right. I shaved my legs and I...I wanted to see if anyone else had shaved them."@@
+
+Everyone laughs at that. @@.female;"Why did you shave them?"@@
+
+@@.player;"Uh, I can explain."@@<</if>>
+
+@@.female;"Go for it."@@
+
+You hadn't expected her to say that. <<if visited("Lunch Friends PantyRaid ElviraCaught") or visited("Lunch Friends PantyRaid Elvira") or visited("Lunch Friends PantyRaid Witch")>>@@.thought;I told them about witches and they didn't believe me. I can't tell them I did it so I could control <<print $witch.firstname>>'s spell.@@<<else>>@@.thought;I did it so I could control <<print $witch.firstname>>'s spell. But I can't tell them that. They'd never believe me.@@<</if>>
+
+Taking your silence for an admission of guilt, the girl says, @@.female;"It's okay. There's nothing wrong with being a sissy."@@
+
+@@.player;"I'm not a sissy!"@@
+
+@@.female;"And smooth legs feel really nice. Don't you agree?"@@
+
+<<if $player.legs is 3>>@@.player;"Yeah,"@@ you say, a little more enthusiastic than you intended. You never thought that you'd like the feeling of the fabric of your pants on your smooth, hairless legs so much.<<elseif $player.legs is 2>>@@.player;"I guess. But I shaved only one leg."@@
+
+@@.female;"You should really shave the other one,"@@ she says. @@.female;"It'll feel better. I promise."@@<<else>>@@.player;"I didn't actually shave them,"@@ you admit. @@.player;"I just removed a patch of hair."@@
+
+She looks confused by that. @@.female;"So you're not a sissy?"@@
+
+@@.player;"No!"@@ you say, though you're curious how having a pair of hairless legs would feel.<</if>>
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-3>><</link>>
+
+::Lunch Friends Bra
+@@.player;"Everyone's heard about what happened in math, right?"@@
+
+@@.female;"What do you mean? Oh, when everyone saw your bra?"@@
+
+@@.player;"Uh, yeah. That."@@ you say through gritted teeth.
+
+@@.male;"<<print $player.firstname>> is wearing a bra?"@@
+
+@@.female;"Yeah. Haven't you noticed his boobs?"@@
+
+On cue, all of the guys stare at your tits. You self-consciously cross your arms in front of your chest.
+
+@@.female;"How did this happen?"@@
+
+@@.player;"Uh, it was really hot. And everyone was taking off their shirts so I took off mine, and then..."@@
+
+@@.female;"No, I mean, how did you get boobs?"@@
+
+You squirm in your seat. You've gone through a lot of changes recently, and you don't know how to tell them about it. <<if visited("Lunch Friends PantyRaid ElviraCaught") or visited("Lunch Friends PantyRaid Elvira") or visited("Lunch Friends PantyRaid Witch")>>@@.thought;I already tried to tell them about the curse, and they didn't believe me.@@<<else>>@@.thought;I can't just tell them that I've been cursed by a witch. They'll think I'm crazy.@@<</if>>
+
+@@.female;"I bet he's taking hormones."@@
+
+@@.male;"Hormones?"@@
+
+@@.female;"Yeah. He wants to be a girl, so he's taking hormones to give him boobs."@@
+
+@@.female;"Should we be calling <<print $player.firstname>> a her?"@@
+
+@@.player;"No!"@@ you say suddenly. @@.player;"I'm not trans. I'm..."@@ Just then, the bell rings, saving you from the conversation.
+
+<<link "As you go to gym, you catch some of the guys staring at your boobs" $currentPassage>><<set $team.respect to $team.respect-2>><</link>>
+
+::Lunch Friends Pants
+You look at the girls sitting at the table. @@.player;"You guys know about fashion, right?"@@
+
+@@.female;"Why? Do you need our help picking out a dress?"@@
+
+Everyone laughs, and you flush. @@.player;"No! No dress. I was just wondering if, uh, if you look at someone, can you tell what kind of clothes they're wearing?"@@
+
+@@.male;"You don't need to be a fashion expert to do that. All the guys are wearing the male Pinewood uniform and the girls are wearing the female uniform. See?"@@
+
+@@.player;"That's not really what I meant. I mean, uh..."@@ You rub your eyes, trying to figure out how to put it. If you mention telling the difference between mens and womens pants, everyone will immediately look at your outfit. @@.thought;I need to know if people notice when they're not looking for it.@@
+
+@@.female;"You mean, can we tell that you're wearing <<print $player.pants.informalName>>?"@@
+
+Shyly, you nod, making sure that your eyes are avoiding the guys.
+
+@@.female;"Yeah, we can tell,"@@ another girl says.
+
+@@.thought;Well, that answers my question@@ you think. @@.thought;How can they tell? They look pretty similar to me.@@
+
+@@.male;"<<print $player.firstname>>, can you stand up?"@@
+
+[[Stand up|Lunch Friends Pants Stand]]
+[[Stay sitting|Lunch Friends Pants Sitting]]
+
+::Lunch Friends Pants Stand
+You find yourself standing up. @@.thought;Why did I do that? I don't want these guys looking at my clothes. But he told me too and I just...did it.@@
+
+@@.male;"I don't see anything."@@
+
+@@.male;"You girls are full of shit."@@
+
+@@.female;"Don't you see? Look at the hips. And the legs."@@
+
+@@.male;"I think I see it now. They look...different."@@
+
+@@.female;"And the pockets are different too. Right, <<print $player.firstname>>?"@@
+
+@@.player;"They're so much smaller! I can't even fit my phone in them."@@
+
+@@.female;"Just be glad you get pockets. This skirt,"@@ she says, touching the material, @@.female;"doesn't have any pockets."@@
+
+@@.player;"Then how do you carry around your stuff?"@@
+
+@@.female;"A purse,"@@ she says, showing it to you.
+
+@@.thought;Should I get one? It's nice that these pants fit, but they're kind of inconvenient...No. What am I even thinking? I'm not going to carry around a purse like some kind of girl!@@
+
+@@.male;"Why are you wearing it?"@@ a guy asks you.
+
+@@.player;"Oh, uh, it's more comfortable,"@@ you say.
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-2>><<set $player.submission to $player.submission+1>><</link>>
+
+::Lunch Friends Pants Sitting
+@@.player;"No. I don't want you guys to look at my clothes!"@@
+
+@@.male;"How did you notice it? I don't see anything."@@
+
+@@.female;"It's hard to explain. The pants just fit...differently."@@
+
+@@.male;"And you can tell, even when <<print $player.firstname>> is sitting down?"@@
+
+@@.thought;I should never have brought this up. They would have never noticed. Except for the girls.@@
+
+@@.female;"Yeah. Girls just notice these things."@@
+
+He leans back to get a good look at your <<print $player.pants.informalName>>. Realizing what he's trying to do, you scoot forward on your seat.
+
+@@.female;"So how are the pants?"@@
+
+@@.player;"They're okay. They're more comfortable, but, uh, the pockets are smaller I guess. I can't even fit my phone in them."@@
+
+@@.female;"Just be glad you get pockets. This skirt,"@@ she says, touching the material, @@.female;"doesn't have any pockets."@@
+
+@@.player;"Then how do you carry around your stuff?"@@
+
+@@.female;"A purse,"@@ she says, showing it to you.
+
+@@.thought;Should I get one? It's nice that these pants fit, but they're kind of inconvenient...No. What am I even thinking? I'm not going to carry around a purse like some kind of girl!@@
+
+@@.male;"Why are you wearing it? It's really more comfortable."@@ a guy asks you.
+
+@@.player;"Uh, yeah. They just fit me better, I guess,"@@ you say.
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-1>><<set $player.submission to $player.submission-1>><</link>>
+
+::Lunch Friends DinerGirl
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress ass>><<set $tempAss to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>><<getTfProgress hands>><<set $tempHands to $tempTfValue>><<if visited("Game 3 End Celebrate")>>@@.player;"I can't believe that girl at the diner hooked up with <<print $qb.firstname>>."@@
+
+@@.female;"You can't? <<print $qb.firstname>> is pretty cute."@@
+
+<<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>You look at her with a mixture of surprise and jealousy. @@.thought;I thought he was mine. Do @@<<if $player.masculinity<0>>@@.thought;other@@<<else>>@@.thought;the@@<</if>> @@.thought;girls like him?@@<<else>>@@.thought;<<print $qb.firstname>> is cute? I guess he is, but...no. I'm not into guys.@@<</if>><<else>>@@.player;"So how was that girl? The one from diner?"@@
+
+@@.male;"Oh,"@@ Jones says, laughing. @@.male;"She was nice. But I'm not one to kiss and tell,"@@ he says with a wink.<</if>>
+
+<<if $player.feminine>=4>>@@.male;"I can't believe she said you were girly,"@@ <<if visited("Game 3 End Celebrate")>>your teammate<<else>>another guy<</if>> says.
+
+@@.female;"That girl really said that?"@@ a girl says, laughing.
+
+@@.player;"Yeah, she did,"@@ you say, feeling embarrassed. @@.player;"I don't know what she was talking about,"@@ you say, and you don't. @@.thought;Sure, I've got a pussy and I've been transforming, but other people can't see it, right?@@
+
+@@.female;"Yeah, I guess I can see it."@@
+
+@@.player;"What?"@@
+
+@@.female;"Her saying you look girly. You look different than usual."@@
+
+@@.male;"Oh yeah! I can't believe I didn't see that before."@@<<if $tempFace>=2>>
+
+@@.female;"His face looks different. It's...smoother."@@<</if>><<if $tempAss>=3>>
+
+@@.female;"He's getting a big butt."@@<</if>><<if $tempBoobs>=2>>
+
+@@.male;"Wait a second. Are those tits?"@@
+
+You cross your arms in front of your chest.<</if>><<if $tempHair>=2>>
+
+@@.male;"He's growing out his hair."@@<</if>><<if $tempHands>=3>>
+
+@@.female;"His nails are longer, and his fingers are more delicate."@@<</if>><<if $tempFace<2 and $tempAss<3 and $tempBoobs<2 and $tempHair<2 and $tempHands<3>>
+
+@@.male;"I don't see anything,"@@ another guy says, shaking his head.<<else>>
+
+@@.female;"What's going on, <<print $player.firstname>>? Are you transitioning?"@@
+
+@@.player;"No! I'm a guy!"@@ They're still looking at you, so you add, @@.player;"Okay, maybe I look a little girly, but that doesn't make me a girl."@@
+
+To your relief, your friends look satisfied with that answer.<</if>>
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect-7>><</link>><<else>>@@.male;"I can't believe she turned you down, <<print $player.firstname>>."@@
+
+@@.girlfriend;"You tried to hook up with her?"@@ <<print $girlfriend.firstname>> asks.
+
+@@.player;"Oh, uh..."@@ you start, awkwardly. @@.player;"Everyone was flirting with her. And then she ended up hooking up with @@<<if visited("Game 3 End Celebrate")>>@@.player;<<print $qb.firstname>>."@@<<else>>@@.player;him,"@@ you say, pointing to Jones.<</if>>
+
+Too afraid to get you into trouble with your <<if $player.relationship is not $girlfriend.firstname>>ex-<</if>>girlfriend, the <<if $player.masculinity>=50>>other <</if>>guys all clam up, and the conversation drifts to another topic.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect+1>><<set $girlfriend.relationship to $girlfriend.relationship-5>><</link>><</if>>
+
+::Lunch Friends OnePiece
+@@.player;"So,"@@ you say, glaring at the <<if $player.masculinity>=50>>other <</if>>guys in your class. @@.player;"Why did you switch my swimsuit?"@@
+
+They look at each other briefly, and then one of them speaks up. @@.male;"We thought it would be funny."@@
+
+@@.male;"Yeah. You look, well..."@@ he trails off, looking at his friend.
+
+<<if $femScore>=18>>@@.male;"You look like a chick, man."@@<<else>>@@.male;"You're looking kind of girly, man."@@<</if>>
+
+@@.male;"And you've got boobs now."@@
+
+@@.female;"You're such a pig!"@@
+
+@@.thought;It's nice to have someone stick up for me like that. She's right. They //are// being pigs.@@
+
+The girl who defended you continues, @@.female;"Stop talking about her, I mean him, like that!"@@
+
+You stare at her. @@.thought;She called me a her. And she was defending me like I was some girl.@@
+
+The guys noticed her slip too. When they finish laughing, one of them turns to you and says, @@.male;"I'm sorry. We were going to put your trunks back after class ended."@@
+
+<<if visited("Gym Onepiece Regular")>>@@.player;"Then why didn't you?"@@
+
+@@.male;"Well, uh..."@@
+
+@@.player;"What?"@@ you snap.
+
+@@.male;"You looked like you were enjoying it."@@
+
+@@.player;"Enjoying what? Wearing a girls swimsuit?"@@ you ask indignantly.
+
+@@.female;"You //did// look more comfortable."@@
+
+@@.male;"Yeah! When you were wearing your trunks, you had to hang onto them every time you dove! Was the one-piece really that bad?"@@
+
+[[Insist that you hated it|Lunch Friends OnePiece Hate]]
+[[Admit that it wasn't that bad|Lunch Friends OnePiece Like]]<<else>>@@.player;"You were going to?"@@ you ask. @@.player;"Did you change your mind or something?"@@
+
+@@.male;"Uh, yeah,"@@ he admits. @@.male;"It looked like you were enjoying it."@@
+
+@@.player;"Enjoying what? Wearing a girls swimsuit?"@@ you ask indignantly.
+
+@@.female;"You //did// look more comfortable."@@
+
+@@.male;"Come on. You had to hold onto your trunks every time you dove! Are you really going to tell us to put them back?"@@
+
+[[Ask him to put your trunks back|Lunch Friends OnePiece Hate]]
+[[Admit that the one-piece is more comfortable|Lunch Friends OnePiece Like]]<</if>>
+
+::Lunch Friends OnePiece Hate
+<<if visited("Gym OnePiece Regular")>>@@.player;"Yes! I hated it!"@@ you exclaim.<<else>>@@.player;"Yes, I want my trunks back!"@@ you exclaim.<</if>> @@.player;"I don't like the swimsuit you gave me. Everyone was staring at me, and laughing!"@@
+
+@@.female;"What about the swimsuit?"@@
+
+@@.player;"I just told you."@@
+
+@@.female;"No, I mean how did it feel?"@@
+
+@@.player;"That was..."@@ You were about to say that it wasn't that bad, but you look at all the peeople staring at you and think better of it. @@.player;"I didn't like it,"@@ you say, though it's not as convincing as you'd hoped.
+
+@@.male;"I don't get how you fit into it. It's not built for guys."@@
+
+@@.thought;Why wouldn't it...oh. He means that if I had a dick, it wouldn't fit.@@
+
+@@.player;"Yeah, that's what I mean. It's so uncomfortable."@@ You turn to the guys who took your trunks. @@.player;"Can I have my old swim trunks back?"@@
+
+@@.male;"You can."@@ @@.thought;Great!@@ @@.male;"If you can find them."@@
+
+You sigh. @@.thought;They could be anywhere. And he's not going to help me.@@ You know that means you're not getting your old trunks back.
+
+<<link "Go to gym" $currentPassage>><<set $team.respect to $team.respect+2>><<set $player.submission to $player.submission-1>><</link>>
+
+::Lunch Friends OnePiece Like
+<<if visited("Gym OnePiece Regular")>>@@.player;"It was, well, actually...it wasn't that bad."@@<<else>>@@.player;"Well, I guess it was more comfortable."@@<</if>>
+
+The guys snicker. @@.male;"What about your dick?"@@
+
+@@.player;"What about it?"@@
+
+@@.male;"How did it fit? I didn't see an outline or anything."@@
+
+@@.male;"Of course you'd be looking at that!"@@
+
+@@.player;"Oh. It, uh, it didn't show, I guess. And why //were// you looking anyway?"@@ you ask, trying to change the subject.
+
+It doesn't work. @@.female;"What about everyone else? They were all laughing at you. Didn't that bother you?"@@
+
+@@.player;"Yeah, it bothered me! But..."@@ you pause, trying to gather your thoughts. When people laughed at you, you felt embarrassed and self-conscious. But that's not all. When they were looking at you and not laughing, you felt something else. @@.player;"It was bad when I came out. But after the class started and everyone got used to it, well..."@@
+
+@@.male;"You liked everyone looking at you?"@@
+
+@@.player;"Well, uh, I guess so. It was nice. But it was also comfortable. Like you said, I had to hang onto my trunks every time I dove. And now, I don't have to worry about that."@@
+
+@@.male;"So you don't want us to put them back."@@
+
+@@.player;"I didn't say that! But, uh, I guess I like the one-piece more."@@
+
+@@.male;"Good. Because we weren't going to."@@
+
+@@.player;"Why did you even ask then?"@@ you ask, laughing.
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-2>><<set $player.masculinity to $player.masculinity-1>><</link>>
+
+::Lunch Friends Period
+@@.female;"I thought you'd be off your period by now,"@@ the girl's friend is saying to her.
+
+@@.female;"Me too! I can't wait for this to be over with. I'm bleeding everywhere, and I have to change..."@@
+
+@@.male;"Do we really have to hear this shit?"@@ a guy interrupts her.
+
+Ordinarily, you would agree with him. You're just trying to eat your lunch, and listening to girls talking about bleeding out would make you lose your appetite. But now, you feel a sense of kinship with the girl. You're both going through the same thing, and you know now how difficult periods are.
+
+[[Defend her|Lunch Friends Period Defend]]
+[[Wait until he's done and then give her advice|Lunch Friends Period Advice]]
+
+::Lunch Friends Period Defend
+@@.player;"Hey, why don't you shut up?"@@ you ask, uncharacteristically raising your voice. The girl looks at you, surprised at your outburst.
+
+@@.player;"Periods are no joke,"@@ you continue. @@.player;"Just because you don't get them doesn't mean you have to tell people who do to shut up."@@
+
+@@.male;"Oh, sure,"@@ he says, scoffing. @@.male;"What do you know about periods, anyway? You don't get them either."@@
+
+@@.player;"You're wr...right about that,"@@ you say, noticing that the guy, both girls, and a couple other people at the table are now looking at you. @@.player;"But that doesn't mean I have to be insensitive like you."@@
+
+@@.male;"Yeah, whatever,"@@ he says, getting up. @@.male;"I'll just go to another sear, where I don't have to hear this girly talk."@@ He sits down next to some of the other people on the team.
+
+@@.female;"Thanks <<print $player.firstname>>,"@@ the girl says. @@.female;"It's nice that there's one guy who understands."@@
+
+@@.female;"Yeah, you're like her knight in shining armor,"@@ her friend giggles.
+
+@@.thought;Good thing I defended her@@ you think with a smile.
+
+@@.female;"Yeah! You're totally one of the girls!"@@
+
+@@.thought;Oh.@@
+
+The girls continue their talk about their periods, occasionally glancing over at you to make sure you're okay with it. You desperately want to interject with your own experrience, but you know that would be a bad idea, especially after that comment about you being one of the girls.
+
+@@.thought;I'm glad I stood up for them though. That guy was being mean. And it was nice being included in their talk, even though I couldn't say anything. It'd be nice to be able to talk with @@<<if $player.masculinity<0>>@@.thought;other @@<</if>>@@.thought;girls about my period without needing to answer a lot of questions. The guys are ignoring me though.@@
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-5>><<set $player.masculinity to $player.masculinity-1>><<set $player.confidence to $player.confidence+3>><</link>>
+
+::Lunch Friends Period Advice
+@@.female;"If you don't like it, go sit somewhere else."@@
+
+@@.male;"Fine. I'll go do that,"@@ he says, getting up and sitting down next to the football players.
+
+@@.player;"I'm sorry about him,"@@ you say to her after he's gone.
+
+@@.female;"Thanks. This period really sucks and I just need to vent."@@
+
+@@.player;"Yeah, periods are rough. You should eat some ice cream and chocolate. Or maybe chocolate ice cream. And then make sure that you have lots of tampons and..."@@ You trail off, suddenly aware that both women are staring at you with an incredulous look on their faces. @@.player;"What?"@@
+
+@@.female;"What do you know about periods?"@@
+
+@@.player;"Uh, well, I guess I don't,"@@ you say, knowing that you can't tell them that you're on your period right now.
+
+@@.female;"Are you mansplaining periods to us?"@@
+
+@@.female;"We've been having them for years. So don't try telling us what it's like."@@
+
+You turn your attention back to your food, trying not to look at anyone. @@.thought;I was just trying to be helpful. It'd be nice to be able to talk with @@<<if $player.masculinity<0>>@@.thought;other @@<</if>>@@.thought;girls about my period without needing to answer a lot of questions. But I guess they have a point. I've just had one period. I'm not an expert.@@
+
+<<link "The bell rings" $currentPassage>><<set $team.respect to $team.respect-1>><<set $player.confidence to $player.confidence-1>><</link>>
+
+::Lunch Friends Silent
+You decide not to speak up, and the conversation drifts somewhere else. You're not really feeling like you're part of the popular group anymore, and the thought of jumping into their conversation makes you nervous. @@.thought;Especially if I have to talk about the changes I've been having.@@
+
+<<link "Go to gym" $currentPassage>><</link>>
+<<set $player.confidence to $player.confidence-1>>
+<<set $team.respect to $team.respect-1>>
+
+::Lunch Friends UpcomingGame
+@@.player;"Hey,"@@ you say, sitting down with all of your friends. It used to felt so natural to hang out with all the other popular people. Now, though, it feels weird. <<if visited("LunchWitchPicker")>visited("LunchFriendsPicker")>>You've been hanging out much more with <<print $qb.firstname>> and <<print $witch.firstname>>.
+
+@@.male;"You're sitting with us now? I thought we weren't cool enough for you."@@
+
+@@.player;"It's not like that!"@@ @@.thought;The problem is that I'm not cool enough for them@@ you think. @@.player;"Can't I have other friends."@@
+
+@@.male;"Sure, but <<print $witch.firstname>>? She's a witch, you know."@@
+
+@@.thought;Boy, do I know.@@
+
+@@.female;"Don't mind him. Come sit with us, <<print $player.firstname>>."@@<<else>>Even though you're still hanging out with them, you don't have much to talk about anymore.<</if>>
+
+@@.male;"Are you ready for the game?"@@ someone else asks you.
+
+<<if $playerStarter>>@@.player;"Not really,"@@ you say. @@.player;"I'm nervous."@@
+
+@@.female;"You'll do fine."@@
+
+@@.player;"I don't know. @@<<if $opponent is "Bear Valley" or $opponent is "Spring Gardens">>@@.player;I just feel so much pressure."@@
+
+@@.male;"They're a shit team."@@
+
+@@.player;"Exactly. If I lose to them, then everyone's going to laugh at me."@@ You look around, suddenly aware that you're sharing your fears with the people who you're worried about laughing at you.
+
+@@.female;"We wouldn't laugh at you."@@
+
+@@.male;"I'd only laugh at you if you did something really embarrassing, like miss a wide-open receiver by a mile."@@
+
+@@.thought;That's exactly what I'm worried about.@@
+
+@@.female;"Ted!"@@
+
+@@.male;"What? I'm just being honest!"@@<<else>>@@.player;We're going to be playing a good team, and I don't know if I can do it."@@
+
+@@.male;"You're a good quarterback though. Or, uh, you used to be."@@
+
+@@.male;"Yeah, what happened, <<print $player.firstname>>?"@@
+
+@@.thought;Uh oh.@@
+
+@@.player;"I, uh, got injured, and ever since then it's felt weird to throw."@@
+
+@@.male;"Maybe you should take a game off? If you get injured, we'll be stuck with <<print $qb.firstname>>."@@
+
+The others laugh at this, and you feel anger bubbling up inside of you. These people don't even know <<print $qb.firstname>>, and they're talking shit about him.
+
+@@.player;"Can we not talk about <<print $qb.firstname>>."@@
+
+@@.male;"Why not? You used to?"@@
+
+@@.thought;That's a good point. If I didn't get to know <<print $qb.firstname>> thanks to this curse, would I still be making fun of him?@@<</if>>
+
+Try as you might, you're unable to convince your friends to go easy on <<print $qb.firstname>>.
+
+<<link "Go to gym" $currentPassage>><</link>><<else>>@@.player;"I'm just a backup,"@@ you say. @@.player;"You should be asking <<print $qb.firstname>>."@@
+
+@@.male;"He's not sitting at this table."@@
+
+@@.female;"Yeah, why not? He's the quarterback. He should be sitting with us."@@
+
+@@.male;"Let's go get him."@@
+
+@@.player;"I can do it."@@
+
+@@.male;"Okay. But, uh, don't invite <<print $witch.firstname>>. She scares me."@@
+
+@@.thought;If you only knew.@@
+
+<<link "Go get $qb.firstname" "Lunch Friends UpcomingGame QB">><</link>><</if>>
+
+::Lunch Friends UpcomingGame QB
+@@.player;"Hey, <<print $qb.firstname>>,"@@ you say. @@.player;"Do you want to come sit with us?"@@ you ask, indicating the popular table.
+
+@@.qb;"Uh, sure. Are you sure they want me though?"@@
+
+@@.player;"Yeah. They asked me to get you."@@
+
+@@.qb;"Okay,"@@ he says, standing up. <<print $witch.firstname>> stands up too.
+
+@@.player;"Uh..."@@ you begin, feeling awkward. @@.player;"I was only asked to get <<print $qb.firstname>>."@@
+
+@@.witch;"Are you serious?"@@
+
+@@.player;"It wasn't my call,"@@ you say quickly.
+
+@@.witch;"Fine."@@
+
+You feel bad, but you know that it would only be worse if you made <<print $witch.firstname>> talk to the people who mock her. You and <<print $qb.firstname>> walk over to the popular table.
+
+@@.male;"Hey, <<print $qb.firstname>>!"@@ one of the guys says when <<print $qb.firstname>> sits down.
+
+<<if visited()<2>>@@.qb;"Hey. I don't know your names,"@@ <<print $qb.firstname>> says.
+
+Everyone introduces themselves to <<print $qb.firstname>>.<<else>>@@.qb;"Hey again,"@@ <<print $qb.firstname>> says.<</if>>
+
+@@.male;"So you're ready for the game?"@@
+
+@@.qb;"I don't know. I'm a little nervous."@@
+
+@@.female;"You'll do fine."@@
+
+<<if $opponent is "Bear Valley" or $opponent is "Spring Gardens">>@@.male;"Don't worry, you're playing a shit team."@@
+
+@@.qb;"I am?"@@
+
+@@.male;"Yeah. Wait, don't you know our schedule?"@@<<else>>@@.male;"I'm not sure. We're playing a good team."@@
+
+@@.qb;"Oh,"@@ he says, shrinking back into his chair.
+
+@@.female;"Ted! Why would you say that?"@@
+
+@@.male;"He needs to be prepared. Wait, don't you know our schedule?"@@<</if>>
+
+@@.qb;"I was always on the bench, so I never had to. I never got to play until this season."@@
+
+@@.female;"How is it? Now that you're the quarterback?"@@
+
+@@.male;"Yeah, you must be getting swarmed by girls."@@
+
+He laughs. @@.qb;"That hasn't happened."@@
+
+<<if $player.homosexuality>=5>>@@.thought;It hasn't? That's great.@@<<else>>@@.thought;Really? It can't be long until girls start going after him.@@<</if>>
+
+For the rest of the lunch period, the guys talk with <<print $qb.firstname>> about football. You feel a little bit left out, and you occasionally glance over to <<print $witch.firstname>> to see how she's doing.
+
+<<link "Go to gym" $currentPassage>><</link>>
+
+::Lunch Friends DiscussGame
+<<if $playerStarter>><<if $stallionsscore>$defensescore>>@@.player;"Can you believe we won?"@@ you ask excitedly.
+
+@@.male;"Yeah,"@@ one of the guys says, giving you a strange look. @@.male;"We're a good team."@@
+
+@@.player;"You know what I mean."@@
+
+@@.male;"Yeah. That was a really fun game!"@@ someone else says.
+
+@@.male;"Fuck off. You didn't even play."@@
+
+@@.male;"So? I can't enjoy the game if I'm not in it? Besides, <<print $player.firstname>> did really well."@@
+
+@@.player;"Well, I don't know if I'd say I did really did,"@@ you say, thinking back to how good you used to be.
+
+@@.female;"He's just being modest."@@
+
+@@.male;"Yeah. You're a beast, man."@@
+
+You smile at the praise. It feels like things are back to normal: you're hanging out with your friends, and you're a successful quarterback again. You talk football with the <<if $player.masculinity>=50>>other <</if>>guys for the rest of the lunch period. You forgot how much you missed their company.<<set $friends.relationship to $friends.relationship+3>><<else>>@@.player;"I can't believe we lost,"@@ you say, sitting down.
+
+@@.male;"I know. I can't either."@@
+
+@@.male;"I thought we were supposed to be such a good team."@@
+
+@@.male;"Fuck off. You didn't even play."@@
+
+@@.male;"Am I wrong, though? I thought we could win the championship after <<print $player.firstname>> beat Bear Valley. What happened?"@@
+
+You shift uncomfortably in your chair, hoping that they don't look at you.
+
+@@.male;"Hey, <<print $player.firstname>>, what's going on with you?"@@
+
+@@.thought;Fuck.@@
+
+@@.male;"Well, I don't know. You're supposed to be this great quarterback, right? But you could barely throw the football."@@
+
+@@.female;"Leave him alone. Anyone can have a bad game."@@
+
+@@.male;"It was more than just a bad game though. He looked like a totally different quarterback."@@
+
+@@.player;"Can we talk about something else?"@@
+
+<<if $player.feminine is 0>>@@.male;"He even looks different too."@@
+
+@@.thought;Oh no.@@
+
+@@.male;"You solved it. He's a doppelganger from Bear Valley to ruin our season."@@
+
+@@.male;"I'm serious though."@@
+
+Luckily, the joke derailed the conversation, and you don't have to answer questions about your changing looks and ability.
+
+@@.thought;This could be dangerous. If I'm the quarterback, it's going to be easier to notice that I'm different. @@<<showQBSkill true>><<showQBSkill false>><<if $player.qbSkill>=$qb.qbSkill>>@@.thought;But if <<print $qb.firstname>> becomes the quarterback, we'll be even worse. I don't know what to do. Should I train <<print $qb.firstname>> so he can lead us to the title?@@<<else>>@@.thought;<<print $qb.firstname>> is a better quarterback than me anyway.@@<</if>><<else>>@@.male;"What happened? You used to be able to take a joke."@@
+
+@@.player;"I'm just tired, that's all."@@
+
+@@.female;"Leave him alone."@@<</if>><</if>>
+
+<<link "Go to gym" $currentPassage>><</link>><<else>><<if $stallionsscore>$defensescore>>@@.player;"I can't believe we won,"@@ you say when you sit down.
+
+@@.male;"I know. I didn't think <<print $qb.firstname>> had it in him."@@
+
+@@.male;"Why don't we invite him?"@@
+
+<<if visited("Lunch Friends UpcomingGame QB")>>@@.player;"Hey, <<print $qb.firstname>>!"@@ you call over to the other table.
+
+He turns, sees that you're calling him, and sits down at your table.<<else>>@@.player;"I'll go invite him."@@
+
+@@.male;"Just don't invite <<print $witch.firstname>>. She scares me."@@
+
+You walk over to <<print $qb.firstname>>'s table. He's happy enough to go sit with you and your friends, though it's a little awkward when you have to explain to <<print $witch.firstname>> that the invitation is only for <<print $qb.firstname>>.<</if>>
+
+@@.male;"Good job on friday!"@@
+
+@@.qb;"Thanks! I was nervous, but we pulled it off."@@
+
+@@.male;"I know. It was awesome!"@@
+
+@@.male;"Hey, how did you get so good all of a sudden? In the first game, you sucked. No offense."@@
+
+@@.qb;"No, I know. I did. <<print $player.firstname>>'s really helped me."@@
+
+@@.female;"<<print $player.firstname>>?"@@
+
+@@.male;"So you're helping him take your job?"@@ one of the guys laughs. @@.male;"If my backup was practicing so he could take my job, I'd tell him good luck, but there's no way I would help him out."@@
+
+@@.male;"I might."@@
+
+@@.male;"Yeah, but you're a star lineman. It's not so easy for us regular starters."@@
+
+@@.female;"Wasn't <<print $player.firstname>> a star though?"@@
+
+@@.thought;I was happy when they weren't talking about me.@@
+
+Luckily, <<print $qb.firstname>> saves you by talking about a big play he made in the last game. The <<if $player.masculinity>=50>>other <</if>> guys comment on how awesome it was, and pretty soon everyone has forgotten about you.
+
+@@.thought;That was too close.@@
+
+<<link "Go to gym" $currentPassage>><</link>><<else>>@@.player;"I can't believe we lost,"@@ you say, sitting down.
+
+@@.male;"What do you expect when <<print $qb.firstname>>'s our quarterback?"@@
+
+@@.male;"Yeah, I don't get why <<print $player.firstname>> isn't our quarterback. Ever since <<print $qb.firstname>> took over, our season went downhill."@@
+
+@@.thought;It went downhill before that.@@ You look over to <<print $qb.firstname>>, who is talking with his sister. You don't think he can hear your table talk about him.
+
+[[Defend him|Lunch Friends DiscussGame QBDefend]]
+[[Let them talk shit about him|Lunch Friends DiscussGame DoNothing]]<</if>><</if>>
+
+::Lunch Friends DiscussGame QBDefend
+@@.player;"He's doing his best,"@@ you say.
+
+@@.male;"I believe that,"@@ someone says.
+
+Everyone laughs. @@.thought;Okay, that was pretty funny.@@
+
+@@.player;"He hasn't played before this season,"@@ you say, continuing on. @@.player;"How would you feel if you were a backup for years, and then suddenly you're the starting quarterback?"@@
+
+@@.male;"It would be weird. But I would be practicing every day."@@
+
+@@.thought;I guess I could practice with him more.@@
+
+@@.player;"And how about, if you struggle, everyone is going to make fun of you?"@@
+
+@@.male;"I wouldn't like that."@@
+
+@@.player;"Exactly."@@
+
+@@.male;"That's not really fair though,"@@ someone else says. @@.male;"We're just having fun. And we talk shit about each other too."@@
+
+@@.player;"Yeah, but you talk shit to each other's face,"@@ you say. @@.player;"You're talking shit about <<print $qb.firstname>> behind his back."@@
+
+@@.male;"Why do you care about him so much? Is he your boyfriend?"@@ That gets a few laughs<<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>, and you blush<</if>>.
+
+@@.male;"Yeah. You used to make fun of him before. What changed?"@@
+
+<<if visited("QB Practice 6 Caught")>>@@.female;"What happened is that they started fucking!"@@
+
+@@.male;"What?"@@
+
+@@.female;"You didn't know?"@@
+
+You shrink back into your chair as she relays the details to him. You've never been so embarrassed. Okay, you're not sure about that. There have been plenty of other embarrassing moments for you this year.
+
+@@.male;"Okay, okay,"@@ the guy you were arguing with says, after he's finished learning about your sex life. @@.male;"I'll be nicer to him."@@
+
+You nod. @@.thought;That's good. But after what I had to go through, I don't think it was worth it.@@<<set $team.respect to $team.respect-2>><<else>>@@.player;"Uh, I guess I've been spending more time with him when we practice together. And he's pretty cool."@@
+
+@@.male;"Sure, he's cool but that doesn't make him a good quarterback."@@
+
+@@.player;"Can you at least not make fun of him?"@@
+
+@@.male;"Fine."@@<</if>>
+
+<<link "Go to gym class" $currentPassage>><<set $team.qbRespect to $team.qbRespect+5>><</link>>
+
+::Lunch Friends DiscussGame DoNothing
+@@.thought;I don't want to get into this. It'll just end up with me getting embarrassed.@@
+
+@@.male;"I thought he had gotten better,"@@ one of the <<if $player.masculinity>=50>>other <</if>>guys says.
+
+@@.male;"Sure. Now instead of throwing to the other team, his throws won't hit anyone at all."@@
+
+@@.male;"I don't get why <<print $player.firstname>> can't be the quarterback."@@
+
+@@.thought;Fuck, I'm getting dragged into this anyway.@@
+
+@@.male;"Some kind of injury. Isn't that right, <<print $player.firstname>>?"@@
+
+@@.player;"What? Oh, yeah."@@
+
+@@.male;"I hope you heal up, man. With that injury, <<print $qb.firstname>> might be a better quarterback than you."@@
+
+@@.male;"Really?"@@
+
+@@.male;"Yeah. Did you see him during practice? He threw like a girl."@@
+
+@@.thought;Hey!@@
+
+@@.female;"Hey!"@@
+
+@@.male;"Sorry. But girls just can't throw the football like guys can."@@
+
+@@.female;"Yes we can!"@@
+
+The two of them argue about the athletic abilities of guys and girls, while you look over at <<print $qb.firstname>>'s table. At least they're not talking shit about him anymore, but you know that their opinion of him didn't change.
+
+<<link "Go to gym" $currentPassage>><<set $team.qbRespect to $team.qbRespect-1>><</link>>
+
+::Lunch Friends KickedOff
+As you're walking with your lunch to the table, you can see all of your friends talking, but they fall silent when you sit down.
+
+@@.thought;They were talking about me@@ you realize. @@.thought;Probably about me getting kicked off the team.@@
+
+You start eating your lunch, trying to ignore the eerie silence.
+
+[[Confront them|Lunch Friends KickedOff Discuss]]
+[[Be quiet|Lunch Friends KickedOff Silent]]
+
+::Lunch Friends KickedOff Discuss
+@@.thought;I might as well get it over with.@@
+
+@@.player;"Were you talking about me?"@@ you ask, trying not to sound too confrontational. You can't tell how well it worked.
+
+@@.female;"Well, we heard some rumors..."@@
+
+@@.male;"Yeah. About you not being on the team anymore."@@
+
+@@.player;"Uh, yeah,"@@ you say, already regretting your decision. @@.player;"I'm not."@@
+
+@@.female;"Well, what happened?"@@
+
+You sigh. You'd rather not get into it, but now that the conversation's started, it doesn't show any signs of stopping. @@.player;"We were practicing, and I couldn't throw as far as Coach wanted. So he kicked me off."@@
+
+@@.female;"That's it? That's terrible!"@@
+
+@@.female;"I never liked Coach."@@
+
+One of the football players who sits at your table, Luke, comes back from the bathroom. @@.male;"Are you guys talking about <<print $player.firstname>>?"@@
+
+@@.player;"Yeah,"@@ you answer, hoping that Luke doesn't give any more details.
+
+@@.male;"What happened@@<<if $player.feminine<18>>@@.male;, bro@@<</if>>@@.male;? How come you can't throw all of a sudden?"@@
+
+@@.female;"He can't throw? I thought <<print $player.firstname>>'s throws were just slightly worse than Coach wanted?"@@
+
+@@.thought;Kill me now.@@
+
+Luke laughs. @@.male;"No. <<print $player.firstname>> couldn't throw the ball at all."@@ He mimes throwing the football and having it immediately fall to the ground.
+
+She turns to you, a look of surprise on her face. At that moment, the bell rings.
+
+<<link "Go to gym before she can ask any more questions" $currentPassage>><</link>>
+
+::Lunch Friends KickedOff Silent
+@@.thought;If we start talking about it, I'll just have to admit that I suck at football now. I'd rather have an awkward lunch than an embarrassing one.@@
+
+Your friends seem to feel the same way, because they eat their lunch in silence too.
+
+You finish your lunch, and turn your attention to the clock on the wall. @@.thought;I never thought I'd be counting the minutes until I have to go back to school.@@
+
+<<link "Finally, the bell rings" $currentPassage>><<set $team.respect to $team.respect-2>><</link>>
+
+::Lunch QB Morgan
+You sit down with <<print $witch.firstname>> and <<print $qb.firstname>>, trying not to look at <<print $qb.firstname>>. You've felt uncomfortable around him ever since Morgan had that talk with you during gym class.
+
+@@.thought;I can't believe she thinks she's going to date him. He never even told me about her!@@
+
+@@.witch;"Is something wrong, <<print $player.firstname>>? You're kind of quiet today."@@
+
+[[Cautiously ask him if he knows Morgan|Lunch QB Morgan Question]]
+[[Say that you can't believe he's going to date Morgan|Lunch QB Morgan Angry]]
+<<set $player.crush to $qb.firstname>>
+
+::Lunch QB Morgan Question
+@@.player;"Uh, <<print $qb.firstname>>, do you know Morgan?"@@ you ask cautiously.
+
+@@.qb;"Yeah. She's in my history class. We've been working on a project together."@@
+
+@@.thought;Is that it? Is he lying to me now?@@
+
+@@.player;"She's a pretty girl,"@@ you say, looking at him for his reaction.
+
+@@.qb;"Yeah, I guess so,"@@ he says, eating his food without any change in tone.
+
+@@.thought;It doesn't sound like he's trying to hide anything from me. Is he just oblivious?@@
+
+<<print $witch.firstname>> cuts in. @@.witch;"What <<print $player.firstname>> is trying to say is, do you like her?"@@
+
+@@.qb;"Morgan? No, there's nothing going on between us."@@
+
+@@.thought;Why are guys so oblivious?@@
+
+@@.player;"Why? Do you think she likes me?"@@
+
+You and <<print $witch.firstname>> both glare at him, and he stands up suddenly. @@.qb;"I'm going to get more food,"@@ he says, hurrying away from the table.
+
+<<link "$witch.firstname turns to you" "Lunch QB Morgan Witch">><</link>>
+
+::Lunch QB Morgan Angry
+You can't hold it in anymore. Morgan wants to date <<print $qb.firstname>>, and he's not even talking to you about it!
+
+@@.player;"I can't believe you're going to date Morgan!"@@ you say louder than you intended. A couple people turn their heads.
+
+@@.qb;"Morgan? I'm not dating her,"@@ he says, sounding confused.
+
+@@.player;"Yeah, but you will. She's been all over you. When were you going to tell me about her, huh?"@@
+
+@@.qb;"Uh, no. She's in my history class and we're working on a project together, but that's it. I promise."@@
+
+@@.player;"That's not all she wants! How come you can't see that?"@@ you ask. Even more heads have turned in your direction, but you don't care.
+
+@@.witch;"Guys are oblivious,"@@ <<print $witch.firstname>> cuts in.
+
+@@.player;"Yeah! I know!"@@
+
+@@.qb;"Uh, I'm going to get some more food,"@@ <<print $qb.firstname>> says, awkwardly shuffling away.
+
+As soon as he walks away, everyone turns back to their own table, leaving you alone with <<print $witch.firstname>>.
+
+[[She turns to you|Lunch QB Morgan Witch]]
+
+::Lunch QB Morgan Witch
+<<if $player.feminine>=20>><<set $femAppearance to 5>><<elseif $player.feminine>=16>><<set $femAppearance to 4>><<elseif $player.feminine>=12>><<set $femAppearance to 3>><<elseif $player.feminine>=8>><<set $femAppearance to 2>><<elseif $player.feminine>=4>><<set $femAppearance to 1>><<else>><<set $femAppearance to 0>><</if>><<if $player.isWearingPanties is true>><<set $femAppearance to $femAppearance+1>><</if>><<if $player.bra is not null>><<set $femAppearance to $femAppearance+1>><</if>><<if $player.pants.female is true>><<set $femAppearance to $femAppearance+2>><</if>><<if $player.legs is 3>><<set $femAppearance to $femAppearance+1>><</if>>@@.witch;"I'm sorry about my brother. He's been in your shadow his first three years at Pinewood. Now, @@<<if $playerStarter>>@@.witch;he's suddenly more popular@@<<else>>@@.witch;he's the starting quarterback@@<</if>>@@.witch;, and he already has two @@<<if $femAppearance>=7>>@@.witch;girls@@<<else>>@@.witch;people@@<</if>> @@.witch;interested in him."@@
+
+<<if $player.feminine>=16>>@@.player;"I didn't think of it like that. It explains...wait, did you just say two girls?"@@
+
+@@.witch;"I meant two people,"@@ she says quickly. @@.witch;"Sorry."@@
+
+@@.player;"Uh, okay,"@@ you say, feeling disturbed about her slip but also strangely happy. If <<print $witch.firstname>> sees you as a girl, then maybe <<print $qb.firstname>> does too, and you actually have a shot with him.<<else>>@@.player;"I didn't think of it like that. It explains a lot, actually."@@<</if>>
+
+@@.witch;"So, what are you going to do?"@@
+
+@@.player;"About what?"@@
+
+@@.witch;"My brother! Are you just going to let him date Morgan?"@@
+
+@@.player;"No, but...hold on. Why are you helping me with this?"@@ you ask suspiciously.
+
+@@.witch;"Don't flatter yourself. It has nothing to do with you. I just hate that stuck-up bitch."@@
+
+@@.player;"Thank you!"@@ you say, smiling for the first time this period. @@.player;"I can't believe I never noticed how big of a bitch she was before."@@
+
+@@.witch;"That doesn't surprise me,"@@ she says with a smile.
+
+@@.player;"What do you mean by that?"@@
+
+@@.witch;"Just that she turns on the charm around the popular guys."@@ She lowers her voice. <<if $femAppearance>=9>>@@.witch;"If I can give you some advice, <<print $qb.firstname>> is straight, so..."@@
+
+@@.player;"What?"@@
+
+@@.witch;"Forget it."@@
+
+@@.player;"No. I want to hear it."@@
+
+@@.witch;"I was going to tell you that you should focus on looking girly so he'd go for you but you've got that covered."@@
+
+The old you would have yelled at her for calling you girly, but it's obvious from her expression that she meant it as a compliment.
+
+@@.player;"Thanks,"@@ you say instead.<<elseif $femAppearance>=7>>@@.witch;"If I can give you some advice, <<print $qb.firstname>> is straight, so you're going to want to look girly. You're doing a good job, but there's still some things you can improve on."@@
+
+The old you would have yelled at her for calling you girly, but instead you just look at her, trying to figure out if it was a compliment or not, and whether it would even be a compliment to be called girly.
+
+@@.player;"Uh, what do I need to improve on?"@@ you finally ask.<<elseif $femAppearance>=1>>@@.witch;"If I can give you some advice, <<print $qb.firstname>> is straight, so you're going to want to look girly. You're getting there, but you have a long way to go before you can compete with Morgan."@@
+
+The old you would have yelled at her for implying that you're not completely manly, but it doesn't sound like she was putting you down for that. If anything, she was putting you down for not being girly enough. That thought makes you confused.
+
+@@.player;"Uh, what do I need to improve on?"@@ you finally ask.<<else>>@@.witch;"If I can give you some advice, <<print $qb.firstname>> is straight, so he only goes for girls. Which means you don't have a chance."@@
+
+You smile at that reminder that you're a man. @@.thought;If she's right, and she's his sister so she probably is...that means I don't have a chance with <<print $qb.firstname>> unless I act girlier. But is it worth it? I don't want to be a girl!@@<</if>>
+
+The bell rings, interrupting you.
+
+<<link "There's a lot on your mind as you go to gym" $currentPassage>><</link>>
+
+::Lunch Friends Morgan
+You sit down with your friends, who are in the middle of a conversation. You try to listen, but your heart isn't in it. You don't feel popular anymore, and you're pretty sure that you're only still at this table because nobody has had the heart to ask you to leave.
+
+@@.female;"David still hasn't asked you out yet?"@@ a girl asks.
+
+@@.female;"No,"@@ her friend sighs. @@.female;"I don't know what I need to do. I flirt with him, I hint that I like him, and nothing happens! I don't even know if he likes me!"@@
+
+You turn your head towards them, now paying attention to their conversation. @@.thought;What //are// you supposed to do if you like a guy but don't know if he likes you?@@
+
+@@.female;"Of course he likes you! You're pretty, and a cheerleader. He probably just doesn't know that you like him."@@
+
+@@.female;"Guys are so dumb sometimes."@@
+
+@@.female;"You're telling me. Listen, here's what you need to do."@@
+
+You lean forward.
+
+@@.female;"You need to...oh, @@<<if $player.feminine>=18>>@@.female;that sissy@@<<elseif $player.feminine>=10>>@@.female;that girly boy@@<<else>>@@.female;<<print $player.firstname>>@@<</if>> @@.female;is watching us."@@
+
+You quickly look away as the girls break into laughter.
+
+@@.female;"What's the matter? Want to get advice?"@@
+
+@@.player;"I've got to, uh, go to the bathroom,"@@ you say quickly, standing up.
+
+[[Hurry away|Lunch Friends Morgan Overhear]]
+<<set $player.crush to $qb.firstname>>
+
+::Lunch Friends Morgan Overhear
+You walk out of the lunchroom quickly without looking back. You don't want to know if anyone is laughing or even looking at you. When you turn the corner, you slump against the wall and catch your breath.
+
+@@.thought;I'm just overreacting. They'll have forgotten all about it by the time I go back.@@
+
+You wait a little longer, and then walk back into the lunchroom, trying to act like nothing happened.
+
+The two girls are still at your table, and they're talking to a third girl who you can't see. Slowly, you approach the table. @@.thought;I wonder what they're talking about. Are they talking about me?@@
+
+@@.female;"That's so exciting! He's so cute!"@@ one of the girls says to the third girl.
+
+@@.female;"Yeah! And I think he's going to ask me out!"@@ she giggles.
+
+@@.female;"Then you'll be dating @@<<if $playerStarter>>@@.female;a @@<<else>>@@.female;the star@@<</if>> @@.female;quarterback!"@@
+
+Suddenly, you realize who the third girl is. She's Morgan.
+
+@@.female;"What about <<print $player.firstname>>? You know he likes <<print $qb.firstname>> too, right?"@@
+
+@@.thought;How does everyone know about that already?@@
+
+@@.female;"Yeah, but I'm not worried about <<print $player.firstname>>,"@@ she says, flipping her hair. @@.female;"Obviously, <<print $qb.firstname>> is going to go for a real girl."@@
+
+Just then, the bell rings, and you scurry out of the lunchroom before either of them can realize that you were listening in again.
+
+<<if $player.masculinity<=0>>@@.thought;A real girl? I have a pussy, just like her. But...I know what she means. What if she's right?@@<<elseif $player.masculinity<50>>@@.thought;A real girl? Well, I don't feel like a guy, but I don't really feel like a guy either. What am I?@@<<else>>@@.thought;What did she mean by that comment about a real girl? I'm still a guy, even if I have a pussy. Right?@@<</if>>
+
+<<link "Go to gym" $currentPassage>><</link>>

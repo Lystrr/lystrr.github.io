@@ -1,0 +1,34 @@
+::Homework
+You don't really //want// to do your homework, but you don't feel like doing anything else. And with it now unlikely that you'll get a scholarship, you really need to improve your grades.
+
+You stare at the textbook. It looks like gibberish, but you're patient. With enough time, it starts to make sense. You reach the end, and fill out the worksheet your teacher assigned. You probably didn't get everything correct, but you did well enough.
+
+Idly, you scratch your crotch. It's wetter than you expected. Spending all this time studying must have made you hornier.
+
+<<link "Do something else" $currentPassage>><</link>>
+<<increaseArousal 5>>
+<<set $player.academics to $player.academics+2>>
+
+::Bio Study
+You can't believe you almost forgot about your biology test. Then again, you've had way more important things to deal with lately.
+
+Sighing, you pull your heavy textbook out from your backpack. You always hated studying, and you hate it even more now. Each second that ticks by is a second you could be using to find out more about the curse.
+
+@@.thought;I can't fail...especially since I probably won't be getting a scholarship anymore.@@
+
+You read through Chapter 3 of your biology textbook, trying to remember all the parts of a cell. You don't feel too confident, but it's starting to make a little bit of sense.
+
+@@.thought;That was boring. I'm hungry.@@
+
+<<link "Continue" $currentPassage>><<increaseArousal 3>><</link>>
+
+::Homework4
+Classes are done, and the other students rush past you. You stand still, trying to figure out what to do next. <<if visited("Lunch Day 4 Witch Excuse")>>You did tell <<print $qb.firstname>> that you were going to do homework. It was just an excuse but you //do// have homework that you need to do<<else>>@@.thought;I might as well do my homework.@@<</if>> Since your scholarship is off the table, you figure you should probably start trying in school. Homework's boring but it's better than helping your competition or exploring your vagina.
+
+@@.thought;My vagina.@@ Just thinking it sounds weird.
+
+It's a good thing you decided to do your homework, since you have more of it than you expected. By the time you're done, a couple hours have gone by. You spend a little while just lying in your bed, enjoying the feeling of a nice rest.
+
+@@.male;"Come on,"@@ Marco says, popping into your room sometime later. @@.male;"We've gotta get to practice."@@
+
+<<link "Head to practice" $currentPassage>><<set $player.academics to $player.academics+1>><</link>>

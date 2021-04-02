@@ -1,0 +1,1927 @@
+::Halloween Shuttle
+You nod and quickly walk out of the cafeteria, leaving your half-finished lunch behind. For a moment, you consider whether you should just skip halloween this year, but you quickly put it out of your mind.
+
+@@.thought;No way. This party is the biggest social event since homecoming. //Everyone// goes.@@ <<if $playerStarter>>Even with your new anatomy, you're still the starting quarterback. Everyone's going to expect you to show up.<<else>>You suddenly realize that you're not popular anymore. @@.thought;No, I'm still going to go@@ you tell yourself. @@.thought;It's way more fun than sitting in my room.@@<</if>>
+
+You make it to the shuttle and climb inside. It's pretty empty, besides a couple of girls who are already wearing costumes. They're talking amongst themselves though, and aren't paying you any attention at all.
+
+Eventually, the shuttle arrives in town, and you step out.
+
+<<if $player.feminine>=18>>[[Find the costume shop|Halloween Shop Girl Intro]]<<else>>[[Find the costume shop|Halloween Shop Boy Intro]]<</if>>
+
+::Halloween Shop Girl Intro
+Your heart sinks as you step into the store and take stock of the empty aisles. @@.thought;It's my fault for forgetting. I guess I'll just have to skip halloween and spend the night doing homework. Or I could show up at the party without a costume, but that's lame.@@
+
+@@.male;"Do you need any help?"@@ the shopkeeper asks. You jump. You hadn't even noticed him.
+
+@@.player;"Do you have any costumes left?"@@ you ask hopefully.
+
+@@.male;"Yeah, we've got a couple,"@@ he says and starts walking deeper into the store. Not sure what else to do, you follow him. @@.male;"You kids cleaned my store out. I've never seen anything like it,"@@ he tells you as he walks. @@.male;"We've just got these three,"@@ he says, pointing to a shelf.
+
+[[Look at the costumes|Halloween Shop Girl Costumes]]
+
+::Halloween Shop Girl Costumes
+Your heart sinks as you look at the costumes he's pointing towards. @@.thought;Seriously? These are the only costumes he has? Why does this keep happening?@@
+
+The three costumes are a princess, a cheerleader, and Wonder Woman. All of them are clearly women's costumes.
+
+[[Look at the princess costume|Halloween Shop Girl Princess]]
+[[Look at the cheerleader costume|Halloween Shop Girl Cheerleader]]
+[[Look at the Wonder Woman costume|Halloween Shop Girl WonderWoman]]
+
+[[Ask if he's sure they don't have any guys costumes|Halloween Shop Girl BoysOptions]]
+
+::Halloween Shop Girl Princess
+The princess dress is pink and frilly. It's completed by a sparkly tiara.
+
+@@.thought;This is so girly. I wouldn't be caught dead in this outfit. But it's only for one night, and nobody would recognize me...I can't believe I'm seriously thinking about this.@@
+
+[[Buy the princess costume|Halloween Shop Girl Buy][$costume to "princess"]]
+
+[[Look at the cheerleader costume|Halloween Shop Girl Cheerleader]]
+[[Look at the Wonder Woman costume|Halloween Shop Girl WonderWoman]]<<if not visited("Halloween Shop Girl BoysOptions") and not visited("Halloween Shop Boy GirlsOptions")>>
+[[Ask if he's sure they don't have any guys costumes|Halloween Shop Girl BoysOptions]]<</if>>
+
+::Halloween Shop Girl Cheerleader
+The outfit looks like a slightly sluttier version of what the Pinewood cheerleaders wear. There's a short white skirt with purple trim, a pink top, and pom poms.
+
+@@.thought;The cheerleaders at our games always look cute in their outfits, and there are probably @@<<if $player.masculinity<=0>>@@.thought;other@@<</if>> @@.thought;girls who are wearing the same thing, so maybe I could blend in? But the skirt is so short. I don't know.@@
+
+[[Buy the cheerleader costume|Halloween Shop Girl Buy][$costume to "cheerleader"]]
+
+[[Look at the princess costume|Halloween Shop Girl Princess]]
+[[Look at the Wonder Woman costume|Halloween Shop Girl WonderWoman]]<<if not visited("Halloween Shop Girl BoysOptions") and not visited("Halloween Shop Boy GirlsOptions")>>
+[[Ask if he's sure they don't have any guys costumes|Halloween Shop Girl BoysOptions]]<</if>>
+
+::Halloween Shop Girl WonderWoman
+The outfit looks exactly like you'd expect a Wonder Woman costume to look, although you didn't expect it to be so...skimpy. It just has short shorts, a red strapless top, and a headband.
+
+@@.thought;At least I'll look like more of a badass than a princess or a cheerleader. But walking around the party, dressed like that? Couldn't it have more material?@@
+
+[[Buy the Wonder Woman costume|Halloween Shop Girl Buy][$costume to "Wonder Woman"]]
+
+[[Look at the princess costume|Halloween Shop Girl Princess]]
+[[Look at the cheerleader costume|Halloween Shop Girl Cheerleader]]<<if not visited("Halloween Shop Girl BoysOptions") and not visited("Halloween Shop Boy GirlsOptions")>>
+[[Ask if he's sure they don't have any guys costumes|Halloween Shop Girl BoysOptions]]<</if>>
+
+::Halloween Shop Girl BoysOptions
+@@.player;"Are you sure you don't have any costumes for guys?"@@ you ask the shopkeeper desperately. <<if not visited("alloween Shop Girl Princess") and not visited("alloween Shop Girl Cheerleader") and not visited("alloween Shop Girl WonderWoman")>>You don't even need to see any of these costumes to know that they'll be skimpy and girly.<<else>>You can't imagine yourself wearing any of the costumes. The thought of parading around the party dressed like that while guys check you out makes you shudder.<</if>>
+
+@@.male;"Yeah, we have a couple left."@@
+
+@@.player;"And you didn't tell me? Why have we been wasting our time with the girls costumes?"@@
+
+He looks confused, and it hits you. @@.thought;Oh my god! He thinks I'm a girl!@@
+
+@@.male;"You want to...buy a boys costume?"@@ he asks you hesitantly.
+
+Your mind races, trying to think through your options. @@.thought;I could insist that I want to get a guys costume. It'll be awkward, but better to have an awkward moment with this shopkeeper then go to a party with lots of people dressed like a girl. But Halloween is just one night and it could be kind of fun to wear one of these costumes and not get judged for it. This could be my one night to dress like a guy though.@@
+
+[[Tell him you want a guys costume|Halloween Shop Girl ChooseBoy]]
+[[Tell him you want a girls costume|Halloween Shop Girl ChooseGirl]]
+
+::Halloween Shop Girl ChooseBoy
+@@.thought;This could be my one night to wear guys clothes. I'm not going to waste it, and I'm not going to wear any of those embarrassing outfits.@@
+
+@@.player;"I'd like a boys costume,"@@ you tell him, trying to sound confident.
+
+He looks confused, but he clearly doesn't want to lose a customer, and he leads you through the store in silence.
+
+@@.male;"We've only got two costumes left,"@@ he says. @@.male;"A football player and Thor."@@
+
+[[Look at the football player costume|Halloween Shop Boy Football]]
+[[Look at the Thor costume|Halloween Shop Boy Thor]]
+<<set $player.submission to $player.submission-3>>
+
+::Halloween Shop Girl ChooseGirl
+You take a deep breath. <<if $player.ownsGirlPants>>@@.thought;I've worn girl clothes to school before, but those looked just like guys pants. I could never show up to class dressed like a girl. This is my one chance to wear a cute outfit around the other kids.@@<<elseif $player.hasWornPanties>>@@.thought;I've worn panties, but those are hidden. I could never show up to class dressed like a girl. This is my one chance to wear a cute outfit around the other kids.@@<<else>>@@.thought;I've never worn girl clothes, not even panties. I could never show up to class dressed like a girl. This is my one chance to wear a cute outfit around the other kids.@@<</if>> For a brief moment, you wonder why that idea is even appealing, but it's too late. You've already made up your mind.
+
+@@.player;"I'm sorry,"@@ you say. @@.player;"I want to keep looking at these costumes."@@
+
+The shopkeeper nods.
+
+[[Look at the princess costume|Halloween Shop Girl Princess]]
+[[Look at the cheerleader costume|Halloween Shop Girl Cheerleader]]
+[[Look at the Wonder Woman costume|Halloween Shop Girl WonderWoman]]
+<<set $player.submission to $player.submission-1>>
+
+::Halloween Shop Boy Intro
+Your heart sinks as you step into the store and take stock of the empty aisles. @@.thought;It's my fault for forgetting. I guess I'll just have to skip halloween and spend the night doing homework. Or I could show up at the party without a costume, but that's lame.@@
+
+@@.male;"Do you need any help?"@@ the shopkeeper asks. You jump. You hadn't even noticed him.
+
+@@.player;"Do you have any costumes left?"@@ you ask hopefully.
+
+@@.male;"Yeah, we've got a couple,"@@ he says and starts walking deeper into the store. Not sure what else to do, you follow him. @@.male;"You kids cleaned my store out. I've never seen anything like it,"@@ he tells you as he walks. @@.male;"We've just got these two,"@@ he says, pointing to a shelf.
+
+[[Look at the costumes|Halloween Shop Boy Costumes]]
+
+::Halloween Shop Boy Costumes
+You break out into a smile as you look at the costumes. They're both pretty cool costumes, and, most importantly, they're both for boys.
+
+[[Look at the football player costume|Halloween Shop Boy Football]]
+[[Look at the Thor costume|Halloween Shop Boy Thor]]
+
+::Halloween Shop Boy Football
+<<if $player.skillCurse is 4>>@@.thought;Oh my god, this looks just like my old uniform!@@
+
+You take a closer look at it: polyester pants, pads, and a jersey.
+
+@@.thought;I could be a football player again.@@<<else>>This outfit looks pretty similar to the Stalions uniform you currently have: polyester pants, pads, and a jersey.
+
+@@.thought;It's not really a costume, but it's manly.@@<</if>>
+
+[[Buy the football player costume|Halloween Shop Boy Buy][$costume to "football player"]]
+[[Look at the Thor costume|Halloween Shop Boy Thor]]<<if not visited("Halloween Shop Girl BoysOptions") and not visited("Halloween Shop Boy GirlsOptions")>>
+
+As you consider buying the football player costume, you look around the empty store. @@.thought;I wonder if he has any girls costumes. I know I shouldn't be thinking about this, but nobody's going to know who I am and it could be kind of fun.@@
+
+[[Ask if he has any costumes|Halloween Shop Boy GirlsOptions]]<</if>>
+
+::Halloween Shop Boy Thor
+The Thor costume has black cargo pants, a black jacket, a red cape, and, of course, a hammer.
+
+@@.thought;I'd look like a badass.@@
+
+[[Buy the Thor costume|Halloween Shop Boy Buy][$costume to "Thor"]]
+[[Look at the football player costume|Halloween Shop Boy Football]]<<if not visited("Halloween Shop Girl BoysOptions") and not visited("Halloween Shop Boy GirlsOptions")>>
+
+As you consider buying the Thor costume, you look around the empty store. @@.thought;I wonder if he has any girls costumes. I know I shouldn't be thinking about this, but nobody's going to know who I am and it could be kind of fun.@@
+
+[[Ask if he has any costumes|Halloween Shop Boy GirlsOptions]]<</if>>
+
+::Halloween Shop Boy GirlsOptions
+@@.player;"I was wondering...uh...do you have any costumes for girls?"@@ you ask the shopkeeper nervously.
+
+@@.male;"Yeah, we have a couple left. Why? Do you want one?"@@
+
+You look at the ground, unable to believe that you're actually considering this. @@.thought;What am I doing?@@ <<if $player.wearsOnepiece>>@@.thought;I already wear a girls swimming suit to gym. This is my one chance to hang out with my friends while I'm dressed like a guy.@@<<elseif $player.ownsGirlPants>>@@.thought;I already wear women's slacks to school. This is my one chance to hang out with my friends while I'm dressed like a guy.@@<<elseif $player.hasWornPanties>>@@.thought;I've worn panties, but this is on a whole different level. This is my one chance to hang out with my friends while I'm dressed completely like a guy.@@<<else>>@@.thought;I've never even worn panties, but I'm seriously considering seeing my friends dressed up like a girl?@@<</if>>
+
+But that's also what intrigues you. For just one night, you can be anyone, and no one will know. This is your one chance to wear something girly without anyone giving you shit for it.
+
+[[Tell him you want a guys costume|Halloween Shop Boy ChooseBoy]]
+[[Tell him you want a girls costume|Halloween Shop Boy ChooseGirl]]
+
+::Halloween Shop Boy ChooseBoy
+@@.thought;This could be my one night to wear guys clothes. I'm not going to waste it. I want to enjoy hanging out with my friends, and not be worried about them catching me dressed like a girl.@@
+
+@@.player;"I'm sorry,"@@ you say. @@.player;"I want to keep looking at these costumes."@@
+
+The shopkeeper nods.
+
+[[Look at the football player costume|Halloween Shop Boy Football]]
+[[Look at the Thor costume|Halloween Shop Boy Thor]]
+<<set $player.submission to $player.submission-2>>
+
+::Halloween Shop Boy ChooseGirl
+@@.player;"I...uh...can you show me the girls costumes?"@@ you ask, unable to meet his eyes. You can't believe that you're telling a stranger that you want to crossdress!
+
+He looks confused, but he clearly doesn't want to lose a customer, and he leads you through the store in silence.
+
+@@.male;"We've got three costumes left,"@@ he says. @@.male;"Take your pick."@@
+
+[[Look at the princess costume|Halloween Shop Girl Princess]]
+[[Look at the cheerleader costume|Halloween Shop Girl Cheerleader]]
+[[Look at the Wonder Woman costume|Halloween Shop Girl WonderWoman]]
+<<set $player.submission to $player.submission+1>>
+
+::Halloween Shop Girl Buy
+@@.player;"I'd like the <<print $costume>> costume,"@@ you tell the shopkeeper.
+
+He nods, and rings you up. Moments later, you're leaving the shop, the <<print $costume>> costume tucked under your arm.
+
+@@.thought;I can't believe I did that@@ you think as you walk towards the shuttle. @@.thought;I bought a girls costume!@@
+
+And then it hits you. @@.thought;I'm going to be dressed like a girl for the halloween party.@@ You glance over as a group of guys walk past you. @@.thought;I'd better look convincing, or the whole school is going to know that I wore a <<print $costume>> costume to the party!@@
+
+You see the shuttle up ahead, but you stop in your tracks. @@.thought;I guess I need to wear makeup. I can't believe I'm really thinking about this. But if I don't, everyone's going to know it's me.@@
+
+[[Go to the mall|Mall]]
+<<link "Go back to your dorm and skip the party" $currentPassage>><</link>>
+<<set $boughtGirlsCostume to true>>\
+<<set $player.masculinity to $player.masculinity-1>>\
+<<if $costume is "princess">><<set $costumeShirt = {
+	"properName": "Princess Dress",
+	"informalName": "princess dress",
+	"images": ["images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_large_breasts.png", "images/clothes/onepieces/princess_dress_large_breasts.png"],
+	"school": false,
+	"football": false,
+	"casual": false,
+	"workout": false,
+	"dress": true,
+	"female": true,
+	"onepiece": true,
+    "costume": true
+}>><<set $clothesInventory.shirt.push($costumeShirt)>><<set $clothesInventory.pants.push($costumeShirt)>><<elseif $costume is "cheerleader">><<set $costumeShirt = {
+	"properName": "Cheerleaders top",
+	"informalName": "cheerleaders top",
+	"images": ["images/clothes/shirts/cheerleader_small_breasts.png", "images/clothes/shirts/cheerleader_small_breasts.png", "images/clothes/shirts/cheerleader_large_breasts.png", "images/clothes/shirts/cheerleader_large_breasts.png"],
+	"school": false,
+	"football": false,
+	"casual": false,
+	"workout": false,
+	"dress": false,
+	"female": true,
+	"onepiece": false,
+    "costume": true
+}>><<set $costumePants = {
+	"properName": "Cheerleading Skirt",
+    "informalName": "cheerleading skirt",
+    "manImage": "images/clothes/skirts/cheerleader.png",
+    "womanImage": "images/clothes/skirts/cheerleader.png",
+    "school": false,
+    "football": false,
+    "casual": true,
+    "workout": true,
+    "dress": false,
+    "torn": false,
+    "female": true,
+    "costume": true
+}>><<set $clothesInventory.shirt.push($costumeShirt)>><<set $clothesInventory.pants.push($costumePants)>><<else>><<set $costumeShirt = {
+	"properName": "Wonder Woman costume",
+	"informalName": "wonder woman costume",
+	"images": ["images/clothes/onepieces/wonder_woman_costume.png", "images/clothes/onepieces/wonder_woman_costume.png", "images/clothes/onepieces/wonder_woman_costume.png", "images/clothes/onepieces/wonder_woman_costume.png"],
+	"school": false,
+	"football": false,
+	"casual": false,
+	"workout": false,
+	"dress": false,
+	"female": true,
+	"onepiece": true,
+    "costume": true
+}>><<set $clothesInventory.shirt.push($costumeShirt)>><<set $clothesInventory.pants.push($costumeShirt)>><</if>>\
+
+::Halloween Shop Boy Buy
+@@.player;"I'd like the <<print $costume>> costume,"@@ you tell the shopkeeper.
+
+He nods, and rings you up. Moments later, you're leaving the shop, the <<print $costume>> costume tucked under your arm.
+
+@@.thought;I'm so glad they had the <<print $costume>> costume in stock!@@ you think excitedly. @@.thought;I finally feel like a guy again!@@
+
+You take the shuttle back to campus and check the time. Buying the costume took longer than you thought. You're only going to have time to eat dinner before the party.
+
+[[Go to the cafeteria|DinnerHalloween]]<<set $boughtGirlsCostume to false>><<set $player.masculinity to $player.masculinity+3>>\
+<<if $costume is "football player">><<set $costumeShirt = {
+    "properName": "Stallions Jersey and Pads",
+	"informalName": "jersey",
+	"images": ["images/clothes/shirts_under/football_jersey.png", "images/clothes/shirts_under/football_jersey_small_breasts.png", "images/clothes/shirts_under/football_jersey_large_breasts.png", "images/clothes/shirts_under/football_jersey_large_breasts.png"],
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"dress": false,
+    "female": false,
+    "onepiece": false,
+    "costume": true
+}>><<set $costumePants to $footballPants>><<set $costumeShoes to $footballShoes>><<if $player.skillCurse is 4>><<set $clothesInventory.shirt.push($costumeShirt)>><<set $clothesInventory.pants.push($costumePants)>><<set $clothesInventory.shoes.push($costumeShoes)>><</if>><<else>><<set $costumeShirt = {
+    "properName": "Thor Costume",
+	"informalName": "thor costume",
+	"images": ["images/clothes/onepieces/thor_costume.png", "images/clothes/onepieces/thor_costume.png", "images/clothes/onepieces/thor_costume.png", "images/clothes/onepieces/thor_costume.png"],
+	"school": false,
+	"football": false,
+	"casual": false,
+	"workout": false,
+	"dress": false,
+	"female": false,
+	"onepiece": true,
+    "costume": true
+}>><<set $clothesInventory.shirt.push($costumeShirt)>><<set $clothesInventory.pants.push($costumeShirt)>><</if>>\
+
+::Halloween Makeup Shuttle
+You walk out of the mall, carrying the makeup kit in one hand and your costume in the other.<<if $player.armStrength<50>> @@.thought;This is surprisingly heavy. Or am I just weak?@@<</if>>
+
+It's a relief when you get back to the shuttle, and get to sit down. Checking that there's no one sitting behind you, you pull out your headphones and start watching a makeup tutorial, but you're forced to give it up after a little while.
+
+@@.thought;She talks so fast. There's no way I can keep up if my makeup isn't in front of me.@@
+
+[[The shuttle pulls to a stop, and you walk to your dorm|Halloween Makeup Start]]
+
+::Halloween Makeup Start
+Once you're finally back in your dorm, you drop your bags to the floor with a sigh. @@.thought;I can't believe I'm doing this. But Marco and Patrick are out. I won't have a better time to put on makeup than now.@@
+
+You open up the makeup kit, and immediately get overwhelmed by all the different items in front of you. <<if $qb.dateHelp>>@@.thought;Should I call <<print $qb.dateHelp>>?@@<<else>>@@.thought;Should I call <<print $girlfriend.firstname>>?@@<</if>> @@.thought;I don't know what I'm doing, but I kind of want to learn it for myself...just in case I need to do it again.@@
+
+You shake your head. @@.thought;Why would I want to put on makeup again?@@ <<if $qb.date and $qb.date is $player.firstname>>@@.thought;Oh, right, if I go out with <<print $qb.firstname>> again.@@<<else>>Still, the thought lingers in your mind.<</if>>
+
+<<if $qb.dateHelp>><<link "Call $qb.dateHelp" "Halloween Makeup Call">><</link>><<else>><<link "Call $girlfriend.firstname" "Halloween Makeup Call">><</link>><</if>>
+[[Do it by yourself|Halloween Makeup Self]]
+
+::Halloween Makeup Call
+<<if $qb.dateHelp and $qb.dateHelp is $witch.firstname>>You pick up your phone and call <<print $witch.firstname>>. @@.thought;Come on, pick up.@@
+
+She doesn't pick up, and the call goes to voicemail. Moments later, you get a text.
+
+@@.witch;sorry, i'm busy getting ready for the party@@
+
+@@.player;me too!@@ you text back. @@.player;could i come over and we could do our makeup together?@@
+
+@@.witch;sure@@
+
+Your smile is wiped off your face when you read her next text. @@.witch;if you want to do your makeup in front of the witchcraft club@@
+
+Your heart drops. @@.player;no thanks@@<<else>>You pick up your phone and call <<print $girlfriend.firstname>>. @@.thought;Come on, pick up.@@
+
+@@.girlfriend;"Hi, <<print $player.firstname>>,"@@ <<print $girlfriend.firstname>> answers. @@.girlfriend;"I'm a little busy now, but what's up?"@@ You hear a couple of girls talking on her end of the phone, and it's a little difficult to hear her.
+
+@@.player;"I was just, uh, wondering if we could do our makeup for the party."@@
+
+@@.girlfriend;"That's what I'm doing now!"@@
+
+@@.player;"Great! Should I come over?"@@
+
+@@.girlfriend;"Wait, no. I'm doing my makeup with a couple of my friends."@@
+
+You picture standing in front of the mirror in the girls bathroom, doing your makeup in front of all the popular girls. @@.player;"No thanks."@@
+
+@@.girlfriend;"Yeah, that's what I thought,"@@ she says laughing. @@.girlfriend;"I'll see you at the party."@@<</if>>
+
+@@.thought;Guess I need to do it myself.@@
+
+[[Do it by yourself|Halloween Makeup Self]]
+
+::Halloween Makeup Self
+<<getTfProgress face>><<if not visited("Halloween Makeup Call")>>@@.thought;I should do it myself. @@<<if $player.hasWornMakeup>>@@.thought;I don't want to rely on her doing it for me forever.@@<</if>>
+
+<</if>>You find a makeup mirror in the kit and set it up on your desk. Your <<if $tempTfValue>=3>>feminine<<elseif $tempTfValue>=1>>effeminate<<else>>masculine<</if>> face stares back at you.
+
+You restart the video you were watching on the shuttle. @@.female;"Okay, girls. First, we'll start with foundation,"@@ she says, holding it up and applying it.
+
+You pause the video before she can go on, and root around in the kit for the foundation. Finally finding it, you apply it to your face the way the girl did.
+
+You resume the video and watch as she puts concealer under her eyes. @@.thought;Where's the concealer? Oh, here it is.@@
+
+You dutifully follow the video, adding powder, bronzer and blush to your face, and primer, eyeliner, and mascara to your eyes. @@.thought;So many products!@@ Finally, you apply lipstick.
+
+[[Look at the finished result|Halloween Makeup StartOver]]
+
+::Halloween Makeup StartOver
+You look in the mirror, and recoil. @@.thought;That's definitely not how it's supposed to look. I look like a clown! What did I do wrong? I thought I followed her instructions exactly.@@
+
+There's no way you can go to the party looking like this. @@.thought;I've got to wash it off.@@
+
+You stick your head out of the door. Seeing that there's no one around, you run to the bathroom, wash your face, and run back.
+
+This time, you're more careful, making sure that you're doing the exact same thing as the girl in the video. @@.thought;This is exhausting. How do girls do this every day?@@
+
+You finally finish, and check your work in the mirror. You're not an expert by any means, but this time, the makeup actually looks good. @@.thought;I look kind of...cute@@ you think with a smile.
+
+<<if $player.hasWornMakeup>>[[Put on your costume|Halloween Costume Wear]]<<else>><<link "You feel yourself transforming" "TfPassagePicker">><<set $tfRecoverPassage to "Halloween Costume Wear">><<set $tfReason to "makeup">><<set $tfCircumstances.location to "boys bathroom">><<set $tfCircumstances.locationType to "bathroom">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><</if>>
+<<set $player.isWearingMakeup to true>>\
+<<set $player.hasWornMakeup to true>>\
+
+::Halloween Costume Wear
+@@.thought;Okay, I've just got to put on my costume@@ you think, taking it out of the bag. <<if $boughtGirlsCostume>>You recoil once again when you realize how <<if $costume is "princess">>feminine it<<else>>little material there<</if>> is.
+
+@@.thought;I don't have a choice@@ you think, checking your phone. @@.thought;I spent so much time putting on makeup. I'm not going to let it go to waste.@@<<elseif $player.masculinity>=50>>As you stand up, you're reminded of the emptiness between your legs. This costume feels wrong for you, but you quickly put that thought out of your mind.
+
+@@.thought;I don't care that I have a pussy. I'm a guy.@@<<else>>As you stand up, you're reminded once again of the emptiness between your legs.
+
+@@.thought;What am I doing?@@ you think. @@.thought;This is a manly costume. Is it right for me to be wearing it?@@
+
+You check your phone. @@.thought;I don't have enough time to get a new costume.@@<<if visited("Halloween Shop Girl Princess") or visited("Halloween Shop Girl Cheerleader") or visited("Halloween Shop Girl WonderWoman")>> @@.thought;Besides, those costumes are so girly.@@<</if>> @@.thought;I'm stuck wearing this.@@<</if>>
+
+<<if $boughtGirlsCostume>><<set $changeEndPassage to "Halloween Costume Transform">><<else>><<set $changeEndPassage to "Halloween Costume Finished">><</if>><<set $expectedOutfit to "costume">><<display Clothes>>
+
+::Halloween Costume Transform
+You stand there in shock, unable to believe that you just willingly put on a <<print $costume>> costume.
+
+After a couple of moments, you realize that you still haven't moved. You try to command your body to walk out the door, but your body doesn't obey.
+
+<<link "Then you start to feel cold, and you know what's coming" "TfPassagePicker">><<set $tfRecoverPassage to "Halloween Costume Finished">><<set $tfReason to "costume">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>>
+
+::Halloween Costume Finished
+<<if $boughtGirlsCostume>>Once you've recovered from your transformation, you<<else>>You<</if>> take a deep breath, and walk towards the door. <<if $boughtGirlsCostume>>@@.thought;I can't believe that I'm about to do this.@@ You look down at yourself and shake your head. You can't believe that these feminine clothes are on //your// body.
+
+@@.thought;Nobody's going to know who I am. I just need to get out of this dorm, and everyone will think I'm just another girl.@@
+
+You open your door and step into the hallway. You know that you need to get out of this dorm and onto the quad, where you'll be just another student, but you're curious about how you look.
+
+@@.thought;I could just go to the bathroom and look in the mirror real quick. If it's obvious who I am or something's out of place, I should know, right?@@<<else>>@@.thought;Okay, it's time to feel like a man again!@@
+
+As you walk towards the stairs, you pass by the bathroom. @@.thought;Should I go in? I could see how I look in the mirror.@@<</if>>
+
+[[Go to the bathroom|Halloween Dorm Bathroom]]
+[[Leave the dorm|Halloween Outside]]
+<<passTime>>
+
+::Halloween Dorm Bathroom
+<<getTfProgress height>>You look one more time at the staircase, and then hurry to the bathroom. @@.thought;I'm about to go outside dressed like this. I need to know if I look okay.@@
+
+Once you're in the bathroom, you look in the mirror.
+
+<<if $boughtGirlsCostume>>You don't know why you were so nervous. Everything looks fine, if you count looking like a cute girl as everything being fine. You brush a strand of hair out of your eyes and get ready to leave.
+
+@@.male;"You're in the wrong bathroom, girl."@@
+
+You squeak and spin around. A large black football player has just walked in. <<if $tempTfValue<2>>You know that he's not //that// much taller than you, but you still feel small and weak next to him.<<else>>With your new height, he positively towers over you.<</if>>
+
+Before he can say anything, you run out of the bathroom, with one thought in your mind.
+
+@@.thought;He thought I was a girl.@@<<elseif $player.feminine>=18>>You frown. The masculinity of your costume doesn't really fit with the rest of you. You look like a girl cosplaying as <<if $costume is not "Thor">>a <</if>><<print $costume>>.
+
+@@.thought;I should be fine, right? Everyone will know it's me, only this time I'm wearing guy clothes.@@<<else>>You nod at your reflection. This is the manliest you've felt in a while.<<if $player.feminine>=14>> You still look a little androgynous, but with your <<print $costume>> costume, everyone will assume you're a guy.<<else>>
+
+@@.thought;I look good. Time to go.@@<</if>><</if>>
+
+[[Leave the dorm|Halloween Outside]]
+
+::Halloween Outside
+@@.thought;I look fine. I just need to get out of here.@@
+
+You leave the dorm and walk onto the quad, heading towards the off campus housing. There are several <<if $player.masculinity<=0>>other <</if>>girls walking in front of you who are wearing <<if $boughtGirlsCostume>>similarly skimpy outfits.
+
+@@.thought;That makes me feel better. I felt ridiculous wearing this, but I'm actually not out of place.@@<<else>>skimpy outfits. @@.thought;I'm glad I didn't @@<<if visited("Halloween Shop Girl ChooseGirl") or visited("Halloween Shop Boy ChooseGirl")>>@@.thought;choose one of the costumes@@<<else>>@@.thought;look@@<</if>> @@.thought;in the girls section. I don't want to be dressed like that.@@<</if>>
+
+After walking for a little while, you make it to the house. You have to admit, the people who are throwing the party went all out in their decorations. The lawn is scattered with graves, and as you step up to the doorway, a scarecrow turns to face you.
+
+@@.player;"Ahhh!"@@
+
+@@.male;"Sorry, didn't mean to scare you."@@
+
+@@.thought;Wow, I thought he was part of the decorations.@@
+
+@@.player;"This is where the party is?"@@ you ask. It's a ridiculous question. There's obviously a party here, and you can see people dancing in the living room, but you wanted to say something.
+
+@@.male;"Sure is! Go on in, @@<<if $boughtGirlsCostume and $player.feminine>=14>>@@.male;miss."@@<<elseif $boughtGirlsCostume is false and $player.feminine<18>>@@.male;sir."@@<<else>>@@.male;mi...sir."@@<</if>>
+
+@@.player;"Uh, okay,"@@ you say. @@.thought;He @@<<if $boughtGirlsCostume and $player.feminine>=14>>@@.thought;just called me miss!@@<<if $player.homosexuality>=50>> You take another look at him, but you can't tell how cute he is underneath his costume.<</if>><<elseif $boughtGirlsCostume is false and $player.feminine<18>>@@.thought;just called me sir! I've got a good feeling about tonight.@@<<else>>@@.thought;didn't know what to call me. I've got a bad feeling about tonight.@@<</if>>
+
+[[Walk inside|Halloween LivingRoom]]
+<<set $halloweenInteractions to 0>>
+
+::Halloween LivingRoom
+You<<if visited("Halloween LivingRoom")<=1>> must be<<else>>'re back<</if>> in the living room. A playlist of scary songs is blasting throughout the room, and it's hard to hear anything else.
+
+Everybody around you seems to be having a good time, though. There must be two dozen people dancing to the music. Several girls in the Witchcraft Club are sitting around, talking to each other. Even though everyone here is wearing a costume, the witches still look conspicuous.
+
+<<if visited("Halloween LivingRoom Dance")>>[[Dance|Halloween LivingRoom Dance Normal]]<<else>>[[Dance|Halloween LivingRoom Dance]]<</if>><<if visited("Halloween Ryan ThinkOver") and not visited("Halloween Ryan Sex")>>
+[[Tell Ryan you're ready to have sex|Halloween LivingRoom Ryan Sex]]<</if>><<if not visited("Halloween LivingRoom Witch")>>
+[[Talk to the witches|Halloween LivingRoom Witch]]<</if>>
+[[Go into the kitchen and get a drink|Halloween Kitchen]]<<if $halloweenInteractions>=4>>
+[[Call it a night|Halloween Leave Normal]]<</if>>
+
+::Halloween LivingRoom Dance Normal
+<<set $halloweenSong to either("Haunted by Taylor Swift", "Somebody's Watching Me by Rockwell", "Disturbia by Rihanna")>>Feeling a bit more confident than last time, you stride out onto the floor and start dancing. <<print $halloweenSong>> is playing, and you find yourself really getting into it.
+
+You look around and spot a sea of familiar faces. <<if $boughtGirlsCostume>>You can't say hi to them, of course.<<else>>You call out to them, and you think someone answered, but it's difficult for everyone to hear each other over the loud music.<</if>> Still, you're glad that you're not at a party with a bunch of strangers.
+
+As you dance, you forget all about your curse and your worries. Instead of being surrounded by a bunch of kids who have made fun of you, you're surrounded by your peers, and everyone is just having fun dancing.
+
+@@.thought;That was fun! But I'm tired now.@@
+
+[[Look around|Halloween LivingRoom]]
+
+::Halloween LivingRoom Dance
+<<getTfProgress voice>>@@.thought;What the hell? It's halloween, and this is going to be fun.@@
+
+You walk onto the dance floor and look around. Everybody around you is having fun dancing, and nobody is paying attention to you.
+
+The song that's playing comes to an end, and Monster Mash starts playing. @@.thought;This isn't a big deal@@ you think, and start dancing.
+
+<<if $boughtGirlsCostume>>You're painfully aware of all the people around you, and the fact that you're wearing a girls <<print $costume>> costume. But as the song plays on, you let yourself just enjoy the music. Nobody is making a big deal of it. As far as they're concerned, you're just another girl dancing.
+
+@@.thought;This is fun!@@
+
+It's only when the song comes to an end that you realize that a guy dressed like <<if $costume is "Wonder Woman">>Captain America<<elseif $costume is "cheerleader">>a football player<<else>>a knight<</if>> is standing in front of you. @@.thought;Wait, I know him. That's Ryan Callahan, the wide receiver!@@
+
+<<if $tempTfValue>=3>>@@.player;"Hi,"@@ you say nervously. For once, you're glad that you sound like a girl.
+
+<<elseif $tempTfValue is 2>>@@.player;"Hi,"@@ you say nervously. At least you remembered to pitch your voice up so you sounded like a girl.
+
+<<else>>@@.player;"Hi,"@@ you say nervously. As soon as the word leaves your mouth, your eyes widen. @@.thought;I sound like a guy!@@
+
+Luckily, he seems just drunk enough to not notice. <</if>>@@.male;"Do you want to dance?"@@
+
+You look him over. <<if $player.homosexuality>=50>>You never realized it, but he's pretty cute<<else>>You never thought about him that way, but he's not ugly at least<</if>>, and he's wearing a matching costume.
+
+<<if ($qb.date and $qb.date is $player.firstname) or $player.crush is $qb.firstname>>@@.thought;What about <<print $qb.firstname>>?@@ you think. @@.thought;It'll be fine, right? @@<<if $qb.date and $qb.date is $player.firstname>>@@.thought;We went on a date, but we're not official or anything.@@<<else>>@@.thought;It's not like we're dating.@@<</if>> @@.thought;And it's just one dance.@@<<elseif $player.relationship is $girlfriend.firstname>>@@.thought;What about <<print $girlfriend.firstname>>? She won't like me dancing with @@<<if $player.masculinity>=50>>@@.thought;another guy@@<<else>>@@.thought;Ryan@@<</if>>@@.thought;. But it's just one dance.@@<<else>>@@.thought;I //could// dance with him, but I'd be dancing with a guy. Do I want to do that?@@<</if>>
+
+[[Yes|Halloween LivingRoom Dance Ryan]]
+[[No|Halloween LivingRoom]]<<else>>You're painfully aware of all the people around you, and anxious about how they perceive you. But as the song plays on, you forget about all that and just enjoy the music. Nobody points you out or makes fun of you. They're enjoying the dance, just like you are.
+
+@@.thought;This is fun!@@
+
+It's only when the song comes to an end that you realize that a girl dressed like <<if $costume is "Thor">>Black Widow<<else>>a cheerleader<</if>> is standing in front of you. @@.thought;I know her. She's on the cheerleading team! What does she want with me?@@
+
+<<if $tempTfValue>=3>>@@.player;"Hi,"@@ you say nervously. Too late, you remember that you sound like a girl.
+
+Luckily, she seems drunk enough not to notice. <<else>>@@.player;"Hi,"@@ you say nervously, grateful that at least you don't sound like a girl.
+
+<</if>>@@.female;"Want to dance?"@@
+
+You look her over. <<if $player.homosexuality>=100>>For some reason, it's difficult to tell how hot she is. @@.thought;I'm still attracted to girls. Right?@@<<else>>She's super hot, and is exactly the kind of girl you would have danced with at a party <<if $player.masculinity>=50>>before you were cursed.<<else>>when you were still a guy.<</if>><</if>>
+
+<<if ($qb.date and $qb.date is $player.firstname) or $player.crush is $qb.firstname>>@@.thought;What about <<print $qb.firstname>>?@@ you think. @@.thought;It'll be fine, right? @@<<if $qb.date and $qb.date is $player.firstname>>@@.thought;We went on a date, but we're not official or anything.@@<<else>>@@.thought;It's not like we're dating.@@<</if>> @@.thought;And it's just one dance.@@<<elseif $player.relationship is $girlfriend.firstname>>@@.thought;What about <<print $girlfriend.firstname>>? She won't like me dancing with @@<<if $player.masculinity>=0>>@@.thought;a girl@@<<else>>@@.thought;another girl@@<</if>>@@.thought;. But it's just one dance.@@<<else>>@@.thought;I can't believe she wants to dance with me!@@<</if>>
+
+[[Yes|Halloween LivingRoom Dance Cheerleader]]
+[[No|Halloween LivingRoom]]<</if>>
+<<set $halloweenInteractions to $halloweenInteractions+1>><<if $halloweenInteractions is 2>><<passTime>><</if>>\
+
+::Halloween LivingRoom Dance Ryan
+You nod. <<if $player.relationship is not "" or ($qb.date and $qb.date is $player.firstname) or $player.crush is $qb.firstname>>@@.thought;There's nothing wrong with one dance. At homecoming, me and <<print $girlfriend.firstname>> danced with other people.@@<<else>>@@.thought;Who cares? It's just dancing.@@<</if>>
+
+Ryan smiles. The next song starts playing, and to your dismay, it's a slow song.
+
+@@.thought;Are you kidding? My first dance with a guy, and it's a slow dance?@@
+
+You automatically put your hands on his waist. He looks at you with a strange expression, and then puts your hands around his neck.
+
+@@.thought;Oh my god, I wasn't thinking. I'm supposed to be a girl!@@
+
+You do your best to follow his movements. <<if $player.masculinity>=25>>Back before all of this started<<else>>Back when you were a guy<</if>>, you would always take the lead on the dance floor. But now, you're supposed to follow his movements. It's a big adjustment and there are a couple of awkward moments, but overall, you do a good job.
+
+@@.thought;This is actually pretty nice.@@
+
+@@.male;"So you go to Pinewood?"@@
+
+@@.player;"Yeah,"@@ you say, not liking where this conversation is going.
+
+@@.male;"I can't believe I've never seen you before."@@
+
+[[Laugh it off|Halloween LivingRoom Dance Ryan Laugh]]
+[[Say that you're nerdy, and he hadn't run into you|Halloween LivingRoom Dance Ryan Nerd]]
+[[Tell him you have to go to the bathroom|Halloween LivingRoom Dance Ryan Excuse]]
+
+::Halloween LivingRoom Dance Ryan Laugh
+@@.player;"Haha,"@@ you say, forcing a laugh. @@.player;"I can't believe I've never seen you either."@@
+
+@@.male;"Well, I'll just look for you at school,"@@ Ryan says, smiling. You can tell that he's trying to be smooth, but you're just scared imagining him trying to find the girl from the party. @@.thought;There's no way he'll be able to tell @@<<if $player.masculinity<=0>>@@.thought;she's@@<<else>>@@.thought;it's@@<</if>> @@.thought;me. Besides, he's been drinking.@@
+
+Luckily, he drops it after that. The song comes to an end, and he looks at you.
+
+@@.male;"Do you want another dance?"@@
+
+[[Say yes|Halloween LivingRoom Dance Ryan Copy]]
+[[Say no|Halloween LivingRoom Dance Ryan Decline]]
+
+::Halloween LivingRoom Dance Ryan Nerd
+@@.player;"Oh, I'm kind of...a nerd. I just got dressed up for tonight,"@@ you say, hoping that you sounded convincing.
+
+<<if $player.feminine>=14>>@@.male;"I never would have guessed,"@@ he says. @@.male;"You look just like any of the hot girls here."@@
+
+You're not sure how to react that. On one hand, he just said you looked like a girl. On the other hand, he just called you hot. @@.thought;Is he flirting with me? Wait, does he think that the other girls are hot?@@<<else>>@@.male;"Yeah, I can see that,"@@ he says. @@.male;"But I'm glad you made it here."@@
+
+@@.thought;That sounds nice. But did he just call me a nerd?@@<</if>>
+
+You're about to ask him about the football team, but you remember just in time that you're not supposed to know about that. @@.thought;I don't have to make small talk. It's not like I'm going to get into a relationship with him. This is just one dance.@@
+
+Luckily, Ryan is silent for the rest of the dance. The song comes to an end, and he looks at you.
+
+@@.male;"Do you want another dance?"@@
+
+[[Say yes|Halloween LivingRoom Dance Ryan Copy]]
+[[Say no|Halloween LivingRoom Dance Ryan Decline]]
+
+::Halloween LivingRoom Dance Ryan Excuse
+@@.player;"I, uh, I have to go to the bathroom,"@@ you say quickly. Before Ryan can say anything, you scurry out of the living room. You know people were staring at you as you ran away, and that thought makes you feel uncomfortable.
+
+@@.thought;What am I doing? I couldn't even make it through one dance.@@
+
+@@.female;"You okay?"@@ a girl dressed as a vampire asks you.
+
+@@.player;"Yeah,"@@ you say, catching your breath.
+
+@@.female;"I know what you need. You need a drink."@@
+
+[[You realize that she's right|Halloween Kitchen]]
+
+::Halloween LivingRoom Dance Ryan Copy
+@@.thought;I know I said it would be just one dance, but I had fun! And he seems like he likes me.@@
+
+@@.player;"Sure,"@@ you say with a smile.
+
+The next song starts playing. You're relieved that it's a faster song, and you don't have to slow dance again. Unfortunately, you soon realize that you have no idea what you're doing. When you were slow dancing, all you had to do was sway back and forth. You can't even do what you did <<if $player.masculinity>=25>>at homecoming<<else>>when you danced like a guy<</if>>, because now he expects you to dance like a girl.
+
+You look at the couple who's dancing next to you, and do your best to copy the girl's movements. And when Ryan leads, you do your best to follow his movements.
+
+You're able to keep pace with him, but it's exhausting. Unlike the slow dance, you're not having fun. You probably would if you were able to relax, but you're too busy looking around you, keeping an eye on the girl you're mirroring, and making sure you don't step on Ryan's feet.
+
+@@.thought;I'm tired. I'd like to take a break for a little bit, but what if he wants to keep dancing?@@
+
+@@.male;"You're tired. Let's get a drink,"@@ he says when the song stops.
+
+You're surprised with how confident he sounded. @@.thought;He's not just taking the lead on the dance floor@@ you realize.
+
+[[Go to the kitchen with him|Halloween Kitchen Ryan]]
+[[Go back to dancing|Halloween LivingRoom Dance]]
+
+::Halloween LivingRoom Dance Ryan Decline
+@@.player;"No, I'm feeling tired,"@@ you say. @@.player;"I need a rest."@@
+
+@@.male;"Okay,"@@ Ryan says, sounding a little disappointed. But after you've left the dance floor, you see that he's already dancing with <<if $player.masculinity<=0>>another<<else>>a<</if>> girl.
+
+Even though you turned him down, you still feel a little mad at him. @@.thought;So what am I to him? Just another girl?@@
+
+[[Look around|Halloween LivingRoom]]
+
+::Halloween LivingRoom Dance Cheerleader
+You nod. <<if $player.relationship is not "" or ($qb.date and $qb.date is $player.firstname) or $player.crush is $qb.firstname>>@@.thought;There's nothing wrong with one dance. At homecoming, me and <<print $girlfriend.firstname>> danced with other people.@@
+
+<</if>>The cheerleader smiles. The next song starts playing, and you raise your eyebrows when you realize that it's a slow song.
+
+@@.thought;I hope I still remember how to do this.@@
+
+You automatically put your hands on her shoulders. She looks at you with a strange expression, and then puts your hands around her waist.
+
+@@.thought;Oh my god, I wasn't thinking. I'm supposed to be a guy!@@
+
+The two of you dance awkwardly for a little while, before you realize that you're supposed to be leading. @@.thought;This shouldn't be so hard. I just need to remember how I @@<<if $player.masculinity>=25>>@@.thought;used to dance like.@@<<else>>@@.thought;danced when I was a guy.@@<</if>>
+
+You close your eyes, and it comes back to you. Trying to appear confident, you take the lead, and you smile when she begins following your movements.
+
+@@.thought;It worked!@@
+
+@@.female;"So you go to Pinewood?"@@
+
+@@.player;"Yeah,"@@ you say, wondering if she knows who you are.
+
+@@.male;"I can't believe I've never seen you before."@@
+
+@@.thought;Okay, so I guess she doesn't.@@
+
+[[Laugh it off|Halloween LivingRoom Dance Cheerleader Laugh]]
+[[Say that you're nerdy, and she hadn't run into you|Halloween LivingRoom Dance Cheerleader Nerd]]
+[[Tell her who you are|Halloween LivingRoom Dance Cheerleader Truth]]
+
+::Halloween LivingRoom Dance Cheerleader Laugh
+@@.player;"Haha,"@@ you say, forcing a laugh. @@.player;"I can't believe I've never seen you either."@@
+
+@@.female;"Well, I'll just look for you at school,"@@ she says, smiling. You would be happy that a <<if $player.homosexuality>=100>>cute<<else>>hot<</if>> girl is flirting with you, but right now all you can think of is that she won't want to talk to you once she<<if $player.feminine>=14>> realizes<<else>>'s told<</if>> that you're a sissy.
+
+Luckily, she drops it after that. The song comes to an end, and she looks at you.
+
+@@.female;"Do you want another dance?"@@
+
+[[Say yes|Halloween LivingRoom Dance Cheerleader Grind]]
+[[Say no|Halloween LivingRoom Dance Cheerleader Decline]]
+
+::Halloween LivingRoom Dance Cheerleader Nerd
+@@.player;"Oh, I'm kind of...a nerd. I just got dressed up for tonight,"@@ you say, hoping that you sounded convincing.
+
+<<if $player.feminine<=10>>@@.female;"I never would have guessed,"@@ she says. @@.male;"You look just like any one of the hot guys here."@@<<else>>@@.female;"Yeah, I can see that,"@@ she says. @@.female;"But I'm glad you made it here!"@@<</if>>
+
+You grin when you realize that she's flirting with you, but that quickly fades when you realize that she won't want anything to do with you when she<<if $player.feminine>=14>> realizes<<else>>'s told<</if>> that you're a sissy.
+
+@@.thought;But more importantly, I look like a guy. @@<<if $player.feminine<10>>@@.thought;A hot guy!@@<<else>>@@.thought;A nerdy guy, but still, a guy.@@<</if>>
+
+You start playing out the rest of the party in your head. Ordinarily, you would try to get her into one of the bedrooms and fuck her, but that's not possible anymore. @@.thought;Maybe I can eat her out. She'll want to see my dick. What should I say?...okay, one step at a time.@@
+
+The song comes to an end, and she looks at you.
+
+@@.female;"Do you want another dance?"@@
+
+[[Say yes|Halloween LivingRoom Dance Cheerleader Grind]]
+[[Say no|Halloween LivingRoom Dance Cheerleader Decline]]
+
+::Halloween LivingRoom Dance Cheerleader Truth
+@@.thought;She's going to find out sooner or later. And I don't want to feel like I need to hide anything.@@
+
+@@.player;"You probably have,"@@ you tell her. @@.player;"I'm <<print $player.firstname>> <<print $player.lastname>>."@@
+
+<<if $player.armStrength>=50 and $player.feminine<10>>@@.female;"Oh! I //have// heard of you. You're on the football team!"@@
+
+<<if $player.skillCurse is 4>>@@.player;"Was on the football team,"@@ you say sadly.<<elseif $playerStarter>>@@.player;"Not just on the football team,"@@ you say proudly. @@.player;"I'm the quarterback."@@<<else>>@@.player;"Yeah, I am!"@@<</if>>
+
+@@.female;"I'm a cheerleader,"@@ she says.
+
+You feel like a weight's been lifted off your shoulders. @@.thought;I told her who I was, and she didn't run away. This isn't so bad!@@
+
+The song comes to an end, and she ooks at you.
+
+@@.female;"Do you want another dance?"@@
+
+[[Say yes|Halloween LivingRoom Dance Cheerleader Grind]]
+[[Say no|Halloween LivingRoom Dance Cheerleader Decline]]<<else>>Instantly, her expression changes. @@.female;"Oh! I didn't recognize you!"@@
+
+@@.player;"Uh, yeah, that's me."@@ you say awkwardly. @@.player;" What about you? You're a cheerleader, right?"@@
+
+@@.female;"Uh huh,"@@ she says, suddenly less talkative. @@.female;"I need to use the bathroom, okay?"@@
+
+@@.player;"Sure,"@@ you say, suddenly alone on the dance floor. You move off to the side and wait for her to return.
+
+The song finishes, and you keep waiting. It's only when the next song finishes that you realize that she's not coming back.
+
+@@.thought;Dammit! Why did I have to tell her who I was? It was going so well too.@@
+
+[[Continue|Halloween LivingRoom]]<</if>>
+
+::Halloween LivingRoom Dance Cheerleader Grind
+The next song starts. It's a fast-paced dance song, and you notice that all of the girls are grinding on the guys.
+
+She winks and turns around so she's facing away from you. You don't want to do this and risk your secret being revealed, but you can't do anything but watch in horror as her ass comes closer and closer to your crotch.
+
+She starts grinding against you, then looks over her shoulder at you, a confused expression on her face. You just try to look like you're into it, and she goes back to grinding against you.
+
+After a moment, though, she turns back to you. @@.female;"I need to use the bathroom, okay?"@@
+
+@@.player;"Sure,"@@ you say, suddenly alone on the dance floor. You move off to the side and wait for her to return.
+
+The song finishes, and you keep waiting. It's only when the next song finishes that you realize that she's not coming back.
+
+@@.thought;Dammit! If only I had a dick!@@
+
+[[Continue|Halloween LivingRoom]]
+
+::Halloween LivingRoom Dance Cheerleader Decline
+@@.player;"No, I'm feeling tired,"@@ you say. @@.player;"I need a rest."@@
+
+@@.female;"Okay,"@@ she says, sounding a little disappointed. But after you've left the dance floor, you see that she's already dancing with <<if $player.masculinity>=0>>another<<else>>a<</if>> guy.
+
+Even though you turned her down, you still feel a little hurt to see her move on so quickly. @@.thought;I should have kept dancing with her.@@
+
+[[Look around|Halloween LivingRoom]]
+
+::Halloween LivingRoom Ryan Sex
+You scan the crowd for Ryan, and find him talking with a couple other guys. Feeling nervous, you walk up and tap him on the shoulder.
+
+@@.male;"What's up? Oh hey!"@@ Ryan says, smiling when he sees you. @@.male;"So you thought it over?"@@
+
+@@.player;"Yeah...I'll do it."@@
+
+Ryan turns back to his friends. @@.male;"Excuse me."@@
+
+They chuckle as he leads you out of the living room. @@.thought;This is so embarrassing! They know that I want to have sex with Ryan!@@
+
+[[Follow him to the bedrooms|Halloween Ryan Sex]]
+
+::Halloween LivingRoom Witch
+You walk over to the couches where the witches are sitting. @@.player;"Mind if I sit here?"@@ you ask.
+
+<<if $boughtGirlsCostume>>@@.female;"Sure!"@@
+
+@@.thought;They just let me sit down? Oh, that's right. They don't recognize me.@@
+
+@@.female;"Did you see those girls wearing witch costumes?"@@
+
+@@.witch;"Yeah! Do people really think witches look like that?"@@
+
+@@.female;"I don't even own a broomstick!"@@
+
+@@.female;"I know! It's so annoying! It's like they know nothing about witches."@@ She looks over at you as if she's just realized that you're there. @@.female;"Yeah, we're witches."@@
+
+@@.thought;It's so weird that they're talking to me like I'm a stranger.@@
+
+[[I know you are|Halloween LivingRoom Witch Recognize]]
+[[Real witches? That's cool!|Halloween LivingRoom Witch Cool]]
+[[I hope you don't curse anyone who doesn't deserve it|Halloween LivingRoom Witch Deserve]]<<else>>One of the witches wrinkles her nose. @@.female;"What are you doing here? Come to spy on us?"@@
+
+@@.player;"No, not at all! I was just saying hi!"@@
+
+@@.female;"Okay, you've said hi."@@
+
+Taking the hint, you get up and leave the witches to talk amongst themselves.
+
+[[Look around|Halloween LivingRoom]]<</if>>
+<<set $halloweenInteractions to $halloweenInteractions+1>><<if $halloweenInteractions is 2>><<passTime>><</if>>\
+
+::Halloween LivingRoom Witch Recognize
+@@.player;"I know."@@
+
+@@.female;"You do?"@@
+
+@@.player;"Yeah, you guys are in the Witchcraft Club, right?"@@
+
+@@.female;"Oh yeah, that's right. But we're real witches, you know."@@
+
+@@.witch;"Heather!"@@
+
+@@.female;"Sorry! But it's not like she'll believe us."@@
+
+[[I believe you|Halloween LivingRoom Witch Believe]]
+[[But magic doesn't exist|Halloween LivingRoom Witch Impossible]]
+
+::Halloween LivingRoom Witch Cool
+@@.player;"Real witches? That's so cool!"@@
+
+<<print $witch.firstname>> beams. @@.witch;"Yeah! We can do all kinds of spells!"@@ she says. You notice that she's a bit drunk.
+
+@@.female;"Should we telling her about that?"@@
+
+@@.witch;"It's fine. She's cool."@@
+
+@@.thought;<<print $witch.firstname>> thinks I'm cool?@@
+
+[[So...are you looking for new members?|Halloween LivingRoom Witch Infiltrate]]
+[[So magic exists?|Halloween LivingRoom Witch Magic]]
+
+::Halloween LivingRoom Witch Deserve
+@@.player;"I hope you don't curse anyone who doesn't deserve it,"@@ you say, looking at <<print $witch.firstname>>.
+
+@@.witch;"No, we don't do that."@@
+
+@@.thought;Are you kidding me?@@
+
+Seeing the look on your face, <<print $witch.firstname>> elaborates. @@.witch;"I've cursed a couple people, but they all had it coming."@@
+
+@@.thought;She's saying I deserved it?@@
+
+[[Tell me more about the people you've cursed|Halloween LivingRoom Witch Curses]]
+[[So magic exists?|Halloween LivingRoom Witch Magic]]
+
+::Halloween LivingRoom Witch Believe
+@@.player;"I believe you,"@@ you say.
+
+@@.female;"Wait, really?"@@
+
+You nod. @@.thought;They cursed me. Of course I believe them.@@
+
+@@.witch;"I know the rest of the school considers us a joke."@@
+
+@@.player;"No, they're scared of you."@@
+
+@@.witch;"Really?"@@ she says with a smile. Then, realizing that she's talking to someone who's not in her club, she wipes it off of her face. @@.witch;"Of course, I'd never curse anyone. Not unless they really deserved it."@@
+
+@@.thought;Yeah right.@@
+
+[[So who have you cursed?|Halloween LivingRoom Witch Curses]]
+[[How do I join your club?|Halloween LivingRoom Witch Infiltrate]]
+
+::Halloween LivingRoom Witch Impossible
+@@.player;"But magic doesn't exist!"@@ you say, pretending to act shocked.
+
+@@.female;"That's what I thought too. But then I started noticing weird stuff happening. I'd want things, and then they would somehow happen. It wasn't until I got to Pinewood and met these girls that I realized I was a witch."@@
+
+@@.player;"Oh, wow,"@@ you say.
+
+@@.female;"I don't think we should be telling her this."@@ She looks at you. @@.female;"No offense."@@
+
+@@.player;"No, that's okay. I'm not one of you. But..."@@ you trail off, trying to think of a question to ask.
+
+[[...how do I join you guys?|Halloween LivingRoom Witch Infiltrate]]
+[[...what kinds of magic can you do?|Halloween LivingRoom Witch MagicTypes]]
+
+::Halloween LivingRoom Witch Magic
+@@.player;"So magic exists?"@@
+
+@@.witch;"Oh yeah! Normal people don't notice it. Or if they do, they think it's a coincidence. But it's real."@@
+
+@@.player;"Wow."@@
+
+@@.female;"I know. My mind was blown too when I first heard it was real."@@
+
+@@.female;"You must have a lot of questions."@@
+
+@@.player;"Yeah,"@@ you say, trying to think of the right question to ask. It's throwing you off, having all these witches who ruined your life being so friendly with you.
+
+[[Are you guys open to new members?|Halloween LivingRoom Witch Infiltrate]]
+[[What kinds of magic can you do?|Halloween LivingRoom Witch MagicTypes]]
+
+::Halloween LivingRoom Witch Infiltrate
+<<if visited("Halloween LivingRoom Witch Magic") or visited("Halloween LivingRoom Witch MagicTypes")>>@@.player;"Are you guys open to new members?"@@<<elseif visited("Halloween LivingRoom Witch Cool")>>@@.player;"So...are you looking for new members?"@@<<elseif visited("Halloween LivingRoom Witch Believe")>>@@.player;"How do I join your club?"@@<<elseif visited("Halloween LivingRoom Witch Impossible")>>@@.player;"...how do I join you guys?"@@ you finish.<</if>>
+
+The witches laugh. @@.witch;"We're always open to new members. But we don't just accept anyone. You have to be a witch before we can let you in."@@
+
+@@.player;"Well, I'm not a witch."@@
+
+@@.female;"You could have the power but just not know it. That's what happened with me."@@
+
+@@.player;"So how do I know?"@@
+
+@@.female;"Well, you're a girl. That's good. Only girls can be witches."@@
+
+You stifle a laugh, but then a thought occurs to you. @@.thought;Wait, do I count as a girl now? I mean, I have a pussy, @@<<if $player.masculinity>=25>>@@.thought;but I don't feel like I'm a girl.@@<<else>>@@.thought;and I don't feel like a guy.@@<</if>> @@.thought;I'd like to ask them but then I'd give away that I'm <<print $player.firstname>>.@@ You picture the whole school finding out that you went to the halloween party in a <<print $costume>> costume. @@.thought;Yeah, no.@@
+
+@@.player;"Anything else?"@@
+
+@@.female;"Yeah, you either have the power to be a witch or you don't. I can't tell unless we do a ritual."@@
+
+@@.player;"Ritual?"@@ you ask, your mouth suddenly dry.
+
+@@.witch;"You're scaring her."@@ She turns to you. @@.witch;"It's no big deal. Just stop by the woods in the afternoon on tuesday or saturday. It'll just take a couple minutes."@@
+
+@@.player;"Oh, okay."@@ @@.thought;That doesn't sound so bad. If I can join their club and become a witch, maybe I can figure out how to turn back.@@<<if $player.masculinity<10>> You're not sure whether you want that anymore, but it can't hurt to have the option, right?<</if>>
+
+@@.witch;"Great. What was your name again?"@@
+
+@@.thought;Oh shit, I can't tell them that I'm <<print $player.firstname>>.@@
+
+@@.player;"Uh, I have to go to the bathroom,"@@ you say. Elvira raises an eyebrow. @@.player;"I'll stop by the club"@@ you add quickly. @@.player;"Tuesday and saturday afternoons, right?"@@
+
+They nod.
+
+[[Leave the living room|Halloween Kitchen]]
+
+::Halloween LivingRoom Witch Curses
+<<if visited("Halloween LivingRoom Witch MagicTypes")>>@@.player;"So what kinds of curses have you guys done?"@@<<elseif visited("Halloween LivingRoom Witch Deserve")>>@@.player;"Tell me more about the people you've cursed"@@<<else>>@@.player;"So who have you cursed?"@@<</if>>
+
+<<print $witch.firstname>> looks a little uncomfortable. @@.witch;"We're not really supposed to talk about that."@@
+
+@@.player;"Oh. That's okay."@@
+
+@@.witch;"But there was this one guy. You've probably heard of him."@@
+
+@@.player;"Who?"@@ you ask, a sinking feeling in your stomach.
+
+She shakes her head. @@.witch;"No, I promised him I wouldn't say anything."@@
+
+@@.thought;She's actually not telling people about me? I didn't expect that.@@
+
+@@.witch;"He's a football player, though.@@<<if $player.skillCurse is 4>> @@.witch;"Or was.@@<</if>>@@.witch;"@@
+
+@@.player;"And what did you do to him?"@@
+
+There's a pause as <<print $witch.firstname>> tries to decide how to answer you. @@.female;"She made him girly!"@@ another witch pipes up.
+
+@@.player;"Wow."@@
+
+@@.female;"Yeah! He used to have muscles, and she took them away. And now he's wearing..."@@
+
+@@.witch;"Enough!"@@ <<print $witch.firstname>> says sharply.
+
+@@.thought;Wow, I didn't expect this from her. It didn't sound like she told them about my @@<<if $witch.knowsSecret>>@@.thought;pussy@@<<else>>@@.thought;other changes@@<</if>> @@.thought;either. But if I really was a stranger, I could figure out who they were talking about from what that other witch said. I'm the only football player that's gotten girly.@@
+
+It feels a little tense now, and you think it's for the best that you excuse yourself.
+
+[[Say goodbye|Halloween LivingRoom]]
+
+::Halloween LivingRoom Witch MagicTypes
+<<if visited("Halloween LivingRoom Witch Impossible")>>@@.player;...what kinds of magic can you do?"@@ you finish.<<else>>@@.player;"What kinds of magic can you do?"@@<</if>>
+
+@@.female;"Oh, all kinds. You've got your basic spells for moving or transforming objects. You know, like making a pencil float in the air. It's more difficult to create something or destroy something."@@
+
+@@.player;"So you can make money appear out of thin air?"@@
+
+She winks. @@.female;"It's difficult, though. And we're not supposed to do it."@@
+
+@@.thought;Being a witch doesn't sound half bad.@@
+
+@@.female;The hardest spells are the ones that transform people."@@
+
+@@.thought;Like the one <<print $witch.firstname>> did on me.@@
+
+@@.player;"Transform people? How?"@@
+
+@@.female;"Oh, you know. A spell that gives you luck. Or a love spell. <<print $witch.firstname>>did this one spell on this guy..."@@
+
+@@.witch;"Moira!"@@
+
+@@.female;"Oh, sorry. We're not supposed to talk about any of the curses we've done."@@
+
+@@.thought;Was she about to talk about the spell <<print $witch.firstname>> did on me?@@
+
+Breaking the silence, Moira says, @@.female;"Do you want to see me do a spell?"@@
+
+You nod.
+
+Moira nods and focuses on her cup. Nothing happens at first, but soon it's filled to the brim with beer.
+
+@@.female;"Cool, huh?"@@ she asks, catching her breath.
+
+@@.player;"Yeah!"@@ you say, truthfully.
+
+[[Ask how you can become a member|Halloween LivingRoom Witch Infiltrate]]
+[[Ask what curses they've done|Halloween LivingRoom Witch Curses]]
+
+::Halloween Kitchen
+There are several people in the kitchen, chatting to each other as they sip their drinks. There's a keg of beer, and a bowl of <<if visited("Halloween Kitchen Ryan Punch") or visited("Halloween Kitchen Punch")>>punch<<else>>some blood red liquid that you don't recognize<</if>>.
+
+[[Get some beer|Halloween Kitchen Beer]]
+<<if visited("Halloween Kitchen Ryan Punch") or visited("Halloween Kitchen Punch")>>[[Get the punch|Halloween Kitchen Punch]]<<else>>[[Get the red liquid|Halloween Kitchen Punch]]<</if>>
+[[Go back to the living room|Halloween LivingRoom]]
+<<if visited("Halloween Den QB Confront") and $player.crush is not $qb.firstname>><<linkappend "Go to the den">> After the scene you caused, it's probably for the best that you don't go back there.<</linkappend>><<else>>[[Go to the den|Halloween Den]]<</if>>
+
+::Halloween Kitchen Beer
+You take a cup and fill it up with beer. You take a sip and instantly start to feel better. There's nothing like having booze at a party.
+
+<<if not visited("Halloween Kitchen Morgan Flatter") and not visited("Halloween Kitchen Morgan Bitch") and visited("Gym Morgan")>>You look around the kitchen as you sip your beer. Your eyes settle on a girl dressed like a cat. @@.thought;Is that...Morgan?@@
+
+You look away, but it's too late. She's seen you.
+
+@@.female;"What's up?"@@ she asks, clearly confused about why you're looking at her.
+
+@@.thought;Shit@@
+
+<<if $boughtGirlsCostume>>[[Flatter her|Halloween Kitchen Morgan Flatter]]<<else>>[[Compliment her costume|Halloween Kitchen Morgan Flatter]]<</if>>
+[[Tell her she's a bitch|Halloween Kitchen Morgan Bitch]]<<else>>[[Look around|Halloween Kitchen]]<</if>>
+
+::Halloween Kitchen Punch
+<<if visited("Halloween Kitchen Ryan Punch") or visited("Halloween Kitchen Punch")>>You know that it's just punch, but it's good punch. Besides, you don't want to end up getting drunk at this party<<if $boughtGirlsCostume>>, especially dressed the way you are<</if>>.<<else>>Feeling adventurous, you take a cup and fill it with the blood red liquid. Tentatively, you bring it to your lips and take a sip.
+
+@@.thought;It's just punch. That's kind of disappointing. I don't know what I was thinking it would be.@@<</if>>
+
+<<if not visited("Halloween Kitchen Morgan Flatter") and not visited("Halloween Kitchen Morgan Bitch") and visited("Gym Morgan")>>You look around the kitchen as you sip the punch. Your eyes settle on a girl dressed like a cat. @@.thought;Is that...Morgan?@@
+
+You look away, but it's too late. She's seen you.
+
+@@.female;"What's up?"@@ she asks, clearly confused about why you're looking at her.
+
+@@.thought;Shit!@@
+
+<<if $boughtGirlsCostume>>[[Flatter her|Halloween Kitchen Morgan Flatter]]<<else>>[[Compliment her costume|Halloween Kitchen Morgan Flatter]]<</if>>
+[[Tell her she's a bitch|Halloween Kitchen Morgan Bitch]]<<else>>[[Look around|Halloween Kitchen]]<</if>>
+
+::Halloween Kitchen Morgan Flatter
+<<getTfProgress height>><<set $tempHeight to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>>@@.thought;Okay, <<print $player.firstname>>, play it cool.@@
+
+@@.player;"Uh, I just really liked your costume,"@@ you say.
+
+<<if $boughtGirlsCostume>>Her face instantly loses its suspicious look, and she smiles. @@.female;"Thanks! I got the outfit from the costume store in town, but I sewed the ears myself."@@
+
+@@.player;"Really? They look nice."@@
+
+@@.female;"Yeah, and they're soft, too. You can feel them if you want."@@
+
+Tentatively, you reach <<if $tempHeight<3>>down and touch her ears.<<else>>out and touch her ears. @@.thought;Wasn't I taller than her?@@<</if>> @@.player;"They're so soft!"@@ you say.
+
+@@.female;"Yeah,"@@ she says, beaming. @@.female;"I really like your costume too. @@<<if $costume is "Wonder Woman">>@@.female;<<print $costume>> is a great choice. You look like a badass!"@@
+
+@@.player;"Thanks! Nobody's called me that before!"@@
+
+@@.thought;In fact, they were making fun of how weak I was.@@<<elseif $costume is "cheerleader">>@@.female;A <<print $costume>> is a great choice. You look like you would fit in with our squad."@@
+
+@@.player;"You think I could be a cheerleader?"@@ you ask, surprised.
+
+@@.female;"Anyone can be a cheerleader! You just need to be coordinated and put in practice."@@
+
+@@.thought;I can do that@@ you think, picturing yourself cheering <<if $player.crush is $qb.firstname>><<print $qb.firstname>><<else>>the team<</if>> on. @@.thought;Wait, what am I doing?@@<<else>>@@.female;A <<print $costume>> is a great choice. And I really like your dress. It's so cute!"@@
+
+@@.player;"Uh, thank you,"@@ you say, surprised to have gotten a compliment. @@.player;"It's a bit...poofy. Makes it hard to walk."@@
+
+She laughs. @@.female;"That's why I chose a cat costume. The dress is really comfortable. But you look good."@@
+
+You thank her again.<</if>>
+
+@@.female;"Well, I'm going to go check out the rest of the party,"@@ she says. @@.female;"It was nice meeting you!"@@ She leans in and gives you a hug. You can feel her boobs pressing against <<if $tempBoobs>=3>>your own<<elseif $tempBoobs is 2>>your smaller ones<<else>>your flat chest, and you feel a pang of envy<</if>>.
+
+@@.thought;Huh. That went better than I thought. Maybe Morgan isn't so bad.@@
+
+[[Look around|Halloween Kitchen]]<<else>>@@.female;"Why are you being nice to me?"@@ Morgan asks, still looking suspicious.
+
+@@.thought;I really don't know.@@
+
+[[Tell her you want a truce|Halloween Kitchen Morgan Truce]]
+[[Plead with her to stop making fun of you|Halloween Kitchen Morgan Plead]]<</if>>
+<<set $halloweenInteractions to $halloweenInteractions+1>><<if $halloweenInteractions is 2>><<passTime>><</if>>\
+
+::Halloween Kitchen Morgan Bitch
+<<if $boughtGirlsCostume>>@@.thought;She doesn't know who I am, and I'll never get this chance again. I might as well take advantage of it.@@
+
+@@.player;"I just wanted you to know that...you're a bitch!"@@ you finish.
+
+@@.female;"Excuse me?"@@
+
+@@.player;"You heard me. I bet you're used to everyone kissing your ass because, ooo, you're popular Morgan. Well, not me!"@@
+
+She looks genuinely taken aback. @@.female;"Did I do something?"@@
+
+@@.thought;I feel a little bad now. But she //is// a bitch!@@ You look around but the other people in the kitchen have cleared out.
+
+[[Tell her that she's been mean to you|Halloween Kitchen Morgan Mean]]<<if $player.crush is $qb.firstname>>
+[[Tell her that she's going afer the guy you like|Halloween Kitchen Morgan Guy]]<</if>>
+[[Tell her that you don't want to talk about it|Halloween Kitchen Morgan Ambiguous]]<<else>>Normally, you would never stand up to Morgan, but with a drink in you, you're feeling braver.
+
+@@.player;"I'm looking at you because...you're a bitch!"@@
+
+@@.female;"Excuse me?"@@
+
+@@.player;"You heard me. I bet you're used to everyone kissing your ass because, ooo, you're popular Morgan. Well, not me. You've made my life hell. Everyone calls me a sissy now..."@@
+
+@@.female;"Because that's what you are!"@@ she cuts in.
+
+@@.player;"And I bet they wouldn't say that if you didn't make fun of me all the time,"@@ you continue, not letting her rattle you. @@.player;"People listen to you! And when the most popular girl in school calls me a sissy, everyone joins in!"@@
+
+You're talking loudly now, and everyone is staring at you. A couple people are laughing. @@.thought;Everybody heard me talk about being called a sissy.@@
+
+Seeing that the crowd is on her side, Morgan takes a step forward. @@.female;"No, I'm not going to stop. Because, guess what? It's funny. And if you don't want people calling you a sissy, then you should man up!"@@
+
+With that, she turns and walks out of the kitchen. The other people slowly follow her, casting glances at her as they do so.
+
+@@.thought;Well, that went terribly.@@ Still, you feel a little proud of yourself for standing up to Morgan.
+
+[[Look around|Halloween Kitchen]]<<set $player.submission to $player.submission-2>><<set $team.respect to $team.respect-3>><</if>>
+<<set $halloweenInteractions to $halloweenInteractions+1>><<if $halloweenInteractions is 2>><<passTime>><</if>>\
+
+::Halloween Kitchen Morgan Mean
+@@.player;"Because you've been mean to me!"@@ you say, thinking back to when she made fun of you <<if visited("Lunch Friends Morgan")>>at lunch.<<else>>during gym class.<</if>>
+
+@@.female;"I did?"@@ She looks confused. @@.female;"I can't think of any girls I've been mean to. But if I did, I'm sorry."@@
+
+@@.player;"Uh, that's okay,"@@ you say, taken aback to see Morgan like this. You thought that she would be a bitch and tell you that you deserved it. @@.player;"So, uh, you don't hate me for saying this?"@@
+
+@@.female;"Not at all! Sometimes I feel like everybody kisses my ass because I'm so popular and pretty."@@ @@.thought;Yeah, there's the Morgan that I know.@@
+
+She looks lost in thought. @@.female;"I wonder if I've been mean to any other girls, and they haven't told me."@@ She looks back to you. @@.female;"What happened?"@@
+
+@@.player;"Uh, don't worry about it,"@@ you say lamely. @@.player;"I'm glad we had this talk."@@
+
+@@.female;"Me too."@@ She gives you a hug and walks off.
+
+[[Slowly, everyone filters back into the kitchen|Halloween Kitchen]]
+
+::Halloween Kitchen Morgan Guy
+@@.player;"Because you're going after the guy I like!"@@
+
+She looks confused. <<if visited("Halloween LivingRoom Dance Ryan")>>@@.female;"Ryan? I don't like him."@@
+
+@@.player;"No,"@@ you say, blushing.
+
+@@.female;"Then who?"@@<<else>>@@.female;"Who?"@@<</if>>
+
+@@.player;"<<print $qb.firstname>>,"@@ you tell her.
+
+<<if $qb.date and $qb.date is "Morgan">>She looks at you incredulously. @@.female;"That's my boyfriend. You're mad at me because I'm dating my boyfriend?"@@
+
+@@.player;"Well, no,"@@ you say reluctantly. @@.thought;When she puts it like that, it sounds ridiculous.@@
+
+@@.player;"I liked him first,"@@ you say. @@.player;"Way before you liked him."@@
+
+@@.female;"Look, I don't even know who you are. But it's <<print $qb.firstname>>'s choice to make, right?"@@
+
+@@.player;"Well, yeah,"@@ you say reluctantly.
+
+@@.female;"I'm going to get back to the rest of the party,"@@ Morgan says, and then turns and walks out of the kitchen.
+
+@@.thought;That went badly. I thought she would just call me a bitch or make fun of me, but she made some good points.@@<<else>>She shakes her head. @@.female;"You can't blame me for going after him. He's the most popular guy in school."@@
+
+@@.player;"He is?"@@ Sure, he's a quarterback, but that doesn't match with the <<print $qb.firstname>> you knew at the start of school.
+
+@@.female;"Of course! Every girl has a crush on him.@@ <<if $qb.date and $qb.date is $player.firstname>>@@.female;Besides, I'm not even dating him. He's going out with that sissy."@@
+
+Your cheeks flush red. @@.player;"S...sissy?"@@
+
+Morgan laughs. @@.female;"Yeah! Haven't you noticed that <<print $player.firstname>> is...different lately? He used to be a jock, and now @@<<if $player.hasWornPanties>>@@.female;he's wearing panties and @@<</if>>@@.female;looks girly."@@
+
+You're about to respond when you realize that Morgan is gossiping with you like you're another girl. @@.player;"Um, I haven't noticed,"@@ you say unconvincingly.
+
+@@.female;"Really? It's pretty obvious@@<<if $player.feminine<=7>>@@.female;, once you know what to look for@@<</if>>."@@ You shake your head. @@.female;"Well, I'm going to get back to the rest of the party. Take care!"@@ she says, giving you a hug.
+
+@@.thought;Did she forget that I just called her a bitch?@@<<if $player.hasWornPanties>> @@.thought;And how does she know about me wearing panties?@@<</if>><<else>>@@.female;Besides, I'm not dating him //yet//. Go ahead and shoot your shot."@@
+
+@@.player;"Wait, are you saying that he's here?"@@
+
+@@.female;"Yeah. He's in the den, watching some movie."@@
+
+@@.player;"Oh, thanks!"@@ you say. You're about to leave the kitchen when you realize that Morgan gave you //advice//. @@.thought;What's going on? I thought she'd be a bitch.@@
+
+You turn around to thank her, but she's already left.<</if>><</if>>
+
+[[Kitchen|Halloween Kitchen]]
+
+::Halloween Kitchen Morgan Ambiguous
+@@.thought;What? Tell Morgan why I'm mad at her? Then she'll just figure out who I am, and I'll never live it down.@@
+
+@@.player;"I don't want to talk about it,"@@ you tell her.
+
+She throws her hands up in the air. @@.female;"Then why did you bring it up?"@@
+
+@@.player;"I just wanted you to know that I'm mad at you."@@
+
+@@.female;"Fuck off. If you're not going to tell me, then I'm done here!"@@ she says, and storms out of the kitchen.
+
+[[Look around|Halloween Kitchen]]
+
+::Halloween Kitchen Morgan Truce
+@@.player;"I want a truce,"@@ you say. @@.player;"I know we've disagreed before..."@@
+
+<<if $qb.date and $qb.date is $player.firstname>>@@.female;"Like when you stole my boyfriend?"@@
+
+@@.player;"He was never your boyfriend!"@@<<elseif $qb.date>>@@.female;"Like when you went after my boyfriend!"@@
+
+@@.player;"He wasn't your boyfriend then! Am I just not allowed to have a crush on a guy just in case you like them?"@@<<else>>@@.female;"Like when you went after the guy I like!"@@
+
+@@.player;"So now I can't have a crush on a guy!"@@<</if>>
+
+You realize that you've raised your voice, and you take a deep breath. @@.player;"We've had our disagreements, but I don't want us to be, you know, enemies. So, truce?"@@
+
+She rolls her eyes. @@.female;"Fine. I can try to make fun of you less."@@
+
+@@.player;"Or not at all. Look, we were friends once. We even dated. Can't we go back to that?"@@
+
+She scoffs. @@.female;"Dating?"@@
+
+@@.player;"No. But friends. A truce, at least."@@
+
+@@.female;"Fine. We can have a truce,"@@ she says, and walks out.
+
+@@.thought;That actually went pretty well.@@
+
+[[Look around|Halloween Kitchen]]
+<<set $player.submission to $player.submission-1>>\
+
+::Halloween Kitchen Morgan Plead
+@@.player;"Can you please stop making fun of me?"@@ you ask, unable to keep your voice from taking on a pleading tone. <<if $player.wearsOnepiece>>@@.player;"Everyone is calling me a sissy. I've lost friends, and the friends I still have don't respect me."
+
+@@.female;"That's because you //are// a sissy."@@<<else>>@@.player;"I know that you don't like me or whatever, and that's fine. But I've lost friends, and the friends I still have don't respect me."
+
+@@.female;"That's not my fault. If your friends don't respect you, that's on you."@@<</if>>
+
+Several people chuckle.
+
+@@.player;"That's not the point,"@@ you say. <<if $player.wearsOnepiece>>@@.thought;Wait, I just admitted that I'm a sissy.@@ Slightly shaken, you continue on. <</if>>@@.player;"You're popular. People like you. If you stopped making fun of me, everyone else would too."@@
+
+@@.female;"And why should I do that?"@@ she asks, leaning in. <<if $qb.date and $qb.date is $player.firstname>>@@.female;"You stole my boyfriend. Remember?"@@
+
+@@.player;"He was never your boyfriend!"@@<<elseif $qb.date>>@@.female;"You went after my boyfriend, remember?"@@
+
+@@.player;"Not when you were dating him!"@@<<else>>@@.female;"You're going after the guy I like, remember?"@@
+
+@@.player;"It's a free country!"@@<</if>>
+
+She looks at you, and you back down. @@.player;"Look, can you at least not make fun of me? That's all I want."@@
+
+She rolls her eyes. @@.female;"Yeah, sure. Whatever."@@
+
+@@.thought;I don't know if I believe her.@@
+
+[[Look around|Halloween Kitchen]]
+
+::Halloween Kitchen Ryan
+You follow Ryan to the kitchen. Several people are there, discussing how they did on a test.
+
+@@.male;"Let's see. Looks like they've got beer, and..."@@ he pauses, looking over <<if visited("Halloween Kitchen Punch")>>the bowl of punch.<<else>>a bowl filled with blood red liquid.<</if>>
+
+@@.male;"I'll take the beer,"@@ he says.
+
+@@.player;"You scared?"@@ you say, laughing.
+
+@@.male;"Like you're going to drink that,"@@ he laughs back.<<if visited("Halloween Kitchen Punch")>>
+
+@@.thought;Haha, he doesn't realize it's just punch.@@<</if>>
+
+[[Fill your cup up with beer|Halloween Kitchen Ryan Beer]]
+<<if visited("Halloween Kitchen Punch")>>[[Fill your cup up with punch|Halloween Kitchen Ryan Punch]]<<else>>[[Fill your cup up with the blood red liquid|Halloween Kitchen Ryan Punch]]<</if>>
+
+::Halloween Kitchen Ryan Beer
+@@.player;"You're right,"@@ you say with a laugh, and fill a cup up with beer. The two of you sip your beers together in silence.
+
+<<display "Halloween Kitchen Ryan Costume">>
+
+::Halloween Kitchen Ryan Punch
+<<if visited("Halloween Kitchen Punch")>>Seeing an opportunity to impress Ryan, you fill your cup up with punch and then drink it in one big gulp.
+
+@@.male;"Wow. That takes balls."@@ @@.thought;If only you knew.@@ @@.male;"How was it?"@@
+
+@@.player;"Not bad."@@
+
+@@.male;"Then I want to try it."@@ He chugs his beer, and then fills his cup up with the punch. Tentatively, he takes a sip and then chuckles. @@.male;"It's just punch!...I bet you knew that too!"@@
+
+You just giggle.<<else>>@@.player;"You're wrong,"@@ you say with a laugh, and fill your cup with the red liquid. Tentatively, you bring it to your lips and take a sip.
+
+It's just punch. @@.thought;That's kind of disappointing. I don't know what I was thinking it would be.@@
+
+@@.player;"It's not bad,"@@ you say, making a show of taking a big gulp.
+
+Ryan laughs, and the two of you sip your drinks together in silence.<</if>>
+
+<<display "Halloween Kitchen Ryan Costume">>
+
+::Halloween Kitchen Ryan Costume
+@@.male;"I like your costume,"@@ he says after a minute.
+
+You look down at your <<print $costume>> costume. You can't believe that you're talking to a masculine football player, dressed like //this//, and he's complimenting you.
+
+@@.player;"Thanks!"@@ you say. @@.player;"I almost forgot that today was halloween. I just went this afternoon, but luckily they still had this in stock."@@
+
+@@.male;"You're lucky,"@@ he says. @@.male;"I went two weeks before. I've been looking forward to this party the whole year, and I didn't want to get stuck wearing some lame costume."@@
+
+@@.thought;Like a girls costume.@@<<if visited("Halloween Shop Girl ChooseGirl") or visited("Halloween Shop Boy ChooseGirl")>> @@.thought;But does that count? I //chose// this.@@<</if>>
+
+Aware that you haven't said anything, you say, @@.player;"You've been looking forward to this?"@@
+
+@@.male;"Hell yeah. There haven't been any good parties in a while."@@
+
+@@.thought;Oh yeah, he's right. I've been so focused on me that I haven't had any time to think about parties.@@
+
+@@.player;"Yeah. I wasn't sure about going to this party, but I'm having a good time,"@@ you say. And it's true.
+
+<<if visited("Halloween LivingRoom Dance Ryan Nerd")>>@@.male;"You made the right call. You can't stay in and study forever."@@
+
+@@.thought;What? Oh yeah, I told him I was a nerd.@@
+
+<<else>>@@.male;"I know, these parties can be hit or miss,"@@ he says, misunderstanding you. <</if>>@@.male;"I'm having a good time, too."@@
+
+And then, suddenly, his lips are very close to yours.
+
+[[Kiss him|Halloween Kitchen Ryan Kiss]]
+[[Pull away|Halloween Kitchen Ryan PullAway]]
+
+::Halloween Kitchen Ryan Kiss
+@@.thought;What the hell?@@
+
+You lean in and meet his lips, and then you're french kissing. The rest of the kitchen melts away, and it's just the two of you. He tastes nice, and you're feeling yourself getting turned on.
+
+@@.female;"Hey, check it out. @@<<if $costume is "Wonder Woman">>@@.female;Captain America is kissing Wonder Woman!"@@<<elseif $costume is "princess">>@@.female;The knight is kissing the princess!"@@<<else>>@@.female;The football player is kissing the cheerleader!"@@<</if>>
+
+All of a sudden, the magic is gone. You back away and look at a half dozen people staring at you.
+
+@@.male;"I bet she doesn't even know him. Halloween is just an excuse for girls to dress like sluts,"@@ a guy says, not intending for you to hear him.
+
+[[Tell him off|Halloween Kitchen Ryan TellOff]]
+[[Run away|Halloween Kitchen Ryan RunAway]]
+<<set $player.homosexuality to $player.homosexuality+3>>\
+<<set $player.arousal to $player.arousal+5>>\
+
+::Halloween Kitchen Ryan PullAway
+You pull away. @@.thought;How did I get here? I thought it was just going to be one dance. But making out with @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;a@@<</if>> @@.thought;guy in front of all these people? No thanks.@@
+
+@@.male;"Something wrong, babe?"@@
+
+@@.player;"It's just...there are so many people around."@@
+
+@@.male;"I understand."@@
+
+@@.player;"You do?"@@ you ask, surprised.
+
+He takes your hand and starts leading you out of the kitchen. @@.thought;I thought all boys wanted to have sex with girls. But he's...leading me to the bedroom.@@
+
+[[Go with it|Halloween Ryan Sex]]
+[[Tell him he misunderstood|Halloween Ryan Decline]]
+[[Tell him you'll think about it|Halloween Ryan ThinkOver]]
+
+''Hint: having sex with him could end up triggering the end of the party.''
+<<set $player.homosexuality to $player.homosexuality-1>>\
+<<setUpSexScene>>\
+<<if $costume is "cheerleader">><<set $ryanPants = {
+	"properName": "White Polyester Pants",
+	"informalName": "white polyester pants"
+}>><<set $ryanShirt = {
+    "properName": "Football Jersey and Pads",
+    "informalName": "jersey and padss"
+}>><<set $ryanSocks = {
+    "properName": "White Socks",
+    "informalName": "white socks"
+}>><<set $ryanShoes = {
+    "properName": "Football Cleats",
+    "informalName": "cleats"
+}>><<elseif $costume is "princess">><<set $ryanPants = {
+    "properName": "Black Pants",
+    "informalName": "black pants"
+}>><<set $ryanShirt = {
+    "properName": "Black shirt with shield emblem and cape",
+    "informalName": "black shirt with cape"
+}>><<set $ryanSocks = {
+    "properName": "Black Socks",
+    "informalName": "black socks"
+}>><<set $ryanShoes = {
+    "properName": "Black Shoes",
+    "informalName": "black shoes"
+}>><<else>><<set $ryanPants = {
+    "properName": "Blue Pants",
+    "informalName": "blue pants"
+}>><<set $ryanShirt = {
+    "properName": "Red white and blue shirt with shield",
+    "informalName": "Captain America shirt"
+}>><<set $ryanSocks = {
+    "properName": "Black Socks",
+    "informalName": "black socks"
+}>><<set $ryanShoes = {
+    "properName": "Red Boots",
+    "informalName": "red boots"
+}>><</if>><<set $ryanUnderwear = {
+    "properName": "Red Boxers",
+    "informalName": "red boxers"
+}>>\
+<<if $player.arousal>50>><<set $ryanArousal to $player.arousal-10>><<else>><<set $ryanArousal to $player.arousal+10>><</if>>\
+<<set $currentlySuckingDick to false>>\
+
+::Halloween Kitchen Ryan TellOff
+You spin around and face the guy who spoke. Anticipating your outburst, he starts backing away.
+
+@@.player;"Fuck off! I'm not a slut, I just want to have fun. This is a party, so get that stick out of your ass!"@@
+
+A couple people cheer.
+
+@@.female;"You go, girl!"@@ one girl says.
+
+You beam. <<if $player.submission>15>>You haven't stood up to many people lately, and finally getting to tell someone off felt good. Even better, it sounds like most of the other people agreed with you.<<else>>Even though you never found it hard to stand up for yourself, it still felt good to embarrass that douchebag.<</if>>
+
+@@.male;"Well said,"@@ Ryan says. He leans in close. @@.male;"Do you want to go somewhere else? Where there aren't so many people?"@@
+
+[[Go with him|Halloween Ryan Sex]]
+[[The moment's been ruined|Halloween Ryan Decline]]
+[[Tell him you'll think about it|Halloween Ryan ThinkOver]]
+
+''Hint: having sex with him could end up triggering the end of the party.''
+<<set $player.submission to $player.submission-3>>\
+<<setUpSexScene>>\
+<<if $costume is "cheerleader">><<set $ryanPants = {
+	"properName": "White Polyester Pants",
+	"informalName": "white polyester pants"
+}>><<set $ryanShirt = {
+    "properName": "Football Jersey and Pads",
+    "informalName": "jersey and padss"
+}>><<set $ryanSocks = {
+    "properName": "White Socks",
+    "informalName": "white socks"
+}>><<set $ryanShoes = {
+    "properName": "Football Cleats",
+    "informalName": "cleats"
+}>><<elseif $costume is "princess">><<set $ryanPants = {
+    "properName": "Black Pants",
+    "informalName": "black pants"
+}>><<set $ryanShirt = {
+    "properName": "Black shirt with shield emblem and cape",
+    "informalName": "black shirt with cape"
+}>><<set $ryanSocks = {
+    "properName": "Black Socks",
+    "informalName": "black socks"
+}>><<set $ryanShoes = {
+    "properName": "Black Shoes",
+    "informalName": "black shoes"
+}>><<else>><<set $ryanPants = {
+    "properName": "Blue Pants",
+    "informalName": "blue pants"
+}>><<set $ryanShirt = {
+    "properName": "Red white and blue shirt with shield",
+    "informalName": "Captain America shirt"
+}>><<set $ryanSocks = {
+    "properName": "Black Socks",
+    "informalName": "black socks"
+}>><<set $ryanShoes = {
+    "properName": "Red Boots",
+    "informalName": "red boots"
+}>><</if>><<set $ryanUnderwear = {
+    "properName": "Red Boxers",
+    "informalName": "red boxers"
+}>>\
+<<if $player.arousal>50>><<set $ryanArousal to $player.arousal-10>><<else>><<set $ryanArousal to $player.arousal+10>><</if>>\
+<<set $currentlySuckingDick to false>>\
+
+::Halloween Kitchen Ryan RunAway
+You look back and forth between everyone's faces. @@.thought;Not only do they @@<<if $player.masculinity>0>>@@.thought;think@@<<else>>@@.thought;know@@<</if>> @@.thought;I'm a girl, but they think I'm a slutty girl!@@
+
+You turn and run out of the room. As you leave, you hear a girl say, @@.female;"Come on, you're being too hard on her. It's a party."@@ You feel a little better, but nowhere near good enough to face all those people.
+
+@@.thought;It's too bad I left Ryan in the kitchen. I had a much better time with him than I thought I would.@@
+
+[[Look around|Halloween Den]]
+<<set $player.submission to $player.submission+1>>
+
+::Halloween Ryan ThinkOver
+@@.player;"I, uh, I need to think it over?"@@
+
+@@.male;"Think it over?"@@
+
+@@.player;"Yeah. I'm not sure, but, uh, I'll let you know."@@
+
+@@.male;"Whatever. If you want to find me, I'll be on the dancefloor,"@@ Ryan says, and walks away.
+
+@@.thought;No, I'm actually going to think it over!@@ you think. But it's too late. He's already flirting with <<if $player.masculinity>0>>a<<else>>another<</if>> girl in the hallway. @@.thought;What a player.@@
+
+[[Look around|Halloween Kitchen]]
+
+::Halloween Ryan Decline
+<<if visited("Halloween Kitchen Ryan TellOff")>>@@.player;"Sorry, Ryan. The moment's been ruined,"@@ you say apologetically.<<else>>@@.player;"Ryan, you misunderstood me,"@@ you say firmly.@@<</if>>
+
+He turns and looks at you with surprise. @@.male;"You know my name?"@@
+
+@@.thought;Oh shit.@@
+
+@@.player;"Oh, uh, I thought you looked familiar. And then while we were dancing, it hit me."@@
+
+Luckily, he buys it. @@.male;"Okay, well...I'll see you at school I guess."@@
+
+@@.thought;Yeah you will. I hope he doesn't recognize me during @@<<if $player.skillCurse is 4>>@@.thought;gym class.@@<<else>>@@.thought;football practice.@@<</if>>
+
+He gives your ass a slap, and then walks off. Moments later, you see him flirting with <<if $player.masculinity>0>>a<<else>>another<</if>> girl in the hallway. @@.thought;What a player.@@
+
+<<if visited("Halloween Kitchen Ryan TellOff")>>[[Look around|Halloween Kitchen]]<<else>>[[Go back to the kitchen|Halloween Kitchen]]
+[[Check out the den|Halloween Den]]<</if>>
+
+::Halloween Ryan Sex [Sex]
+<<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<if ($player.arousal<=100 and $ryanArousal<=100) or $movesTakenDuringSex<2>><<set $movesTakenDuringSex to $movesTakenDuringSex+1>>Your Arousal: <<print $player.arousal>>
+Ryan Arousal: <<print $ryanArousal>>
+
+You are wearing:
+Legs: <<if $player.pants is not null>><<print $player.pants.properName>> <<if $player.pants.dress>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You fumble with your dress, eager to get it off but confused about how to do so. Ryan steps behind you and unzips you. You pull it over your shoulders and let out a breath, finally free. You wonder how real princesses wore dresses like this.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+1;$player.pants to null;$player.shirt to null;$currentlySuckingDick to false]]<<elseif $player.pants.onepiece>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You slip out of your Wonder Woman costume, lower it down your legs, and step out of it. Now, you're standing in front of Ryan in just your underwear.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+4;$player.pants to null;$player.shirt to null;$currentlySuckingDick to false]]<<else>>[[(Remove)|Halloween Ryan Sex][$temp to $player.pants;$sexDescription to "Teasingly, you slowly take off your $temp.informalName, revealing your $player.underwear.informalName. Ryan slaps your panty-covered ass, and you giggle.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+5;$player.pants to null;$currentlySuckingDick to false]]<</if>><<elseif $player.underwear is not null>><<print $player.underwear.properName>> [[(Remove)|Halloween Ryan Sex][$temp to $player.underwear;$sexDescription to "Without thinking, you slide your $temp.informalName down your legs. Suddenly, you freeze up: you're naked in front of a guy! You wait for him to realize who you are. Ryan doesn't say anything, though. Of course he doesn't: you have a pussy. Sometimes you forget about that.";$player.arousal to $player.arousal+1;$ryanArousal to $ryanArousal+4;$player.underwear to null;$currentlySuckingDick to false]]<<else>>Bare, revealing your <<if $player.arousal>50>>wet <</if>> pussy.<<if $player.arousal>50 and $currentlySuckingDick>> <<if $sexDescription.contains("As Ryan thrusts his dick into your mouth, you move your hand down between your legs and start to finger yourself. The feeling of Ryan's dick in your throat, combined with your finger feels so good, and you let out a muffled moan.")>>[[(Touch)|Halloween Ryan Sex][$sexDescription to "As Ryan thrusts his dick into your mouth, you continue fingering yourself. You insert another finger in, and gasp. It feels //so// good, especially combined with the sensation of Ryan's dick in your throat.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+1]]<<else>>[[(Touch)|Halloween Ryan Sex][$sexDescription to $sexDescription+"<br><br>As Ryan thrusts his dick into your mouth, you move your hand down between your legs and start to finger yourself. The feeling of Ryan's dick in your throat, combined with your finger feels so good, and you let out a muffled moan.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+1]]<</if>><</if>><</if>>
+Chest: <<if $player.shirt is not null>><<print $player.shirt.properName>> <<if $player.shirt.dress>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You fumble with your dress, eager to get it off but confused about how to do so. Ryan steps behind you and unzips you. You pull it over your shoulders and let out a breath, finally free. You wonder how real princesses wore dresses like this.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+1;$player.pants to null;$player.shirt to null;$currentlySuckingDick to false]]<<elseif $player.shirt.onepiece>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You slip out of your Wonder Woman costume, lower it down your legs, and step out of it. Now, you're standing in front of Ryan in just your underwear.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+4;$player.pants to null;$player.shirt to null;$currentlySuckingDick to false]]<<elseif $tempBoobs<=1>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You pull off your top, exposing your bare chest. Ryan excitedly watches, but he looks disappointed when you're done. You note his reaction with annoyance: it's not your fault that you're not well-endowed.";$player.arousal to $player.arousal+2;$ryanArousal to $ryanArousal-1;$currentlySuckingDick to false;$player.shirt to null]]<<elseif $player.bra>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You pull off your top, revealing your $player.bra.informalName. Ryan grabs ahold of one of them and squeezes. You let out a gasp: he was rough, but it felt good.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+3;$currentlySuckingDick to false;$player.shirt to null]]<<else>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You pull off your top, revealing your boobs. Ryan smiles and roughly squeezes them. You let out a gasp in spite of yourself: that felt good.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$player.shirt to null]]<</if>><<elseif $player.bra>><<print $player.bra.properName>> <<if $tempVoice>=3>><<set $gasp to "high-pitched gasp">><<else>><<set $gasp to "gasp">><</if>>[[(Remove)|Halloween Ryan Sex][$temp to $player.bra;$sexDescription to "Ryan confidently unhooks your $temp.informalName, and your boobs fall free. Ryan smiles and plants a kiss on your nipple. You let out a $gasp. You want him to keep doing that, but he seems more interested in other parts of your body.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$player.bra to null]]<<else>>Bare, revealing your <<if $tempBoobs>=4>>large boobs<<elseif $tempBoobs is 3>>medium-sized boobs<<elseif $tempBoobs is 2>>small boobs<<else>>scrawny chest<</if>>.<</if>>
+Feet: <<if $player.shoes is not null>><<print $player.shoes.properName>> [[(Remove)|Halloween Ryan Sex][$sexDescription to "Carefully, you take off your shoes.";$currentlySuckingDick to false;$player.shoes to null]]<<elseif $player.socks is not null>><<print $player.socks.properName>> [[(Remove)|Halloween Ryan Sex][$sexDescription to "You pull off your socks.";$currentlySuckingDick to false;$player.socks to null]]<<else>>Barefoot<</if>>
+
+Ryan is wearing:
+Legs: <<if $ryanPants is not null>><<print $ryanPants.properName>> <<if $ryanArousal>=75>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "Slowly, you unbutton Ryan's pants and slide them off his legs. You can see his hard cock through his boxers, and your mouth starts to water. You've seen his dick before in the locker room, but that doesn't count. And you've never seen it hard.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+3;$currentlySuckingDick to false;$ryanPants to null]]<<else>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "Slowly, you unbutton Ryan's pants and slide them off his legs. You can see his stiffening cock through his boxers, and you feel a desire to see it. You've seen it in the locker room, of course, but never up close.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+3;$currentlySuckingDick to false;$ryanPants to null]]<</if>><<elseif $ryanUnderwear is not null>><<print $ryanUnderwear.properName>> <<if $ryanArousal>=75>><<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You tug Ryan's boxers down, and his hard cock springs free. It looks like it's about six and a half inches: smaller than $qb.firstname's, and smaller than your old cock, but when you see it, your mouth still waters.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$ryanUnderwear to null]]<<else>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You tug Ryan's boxers down, and his hard cock springs free. It looks like it's about six and a half inches: smaller than your old cock, but when you see it, your mouth still waters.";$player.arousal to $player.arousal+4;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$ryanUnderwear to null]]<</if>><<elseif visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You tug Ryan's boxers down, and his cock springs free. It's not hard yet, but it looks slightly smaller than $qb.firstname's cock. You're a little disappointed, but you still can't wait to feel it in your hands...or your mouth.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$ryanUnderwear to null]]<<else>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "You tug Ryan's boxers down, and his cock springs free. It's not hard yet, but it looks smaller than your old cock. You're a little disappointed, but you still can't wait to feel it in your hands...or your mouth.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+4;$currentlySuckingDick to false;$ryanUnderwear to null]]<</if>><<else>>Bare, revealing his <<if $ryanArousal>=75>>six and a half inch<<elseif $ryanArousal>=50>>stiffening<<else>>flaccid<</if>> cock. [[(Stroke)|Halloween Ryan Sex][$sexDescription to "Dimly, you recall a time when you were attracted to girls. That seems far away now. Maybe you're still attracted to them, but right now, all you can think about is this hard cock right in front of you. You take his shaft in your hands and stroke it, exactly the way you liked it when you had one. Ryan closes his eyes and tells you to keep going.";$player.arousal to $player.arousal+5;$ryanArousal to $ryanArousal+7;$currentlySuckingDick to false;$player.homosexuality to $player.homosexuality+2]]<</if>>
+Chest: <<if $ryanShirt is not null>><<print $ryanShirt.properName>> <<if $tempBoobs>=2>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "Ryan pulls his shirt off, exposing his bare, muscular chest. You run your hand over his muscles, impressed. When you compare his manly chest to your soft, female one, it's hard to feel like much of a man.";$player.arousal to $player.arousal+5;$ryanArousal to $ryanArousal+2;$currentlySuckingDick to false;$ryanShirt to null]]<<else>>[[(Remove)|Halloween Ryan Sex][$sexDescription to "Ryan pulls his shirt off, exposing his bare, muscular chest. You run your hand over his muscles, impressed.";$player.arousal to $player.arousal+3;$ryanArousal to $ryanArousal+2;$currentlySuckingDick to false;$ryanShirt to null]]<</if>><<else>>Bare, exposing his muscular chest<</if>>
+Feet: <<if $ryanShoes is not null>><<print $ryanShoes.properName>> [[(Remove)|Halloween Ryan Sex][$sexDescription to "Ryan kicks off his shoes.";$currentlySuckingDick to false;$ryanShoes to null]]<<elseif $ryanSocks is not null>><<print $ryanSocks.properName>> [[(Remove)|Halloween Ryan Sex][$sexDescription to "Ryan removes his socks.";$currentlySuckingDick to false;$ryanSocks to null]]<<else>>Barefoot<</if>>
+
+<<if visited("Halloween Kitchen Ryan Kiss")>>[[Kiss|Halloween Ryan Sex][$sexDescription to "You lean in and start making out with Ryan again. You enjoy the feeling of his stubble and his masculine lips against yours, but now the feeling doesn't feel quite so electric: probably because before you were imagining him in the bedroom. And now, well, you're here, and there are so many other things to do.";$player.arousal to $player.arousal+2;$ryanArousal to $ryanArousal+2;$currentlySuckingDick to false;$player.homosexuality to $player.homosexuality+1]]<<else>>[[Kiss|Halloween Ryan Sex][$sexDescription to "You lean in and start making out with Ryan. You enjoy the feeling of his stubble and his masculine lips against yours, but you also want more";$player.arousal to $player.arousal+2;$ryanArousal to $ryanArousal+2;$currentlySuckingDick to false;$player.homosexuality to $player.homosexuality+1]]<</if>><<if $ryanUnderwear is null and $player.arousal>50 and $ryanArousal>=75>><<if $currentlySuckingDick>>
+
+[[Suck his dick|Halloween Ryan Sex][$sexDescription to "You pop him out of your mouth for a moment to catch your breath, and then eagerly lick the shaft. Ryan groans, and you see a little bit of precum on the tip. You take him back into your mouth, and bob up and down on his cock, enjoying the way he reacts as you suck him off. You feel so powerful, being able to control his reaction as you give him pleasure.";$player.arousal to $player.arousal+5;$ryanArousal to $ryanArousal+10;$player.homosexuality to $player.homosexuality+3;$player.submission to $player.submission+1;$player.suckedDick to true;$currentlySuckingDick to true]]<<else>>
+
+<<if $player.skillCurse is 4>><<set $teammateText to "former teammate.">><<else>><<set $teammateText to "teammate.">><</if>>[[Suck his dick|Halloween Ryan Sex][$sexDescription to "Here you go. You're about to suck the cock of your $teammateText You kiss the tip and then put your lips around the head of his shaft. Ryan grunts and holds you in place. You kneel their helplessly as he uses your mouth. Finally, he lets go and you gasp for breath. That was a degrading experience, but also incredibly hot too.";$player.arousal to $player.arousal+7;$ryanArousal to $ryanArousal+10;$player.homosexuality to $player.homosexuality+3;$player.submission to $player.submission+1;$player.suckedDick to true;$currentlySuckingDick to true]]<</if>><</if>>
+
+<<print $sexDescription>><<else>><<print $sexDescription>><<if $movesTakenDuringSex<2>>
+
+<<if $player.arousal>=100>><<if $playerCame>>You feel a warmth build up inside of you, and you throw your head back as another orgasm overtakes you.<<else>><<set $playerCame to true>>Ryan places a hand on your thigh. You've been so pent up today that just this touch sends you over the edge. Ryan looks disappointed, but you're lost in the bliss of your orgasm.
+
+Finally, you notice his disappointment. Taking pity on him, you reassure him that you want to keep going, and he smiles.<</if>><<elseif $partnerCame>>Ryan groans. He looks like he needs to cum, but he already did.<<else>><<set $partnerCame to true>>@@.player;"I can't wait for this,"@@ you tell Ryan.
+
+As it turns out, you are going to have to wait, because as soon as you say that, Ryan's body trembles. @@.thought;That pushed him over the edge? Seriously?@@
+
+Somehow, his cock remains hard. He assures you that he wants to continue.<</if>><<else>><<if $ryanArousal>=100>>
+
+<<if $currentlySuckingDick>><<link "Ryan twitches in your mouth" "Halloween Ryan CumChoice">><</link>><<else>>[[He cums|Halloween Ryan Cum]]<</if>><<elseif $player.arousal>=100>>
+
+[[You cum|Halloween Ryan Cum]]<</if>><</if>><</if>>
+
+::Halloween Ryan CumChoice
+Ryan's cock twitches. Realizing what's about to happen, you know that you have only seconds to get out of the way.
+
+[[Get out of the way|Halloween Ryan CumFace]]
+[[Stay where you are|Halloween Ryan CumMouth]]
+
+::Halloween Ryan CumFace
+Ryan's cock slips out of your mouth as he cums. Unfortunately, you weren't fast enough. You didn't get any of his seed in your mouth, but that's because it all went on your face.
+
+@@.thought;Shit.@@
+
+@@.male;"I'm sorry, babe,"@@ Ryan says awkwardly.
+
+You do your best to clean yourself up. You can't see yourself, but you know that your makeup is ruined. @@.thought;I hope no one sees me like this. I'd better get out of the party.@@
+
+[[Try to leave unnoticed|Halloween Ryan Leave]]
+<<finishSexScene>>\
+
+::Halloween Ryan CumMouth
+You stay where you are, anticipating the taste of Ryan's cum. Sure enough, he erupts into your throat, and before you realize what you're doing, you've gulped down his salty cum.
+
+@@.thought;Wow.@@
+
+@@.male;"That was great, babe,"@@ Ryan says. @@.male;"I love girls who swallow."@@
+
+@@.player;"I liked it too,"@@ you say with a smile. Suddenly, a thought crosses your mind. @@.player;"We've got to get out of here."@@
+
+He laughs. @@.male;"Why?"@@
+
+@@.player;"Before anyone realizes that I sucked your dick."@@
+
+He laughs again. @@.male;"Nobody knows who you are. Hell, I don't know who you are."@@
+
+@@.player;"I know, but I know those people are going to judge me,"@@ you say as you hurriedly your costume back on.
+
+[[Try to leave unnoticed|Halloween Ryan Leave]]
+<<set $player.homosexuality to $player.homosexuality+1>>\
+<<finishSexScene>>\
+
+::Halloween Ryan Cum
+Ryan groans. @@.male;"I'm going to cum!"@@ he announces between ragged breaths.<<if $player.arousal>=100>>
+
+@@.player;"Me too!"@@<</if>>
+
+He lets loose a stream of cum onto the bed.<<if $player.arousal>=10>> At the same time, you have an orgasm of your own. You cry out as the pleasure overtakes you.<<else>>You sigh in disappointment. After all that, you didn't even get off.<</if>>
+
+You lie there for a while, when all of a sudden a thought crosses your mind.
+
+@@.player;"Shit! We've gotta go!"@@
+
+@@.male;"What's wrong, babe?"@@
+
+@@.player;"We've been gone from the party for a while. People are going to realize what we were up to!"@@
+
+@@.male;"So?"@@
+
+You sigh. @@.player;"It's different for you. Those people out there are going to judge me."@@
+
+@@.male;"Nobody knows who you are. Hell, I don't know who you are."@@
+
+That does little to ease your mind. You hurriedly put your costume back on, and get ready to go.
+
+[[Try to leave unnoticed|Halloween Ryan Leave Normal]]
+<<finishSexScene>>\
+
+::Halloween Ryan Leave
+@@.male;"Where are you going?"@@ Ryan asks as you hurriedly put your costume back on.
+
+@@.player;"Gotta go,"@@ you say. You turn to him. @@.player;"Sorry. I had a good time."@@
+
+You open the bedroom door and walk quickly down the hallway and down the stairs. Ryan leaves the room a little while after you, and is immediately greeted with high fives from his teammates.
+
+@@.thought;That's so not fair.@@
+
+As for you, everyone avoids you, but you can still hear the comments that they're making behind your back.
+
+@@.female;"Did you see the cum on her face?"@@
+
+@@.female;"She totally sucked him off!"@@
+
+@@.male;"I knew she was going to hook up with him."@@
+
+It's all too much for you. You slip out the front door, and then sprint the rest of the way back to your dorm.
+
+@@.thought;On the bright side, at least none of them know who I am. @@<<if $player.masculinity>25>>@@.thought;They all thought I was a girl.@@<<else>>@@.thought;All they know about me is that I'm some girl.@@<</if>>
+
+[[Wash off your makeup and get out of your costume|Halloween Finish]]
+<<if $timeOfDay is 3>><<passTime>><</if>>\
+
+::Halloween Ryan Leave Normal
+To your surprise, nobody says anything when you leave the bedroom. Whether it's because they didn't notice or because there's so much sex going on at this party you're not sure, but either way you're able to make it to the kitchen without incident.
+
+[[Look around|Halloween Kitchen]]
+
+::Halloween Den
+A halloween movie is playing loudly on the TV. A handful of people are sitting on the sofa, watching the movie.
+
+[[Go back to the kitchen|Halloween Kitchen]]
+<<if visited("Halloween Kitchen Morgan Guy")>><<link "Look for $qb.firstname" "Halloween Den QB">><</link>><<else>>[[Look at the partygoers|Halloween Den QB]]<</if>>
+<<if visited("Halloween Den QB Observe") or visited("Halloween Den QB Confront")>>[[Finish the movie|Halloween Den Movie Finish]]
+
+''Hint: finishing the movie will end the party.''<<else>>[[Watch the movie|Halloween Den Movie]]<</if>>
+
+::Halloween Den Movie
+You find an open spot on the sofa and settle in to watch.
+
+<<if visited("Halloween Den Movie")>1>>It looks like you came in during the middle of the movie, so it takes some time to pick up the plot. From what you can gather, it's halloween, and a group of friends are exploring a haunted house. Of course, things seem to have gone wrong, and everything in the haunted house has come to life. The actors who were dressed up as ghosts and zombies have now //actually// become ghosts and zombies.<<else>>Not much has happened in the movie since the last time you watched it: everyone in the haunted house has //become// their costume, and the friends are searching for a way out.<</if>>
+
+The movie quickly loses your interest, however. It has a good premise, but it's too campy, and it's not scary at all.
+
+<<if visited("Halloween Den QB")>><<link "Bored, you turn your attention back to $qb.firstname" "Halloween Den QB">><</link>><<else>>[[Bored, you look at the other people watching the movie|Halloween Den QB]]<</if>>
+
+::Halloween Den QB
+<<if visited("Halloween Den QB")<=1>>You scan your eyes over the other partygoers: <<if $boughtGirlsCostume>>there's a guy dressed as a werewolf, someone dressed as a lumberjack<<else>>there are a group of guys who are all dressed as <<if $costume is "Thor">>superheroes, including another Thor,<<else>>football players<</if>><</if>>, and a couple of girls dressed as <<if $boughtGirlsCostume>><<if $costume is "Wonder Woman">><<print $costume>><<elseif $costume is "princess">>princesses<<else>>cheerleaders<</if>><<else>>cheerleaders<</if>>. You look down critically at your own costume. @@.thought;Is this too basic?@@ you wonder.
+
+<<if visited("Halloween Kitchen Morgan Guy")>>@@.thought;Oh! I see <<print $qb.firstname>>! He's dressed up as Frankenstein. I like his costume. It looks like he spent time on it. More time than me.@@<<else>>You continue looking at the crowd. There's a tall guy dressed like Frankenstein who's watching the movie intently. There's something familiar about him.
+
+@@.thought;Is that...<<print $qb.firstname>>?@@<</if>>
+
+You're about to go say hi to him when the girl who's sitting next to him laughs at a joke in the movie and punches him in the arm.
+
+@@.thought;Are they...together?@@<<else>>The girl sitting next to <<print $qb.firstname>> is still there, and she's still being very touchy with him.<</if>> <<if $qb.date and $qb.date is $player.firstname>>@@.thought;I should go confront him...Wait, I don't want to be the crazy @@<<if $player.masculinity<=0 and $boughtGirlsCostume>>@@.thought;girlfriend@@<<elseif $player.masculinity<50 or $boughtGirlsCostume>>@@.thought;significant other@@<<else>>@@.thought;boyfriend@@<</if>>@@.thought;. I should give him a chance.@@<<elseif $player.crush is $qb.firstname>>@@.thought;I want to go confront him. But what would I say? We're not dating. I don't even know if he likes me. I should just leave him be.@@<<else>>@@.thought;I don't know why, but this bothers me.@@<</if>>
+
+[[Confront him|Halloween Den QB Confront]]
+[[Just see what happens|Halloween Den QB Observe]]
+[[Get up|Halloween Den]]
+
+::Halloween Den QB Confront
+You walk over to where <<print $qb.firstname>> is sitting. It's awkward because there's no room on the sofa, so you just hover over him.
+
+@@.player;"What's going on?"@@ you whisper.
+
+<<if $boughtGirlsCostume>>The girl gives you a dirty look, while <<print $qb.firstname>> just looks blankly at you. @@.qb;"Who are you?"@@ He looks at you for another moment before you see the recognition on his face. @@.qb;"...<<print $player.firstname>>?"@@
+
+@@.player;"Yeah!"@@ <<else>>The girl gives you a dirty look, and <<print $qb.firstname>> looks embarrassed. @@.qb;"Hey, <<print $player.firstname>>. This is my friend, Beth. What do you mean, what's going on?"@@
+
+<</if>>You turn to the girl sitting next to him. <<if $qb.date and $qb.date is $player.firstname>>@@.player;"You're stealing my boyfriend."@@
+
+She rolls her eyes. <<if $boughtGirlsCostume>>@@.female;"You didn't tell me you had a crazy girlfriend!"@@<<else>>@@.female;"Is this the crazy sissy @@<<if $qb.date and $qb.date is $player.firstname>>@@.female;you're dating?"@@<<else>>@@.female;who has a crush on you?"@@<</if>><</if>>
+
+@@.player;"Hey! I'm not crazy!"@@ You're not whispering anymore.
+
+The girl gets up and starts heading for the door.
+
+@@.qb;"Beth, wait,"@@ <<print $qb.firstname>> says. He looks at you and then follows after her.
+
+@@.thought;I think I overreacted@@ you think. Then, you look around and notice that everyone is staring at you. Embarrassed, you slink out of the den.
+
+@@.thought;I don't think I should come back here.@@
+
+<<if $boughtGirlsCostume>>[[At least nobody knows who you are|Halloween Kitchen]]<<else>>[[You hope nobody else hears about this|Halloween Kitchen]]<</if>>
+<<set $qb.relationship to $qb.relationship-10>>\<<elseif $player.crush is $qb.firstname>>@@.player;"What's going on with you and <<print $qb.firstname>>?"@@
+
+@@.female;"What do you mean? We're just friends."@@
+
+@@.player;"It didn't look like you were just friends. It looked like you wanted to make out with him."@@ You're not whispering anymore.
+
+@@.female;"No, it's...look, why do you care? This is none of your business!"@@ The girl gets up and starts heading for the door.
+
+@@.qb;"Beth, wait,"@@ <<print $qb.firstname>> says. He looks at you and then follows after her.
+
+@@.thought;I think I overreacted@@ you think. Then, you look around and notice that everyone is staring at you. Embarrassed, you slink out of the den.
+
+@@.thought;That was awkward.I don't think I should come back here.@@
+
+<<if $boughtGirlsCostume>>[[At least nobody knows who you are|Halloween Kitchen]]<<else>>[[You hope nobody else hears about this|Halloween Kitchen]]<</if>>
+<<set $qb.relationship to $qb.relationship-7>>\<<else>>@@.player;"What's going on with you and <<print $qb.firstname>>?"@@
+
+@@.female;"What do you mean? We're just friends."@@
+
+You think back to when she was being touchy with <<print $qb.firstname>>. @@.player;"Are you sure?"@@
+
+@@.qb;"<<print $player.firstname>>, can we talk about this later?"@@ <<print $qb.firstname>> says, jumping in. @@.qb;"I don't want to miss the movie."@@
+
+[[Go back to watching the movie|Halloween Den Movie Finish]]
+[[Go back to the kitchen|Halloween Kitchen]]
+
+''Hint: finishing the movie will end the party.''
+<<set $qb.relationship to $qb.relationship-3>>\<</if>><<set $halloweenInteractions to $halloweenInteractions+1>><<if $halloweenInteractions is 2>><<passTime>><</if>><<set $player.submission to $player.submission-2>>\
+
+::Halloween Den QB Observe
+You're about to rise up and stride over to confront the girl, but you think better of it. @@.thought;I don't want to make a scene. Besides, @@<<if $qb.date and $qb.date is $player.firstname>>@@.thought;I have to trust <<print $qb.firstname>>.@@<<elseif $player.crush is $qb.firstname>>@@.thought;I don't want <<print $qb.firstname>> to think I'm too clingy.@@<<else>>@@.thought;what do I care who <<print $qb.firstname>> flirts with?@@<</if>>
+
+You continue to watch the movie, while keeping an eye on <<print $qb.firstname>>. The girl is drunk and clearly hitting on him.
+
+@@.female;"It's too crowded in here. Want to go some place more private?"@@ she whispers loudly.
+
+@@.thought;Okay, <<print $qb.firstname>>. What are you going to do?@@
+
+@@.qb;"I shouldn't."@@
+
+@@.female;"Come on!"@@
+
+<<if $qb.date and $qb.date is $player.firstname>>@@.qb;"I have a girlfriend."@@
+
+You're so happy to hear him say that that you don't even mind that he called you his girlfriend.
+
+@@.female;"She won't find out."@@
+
+@@.thought;Yes sh...I will.@@
+
+He turns to her. @@.qb;"No."@@
+
+She huffs and storms out of the den.
+
+[[Smiling, you turn your attention back to the movie|Halloween Den Movie Finish]]<<elseif $player.crush is $qb.firstname>>@@.qb;"There's @@<<if $player.feminine>=10 and $player.masculinity<50>>@@.qb;a girl@@<<else>>@@.qb;someone@@<</if>> @@.qb;who I like."@@
+
+@@.thought;There is? I wonder who he's talking about.@@
+
+@@.female;"So? You're not dating her."@@
+
+@@.qb;"I know, but I don't want to mess this up."@@
+
+@@.thought;Maybe he's talking about me?@@
+
+She huffs and storms out of the den.
+
+[[Intrigued, you turn your attention back to the movie|Halloween Den Movie Finish]]<<else>>He thinks about it for a couple of seconds. @@.qb;"Okay."@@
+
+She giggles, and the two of them get up from the couch and leave the den.
+
+[[Turn your attention back to the movie|Halloween Den Movie Finish]]<</if>>
+[[Go back to the kitchen|Halloween Kitchen]]
+
+''Hint: finishing the movie will end the party.''
+<<set $player.submission to $player.submission+1>>\
+
+::Halloween Den Movie Finish
+<<if previous() is "Halloween Den" or $player.crush is not $qb.firstname>>You're feeling pretty tired, and watching a movie seems like the perfect way to wind down. And now that you're giving it a chance, you're surprised to find that the movie isn't all bad.<<else>>Now that you're in a good mood, you find yourself enjoying the movie more.<</if>> Sure, it's not very good, but it's enjoyably campy, and you enjoy seeing all the over the top monsters scare the friends. Even the ending is surprisingly good, as the two remaining friends have to sneak past their zombified buddy in order to shut down the haunted house.
+
+@@.thought;Wow. I enjoyed it more than I thought I would.@@
+
+You stretch and stand up, <<if $player.crush is $qb.firstname>>looking around for <<print $qb.firstname>>, but you can't find him anymore.<<else>>looking to see if <<print $qb.firstname>> is back, but he isn't.<</if>> You check your phone and are surprised with how late it is.
+
+@@.thought;I should get going. I need to be up in time for school.@@
+
+[[Leave the party|Halloween Leave Normal]]
+<<set $halloweenInteractions to $halloweenInteractions+1>>\
+
+::Halloween Leave Normal
+You and <<if previous() is "Halloween LivingRoom">>a couple other<<else>>the remaining<</if>> partygoers filter out the front door. Now that the party is <<if previous() is "Halloween LivingRoom">>almost <</if>>over, the place looks much less spooky. Some of the gravestones you saw before have somehow been overturned, and the guy you saw at the front gate is busy making out with a girl.
+
+<<if $boughtGirlsCostume>>@@.female;"Nice costume,"@@ a girl dressed as Anna says. It takes you a minute before you realize that she's talking to you. Her friend @@.thought;sister?@@ who is dressed as Elsa nods her head.
+
+@@.player;"Oh thanks!"@@ you say. @@.player;"I like your costumes too. It's so cool that they match."@@
+
+@@.female;"It wasn't easy to find. That costume shop in town had an Elsa but no Anna."@@
+
+@@.female;"Hey, what dorm are you going back to?"@@
+
+You're about to tell them your dorm when you realize that they're expecting you to tell them a girls dorm.
+
+[[Busch Hall|Halloween Leave Walk][$dorm to "Busch"]]
+[[Willow Hall|Halloween Leave Walk][$dorm to "Willow"]]
+[[Tell them that you left something back in the house|Halloween Leave Escape]]<<else>>You walk back to your dorm in silence. @@.thought;I had a pretty good time I guess. It was nice to just relax and go to a party. It would be better if everyone was a little nicer though.@@
+
+You look down at your costume. It looks good, but you can't help but think <<if visited("Halloween Den QB")>>about <<if $costume is "Thor">>that guy who was<<else>>those guys who were<</if>> wearing the same costume as you. @@.thought;I feel like @@<<if $costume is "Thor">>@@.thought;he@@<<else>>@@.thought;they@@<</if>> @@.thought;wore it better.@@<<else>>that the costume doesn't //really// fit you.<</if>>
+
+@@.thought;I might as well enjoy it, right? Tomorrow, it'll be November and everything will be back to normal. I won't even be able to look like a manly @@<<if $costume is "Thor">>@@.thought;superhero.@@<<else>>@@.thought;football player.@@<</if>>
+
+[[Go to your room and get some sleep|Sleep]]<</if>>
+
+::Halloween Leave Walk
+@@.player;"I'm going to <<print $dorm>> Hall,"@@ you tell them.
+
+@@.female;"That's where we're going! We can walk there together."@@
+
+@@.thought;Shit. I should have made an excuse and escaped.@@
+
+The sisters are friendly, though, and make conversation as the three of you walk back to <<print $dorm>>.
+
+@@.female;"So, I hope I'm not out of line, but I was wondering something."@@
+
+@@.player;"...yes?"@@
+
+@@.female;"Well, your costume looks great but your makeup, uh, it looks like it was rushed. And you put more blush on one cheek than the other."@@
+
+@@.thought;Shit.@@ You look at her, but she doesn't look accusing or suspicious, just curious.
+
+@@.player;"Well, to tell the truth, I never really wear makeup. So, uh, I guess I'm not very good at putting it on."@@
+
+@@.thought;Good save@@ you think, congratulating yourself. @@.thought;And it's the truth.@@
+
+She brightens up. @@.female;"Oh! Well, I can help with that!"@@
+
+And for the rest of the walk to <<print $dorm>>, the sisters chatter away, giving you makeup advice. It's a little hard to keep it all in your head, but you remember some useful pieces of information.
+
+@@.thought;This will be helpful next time@@ you think. @@.thought;Wait, next time?@@<<if $qb.date and $qb.date is $player.firstname>> @@.thought;Well, if I go on another date with <<print $qb.firstname>>.@@<</if>>
+
+[[The sisters stop talking. You've made it back to their dorm|Halloween Dorm]]
+
+::Halloween Dorm
+Tentatively, you follow the girls inside. It feels weird, acting like you live there when<<if $player.masculinity>=50>> you're not even a girl<<elseif $player.masculinity>=25>>, technically, you're a boy<<else>> you don't<</if>>. But nobody even looks you at twice.
+
+@@.player;"Uh, I need to go to the bathroom,"@@ you tell the girls before they can ask you which room you live in.
+
+@@.female;"Bye! It was really nice meeting you, uh..."@@
+
+She's clearly asking you for your name, but you're definitely not going to give it. Acting like you don't hear her, you rush into the nearest bathroom. There's a girl in there who you recognize from the party, but she just <<if visited("Halloween Den QB Confront")>>gives you a dirty look. @@.thought;It must be because I made a scene with <<print $qb.firstname>>.@@ Ignoring her, you go inside a stall.<<else>>waves to you. You wave back, and then go inside a stall.<</if>> Now that you think about it, you //do// have to pee.
+
+You <<if $costume is "Wonder Woman">>lower your shorts and panties<<elseif $costume is "cheerleader">>hike up your skirt and lower your panties<<else>>hike up your dress and lower your panties<</if>>, and finish your business, wait a couple minutes just in case the sisters are still outside the bathroom, and then wash your hands and leave the dorm.
+
+@@.thought;I feel bad for lying to them. They were really nice.@@
+
+[[Go back to your dorm|Halloween Finish]]
+
+::Halloween Leave Escape
+@@.thought;What if I pick a girls dorm and then they happen to live in the same one? Then they'd expect me to walk with them, and that would be awkward.@@
+
+@@.player;"Uh, I just remembered I left something in the house. I need to go get it."@@
+
+@@.female;"Oh...okay. Well, it was nice meeting you!"@@
+
+@@.player;"Same!"@@ you say, and walk back into the house. Everybody is cleaning up from the party, but there are still a couple of guests left, so you don't feel too awkward.
+
+[[Once enough time has passed, you walk back to your dorm|Halloween Finish]]
+
+::Halloween Finish
+As you <<if visited("Halloween Ryan Leave")>>run<<else>>walk<</if>> back to your dorm, you think about the night that you had. It was eventful, that's for sure.
+
+@@.thought;I'm feeling...good? I wasn't sure how the party would go, dancing up like @@<<if $costume is not "Wonder Woman">>@@.thought;a @@<</if>>@@.thought;<<print $costume>> and @@<<if $player.masculinity>=10>>@@.thought;acting like I'm a girl.@@<<else>>@@.thought;going to the party as a girl.@@<</if>> @@.thought;But I actually had fun.@@
+
+You think about that some more. For the first time in a month, you were able to just enjoy yourself without having to worry about your transformation or trying to act manly.
+
+@@.thought;And even better, nobody treated me like I was a sissy. @@<<if visited("Halloween Ryan Leave") or visited("Halloween Kitchen Ryan Kiss")>>@@.thought;They treated me like I was a slut, sure, but they also treated me like just another girl.@@<<else>>@@.thought;I was just one of the girls.@@<</if>>
+
+A month ago, you would have punched anyone who treated you like you were "one of the girls", but now that thought makes you smile. @@.thought;If only every day could be like this. Nobody calling me a sissy, nobody whispering about how I@@<<if $player.skillCurse is 4>>@@.thought; used to be@@<<else>>@@.thought;'m supposed to be@@<</if>> @@.thought;a football player, just people treating me normally. Of course, it would be better if they treated me like a guy, but this wasn't bad.@@
+
+You shake your head. @@.thought;No, that won't happen@@ you think as you finally make it back to your dorm. @@.thought;I'm going to take off this costume and this makeup and then go to school tomorrow, and it'll be more of the same.@@
+
+[[Take off your costume and makeup|Halloween Finish Change]]
+
+::Halloween Finish Change
+A couple people give you sideways looks as you walk back into your dorm, but nobody says anything. @@.thought;Oh, right. Hopefully they think I'm a girl visiting her boyfriend.@@<<if visited("Halloween Dorm")>> @@.thought;It's weird how I live here but I felt less out of place in <<print $dorm>>.@@<</if>>
+
+Luckily, you make it to the bathroom without any incident. @@.thought;Okay, I need to take off my makeup and change back into my normal clothes. But my clothes are in my room. Shit! I hope Patrick and Marco aren't back yet.@@
+
+[[Take off your makeup|Halloween Finish Makeup]]
+[[Go back to your room|Halloween Finish Exposed]]
+
+::Halloween Finish Makeup
+@@.thought;I don't want my roommates see me wearing this@@ you think firmly. @@.thought;I'll just take off my makeup.@@
+
+You stand in front of the sink and wash off your makeup. It takes some time, but it comes off, and your face is back to the way it was.
+
+@@.thought;Okay, enough stalling. I need to go back to my room. If Patrick or Marco are there, I'll die.@@
+
+You scan the bathroom and your eyes spot a towel that's hanging on a hook in front of a shower stall. @@.thought;I could just change out of my costume here, take the towel and go back. Hopefully I'll be able to do that before the guy in the shower is done.@@
+
+[[Take the towel and change here|Halloween Finish ChangeBathroom]]
+[[Go back to your room and hope nobody is there|Halloween Finish Exposed]]
+<<set $player.isWearingMakeup to false>>
+
+::Halloween Finish ChangeBathroom
+@@.thought;I don't want anyone to see me dressed like @@<<if $costume is not "Wonder Woman">>@@.thought;a @@<</if>>@@.thought;<<print $costume>>. I'll change here.@@
+
+You take the towel off the hook, go inside the stall, and take off your <<print $costume>> costume.
+
+@@.thought;It feels weird being out of that costume. I guess I had gotten used it.@@
+
+You look down over your naked body. Suddenly feeling uncomfortable, you wrap the towel around your <<if visited("Shower Boobs Cover")>>chest<<else>>waist<</if>>.
+
+[[Go back to your room|Halloween Sleep]]
+<<set $player.pants to null>><<set $player.underwear to null>><<set $player.shirt to null>><<set $player.bra to null>><<set $player.shoes to null>><<set $player.socks to null>>\
+<<if visited("Shower Boobs Cover")>><<set $player.towel to 2>><<else>><<set $player.towel to 1>><</if>>\
+
+::Halloween Finish Exposed
+@@.thought;They're probably not there@@ you think to yourself. <<if visited("Halloween Finish ChangeBathroom")>>You leave the bathroom,<<else>>You<</if>> walk over to your room, open the door...and are greeted by the sight of Patrick and Marco.
+
+@@.thought;Fuck!@@
+
+<<if $player.isWearingMakeup>>@@.male;"I think you have the wrong room."@@
+
+Mortified, you just nod your head and close the door.
+
+@@.thought;Looks like I have to go back to the bathroom.@@
+
+[[Change out of your costume|Halloween Finish BathroomAgain]]<<else>>They just stare at you for a couple seconds.
+
+@@.male;"...<<print $player.firstname>>?"@@
+
+@@.player;"Bye!"@@ you squeak, and run back to the bathroom.
+
+[[Change and take off your makeup|Halloween Finish BathroomAgain]]<</if>>
+<<set $team.respect to $team.respect-3>><<set $marco.suspicion to $marco.suspicion+1>>
+
+::Halloween Finish BathroomAgain
+<<if $player.isWearingMakeup>>When the bathroom door closes behind you, you let out a breath. @@.thought;That was the most embarrassing experience of my life.@@ And there have been a lot of them.
+
+You sigh and walk over to the sink and wash off your makeup. It takes some time, but it comes off, and your face is back to the way it was.
+
+@@.thought;Now the costume. Wait, what am I going to change into? My clothes are back in my room.@@
+
+Your eyes scan the bathroom, zeroing in on a towel that's hanging from a hook. @@.thought;I hope the guy who's using the shower won't be done for a while.@@<<else>>You walk back into the bathroom. @@.thought;At least they thought I @@<<if $player.masculinity>=50>>@@.thought;was a girl.@@<<else>>@@.thought;was someone else.@@<</if>> @@.thought;It could have gone worse.@@<</if>>
+
+You grab the towel from the hook, go inside a stall and change out of your costume.
+
+@@.thought;Okay@@ you think, wrapping the towel around your <<if visited("Shower Boobs Cover")>>body<<else>>waist<</if>>. @@.thought;I'm finally ready.@@
+
+You walk out of the stall and take one last look in the mirror. You can't help but feel disappointed. Now that there's no sign of how you looked a couple minutes ago, it's like the magic is gone.
+
+[[Go back to your room|Halloween Sleep]]
+<<set $player.pants to null>><<set $player.underwear to null>><<set $player.shirt to null>><<set $player.bra to null>><<set $player.shoes to null>><<set $player.socks to null>>\
+<<if visited("Shower Boobs Cover")>><<set $player.towel to 2>><<else>><<set $player.towel to 1>><</if>>\
+
+::Halloween Sleep
+You walk back to your room, <<if visited("Halloween Finish Exposed")>>awkwardly passing by Patrick and Marco.<<else>>nearly jumping when you see that Patrick and Marco are there. @@.thought;Good thing I stayed in the bathroom!@@<</if>>
+
+As soon as you settle into bed, a wave of tiredness washes over you.
+
+@@.thought;I had a big day. But I'm glad I did it.@@
+
+[[You drift off|Sleep]]

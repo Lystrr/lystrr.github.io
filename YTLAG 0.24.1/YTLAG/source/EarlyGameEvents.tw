@@ -1,0 +1,471 @@
+::HomecomingIntro
+It's been an interesting day. You're now pretty sure that witches are real, and that something happened. <<if visited("Weight Room")>><<if visited("Wash thoroughly")>>Your body is less muscular<<else>>Your cock is smaller<</if>>, and you're weaker than you were yesterday. <</if>><<if visited("Library")>>You're going to need to read the book you got when you have some time, but <<print $witch.firstname>> definitely seemed like she believed in witches. <</if>><<if visited("Backstory Intro")>>If <<print $witch.firstname>> is telling the truth, then witches are real, and she cursed me.<</if>>
+
+@@.thought;Maybe <<print $witch.firstname>> is crazy.@@ But you know it's wishful thinking. Everything you've heard the last two days, combined with what happened to your body, is too much for you to ignore.
+
+@@.thought;I can worry tomorrow. I should enjoy homecoming.@@ You're the homecoming king, after all, and you're going with your beautiful girlfriend <<print $girlfriend.firstname>>. If it wasn't for //this//, life would be perfect.
+
+You make your way back to your dorm. Marco and Patrick are already getting ready for homecoming. You feel lucky that you only have to wear your school uniform. The girls are all wearing fancy dresses, and your girlfriend, as well as your girl friends, have all complained about how hard it is to get ready.
+
+[[Get changed|Homecoming Changing]]
+
+::Homecoming Changing
+<<set $changeEndPassage to "Wear Homecoming">><<set $expectedOutfit to "school">><<display Clothes>>
+
+::Wear Homecoming
+You put on your fancy clothes - jacket, tie, dress pants - which just happen to be your school clothes. You don't usually like dressing up, but tonight it's nice. This is your last homecoming at Pinewood Prep, and it's going to be a special night for you.
+
+@@.player;Almost ready?@@ you text <<print $girlfriend.firstname>>.
+
+@@.girlfriend;Almost@@ she texts back.
+
+@@.male;"<<print $girlfriend.firstname>> said she's almost ready? My girl said that too. We'll probably be waiting half an hour."@@
+
+Marco turns out to be right. You pass the time joking with him and Patrick, before heading over to the girls dorm.
+
+@@.girlfriend;"Hey babe,"@@ <<print $girlfriend.firstname>> says, giving you a kiss on the cheek. She's wearing a beautiful green dress that reaches to her thighs, and shows off her tight body and her smooth legs. Her hair has been recently curled. You've never seen her hair like that, but you like it.
+
+@@.player;"Wow, you look great!"@@
+
+@@.girlfriend;"Thanks,"@@ she says, laughing. @@.girlfriend;"It took forever to get the look just right."@@ You stop yourself from saying anything.
+
+@@.female;"Pictures?"@@ another girl asks.
+
+[[Pictures]]
+
+::Pictures
+You roll your eyes. For some reason, all the girls like taking pictures before homecoming. You never saw the point of taking //so many//. @@.thought;I promised myself that I would try my best to have fun and worry about the curse tomorrow. I might as well enjoy this.@@
+
+@@.female;"Let's get one of you and <<print $player.firstname>>,"@@ one of the girls says to <<print $girlfriend.firstname>>. She leans in close to you, and you get a whiff of her flowery perfume. You smile, and the flash goes off.
+
+Next comes pictures of the other couples, pictures of all the guys together, pictures of all the girls, pictures of you and your girlfriend with another couple.
+
+Your phone lights up with a new message. All the pictures have just been shared on social media. In spite of yourself, you flick through them. There's a really nice photo of just you and <<print $girlfriend.firstname>>, and you save it to your phone.
+
+Finally, it's done, and your group heads to the dance. Since it was supposed to rain today, it's being held in the gym.
+
+[[Coronation]]
+
+::Coronation
+You arrive at the gym, settling into the crowd. There's a sea of faces here, but you recognize most of them. You wave and nod to everyone, enjoying the attention.
+
+Up on stage, you can see a young man and a young woman standing in front of a microphone. They're wearing the same outfits as the people here, but they look slightly older. @@.thought;They won king and queen last year. They must be going to present the awards.@@
+
+@@.male;"Our first member of the homecoming court is...Ryan!"@@ With a big grin, Ryan hurries up onto the stage. There's lots of applause, including your own.
+
+The court continues to be announced. It's composed of two more of your football buddies (although not Patrick or Marco), some of the popular girls, and Clarissa, who's a nerd, though also kinda pretty.
+
+@@.female;"Now it's time to announce the homecoming king and queen. Let's have a big round of applause for <<print $girlfriend.firstname>> <<print $girlfriend.lastname>> and <<print $player.firstname>> <<print $player.lastname>>!"@@
+
+The applause is thunderous. You take <<print $girlfriend.firstname>>'s hand and walk up onto the stage. You take your time; this is your night, and you're going to make it last. All around you, you see friends and acquaintances cheering you on.
+
+Once you're finally on stage, the last winner gives you a firm handshake that you struggle to return. You detect some surprise in his eyes, but it's quickly gone. @@.male;"Congratulations!"@@ he says, placing a plastic golden crown on your head.
+
+@@.female;"The first dance will be between our king and queen."@@
+
+Smiling, you take <<print $girlfriend.lastname>>'s hand and lead her onto the dance floor. The other people back away to give you room. But are you focusing on her, or are you looking for someone else?
+
+<<link "Focus on $girlfriend.firstname" "Dance Girlfriend">><</link>>
+<<link "Look for $witch.firstname" "Dance Distracted">><</link>>
+<<set $team.respect to $team.respect+5>>\
+
+::Dance Girlfriend
+You're surrounded by almost the entire school, but your eyes are only for your <<print $girlfriend.firstname>>. You could have any other girl in this gym, but you're fixated by her pretty smile, big brown eyes, and by the way she clearly spent so much time getting ready for this dance, and for you.
+
+You're nowhere near as good of a dancer as her, but you do a good job leading, and you don't even step on her feet. You've had practice in other school dances, and it's paying off.
+
+All too soon, the music stops, and she lets go of you. You know it's only because the song's over, and that you'll dance with her many more times tonight, but part of you wonders whether you'll ever feel as close to her as you do now.
+
+@@.girlfriend;"What's up, <<print $player.firstname>>?"@@
+
+@@.player;"Nothing."@@ She gives you a look. @@.player;"I'm just having a really great time."@@
+
+@@.girlfriend;"I am too"@@ <<print $girlfriend.firstname>> says, giving you a big smile
+
+@@.male;"And now the dance floor is open to everyone!"@@ Everyone cheers and crowds onto the dance floor. You give <<print $girlfriend.firstname>> a smile and prepare to dance with her again.
+
+[[Next Dance|Homecoming Middle]]
+<<set $girlfriend.relationship to $girlfriend.relationship+5>>
+
+::Dance Distracted
+You know that you should pay attention to your girlfriend. But as you start dancing, you can't help but wonder who else is here. @@.thought;Of course everyone on the football team is here. Well, maybe not <<print $qb.firstname>>.@@ You spin <<print $girlfriend.firstname>> around and take the opportunity to look over your shoulder.
+
+You spot him. He looks a little bored, but he's here, and so is his sister. @@.thought;Wow. I didn't think she would come.@@ She's wearing a dark purple dress, and looks surprisingly pretty. As you're looking at her, she looks up and catches you looking at her. Again.
+
+Just then, you step on <<print $girlfriend.firstname>>'s foot. She gives you a glare and moves her foot away. The dance continues, but you're just as clumsy as before. You're normally a pretty good dancer. You got lots of practice at all the school dances you've been to. But now, your attention is focused elsewhere.
+
+Mercifully, the song stops, and <<print $girlfriend.firstname>> pulls away from you.
+
+@@.player;"Are you okay?"@@ you whisper to her.
+
+@@.girlfriend;"We'll talk about this later,"@@ she hisses. @@.thought;Uh oh.@@
+
+@@.male;"And now the dance floor is open to everyone!"@@ Everyone cheers and crowds onto the dance floor. You prepare to dance with <<print $girlfriend.firstname>>. Hopefully this time it will go better.
+
+[[Next Dance|Homecoming Middle]]
+<<set $girlfriend.relationship to $girlfriend.relationship-5>>
+
+::Homecoming Middle
+The second dance with <<print $girlfriend.firstname>> goes <<if visited("Dance Girlfriend")>>almost as well as<<else>>much better than<</if>> the first. It's another slow dance, and you enjoy the feeling of her in your arms. You can smell her sweet perfume, and at the end of the dance, she gets on her tiptoes and kisses you.
+
+The rest of the dances fly by. You spend your time mostly dancing with <<print $girlfriend.firstname>>, although you dance with several other girls too. Everyone is excited when you ask them to dance, and you have a great time. You've forgotten all about <<print $witch.firstname>> and the curse.
+
+You've gotten tired, and you sit down to rest your feet. A couple of guys at your table pass around some whiskey that they snuck in. You look at the teachers, but they either don't notice or don't care.
+
+Happily, you pour yourself some whiskey. And that's how you spend the rest of your night: drinking and dancing. All in all, you have a pretty great time, and you're sad when the dance ends.
+
+<<print $girlfriend.firstname>> leans over. @@.girlfriend;"Why don't I come over?"@@ she whispers suggestively.
+
+Suddenly, you don't feel as disappointed.
+
+[[Go back with her|After Homecoming]]
+<<increaseArousal 5>>
+
+::After Homecoming
+<<passTime>>The crowd splits up, all going their separate ways. You feel a little pang of sadness, like that dance was the last moment of your old life.
+
+@@.thought;That's not true. I'm going to fuck <<print $girlfriend.firstname>>@@
+
+You're in luck. When you get back, the room is empty. You start making out with <<print $girlfriend.firstname>>. She gets into it, sitting on your lap and kissing you back passionately.
+
+You're interrupted by the door opening. Standing in the doorway are Marco and Patrick, and they're both holding the hands of their girlfriends. They must have had the same idea that you did.
+
+@@.male;"Am I interrupting anything?"@@ Marco asks.
+
+@@.player;"Uh, well, kind of,"@@ you say.
+
+@@.male;"We'll just be on my bed, man. Carry on,"@@ Patrick says, leading his girlfriend in. He starts making out with her in front of you, and Marco does the same.
+
+This is new for you. You're used to being the exhibitionist. You love showing off your body. Or at least, you used to, until it started changing.
+
+@@.girlfriend;"Do you want to continue? I think it's kind of hot,"@@  your girlfriend asks you.
+
+You agree. It's weird to fuck her in front of your roommates, but it //is// kind of hot. Marco and Patrick are too drunk to care, and with the way Marco's girlfriend is rubbing his crotch, they might do the same thing themselves.
+
+The old you would have jumped at the chance, but now you're a little self conscious about your smaller <<if visited("Masturbate")>>cock<<else>>muscles<</if>>.
+
+<<link "Let's do it" "GirlfriendStraightSex">><<setUpSexScene "girlfriend">><</link>>
+[[Try to get sleep|Sleep]]
+<<set $sawCock to false>>
+
+::Girlfriend Fight
+@@.player;<<if visited("Girlfriend Shocked")>>"It's got nothing to do from you. I'm just tired<<else>>"Sorry babe, I don't feel like it. I'm kind of tired<</if>>."@@
+
+To your surprise, her nostrils flare and her eyes narrow. @@.girlfriend;"<<if visited("Disappointed Sex") and not visited("Girlfriend Shocked")>>You can't even get hard yesterday, and today you don't feel like it? <<elseif not visited("Girlfriend Shocked")>>Yesterday you don't feel like it, and today you don't feel like it? <</if>>What's going on?"@@
+
+@@.player;"Uh, nothing,"@@ you say, taken aback. @@.player;"I just had a big day, that's all."@@
+
+@@.girlfriend;"And what did you do, play video games?"@@
+
+@@.player;"No! I @@<<if $activity1 is "gym" or $activity2 is "gym">>@@.player;worked out."@@<<elseif $activity1 is "videogames" or $activity2 is "videogames">>@@.player;well, I did play video games."@@<<elseif $activity2 is "study">>@@.player;studied for my bio test."@@<<elseif $activity1 is "library" or $activity2 is "library">>@@.player;went to the library."@@
+
+@@.girlfriend;"But you never go to the library,"@@ she says, confused.<<else>>@@.player;..."@@ you trail off. @@.thought;I don't want to tell her what I actually did.@@<</if>>
+
+@@.girlfriend;"Whatever."@@
+
+@@.player;"What's wrong?"@@
+
+@@.girlfriend;"You obviously don't want to fuck me. Am I...am I not good enough for you?"@@
+
+Patrick pops his head into your room. @@.male;"I'll come back later, man."@@ @@.thought;Great. Now we're making a scene.@@
+
+@@.player;"What? Of course not!"@@ You wonder how she can be so off base. The problem isn't that she's not hot enough for you, it's that your body is changing. Though to be fair, she can't be expected to know that.
+
+@@.girlfriend;"You don't know what it's like dating the star quarterback. All the other girls are so jealous. I'm, um, I'm scared you're going to leave me for one of them."@@
+
+@@.player;"No, baby. I like you, and I'm not going to leave you.  Wait, did you say all the other girls are jealous?"@@
+
+@@.girlfriend;"Ugh!"@@
+
+@@.player;"Wait! That came out wrong!"@@
+
+But she's already out the door, leaving you alone in your room. @@.thought;Fuck. I'll give her some time to cool off, and then I'll apologize tomorrow. But how? She wants to have sex and I can't.@@
+
+Thinking about sex makes you realize how horny you are. It's been a while since you had some release. @@.thought;And I don't know what my dick will look like tomorrow morning.@@
+
+[[Masturbate|Masturbate Male]]
+[[Just head to sleep|Dream]]
+<<set $girlfriend.relationship to $girlfriend.relationship-5>>
+<<finishSexScene>>
+
+::Masturbate Male
+@@.thought;Fuck! That might have been my last chance to fuck <<print $girlfriend.firstname>> for a while, and I blew it. And she's mad at me. Fuck!@@
+
+You're determined to use your dick. Who knows what changes you'll find in the morning?
+
+You go to your favorite porn site, and find your favorite video, where a cheerleader is blowing the star quarterback. Usually it always makes you cum, but now it just makes you feel sad.
+
+Clicking away from the Cheerleader category, you find a video with no plot, where a sexy girl is getting fucked by a sexy guy. @@.thought;Did I just call him a sexy guy?@@
+
+You're getting into the video, though. The only problem is that you're not used to stroking your shrunken cock. Usually, you have to use both hands to stroke it, but now it fits easily into the palm of right hand, leaving you unsure what to do about your left.
+
+It's a relief when you cum.
+
+@@.thought;That was great. Now, shit! I'm going to fall asleep and my body will be changed in the morning. I wonder what happens if I don't fall asleep?@@
+
+You try to fight off sleep, but you're too tired, and it eventually overtakes you.
+
+[[Dream]]
+<<set $player.arousal to 0>>
+
+::Girlfriend Shocked
+@@.player;"I guess I'm just, uh, not feeling in the mood right now?"@@ That's a lie. It's been a while since you had some release, and you're feeling pretty horny.
+
+@@.girlfriend;"But what about your dick? I thought it was bigger? Even when it was soft."@@ It's hard, actually. But she doesn't know that.
+
+@@.player;"Yeah, I thought it was too. That's weird, huh?"@@
+
+@@.girlfriend;"Sorry, I didn't mean to say that your cock was small. It's huge! You know that I love it."@@
+
+@@.player;"Yeah, I know. It's okay."@@
+
+@@.girlfriend;"So how come you're not hard?"@@
+
+@@.player;"I'm not in..."@@
+
+@@.girlfriend;"The mood right now,"@@ <<print $girlfriend.firstname>> finishes. @@.girlfriend;"<<if visited("Disappointed Sex")>>You weren't hard for me last night either<<else>>You didn't feel like doing it last night<</if>>. And now you're not hard for me tonight!"@@
+
+She's getting more and more upset. You should probably step in and do something.
+
+@@.player;"[[Let's fuck anyway. Maybe I'll get hard.|Sex Small Dick][$preferredType to "blowjob"]]"@@
+[[Offer to eat her out|Sex Small Dick][$preferredType to "eatOut"]]
+[[Try to console her|Girlfriend Fight]]
+<<set $sexDescription to "">>
+
+::Sex Small Dick [Sex]
+<<if ($player.arousal<100 and $girlfriend.arousal<100) or $movesTakenDuringSex<2>>Your Arousal: <<print $player.arousal>>
+<<print $girlfriend.firstname>> Arousal: <<print $girlfriend.arousal>>
+
+You are wearing:
+Legs: Bare, revealing your <<print $player.cock>> inch cock.
+Chest: <<if $player.shirt is not null>><<print $player.shirt.properName>> [[(Remove)|Sex Small Dick][$temp to $player.shirt;$sexDescription to "You pull off your $temp.informalName, exposing your bare chest. You wince a little bit as you look down. Just looking at it reminds you of the muscles you used to have.";$player.shirt to null;$player.arousal to $player.arousal-3;$girlfriend.arousal to $girlfriend.arousal-3]]<<else>>Bare, revealing your diminished muscles.<</if>>
+Feet: <<if $player.shoes is not null>><<print $player.shoes.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "You untie your shoes and place them off to the side, out of reach.";$player.shoes to null;$girlfriend.arousal to $girlfriend.arousal-1]]<<elseif $player.socks is not null>><<print $player.socks.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "Remembering how $girlfriend.firstname said that having your socks on while having sex was gross, you pull them off.";$player.socks to null;$player.arousal to $player.arousal+1;$girlfriend.arousal to $girlfriend.arousal+1]]<<else>>Barefoot<</if>>
+
+<<print $girlfriend.firstname>> is wearing:
+Legs: <<if $girlfriend.pants is not null>><<print $girlfriend.pants.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "Slowly, you unbutton her jeans and slide them down her legs. She's more impatient than you, and kicks them off, revealing her pretty panties and her long, smooth legs.";$girlfriend.pants to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal+3]]<<elseif $girlfriend.underwear is not null>><<print $girlfriend.underwear.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "You don't see her in those boyshorts that often. They look really sexy on her, but she looks even sexier when you pull them off, revealing her wet pussy.";$girlfriend.underwear to null;$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+5]]<<else>>Bare, revealing her pretty pussy.<</if>>
+Chest: <<if $girlfriend.shirt is not null>><<print $girlfriend.shirt.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "$girlfriend.firstname lifts her arms, and you pull her shirt up and off. Now, the only thing covering her boobs is her white bra.";$girlfriend.shirt to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+2]]<<elseif $girlfriend.bra is not null>><<print $girlfriend.bra.properName>> [[(Remove)|Sex Small Dick][$sexDescription to "You reach behind her for the clasp to undo her white bra. You fumble around until she takes pity on you and undoes the clasp herself. You rub her perfect breasts a little and she lets out a little moan.";$girlfriend.bra to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal-1]]<<else>>Bare, revealing her perfect breasts.<</if>>
+Feet: <<if $girlfriend.shoes is not null>><<print $girlfriend.shoes.properName>> [[(Remove)|Sex Small Dick][$girlfriend.shoes to null]]<<else>>Barefoot [[(Lick)|Sex Small Dick][$sexDescription to "You can't believe you're doing this, but you reach for $girlfriend.firstname's bare foot and put it in your mouth. She looks at you with surprise, but that look quickly changes as she gets into it. @@.thought;Why did I do that? Though I guess she likes it...@@";$player.submission to $player.submission+1;$player.arousal to $player.arousal-3;$girlfriend.arousal to $girlfriend.arousal+7]]<</if>>
+
+<<if $kissesLeft>0>>[[Kiss|Sex Small Dick][$sexDescription to "You lean in and kiss her, hard. She kisses back passionately, but it seems like she wants more.";$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+3;$kissesLeft to $kissesLeft-1]]<</if>>
+
+<<if $girlfriend.pants is null and $girlfriend.underwear is null>><<if $preferredType is "blowjob">>[[Say that you want to fuck|Sex Small Dick][$sexDescription to "You tell her that you'd like to fuck. She looks with confusion at your small dick, but when you insist, she asks if you'd like a blowjob. That wasn't exactly what you wanted, but it's better than nothing, and you agree. She shrugs and takes you into her mouth, easily taking your length. It feels better than any blowjob she's given you and you let out a groan. You can feel yourself getting closer to cumming. $girlfriend.firstname pops your penis out of her mouth and tells you it's a shame you're not hard yet. You try to ignore the bruise to your ego.";$player.arousal to $player.arousal+10;$girlfriend.arousal to $girlfriend.arousal-1]]<<else>>[[Eat her out|Sex Small Dick][$sexDescription to "You ask her if she wants you to eat her out. $girlfriend.firstname looks at your penis with disappointment, but agrees. You're not that good at this, though. Whenever you've had sex, you were always focused on your pleasure, and if the girl had fun, then that was good too. You've fucked several girls and gotten lots of blowjobs, but you've only tried to give oral a couple times. Despite your inexperience, $girlfriend.firstname seems to be having a good time. She's getting into it, moaning and clasping her legs around your head. You're also having a good time too. It's a little degrading: this might be your last day having a dick, and it's pressed uselessly into the bed while you give her pleasure. You like the feeling, though, which makes you confused.";$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+5;$player.submission to $player.submission+2]]<</if>><</if>>
+
+<<print $sexDescription>><<else>><<print $sexDescription>>
+
+<<if $movesTakenDuringSex<2>><<if $player.arousal>=100>><<if $playerCame>>You're horny, and you desperately need to cum again, but nothing is coming out.<<else>><<set $playerCame to true>>@@.girlfriend;"I can't wait for you to fuck me,"@@ <<print $girlfriend.firstname>> says.
+
+You've been pent up during the day, and the sound of her saying that pushes you over the edge. <<print $girlfriend.firstname>> looks disappointed, but you don't notice.<<set $girlfriend.relationship to $girlfriend.relationship-1>><<elseif $partnerCame>><<print $girlfriend.firstname>> closes her eyes and moans. She pushes you off of her and masturbates until she orgasms. @@.thought;How does she keep doing that?@@<<else>><<set $partnerCame to true>>@@.player;"I can't wait to fuck you,"@@ you tell her.
+
+As it turns out, you're going to have to wait, because as soon as you say that, <<print $girlfriend.firstname>>'s body trembles.
+
+Or maybe you won't have to wait. <<print $girlfriend.firstname>> shows no signs of stopping.<</if>><</if>><</if>>
+
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>>[[You both cum|Cum Small Dick]]<<elseif $player.arousal>=100>>[[You cum|Cum Small Dick]]<<elseif $girlfriend.arousal >= 100>>[[She cums|Cum Small Dick]]<</if>><</if>>
+
+::Cum Small Dick
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>><<print $girlfriend.firstname>> throws her head back and lets out a moan. It's a deeper, louder moan than before. At the same time, you feel a throbbing in your little dick, <<if $playerCame>>but you're worried that it's futile<<else>>and you realize that you're close...really close<</if>>.
+
+@@.girlfriend;"<<print $player.firstname>>, I'm coming!"@@
+
+<<if $playerCame>>@@.player;"I hope I'm cumming too!"@@<<else>>@@.player;"Me too!"@@<</if>>
+
+@@.girlfriend;"You're what? But...ahhhhhh!"@@
+
+<<if $playerCame>><<set $player.masculinity to $player.masculinity-2>><<set $player.confidence to $player.confidence-1>>You were worried that you had no cum left in you, but what happens is even worse. A little semen dribbles out of your penis and drips onto the sheets.<<else>>You let out a gasp and semen shoots out of you, landing in your covers.<</if>> You and <<print $girlfriend.firstname>> lie together, enjoying the post-orgasm high.
+
+@@.girlfriend;"<<print $player.firstname>>,"@@ she begins. You turn to her, preparing for a question about your dick size. @@.girlfriend;"That was great. We need to do it again!"@@
+
+@@.thought;She must have forgot@@ you think, relieved. @@.thought;And I need to change these sheets.@@
+
+There's a knock at the door, and Patrick enters, giving you and <<print $girlfriend.firstname>> only enough time to dive beneath the covers. @@.male;"Sorry, man. I didn't mean to interrupt,"@@ Patrick says, backing out of the room.<<set $girlfriend.relationship to $girlfriend.relationship+5>><<set $player.arousal to 0>><<set $girlfriend.arousal to 0>><<set $player.confidence to $player.confidence+4>><<elseif $player.arousal>=100>>You feel a throbbing in your little dick, <<if $playerCame>>but you're worried that it's futile<<else>>and you realize that you're close...really close<</if>>.
+
+<<if $playerCame>>@@.player;"<<print $girlfriend.firstname>>, I think I might be cumming!"@@<<else>>@@.player;"<<print $girlfriend.firstname>>, I'm coming!"@@<</if>>
+
+@@.girlfriend;"You're what?"@@
+
+@@.player;"I'm...ahhhhh!"@@ you moan, lost in the pleasure. You sink back into the bed, enjoying the post-orgasm high.<<if $playerCame>><<set $player.masculinity to $player.masculinity-2>><<set $player.confidence to $player.confidence-1>> It takes you a moment to realize that your "cum" was just a couple of pathetic spurts.<</if>>
+
+@@.girlfriend;"Wait, what happened? I thought you weren't hard."@@
+
+@@.player;"I don't know. I, uh, I guess I wasn't, but I came anyway."@@ You feel a little bit of guilt about lying to your girlfriend, but it's not like you can admit the truth. @@.thought;Can I?@@
+
+@@.girlfriend;"Do you want to help finish me off?"@@
+
+@@.player;"Sure."@@ You lower her mouth and prepare to lick her pussy...
+
+KNOCK! Patrick lets himself in, giving you and <<print $girlfriend.firstname>> just enough time to dive beneath the covers. @@.male;"Sorry man. I didn't mean to interrupt. I'll let you two lovebirds continue,"@@ Patrick says as he leaves.
+
+Unfortunately, the mood's been ruined.<<set $girlfriend.relationship to $girlfriend.relationship-1>><<set $player.arousal to 0>><<set $player.confidence to $player.confidence-7>><<else>><<print $girlfriend.firstname>> throws her head back and lets out a moan. It's a deeper, louder moan than before.
+
+@@.girlfriend;"<<print $player.firstname>>, I'm coming!"@@
+
+@@.player;"That's great!"@@ you say, and you mean it. Kind of. You're glad your girlfriend had a good time, but you're a little bit jealous.<<if visited("Witch Encounter Reveal")>> This might be the last day you have your dick, and you didn't even get to cum."@@<<set $girlfriend.arousal to 0>><<set $player.confidence to $player.confidence-3>><</if>><<if $partnerCame>><<if visited("Witch Encounter Reveal")>>And how<<else>>How<</if>> come you can't orgasm but she can do it twice?<</if>>
+
+@@.girlfriend;"You okay, <<print $player.firstname>>?"@@ <<print $girlfriend.firstname>> asks when she recovers.
+
+@@.player;"Yeah. I'm fine,"@@ you say, putting on a smile.
+
+@@.girlfriend;"Okay, I just wanted to make sure you had a good time,"@@ <<print $girlfriend.firstname>> says with a look of concern. @@.girlfriend;"It's too bad you didn't get hard."@@
+
+@@.player;"Yeah."@@ @@.thought;She didn't mean it to be an insult. And it's not an insult. It's <<print $witch.firstname>>'s fault my dick is smaller.@@<<set $girlfriend.relationship to $girlfriend.relationship+3>><</if>>
+
+The two of you hang out for a while, enjoying each other's company. It's getting late, though, and she says good night and heads to her dorm.
+
+You try to fight off sleep, dreading the changes that will take place over the night. @@.thought;How weak will I be? What about my dick? Will I still have it? Fuck!@@
+
+But try as you might, [[sleep|Dream]] eventually overtakes you.
+<<set $lastMaleSexDay to $day>><<finishSexScene>>
+
+::GirlfriendStraightSex [Sex]
+<<if ($player.arousal<100 and $girlfriend.arousal<100) or $movesTakenDuringSex<2>><<set $movesTakenDuringSex to $movesTakenDuringSex+1>><<if $player.pants is not null or $player.underwear is not null>>Your Arousal: <<print $player.arousal>>
+<<print $girlfriend.firstname>> Arousal: <<print $girlfriend.arousal>>
+
+You are wearing:
+Legs: <<if $player.pants is not null>><<print $player.pants.properName>> [[(Remove)|GirlfriendStraightSex][$temp to $player.pants;$sexDescription to "You slip out of your $temp.informalName, throwing them into your closet. $girlfriend.firstname makes a look of disapproval, but her attention is quickly captured by your $player.underwear.informalName and your hardening crotch.";$player.pants to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+3]]<<elseif $player.underwear is not null>><<print $player.underwear.properName>> [[(Remove)|GirlfriendStraightSex][$temp to $player.underwear;$sexDescription to "$girlfriend.firstname tugs your $temp.informalName down, freeing your cock. It's $player.cock inches long, and already hard. $girlfriend.firstname looks disappointed.";$player.underwear to null;$player.arousal to $player.arousal+2;$girlfriend.arousal to $girlfriend.arousal-1]]<<else>>Bare, revealing your <<print $player.cock>> inch cock.<</if>>
+Chest: <<if $player.shirt is not null>><<print $player.shirt.properName>> [[(Remove)|GirlfriendStraightSex][$temp to $player.shirt;$sexDescription to "You take off your $temp.informalName, exposing your bare chest. You wince a little bit as you look down. Just looking at it reminds you of the muscles you used to have.";$player.shirt to null;$player.arousal to $player.arousal-3;$girlfriend.arousal to $girlfriend.arousal-3]]<<else>>Bare, revealing your diminished muscles.<</if>>
+Feet: <<if $player.shoes is not null>><<print $player.shoes.properName>> [[(Remove)|GirlfriendStraightSex][$sexDescription to "You untie your shoes and place them off to the side, out of reach.";$player.shoes to null;$girlfriend.arousal to $girlfriend.arousal-1]]<<elseif $player.socks is not null>><<print $player.socks.properName>> [[(Remove)|GirlfriendStraightSex][$sexDescription to "Remembering how $girlfriend.firstname said that having your socks on while having sex was gross, you pull them off.";$player.socks to null;$player.arousal to $player.arousal+1;$girlfriend.arousal to $girlfriend.arousal+1]]<<else>>Barefoot<</if>>
+
+<<print $girlfriend.firstname>> is wearing:
+Legs: <<if $girlfriend.pants is not null>><<print $girlfriend.pants.properName>> <<if $girlfriend.pants.dress is true>>[[(Remove)|GirlfriendStraightSex][$sexDescription to "You reach behind her and find the zipper on her dress. Slowly, you pull it down, and it falls into a pool at her feet. She steps out of it, standing in nothing but her $girlfriend.bra.informalName and $girlfriend.underwear.informalName.";$girlfriend.pants to null;$girlfriend.shirt to null;$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+4]]<<else>>[[(Remove)|GirlfriendStraightSex][$sexDescription to "Slowly, you unbutton her jeans and slide them down her legs. She's more impatient than you, and kicks them off, revealing her pretty panties and her long, smooth legs.";$girlfriend.pants to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal+3]]<</if>><<elseif $girlfriend.underwear is not null>><<print $girlfriend.underwear.properName>> [[(Remove)|GirlfriendStraightSex][$sexDescription to "You don't see her in those boyshorts that often. They look really sexy on her, but she looks even sexier when you pull them off, revealing her wet pussy.";$girlfriend.underwear to null;$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+5]]<<else>>Bare, revealing her pretty pussy.<</if>>
+Chest: <<if $girlfriend.shirt is not null>><<print $girlfriend.shirt.properName>> <<if $girlfriend.shirt.dress is true>>[[(Remove)|GirlfriendStraightSex][$sexDescription to "You reach behind her and find the zipper on her dress. Slowly, you pull it down, and it falls into a pool at her feet. She steps out of it, standing in nothing but her $girlfriend.bra.informalName and $girlfriend.underwear.informalName.";$girlfriend.shirt to null;$girlfriend.pants to null;$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+4]]<<else>>[[(Remove)|GirlfriendStraightSex][$sexDescription to "$girlfriend.firstname lifts her arms, and you pull her shirt up and off. Now, the only thing covering her boobs is her white bra.";$girlfriend.shirt to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+2]]<</if>><<elseif $girlfriend.bra is not null>><<print $girlfriend.bra.properName>> [[(Remove)|GirlfriendStraightSex][$temp to $girlfriend.bra;$sexDescription to "You reach behind her for the clasp to undo her $temp.informalName. You fumble around until she takes pity on you and undoes the clasp herself. You rub her perfect breasts a little and she lets out a little moan.";$girlfriend.bra to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal-1]]<<else>>Bare, revealing her perfect breasts.<</if>>
+Feet: <<if $girlfriend.shoes is not null>><<print $girlfriend.shoes.properName>> [[(Remove)|GirlfriendStraightSex][$temp to $girlfriend.shoes;$girlfriend.shoes to null;$sexDescription to "Her feet slip out of her $temp.informalName."]]<<else>>Barefoot [[(Lick)|GirlfriendStraightSex][$sexDescription to "You can't believe you're doing this, but you reach for $girlfriend.firstname's bare foot and put it in your mouth. She looks at you with surprise, but that look quickly changes as she gets into it. @@.thought;Why did I do that? Though I guess she likes it...@@";$player.submission to $player.submission+1;$player.arousal to $player.arousal-3;$girlfriend.arousal to $girlfriend.arousal+10]]<</if>>
+
+<<if $day is 2>><<if $kissesLeft>0>>[[Kiss|GirlfriendStraightSex][$sexDescription to "You lean in and kiss her, hard. She kisses back passionately. To your left, you can hear Patrick's girlfriend give a moan. @@.thought;I'd better get a move on@@ you think.";$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+3;$kissesLeft to $kissesLeft-1]]<</if>><<else>><<if $kissesLeft>0>>[[Kiss|GirlfriendStraightSex][$sexDescription to "You lean in and kiss her, hard. She kisses back passionately, but it seems like she wants more.";$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+3]]<</if>><</if>>
+
+<<print $sexDescription>><<else>><<print $sexDescription>>
+
+<<print $girlfriend.firstname>> freezes, her eyes fixed on your little penis. @@.girlfriend;"What the fuck?"@@
+
+@@.thought;What did I think would happen? That she wouldn't notice?@@ You struggle for an answer.
+
+<<if $day is 2>>[[Continue|Disappointed Sex]]<<else>>[[Continue|Girlfriend Shocked]]<</if>><</if>><<else>><<if $movesTakenDuringSex<2>><<if $player.arousal>=100>><<if $playerCame>>You feel like you're about to cum, but you have nothing inside.
+
+<<else>><<set $playerCame to true>>@@.girlfriend;"I can't wait for you to fuck me,"@@ <<print $girlfriend.firstname>> says.
+
+You've been pent up during the day, and the sound of her saying that pushes you over the edge. <<print $girlfriend.firstname>> looks disappointed, but you don't notice.<<set $girlfriend.relationship to $girlfriend.relationship-1>>
+
+<</if>><<elseif $partnerCame>><<print $girlfriend.firstname>> shudders and orgasms once more. You don't get how girls can do that.<<else>><<set $partnerCame to true>>@@.player;"I can't wait to fuck you,"@@ you tell her.
+
+As it turns out, you're going to have to wait, because as soon as you say that, <<print $girlfriend.firstname>>'s body trembles.
+
+Or maybe you won't have to wait. She doesn't seem like she wants to stop.<</if>><</if>>
+
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>><<print $sexDescription>>
+
+[[You both cum|GirlfriendStraightCum]]<<elseif $player.arousal>=100>><<print $sexDescription>>
+
+[[You cum|GirlfriendStraightCum]]<<else>><<print $sexDescription>>
+
+[[She cums|GirlfriendStraightCum]]<</if>><</if>>
+
+::GirlfriendStraightCum
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>>Sure, it's not ideal. You and <<print $girlfriend.firstname>> could be alone, you could have a bigger cock, etc. But you're still having a good time, and when you look over at <<print $girlfriend.firstname>>, you can tell that she is too.
+
+She's having a better than good time, actually. She's close to orgasm<<if $partnerCame>> again<</if>>. The sight of her panting, desperately trying to come pushes you over the edge, and you cum.
+
+<<if $playerCame is false>>You groan and climax. At the same time, <<else>>Finally, <</if>><<print $girlfriend.firstname>> orgasms. She collapses on top of you, and the two of you cuddle for a little while, trying to tune out the sounds of the other couple fucking.
+
+@@.thought;This isn't so bad@@ you think. @@.thought;I still fucked <<print $girlfriend.firstname>> and she loved it. <<if visited("Backstory Info")>>I'm not scared of <<print $witch.firstname>><<else>>I've still got to figure out what happened, though<</if>>.@@
+
+Eventually, <<print $girlfriend.firstname>> and the other girls clear out, and you fall asleep.<<set $player.arousal to 0>><<set $girlfriend.arousal to 0>><<set $girlfriend.relationship to $girlfriend.relationship+5>><<set $player.confidence to $player.confidence+12>><<elseif $player.arousal>=100>>Sure, it's not ideal. You and <<print $girlfriend.firstname>> could be alone, you could have a bigger cock, etc. But you're still having a good time, and when you look over at <<print $girlfriend.firstname>>, well, you can't really tell. She's going along with it, but she's not screaming your name like she usually does.
+
+<<if $playerCame>><<set $player.masculinity to $player.masculinity-1>><<set $girlfriend.relationship to $girlfriend.relationship-1>>Nothing is happening how it usually does. You came really quickly. You've kept going so <<print $girlfriend.firstname>> can get off, but it's taking too long, and you're tired. Maybe you don't have the stamina you used to.<<else>>@@.player;"I'm close!"@@ you groan. <<print $girlfriend.firstname>> starts stroking your dick, but it doesn't feel right. Impatiently, you take hold of your cock and stroke it yourself. @@.thought;Much better.@@ You're close, you're about to cum, you're cumming!
+
+When you're done, you lie back on the bed and recover. <</if>>@@.player;"Did you have a good time?"@@ you ask your girlfriend when you come to your senses.
+
+@@.girlfriend;"Um, yeah,"@@ she says quickly. @@.girlfriend;"What about you?"@@
+
+@@.player;"Oh yeah! It was great."@@
+
+<<print $girlfriend.firstname>> nods. You try to cuddle with her, but she tells you that she has to get back to her dorm, leaving you alone with the two couples.
+
+@@.thought;I don't think she had a great time@@ you think, worried. @@.thought;Can I still satisfy her?@@<<set $player.arousal to 0>><<set $girlfriend.relationship to $girlfriend.relationship+1>><<set $player.confidence to $player.confidence+7>><<else>>It's not ideal. You and <<print $girlfriend.firstname>> could be alone, you could have a bigger cock, you could be uncursed. <<print $girlfriend.firstname>> wanted to fuck, and you're going along with that, but your heart's not in it. Whenever you start to get aroused, you just look down, at your smaller muscles and average sized cock, and your erection deflates.
+
+<<print $girlfriend.firstname>> is having a great time, though. She's panting and writhing, and you can tell that she's about to come<<if $partnerCame>> again<</if>>.
+
+@@.girlfriend;"<<print $player.firstname>>, I'm coming!"@@ she yells. Her body shakes, and she collapses on the bed, spent.
+
+@@.girlfriend;"How about you? Do you need to cum?"@@ she asks you when she comes to her senses.
+
+@@.player;"No, I'm good,"@@ you lie. You're feeling embarrassed. Your dick is smaller, and you don't feel as hot as you usually do. The last thing you want is for <<print $girlfriend.firstname>> to be paying even closer attention to your penis. Well, maybe not the last thing. That would be for something else to happen to your dick.
+
+<<print $girlfriend.firstname>> cuddles with you in your bed. There's nothing to really do, though, besides watch Patrick and Marco fuck their girlfriends, and that makes you feel inadequate.
+
+@@.thought;At least she got off.@@
+
+Finally, Patrick and Marco's girlfriends leave, and <<print $girlfriend.firstname>> kisses you goodnight. You quickly fall asleep.<<set $girlfriend.arousal to 0>><<set $girlfriend.relationship to $girlfriend.relationship+2>><<set $player.confidence to $player.confidence-5>><</if>>
+
+[[Dream]]
+<<set $lastMaleSexDay to $day>>
+<<finishSexScene>>
+
+::Disappointed Sex
+@@.girlfriend;"What's taking so long?"@@ <<print $girlfriend.firstname>> says with a laugh. @@.girlfriend;"Your cock is only, what, <<print $player.cock>> inches now? That's half hard for you."@@
+
+She said this kind of loudly, and you can feel four pairs of eyes on you. @@.thought;<<if visited("Masturbate")>>I forgot my dick was smaller now. Only <<print $player.cock>> inches hard? Wow<<else>>I knew my muscles were smaller, but my dick shrunk too? Fuck you <<print $witch.firstname>><</if>>.@@
+
+@@.player;"Uh, yeah, I guess I'm not in the mood today,"@@
+
+@@.girlfriend;"But you just told me you were hard,"@@ she says loudly. The sounds of Patrick and Marco making out with their girlfriends have stopped. @@.thought;I can't tell her that my dick shrunk!@@
+
+<<if $girlfriend.relationship<=70>>@@.girlfriend;"What is it, huh? Are you not attracted to me? Is there someone else?"@@<<else>>@@.girlfriend;"What's wrong? I thought we had a great homecoming. You're attracted to me, right?<</if>>
+
+@@.player;"What? <<if $girlfriend.relationship<71>>No<<else>>Yes<</if>>! I think you're really beautiful!"@@
+
+@@.girlfriend;"Yeah, okay,"@@ she says. @@.thought;Is she...crying?@@ @@.girlfriend;"You know, this was a bad idea fucking in front of your roommates. We'll talk tomorrow."@@
+
+She runs out of the room, leaving an awkward silence. @@.player;"Just go back to what you were doing!"@@ you snap. The other couples oblige, leaving you alone as the sound of sex reverberates through the room.
+
+You're still horny, but you don't feel like jerking off now. You decide to go to sleep.
+
+[[Sleep|Dream]]
+<<set $sawcock to false>>
+<<set $player.confidence to $player.confidence-15>>
+<<finishSexScene>>
+
+::Dinner3
+Realizing that it's time for dinner, you hurry to the cafeteria and eat. The chicken is dry, and you're going through the motions of eating more than anything else.
+
+@@.female;"Are you okay, <<print $player.firstname>>?"@@ your friend asks. @@.female;"You're a little quiet."@@
+
+@@.player;"Yeah, I'm fine. Just tired."@@
+
+You try to listen in on the conversation, but you're finding it hard to focus. It's all about what happened at homecoming, and who likes who. @@.thought;Is this all we talk about?@@
+
+You finally finish eating the tasteless chicken, and say goodbye to your friends. <<if visited("Bio Study")>>Luckily, you've already done your bio homework, so you have a little extra time. You use it to relax and watch some TV. After all the worrying you've been doing this weekend, it's nice to have a little break<<else>>@@.thought;Shit@@ you think, suddenly remembering your bio test tomorrow. You try to read through the textbook, but you're not really in the mood to study, and you find yourself reading the same passage you were reading five minutes ago. You're eventually able to get through the chapter, but you're not sure if it did any good<</if>>.
+
+As you're wondering whether to go to bed early, you hear a knock at the door.
+
+[[Answer it|Girlfriend Proposition]]
+
+::Girlfriend Proposition
+<<passTime>>@@.girlfriend;"Hey, <<print $player.firstname>>!"@@ <<print $girlfriend.firstname>> says when you open the door.
+
+@@.player;"Oh, hi <<print $girlfriend.firstname>>!"@@ you try to say enthusiastically. @@.player;"I didn't think you'd be coming over tonight."@@
+
+@@.girlfriend;"Why? Is it a bad time?"@@
+
+You think of your suddenly small penis. @@.thought;I hope she doesn't want sex.@@ @@.player;"Uh, no. Come in,"@@ you tell her.
+
+@@.girlfriend;"Great. Where's Marco and Patrick?"@@
+
+@@.player;"No idea,"@@ you say. You didn't even notice that they had left.
+
+@@.girlfriend;"Do you think they'll be back soon?"@@
+
+@@.player;"I don't know. Probably not."@@
+
+@@.girlfriend;"Great. Listen, I was thinking. You know how <<if visited("Disappointed Sex")>>we were going to fuck last night but you weren't hard?<<else>>you didn't want to fuck last night? Which was totally cool.<</if>>"@@
+
+@@.player;"Yes?"@@
+
+@@.girlfriend;"Well, what if we, you know, did it now?"@@ she asks coyly.
+
+You look at her. A beautiful girl is asking you for sex. You'd be a fool to say no. But then you'd have to show her your diminished dick, and there would be a lot of questions.<<if visited("Witch Encounter Reveal") or $readBook1>> @@.thought;What if my dick is even smaller tomorrow? Or if it's gone? This could be my last chance to use it!@@<</if>>
+
+<<if visited("Witch Encounter Reveal") or $readBook1>><<link "Yes" "GirlfriendStraightSex">><<set $sawcock to false>><<setUpSexScene "girlfriend">><</link>><<else>>There's no way you'll regret not having sex now. You can just do it tomorrow.
+<</if>>
+[[Sorry but I'm too tired|Girlfriend Fight]]
+<<set $girlfriend.pants to $girlfriendJeans>>\
+<<set $girlfriend.shirt to $girlfriendSleevelessTShirt>>\
+<<set $girlfriend.bra to $girlfriendWhiteBra>>\

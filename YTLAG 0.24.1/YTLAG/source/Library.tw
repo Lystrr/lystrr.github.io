@@ -1,0 +1,249 @@
+::Library
+@@.thought;I've got to figure out what's going on. I hope they have books about witches in the library.@@
+
+It takes longer to get started than you thought, since you don't actually know where the library is. Eventually, you ask someone, and they point you in the right direction.
+
+@@.player;"Hello,"@@ you say, walking up to the librarian. @@.player;"I'm looking for a book."@@
+
+@@.female;"Hey, <<print $player.firstname>>. School project?"@@
+
+@@.player;"No, actually. It's, uh, just something I'm interested in."@@ She raises an eyebrow. @@.player;"I was wondering if you had anything on the supernatural. Ghosts, witches, that kind of thing."@@
+
+@@.female;"The occult section is on the second floor at the back."@@
+
+@@.player;"Thanks."@@
+
+The second floor is pretty empty, but as you get closer to the occult section, you see that there's someone there. She turns around and you recognize her: Elvira, <<print $witch.firstname>>'s friend, and a member of the Witchcraft club.
+
+@@.thought;I'm not doing anything wrong. I'm just looking at books in the library. I won't speak to her.@@
+
+You can feel Elvira's eyes on you as you browse the shelves, but you do your best to ignore her, and she doesn't strike up a conversation with you.
+
+Then, you spot it. It's titled //How Witchcraft Works//, and it's sitting on the highest shelf. It's also very close to Elvira.
+
+[[Wait for Elvira to leave|Elvira Intro]]
+[[Grab the book|Grab the Book]]
+
+::Elvira Intro
+You look at Elvira, who seems to be deciding between two books. @@.thought;Make up your mind already! Then I can grab my book and go home.@@
+
+She takes her time though, and you stand around impatiently. Finally, she turns to you. @@.female;"I didn't know you were into the occult."@@
+
+@@.player;"Yeah, well, you never know, do you?"@@
+
+@@.female;"I've heard you talk about how witches were crazy."@@
+
+You shift awkwardly. @@.player;"Yeah, I used to think that. But now I'm thinking that it's real."@@
+
+@@.female;"Yeah?"@@ She looks at you skeptically, her eyes narrowed. @@.thought;I don't think she likes me.@@ @@.female;"So how much do you know about us?"@@
+
+@@.thought;Us?@@ @@.player;"Not a lot. That's why I came here. I was going to get //How Witchcraft Works//."@@
+
+@@.female;"That's a good book if you're just starting out,"@@ Elvira says excitedly. @@.female;"After that, I'd recommend //A Beginner's Guide to Spells.// That's how I learned..."@@ Elvira trails off and her face settles into a frown, as if she just remembered who she was talking to.
+
+@@.player;"Thanks,"@@ you say, breaking the silence.
+
+@@.female;"Anyway, if you actually read //How Witchcraft Works// and you're still interested, come find me."@@ She turns to leave.
+
+@@.player;"Wait! So if I wanted to cast spells, I could? With enough practice?"@@ You're imagining reversing whatever <<print $witch.firstname>> did to you, and getting back to your normal life.
+
+@@.female;"Well, no. Only witches can cast spells, and you're a guy. It's still really interesting, though."@@
+
+With that, Elvira turns and leaves, taking both of the books she was looking at. You go and check out //How Witchcraft Works// and head <<if $timeOfDay is 1>>to lunch<<else>>out<</if>>.
+
+<<link "Continue" $currentPassage>><</link>>
+<<set $libraryPassage to "Read Book1">>\
+<<set $player.confidence to $player.confidence-1>>\
+
+::Grab the Book
+@@.thought;Fuck it.@@
+
+You reach over Elvira's head, and grab the book. She turns to look at you, but you're already gone. Heading downstairs, you check the book out.
+
+In a couple minutes, you're back at your dorm room.
+
+<<link "Continue" $currentPassage>><</link>>
+<<set $libraryPassage to "Read Book1">>
+<<set $player.confidence to $player.confidence+1>>
+
+::Read Book1
+You get the book, lie back in bed, and turn to the first page. @@.thought;Am I seriously reading this? I can't believe I'm taking this seriously.@@ But you can. Your body has changed a lot the past two days, and there's no other explanation than witchcraft. If you're going to figure out how to reverse this, you need to know how witchcraft works.
+
+With an exaggerated sigh, you open up the book and start reading.
+
+//Witches have existed since the dawn of time. Although they were almost wiped out during the Salem Witch Trials, they have bounced back. Forced to go underground, they developed a community, with mothers passing on their powers to their daughters.
+
+But that doesn't mean you need a magical mom to become a witch yourself! Almost anyone can become a witch. The only requirements are
+1) To be female
+2) To undergo a special ritual. You will need at least one experienced witch to administer this ritual.// See Chapter 7 for details.
+//3) To have magical power. Most potential witches never know that they have magical power. It lies dormant in them. However, there is a simple spell you can do to see if you have this power.// See Chapter 2.
+
+@@.thought;This is really interesting, but I'm not female and I can't be a witch. I need to know how spells work.@@
+
+You skip through Chapters 1 and 2, finally arriving at Chapter 3, which is helpfully titled //How Spells Work//. @@.thought;Excellent.@@ You start to read.
+
+//Spells are extremely complex. Although they are simple to create, they are very difficult to get right. The most important thing to remember is that spells are taken extremely literally. When you are casting a new spell, it is impossible to know if there will be any unintended consequences.
+
+For this reason, we strongly recommend that you stick to the list of approved spells that you can find in Appendix A. Only experienced witches should think about creating new spells, and even they can have their spells go wrong.//
+
+An image of your <<if $player.cock>0>>shrunken cock<<else>>pussy<</if>> flashes into your mind. @@.thought;Shit. Is that an unintended consequence? <<print $witch.firstname>> wouldn't use a spell that wasn't approved, would she?@@
+
+[[Check out the appendix|Read Book1 Appendix]]
+
+::Read Book1 Appendix
+You thumb through the appendix, skimming the spells: love spells, prosperity spells, spells for luck, flying spells... @@.thought;Wait, really? Can <<print $witch.firstname>> fly?@@
+
+You turn back to the appendix and continue looking through the spells: revenge spells, strength spells, spells to give nightmares...@@.thought;Wait! There it was!@@ You turn back one page, and look at the section on the strength spell.
+
+//Do you need to have more willpower? Or maybe you desire physical strength? In either case, strength can be very useful.
+
+Unfortunately, this spell is only temporary. It will wear off after a certain time, or after certain conditions are met. You must say these conditions at the end of the spell, or it will not work.//
+
+@@.thought;Right. My spell wears off if we win the championship.@@
+
+//This spell will take effect over three nights. To cast the spell...//
+
+@@.thought;Three nights? But it's only been two, and I've lost all my muscles! There's no way it can get worse.@@
+
+//To cast the spell, close your eyes, and imagine a bolt of lightning coursing through your body. Then, chant the following:
+@@.center;
+By the light of the night
+And the strength of the bull
+I call upon thee tonight
+Grant me my wishes full.
+
+[Insert Your Name], wishing to become bright as day,
+Trying to stand out, and to glow,
+Show me the way,
+Make my strength grow.
+@@
+//For the last two lines, say how long you wish this spell to last for.
+
+<<link "Try to remember $witch.firstname's spell" "Read Book1 Think">><</link>>
+
+::Read Book1 Think
+In your mind, you hear <<print $witch.firstname>>'s voice chanting the full spell. @@.witch;"By the light of the night and the strength of the bull, I call upon thee tonight. Grant me my wishes full.
+
+<<print $player.firstname>> <<print $player.lastname>>, symbol of masculinity, bright as day. To harm him I wish. Take it all away. Make his strength diminish.
+
+At the dawn of morning, let this curse begin, to never reverse until the championship Pinewood wins."@@
+
+Quickly, you scribble the spell on a spare piece of paper, and then compare it to the book. @@.thought;Okay, so the second stanza is different. The original spell says //[Insert Your Name], wishing to become bright as day, trying to stand out, and to glow, show me the way, make my strength grow.// But <<print $witch.firstname>>'s spell was //<<print $player.firstname>> <<print $player.lastname>>, symbol of masculinity, bright as day. To harm him I wish. Take it all away. Make his strength diminish.//@@
+
+@@.thought;So she changed it so it was a curse. <<if $player.cock>0>>But why is my dick smaller?<<else>>But why do I have a pussy?<</if>> And the book said the spell took three days, but I lost all my muscles after two.@@
+
+You need to talk to <<print $witch.firstname>>.
+
+<<link "Continue" $currentPassage>><</link>>
+<<set $libraryPassage to "Transformation Research">>\
+<<set $readBook1 to true>>\
+<<set $player.arcana to $player.arcana+1>>\
+
+::Transformation Research
+<<if $player.feminine>=2>>You've had enough of being transformed without knowing why it's happening. You keep getting an icy sensation, and then feeling your body go numb, and then some part of your body is subtly transformed. You've got to figure out what's going on, and then maybe you can do something. @@.thought;Could I reverse it? I'd love to do that.@@
+
+You look through the witchcraft section, but you're not realy sure what you're looking for. Something about cold feelings on your skin that come before transformations.
+
+You spot a book called //Transformations: An Advanced Witch's Guide//. Well, you're not advanced or a witch, but it might have some information that you need.
+
+[[Thumb through the book|Transformation Research Read]]
+<<else>>You wander into the library, but you're not really sure what you're looking for. You end up picking a book on witchcraft at random from the shelves, and reading it in one of the library's comfy chairs.
+
+You feel more knowledgable about witches, but it hasn't helped solve your problem.
+
+<<link "Do something else" $currentPassage>><<set $player.arcana to $player.arcana+1>><</link>><</if>>
+
+::Transformation Research Read
+You skim through the book, looking for a passage about what victims feel before a transformation. Unfortunately, this book seems to be written for witches who want to //cause// transformations, not the people on the receiving end.
+
+@@.thought;It keeps telling me how careful I should be. Why didn't <<print $witch.firstname>> listen? Then I wouldn't be in this mess.@@
+
+You thumb past a chapter titled ''Unintended Consequences''. Well, that's been your whole experience. You were only supposed to lose your muscles, yet here you are.
+
+Interested, you start reading.
+
+//So you've decided that you want to transform your friend.// @@.thought;<<if $witch.relationship<50>>I wouldn't say I'm <<print $witch.firstname>>'s friend<<else>>Me and <<print $witch.firstname>> are talking more, but I don't think we're friends<</if>>.@@
+
+You continue reading. //However, you must be very careful before you start the spell. There are a whole host of things that can go wrong when trying one of these spells.// @@.thought;You're telling me.@@
+
+//One major thing that can go wrong is the transformee being transformed further past the original transformation.//
+
+@@.thought;This book is hard to read. But that sounds like what happened to me!@@
+
+//Whenever the subject does something that shows that they ''accept'' their transformation, they transform a little further. That's why it's essential to make sure that your subject has no desires to want to be the thing you're transforming them into.//
+
+[[Reflect|Transformation Research Reflect]]
+
+::Transformation Research Reflect
+@@.thought;So it's saying that I'm transforming because I accept my transformation. Fuck that! The book said that <<print $witch.firstname>> should have made sure I had no desire to be a girl. But I don't! I never wanted this.@@
+
+You stew silently for a moment. It's not fair that this is happening, and it's not fair that this stupid book is saying that this is somehow all your fault.
+
+You want to throw the book against the wall, but you're in a library and you know that would get you kicked out.
+
+Instead, you think about your transformations. <<if $player.feminine>=3>>Your transformations have come when you masturbated like a girl, and when you wore girls clothes<<else>>Both of your transformations have come when you masturbated like a girl, and came<</if>>. @@.thought;That shouldn't mean that I accept it though! Am I not supposed to get release!@@
+
+You're still stewing as you head back to your dorm, but the wheels are turning in your head. You just have to be careful not to ''accept'' being a girl, and nothing more will happen. Simple.
+
+<<link "Continue" $currentPassage>><<set $player.arcana to $player.arcana+3>><<set $libraryPassage to "Library Default">><</link>>
+
+::Library Elvira Panties
+You've got to get these cursed panties off. You //could// go to Elvira and ask her. You try to imagine doing that, and shudder. She would just find a way to tease you. No. You have to do it yourself.
+
+You sling your bag over your shoulder and walk quickly over to the library, brushing by the other students, and climbing the stairs to the second floor. You know exactly where you're going.
+
+Once you get to the Witchcraft section, though, you slow down. There's so many books here, and the only thing you know about this subject are the curses that keep being done to you. You don't know how you're going to find the information that you're looking for.
+
+You pick a book at random off the shelf. It feels heavy in your hands, although maybe that's just because of your lack of strength. You thumb through it, only to discover that it's about some famous nineteenth century witch. @@.thought;If she's famous, how come I've never heard of her?@@
+
+You continue picking books off the shelf and looking through them. None of them have the information that you want, though. They're all about the history of witches, or how to do spells. You can't find any information about getting rid of cursed underwear, much less information about how to undo a spell.
+
+@@.thought;Am I wasting my time here? I could just find Elvira and ask for her to get rid of these panties.@@
+
+You look at the clock. You're getting hungry.
+
+<<link "Give up and do something else" $currentPassage>><</link>>
+[[Keep looking|Library Elvira Panties Look]]
+
+::Library Elvira Panties Look
+@@.thought;No, I'm not going to give up. I need to get these panties off of me!@@
+
+You turn to the shelves once more, this time trying to be smart about it. Most of these books have nothing to do with what you want: they're about how to cast magic, or on how to collect ingredients for potions, or the history of witches. There's only one row of shelves that looks interesting. All of their books are about removing curses.
+
+You pick up a book at random and thumb through it. Nothing useful. Then another book. Nothing. You're getting discouraged again, and you wonder whether you should have left when you had the chance. @@.thought;I could be in my room, watching TV right now.@@ You check the time. @@.thought;If I can't find anything soon, I'll come back later.@@
+
+Luckily, the next book you find has a section called //Removing Enchanted Clothes//. It doesn't seem to mention anything about underwear, but you don't care.
+
+[[Checkout|Library Elvira Panties Read]]
+
+::Library Elvira Panties Read
+You hand the book to the girl behind the checkout counter. She raises an eyebrow when she sees what it's about, but says nothing. You blush, and tuck the book away in your bag when she hands it back.
+
+At your dorm, you pull the book out, turn to the chapter you were looking at, and start reading.
+
+//''Removing Enchanted Clothes''
+
+Did a friend put an enchanted piece of clothing on you, like a silly hat? This chapter will teach you how to remove it. This spell isn't too difficult, but remember: magic is dangerous, and the best thing to do is to simply ask your friend to remove it.//
+
+@@.thought;Elvira's not a friend, and I'm not going to do that.@@
+
+You read through the ingredients. They're all pretty weird stuff, but you can probably find them on campus or buy them in the surrounding town. Then you get to the last ingredient on the list:
+
+//- A lock of your friend's hair//
+
+@@.thought;I have to get a lock of Elvira's hair? How am I going to do that? Get it while she's sleeping? Sneak up behind her holding a pair of scissors?@@
+
+You imagine sneaking into Elvira's dorm during the middle of night and being caught by Elvira. The last time she found you in her room, she forced these panties onto you. It seems silly to risk angering her again.
+
+@@.thought;I guess I'll have to ask her. Why did I even bother getting this book from the library?@@
+
+<<link "Continue" $currentPassage>><</link>>
+
+::Library Default
+You wander into the library, but you're not really sure what you're looking for. You end up picking a book on witchcraft at random from the shelves, and reading it in one of the library's comfy chairs.
+
+You feel more knowledgable about witches, but it hasn't helped solve your problem.
+
+<<link "Do something else" $currentPassage>><<set $player.arcana to $player.arcana+1>><</link>>
+
+''Hint: You don't have anything to research in the library. Repeated trips are likely to be just as unhelpful.''

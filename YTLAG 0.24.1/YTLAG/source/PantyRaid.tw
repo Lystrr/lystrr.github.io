@@ -1,0 +1,1579 @@
+::RaidOrProject
+You look at your phone. 6:55. <<if not visited("Language Project Family")>>@@.thought;Shit! The panty raid and the project start in five minutes. What am I going to do?@@
+
+<<if visited("Panty Raid Commit")>>You already told Sam you would go to the panty raid. @@.thought;He's my teammate. I don't want to flake on him.@@<<else>>You already told Sam that you weren't going to make it, but he told you that you were still welcome. @@.thought;He'd understand if I don't go though.@@<</if>>
+
+It's not just about your teammates, though. <<if $player.arousal>70>>Your pussy tingles<<else>>You pace nervously<</if>> as you think about the panty raid, and the dream you had. That probably means it's a bad idea, but it certainly sounds more fun than working on a boring spanish project.
+
+[[Do your project|Spanish Project Start]]<<else>>@@.thought;I have just enough time to meet my teammates. Where were we meeting again?@@
+
+Your phone buzzes. @@.male;We're at the locker room.@@ @@.thought;Okay, that's helpful.
+<</if>>
+[[Go to the panty raid|Panty Raid Intro]]
+
+::Spanish Project Start
+@@.player;On my way@@ you text your group. Gathering up your stuff, you head for the library.
+
+The rest of your group is already there, and they look a little surprised when you join them. You try not to feel hurt. @@.thought;I even told them I was coming!@@
+
+The project doesn't go well. Everyone has a different vision for the project, and nobody can agree. Finally, it's decided that everyone will just do research for today, and figure out what to do later.
+
+The research is mind-numbingly boring, and you're regretting not going to the panty raid. @@.thought;I bet that would have been a lot of fun! I haven't gotten to hang out with the guys that much lately.@@
+
+Still, you make some progress. The rest of the project will probably be easier now that you've done your part.
+
+[[You're yawning as you say goodbye and head back to your dorm|Night]]
+<<set $player.academics to $player.academics+3>>
+<<set $team.respect to $team.respect-3>>
+
+::Panty Raid Intro
+<<set $team.respect to $team.respect+3>>@@.male;"You made it, man,"@@ Patrick says when you show up.
+
+@@.player;"Yeah,"@@ you say, giving a laugh. @@.player;"This will be way more fun than some project."@@
+
+<<if $team.respect>75>>@@.player;"Okay,"@@ you say, facing your team. @@.player;"It's simple. We'll break into the girls dorms and steal their panties. And then we'll all meet back here with the loot."@@
+
+Sam shoots you a look. Maybe you should have let him give the speech. He's done most of the planning for the raid, after all. But being a leader comes so naturally to you that you just jumped in.
+
+@@.male;"Exactly,"@@ Sam says. @@.male;"But I don't want us getting in trouble. We're only hitting empty rooms."@@
+
+@@.player;"Everyone ready?"@@ Everybody nods their heads. @@.player;"Okay, let's start!"@@<<else>>@@.male;"Okay,"@@ Sam says, addressing everyone. You feel a little hurt that he's the one to give the speech. Sure, he did most of the planning, but you're the quarterback. You should be the leader.
+
+@@.malel;"Most of the girls are at clubs or the library,"@@ Sam continues. @@.male;"We're going to go into their dorm, break into their rooms, and steal their panties. I want everyone to get two panties from two girls!"@@
+
+A chill runs down your spine as he says this. It sounds familiar, but you can't place your finger on this.
+
+@@.male;"If you go to a room and there's girls in it, skip it. I don't want us getting in trouble."@@
+
+Some of the guys groan but Sam waves them off. @@.male;"Everyone ready?"@@ Everybody nods their heads. @@.male;"Okay, let's start!"@@<</if>>
+
+[[Get started|Panty Raid Start]]
+
+::Panty Raid Start
+You're grinning as you and the other boys walk across campus. You feel a warm breeze across your skin, and you're looking forward to the rain, your dream all but forgotten.
+
+There are two girls dorms, and the team splits into two. You're in a group with <<print $qb.firstname>>, Marco, Patrick, Everett, and some other guys.
+
+Your group walks into the dorm with no problem. The door's unlocked, and anyone can get in. @@.thought;Not good security@@ you think with a grin.
+
+You look around. Nobody seems to be here. @@.thought;I didn't know everyone was so busy on a thursday night.@@
+
+@@.player;"Okay,"@@ you whisper loudly. @@.player;"Every man for himself!"@@
+
+With those words, everyone splits off. Some boys run down the hallway, some boys take the stairs, but everyone makes a lot of noise as they ransack the dorm. @@.thought;What was the point of sneaking in?@@ you wonder.
+
+You're left alone in the hallway, the sounds of the panty raid echoing all around you.
+
+It bothers you that you hesitated. You used to be one of those guys. When you imagined taking part in the raid, you imagined yourself drunkenly raiding random girls's rooms, collecting your prizes and high-fiving the other guys. Yet here you are, standing awkwardly in the hallway.
+
+@@.thought;Okay, I should pick a room@@ you think. Cautiously, you step forward. The door is slightly ajar. You peer in. Two girls are on the bed, doing each other's nails.
+
+@@.thought;Sam said we shouldn't hit rooms that weren't empty@@ you remember. You look around some more, spotting three rooms you don't think have been touched. All three doors are firmly shut, and there's no light coming from underneath the door.
+
+@@.thought;Perfect! But which door should I pick? They all look the same.@@
+
+You glance at the names on the doors. Sophie...<<print $witch.firstname>>...Candice. @@.thought;Wait, <<print $witch.firstname>>?@@ You spin around. There aren't many <<print $witch.firstname>>s in this school. This is definitely her room.
+
+[[Raid her room. Maybe you can snoop while you're at it|Panty Raid Witch]]
+[[Raiding a witch's room? Pick one of the other doors|Panty Raid Normal]]
+<<set $pantyRaid = {
+	"panties": null,
+	"takenFrom": "",
+	"strapon": false,
+	"cauldron": false,
+}>>
+
+::Panty Raid Normal
+You're not going to mess around with <<print $witch.firstname>>'s room. You remember what happened when she caught you staring at her during class. Getting caught snooping in her room would be way worse.
+
+You try one of the non-<<print $witch.firstname>> doors. It's locked. You try the other door. Success! It slowly swings open, revealing a dimly lit room.
+
+You shut the door behind you, and reach for the light switch. For a second, you can't find it, and you start to panic. Moments later, your fingers bump something, and the room is lit up by an old halogen light.
+
+@@.thought;Calm down@@ you tell yourself. @@.thought;This is just a normal girl's room. Man, if I went for <<print $witch.firstname>>'s room, I'd be a nervous wreck..@@
+
+Once you've calmed down, you finally look around. The first thing you see is the set of dressers. Three of them are pushed against the wall in a line. @@.thought;That's where their panties are, obviously.@@ You glance at the rest of the room. There's beds and desks, but not much besides that. It's pretty sparse. There are no decorations, and the closet is mostly bare.
+
+[[Go straight for the dressers|Panty Raid Normal Panties]]
+[[Check out the beds|Panty Raid Normal Bed]]
+[[Look at the desks|Panty Raid Normal Desk]]
+
+::Panty Raid Normal Panties
+@@.thought;I should get what I came here for.@@ You open up the top drawer of <<if visited("Panty Raid Normal Desk")>>Julie's dresser<<else>>one of the dressers<</if>>, revealing a wide selection of panties. @@.thought;Jackpot!@@
+
+You look at the panties more carefully, trying to decide which one to pick. You eventually settle on a pair of pink bikini panties. They look small and cute in your hands, and you're sure they'd look sexy on <<if visited("Panty Raid Normal Desk")>>Julie.
+
+@@.thought;This is kind of kinky.@@<<increaseArousal 1>><<else>>whichever girl they belonged to.<</if>>
+
+Now that you have what you need, you should meet back up with your team. Unless you wanted to do some more snooping.
+<<if not visited("Panty Raid Normal Bed")>>
+[[Check out the beds|Panty Raid Normal Bed]]<</if>><<if not visited("Panty Raid Normal Desk")>>
+[[Look at the desks|Panty Raid Normal Desk]]<</if>>
+[[Leave|Panty Raid Normal Confrontation]]
+
+::Panty Raid Normal Bed
+You decide to take a closer look at the three beds. You're not totally sure what you're searching for @@.thought;Maybe some sex toys?@@ but you can't see anything.
+
+Deciding to look closer, you climb into the first bed, and look under the covers and under the pillow. Nothing. Just to be sure, you search the other two beds too.
+
+The only thing you find are that the beds in the girls dorm are much more comfortable than the beds in the boys dorm.
+
+@@.thought;Well, that was a waste.@@ You look back and feel a little bad. You messed up their beds, just because you thought you might find something. It takes a little bit of time to remake their beds, but you feel better about yourself when you're done. @@.thought;Why did I do that? They could have easily done that themselves. I guess I didn't want them knowing I went through their room.@@
+<<if not visited("Panty Raid Normal Panties")>>
+[[Find their panties|Panty Raid Normal Panties]]<</if>><<if not visited("Panty Raid Normal Desk")>>
+[[Look at the desks|Panty Raid Normal Desk]]<</if>><<if visited("Panty Raid Normal Panties")>>
+[[Leave|Panty Raid Normal Confrontation]]<<else>>
+[[Change your mind and raid the witch's room|Panty Raid Witch]]<</if>>
+
+::Panty Raid Normal Desk
+You know you should <<if visited("Panty Raid Normal Panties")>>get out of here now that you got what you came for<<else>>get the panties<</if>>, but you're curious. Whose room are you in? You don't remember the names you saw on the door. You //could// just open the door and check, but snooping is much more fun.
+
+The first desk is pretty clean, besides an essay with a red A scrawled at the top of the page, and a math textbook. You look at the second desk. It's not as neat, and there are a lot of loose papers. @@.thought;Math, Art, Bio. Different bio class than me though. Home Economics, Spanish. Oh, looks like she's in my class. Her name is Julie. No, I don't remember her.@@
+
+You take a closer look at the papers for Spanish. Her name is in the top right corner. You read it and freeze. She's in your group for the project. <<if visited("Language Project Family")>>@@.thought;I moved our meeting, and now I'm snooping in her room@@<<else>>@@.thought;She's working on her project while I'm snooping through her room@@<</if>> you think guiltily. 
+
+@@.thought;And I didn't even know her name!@@ You wonder whether you're just oblivious, or if you just don't pay any attention to people outside of the popular kids.
+
+@@.thought;I need to focus. I'm already in...Julie's room. What should I do now?@@
+<<if not visited("Panty Raid Normal Panties")>>
+[[You're not backing out now. Get her panties|Panty Raid Normal Panties]]<</if>><<if not visited("Panty Raid Normal Bed")>>
+[[Check out the beds|Panty Raid Normal Bed]]<</if>><<if visited("Panty Raid Normal Panties")>>
+[[You've seen enough. Get out of here|Panty Raid Normal Confrontation]]<<else>>
+[[Go to the witch's room. That's a little less weird than this|Panty Raid Witch]]<</if>>
+
+::Panty Raid Normal Confrontation
+You've got the panties that you need, so you open the door and exit. As you're walking down the hallway, you run into <<if visited("Panty Raid Normal Desk")>>Julie<<else>>a girl from your group project. After thinking for a bit, you remember that her name is Julie<</if>>. @@.female;"<<print $player.firstname>>? Were you in my room?"@@
+
+@@.player;"Uh...no"@@
+
+@@.female;"I thought I saw you. Wait, are those my panties?"@@
+
+You want to shrink away. You were carrying them in your hand, like an idiot. @@.player;"Look, I can explain."@@
+
+@@.female;"This better be good.@@ <<if visited("Language Project Family")>>@@.female;You lied about seeing your family so you could go steal my panties? What the fuck!"@@<<else>>@@.female;You blew off our group project so you could steal my panties? What the fuck!"@@<</if>>
+
+@@.player;"It's not like that! We were doing a panty raid. I just got your room. I didn't even know it was yours. Why are you here, anyway?"@@
+
+@@.female;"@@<<if visited("Language Project Family")>>@@.female;It's my room@@<<else>>@@.female;I forgot my notebook so I went back to get it@@<</if>>@@.female;."@@
+
+@@.player;"Oh."@@
+
+@@.female;"Well, I'm telling our group what happened!"@@
+
+@@.player;"No, please don't."@@
+
+@@.female;"And I'm taking these back,"@@ she says, ignoring you. She snatches her panties out of your hand, and storms back to her room. The door slams, and now you're alone in the hallway.
+
+@@.thought;Fuck! That was so embarrassing! What's my group going to think? And I still don't have any panties!@@
+
+<<link "Raid $witch.firstname's room" "Panty Raid Witch">><</link>>
+<<print $girlfriend.firstname>> lives in this dorm. [[See if she can help you out|Panty Raid Upstairs]]
+[[Admit defeat and meet up with your team|Panty Raid End]]
+
+::Panty Raid Witch
+<<if visited("Lunch Day 4 Witch Admit")>><<print $witch.firstname>> has always been so secretive about her room. Now's your chance to find out what she's hiding.<<else>>You know it's a bad idea, but you're really curious about what <<print $witch.firstname>>'s room is like.<</if>> And you like the idea of breaking into the room of the chick who cursed you and stealing something, even if it is her panties.
+
+You hold your breath and try the door. To your surprise, it slowly swings open. @@.thought;Doesn't she know she should lock her door?@@
+
+The inside of the room is dark, and you can't see much. You could shut the door right now, and <<print $witch.firstname>> would never know that you were here.
+
+Instead, you step into the room and close the door behind you. Your hand reaches for the light switch. For a second, you can't find it, and you start to panic. Moments later, your fingers bump something, and the room is lit up by an old halogen light.
+
+@@.thought;Calm down@@ you tell yourself. @@.thought;This is just a normal room. She's not even here.@@
+
+Satisfied that you're alone, you finally look around. The first thing you see is the dresser. @@.thought;That's where her panties are, obviously.@@ You glance at the rest of the room. There's the standard bed and desk. Other than that, there's not much. It's pretty sparse. There are no decorations, and the closet is mostly bare.
+
+You're not sure what you were expecting. She's not the type to have a glamorous room, with lots of posters and frilly clothes. @@.thought;Maybe I was expecting more, I don't know, witch stuff?@@ You think for a second. @@.thought;If there was witch stuff, she wouldn't keep it in the open.@@
+
+[[Find her panties|Panty Raid Witch Panties]]
+[[Check out the bed|Panty Raid Witch Bed]]
+[[Look at the desk|Panty Raid Witch Desk]]
+[[Search the room more carefully|Panty Raid Witch Trunk]]
+
+::Panty Raid Witch Panties
+You've got a mission, and you're not going to get distracted. First you'll get the panties, and then maybe you'll snoop. If you have time, of course.
+
+You look through the dresser. Pants, socks, bras. You open the last drawer, hoping it contains her panties.
+
+It has one pair of plain white panties. @@.thought;That's all? Kind of boring?@@ Despite yourself, you imagine <<print $witch.firstname>> standing naked in just those panties, and you feel yourself start to grow <<if $player.arousal>=75>>more <</if>>wet.
+
+You reach out to grab her panties, but something stops you. There's only one pair, and they're laid out in the center of the drawer.
+
+@@.thought;Something seems wrong. Or am I overthinking it? How would she know that I was going to steal her panties? She probably just needs to do laundry.@@
+
+[[Take them|Panty Raid Witch Panties Take]]
+[[You think better of it|Panty Raid Witch Back Off]]
+<<increaseArousal 3>>
+
+::Panty Raid Witch Bed
+You climb into <<print $witch.firstname>>'s bed, not expecting much. It's a bed, after all. It's comfortable, and you would almost take a nap right now if you didn't have a mission to complete, but it's still a bed.
+
+As you stretch out, you feel something lumpy. You reach under the covers, and pull out a strap-on. @@.thought;Ooohh. Kinky.@@ You struggle to picture <<print $witch.firstname>> with a strap-on<<if visited("Panty Raid Witch Panties")>>, but it's not as easy as it was to picture her wearing the white cotton panties<</if>>.
+
+@@.thought;Would she be using the strap-on, or would she be getting fucked? And is she a lesbian? No, she has a boyfriend. So does she like pegging?@@ You think about her boyfriend. @@.thought;He doesn't seem like the type.@@ You conclude that there's a lot about <<print $witch.firstname>> that you don't know.
+
+You realize that you've been idly holding the strap-on while you were thinking about <<print $witch.firstname>>.
+
+[[Hide it under the covers|Panty Raid Witch Bed Hide]]
+[[Take it with you|Panty Raid Witch Bed Take]]
+
+::Panty Raid Witch Desk
+<<print $witch.firstname>>'s desk is full of sheets of loose paper, flyers, and textbooks. It's piled up seriously high, and it looks precarious. You're about to turn around and <<if visited("Panty Raid Witch Panties") and visited("Panty Raid Witch Bed") and visited("Panty Raid Witch Trunk")>>explore the rest of the room<<else>>leave<</if>> when you catch a glimpse of black from the bottom of the pile.
+
+Curious, you pull the books and other shit off the desk, revealing a black cauldron with ornate gold carvings. @@.thought;Of course! I knew there was some magical stuff here.@@
+
+Now that you've discovered the cauldron, though, you're not sure what to //do// with it. It's too big to hide, and you don't have time to run back to your dorm. @@.thought;I don't need to move it. I know where <<print $witch.firstname>> keeps it. She thinks she has such a great hiding place, but I can take it when it's a better time.@@
+
+There probably won't be a better time than right now, though. When else will <<print $witch.firstname>> leave her door open? @@.thought;Maybe I could hide it somewhere?@@ You think through the girls who live in this dorm. They're all friends or acquaintances, but there's no one who you could give a cauldron to and not get asked questions. @@.thought;Wait! <<print $girlfriend.firstname>> just moved in. But things are weird between us.@@
+<<if $pantyRaid.takenFrom is $witch.firstname>>
+[[Ask her for help|Panty Raid Witch End][$player.carriesCauldron to true]]<<else>>
+[[Ask her for help|Panty Raid Upstairs][$player.carriesCauldron to true]]<</if>><<if not visited("Panty Raid Witch Panties")>>
+[[Look in the dresser for her panties|Panty Raid Witch Panties]]<<else>>
+[[Try to leave|Panty Raid Witch End]]<</if>><<if not visited("Panty Raid Witch Bed")>>
+[[Climb into her bed|Panty Raid Witch Bed]]<</if>><<if not visited("Panty Raid Witch Trunk")>>
+[[Search the room more carefully|Panty Raid Witch Trunk]]<</if>>
+
+::Panty Raid Witch Trunk
+You scan the room. Besides the two empty beds in the corner, it looks like a normal room. @@.thought;Wait a second. These beds aren't just empty, they don't even have bedsheets! It's like <<print $witch.firstname>> is the only one living here. But how can that be? Everyone at Pinewood is in a triple.@@
+
+Weird. But you don't have time to dwell on why <<print $witch.firstname>> has the room to herself. @@.thought;She's got to have her stuff somewhere.@@ You walk all over the room, looking in the closet, on the floor, under the bed...@@.thought;Aha!@@
+
+Under the bed is a large suitcase. You kneel down and pull it out. It's a hard task. You don't have much leverage, and you're much weaker. From the rattling you hear as you drag the trunk over the carpet, it seems like it's not totally full, but it feels like it weighs a ton.
+
+Once the trunk is finally in front of you, you hunt for a zipper. Instead, you find a combination lock.
+
+@@.thought;Fuck! How am I supposed to know the combination?@@
+
+It looks like you've hit a dead end. With a sigh, you slowly push the trunk back under the bed and then stand up, panting heavily.
+<<if not visited("Panty Raid Witch Desk")>>
+[[Check out the desk|Panty Raid Witch Desk]]<</if>><<if not visited("Panty Raid Witch Panties")>>
+[[Look in the dresser for her panties|Panty Raid Witch Panties]]<<else>>
+[[Try to leave|Panty Raid Witch End]]<</if>><<if not visited("Panty Raid Witch Bed")>>
+[[Climb into her bed|Panty Raid Witch Bed]]<</if>>
+
+::Panty Raid Witch Panties Take
+@@.thought;I'm overthinking it. She's just running low on underwear.@@
+
+You lean forward and grab her panties. There. You got them. And nothing seems to happen, although they feel a little warm.
+
+@@.thought;Okay. I got the panties. Now I need one more.@@ You feel the panties experimentally. They're small and flimsy, and they're almost covered completely by your large hand. You can't believe that girls wear these things.
+
+A distant bell chimes. @@.thought;Right. Focus.@@ You're supposed to get two pairs of panties, and right now you only have one. You stride toward the door to look in another room, but then hesitate. @@.thought;I'm in <<print $witch.firstname>>'s room, all by myself. When will I ever get this chance again?@@
+<<if not visited("Panty Raid Witch Desk")>>
+[[Check out the desk|Panty Raid Witch Desk]]<</if>><<if not visited("Panty Raid Witch Bed")>>
+[[Look at her bed|Panty Raid Witch Bed]]<</if>><<if not visited("Panty Raid Witch Trunk")>>
+[[Search the room more carefully|Panty Raid Witch Trunk]]<</if>>
+[[Attempt to leave|Panty Raid Witch End]]
+<<set $witchPanties = {
+	"properName": "Plain White Panties",
+	"informalName": "plain white panties",
+	"manImage": "images/clothes/underwears/basic_white_panties_man_legs.png",
+	"womanImage": "images/clothes/underwears/basic_white_panties_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $pantyRaid.panties to $witchPanties>>
+<<set $pantyRaid.takenFrom to $witch.firstname>>
+<<set $clothesInventory.underwear.push($witchPanties)>>
+
+::Panty Raid Witch Back Off
+@@.thought;No. This is a bad idea@@ you reason. @@.thought;The way it's laid out, it's like she wants me to take it.@@ You have enough experience with <<print $witch.firstname>> to know that if she wants you to do something, you shouldn't.
+
+You close the dresser.
+
+@@.thought;This is a panty raid. Everyone will give me hell if I come back without any panties.@@ You start to leave, but then hesitate. @@.thought;I'm in <<print $witch.firstname>>'s room, all by myself. When will I ever get this chance again?@@
+<<if not visited("Panty Raid Witch Desk")>>
+[[Check out the desk|Panty Raid Witch Desk]]<</if>><<if not visited("Panty Raid Witch Bed")>>
+[[Look at her bed|Panty Raid Witch Bed]]<</if>><<if not visited("Panty Raid Witch Trunk")>>
+[[Search the room more carefully|Panty Raid Witch Trunk]]<</if>>
+[[Attempt to leave|Panty Raid Witch End]]
+
+::Panty Raid Witch Bed Hide
+@@.thought;No, I'm not messing with her strap-on.@@ Maybe <<print $witch.firstname>> wouldn't miss one pair of panties, but she would definitely notice if this went missing. And if you took it, what would you do with it? It's too large to hide, and you don't want to explain to the guys why you took a strap-on.
+
+You put it back where you came from, and then straighten out the bed so it doesn't look like someone's been through it.
+<<if not visited("Panty Raid Witch Desk")>>
+[[Check out the desk|Panty Raid Witch Desk]]<</if>><<if not visited("Panty Raid Witch Panties")>>
+[[Look in the dresser for her panties|Panty Raid Witch Panties]]<<else>>
+[[Try to leave|Panty Raid Witch End]]<</if>><<if not visited("Panty Raid Witch Trunk")>>
+[[Search the room more carefully|Panty Raid Witch Trunk]]<</if>>
+
+::Panty Raid Witch Bed Take
+You think for a second, and then pocket the strap-on. @@.thought;Now I can fuck like a man. I mean, I'm already a man. Oh god, what am I doing?@@
+
+Your cheeks start to heat up. You just took <<print $witch.firstname>>'s strap-on. @@.thought;I hope she doesn't notice it's gone.@@ Even as you think that, you realize that it's ridiculous. //Of course// she'll notice that it's gone. As long as she doesn't notice that you took it, you'll be fine.
+
+You force yourself to calm down, and you try to turn your thoughts away from the phallus in your pocket. <<if visited("Panty Raid Witch Panties")>>You've completed your mission, now you should get out of here. You could always do more snooping, but you've been in here for a while. You don't want <<print $witch.firstname>> to catch you in her room, with her strap-on!@@<<else>>You hear a set of footsteps and freeze, but the footsteps pass by without incident. @@.thought;I've been in here for a while. I should get her panties and go.@@<</if>>
+<<if not visited("Panty Raid Witch Desk")>>
+[[Check out the desk|Panty Raid Witch Desk]]<</if>><<if not visited("Panty Raid Witch Panties")>>
+[[Look in the dresser for her panties|Panty Raid Witch Panties]]<<else>>
+[[Try to leave|Panty Raid Witch End]]<</if>><<if not visited("Panty Raid Witch Trunk")>>
+[[Search the room more carefully|Panty Raid Witch Trunk]]<</if>>
+<<set $pantyRaid.strapon to true>>
+
+::Panty Raid Witch End
+<<if $pantyRaid.takenFrom is $witch.firstname>><<set $curseActive to true>>Satisfied that you've done everything you've needed to do, you walk towards the door and start to turn the handle. Before you can open it, the handle turns from the opposite direction. You try to turn the handle harder, but you're not strong enough, and the door slowly swings inward.
+
+The gravity of your situation washes over you. You're in <<print $witch.firstname>>'s room, and you just stole her panties<<if $pantyRaid.strapon and $player.carriesCauldron>>, her strap-on, and her cauldron<<elseif $pantyRaid.strapon>>, and her strap-on<<elseif $player.carriesCauldron>>, and her cauldron<</if>>. @@.thought;Please don't be <<print $witch.firstname>>.@@
+
+@@.witch;"Hello, <<print $player.firstname>>,"@@ <<print $witch.firstname>> says.
+
+@@.thought;Fuck!@@ Strangely, <<print $witch.firstname>> doesn't look surprised to see you here. @@.player;"Aren't you going to ask what I'm doing in your room?"@@
+
+She laughs. @@.witch;"I //know// what you're doing here. <<print $qb.firstname>> told me there was going to be a panty raid. So I just cast a ward over my panties."@@
+
+@@.player;"What's a ward?"@@
+
+She rolls her eyes. @@.witch;"You don't need to worry about it. But whenever someone touched it, I knew. I thought it would be a big football player. I didn't think it would be you."@@
+
+You're taken aback by the way she described you as not being a big football player. Before you can protest, <<print $witch.firstname>> continues. @@.witch;"And I cast another spell on those panties."@@
+
+@@.player;"Here, take them,"@@ you say, throwing them at her. @@.player;"They're yours. I don't want them anymore."@@
+
+@@.witch;"Oh no, you're not getting off that easy,"@@ she says, placing them firmly back in your hand. @@.witch;"Don't you want to see what the spell is?"@@ You shake your head no. @@.witch;"You'll find out soon enough."@@
+
+@@.thought;What does //that// mean?@@<<if $pantyRaid.strapon>>
+
+[[She notices the strap-on you're holding|Panty Raid Witch End Strapon]]<<else>><<if $player.carriesCauldron>>
+
+@@.witch;"And I'll be taking that,"@@ <<print $witch.firstname>> says, relieving you of the cauldron. You sigh. You were never going to be able to hide it anyway.<<set $player.carriesCauldron to false>><</if>>
+
+[[You leave before she can embarrass you any more|Panty Raid End]]<</if>><<else>>You haven't gotten <<print $witch.firstname>>'s panties, but you've spent enough time in here already, and you //really// don't want to get caught by <<print $witch.firstname>>.
+
+You turn the handle and exit, shutting the door behind you.<<if visited("Panty Raid Witch Trunk")>> You take another look at the door. There's three names on it, so three girls are supposed to live here, but clearly only <<print $witch.firstname>> does. @@.thought;Weird.@@<</if>>
+
+<<if $pantyRaid.strapon or $player.carriesCauldron>>You absently touch the <<if $pantyRaid.strapon and $player.carriesCauldron>>strap-on and cauldron<<elseif $pantyRaid.strapon>>strap-on<<else>>cauldron<</if>>. You've stolen them from <<print $witch.firstname>>'s room, but you have no idea how you'll get them back to your dorm. It's too far to walk, especially when you're supposed to be doing this panty raid.
+
+<</if>>You still haven't gotten your panties, and time's running out. You'll only be able to explore one more room.
+
+[[Try one of the nearby doors|Panty Raid Normal]]
+<<if $pantyRaid.strapon or $player.carriesCauldron>><<if $player.relationship is "">>[[Your ex lives in this dorm. See if she can help|Panty Raid Upstairs]]<<else>>[[Your girlfriend lives in this dorm. See if she can help|Panty Raid Upstairs]]<</if>><</if>><</if>>
+
+::Panty Raid Witch End Strapon
+<<print $witch.firstname>> smirks. @@.witch;"I see you took my strap-on."@@
+
+You blush furiously. @@.player;"No! I mean, uh, yeah. I did it because..."@@ You trail off. Why did you take her strap-on? @@.player;"I took it because, uh, I needed it."@@
+
+@@.witch;"You needed it,"@@ <<print $witch.firstname>> repeats in disbelief.
+
+That's right. If you have a strap-on, it'll be like you have your cock back. But can you just tell <<print $witch.firstname>> that?<<if $witch.knowsSecret is false>> She doesn't even know that you have a pussy.<</if>>
+
+[[Tell her|Panty Raid Witch End Strapon 2]]
+[[It's too embarrassing|Panty Raid Witch End Decline]]
+
+::Panty Raid Witch End Decline
+@@.player;"Look, never mind. I'm sorry I took your stuff."@@ You set the strap-on <<if $player.carriesCauldron>>and the cauldron<</if>> down on her bed. You try to set the panties down too but she stops you.
+
+@@.witch;"No, you're keeping those,"@@ she says, picking them up and handing them back to you again. She looks intently at you, and you brace yourself for further questioning.
+
+@@.witch;"Fine. But you can't come in my room again."@@
+
+@@.player;"I know. I'm sorry."@@
+
+@@.witch;"And I'm not going to help you."@@
+
+@@.player;"What?"@@ How //could// she. She did this to you and you've been relying on her help! How can she abandon you now?
+
+@@.witch;"You broke into my room and tried to take my shit! Why would I help you?"@@ She takes a breath. @@.witch;"You don't even need my help. Just make sure my brother wins the championship and you'll be back to normal."@@
+
+@@.thought;Or me,@@ you think to yourself.
+
+<<if $player.carriesCauldron>>@@.witch;"And I'll take that,"@@ she says, taking the cauldron."@@
+
+<</if>><<print $witch.firstname>> holds the door open for you, and you eagerly take her up on the hint, glad to get out of there.
+
+[[Return to the team with her panties|Panty Raid End]]
+<<set $witch.relationship to $witch.relationship-10>>
+<<set $player.submission to $player.submission-1>>
+<<set $player.carriesCauldron to false>>
+<<set $pantyRaid.strapon to false>>
+
+::Panty Raid Witch End Strapon 2
+@@.player;"I needed this strap-on for myself,"@@ you admit. @@.player;"So I can fuck <<print $girlfriend.firstname>>."@@
+
+<<if $witch.knowsSecret is false>>@@.witch;"Hold up. Why can't you just fuck her now?"@@
+
+You sigh. You really didn't want anyone to find out your secret. But you did break into <<print $witch.firstname>>'s room and took her panties and strap-on. She deserves an explanation.
+
+@@.player;"Your curse gave me a vagina,"@@ you say flatly.
+
+Anxiously, you await her reaction. @@.witch;"That is so...COOL!"@@ she squeals.
+
+@@.player;"Excuse me?"@@
+
+@@.witch;"That's the most powerful...thing...I've ever done! I didn't know I could do it. Imagine what I could do if I was trying!"@@
+
+You stare at her in disbelief. @@.player;"What about me?"@@
+
+She looks at you as if she only just realized that you were there. @@.witch;"Oh. Uh, sorry. I didn't mean to offend you. It's just, this is a really big deal for a witch."@@<<set $witch.knowsSecret to true>>
+
+<</if>>@@.player;"So you see why I needed it,"@@ you prompt.
+
+@@.witch;"Yeah, I guess."@@
+
+@@.player;"So...can I, uh, take it?"@@
+
+@@.witch;"No! It's mine! I'm using it too!"@@ You look at her and she blushes. @@.witch;"Anyway,"@@ <<print $witch.firstname>> says, changing the subject, @@.witch;" if you let me fuck you with it, you can keep it."@@
+
+@@.player;"Fuck me with it? ''NO!''"@@ you shout.
+
+@@.witch;"Oh, you want to wear it. That makes more sense."@@
+
+You shudder as you imagine what <<print $witch.firstname>> is implying. Getting penetrated, that //thing// inside you...No thanks.
+
+@@.witch;"Okay, fine. Give it a kiss and I'll let you have it."@@
+
+@@.player;"WHAT?"@@
+
+@@.witch;"It's just a quick kiss! And then you can use it to fuck whoever you want."@@ Her hand snakes into her jeans. @@.thought;Is she getting turned on by this?@@
+
+You consider her logic. All you need to do is give it a kiss for one second, and then it's yours. Wait, why are you even considering this?
+
+[[Alright, I'll do it|Panty Raid Witch End Strapon Knees]]
+[[No way|Panty Raid Witch End Decline]]
+
+::Panty Raid Witch End Strapon Knees
+@@.player;"Alright, I'll do it,"@@ you say quietly.
+
+@@.witch;"Really? I mean, here you go."@@
+
+You hesitantly take the strap-on back. Your hands are shaking as you slowly bring it to your lips.
+
+@@.witch;"No, not like that. Get on your knees."@@
+
+You scowl. She didn't say anything about this. But you've already done this much. Getting on your knees is just one more thing you need to do, and then it'll be yours and you can get out of here.
+
+You sink to your knees. You had never noticed how tall <<print $witch.firstname>> was. She's almost as tall as you are, but now that you're on your knees, she towers over you.
+
+@@.witch;"There...you go, <<print $player.firstname>>."@@
+
+@@.thought;What's going on?@@ You look up. <<print $witch.firstname>>'s hand is between her legs, and she's shaking. She looks away when she notices you looking, but then her gaze returns.
+
+With her other hand, she takes the strap-on from you. @@.thought;Why did she do that? Is she going to put it on me? Does she want me to fuck her?<<if $player.relationship is not "">> But I can't do that, right?<</if>>@@ It turns out that you were mistaken. She holds it about a foot above your head, tip pointing down.
+
+@@.witch;"Okay. Now...kiss it."@@
+
+@@.player;"What? No!"@@
+
+@@.witch;"Please, <<print $player.firstname>>? I'm...so...close!"@@
+
+@@.thought;I thought I just had to give it a quick kiss. Now I'm on my knees and <<print $witch.firstname>> is masturbating in front of me. How did this happen?@@
+
+[[You've gone this far. Give it a kiss|Panty Raid Witch End Strapon Kiss]]
+[[No. This isn't what you agreed to|Panty Raid Witch End Decline]]
+<<set $player.submission to $player.submission+2>>
+
+::Panty Raid Witch End Strapon Kiss
+@@.thought;I've gone this far. And I just have to give it a little kiss.@@<<if $player.submission>3>> You look up again and see <<print $witch.firstname>> furiously rubbing yourself. You did break into her room, and took her stuff. It's almost like you owe her one.<</if>>
+
+@@.player;"Okay, I'll do it."@@
+
+You close your eyes and tilt your head up. You intend to do it quickly without opening your eyes, but you chicken out. When you open them, the strap-on is inches away from your lips. 
+
+@@.thought;This is it.@@ You open your mouth to give it a kiss. Suddenly, the strap-on descends, and your mouth is full of fake cock. You can hardly breathe!
+
+After you regain your senses, you grab the strap-on, tear it out of your mouth, and throw it across the room.
+
+<<print $witch.firstname>> collapses on the floor next to you. @@.witch;"Wow, that was great! Um, I'm sorry about that. My hand slipped. Well, okay. My hand didn't slip. I was just, uh, really turned on..."@@
+
+<<increaseArousal 10>><<if $player.arousal<100>>You tune <<print $witch.firstname>> out, more worried about the stickiness you feel in between your legs. @@.thought;It's because a girl came in front of me! It's not because I had a strap-on in my mouth!@@
+
+@@.witch;"Are you mad at me?"@@ <<print $witch.firstname>> is saying.<<else>>Watching <<print $witch.firstname>> come in front of you, and, yes, having that strap-on in your mouth has made you really aroused. You don't even hear <<print $witch.firstname>>'s apology, as you feel a wave of pleasure washing over you. You gasp and close your eyes as an orgasm overtakes you.
+
+@@.witch;"Wow!"@@ <<print $witch.firstname>> says when you're done. @@.witch;"You came from that?"@@
+
+@@.player;"Not from that. I've been pent up for a while.@@<<if visited("Masturbate 2 Orgasm")>> @@.player;I couldn't orgasm..."@@ @@.thought;I couldn't orgasm because my body would change. But I just orgasmed, and there hasn't been a change.@@<<else>>"<</if>>
+
+@@.witch;"Yeah, okay,"@@ she laughs. @@.witch;"You just liked having cock in your mouth. I bet you're not even mad at me. Right?"@@<<set $player.arousal to 0>><<set $player.submission to $player.submission+1>><</if>>
+
+[[Yes|Panty Raid Witch End Mad]]
+[[No|Panty Raid Witch End Forgive]]
+<<set $player.submission to $player.submission+1>>
+<<set $player.confidence to $player.confidence-3>>
+<<set $player.masculinity to $player.masculinity-1>>
+<<set $player.homosexuality to $player.homosexuality+3>>
+
+::Panty Raid Witch End Mad
+@@.player;"Of course I'm mad! You just shoved the dick into my mouth. We agreed that I was only supposed to kiss it!"@@
+
+You stop yourself, realizing how ridiculous you sound. @@.player;"You can't just go changing the rules. I didn't even consent."@@
+
+You look at <<print $witch.firstname>>, waiting for her to argue with you. @@.witch;"You're right. I'm sorry. I was so close and I...I just wanted to see how you'd react, but I shouldn't have done it."@@
+
+You nod.
+
+@@.witch;"But you also broke into my room and stole my panties, my strap-on<<if $player.carriesCauldron>>, and my cauldron<</if>>."@@ You blush. @@.witch;"And I know I should be mad, but that was really hot! So, uh, are we even?"@@
+
+@@.player;"Fine."@@
+
+@@.witch;"Great! Uh, I guess you deserve to know about the panties."@@
+
+@@.thought;Oh yeah, she said she cast a spell on them.@@ You had completely forgotten about that.
+
+@@.player;"What about them?"@@ you ask suspiciously.
+
+[[You know this isn't going to be good|Panty Raid Witch Tell Panties]]
+
+::Panty Raid Witch End Forgive
+@@.player;"I forgive you,"@@ you say.
+
+@@.witch;"Really?"@@
+
+@@.player;"Yeah. I know I should be mad at you, but, uh, that was really hot.<<if $player.arousal is 0>> And I got off.<</if>>"@@
+
+@@.witch;"I knew it! I knew you liked having that cock in your mouth."@@
+
+You blush. @@.thought;I didn't enjoy that part! But, why am I not mad at her?@@
+
+@@.witch;"And I forgive you too."@@
+
+@@.player;"For what?"@@
+
+@@.witch;"For going into my room, and taking my panties, my strap-on<<if $player.carriesCauldron>>, and my cauldron<</if>>!"@@
+
+@@.thought;"Oh yeah. I forgot I did that."@@
+
+The two of you sit on the floor together for a little bit.
+
+@@.player;"I should get going,"@@ you say finally. The panty raid is almost over, and you have to meet up with your team. You technically did get a pair of panties.
+
+@@.witch;"Wait. Before you go, I need to tell you about the panties."@@
+
+@@.thought;Oh yeah, she put a curse on them. I forgot about that part.@@
+
+@@.player;"What about them?"@@ you ask hesitantly.
+
+[[You know this isn't going to be good|Panty Raid Witch Tell Panties]]
+<<set $witch.relationship to $witch.relationship+3>>
+<<set $player.homosexuality to $player.homosexuality+2>>
+<<set $player.submission to $player.submission+1>>
+
+::Panty Raid Witch Tell Panties
+@@.witch;"<<print $qb.firstname>> told me my dorm was going to get raided. So I put a ward on the panties so I'd know if someone took them. And I put a curse on them too."@@
+
+@@.player;"What kind of curse?"@@ @@.thought;Did her curse make the guy who took them grow a pussy? That's not going to work on me! Wait, I shouldn't be happy about that.@@
+
+@@.witch;"Whenever you put on underwear, you'll put on these panties instead."@@
+
+@@.player;"What?"@@ You don't want to wear panties! Sure, you have a vagina but that doesn't mean you're going to be wearing girly underwear!
+
+@@.witch;"Yeah. I'm sorry. I didn't know it was going to hit you. Or that you'd help get me off."@@
+
+@@.player;"Can't you just reverse it?"@@
+
+@@.witch;"No! You can't do that with curses! Didn't I tell you that?"@@
+
+@@.player;"Okay. So how do I get rid of this curse?"@@
+
+@@.witch;"You need to apologize to me for breaking into my room and wearing my panties."@@
+
+@@.thought;That's it?@@ You open your mouth to speak.
+
+@@.witch;"And it has to be in front of people."@@ @@.thought;Oh.@@
+
+@@.witch;"I was going to let you figure it out on your own, but I guess I owe you that much."@@
+
+@@.player;"Uh, thanks?"@@ An idea comes to you. @@.player;"I'll just throw these panties out. Or leave them with you."@@
+
+<<print $witch.firstname>> shakes her head. @@.witch;"That's not going to work. They'll just be right next to you when you need to change."@@
+
+You groan. @@.witch;"I'll be hanging out with the other witches tomorrow after school. You can just do it then."@@
+
+@@.player;"Uh...I'll think about it."@@ You want to break the curse, and you suppose it'd be better to do it in front of them than in front of your friends. You still feel uncomfortable though, admitting that in front of strangers.
+
+@@.player;"I should get going,"@@ you say. You turn to leave.
+
+@@.witch;"Aren't you forgetting something?"@@
+
+@@.player;"Hmm?"@@
+
+<<print $witch.firstname>> gets up, puts the cauldron back on her desk, and gives you the strap-on. @@.witch;"You earned it."@@
+
+[[Take it and meet up with your team|Panty Raid End]]
+<<set $player.carriesCauldron to false>>
+
+::Panty Raid Upstairs
+<<print $girlfriend.firstname>> lives on the second floor. You quickly climb the steps, hoping that you don't run into anyone else<<if visited("Panty Raid Witch End")>>while you're carrying what you stole from <<print $witch.firstname>><</if>>. You don't.
+
+<<if visited("Elvira Intro")>>You're halfway to <<print $girlfriend.firstname>>'s room when you spot a name on one of the other doors: ''Elvira.''
+
+@@.thought;It's going to be so awkward having to ask <<print $girlfriend.firstname>> for her panties. Maybe I can steal some from Elvira instead?@@
+
+You start towards her dorm when another thought occurs to you. @@.thought;Elvira is in the Witchcraft Club. <<print $witch.firstname>> turned out to be a witch. What if she's one too?@@
+
+<<link "Go to <<print $girlfriend.firstname>>'s room" "Panty Raid Girlfriend">><</link>>
+[[Knock on Elvira's door|Panty Raid Elvira]]<<else>>You walk briskly down the hallway, not even bothering to look at the other names on the door. The first floor was a bust, and time is running out. Your best shot is to get <<print $girlfriend.firstname>>'s panties. Hopefully she's there. If she isn't, maybe you'll just take them.
+
+[[Knock on her door|Panty Raid Girlfriend]]<</if>>
+
+::Panty Raid Girlfriend
+You hesitate outside of <<print $girlfriend.firstname>>'s door. @@.thought;How am I going to explain this? Maybe she's not in.@@
+
+You knock on the door, prepared to turn away. You're not sure what you're going to do <<if visited("Panty Raid Witch End")>>with <<if $pantyRaid.strapon and $player.carriesCauldron>>the strap-on and the cauldron<<elseif $pantyRaid.strapon>>the strap-on<<else>>the cauldron<</if>><<else>>to get the panties<</if>>, but you'll figure it out.
+
+@@.girlfriend;"Coming!"@@ She opens the door, and looks surprised to see you. <<if $player.relationship is "">>@@.girlfriend;"<<print $player.firstname>>? Why don't you come in."@@<<else>>@@.girlfriend;"<<print $player.firstname>>! Come in!"@@<</if>>
+
+You step inside. <<print $girlfriend.firstname>>'s room is a wreck. Her clothes are scattered over the ground, and a chair is turned on its side.
+
+@@.girlfriend;"I've been cleaning up,"@@ she explains. @@.girlfriend;"Did you know there was a panty raid today? Oh, of course you know. They hit my room."@@ She sounds a little bitter. @@.girlfriend;"This wasn't you, right?"@@
+
+@@.player;"No! I've been raiding <<if visited("Panty Raid Witch End")>><<print $witch.firstname>>'s room."<<else>>on the first floor<</if>>@@ @@.thought;The guys did all this? They just had to go to her dresser and take some panties!@@
+
+<<print $girlfriend.firstname>> raises an eyebrow. <<if visited("Panty Raid Witch End")>>@@.girlfriend;"<<print $witch.firstname>>?"@@<<else>>@@.girlfriend;"So you //are// doing the panty raid?"@@<</if>>
+
+@@.player;"Yeah. The door was unlocked. But I didn't get any panties!"@@ you protest. It's true.
+
+<<print $girlfriend.firstname>> frowns. @@.girlfriend;"Okay. So why are you here? <<if $player.relationship is "">>I mean, I don't mind. But I didn't expect it.<<else>>Things have been awkward ever since...<</if>>"@@
+
+<<if visited("Panty Raid Witch End") or (visited("Panty Raid Witch Desk") and ($player.carriesCauldron or $pantyRaid.strapon))>>You lay out the <<if $pantyRaid.strapon and $player.carriesCauldron>>strap-on and cauldron<<elseif $pantyRaid.strapon>>strap-on<<else>>cauldron<</if>> on her desk. <<print $girlfriend.firstname>>'s eyes go wide.
+
+@@.girlfriend;"What's that?"@@ You open your mouth to explain. @@.girlfriend;"No, I know what it is. But, wait, no, I have a lot of questions. Why do you have it? And why are you giving it to me?"@@
+
+You sigh. Those questions are fair. @@.thought;I should have seen it coming.@@ @@.player;"I don't have time to go to my dorm so I, uh, can you hold onto them? Please? I'll owe you one."@@
+
+@@.girlfriend;"Okay,"@@ she says skeptically. @@.girlfriend;"But how did you get this?"@@ she asks, holding up the <<if $player.carriesCauldron>>cauldron<<else>>strap-on<</if>>.
+<<if $player.carriesCauldron>><<if $girlfriend.knowsSecret>>
+[[Tell her you hope it can change you back|Panty Raid Girlfriend Cauldron Change]]<<else>>
+You were dreading this. You took the cauldron because maybe, just maybe, if you can learn some magic you can change back to how you were. But you can't tell <<print $girlfriend.firstname>> that. Or can you? @@.thought;Maybe it'd be enough if I just show her my muscles? She doesn't need to know I have a pussy.@@
+
+[[Tell her you hope the cauldron can regrow your muscles|Panty Raid Girlfriend Cauldron Reveal]]<</if>>
+[[Tell her you took it as a prank|Panty Raid Girlfriend Cauldron Prank]]<<else>>
+[[Tell her you took it as a dare|Panty Raid Girlfriend Strapon Dare]]<<if $player.relationship is not "">>
+[[Tell her you hope the two of you can use it|Panty Raid Girlfriend Strapon Use]]<<else>>
+[[You can't think of anything to say|Panty Raid Girlfriend Strapon Blush]]<</if>><</if>><<else>>@@.player;"I need to get some panties or the team will laugh at me. I did get some panties, but I ran into their, uh, owner as I was leaving."@@
+
+@@.girlfriend;"So you want me to help you? By giving you my panties?"@@
+
+@@.player;"Uh, yeah. I know, it's weird. And I get it if you don't want to do it."@@
+
+<<print $girlfriend.firstname>> sighs. @@.girlfriend;"But you'll give them right back to me? When you're done?"@@
+
+@@.player;"Sure. I don't want them for myself"@@ you laugh. Although your boxers do feel pretty uncomfortable. Maybe panties would fit better.
+
+@@.thought;No! I'm a boy! I won't even think about wearing panties!@@
+
+<<print $girlfriend.firstname>> thinks for a moment. @@.girlfriend;"Sorry, <<print $player.firstname>>. It's too weird."@@
+
+<<if $girlfriend.knowsSecret>>[[You turn to leave|Panty Raid Girlfriend Panties]]<<else>>[[You turn to leave|Panty Raid End]]<</if>><</if>>
+
+::Panty Raid Girlfriend Cauldron Change
+@@.player;"It's <<print $witch.firstname>>'s cauldron. And <<if $player.arcana is 0>>I don't know anything about this stuff<<else>>I've only read one book about, you know, witches<</if>>, but I was thinking, maybe I could use the cauldron to change back."@@
+
+<<print $girlfriend.firstname>> looks at you, surprised. @@.girlfriend;"How are you going to do that?"@@
+
+@@.player;"I don't know. I need to study more about witches. But if I can figure out how to use it, well, I'd rather try than let <<print $witch.firstname>> blackmail me."@@ You pause to look at her. She looks deep in thought. @@.player;"Can you help me with this?"@@
+
+<<if $player.relationship is not "">>@@.girlfriend;"Of course!"@@<<else>>@@.girlfriend;"I'll hide the cauldron."@@
+
+@@.player;"Okay."@@ @@.thought;I want her to help me figure out how to change back. But I shouldn't push it.@@<</if>>
+
+<<print $girlfriend.firstname>> takes the cauldron and puts it on the top shelf of her closet. @@.girlfriend;"Now <<print $witch.firstname>> can't find it. And if she did, she wouldn't be able to reach."@@
+
+You laugh. You've missed her humor.
+
+<<if $pantyRaid.strapon>>@@.girlfriend;"So what about the strap-on?"@@
+
+[[Tell her you took it as a dare|Panty Raid Girlfriend Strapon Dare]]
+<<if $player.relationship is not "">>[[Tell her you hope the two of you can use it|Panty Raid Girlfriend Strapon Use]]<<else>>[[You can't think of anything to say|Panty Raid Girlfriend Strapon Blush]]<</if>><<else>>@@.player;"Thanks,"@@ you say sincerely. You check your watch. It's almost time for you to meet up with the team.
+
+@@.player;"Well, I'll see you around,"@@ you say. The words hang awkwardly in the air. Of course you'll see her. You have gym together.
+
+<<print $girlfriend.firstname>> says goodbye, and you turn towards the door.
+
+<<if $girlfriend.knowsSecret>>[[Continue|Panty Raid Girlfriend Panties]]<<else>>[[Continue|Panty Raid End]]<</if>><</if>>
+
+::Panty Raid Girlfriend Cauldron Reveal
+<<if not visited("Girlfriend Show Muscles")>>@@.player;"You're not going to believe this, but <<print $witch.firstname>> put a curse on me."@@
+
+@@.girlfriend;"You're right. I don't believe you."@@
+
+@@.player;"Okay. But what if I showed you?"@@
+
+@@.girlfriend;"Show me? What did she do?"@@
+
+@@.player;"She took away all my muscles."@@
+
+@@.girlfriend;"No way! I thought I noticed something in gym, but I thought I was imagining it. Show me!"@@
+
+You don't like the tone her voice just took, but you take off your <<print $player.shirt.informalName>>, revealing your scrawny chest.
+
+@@.girlfriend;"Wow. Okay, I believe you. I don't know how she could do that!"@@
+
+@@.player;"I know! She's such a bitch!"@@ It's good to have somebody you can vent with.
+
+@@.girlfriend;"Hey! Is that the reason we stopped fucking? Because you got self-conscious?"@@
+
+@@.thought;Close enough.@@ @@.player;"Uh, yeah."@@ @@.thought;I'm not lying to her. I am self conscious about the changes to my body. It's just that it's more than my muscles.@@
+
+<<if $player.relationship is "">>@@.girlfriend;"And here I was, thinking you were cheating. You should have told me!"@@
+
+@@.player;"I'm sorry."@@ @@.thought;Maybe she's right.@@
+
+@@.girlfriend;"What if we got back together? I've really missed your hard cock."@@
+
+@@.thought;Oh yeah, that's why I didn't tell her.@@ @@.player;"Uh, right now I need to get back to meet with my team,"@@ you say carefully. @@.player;"But I'll think about it. Really."@@<<else>>@@.girlfriend;"You should have told me, <<print $player.firstname>>. You can tell me this shit!"@@<</if>><<else>>@@.player;"So you know how I lost my muscles?"@@
+
+<<print $girlfriend.firstname>> nods. You couldn't show her your new vagina, but you showed her your lack of muscles.
+
+@@.player;"<<print $witch.firstname>> did that. So I was thinking I could get the cauldron..."@@
+
+@@.girlfriend;"So you could change back,"@@ she finishes.
+
+@@.player;"Yeah."@@
+
+@@.girlfriend;"Do you know how?"@@
+
+@@.player;"No,"@@ you admit. @@.player;"But I'm going to do research. It can't be that hard. So, will you hide this cauldron?"@@
+
+<<print $girlfriend.firstname>> nods and takes the cauldron. She looks around her room for a bit and then puts it on the top shelf of her closet. @@.girlfriend;"Now <<print $witch.firstname>> can't find it. And if she did, she wouldn't be able to reach."@@
+
+You laugh. You've missed her humor.<</if>>
+
+You and <<print $girlfriend.firstname>> say your goodbyes, and you turn towards the door.
+
+<<if $girlfriend.knowsSecret>>[[Continue|Panty Raid Girlfriend Panties]]<<else>>[[Continue|Panty Raid End]]<</if>>
+<<set $girlfriend.relationship to $girlfriend.relationship+2>>
+
+::Panty Raid Girlfriend Cauldron Prank
+@@.player;"It's just a prank,"@@ you say. <<print $girlfriend.firstname>> raises her eyebrow. @@.player;"I don't like <<print $witch.firstname>>, because<<if $girlfriend.knowsSecret>> of, you know.<<else>>, uh..."@@ @@.thought;I'm not going there. @@.player;"She's weird, and I thought it would be funny.<</if>> So I took her cauldron."@@
+
+@@.girlfriend;"I don't like <<print $witch.firstname>> either. But, like, that's hers."@@
+
+@@.player;"Yeah, but..."@@
+
+<<if $girlfriend.knowsSecret>>@@.girlfriend;"I mean, I guess she did that thing to you..."@@
+
+@@.player;"Yes!"@@
+
+@@.girlfriend;"...and she could do it to someone else."@@
+
+@@.player;"So you'll hide it for me?"@@
+
+@@.girlfriend;"So it's not really a prank?"@@
+
+@@.player;"I guess not,"@@ you sigh.
+
+<<print $girlfriend.firstname>> stares at it for a while. @@.girlfriend;"Fine, I'll do it,"@@ she says. She takes the cauldron and puts it on the top shelf of her closet. @@.girlfriend;"Now <<print $witch.firstname>> can't find it. And if she did, she wouldn't be able to reach."@@
+
+You laugh. You've missed her humor.<<else>>@@.girlfriend;"So what if she keeps a cauldron? So she gets to play pretend as a witch. She's not hurting anyone."@@
+
+You groan. @@.thought;If only you knew.@@
+
+@@.girlfriend;"No. I'm sorry. I don't like her, but I'm not going to help you take her shit."@@ She crosses her arms.
+
+@@.player;"Fine. I'll just take it back."@@<</if>>
+
+<<if $pantyRaid.strapon>>@@.girlfriend;"So what about the strap-on?"@@
+
+[[Tell her you took it as a dare|Panty Raid Girlfriend Strapon Dare]]
+<<if $player.relationship is not "">>[[Tell her you hope the two of you can use it|Panty Raid Girlfriend Strapon Use]]<<else>>[[You can't think of anything to say|Panty Raid Girlfriend Strapon Blush]]<</if>><<else>><<if $girlfriend.knowsSecret>>@@.player;"Thanks,"@@ you say sincerely. You check your watch. It's almost time for you to meet up with the team.
+
+<</if>>@@.player;"Well, I'll see you around,"@@ you say. The words hang awkwardly in the air. Of course you'll see her. You have gym together.
+
+<<print $girlfriend.firstname>> says goodbye, and you turn towards the door.
+
+<<if $girlfriend.knowsSecret>>[[Continue|Panty Raid Girlfriend Panties]]<<else>>[[Continue|Panty Raid Spy Hallway]]<</if>><</if>>
+
+::Panty Raid Girlfriend Strapon Dare
+@@.thought;I can't tell her that I'm going to use the strap-on! Think quickly!@@ @@.player;"I took it because, uh, I was dared to do it."@@
+
+@@.girlfriend;"Dared to do it? Like you were dared to do the panty raid?"@@
+
+@@.player;"Yeah! But I didn't take any panties."@@
+
+@@.girlfriend;"But you took <<print $witch.firstname>>'s strap-on. I think that's worse."@@
+
+@@.player;"Yeah, I guess you're right. But hey, why do you think <<print $witch.firstname>> has a strap-on?"@@
+
+@@.girlfriend;"I don't know! Do you think she's a lesbian?"@@
+
+@@.player;"Maybe. Wait, no. She has a boyfriend. Marcus, remember?"@@
+
+@@.girlfriend;"Oh yeah. But he doesn't seem like the type, does he?"@@
+
+@@.player;"No, he doesn't."@@
+
+@@.girlfriend;"I don't think I can respect him anymore."@@
+
+@@.player;"You can't? Why not?"@@
+
+@@.girlfriend;"If he lets his girlfriend fuck him that's kind of...gay? I can't respect a guy like that."@@ <<if $girlfriend.knowsSecret>><<print $girlfriend.firstname>> meets your eyes. @@.girlfriend;"It's not like that for you,"@@ she says quickly. @@.girlfriend;"It wasn't your choice."@@
+
+@@.player;"<<print $girlfriend.firstname>>, nobody's going to fuck me."@@
+
+@@.girlfriend;"Yeah, you're right. Sorry."@@ You blush. Her expression changes suddenly. @@.girlfriend;"But I'm still not going to hide the strap-on for you."@@<<else>>You look at her. You never knew she had those views. @@.girlfriend;"A guy who gets fucked, he's not much of a man,"@@ she explains.
+
+That makes you think. @@.thought;I can't fuck anyone. Unless I have the strap-on, but I don't think she'll give it to me. Shit. Does she not see me as a man? But I'm not going to get fucked! So I'm still a man. Yeah, I'm still a man.@@
+
+@@.girlfriend;"What?"@@
+
+@@.player;"Uh, so about the strap-on."@@
+
+@@.girlfriend;"No. I'm not going to hide another girl's strap-on for you. Sorry."@@<</if>>
+
+@@.player;"Fine. Well, I'll see you around,"@@ you say. The words hang awkwardly in the air. Of course you'll see her. You have gym together.
+
+<<print $girlfriend.firstname>> says goodbye, and you turn towards the door, and head out.
+
+[[Continue|Panty Raid Spy Hallway]]
+
+::Panty Raid Girlfriend Strapon Use
+@@.player;"I, uh, hope the two of us can use it. Together."@@
+
+@@.girlfriend;"Oh, yes! Good thinking."@@ <<print $girlfriend.firstname>> kisses you on the lips, and you kiss back eagerly. <<if $player.relationship is "">>Unfortunately, <<print $girlfriend.firstname>> breaks it off. @@.girlfriend;"We shouldn't be doing this."@@
+
+@@.player;"Yeah,"@@ you say with a sigh. @@.player;"I guess you're right."@@<<else>>You find yourself melting into her arms. You've really missed this. Your pussy starts to tingle.
+
+@@.girlfriend;"Do you want to, you know. Fuck?"@@ <<print $girlfriend.firstname>> asks, looking at you with bedroom eyes.
+
+You really want to say yes, but a lot of time has passed, and you're supposed to meet up with the rest of your team soon. You tell her that, and she deflates.
+
+@@.player;"I really mean it this time! I'd love to fuck you. Even if it's different."@@<</if>>
+
+@@.girlfriend;"Okay,"@@ <<print $girlfriend.firstname>> says, sighing. She reaches under her pillow, and you spot the tip of a dildo.
+
+@@.thought;Fuck! I need to come back soon. I'm about to burst.@@
+
+[[You start to head for the door|Panty Raid Girlfriend Panties]]
+<<increaseArousal 5>>
+<<set $player.confidence to $player.confidence+2>>
+
+::Panty Raid Girlfriend Strapon Blush
+@@.thought;I can't tell her that I'm going to use the strap-on! Think quickly!@@ @@.player;"It was because, uh..."@@ You blush. This is so embarrassing. You're never at a loss for words.
+
+@@.girlfriend;"Oh,"@@ <<print $girlfriend.firstname>> says. @@.girlfriend;"Sure, I'll hide it for you."@@
+
+@@.player;"Uh, thank you. But why?"@@
+
+@@.girlfriend;"You should have just said you wanted to use it. That's okay,"@@ she says, smirking.
+
+@@.thought;I //do// want to use it. I guess it was obvious. Unless she thinks...oh no. No. She thinks I want some girl to shove it up my butt.@@
+
+<<print $girlfriend.firstname>> can't stop smirking. @@.girlfriend;"I didn't think you were the type. You were so strong and manly. I never would have guessed. But, good for you! Your next girlfriend will be in for a nice surprise."@@
+
+You wish for the floor to open up and swallow you.
+
+@@.player;"Well, I'll see you around,"@@ you say. The words hang awkwardly in the air. Of course you'll see her. You have gym together.
+
+You start to head for the door.
+
+[[Continue|Panty Raid Girlfriend Panties Request]]
+<<set $player.confidence to $player.confidence-1>>
+
+::Panty Raid Girlfriend Panties Request
+@@.girlfriend;"Wait!"@@
+
+You spin around. @@.player;"What's up?"@@
+
+@@.girlfriend;"I was just thinking. You haven't gotten any panties yet, right?"@@
+
+@@.player;"No,"@@ you sigh. You had been so wrapped up in <<print $witch.firstname>>'s room and <<print $girlfriend.firstname>> that you had forgotten. @@.player;"Can I  have yours?"@@
+
+@@.girlfriend;"No way! Unless you want to wear them."@@
+
+@@.player;"What the fuck, <<print $girlfriend.firstname>>?"@@
+
+@@.girlfriend;"I was just joking, <<print $player.firstname>>,"@@ she says, laughing. @@.girlfriend;"You know, since you want to get fucked."@@
+
+@@.player;"I don't want to get fucked!"@@ @@.thought;This has gone too far. She thinks I'm gay or something. I don't want to wear panties either. Though I guess they might be more comfortable.@@
+
+@@.girlfriend;"Sorry, <<print $player.firstname>>. I thought it would be funny. Men and their egos,"@@ she says, rolling her eyes.
+
+@@.player;"It's okay. Can I have them anyway, though? So I can show the team?"@@
+
+@@.girlfriend;"Nope! Some of your friends already took my boyshorts. They were my favorite pair."@@
+
+<<if visited("Sex Day 2")>>@@.player;"The black boyshorts?"@@ you ask.
+
+@@.girlfriend;"Yeah."@@
+
+You remember them well. She wore them while you fucked her after homecoming. @@.thought;I guess I can't do that again.@@
+
+<</if>>@@.player;"That's too bad. I really liked them."@@
+
+@@.girlfriend;"Me too. That's why I'm not giving out any more of my panties."@@
+
+[[Tell her you understand|Panty Raid End]]
+[[See if she was joking about wearing them|Panty Raid Girlfriend Panties Wear]]
+
+::Panty Raid Girlfriend Panties
+@@.girlfriend;"Wait!"@@
+
+You spin around. @@.player;"What's up?"@@
+
+<<if visited("Panty Raid Witch End")>>@@.girlfriend;"I was just thinking. You haven't gotten any panties yet, right?"@@
+
+@@.player;"No,"@@ you sigh. You had been so wrapped up in <<print $witch.firstname>>'s room and <<print $girlfriend.firstname>> that you had forgotten.
+
+@@.girlfriend;"Well,"@@ she says, scooting off the bed. @@.girlfriend;"I can help."@@
+
+@@.player;"You'd do that for me? Really?"@@
+
+@@.girlfriend;"Yeah. I mean, I still think this panty raid is gross and sexist. So I have one condition."@@<<else>>@@.girlfriend;"I changed my mind. You can take my panties..."@@
+
+@@.player;"Thank you so much! I'll give them right back."@@
+
+@@.girlfriend;"...On one condition,"@@ <<print $girlfriend.firstname>> finishes.<</if>>
+
+@@.thought;Uh oh.@@ @@.player;"Uh, what's that?"@@ you ask with trepidation.
+
+@@.girlfriend;"You take two pairs."@@
+
+@@.player;"Okay. Sure."@@ @@.thought;That's her condition? I thought it was going to be so much worse.@@
+
+@@.girlfriend;"You take one to show to the team, and the other you wear."@@
+
+@@.player;"What the fuck! You want me to WEAR panties?"@@
+
+@@.girlfriend;"It'll be good for you. Do you know how much your pussy's like mine?"@@ Seeing your quizzical look, she says, @@.girlfriend;"I mean, do you get periods?"@@
+
+<<if $player.expectsPeriod>>@@.player;"Yeah. I talked to <<print $witch.firstname>> and she said I was going to get them."@@
+
+@@.girlfriend;"Yeah, you're going to need panties,"@@ <<print $girlfriend.firstname>> says, looking at you sympathetically.
+
+@@.player;"Uh, why?"@@
+
+@@.girlfriend;"When you get your period, if you're wearing boxers, then there's going to be blood dripping..."@@<<else>>@@.player;"I don't know. I didn't think about it. Shit do you think I can get them?"@@ You've always heard girls bitching about their periods. You never thought you could get one yourself!
+
+<<print $girlfriend.firstname>> shrugs. @@.girlfriend;"I don't know. Maybe. And there's also this thing called discharge, and it comes from your v..."@@<<set $player.expectsPeriod to true>><</if>>
+
+@@.player;"Stop, stop! I don't want to hear this shit."@@
+
+@@.girlfriend;"But you're going to...Okay, fine. I'll back off. But I bet your boxers are feeling uncomfortable, right?"@@
+
+@@.player;"Oh yeah. There's so much fabric and there's so much //room//. I hate it."@@
+
+@@.girlfriend;"Exactly! That's why girls..."@@ <<print $girlfriend.firstname>> sees your look. @@.girlfriend;"I mean, people with pussies, wear panties."@@
+
+In the distance, a bell chimes. @@.thought;I've got to get back to my team.@@
+
+@@.girlfriend;"Look, do you want to go back empty handed? Yes or no?"@@
+
+[[She brought up some good points, and you don't want to go home empty handed|Panty Raid Girlfriend Panties Wear]]
+[[You don't, but you'd rather be empty handed than wear panties|Panty Raid End]]
+
+::Panty Raid Girlfriend Panties Wear
+<<if visited("Panty Raid Girlfriend Panties")>>@@.player;"Okay, I'll wear the panties."@@
+
+@@.girlfriend;"Are you serious?"@@
+
+@@.player;"Uh, yeah. It's just, you made some good points, and I thought..."@@ You stop yourself. You're rambling.<<else>>@@.player;"When you asked me if I wanted to wear the panties, were you being serious?"@@
+
+@@.girlfriend;"No. I told you, it was a joke."@@
+
+@@.thought;Damn, you're not making this easy.@@ @@.player;"What if I, uh, did wear them?"@@
+
+@@.girlfriend;"Are you being serious?"@@
+
+@@.player;"Yeah. I can't go back empty handed."@@
+
+@@.girlfriend;"Okay. But you've got to take two pairs. One to show the guys and one to wear."@@
+
+@@.player;"Fine."@@<</if>>
+
+@@.girlfriend;"Well, okay."@@ She goes to her drawer and starts rifling through it. @@.girlfriend;"What do you want? I've got bikini panties, some french-cut, a thong..."@@
+
+@@.player;"I don't know. You pick. Not a thong though,"@@ you add quickly.
+
+@@.girlfriend;"Okay,"@@ she says, laughing. She throws two pairs of blue panties to you. @@.girlfriend;"These are blue french-cut panties. These are the most masculine ones I can find."@@
+
+@@.player;"Thanks,"@@ you say, not meeting her eyes. @@.thought;This is so embarrassing.@@
+
+@@.girlfriend;"So are you going to change here, or?"@@
+<<if $girlfriend.knowsSecret>>
+[[She already knows you have a pussy. What's the harm?|Panty Raid Girlfriend Panties Change]]<<else>>
+[[Ask if she'll take your word for it|Panty Raid Girlfriend Panties Stash]]<</if>>
+[[Change in the Girls Bathroom|Panty Raid Girlfriend Panties Bathroom]]
+<<set $girlfriendPanties = {
+	"properName": "Blue French Cut Panties",
+	"informalName": "blue french-cut panties",
+	"manImage": "images/clothes/underwears/french_cut_panties_blue_man_legs.png",
+	"womanImage": "images/clothes/underwears/french_cut_panties_blue_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $pantyRaid.panties to $girlfriendPanties>>
+<<set $pantyRaid.takenFrom to $girlfriend.firstname>>
+
+::Panty Raid Girlfriend Panties Change
+@@.player;"I guess I'll change in front of you. I don't have anything you haven't seen already,"@@ you say miserably.
+
+@@.girlfriend;"Okay."@@
+
+You wait for her to turn around, but she doesn't. @@.thought;Whatever.@@
+
+You drop your <<print $player.pants.informalName>>, leaving you standing in your boxers. It's a pose you've done many times in front of her, but you always had a package straining to get out of your boxers. Now, your boxers feel light and airy, like there's nothing in there. Which there isn't.
+
+<<print $girlfriend.firstname>> has the decency to look embarrassed when you drop your boxers, leaving you standing there naked with your pussy clearly on display. This isn't like you changing in the locker room, where you try to get it over with as quickly as possible. You're more comfortable being naked in front of <<print $girlfriend.firstname>>. You're mortified, sure, but you're not worried about her making a scene or outing you to the whole school.
+
+You take the panties from <<print $girlfriend.firstname>>'s hand. Your boxers felt so large and sturdy. These panties feel small and flimsy. Holding them in your hand, they don't seem big enough to cover you.
+
+You consider asking <<print $girlfriend.firstname>> to get you a different pair. But taking a look at her drawer, all of her other panties have even less material.
+
+@@.thought;Fuck.@@ You can hardly believe what you're about to do. But you've gone this far. @@.thought;If I don't do this, everyone will laugh at me for not getting anything.@@
+
+You lift your right foot and stick it into one of the legholes. Then you do the same for the other foot. Wanting to get this over with, you slide the panties up your legs. As they approach your hips, you're convinced you're going to break them. They're so small, and <<print $girlfriend.firstname>> has such a slim body while you're now, or rather were, a built football player.
+
+The panties slide into place, covering your pussy. Somehow, you feel more naked now than you did when you weren't wearing any clothes. When you wore boxers, they felt wrong. They kept getting everywhere, and felt really uncomfortable. These panties //fit//.
+
+You're not sure how to feel about that.
+
+Finally, you slide your pants up, happy to be fully dressed again. True to her word, <<print $girlfriend.firstname>> gives you the second pair of panties, and you head for the door.
+
+@@.girlfriend;"<<print $player.firstname>>."@@
+
+@@.player;"What?"@@
+
+@@.girlfriend;"Pull up your pants. The waistband is showing."@@
+
+Blushing, you pull up your pants. @@.thought;Fuck. I would have been caught wearing panties. I need to be more careful next time.@@ <<if not $player.expectsPeriod>> @@.thought;Wait, next time? I'm not wearing these again!@@<</if>>
+
+Your fingers play with the second pair of panties. Now you can show the guys this pair, and they'll have no idea that you're wearing a matching pair underneath your <<print $player.pants.informalName>>.
+<<set $currentPassage to "Panty Raid End">>
+<<if not visited("Panties Transformation")>><<if $player.feminine>=2>><<link "Continue" TfPassagePicker>><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "$girlfriend.firstname's room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to $girlfriend.firstname>><<set $tfCircumstances.extraClothing to "">><</link>><<else>>Suddenly, a familiar feeling washes over you.
+
+<<link "Oh no" "Panties Transformation">><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "$girlfriend.firstname's room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to $girlfriend.firstname>><<set $tfCircumstances.extraClothing to "">><</link>><</if>><<else>><<link "Continue" $currentPassage>><</link>><</if>>
+<<set $player.confidence to $player.confidence-3>>
+<<set $player.masculinity to $player.masculinity-2>>
+<<set $girlfriendPanties = {
+	"properName": "Blue French Cut Panties",
+	"informalName": "blue french-cut panties",
+	"manImage": "images/clothes/underwears/french_cut_panties_blue_man_legs.png",
+	"womanImage": "images/clothes/underwears/french_cut_panties_blue_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $player.underwear to $girlfriendPanties>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<set $clothesInventory.underwear.push($girlfriendPanties)>>
+
+::Panty Raid Girlfriend Panties Stash
+@@.player;"Can you take my word for it?"@@
+
+@@.female;"Seriously?"@@
+
+@@.player;"Yeah! I'll do it, but the team's supposed to meet soon. They'll be able to tell I'm wearing panties."@@
+
+@@.female;"And you're okay wearing it to school?"@@
+
+@@.player;"Oh."@@ @@.thought;Wait, what am I thinking? I can just tell her I'll wear it tomorrow and then not.@@
+
+@@.female;"Yeah."@@
+
+@@.player;"I'm okay with it."@@
+
+@@.female;"Promise you'll actually wear them?"@@
+
+[[Promise her|Panty Raid End]]
+[[On second thought, why don't I just change in the bathroom?|Panty Raid Girlfriend Panties Bathroom]]
+[[No thanks|Panty Raid End]]
+
+::Panty Raid Girlfriend Panties Bathroom
+@@.player;"Can I change in the bathroom?"@@
+
+@@.girlfriend;"Sure. But you'll have to show me."@@
+
+@@.player;"Fine. Just give them to me."@@
+
+<<print $girlfriend.firstname>> hands you the blue french-cut panties, and a pair of smaller yellow panties. You peek your head out of the door. Finding the coast clear, you hurry to the bathroom.
+
+Your heart sinks as you approach it. It's the Women's Room. @@.thought;Well, it is a girls dorm. Maybe they have a bathroom somewhere else, for staff?@@ You look around. If you go looking for another bathroom, the odds are good that you'll run into somebody. 
+
+With a sigh, you swing the door open. @@.thought;Nobody's here@@ you think in relief. @@.thought;Wait, that's not true. There's feet in that stall!@@ Sure enough, it looks like one of the stalls is occupied.
+
+You hurry to the open stall, shut the door and drop your <<print $player.pants.informalName>>, leaving you standing in your boxers. You like these boxers. They were so comfy, until you grew the wrong equipment.
+
+You drop the boxers, and grab the blue french-cut panties. Your boxers felt so large and sturdy. These panties feel small and flimsy. Holding them in your hand, they don't seem big enough to cover you.
+
+You consider running back to ask <<print $girlfriend.firstname>> to get you a different pair. @@.thought;No, that won't work. She always wears thongs or even smaller panties.@@
+
+You can hardly believe what you're about to do. But you've gone this far. @@.thought;If I don't do this, everyone will laugh at me for not getting anything.@@
+
+You lift your right foot and stick it into one of the legholes. Then you do the same for the other foot. Wanting to get this over with, you slide the panties up your legs. As they approach your hips, you're convinced you're going to break them. They're so small, and <<print $girlfriend.firstname>> has such a slim body while you're now, or rather were, a built football player.
+
+The panties slide into place, covering your pussy. When you wore boxers, they felt wrong. They kept getting everywhere, and felt really uncomfortable. These panties //fit//.
+
+You're not sure how to feel about that.
+
+Finally, you slide your pants up, happy to be fully dressed again.
+
+You start to unlock the stall door, until you remember the girl in the stall next to you. You don't want to get caught by her. You're in the women's bathroom, wearing women's underwear! Of course, it's hidden underneath your clothes, but it feels like everyone can see.
+
+[[Take a chance and run for it|Panty Raid Girlfriend Bathroom Caught]]
+[[Wait her out|Panty Raid Girlfriend Bathroom Wait]]
+<<set $player.confidence to $player.confidence-3>>
+<<set $player.masculinity to $player.masculinity-2>>
+
+::Panty Raid Girlfriend Bathroom Caught
+This girl has been in the stall since you started changing. You're not going to be stuck here for who knows how long as you wait for her to finish pooping.
+
+You unlock the stall door and walk quickly across the tiled floor. Behind you, you hear another door open. @@.female;"<<print $player.firstname>>?"@@
+
+@@.thought;Shit@@ @@.player;"Hey, uh..."@@ You check behind you. "<<if visited("Library")>>@@.player;"Elvira."@@ You curse your luck for being caught by another witch. You've had enough of them for a lifetime.<<else>>@@.player;"Julie."@@ She's a semi-popular girl. She's not in your circle of friends, but you know of her.<</if>>
+
+@@.female;"What are you doing in the girls bathroom?"@@
+
+@@.player;"I, uh, needed to pee and I couldn't find the boys bathroom."@@
+
+@@.female;"Down the stairs and to your right."@@
+
+@@.player;"Thanks, <<if visited("Library")>>Elvira<<else>>Julie<</if>>."@@ You turn away and start walking away.
+
+She says something that sounds like @@.female;"Are you preparing for Annie's?"@@ but you can't really hear her.
+
+@@.thought;Is Annie having a party?@@ you ask yourself once you've gotten out of there. @@.thought;Why else would she ask, unless. Oh shit. Maybe she asked if I was wearing panties.@@
+
+Nervously, you reach behind you, and feel the fabric of your panties peeking out over the top of your <<print $player.pants.informalName>>. You quickly pull your pants up.
+
+@@.thought;Oh fuck. My life is over if it gets out that I was wearing panties.@@ You bite your lip. @@.thought;No, I think she was talking about Annie's. I was far away and walking fast. She couldn't have seen.@@
+
+You check by <<print $girlfriend.firstname>>'s room to show her that you're wearing panties, but she's not in. @@.thought;So I didn't even have to wear these.@@ You feel cheated. You're tempted to take the panties off, but you're running late. The team was supposed to meet up by now.
+
+Your fingers play with the second pair of panties. Now you can show the guys this pair, and they'll have no idea that you're wearing a matching pair underneath your <<print $player.pants.informalName>>.
+<<set $currentPassage to "Panty Raid End">>
+<<if not visited("Panties Transformation")>><<if $player.feminine>=2>><<link "Continue" TfPassagePicker>><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "Busch hallway">><<set $tfCircumstances.locationType to "hallway">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<else>>Suddenly, a familiar feeling washes over you.
+
+<<link "Oh no!" "Panties Transformation">><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "Busch hallway">><<set $tfCircumstances.locationType to "Busch">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><</if>><<else>><<link "Continue" $currentPassage>><</link>><</if>>
+<<set $girlfriendPanties = {
+	"properName": "Blue French Cut Panties",
+	"informalName": "blue french-cut panties",
+	"manImage": "images/clothes/underwears/french_cut_panties_blue_man_legs.png",
+	"womanImage": "images/clothes/underwears/french_cut_panties_blue_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $player.underwear to $girlfriendPanties>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<set $clothesInventory.underwear.push($girlfriendPanties)>>
+
+::Panty Raid Girlfriend Bathroom Wait
+You're not going to risk it. With the way your luck's been lately, you'll leave and the girl in the stall will finish three seconds later. @@.thought;I'll wait at least five minutes. I don't know if I can wait longer. My team's supposed to meet up soon, and...@@
+
+There's a loud flushing sound from the next stall, and then you hear the sound of a door opening. @@.thought;Seriously?@@ You wait until you hear the sound of the bathroom door closing, and then step out of the stall and head for the exit. You're so glad that you decided to wait. It would have been so embarrassing getting caught in the girls bathroom!
+
+Luckily, nobody else is in the bathroom, and you make your way out without any trouble. You check by <<print $girlfriend.firstname>>'s room to show her, but she's not in. @@.thought;So I didn't even have to wear these.@@ You feel cheated. You're tempted to take the panties off, but you're running late. The team was supposed to meet up by now.
+
+Your fingers play with the second pair of panties. Now you can show the guys this pair, and they'll have no idea that you're wearing a matching pair underneath your <<print $player.pants.informalName>>.
+<<set $currentPassage to "Panty Raid End">>
+<<if not visited("Panties Transformation")>><<if $player.feminine>=2>><<link "Continue" TfPassagePicker>><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "Busch hallway">><<set $tfCircumstances.locationType to "hallway">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<else>>Suddenly, a familiar feeling washes over you.
+
+<<link "Oh no!" "Panties Transformation">><<set $tfRecoverPassage to "Panty Raid End">><<set $tfReason to "panties">><<set $tfCircumstances.location to "Busch hallway">><<set $tfCircumstances.locationType to "hallway">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><</if>><<else>><<link "Continue" $currentPassage>><</link>><</if>>
+<<set $girlfriendPanties = {
+	"properName": "Blue French Cut Panties",
+	"informalName": "blue french-cut panties",
+	"manImage": "images/clothes/underwears/french_cut_panties_blue_man_legs.png",
+	"womanImage": "images/clothes/underwears/french_cut_panties_blue_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $player.underwear to $girlfriendPanties>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<set $clothesInventory.underwear.push($girlfriendPanties)>>
+
+::Panty Raid Elvira
+Cautiously, you open the door to Elvira's room. It's empty and unlocked. @@.thought;Why wouldn't she lock her door? Maybe she's just absent-minded?@@
+
+You quietly step inside and close the door behind you. Now that you're safely inside, you're able to examine your surroundings.
+
+<<if visited("Panty Raid Witch")>><<print $witch.firstname>> had the room all to herself. Elvira isn't quite as lucky. It looks like there's only two people who live here, instead of the three that each room is supposed to have. The third bed is pushed to the side, and Elvira's possessions are strewn carelessly across the floor. @@.thought;Do witches get less roommates? This is so unfair! I am...was...the star quarterback and I just had a triple.@@<<else>>One of the beds is pushed up against the wall, but the other two beds look lived-in. Elvira's possessions are strewn carelessly across the floor. @@.thought;I wonder what happened to the third roommate. I thought everyone had a triple. Hey! If there was space, why couldn't I have been the one to live in a double? I am...was...the star quarterback.@@<</if>>
+
+At the far end of the room is a large wardrobe. @@.thought;That's where her panties are.@@
+
+[[Open the wardrobe|Panty Raid Elvira Wardrobe]]
+[[Look through Elvira's stuff on the floor|Panty Raid Elvira Search]]
+[[Look at Elvira's roommate's side of the room|Panty Raid Elvira Roommate]]
+
+::Panty Raid Elvira Roommate
+@@.thought;It's a bad idea to steal from a witch. I don't have time to go to another room, but I could just take her roommate's panties.@@
+
+You go to the roommate's side of the room, and look through her bed, search her desk, and check the floor. You find two packages of carrots in her bed, but you don't find any underwear.
+
+@@.thought;She and Elvira must keep their clothes in that wardrobe.@@
+
+You look at the wardrobe. It looks imposing, and <<if not visited("Panty Raid Elvira Search")>>for the first time <</if>>you wonder if it might be a trap. Elvira is a witch...probably. She wouldn't leave her room open with a big tempting wardrobe sitting there on the night of the panty raid.
+
+@@.thought;Maybe I'm just paranoid. Maybe she doesn't know there's a panty raid.@@
+
+[[Open the wardrobe|Panty Raid Elvira Wardrobe]]<<if not visited("Panty Raid Elvira Search")>>
+[[Search Elvira's possessions|Panty Raid Elvira Search]]<</if>>
+[[You could always leave empty-handed|Panty Raid End]]
+
+::Panty Raid Elvira Search
+You cast a glance at Elvira's wardrobe. It's your last chance to get some panties to show the team, but it's risky. @@.thought;Maybe if I search through Elvira's things, I can find something that says whether the wardrobe is safe. And find something that will help me turn back. That's more important.@@
+
+You look through the stuff on the floor. It takes a while: Elvira is apparently very messy. Elvira even left her wallet on the floor, but there's only a couple dollars in it. Your family is well-off, and you quickly decide that stealing money from a witch isn't worth it. Most of the other stuff is uninteresting: homework assignments, textbooks, a recipe, fliers for different clubs. @@.thought;Wait, what was the recipe for?@@
+
+A closer examination reveals that it's not a recipe for food, but for a magic potion. At least, you think so. @@.thought;A bird's feather, foxglove. Either Elvira has strange taste in food, or this is for a potion.@@
+
+[[Pocket the recipe|Panty Raid Elvira Pocket]]
+[[Put it at the bottom of the pile, so she doesn't realize it's gone|Panty Raid Elvira Plan]]
+
+::Panty Raid Elvira Pocket
+@@.thought;I can make a potion with this! Of course I've got to take it!@@ You quickly stuff it in your pocket, glancing around as if Elvira's about to burst through the door and catch you in the act.
+
+It's too bad that the recipe doesn't say what it's for. @@.thought;Yeah, I'm not going to risk taking any strange potions. I've got to find out what this does somehow.@@
+
+Now that you're done rifling through Elvira's stuff, you turn back to the task at hand. You've got to get her panties.
+
+[[Open the wardrobe|Panty Raid Elvira Wardrobe]]<<if not visited("Panty Raid Elvira Roommate")>>
+[[Look at Elvira's roommate's side of the room|Panty Raid Elvira Roommate]]<</if>>
+[[It's too risky. Leave empty-handed|Panty Raid End]]
+
+::Panty Raid Elvira Plan
+@@.thought;What would I even do with this? After what happened to me, I'm not going to be taking any strange potion. It doesn't even say what the recipe's supposed to be used for!@@
+
+You decide that the best thing to do is to put it back where it came from, but you don't remember where it was. @@.thought;I'll just put it at the bottom of the pile. This room's so messy that she won't even notice.@@
+
+As you dig to the bottom of the pile, a doodle catches your eye. You pick it up and take a closer look. There are a couple drawings. One doodle is of a stick figure standing outside of what looks like a closet. Underneath that is a drawing of the clothes reaching for the stick figure.
+
+@@.thought;What's this about?@@ Then it hits you. @@.thought;That closet looks just like Elvira's wardrobe! This is her plan for the panty raid! Get a football player to open her wardrobe, and then...@@ You squint at the drawing. @@.thought;He'll be attacked by her clothes?@@
+
+That doesn't make sense, but whatever's in the wardrobe doesn't seem good.
+<<if not visited("Panty Raid Elvira Roommate")>>
+[[Look at Elvira's roommate's side of the room|Panty Raid Elvira Roommate]]<</if>>
+[[Leave empty-handed|Panty Raid End]]
+[[You'd have to be a real idiot to open the wardrobe|Panty Raid Elvira Wardrobe]]
+
+::Panty Raid Elvira Wardrobe
+You're not sure whether it's bravery or foolishness. But whatever it is, you open the wardrobe. You can't embarrass yourself by returning to your teammates empty-handed, after all.
+
+You glance around, looking for Elvira's panties. @@.thought;There!@@ you think, spotting a pair of lacey purple panties.
+
+You reach your hand towards them, but something weird happens. The panties fly past your outstretched arm, and...up your legs?
+
+You look down and see that you're no longer wearing your <<print $player.pants.informalName>> or your <<print $player.underwear.informalName>>. They're lying crumpled on the floor, and you're standing butt naked in a witch's room.
+
+The gravity of your situation washes over you, and you start to panic. You've got to get out of here. Now.
+
+[[Run towards the door|Panty Raid Elvira Hallway]]
+[[Try to fight the clothes|Panty Raid Elvira Fight]]
+
+::Panty Raid Elvira Hallway
+You've got to get out of here! You're not going to stand here and let these clothes attack you! Tripping over yourself, you rush towards the door. Out of the corner of your eye, you see the clothes following.
+
+@@.thought;Please let me reach the door!@@ You've almost reached it...your hand is on the doorknob...you swing the door open and collapse on the floor.
+
+You realize two things. One: you're in public, completely naked except for a pair of panties halfway up your legs. Two: the clothes have followed you into the hallway.
+
+You're not naked for very long. The panties quickly rise up your legs and settle into place. @@.thought;At least if someone walks by, they won't see my pussy.@@ Next is a lacey purple bra. It settles onto your chest and clasps itself shut behind your back.
+
+Behind you, someone laughs loudly.
+
+[[Spin around|Panty Raid Elvira Seen]]
+<<set $player.confidence to $player.confidence-4>>
+<<set $player.masculinity to $player.masculinity-2>>
+
+::Panty Raid Elvira Seen
+You spin around and see a football player, one of the receivers. He's carrying two pairs of panties in his hand. You curse your luck. How did he successfully get panties while you went for a witch's room and were forced to //wear// panties?
+
+He sees you looking at him and smirks. @@.male;"Nice look, bro,"@@ he says. @@.male;"It suits you."@@
+
+@@.player;"It's not my fault!"@@ you say quickly. @@.player;"Elvira's a witch, and she enchanted her wardrobe, and..."@@
+
+You trail off, realizing that he's left. It's just as well, as at that moment the clothes start attacking you again. A pink princess dress descends on you, passing over your head and body. There's a zipping sound behind you as it zips itself up.
+
+Finally, everything seems still. The only articles of clothing left are a pair of white stockings, and a garter belt, and they're not moving.
+
+[[You relax. It's over|Panty Raid Elvira Stockings]]
+<<set $player.exhibition to $player.exhibition+1>>
+<<set $team.respect to $team.respect-8>>
+<<setUpSexScene>><<set $princessDress = {
+	"properName": "Princess Dress",
+	"informalName": "princess dress",
+	"images": ["images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png"],
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": true,
+	"female": true,
+	"onepiece": true
+}>><<set $player.shirt to $princessDress>><<set $player.pants to $princessDress>>
+
+::Panty Raid Elvira Fight
+You look to the hallway. You want to run away, but right now you're naked except for the panties that are creeping up your legs. You definitely don't want to face anyone while you're dressed like this.
+
+You take hold of the panties and try to force them down your legs. The panties push back with an equal intensity, but you slowly manage to lower them.
+
+At the same time, however, a matching lacey purple bra flies at your chest and starts to wrap around it. Both of your hands are busy tugging the panties down, and you're forced to move a hand up to fend off the bra.
+
+Unfortunately, you're not strong enough to hold off these clothes with one hand. Maybe before, but not now. The panties settle in, covering your crotch, and the purple bra clasps shut behind your back.
+
+Just when you think it's over, a pink princess dress descends on you, trying to pass over your head. You fight valiantly, but the dress is strong. And with it over your head, it's impossible to see anything.
+
+The dress zips itself up, and the clothes go quiet. The only clothes left are a pair of white stockings and a garter belt, and they're not moving. The wardrobe looks normal, and if it wasn't for what you just experienced, you would have never guessed that there was anything special about this room.
+
+[[You relax. It's over|Panty Raid Elvira Stockings]]
+<<set $player.confidence to $player.confidence-4>>
+<<set $player.masculinity to $player.masculinity-2>><<setUpSexScene>><<set $princessDress = {
+	"properName": "Princess Dress",
+	"informalName": "princess dress",
+	"images": ["images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png", "images/clothes/onepieces/princess_dress_small_breasts.png"],
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": true,
+	"female": true,
+	"onepiece": true
+}>><<set $player.shirt to $princessDress>><<set $player.pants to $princessDress>>
+
+::Panty Raid Elvira Stockings
+You look over your body, and panic sets in again. You're in <<if visited("Panty Raid Elvira Hallway")>>the middle of the hallway<<else>>Elvira's room<</if>>, dressed like a girl. <<if visited("Panty Raid Elvira Hallway")>>Anybody could see you!<<else>>Elvira could come in at any time!<</if>>
+
+You start to back away, but as soon as you lift your foot off the ground, the white stockings fly towards you and slide up your feet. At the same time, a garter belt wraps around your waist and fastens the stockings.
+
+The stockings feel weird and tight against your legs. You're used to wearing baggy pants. You're not used to having something caress your legs so intimately.
+
+But it's not as if the stockings feel pleasant. They feel scratchy and uncomfortable, probably because of your hairy legs. @@.thought;I'm...I mean girls... are not supposed to have hair when I'm wearing stockings.@@
+
+You hold your breath, waiting for something else to happen, but it's silent. <<if visited("Panty Raid Elvira Hallway")>>All the clothes that followed you out of Elvira's room are now being worn by you.<<else>>The wardrobe closes, and you collapse against it.<</if>>
+
+[[You feel a sudden surge of arousal|Panty Raid Elvira Aroused]]
+
+::Panty Raid Elvira Aroused
+You can't explain it. This shouldn't be turning you on. You should be turned on at the thought of seeing a girl in a cute princess dress, not at the thought of you wearing that girly dress!
+
+But here you are, completely alone, wearing a dress and lingerie. You feel very feminine, but it's not exactly a bad feeling. You reach down to feel Elvira's panties, and they're already wet.
+
+You imagine <<if visited("Panty Raid Elvira Seen")>>a strong football player finding you dressed like this and undressing you<<else>>Elvira coming in and having her way with you<</if>>. Despite yourself, you're becoming more and more turned on.
+
+A pair of unseen gloves fly towards you. @@.thought;I've got to put my hands in my pockets!@@ Instinctively, you slide your hands down to where your pockets would be, only to realize that you're wearing a dress.
+
+The gloves have almost made their way to you, and you brace for them to slide up your hands and complete the outfit. But instead of flying straight, they go down.
+
+You're less confused when you feel a pair of hands at your sex. They play with it, and tease it. You stifle a yelp. You don't want anyone to hear you. Then one finger of the glove slips inside, and you care much less. 
+
+Despite it being an empty glove, it feels like an actual hand. You buck your hips to the rhythm of the glove, trying desperately to get off. <<if $player.arousal>=50>>Finally, you can feel an orgasm coming. Your knees shake, and you reach out and grip the wall for support. It feels good to<<if $player.arousal>95>> finally<</if>> get off. While you're busy recovering, the gloves slide up your arms.
+
+You're left with a strong sense of guilt. @@.thought;I just got off to@@<<set $player.arousal to 0>><<else>><<set $player.arousal to $player.arousal+50>>Suddenly, the gloves stop, and slide up your arms. @@.thought;Fuck!@@ You were so close, and the gloves just stopped. @@.thought;I'm going to have to take care of this when the panty raid's over.@@
+
+You snap out of it. @@.thought;I got turned on by @@<</if>>@@.thought;being fingered while dressed like a princess! What's wrong with me?@@
+
+@@.female;"You look good,"@@ Elvira says. <<if visited("Panty Raid Elvira Seen")>>She opens the door and motions for you to step inside.<<else>>You didn't even see her come in.<</if>>
+
+[[Ask her to let you go|Panty Raid Elvira Plead]]
+<<set $player.masculinity to $player.masculinity-1>>
+
+::Panty Raid Elvira Plead
+@@.player;"Hey, Elvira,"@@ you groan.
+
+@@.female;"What's the matter? Aren't you happy to see me?"@@
+
+@@.player;"Can you let me go?"@@ you ask, ignoring her.
+
+@@.female;"You don't like how you look? I think it suits you."@@
+
+You try to brush that off. You know Elvira didn't mean anything by that. <<if $witch.knowsSecret>>As long as <<print $witch.firstname>> didn't say anything, she wouldn't know about your new sex<<else>>There's no way she could know about your new sex<</if>>. @@.player;"Haha, very funny, Elvira? Now can you please remove, uh, whatever this is."@@
+
+@@.female;"I don't know what you're talking about. Are you sure you didn't put the dress on yourself?"@@
+
+@@.player;"Elvira, come on. I know you're a witch."@@
+
+@@.female;"Fine. I knew there was going to be a panty raid, so I cast a trap on the wardrobe. If anyone opened it, they'd be forced to wear a girly outfit."@@
+
+@@.player;"Yeah, I figured. Can you remove these clothes?"@@ You try tugging at the dress. It doesn't budge. @@.player;"I don't think I can do it myself."@@
+
+You wait, braced for her to tell you that she can't do it, and that you'll be forced to face your team while wearing this embarrassing outfit. @@.female;"Sure. I had my fun. Next time, you'll know not to snoop in my room."@@
+
+Elvira mutters a couple words under her breath. @@.female;"Okay, try to take off the clothes."@@
+
+@@.player;"Here?"@@
+
+@@.female;"Unless you want to make a run for the bathroom?"@@
+
+You grimace. You don't want to risk anyone<<if visited("Panty Raid Elvira Hallway")>> else<</if>> seeing you like this.
+
+[[Ask her to turn around|Panty Raid Elvira Change]]
+
+::Panty Raid Elvira Change
+You ask for her to turn around, and she obliges. @@.thought;Her back's turned! I could just hit her over the head. No, that's a bad idea.@@
+
+You quickly unzip the dress and roll the stockings down your legs. The bra is a little bit harder, but you finally manage to unhook it. You have experience with undoing bras, but they've usually been attached to someone else's body.
+
+The only thing left is the lacey purple panties. You try to remove them, but they don't budge. @@.player;"Elvira! I think you forgot to disenchant the panties!"@@
+
+@@.female;"Woops,"@@ Elvira says. Her back still turned, but you know there's a smirk on her lips. @@.female;"Think of it as a present."@@
+
+You sigh. So you're going to have to be stuck wearing these panties until Elvira feels like lifting the curse, whenever that is.
+
+@@.player;"So, uh, how long am I going to be stuck like this?"@@
+
+@@.female;"You're thinking about this wrong,"@@ Elvira says. @@.female;"This is going to be fun."@@ You raise an eyebrow. @@.female;"For me."@@
+
+You start to argue with her, but she's firm. It's obvious that her mind isn't going to change. You're left with no choice but to put on the rest of your clothes, and return to the team empty handed.<<if $player.carriesCauldron>>
+
+She stops you just as you're about to leave. @@.female;"Oh, <<print $player.firstname>>?"@@
+
+@@.player;"What?"@@
+
+@@.female;"I'll take that cauldron from you. <<print $witch.firstname>> is going to be looking for it."@@
+
+You don't bother to argue. You just set the cauldron down and leave.<</if>> Even though you're stuck wearing her panties, you feel as if a weight was lifted off your shoulders as soon as you step outside of Elvira's room. She gave you the creeps. @@.thought;Though she was at least nicer than <<print $witch.firstname>>. But only by a little bit.@@
+
+[[Join the team|Panty Raid End]]
+<<set $elviraPanties = {
+	"properName": "Lacey purple panties",
+	"informalName": "lacey purple panties",
+	"manImage": "images/clothes/underwears/purple_bikini_panties_man_legs.png",
+	"womanImage": "images/clothes/underwears/purple_bikini_panties_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>\
+<<set $player.underwear to $elviraPanties>>\
+<<set $pantyRaid.panties to $elviraPanties>>\
+<<set $pantyRaid.takenFrom to "Elvira">>\
+<<set $curseActive to true>>\
+<<set $player.hasWornPanties to true>>\
+<<set $player.isWearingPanties to true>>\
+<<set $clothesInventory.underwear.push($elviraPanties)>>\
+<<set $player.pants to $beforeSexClothes.pants>>\
+<<set $player.shirt to $beforeSexClothes.shirt>>\
+
+::Panty Raid Spy Hallway
+After leaving <<print $girlfriend.firstname>>'s room, you take the stairs down, and then stop. You're about to go right by <<print $witch.firstname>>'s room. <<if visited("Panty Raid Witch")>>You didn't take her panties, but you were still in her room.<<else>>Even though you stayed out of her room, you still feel nervous. @@.thought;Maybe she'll see me go by and think that I raided her room.@@<</if>>
+
+But the building is laid out in a way where the only way to get to the meeting place is to walk through this hallway. Well, that's not true. You could go up the stairs, walk through that hallway, and then take the stairs down.
+
+@@.thought;I'm overthinking it. I didn't even take <<print $witch.firstname>>'s panties.@@
+
+[[Walk by her room|Panty Raid Spy Witch]]
+[[Take the stairs and avoid her|Panty Raid End]]
+
+::Panty Raid Spy Witch
+You decide that you're overthinking it. It's not a crime to walk down a hallway.
+
+You start down the hallway, feeling a combination of fear and anger at yourself for being afraid of a girl so much smaller than you.
+
+You're almost at <<print $witch.firstname>>'s door when you hear a voice.
+
+@@.male;"Please! You don't have to do this!"@@
+
+@@.thought;I recognize the voice? Where do I know it from?@@
+
+@@.witch;"It's not my choice. I couldn't stop it even if I wanted to.@@
+
+You know //that// voice all too well. It's <<print $witch.firstname>>'s voice.
+
+@@.male;"Is there anything you can do? I can't wear this! The whole team will see!"@@ You realize how you know the voice. It belongs to Brett, a cornerback on the football team.
+
+@@.witch;"Well, there is a way to stop it."@@
+
+@@.male;"What? I'll do anything to get out of these panties."@@
+
+@@.witch;"You shouldn't have taken them then. You know I'm president of the Witchcraft Club. That was stupid."@@
+
+@@.thought;So she made him wear panties. It sounded like she used magic. Maybe she cast a spell on them?@@
+
+<<if visited("Panty Raid Witch")>>You realize how close you were to being in Brett's position. You tried to raid <<print $witch.firstname>>'s room. A mental image of yourself wearing panties that fit perfectly floats through your mind. You shudder.@@<<else>>You realize how lucky you were that you tried to raid Julie's room instead. You could have been the one forced to wear <<print $witch.firstname>>'s panties!@@<</if>>
+
+You don't want to risk getting caught eavesdropping, so you scurry down the hall towards the meeting place. You feel a little bad for Brett, but you're mostly glad that you're not the only one who has to go through this.
+
+[[Continue|Panty Raid End]]
+
+::Panty Raid End
+<<if $pantyRaid.panties is null or $pantyRaid.takenFrom is "Elvira">>You hang your head and trudge back to the meeting spot. <<if $pantyRaid.panties is null>>You just spent the evening on this stupid panty raid, and you couldn't even get any pairs of panties.<<else>>You were able to get panties, but you're wearing them. It's not as if you can just lift your shirt and show the guys. They'd laugh you off the team.<</if>>
+
+You spot two girls walking down the hall towards you. <<if $pantyRaid.panties is null>>You walk by without looking at them, and they pass without incident.<<else>>Suddenly, you're even more conscious of the feminine undergarment that you're wearing. Your heart is beating as they approach you, but they pass by without incident. @@.thought;I wonder if they knew I was wearing panties. No. How would they have known?@@<</if>>
+
+You're one of the first to arrive. The other guys must still be raiding the rooms. While you wait, you spend the time laughing and joking with the other guys.
+
+Finally, the rest of the team is here. @@.male;"Let's see what everyone got!"@@ someone says.
+
+There's lots of laughing as, one by one, the guys show off the panties they acquired. @@.male;"What about you, <<print $player.firstname>>?"@@
+
+@@.player;"I, uh, I didn't get anything."@@
+
+@@.male;"Seriously?"@@
+
+@@.player;"Uh, yeah."@@
+
+@@.male;"Why not? It was so easy! All the doors were unlocked!"@@
+
+<<set $team.respect to $team.respect-5>><<if $pantyRaid.takenFrom is "Elvira">>@@.player;"I went to Elvira's room but I, uh, got a bad feeling."@@
+
+@@.male;"Seriously?"@@
+
+@@.player;"Yeah! She's a witch!"@@
+
+@@.male;"You really believe that?"@@
+
+@@.male;"I don't know, she's always given me the creeps,"@@ another guy says.
+
+@@.male;"Still, he could have gotten her panties. Or some other girl's panties. We had the whole dorm to raid."@@
+
+You keep quiet while the guys argue. There's no way you're letting anyone know that you did get panties.
+
+Finally, everyone's attention turns to the next guy in the circle, as he reveals the pair of panties he got.<<set $team.respect to $team.respect-4>><<elseif visited("Panty Raid Witch")>>@@.player;"I was going to take some from <<print $witch.firstname>>, but I just got a bad feeling."@@
+
+@@.male;"So you pussied out?"@@
+
+@@.player;"No! Would you have taken any from <<print $witch.firstname>>?"@@
+
+@@.male;"No,"@@ he admits. @@.male;"But there's tons of girls here. You could have just gone to another dorm."@@<<else>>@@.player;"I got some panties from Julie's room."@@
+
+@@.male;"Who?"@@
+
+@@.player;"Shut up and let me talk! I got them and I was making my way back, and then I run into Julie in the hall."@@ Some of the drunken guys start howling with laughter. @@.player;"She took them from me."@@
+
+@@.male;"And you couldn't have gone to another room?"@@<</if>>
+
+@@.player;"I guess,"@@ you say. @@.player;"But I was running low on time."@@
+
+Fortunately, the questioning stops, and everyone's attention is on the next guy in the circle, as he reveals the pair of panties he got.<<set $team.respect to $team.respect-4>><<else>>You nervously grip the <<print $pantyRaid.panties.informalName>> in your sweaty palm. It took you the whole evening, but you did it. You got some panties, and now your team won't laugh at you.
+
+You spot two girls walking down the hall towards you. Suddenly, you're even more conscious of the feminine undergarment you're carelessly carrying in your hand. You stuff it in your pocket, and just in time too. The girls pass by without incident. <<if $player.underwear.properName is "Blue French Cut Panties">>@@.thought;I wonder if they knew I was wearing panties. No. How would they know?@@<<else>>@@.thought;I'd better hurry up.@@<</if>>
+
+You're one of the last to arrive. @@.male;"Hey, <<print $player.firstname>>! We thought we lost you!"@@
+
+@@.player;"No, you're not getting rid of me that easily!"@@
+
+@@.male;"So let's see what everyone got!"@@
+
+There's lots of laughing as, one by one, the guys show off the panties they acquired. When it's your turn, you proudly show off the <<print $pantyRaid.panties.informalName>> you have in your pocket.
+
+<<if $pantyRaid.takenFrom is $girlfriend.firstname>>@@.male;"Nice! Whose are they?"@@
+
+@@.player;"<<print $girlfriend.firstname>>'s,"@@ you admit.
+
+@@.male;"Are you kidding? And that counts?"@@
+
+@@.player;"Hey! I worked hard for these panties!"@@ Too late, you realize the innuendo in your words. Most of the guys snicker.<<set $team.respect to $team.respect+2>><<else>>@@.male;"Are you serious? That's so boring!"@@
+
+@@.player;"Yeah, I guess so. But do you know who I took them from?"@@
+
+@@.male;"Some repressed chick?"@@
+
+@@.male;"So Nancy?"@@ There's a chorus of laughter.
+
+@@.player;"No! <<print $witch.firstname>>!"@@
+
+@@.male;"Seriously?"@@
+
+@@.male;"That takes balls to steal from her. She probably put a curse on those."@@ He laughs, and you fidget uncomfortably.
+
+@@.male;"You idiot! You really think she's a witch?"@@
+
+@@.male;"Well, no. But she's scary!"@@
+
+@@.thought;I'm staying out of this@@ you think. If only the guys were right and <<print $witch.firstname>> didn't have magical powers.<<set $team.respect to $team.respect+7>><</if>>
+
+The next guy in line shows off the panties that he got, and the attention is off of you.<</if>> Once everyone is done, you wait to see what happens next, and are shocked when everyone starts saying their goodbyes. @@.thought;Wait! That was it?@@
+
+[[Return to your dorm|Night]]
+<<if $pantyRaid.strapon>><<set $player.hasStrapon to true>><</if>>

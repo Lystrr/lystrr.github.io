@@ -1,0 +1,400 @@
+::WeightRoomIntro
+@@.thought;I've got to see this for myself@@ you think, and start heading over to the gym. That part of campus is deserted. That's not that surprising, though. You never felt like practicing the <<if $day is 2>>day<<else>>weekend<</if>> after a game. You're used to partying and then sleeping in. That's what you would be doing today, too, if it wasn't for this curse. @@.thought;If I really was cursed.@@
+
+You slip inside the gym and head to the weight room. You try the door. It's locked. @@.thought;Fuck! I can't wait until monday. I need to know now!@@
+
+As you're standing there contemplating what to do, you see a tall figure walk by. @@.player;"Coach!"@@ you call, shouting in his direction.
+
+Coach turns around. @@.male;"Hey, <<print $player.lastname>>! Great game<<if $day is 2>> last night<</if>>!"@@
+
+@@.player;"Thanks. Listen, can you unlock the weight room for me?"@@
+
+Coach looks at you, clearly surprised. @@.male;"You're working out already?<<if $day is 2>> You don't want to relax and enjoy homecoming?<</if>>"@@
+
+@@.player;"I'm, uh, trying to work harder this year,"@@ you lie.
+
+@@.male;"Wow, <<print $player.lastname>>, I'm impressed. Just don't work too hard, okay?"@@
+
+You nod. Coach unlocks the weight room. @@.male;"Do you want me to spot you?"@@ he asks, looking over to the bench press.
+
+You hesitate. The bench press would be the best way of knowing if you lost any strength. But if you had, coach would know too.
+
+[[Yes, please spot me|Coach Spot]]
+[[No thanks, I'm good|Free Weights]]
+
+::Coach Spot
+@@.player;"Do you mind spotting me?"@@
+
+@@.male;"Not at all. I don't want to lose my star quarterback,"@@ he says with a grin.<<if visited("Backstory Main")>> You recall <<print $witch.firstname>> saying that <<print $qb.firstname>> should take your spot. @@.thought;You might have to.@@<</if>>
+
+You put your customary 225 pounds on and then lie down. Coach stands above you, his hands inches away from the bar, looking unconcerned. Why should he worry? To him, his star quarterback is doing a routine practice. @@.male;"Ready, go!"@@
+
+You take a deep breath and then push up with all your might. You're able to raise the bar a little bit before you start shaking. You can't push it any higher, and you're scared that you'll drop the weights on your chest. Luckily, coach grabs the bar and puts it back.
+
+@@.male;"You okay, <<print $player.firstname>>?"@@
+
+@@.player;"Yeah,"@@ you tell him, panting. @@.player;"Can you remove some weight, please? I want to try again."@@
+
+He removes 25 pounds, and you prepare to start again. You look up, and immediately notice how tall the coach is. He looks so powerful from this angle, and your head is right by his crotch.
+
+@@.thought;Why the fuck am I thinking about this? I'm not gay!@@ Shaken, you attempt to lift the bar, but the same thing happens: you lift it up a little bit and then immediately put it back down. <<if $day is 2>>This keeps going until you're down to about 100 pounds on the bar. Extremely embarrassed, you finish your reps.<<else>>You keep working your way down: 100 pounds, 50, 25. Each time, you're able to lift the bar a little higher, but you're nowhere close to completing a rep.
+
+@@.male;"Let's take all the weight off,"@@ the coach says. Now you just have to lift the bar. You take a deep breath and push up with all your might. Your arms are shaking, the bar is wobbling, but you succeed in lifting the bar up and bringing it back down.
+
+@@.player;"I'm good for now,"@@ you tell your coach. There's no way you're up to doing another rep.<</if>>
+
+@@.male;"What happened there, <<print $player.lastname>>?"@@
+
+@@.player;"I don't know,"@@ you say. You can hardly look at him.
+
+@@.male;"You're not sore, are you?"@@
+
+@@.player;"Uh, yeah coach. Maybe I strained something."@@
+
+@@.male;"No more lifting for you. I want you to get a lot of rest."@@ The coach kicks you out of the room and makes a big show of locking the door.
+
+<<link "Continue" $currentPassage>><</link>>
+<<set $coach.suspicion to $coach.suspicion+1>>
+<<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+6>><</if>>
+
+::Free Weights
+You can't risk coach seeing you struggle with the bench press. @@.thought;Think positive thoughts. I don't even know if this is real.@@
+
+Coach leaves, and you turn to the free weights. You look around the gym and spot the two largest dumbbells you can find. @@.thought;Perfect.@@
+
+You go over to them, and try to pick them up. You can't even get them off the ground.
+
+You grab two dumbbells that are a little bit smaller.<<if $day is 2>> This time, you can pick them up, but you're barely able to get them into position, let alone work out with them.
+
+You're finally able to complete your set with two medium sized dumbbells.<<else>>You can't handle those either. You work your way through the small dumbbells, but try as you might, you can't do even one rep.
+
+Something pink catches your eye. It's the one pound dumbbells. You remember picking them up before, during practice. You pretended to struggle with them, and you drew a laugh from your friends.
+
+Now, you're actually be working out with them. You look around, but the weight room is completely deserted. Somehow, you're still embarrassed.<</if>> @@.thought;I'm so lucky the coach didn't see this@@<<if $day is 3>> you think when you're done. @@.thought;<<else>>.<</if>> @@.thought;There's no way I could have handled the bench press.@@
+
+<<link "Continue" $currentPassage>><</link>>
+<<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+3>><</if>>
+
+::Work Out
+You decide to head to the gym and work out. Sure, you can't lift weights like you used to, but that's just a reason to work out more. @@.thought;Just because I lost muscles doesn't mean I can't gain them back!@@ There's also something about the idea of working out after <<print $witch.firstname>> took away your strength that appeals to you.
+
+<<if $player.crush is $qb.firstname and (visited("Work Out Selfie Ass") or visited("Work Out Selfie Muscles")) and not visited("Work Out Yoga Start")>>Instead of seeing the usual handful of people, the gym is much more full than usual. When you look closer, you can see that almost all the people there are girls, and they're just about to start a class of some kind.
+
+@@.thought;At least there are a couple other people working out. I could run or hit the weights without disturbing the class.@@<<else>>The weight room isn't crowded, but it's not empty either. You almost head out, unnerved at the thought of people staring at you while you work out with tiny weights. @@.thought;I can't give up now.@@
+
+<<if visited("Work Out") is 1>>Reluctantly, you head into the weight room and survey the territory. @@.thought;If I do free weights, it'll be obvious I'm not using the weights I usually do. And I can't do bench press since I'd need a spotter.@@ Your gaze goes to the women doing yoga. @@.thought;Nope.@@
+
+Then you see it: the machines. They'll give you strength while also not being too obvious. There's also the treadmill. If you run, there's no way for anyone to notice that you've lost strength, but you also can't gain it either.<<else>>You're not strong enough to do the bench press, and you're too embarrassed to do free weights. Looks like it's either the machines or running.<</if>><</if>>
+
+[[Work out with the machines|Work Out Machines]]
+[[Run|Work Out Treadmill]]<<if $player.crush is $qb.firstname and (visited("Work Out Selfie Ass") or visited("Work Out Selfie Muscles")) and not visited("Work Out Yoga Continue")>>
+[[See what's going on with the class|Work Out Yoga]]<</if>>
+
+::Work Out Machines
+You walk over to the chest press. Out of habit, you tried to do start your workout with your usual 180 pounds. Unsurprisingly, when you started your set, nothing happened, even when you put all of your weight into it.
+
+Feeling silly, you quickly remove all the weight, setting it to its lowest possible setting. Now it's actually possible to get a workout in, but just barely. By the time you complete a single set, you're gasping for breath.
+
+While you were working out, you noticed a couple guys walk by, but they didn't seem to notice your lack of weights.
+
+Heading over to the next machine, you notice that the weight is set for 80 pounds. Before, if you had noticed a guy working out with only 80 pounds, you wouldn't have said anything, but you would have felt smugly superior. Now, you silently move the weight down to ten pounds, your face beet red.
+
+One hour later, you've finished your workout. You're sore and tired, and you're a little humiliated from constantly having to lower the weights, but you're done. It's hard to tell, but you feel a little stronger too! Or maybe that's just your mind playing tricks on you.
+
+As you start to walk out of the weight room, you spot a girl working out her hips. From what you can tell, she's just spreading her legs and then straightening them out. You would have felt a little uncomfortable doing it before all this happened, but now it feels even weirder.
+
+<<link "You've already had a good workout. Leave." $currentPassage>><</link>>
+[[What's the harm?|Work Out Hips]]
+<<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+3>><</if>>
+
+::Work Out Hips
+<<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress ass>><<set $tempAss to $tempTfValue>>@@.thought;Well, what's the harm? It's like working out any other part of my body. I'll just do it quickly.@@
+
+You sit down and start working out your hips, spreading them and then straightening them. Nobody can see your pussy through your workout clothes, but it still feels extremely weird. It's as if you were advertising your new sex to the world.
+
+The one positive is that you're better at this exercise than you were when you had a dick. Sure, you can't do it with as much weight, but you're able to stretch farther. @@.thought;No! That's not a positive!@@
+
+You lock eyes with a hulking jock. <<if $tempBoobs<2>>You squirm as he looks at you with disinterest. He just sees another jock, but to you, it's like you're doing a bizarre mating dance: open legs, close legs, open legs again.<<else>>You squirm as he looks at your chest. When he realizes you caught him, he looks away, and the two of you get back to working out. He looks over at you a couple of times as you open and close your legs, but you can't tell whether it's because of lust or confusion or if you're just overthinking it.<</if>>
+
+<<if $tempAss>=4 and $player.crush is $qb.firstname and $player.masculinity<=25 and not visited("Work Out Selfie Ass") and not visited("Work Out Selfie Muscles")>>[[You're about to leave when you see yourself in the mirror|Work Out Selfie Mirror]]<<else>> Thankfully, he looks away. You take the opportunity to finish up and head back to your dorm.
+
+<<link "Continue" $currentPassage>><</link>><</if>>
+<<set $player.submission to $player.submission+1>>
+
+::Work Out Treadmill
+<<getTfProgress boobs>>@@.thought;I can't risk it. If someone passes by and they see that I'm doing a weight a hundred pounds lighter than normal, they're going to ask questions.@@ You look down at your weakened body. A difference of only 100 pounds in weights might be generous.
+
+You start running on the treadmill, working your way up from a jog to a run. <<if $player.bra>>You're grateful for the bra that holds your boobs. You're conscious that your boobs are there, but now it feels like they're just part of your body. <<elseif $tempBoobs>=2>>Your boobs bounce up and down as you run, and it's very distracting. @@.thought;I can't believe I'm thinking it, but a bra would be helpful.@@  <</if>>There's slightly more girls than guys running, but that doesn't bother you. Guys have to run too, and you're staying in shape.
+
+Some time later, you stop the treadmill, feeling out of breath and more fit. Sadly, you don't think you gained any muscle.
+
+<<link "Continue" $currentPassage>><</link>>
+<<if $player.skillCurse is 0>><<set $player.speed to $player.speed+2>><</if>>
+
+::Work Out Selfie Mirror
+You know that you should just get going, but you can't help yourself. Ever since <<print $witch.firstname>> transformed you, you've been ashamed of your weaker, feminine body. But now, looking at yourself after a workout, you don't feel ashamed anymore. You feel //good//. Your large ass is clearly outlined against your <<print $player.pants.informalName>>, and for the first time in a while, you start getting turned on while you look at yourself.
+
+@@.thought;I look hot now. I bet <<print $qb.firstname>> would think so too.@@
+
+You shake yourself, wondering where that thought came from, but you can't get it out of your head. You like <<print $qb.firstname>>, there's no denying that, but <<if visited("Gym Morgan Talk")>>you know you're not the only one who does.
+
+@@.thought;There's lots of girls who want <<print $qb.firstname>>'s dick. Who wouldn't? It's not just Morgan.@@<<else>>you're not naive enough to believe that you're the only one.
+
+@@.thought;There's got to be a lot of girls who want <<print $qb.firstname>>'s dick. Who wouldn't?@@<</if>> @@.thought;He probably won't choose me because he sees me as a guy, but what if he didn't?@@
+
+You reach for your phone. It would be so easy to take a picture and send it to him. @@.thought;Then he'd see what he's missing. Maybe seeing my ass will even turn him on@@ you think, imagining him getting a boner. <<if $player.skillCurse>0>>@@.thought;Or maybe I should show him my arms. Nothing masculine about them. Not anymore. @@<</if>>
+
+[[Send him a picture of your ass|Work Out Selfie Ass]]<<if $player.skillCurse>0>>
+[[Send him a picture of your "muscles"|Work Out Selfie Muscles]]<</if>>
+<<link "Even though you like $qb.firstname, you're not going to send him any pictures" "Work Out Selfie Refuse">><</link>>
+<<increaseArousal 5>>
+
+::Work Out Selfie Refuse
+@@.thought;No@@ you think firmly. @@.thought;This is going too far. I'm not going to take a selfie and then send it to @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;a@@<</if>> @@.thought;guy, like some kind of sissy.@@
+
+You walk out of the gym and start heading back to your dorm. Nobody pays you any attention, but you feel like you won a major victory.
+
+<<link "Do something else" $currentPassage>><<set $player.homosexuality to $player.homosexuality-1>><</link>>
+
+::Work Out Selfie Ass
+<<getTfProgress boobs>>You make a half-turn so your shoulder is facing the mirror and then pull up your camera, trying to get the best angle to show off your butt.
+
+You frown. This isn't quite right. You have a good view of your side<<if $tempTfValue>=3>>, and even your boobs<</if>>, but your ass is barely in the photo.
+
+You turn all the way around, away from the mirror and then look over your shoulder. It's not very comfortable, and your neck hurts, but now your butt is on display.
+
+@@.thought;<<print $qb.firstname>> is going to love this.@@
+
+[[Take the photo|Work Out Selfie Ass Examine]]
+<<set $workOutSelfieAss to true>>
+
+::Work Out Selfie Ass Examine
+Your heart drops when you look at the photo. @@.thought;I'm too blurry! You can barely even see my butt!@@
+
+You get back into position, and get ready to snap another picture. As you do so, you can hear a couple girls laughing behind you.
+
+@@.thought;Relax. They're not talking about me@@ you tell yourself as you examine the picture.
+
+@@.female;"Look at him! He's sending a selfie to his boyfriend!"@@
+
+You blush. They //were// talking about you. To make matters worse, you're not smiling in the photo. @@.thought;I'm going to have to take another one.@@
+
+As you twist around to show off your butt, you spot the girls who were laughing at you. @@.female;"Want any help?"@@ one of them asks you, giggling.
+
+@@.player;"No thanks, I'm good,"@@ you say quickly. You smile and take the photo.
+
+@@.thought;This looks good@@ you think as you walk out of the weight room. Maybe you could have stayed in there when you sent the photo, but you wanted to get away from the girls. @@.thought;My butt looks nice, and I'm smiling.@@ The only thing off about the photo is your eyes. You look scared, and a little unsure of yourself.
+
+@@.thought;I should go back and take another picture, but...@@
+
+Your thoughts are interrupted when a couple of guys brush past you in the hallway.
+
+@@.thought;Oh my god. Here I am, with a picture of me posing like a girl on my phone, and anyone can see it. They could have seen it!@@ you think, hurrying back to your dorm.
+
+Once you're in the safety of your room, you open up Snapchat, and get the photo ready to send to <<print $qb.firstname>>. Your heart races as your finger hovers over the send button. @@.thought;Should I do it?@@ you ask yourself. @@.thought;I know I shouldn't, but I want to see how he reacts. I'm going to do it.@@
+
+[[You press the send button before you change your mind|Work Out Selfie Send]]
+
+::Work Out Selfie Muscles
+You face the mirror and flex your bicep. What you see makes you gasp. You knew that you had lost your muscles after <<print $witch.firstname>>'s curse. What you didn't realize was exactly how much. Your arms so thin now, and your shoulders are so slight. Even after <<print $witch.firstname>>'s first curse, you still had some hints of muscle. Now, there's nothing.
+
+@@.thought;I'm so weak. <<print $qb.firstname>>, or any guy really, could push me around and there's nothing I could do.@@
+
+You decide to just take the photo before you second-guess yourself.
+
+@@.thought;No, that's no good. I'm too blurry.@@
+
+You get back in position and get ready for a second picture. As you take it, you can hear a couple girls laughing behind you.
+
+@@.thought;Relax. They're not talking about me@@ you tell yourself as you examine the picture.
+
+@@.female;Look at him! He's sending a selfie to his boyfriend!@@
+
+You blush. They //were// talking about you. And they knew you were going to send it to a guy.
+
+To make matters worse, you're not even smiling in the photo. @@.thought;I'm going to have to take another one.@@
+
+[[Take it|Work Out Selfie Muscles Examine]]
+<<set $workOutSelfieAss to false>>
+
+::Work Out Selfie Muscles Examine
+@@.thought;Okay, this photo looks good@@ you think as you walk out of the gym. The photo isn't blurry, your face and muscles are clearly visible, and you're smiling.
+
+@@.thought;Maybe I'm smiling //too// much@@ you think, frowning. You imagine how this photo must look to <<print $qb.firstname>> when he sees it: here you are, with a pussy, sending <<if $player.masculinity>=50>>another<<else>>a<</if>> guy a photo of how weak you look.
+
+And what's worse, your smile makes it look like you're happy about what was done to you. @@.thought;I feel so emasculated@@ you think. @@.thought;The old <<print $player.firstname>> never would have taken that photo. And he definitely wouldn't have been happy about losing his muscles.@@ But even as you're chastising yourself, you're wondering what <<print $qb.firstname>> will think about it.
+
+Your thoughts are interrupted when a couple of guys brush past you in the hallway.
+
+@@.thought;Oh my god. Here I am, with a picture of me posing like a girl on my phone, and anyone can see it. They could have seen it!@@ you think, hurrying back to your dorm.
+
+Once you're in the safety of your room, you open up Snapchat, and get the photo ready to send to <<print $qb.firstname>>. Your heart races as your finger hovers over the send button. @@.thought;Should I do it?@@ you ask yourself. @@.thought;I know I shouldn't, but I want to see how he reacts. I'm going to do it.@@
+
+[[You press the send button before you change your mind|Work Out Selfie Send]]
+
+::Work Out Selfie Send
+As soon as the message is sent, you feel overcome with shame. @@.thought;Why did I do that? I'm supposed to be a guy, and I just sent him a picture of @@<<if $workOutSelfieAss>>@@.thought;my ass.@@<<else>>@@.thought;my girly arms.@@<</if>> @@.thought;And what's worse, I did it because I wanted to get a reaction out of him. I wanted him to get turned on.@@
+
+You feel so embarrassed. @@.thought;What was I thinking? I'm just going to delete this before he sees it@@ you think, reaching for the phone.
+
+<<if not visited("Work Out Selfie Recover")>><<link "Before you can get there, you start to transform" TfPassagePicker>><<set $tfRecoverPassage to "Work Out Selfie Recover">><<set $tfReason to "flirt">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<else>>Before you make it, you get an alert from your phone:
+
+''<<print $qb.firstname>> took a screenshot!''
+
+@@.thought;Not again.@@
+
+That's quickly followed by another alert. <<print $qb.firstname>> sent you a snap.
+
+[[Open it|Work Out Selfie Open]]<</if>>
+
+::Work Out Selfie Recover
+You're shaking when you regain control of your body, and you have to take several deep breaths before you feel better.
+
+@@.thought;I guess it's fair for me to transform from that. I was just thinking about how unmanly sending @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;a@@<</if>> @@.thought;guy a picture of my @@<<if $workOutSelfieAss>>@@.thought;ass@@<<else>>@@.thought;diminished muscles@@<</if>> @@.thought;was. But why does it have to keep happening?@@
+
+You're distracted by a notification from your phone. @@.thought;Shit. Did <<print $qb.firstname>> see my snap? I didn't have a chance to delete it. I hope he didn't see it.@@
+
+Opening up Snapchat, you're greeted by the message:
+
+''<<print $qb.firstname>> took a screenshot!''
+
+@@.thought;Oh. So he saw it. Wait, he took a screenshot. Does that mean that he liked it?@@
+
+As soon as you think that, <<print $qb.firstname>> sends a snap.
+
+[[Open it|Work Out Selfie Open]]
+
+::Work Out Selfie Open
+<<nobr>><<set $hasYogaPants to false>>
+<<for _i to 0; _i<$clothesInventory.pants.length; _i++>>
+    <<if $clothesInventory.pants[_i].properName is "Yoga Pants">><<set $hasYogaPants to true>><</if>>
+<</for>><</nobr>>@@.thought;Should I open it? I probably shouldn't, but I've come this far...and I really want to know what he sent.@@
+
+You open it. It's a picture of <<print $qb.firstname>> shirtless, flexing in front of the mirror.
+
+@@.thought;He's so strong.@@<<if $workOutSelfieAss is false or $player.skillCurse>0>> @@.thought;I don't have muscles like that.@@<</if>>
+
+<<if $player.homosexuality>=30>>Imagining those muscular arms wrapped around you, you drop your hand to your pussy, only to jerk it away.
+
+@@.thought;Sending him a picture is one thing, but I'm not going to get off to @@<<if $player.masculinity>=50>>@@.thought;another@@<<else>>@@.thought;a@@<</if>> @@.thought;guy.@@
+
+<<set $player.homosexuality to $player.homosexuality+1>><<increaseArousal 5>><</if>>Another message shows up:
+
+<<if $player.pants.properName is "Yoga Pants">><<else>>@@.qb;Nice picture. You should get some yoga pants.@@
+
+<<if $hasYogaPants>>@@.thought;I have them! I just forgot to wear them to the gym! I'll wear them next time.@@<<elseif $player.ownsGirlPants is false>>@@.thought;That's not going to happen. Wearing girls pants is going too far...But my pants don't fit me anymore, and I need new clothes.@@ <<if visited("AfterSchoolShopping Mall WomensOuterwear Salesgirl")>>@@.thought;But guy pants don't fit me anymore. If I was going to buy something new, they'd have to be girl pants.@@<<else>>@@.thought;Maybe I should go to the mall.@@<</if>><<else>>You consider his message. @@.thought;I already got girl pants. Yoga pants wouldn't be that bad, and <<print $qb.firstname>> would like them.@@<</if>><</if>>
+
+Turning your attention back to your phone, you realize that you don't know what to do next. @@.thought;I sent him a picture and he sent me one back. Am I supposed to compliment it or am I done? I've been sent pictures before, but they've always been from girls.@@
+
+[[Compliment it|Work Out Selfie Compliment]]
+<<link "Leave it" $currentPassage>><</link>>
+<<set $player.homosexuality to $player.homosexuality+2>>
+<<set $qb.relationship to $qb.relationship+3>>
+
+::Work Out Selfie Compliment
+@@.player;Thanks, maybe I'll do that. You look strong!@@
+
+@@.thought;No, that wasn't good@@ you think after you send it. @@.thought;I sounded too awkward. It's been too long since I flirted.@@
+
+You stare at your phone, waiting for <<print $qb.firstname>> to respond, but no message comes.
+
+@@.thought;He didn't get back to me. Did I say something wrong? Or is he busy now with a girl like Morgan? Or does he just think the conversation is over?@@
+
+You consider sending him another message to check up on him, but you decide against it. @@.thought;I don't want to look desperate.@@
+
+<<link "Continue" $currentPassage>><<set $player.homosexuality to $player.homosexuality+2>><<set $qb.relationship to $qb.relationship+2>><</link>>
+
+::Work Out Yoga
+You take a couple tentative steps towards the class, just trying to find out what they're doing. @@.thought;They're all girls and they've all got mats. This looks like a yoga class.@@
+
+You're about to back away when the girl that's nearest to you turns to look at you. @@.female;"Did you want to join?"@@
+
+You weren't expecting that. Here you are, intruding on a group of girls doing a feminine activity, and instead of telling you to go away, she's inviting you to join in. @@.thought;Should I do it? It looks like fun, and guys can do yoga. I don't see any guys here, but that doesn't mean @@<<if $player.masculinity>=50>>@@.thought;we@@<<else>>@@.thought;they@@<</if>> @@.thought;can't do it.@@
+
+<<if $player.pants.properName is "Yoga Pants">>@@.female;"You should do it,"@@ she says. @@.female;"You're wearing the right clothes."@@ You look down at your yoga pants. You had forgotten that you were wearing them.
+
+[[Join the class|Work Out Yoga Start]]<<else>><<set $hasYogaPants to false>><<for _i to 0;_i<$clothesInventory.pants.length;_i++>><<if $clothesInventory.pants[_i].properName is "Yoga Pants">><<set $hasYogaPants to true>><</if>><</for>>@@.female;"You can't do it in these pants,"@@ she says. You glance down at your <<print $player.pants.informalName>>. @@.female;"If you had yoga pants, you could join in."@@
+
+<<if $hasYogaPants>>You //do// have yoga pants.
+
+[[Change into them in the bathroom|Work Out Yoga Change]]<<else>>Unfortunately, you don't have yoga pants.
+<</if>><</if>>
+[[Work out with the machines|Work Out Machines]]
+[[Run|Work Out Treadmill]]
+
+::Work Out Yoga Change
+You tell her that you'll be right back, and then head <<if $player.masculinity>0>>to the boys bathroom to change.<<else>>out of the weight room. As you stand in front of the bathrooms, you have a moment of indecision, before quickly going into the boys bathroom.<</if>>
+
+Luckily, you're able to change into your yoga pants without transforming, and you head back to the weight room to rejoin the class.
+
+[[Continue|Work Out Yoga Start]]
+<<set $player.pants to $yogaPants>>
+
+::Work Out Yoga Start
+@@.player;"I'll join,"@@ you tell her. <<if visited("Work Out Yoga Change")>>She looks approvingly at your yoga pants and nods.<<else>>@@.female;"Really? You looked like you were about to run off."@@ You shake your head.<</if>> @@.female;"Why don't you take an extra mat?"@@
+
+Trying not to disturb the others, you pick up a mat and unroll it towards the back of the class.
+
+The class has already started, and you look around helplessly. The instructor is in the middle of a routine, and the <<if $player.masculinity<0>>other <</if>>girls are all effortlessly following along. You look back to the girl who invited you, but she's concentrating on a pose.
+
+@@.thought;I guess I should just copy what they're doing?@@ You look at the instructor. Her lower body is positioned like she's about to do a push up, but she's lifted her chest off the ground, and her head is tilted back.
+
+@@.thought;Okay. I should get started. Let's see.@@ You lie down on your stomach, but just as you're about to try to recreate the rest of her pose, she gets up.
+
+@@.female;"Good job, girls! Next, we're going to do the downward dog."@@
+
+@@.thought;Girls? Well, she probably didn't see me. I joined late.@@
+
+@@.female;"First, get on your hands and knees."@@ You do so.
+
+@@.female;"Okay, everybody breathe out. Now, lift your knees up."@@ You lift your knees up, but you don't change your breathing. @@.thought;It's not like she'll know.@@
+
+Feeling self conscious, you look around to see how everyone else is doing. @@.thought;Wow, there are so many butts.@@ You admire the view for a moment, before you realize that this means your butt's going to be on display too.
+
+@@.female;"Now, push your butt up more and push your toes down onto the mat."@@
+
+@@.thought;Is she kidding? My butt is just going to stick up more. What are the @@<<if $player.masculinity>=25>>@@.thought;girls@@<<else>>@@.thought;others@@<</if>> @@.thought;doing?@@ You look up to see all the girls pushing their butts up.
+
+[[Push your butt up|Work Out Yoga Continue]]
+
+::Work Out Yoga Continue
+@@.thought;At least I'm in the back. The others won't be able to see me.@@ Feeling a little better, you push your butt up.
+
+You were thinking that it wouldn't be so bad once you got into position, but if anything, it's even worse. You feel so exposed, with your ass sticking up in the air. Even worse, you're looking behind you, so you don't even get a good view of the butts of the <<if $player.masculinity<0>>others<<else>>girls<</if>>.
+
+What you //can// see are the guys who are working out. Only, they don't seem to be getting much of a workout in. They're looking at all the butts on display. Including yours.
+
+@@.female;"Okay, hold that pose for a couple minutes,"@@ the teacher says.
+
+@@.thought;A couple minutes? That's so long!@@
+
+@@.female;"Me and my assistant are going to come around and help you girls get into the right position."@@
+
+You hear some footsteps, and then you hear a voice from behind you. @@.female;"I should have known a sissy like you would be doing yoga."@@
+
+[[Try to see who it is|Work Out Yoga Morgan]]
+
+::Work Out Yoga Morgan
+<<getTfProgress ass>><<if visited("Gym Morgan Talk")>>You try to get a good look at the girl behind you. Even looking at her upside down, there's no mistaking that blonde hair, those boobs, or that smug expression.<<elseif visited("Lunch Friends QBCute")>>You struggle to get a good look at the girl behind you. When you recognize her as Morgan, the cheerleader that was talking about how cute <<print $qb.firstname>> was, you gulp.<<else>>You struggle to get a good look at the girl behind you. When you realize that it's Morgan Harper, a popular cheerleader who you briefly dated, you gulp.<</if>>
+
+@@.player;"Morgan?"@@
+
+@@.female;"<<print $player.firstname>>. Did you come to work on your butt, so <<print $qb.firstname>> would notice it?"@@
+
+@@.player;"N...no. I saw people doing yoga and it looked like fun."@@
+
+@@.female;"You sure?"@@ she asks, grabbing your butt. You gasp at the unexpectd contact.<<if $player.relationship is not $girlfriend.firstname>> Despite yourself, you find yourself enjoying it. @@.thought;It's the first time a girl's touched me since <<print $girlfriend.firstname>> and I broke up.<</if>>
+
+@@.female;"Morgan! You can talk to your friends after class!"@@
+
+@@.female;"Sorry!"@@ she calls back. She stops talking and goes back to getting you in position. @@.thought;Are her hands lingering, or is that my imagination?@@
+
+Before she leaves, she leans down and whispers in your ear, @@.female;"You better work on your butt, <<print $player.firstname>>. A sissy like you needs every advantage @@<<if $player.feminine>=18 and $player.masculinity<10>>@@.female;she@@<<else>>@@.female;he@@<</if>> @@.female;can get to @@<<if visited("QB Practice 8 AskOut Morgan") or visited("Lunch Friends AskOut")>>@@.female;keep@@<<else>>@@.female;date@@<</if>> @@.female;a stud like <<print $qb.firstname>>."@@
+
+And with that, she leaves. Determined, you continue holding the pose. <<if $qb.date and $qb.date is $player.firstname>>@@.thought;So she thinks she can take my boyfriend? I'll show her.@@<<elseif $qb.date>>@@.thought;She may be going on a date with <<print $qb.firstname>>, but it's not over. I'll show her.@@<<else>>@@.thought;So she thinks she'll get <<print $qb.firstname>> to date her? I'll show her.@@<</if>> It's difficult to stay in the same uncomfortable position for several minutes, especially when you have a good view of <<if $player.masculinity>=50>>other<<else>>the<</if>> guys checking you out, but you power through, picturing <<print $qb.firstname>> squeezing your <<if $tempTfValue is 0>>firm<<elseif $tempTfValue is 1>>pert<<else>>round<</if>> ass to motivate you.
+
+@@.female;"Good job, girls!"@@ the instructor finally calls. Exhausted, you collapse onto the mat. @@.female;"Let's call it for today."@@
+
+The girls slowly filter out of the gym. You're not in the mood to work out after that tiring yoga session, so you follow them out the door.
+
+<<link "Continue" $currentPassage>><</link>><<if $player.skillCurse is 0>><<set $player.armStrength to $player.armStrength+3>><</if>>

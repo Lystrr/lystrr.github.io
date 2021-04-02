@@ -1,0 +1,920 @@
+::MorningClass4
+<<if $player.pants.school is true>>@@.female;"I'm going to be giving your exams back,"@@ Mrs. Reed says once class starts.
+
+@@.thought;Exams? Oh yeah. The trig test.@@ It seems like it was forever ago.
+
+You look at your test. A red <<if visited("Try Your Best")>>C- is scrawled at the top of your test. @@.thought;It could have been worse.<<elseif visited("Cheat")>>A is scrawled at the top of your test. You feel a little guilty, remembering how you cheated off of Norm.<<else>>F is scrawled at the top of your test. @@.thought;Oops. I need to start doing better in school.<</if>>
+
+Mrs. Reed goes through the answers to the test, but you find it hard to pay attention. Your pussy aches, and you find it very distracting.
+
+@@.thought;What's my next class? Oh. It's bio. I hope I'm prepared for the test.@@<<else>>Everyone's eyes turn to you as you walk into the classroom five minutes late, not wearing your school uniform.
+
+@@.female;"Mr. <<print $player.lastname>>, will you...never mind. Just take your seat,"@@ the teacher says.
+
+@@.thought;Weird. She just let me get away with not wearing my uniform. Is it because I am...was the star quarterback?@@
+
+@@.female;"As I was saying, I'm going to be giving your exams back,"@@ Mrs. Reed continues.
+
+@@.thought;Exams? Oh yeah. The trig test.@@ It seems like it was forever ago.
+
+You look at your test. A red <<if visited("Try Your Best")>>C- is scrawled at the top of your test. @@.thought;It could have been worse.<<elseif visited("Cheat")>>A is scrawled at the top of your test. You feel a little guilty, remembering how you cheated off of Norm.<<else>>F is scrawled at the top of your test. @@.thought;Oops. I need to start doing better in school.<</if>>
+
+Mrs. Reed goes through the answers to the test, but you find it hard to pay attention. Your pussy aches, and you find it very distracting.
+
+@@.thought;What's my next class? Oh. It's bio. I hope I'm prepared for the test.@@<</if>>
+
+[[Go to bio|Biology Test]]
+
+::Biology Test
+You're a little nervous as you step into the Biology classroom. Ordinarily you don't care about school, but with nothing going your way, it would be nice if you could at least not fail this test. It's not that you're dumb, it's that you've never cared about school, and your grades have shown it.
+
+@@.thought;<<if visited("Bio Study")>>At least I studied yesterday<<else>>I studied yesterday. Kind of. I hope it's enough<</if>>.@@
+
+Miss Williams passes out the test and you get to work. You've heard that her first test isn't supposed to be that bad. And even though you haven't paid attention in class, you recognize most of the terms on the test.
+
+<<if visited("Bio Study")>>Luckily, you studied yesterday, and that helps fill the gaps on the rest of the questions. You hand in your test early, and are feeling pretty pumped.<<else>>Sadly, the terms are all you know. You focus on the questions you can answer and then guess on the rest. You don't feel like you did horribly, but you know you didn't ace it either.<</if>>
+
+[[Go to lunch|Lunch]]
+
+::MorningClass5
+Your morning classes pass by uneventfully. <<if $player.arousal>=75>>Not that you were paying attention. You're dripping wet, and you're finding it hard to focus. @@.thought;I'm going to need to take care of that.@@<<set $player.academics to $player.academics-1>><<else>>The teachers drone on and on. You find it pretty boring, but you manage to catch most of it.<</if>>
+
+You //are// a little worried about history, but luckily <<print $witch.firstname>> doesn't pay you any attention.
+
+[[Go to lunch|Lunch]]
+
+::MorningClass6
+You sit down in your bio class, next to Sam Rogers, the best linebacker on the team. He leans over to you. @@.male;"Hey, you ready for the panty raid?"@@
+
+@@.player;"Panty raid?"@@
+
+@@.male;"Yeah, we're doing it thursday in the evening. Are you in?"@@
+
+@@.player;"Uh, sure,"@@ you say. Before the curse, you would have loved to bond with the guys and rifle through some hot girls panties. Now, you have no interest in it.
+
+Miss Williams passes out a packet. You take the stack and turn to pass it back. As you do so, you shift in your seat, and your boxers rub against your leg. @@.thought;These are so uncomfortable.@@ You briefly wonder what it would be like to wear panties, before quickly pushing that thought out of your head.
+
+The rest of your classes pass by uneventfully<<if $player.arousal>=75>>, though you find it hard to pay attention. You're dripping wet, and you're finding it hard to focus. @@.thought;I'm going to need to take care of that.@@<<set $player.academics to $player.academics-1>><<else>>. You find it pretty boring but manage to take notes anyway.<</if>>
+
+[[Go to lunch|Lunch]]
+
+::MorningClass7
+You're doing your best to avoid dozing off in class, when Sam leans over the aisle. @@.male;"Hey, <<print $player.firstname>>,"@@ he says. @@.male;"You're still going to the panty raid, right?"@@
+
+You gulp. @@.thought;It was just a dream.@@ <<if visited("Language Project Family")>>You rescheduled your meeting for the group project, so you don't have an excuse to skip the panty raid.
+<<else>>Your partners on the group project are expecting you to go to the meeting, but you could always skip it and go to the raid.
+
+[[Tell him you have to do a project|Panty Raid Decline]]<</if>>
+[[Tell him you're coming|Panty Raid Commit]]
+
+::Panty Raid Decline
+@@.player;"I can't,"@@ you whisper to Sam. He raises an eyebrow. @@.player;"I've got a group project for Spanish, and our meeting's at the same time."@@
+
+He rolls his eyes. @@.male;"Just ask them to reschedule."@@
+
+@@.player;"I did. They're all busy."@@
+
+@@.male;"Okay? So skip out."@@
+
+@@.player;"I can't! I have to do well on this project."@@
+
+@@.male;"When did you start caring so much about school? The old <<print $player.firstname>> would have skipped out."@@
+
+@@.thought;The old <<print $player.firstname>> would have done a lot of things differently@@ you think to yourself.
+
+@@.male;"Look, just think about it. We'd love to have you if you can make it."@@
+
+@@.female;"Mr. Rogers, do you have something you want to share with the class?"@@
+
+@@.male;"No, Miss Williams. Sorry."@@
+
+With the conversation over, you try to focus for the rest of class.
+
+[[Go to lunch|Lunch]]
+<<set $player.academics to $player.academics+1>>
+
+::Panty Raid Commit
+@@.player;"Of course I'm coming, man,"@@ you tell Sam, forcing a laugh.
+
+@@.male;"Great. We can't have the quarterback missing it."@@
+
+@@.player;"Yeah, that's why I'm coming! But, uh, why are we doing it now?"@@
+
+He shrugs. @@.male;"I don't know. Moe kept talking about it and he kept saying it would be fun. And now it's happening!"@@
+
+Miss Williams shoots him a dirty look.
+
+@@.player;"Yeah,"@@ you say, keeping your voice to a whisper.
+
+@@.male;"What? Are you nervous?"@@
+
+@@.player;"What? No!"@@
+
+That comes out louder than you would have liked. @@.female;"Do you have something you want to share with the class, Mr. <<print $player.lastname>>?"@@
+
+@@.thought;God no.@@ @@.player;"No, Miss Williams. I'm sorry."@@
+
+She resumes the lecture, while keeping an eye on you and Sam.
+
+[[Go to lunch|Lunch]]
+<<set $player.academics to $player.academics-1>>
+
+::MorningClass8
+<<if visited("Cursed Panties Throw")>>You take your seat in bio after the bell rings. Even though you try to slide into your seat inconspicuously, the whole class still turns around to look at you. @@.thought;Just great.@@<<else>>You take your seat in bio class, and wait for another boring lecture.<</if>>
+
+The class itself isn't that bad, though. Miss Williams announces that the class is going to dissect stuff on monday, and you sit up a little straighter in your seat. This could actually be fun!
+
+The rest of your classes pass pretty quickly and painlessly. You're a little nervous going to History, but <<print $witch.firstname>> doesn't even look at you.
+
+[[Go to lunch|Lunch]]
+
+::MorningClassPeriod
+You settle into your seat, preparing to tough out a boring lecture. @@.thought;That's not fair to Miss Williams. She's a good teacher, just kind of dry. And I'm not in the mood to sit through her class when I'm feeling like this.@@
+
+Your classmates settle in around you, and Miss Williams clears her throat, preparing for a lecture.
+
+@@.female;"As you know, mitochondria are the powerhouse of a cell."@@
+
+@@.player;I didn't know that. Shit, how far behind am I?@@
+
+@@.female;"Today, we're going to talk about the other parts of a cell. The ribosomes..."@@
+
+You're unable to pay attention to her, and Miss Williams fades into the background. Instead, you're paying attention to your body. Something seems wrong, and you don't think that it's because you're sick.
+
+@@.thought;Am I transforming? No. It doesn't feel cold, and I didn't even do anything girly.@@
+
+[[Try to pay attention to the lecture|MorningClassPeriod Lecture]]
+[[Go to the bathroom|MorningClassPeriod Bathroom]]
+
+::MorningClassPeriod Bathroom
+<<if not visited("MorningClassPeriod Lecture")>>@@.player;"Miss Williams, may I go to the bathroom?"@@
+
+She nods her head, and you jump out of your seat and dash into the hallway.<<else>>You dash into the hallway.<<set $team.suspicion to $team.suspicion+1>><</if>> Everybody stares at you, but you don't care. You can't wait one minute longer. You've never been in so much pain before.
+
+You're in so much of a hurry that you run past the boys bathroom, but you make it there. You run to an open stall, shut the door, and lower your <<print $player.pants.informalName>>.
+
+You're having trouble processing the sight in front of you. Your <<if $player.isWearingPanties is true>>panties<<else>>underwear<</if>> are bloody and soaking wet.
+
+@@.thought;What the fuck?@@
+
+Confused, you lower your <<print $player.underwear.informalName>> to your knees. Immediately, you regret it. Blood spurts out of your new pussy and runs down your legs and hits the ground.
+
+@@.thought;What's going on? Oh fuck, is this a period?@@ All of your female friends have complained about getting their period. You didn't think it was //that// bad. You never said it to their face, but you wished that they would suck it up and stop bothering you with their girl problems.
+
+Now, you have a problem of your own. @@.thought;If only I paid more attention. Okay, what did they say?@@
+
+You try to rack your brains and remember what they did whenever they got periods. @@.thought;They got tampons and...put them...in their...@@ You shudder, imaging yourself putting a tampon in your pussy.
+
+@@.thought;Do I have a choice? I'm bleeding everywhere.@@ You look down at the bathroom floor, which you are still bleeding onto. @@.thought;I'm going to need to clean that up.@@
+
+@@.thought;But where can I get a tampon? They're off campus, but I can't wait that long. This is the middle of the day.@@ You think some more. <<if $player.acceptance>=50>>Other girls<<else>>Girls<</if>> must have had this problem. What did they do?
+
+@@.thought;I've got it! There's tampons in the girls bathroom!@@
+
+This presents some new challenges, though. You'd have to go //into// the girls bathroom to get the tampons. And everyone sees you as a boy.
+
+[[This is an emergency. Go into the girls bathroom|MorningClassPeriod GirlsBathroom]]
+<<if $player.isWearingPanties is true>>[[You're not going to risk it. Stuff some toilet paper into your panties|MorningClassPeriod ToiletPaper Panties]]<<else>>[[You're not going to risk it. Stuff some toilet paper into your underwear|MorningClassPeriod ToiletPaper Underwear]]<</if>>
+<<set $player.masculinity to $player.masculinity-1>>
+
+::MorningClassPeriod Lecture
+@@.thought;It's probably nothing. I'm just sick. I'll wait until class is over in...fifteen minutes, and then I'll see how I feel.@@
+
+Five minutes later, you're starting to think that you made a mistake. Your belly is really hurting now. It feels like one of the <<if $player.acceptance<50>>other <</if>>guys on the team is kicking you in the stomach. Repeatedly.
+
+Five more minutes, and you've stopped paying attention to what Miss Williams is saying. She could be giving out the answers to the next test, and you wouldn't even notice.
+
+And then finally, class finishes. Everyone dashes towards the exit, but nobody is more excited than you.
+
+@@.thought;Finally! Now I can go to the bathroom and see what's going on.@@
+
+[[Go to the bathroom|MorningClassPeriod Bathroom]]
+
+::MorningClassPeriod GirlsBathroom
+This is an emergency. It'll be embarrassing to get caught in the girls bathroom, but it would be even worse to bleed all over your clothes.
+
+You unroll a large amount of toilet paper, and mop up the blood on the floor, on your legs, in your <<print $player.underwear.informalName>>, on the toilet, and on the stall door. @@.thought;How did it get there?@@ When you're finished, you put it all into the toilet paper and try to flush. It takes a couple of tries, but it eventually goes down.
+
+Next, you pull up your <<print $player.underwear.informalName>> and your <<print $player.pants.informalName>> and leave the stall. Nobody is in the boys bathroom, which you take as a good sign. Casting one last glance at the formerly bloody stall, you leave the bathroom.
+
+<<if visited("MorningClassPeriod Lecture")>>The hallways are full of kids walking to lunch or their next class. Nobody seems to have noticed you hovering outside of the bathrooms. @@.thought;Will they notice if I go into the wrong one? Only one way to find out.@@<<else>>The hallways are completely deserted. @@.thought;Good thing I didn't wait to go to the bathroom.@@<</if>>
+
+You look around guiltily, and then slip inside the door of the girls bathroom.
+
+You're greeted by a scream. @@.female;"BOY!"@@
+
+A girl who you don't recognize is standing at the sink, washing her hands. You don't get why she reacted like that. Both you and her are fully clothed. But if you don't do something, her screams will bring more people into the bathroom.
+
+At the opposite end of the bathroom, you spot it. It looks like a dispenser, and it has a picture of a tampon on the front.
+
+@@.female;"BOY!"@@ she screams again.
+
+[[Apologize and retreat to the boys bathroom|MorningClassPeriod Apologize]]
+<<link "Say that you needed to get a tampon for your friend" "MorningClassPeriod Friend">><</link>>
+[[Say that you needed to get a tampon for yourself|MorningClassPeriod Yourself]]
+
+::MorningClassPeriod ToiletPaper Panties
+<<set $timeOfDay to 2>><<if visited("MorningClassPeriod GirlsBathroom")>>You apologize to her, and retreat back to the boys bathroom. Luckily, nobody is in there. You head back to your stall.<<else>>First, you unroll a large amount of toilet paper, and mop up the blood on the floor, on your legs, in your <<print $player.underwear.informalName>>, on the toilet, and on the stall door. @@.thought;How did it get there?@@ When you're finished, you put it all into the toilet paper and try to flush. It takes a couple of tries, but it eventually goes down.<</if>>
+
+Next, you unroll <<if visited("MorningClassPeriod GirlsBathroom")>>a large amount of <<else>>some more <</if>>toilet paper, and stuff it into your panties. It doesn't feel comfortable having your vagina touching the rough toilet paper, but it's better than you bleeding everywhere.
+
+@@.thought;I'll replace this with a real tampon after school.@@
+
+<<if visited("MorningClassPeriod Lecture") or visited("MorningClassPeriod GirlsBathroom")>>You check your phone. A surprising amount of time has passed. @@.thought;I won't be able to eat lunch. I'll have to skip it.@@
+
+[[Go to your next class|Gym]]<<else>>You check your phone. You can still make it to lunch.
+
+[[Go to lunch|Lunch]]<</if>>
+
+::MorningClassPeriod ToiletPaper Underwear
+<<set $timeOfDay to 2>><<if visited("MorningClassPeriod GirlsBathroom")>>You apologize to her, and retreat back to the boys bathroom. Luckily, nobody is in there. You head back to your stall.<<else>>First, you unroll a large amount of toilet paper, and mop up the blood on the floor, on your legs, in your <<print $player.underwear.informalName>>, on the toilet, and on the stall door. @@.thought;How did it get there?@@ When you're finished, you put it all into the toilet paper and try to flush. It takes a couple of tries, but it eventually goes down.<</if>>
+
+Next, you unroll <<if visited("MorningClassPeriod GirlsBathroom")>>a large amount of <<else>>some more <</if>>toilet paper, and stuff it into your underwear. Unfortunately, it doesn't stay there. Your <<print $player.underwear.informalName>> are too big to hold it. You can feel the wad of toilet paper moving as you shift around. The rough toilet paper rubbing against your vagina feels uncomfortable too.
+
+<<if $player.expectsPeriod>>@@.thought;I should have worn panties for this. I knew I could have gotten a period@@ you think.<<else>>@@.thought;I'm going to need to wear some panties.@@ You're not thrilled about that thought, but you have to admit that they would be more comfortable.<</if>> @@.thought;I'll need to get a real tampon too.@@
+
+<<if visited("MorningClassPeriod Lecture") or visited("MorningClassPeriod GirlsBathroom")>>You check your phone. A surprising amount of time has passed. @@.thought;I won't be able to eat lunch. I'll have to skip it.
+
+[[Go to your next class|Gym]]<<else>>You check your phone. You can still make it to lunch.
+
+[[Go to lunch|Lunch]]<</if>>
+
+::MorningClassPeriod Yourself
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress voice>><<set $tempVoice to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>>@@.player;"It's for, uh, me."@@
+
+You hold your breath. You just claimed to be a girl. That's the most daring thing that you've done. <<if $player.hasWornPanties>>You've worn panties, but that was underneath your clothes. Nobody else would notice. <</if>>You watch her carefully, not sure what you want her reaction to be. It would be comforting for your masculinity if she laughed at you, but then you wouldn't get a tampon, and you would continue bleeding everywhere.
+
+<<if $tempFace>=2 and $tempVoice>=1 and $tempHair>=1 and $tempBoobs>=1 and $player.feminine>=15>>She looks at you, and opens and closes her mouth. @@.female;"I'm sorry, I thought you were a boy."@@
+
+You try to look indignant.
+
+@@.female;"I'm sorry! I can see that you're a girl!"@@
+
+@@.thought;Uh.@@
+
+@@.female;"But why are you wearing a boys uniform?"@@
+
+You pause. You hadn't thought of that. @@.thought;That's right. If I was a girl, I'd be wearing a girls uniform of a skirt, tights and a blouse. This marks me as a boy. Okay, I'm so close. What should I say?@@
+
+[[Say that you're a girl transitioning to male|MorningClassPeriod Trans]]
+[[Say that your uniform was dirty and you took your boyfriend's spare|MorningClassPeriod Boyfriend]]
+<<set $player.masculinity to $player.masculinity-3>>\
+<<set $player.acceptance to $player.acceptance+1>><<elseif $tempFace>=1 and $tempVoice>=1 and $tempHair>=1 and $tempBoobs>=1 and $player.masculinity<=50>>She looks at you intently. @@.female;"You look like a boy to me."@@
+
+@@.thought;That's fair. But it's not a no.@@ @@.player;"I'm a girl,"@@ you protest.
+
+@@.female;"I don't know,"@@ she says. @@.female;"You are wearing a guy's uniform."@@
+
+You pause. You hadn't thought of that. @@.thought;That's right. If I was a girl, I'd be wearing a girls uniform of a skirt, tights and a blouse. This marks me as a boy.@@
+
+@@.player;"That's because..."@@
+
+@@.female;"Yeah, I think I should call security."@@
+
+@@.player;"Don't do that!"@@
+
+She gets out her phone.
+
+@@.thought;I should leave before she calls. That wouldn't turn out good for me. But then I wouldn't get a tampon. Can I do anything else to convince her?@@
+
+<<if $player.isWearingPanties is true>>[[Apologize and head back to the boys bathroom|MorningClassPeriod ToiletPaper Panties][$friends.suspicion to $friends.suspicion+2;$team.suspicion to $team.suspicion+2;$team.respect to $team.respect-6]]<<else>>[[Retreat back to the boys bathroom|MorningClassPeriod ToiletPaper Underwear][$friends.suspicion to $friends.suspicion+2;$team.suspicion to $team.suspicion+2;$team.respect to $team.respect-6]]<</if>>
+<<if $player.exhibition>=3>>[[Lower your pants and show her your period|MorningClassPeriod Prove]]
+<<set $player.masculinity to $player.masculinity-2>>\
+<<set $player.acceptance to $player.acceptance+1>><</if>><<else>>She looks at you and bursts out laughing.
+
+@@.female;"That's a good one! But I know who you are. You're <<print $player.firstname>> <<print $player.lastname>>."@@
+
+@@.player;"Uhh..."@@
+
+@@.female;"Just wait until everyone hears about this."@@
+
+You turn red. She's going to tell your friends and teammates that you told her you had a period! @@.player;"No! You can't do that!"@@
+
+She has her phone out, and isn't paying attention to you.
+
+<<if $player.isWearingPanties is true>>[[Head back to the boys bathroom|MorningClassPeriod ToiletPaper Panties]]<<else>>[[Head back to the boys bathroom|MorningClassPeriod ToiletPaper Underwear]]<</if>>
+@@.thought;My life is over.@@
+<<set $friends.suspicion to $friends.suspicion+5>>\
+<<set $team.suspicion to $team.suspicion+5>>\
+<<set $team.respect to $team.respect-10>>\
+<<set $player.acceptance to $player.acceptance+1>>\
+<<set $player.masculinity to $player.masculinity-1>><</if>>\
+
+::MorningClassPeriod Friend
+You look at the tampon dispenser. You're going to need to use it. @@.player;"I'm sorry, uh..."@@ you trail off, realizing that you don't know her name. She stares at you, showing no signs of wanting to tell you. @@.player;"I'm sorry, miss,"@@ you continue. @@.player;"I was going to get a tampon for...uh..."@@
+
+@@.female;"For who?"@@
+
+<<if $player.relationship is not "">>@@.player;"For, uh, <<print $girlfriend.firstname>>."@@ You hold your breath, hoping she'll believe you.
+
+@@.female;"Why couldn't she get it herself?"@@
+
+@@.player;"Uh, it's a bad period,"@@ you say, hoping you can talk yourself out of it. @@.player;"She can't move and she, uh, sent me to get a tampon."@@
+
+To your relief, she nods. @@.female;"There's a dispenser here,"@@ she says, pointing to the dispenser you already noticed. @@.female;"Let me help you."@@
+
+You can't believe your luck. Not only did she buy your story, but she's going to help you get a tampon.
+
+You follow her over to the dispenser. She presses something and a tampon slides out. @@.thought;I couldn't really see what she did. I'll need to figure it out if I want to get another tampon. Wait, why am I thinking about getting more of these things?@@
+
+@@.female;"Here you go,"@@ she says, handing you the tampon. You thank her. An alarm on her phone goes off. @@.female;"I've got to get to class, but tell <<print $girlfriend.firstname>> that I hope she feels better."@@
+
+You're about to tell her that you don't know her name, but she's gone.
+
+@@.thought;I'm alone now@@ you think to yourself. @@.thought;Almost alone@@ you correct yourself, noticing the sound of a shower running. @@.thought;Who would take a shower during the middle of the day in a school bathroom?@@
+
+[[Step inside a stall and use the tampon|MorningClassPeriod Use]]<<else>>@@.player;"For, uh, <<print $girlfriend.firstname>>?"@@ As soon as you say her name, you realize your mistake. What girl would ask an ex to do such an intimate thing for them?
+
+She frowns. @@.female;"What girl would ask an ex to do such an intimate thing for them?"@@
+
+@@.thought;Good question.@@ Determined to salvage it, you say, @@.player;"Uh, well, she wasn't feeling up to moving, and we're still friends, even though we broke up. And there wasn't anyone else she could ask, so..."@@
+
+You trail off, seeing that she has her arms folded over her chest, looking unconvinced.
+
+@@.female;"Why don't you leave?"@@
+
+Embarrassed, you nod. @@.thought;I hope nobody else finds out about this.@@
+
+<<if $player.isWearingPanties is true>>[[Retreat back to the boys bathroom|MorningClassPeriod ToiletPaper Panties]]<<else>>[[Retreat back to the boys bathroom|MorningClassPeriod ToiletPaper Underwear]]<</if>>
+<<set $girlfriend.relationship to $girlfriend.relationship-5>>\
+<<set $friends.suspicion to $friends.suspicion+1>>\
+<<set $team.suspicion to $team.suspicion+1>>\
+<<set $team.respect to $team.respect-3>><</if>>\
+
+::MorningClassPeriod Apologize
+@@.player;"I'm sorry, uh..."@@ you trail off, realizing that you don't know her name. She stares at you, showing no signs of wanting to tell you. @@.player;"I'm sorry, miss,"@@ you continue. @@.player;"I'm in the wrong bathroom."@@
+
+You back out as she glares at you.
+
+<<if $player.isWearingPanties is true>>[[Go back to the boys bathroom|MorningClassPeriod ToiletPaper Panties]]<<else>>[[Go back to the boys bathroom|MorningClassPeriod ToiletPaper Underwear]]<</if>>
+
+::MorningClassPeriod Boyfriend
+@@.player;"My, uh, normal uniform was dirty this morning,"@@ you begin. @@.thought;It's weird to be calling a girls uniform my normal uniform?@@ @@.player;"I couldn't wear it to class so I leaned over to, uh..."@@
+
+@@.thought;Who should I say gave me my uniform? My roommates would be female.@@
+
+@@.player;"I leaned over to my boyfriend..."@@
+
+@@.female;"Your boyfriend slept over?"@@ she asks. There doesn't seem to be any doubt in her voice though. She seems more excited.
+
+@@.player;"Yeah. So I leaned over, and asked him for a spare uniform. Actually, we were in his room. I slept over."@@
+
+She doesn't seem bothered by your story changing. @@.female;"How did you get his roommates to be okay with that? My roommates are single and they always hate it when my boyfriend stays over."@@
+
+@@.player;"Uh, his roommates don't mind. Sometimes they have their girlfriends over..."@@
+
+@@.female;"And you're fucked at the same time as another girl? That's so hot!"@@
+
+@@.player;"Umm..."@@
+
+An alarm on her phone goes off. @@.female;"I've got to get to class. I'm sorry for doubting you. You just look, uh, kind of androgynous."@@
+
+You assure that it's okay, and say goodbye.
+
+@@.thought;She really liked that story. Should I be concerned, though? She found it so easy to believe that I'm a girl who has a boyfriend.@@
+
+@@.thought;At least I'm alone now@@ you think to yourself. @@.thought;Almost alone@@ you correct yourself, noticing the sound of a shower running. @@.thought;Who would take a shower during the middle of the day in a school bathroom?@@
+
+<<link "You're about to step inside a stall, when your body begins to change" TfPassagePicker>><<set $player.acceptance to $player.acceptance+1>><<set $player.masculinity to $player.masculinity-1>><<set $tfRecoverPassage to "MorningClassPeriod Use">><<set $tfReason to "acceptance">><<set $tfCircumstances.location to "girls bathroom">><<set $tfCircumstances.locationType to "bathroom">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "tampon">><<set $tfCircumstances.boys to false>><</link>>
+
+::MorningClassPeriod Trans
+@@.player;"I'm transitioning,"@@ you tell her. @@.player;"To a guy."@@
+
+@@.female;"Oh."@@ She gives you a once over and backs away. @@.female;"I've got to get to class but you, uh, shouldn't do that. You're not going to be able to pass as a guy."@@
+
+And then she's gone. @@.thought;She doesn't think I can pass as a guy? But she thought I was a guy at first! I mean, I am a guy! She doesn't seem to like trans people either@@ you think, worrying about what other people will think when you're further along in your transition. Will they be just like her? @@.thought;I'm not transitioning@@ you tell yourself. @@.thought;I'm just worried about what will happen if I keep having these transformations.@@
+
+@@.thought;At least I'm alone now@@ you think to yourself, trying to get your mind off of this subject. @@.thought;Almost alone@@ you correct yourself, noticing the sound of a shower running. @@.thought;Who would take a shower during the middle of the day in a school bathroom?@@
+
+[[Step inside a stall and use the tampon|MorningClassPeriod Use]]
+<<set $player.acceptance to $player.acceptance-1>>
+<<set $player.masculinity to $player.masculinity+1>>
+
+::MorningClassPeriod Prove
+@@.player;"What if I proved it?"@@
+
+@@.female;"What?"@@
+
+You lower your <<print $player.pants.informalName>>, exposing your bloody <<print $player.underwear.informalName>>. <<if $player.isWearingPanties is true>>Suddenly, you're overcome with what you've done. You just exposed your panties, and your period, to a complete stranger.<<else>>She looks confused at your lack of panties, but she can't deny that you have a period.<</if>>
+
+@@.female;"Sorry, you just looked so androgynous. I thought you were a boy."@@ She looks at the blood that is starting to drip onto the floor. Suddenly, she seems to be in a rush. @@.female;"Well, I've got to go but, um, good luck. You know how to use the dispenser."@@
+
+With that, she takes off, leaving you alone in the girls bathroom.
+
+@@.thought;Almost alone@@ you correct yourself, noticing the sound of a shower running. @@.thought;Who would take a shower during the middle of the day in a school bathroom?@@
+
+You step in front of the dispenser and try to figure out how it works. @@.thought;It's not like I can ask somebody.@@ Finally, you're able to press the right button, and a tampon slides out.
+
+<<link "You're about to step inside a stall, when your body begins to change" TfPassagePicker>><<set $player.masculinity to $player.masculinity-1>><<set $tfRecoverPassage to "MorningClassPeriod Use">><<set $tfCircumstances.location to "girls bathroom">><<set $tfReason to "acceptance">><<set $tfCircumstances.locationType to "bathroom">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><<set $tfCircumstances.boys to false>><</link>>
+
+::MorningClassPeriod Use
+You step inside the stall and lock the door. You're mostly alone in the girls bathroom, you have a tampon, now you just need to use it. That's when you realize the obvious: you have no idea how to use a tampon.
+
+You rack your brains, trying to remember anything your friends said about using a tampon. @@.thought;I don't remember anyone mentioning it. They just complained about how much periods sucked. They never talked about how to stick the tampon up...up...@@ You trail off, unable to believe what you're thinking about doing.
+
+Taking a deep breath, you pull out your phone and search for a how-to video on using a tampon. You find a lot of videos on YouTube, most of them talking about how to find the right one, but none of them show the actual putting-it-in-you part. @@.thought;Are they not allowed to show it or something? That's stupid. This is something normal all girls have to learn!@@ you think indignantly, not realizing that you just referred to yourself as a girl.
+
+Several videos later, you find a video where a girl demonstrates using a stuffed animal. @@.thought;This is disturbing, but it's the best video I've found.@@
+
+You restart the video and watch it again, more intently this time. It doesn't seem that difficult. @@.thought;Girls do this all the time. Why can't I?@@ You line the tampon up with your pussy with one hand, while you open it up with the other. This is the first time, you've paid this much attention to your pussy. When you masturbated, you would just stick a finger in there, seeing it as a turn-off to examine your new sex.
+
+You check your phone to make sure you have the right end lined up, and then slowly slide the tampon in. Then, you pull the outer tube out, leaving only a string hanging out of your pussy.
+
+@@.thought;I did it!@@ You never thought that you'd be happy about successfully inserting a tampon into your vagina, but you feel accomplished. This was really hard, and you did it.
+
+<<link "Before you can leave, you feel another draft" TfPassagePicker>><<set $tfRecoverPassage to "MorningClassPeriod Recover">><<set $tfReason to "tampon">><<set $tfCircumstances.location to "girls bathroom stall">><<set $tfCircumstances.locationType to "stall">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "tampon">><<set $tfCircumstances.boys to false>><</link>>
+<<set $player.isWearingTampon to true>>
+
+::MorningClassPeriod Recover
+<<set $timeOfDay to 2>>@@.thought;Why did that happen? That's not fair. I either had to use a tampon or bleed everywhere. I didn't accept anything!@@
+
+You're upset, but it doesn't seem to be any use arguing at the transformation. It's happened, now you just have to hope that nobody notices.
+
+@@.thought;Will anyone? Will they notice my tampon? As long as I'm careful changing in gym, I should be fine. Oh shit. Changing is going to be even harder now! And swimming! How will I swim?@@
+
+You take a deep breath and try to calm yourself. You'll worry about that later. Now you've got to get back to lunch. @@.thought;No@@ you think, checking your phone. @@.thought;It's too late for that. I'll have to skip it.@@
+
+<<if $player.isWearingPanties is true>>You unlock the stall, and turn to leave when the bathroom door swings open.
+
+[[See who it is|MorningClassPeriod Garcia]]<<else>>You pull up your <<print $player.underwear.informalName>> and frown. Now that you have a period, wearing boxers doesn't seem to be the best idea. @@.thought;If blood leaks out, the boxers are too big to catch it.@@
+
+You ponder your options. <<if not $pantyRaid or $pantyRaid.takenFrom is "">>You don't own a single pair of panties.<<else>>You could go back to your dorm and get your panties, but that would take too long, and lunch is almost over.<</if>>
+
+Then you listen to the sounds of the girl showering, and an idea strikes you. Sure, it would be rude, but you need those panties more than her.
+
+@@.thought;What am I thinking? I'm not going to steal clothes from a random girl, much less panties!@@
+
+[[At least see if her panties are reachable|MorningClassPeriod Panties Get]]
+[[Nope. You're not going to do that. Leave the bathroom|MorningClassPeriod Panties Refuse]]<</if>>
+
+::MorningClassPeriod Panties Get
+@@.thought;I'll just see if I can get them. It doesn't mean that I'll take them@@ you tell yourself.
+
+You walk over to the shower, and slide the curtain back a little bit. The girl's clothing is hanging from the hook. You see the Pinewood Prep uniform, but you can't see if there's anything else.
+
+You creep forward and pull her skirt to the side. You see a bra...and grey bikini-style panties!
+
+@@.thought;Okay. I've come this far. I should take them.@@
+
+You silently apologize to this girl, and pull the panties off the hook.
+
+Now you just have to find a place to put them. The other students would look at you weird if you just opened the door and walked down the hall, only holding a pair of panties.
+
+Before you can find a place to put them, however, the bathroom door swings open.
+
+[[See who it is|MorningClassPeriod Garcia]]
+
+::MorningClassPeriod Panties Refuse
+@@.thought;I'm not going to wear panties, and I'm not going to take some stranger's panties. What's come over me?@@
+
+Your decision made, you open the stall door and turn to leave. Sure, you imagine that it would be nicer to wear panties with your condition than boxers, but it's going to have to wait.
+
+Just before you reach the door, however, it swings open on its own.
+
+[[See who it is|MorningClassPeriod Garcia]]
+
+::MorningClassPeriod Garcia
+@@.female;"Oh, <<print $player.firstname>>,"@@ Mrs. Garcia says, clearly surprised. @@.female;"What are you doing here?"@@
+
+You struggle to come up with a good answer. You can't tell her that you're here to get a tampon, and there's no good reason for <<if $player.acceptance<50>>a boy<<else>>someone she thinks of as a boy<</if>> to be hanging around the girls bathroom.
+
+@@.female;"Okay, I think I know what this is about,"@@ she says, looking with concern towards you.
+
+@@.player;"You do?"@@ you ask, having a feeling that you won't like the answer.
+
+<<if $garcia.suspicion is 2>>@@.female;"Of course. You're transitioning. It's so obvious. You wore panties to detention, and now you're in the girls bathroom@@<<if visited("MorningClassPeriod Panties Get")>>@@.female;, about to try them on."@@<<else>>@@.female;. Maybe you just tried them on?"@@<</if>>
+
+<<elseif $garcia.suspicion is 1>>@@.female;"You're transitioning, aren't you? You wore panties to detention, but when I caught you, you made up an excuse. And now here you are, in the girls bathroom@@<<if visited("MorningClassPeriod Panties Get")>>@@.female;, about to try them on."@@<<else>>@@.female;. Maybe you just tried them on?"@@<</if>>
+
+<</if>><<if $garcia.suspicion>=1>>@@.player;"What? No! I'm not transitioning!"@@ you protest. A voice in the back of your head tells you that Mrs. Garcia isn't totally wrong, though. You're not transitioning by choice, but every transformation that happens takes you closer and closer to being completely female.
+
+@@.female;"It's okay, <<print $player.firstname>>. I know that this must be embarrassing. Why don't I...hmm...what should I do? Gender neutral bathroom? No, we don't have one. No, that would be too embarrassing..."@@
+
+@@.player;"Mrs. Garcia?"@@ She seems to be talking to herself, and you're not sure if she forgot that you were there.
+
+@@.female;"Oh, I know! I bet you didn't know that my husband is the psychologist here at Pinewood."@@
+
+@@.player;"He is?"@@ You never paid Mr. Garcia much thought. It was always the misfits and the "special" kids that had to see him. As a formerly well-adjusted football player, you never visited him. @@.thought;I can't believe I never made that connection. His name //is// Mr. Garcia.@@
+
+@@.female;"It's settled then. You can see Mr. Garcia for counseling."@@
+
+@@.player;"I don't want to see a shrink!"@@
+
+@@.female;"There's nothing wrong with that!"@@ she replies, a little defensively. @@.female;"We're just going to get you the support that you need. You can visit him after school. Nobody will know that you're seeing him."@@
+
+@@.player;"Hmm."@@ If nobody is going to know that you're seeing a psychologist, you're not so against the idea. It has been really hard keeping all of your feelings and worries bottled up inside of you.
+
+@@.female;"It's settled then!"@@ Mrs. Garcia says, seeing that you stopped arguing with her. @@.female;"You can see him, um, how about thursday after school? I know you're busy with football, but I don't think you have anything then."@@
+
+You tell her that it would be fine.
+
+<<if visited("MorningClassPeriod Panties Get")>>[[Try on the panties|MorningClassPeriod Panties Wear]]<<else>>[[Finally, you can leave the bathroom|Gym]]<</if>><<set $garcia.suspicion to $garcia.suspicion+1>><<set $garcia.therapy to true>><<set $garcia.detention to false>><<else>>@@.female;"You're up to no good. I don't know what kind of prank you're going to pull, but you're crossing the line. This is a safe space for girls. They could be dealing with their period."@@ You stiffen, but she doesn't seem to notice. @@.female;"Or they could be coming in here to get away from their bullies.@@<<if visited("MorningClassPeriod Panties Get")>>@@.female;, And you even took some poor girl's underwear."@@<<else>>@@.female;. This is unacceptable."@@<</if>>
+
+@@.player;"I'm not pulling a prank!"@@
+
+@@.female;"Then why are you here?"@@
+
+You fall silent. You can't tell her why you're really here.
+
+@@.female;"Then I want you to see me after school for detention."@@
+
+You groan. She simply smiles to herself, and leaves the room.
+
+<<if visited("MorningClassPeriod Panties Get")>>[[You're alone now. You can try on the panties|MorningClassPeriod Panties Wear]]<<else>>[[Finally, you can leave the bathroom|Gym]]<<set $garcia.detention to true>><</if>><</if>>
+
+::MorningClassPeriod Panties Wear
+You walk back into the stall, and lock the door. You pull off your pants and your <<print $player.underwear.informalName>>, leaving you butt-naked, with just a string hanging from your pussy. @@.thought;My pussy looks so feminine@@ you complain to yourself. @@.thought;Well, of course it looks feminine. How would a pussy look masculine?@@
+
+You're not going to look any more masculine when you're wearing panties. @@.thought;It's not too late to back out. I can just return them to that girl.@@
+
+As soon as you think that, the sounds of the shower stop. You don't have much time before she discovers that her panties are missing. And when she realizes that, you'll be the only person in the bathroom.
+
+@@.thought;I've got to hurry.@@ You quickly pull up the panties, marveling at how feminine and flat they look. You don't have time to admire yourself, though. You've got to leave quickly before you're discovered. You pull up your <<print $player.pants.informalName>>, tuck your boxers in your backpack, and head for the door. This time, nobody comes in and you safely make it back out into the hallway.
+
+<<if $player.hasWornPanties>>[[Breathe a sigh of relief and go to your next class|Gym]]<<else>>No sooner are you out than you feel a draft of cold air.
+
+<<link "You start to change" TfPassagePicker>><<set $tfRecoverPassage to "Gym">><<set $tfReason to "panties">><<set $tfCircumstances.location to "hallway">><<set $tfCircumstances.locationType to "hallway">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><</if>>
+<<set $greyBikiniPanties = {
+	"properName": "Grey Bikini Panties",
+	"informalName": "grey bikini panties",
+	"manImage": "images/clothes/underwears/gray_bikini_panties_man_legs.png",
+	"womanImage": "images/clothes/underwears/gray_bikini_panties_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>>
+<<set $player.underwear to $greyBikiniPanties>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<set $clothesInventory.underwear.push($greyBikiniPanties)>>
+
+::MorningClassPants
+@@.female;"What do you think you're wearing, <<print $player.firstname>>?"@@ Mrs. Reed asks.
+
+Everyone turns to stare at you. Your face flushes. @@.player;"Uh, my uniform got torn,"@@ you tell her. You just want to get this over with.
+
+@@.female;"This is unacceptable. Don't come back until you're wearing your uniform."@@
+
+Some of your classmates start snickering, and you run out of the classroom. @@.thought;My teachers didn't use to care what clothes I wore. Is it because I'm not the star quarterback anymore?@@
+
+[[Looks like you need to go to the mall|Mall]]
+<<set $checkedGuysPants to false>>
+
+::MorningClassPants Return
+You nervously walk through the halls, hoping nobody notices your new slacks.
+
+It doesn't seem like they do. Besides a few noticeable differences, they look similar enough to your old pants that nobody says anything.
+
+@@.thought;That's a relief. I was so used to everyone laughing at me.@@
+
+You check the time. @@.thought;It's time for lunch already? I guess I spent more time at the mall than I thought.@@
+
+[[Go to lunch|Lunch]]
+
+::MorningClassHeat
+You walk into the building, eager to get a reprieve from how hot it is outside. But if anything, it's even worse inside than it is outside. @@.thought;Am I transforming? No, that happens when I feel cool.@@
+
+@@.female;"Why is it so hot?"@@ another student asks.
+
+@@.thought;Okay, so it's not just me.@@
+
+You walk into Mrs. Reed's classroom and find her wiping sweat from her forehead.
+
+@@.female;"I'm sorry about the heat,"@@ she tells everyone. @@.female;"The air conditioning broke in this building. Let's just get through this class, and then we can get out of here."@@ She sounds like she's talking more to herself than to the class.
+
+[[She starts teaching|MorningClassHeat ZoneOut]]
+
+::MorningClassHeat ZoneOut
+You look at the clock as the seconds slowly tick by. After about fifteen minutes have passed, you become aware that you haven't heard anything Mrs. Reed has said. You've been trying to pay more attention in class lately, but this isn't your fault. It's the damn heat!
+
+A quick look behind you confirms that you're not the only one who feels that way. Everyone else looks uncomfortable and nobody is paying attention.
+
+@@.female;"I'm not supposed to be doing this,"@@ Mrs. Reed says, @@.female;"Boys, why don't you remove your jackets? Just make sure to put them back before class ends!"@@ she calls out as the boys starts taking off their jackets, and the girls start complaining.
+
+[[Take off your jacket|MorningClassHeat Remove]]
+
+::MorningClassHeat Remove
+You don't need to be told twice. You take off your jacket, and instantly feel better. @@.thought;If only I could take off my tie too. I don't need to wear it. The girls have it so easy. They just need to wear a blouse and that's it.@@
+
+You're distracted from your thoughts by the sound of laughter from behind you.
+
+@@.female;"Do you see it?"@@ someone whispers.
+
+@@.male;"Yeah. <<print $player.firstname>> is wearing a bra."@@
+
+@@.female;"Sissy,"@@ someone else whispers.
+
+@@.thought;Fuck! How come I didn't think of that when I took my jacket off? Now everyone knows I'm wearing a bra, and they'll see how girly I am. If they didn't know already.@@
+
+You turn behind you to see who's doing the whispering. The rest of the class meets your eyes, smirks on their faces.
+
+Dejected, you turn back around. @@.thought;I'm going to stop wearing a bra. Then they won't be able to make fun of me.@@ You pause for a moment. @@.thought;But I can't even do that. My boobs are going to hurt if I go the whole day without a bra.@@ <<if $player.controlQuestKnowledge is true>>@@.thought;I'm so stupid. Why did I choose to get bigger breasts?@@<<else>>@@.thought;How have I transformed so many times already?@@<</if>>
+
+The girl who sits next to you leans over. @@.female;"That's why you don't wear a sports bra to class,"@@ she whispers. @@.female;"Do you own any other bras?"@@
+
+@@.player;"No,"@@ you whisper back.
+
+@@.female;"You should buy some."@@
+
+You thank her and turn back to Mrs. Reed, who is glaring at you. As she continues to teach, you find yourself thinking about what that girl said. @@.thought;I can't believe I'm thinking about going back to the mall and buying another bra. But I already transformed from getting a bra, so I won't transform again. And if it will stop everyone from making fun of me, then maybe it's worth it.@@
+
+[[Go to lunch|Lunch]]
+<<set $player.confidence to $player.confidence-11>>
+
+::MorningClassShoes
+<<if $player.shoes is null>><<set $player.shoes to $clothesInventory.shoes[0]>>Realizing that you don't have any shoes that fit, you throw on your <<print $player.shoes.informalName>> and start heading towards class. On the way,<<else>>You leave your dorm and start to walk towards your classes when<</if>> you stumble and your foot slips out of your shoe.
+
+@@.thought;Damn. My feet are too small.@@
+
+With a sigh, you put your shoes back on and start hobbling towards class. You get halfway there when your foot slips out again.
+
+@@.thought;I hope I can make it through the day.@@
+
+You're finally able to get to class. You hobble in, taking small steps so your feet don't fall out again. You can feel your classmates turning their heads to look at you and cringe, realizing that you're the center of attention once again.
+
+@@.female;"<<print $player.firstname>>, sit down already."@@
+
+@@.player;"Sorry,"@@ you say, walking towards your seat. But just before you're about to sit down, your foot slips out of your <<print $player.shoes.informalName>> again.
+
+@@.female;"What's going on?"@@ Mrs. Reed asks.
+
+@@.male;"His shoes are too big for his feet,"@@ the guy sitting next to you says.
+
+@@.female;"Go get new shoes then,"@@ Mrs. Reed snaps at you.
+
+@@.player;"So I can miss this period?"@@
+
+@@.female;"Yes! You're already distracting this class!"@@ she says, an exasperated tone in her voice.
+
+[[Get out of there|MorningClassShoes Shuttle]]
+
+::MorningClassShoes Shuttle
+You leave the class and start heading for the shuttle that will take you into town. As you walk across campus, you see people looking at you, no doubt wondering why you're not at class. You just look away.
+
+@@.thought;What happened at class is going to spread all over the school soon.@@
+
+The shuttle ride into town is uneventful, and you find yourself standing outside of the mall.
+
+[[Go in|Mall]]
+
+::MorningClassShoes Return
+<<if $player.ownsGirlPants>>The first time you went to class wearing womens slacks, you were nervous. Now, you're more confident. It was so embarrassing this morning when the whole class watched you fall out of your shoes. But now, you have shoes that actually fit you. So what if they're made for women?<<else>>As you walk back onto campus, you're surprised with how good you're feeling. You thought that you would be nervous about people realizing you're wearing womens shoes, but instead you feel more confident. Now that you have shoes that actually fit you, you won't get embarrassed like you did in class.<</if>>
+
+You check the time. @@.thought;It's time for lunch already? I guess I spent more time at the mall than I thought.@@
+
+[[Go to lunch|Lunch]]
+
+::Language Project Start
+You make it to your Spanish class just seconds before the bell rings.
+
+@@.player;"Hola, Mrs. Garcia,"@@ you say, sliding into your seat.
+
+@@.female;"Hola, <<print $player.firstname>>,"@@ she says with a smile. She's always had a soft spot for you, despite your lackluster performance in her class.
+
+She turns to the rest of the class, and begins passing out a packet. @@.female;"This is your first project of the semester. It's due in two weeks."@@ She goes on to describe the rest of the project. It has something to do with interviewing random people and doing a presentation.
+
+After she finishes reading the instructions comes the standard mad dash where everyone tries to find partners. You just yawn and relax in your chair, waiting for people to come to you.
+
+You end up with a pretty good group: Norm Frederickson, the nerd <<if visited("Cheat")>>who you copied off of in Math<<else>>who's in Math with you<</if>>, a linebacker from the football team, and a popular girl. The four of you make plans to meet up on thursday to plan the project.
+
+[[Finish school|Evening]]
+
+::LanguageProject
+You arrive a couple seconds late to your Spanish class again. The teacher is facing the board, though, and nobody says anything as you slide into a seat near your group.
+
+@@.male;"Oh hey, <<print $player.firstname>>. We decided that we're meeting thursday evening to work on our project,"@@ Norm Frederickson whispers.
+
+@@.player;"Yeah, that's fine with me."@@
+
+@@.female;"Cool, I'll tell my boss to move my shift,"@@ one of your partners says.
+
+It's only when class is half over that you realize you made a mistake. @@.player;"Wait!"@@ you hiss. @@.player;"I have plans thursday evening."@@
+
+@@.female;"What kind of plans?"@@
+
+@@.player;"Uhh..."@@ @@.thought;I can't tell them I'm doing a panty raid!@@
+
+[[Tell them you're hanging out with the team|Language Project Team]]
+[[Tell them you have family visiting|Language Project Family]]
+[[Tell them you're doing a panty raid|Language Project Raid]]
+
+::Language Project Team
+@@.player;"Me and some of the guys from the football team made plans to hang out,"@@ you whisper. You're not telling //a lie//. You are going to hang out with the team, you just didn't say what they were doing.
+
+Mrs. Garcia stopped talking midway through your sentence, leaving your voice as the only one in the room. @@.female;"No talking during class!"@@ she states firmly. @@.thought;Shit.@@
+
+She turns her back to write something on the board. @@.female;"No, we can't reschedule,"@@ your partner whispers. @@.female;"I already moved my shift. I can't move it back?"@@
+
+@@.player;"What about another time? When's your shift?"@@
+
+@@.female;"Thursday afternoon. But Norm's busy on the weekend. And she,"@@ she says, pointing at the other girl in the group, @@.female;"is busy wednesday. Maybe friday?"@@
+
+@@.player;"No, friday's the game,"@@ you say, groaning. You haven't been paying a lot of attention to football lately, but you'd never forget when the game was.
+
+@@.female;"So..."@@
+
+@@.player;"Okay."@@ You sigh. You won't be able to go to both your group meeting and the panty raid.
+
+[[Finish up school|Evening]]
+
+::Language Project Family
+@@.player;"That won't work. My dad and sister are visiting me on thursday,"@@ you lie.
+
+Mrs. Garcia stopped talking midway through your sentence, leaving your voice as the only one in the room. @@.female;"No talking during class!"@@ she states firmly. @@.thought;Shit.@@
+
+Mrs. Garcia turns back to the board. @@.female;"Well, I just moved my shift, she's busy on wednesday, and Norm is going to some science competition over the weekend."@@
+
+@@.male;"I told you, it's a math club meet,"@@ Norm says. @@.male;"But it's okay. I'll skip it."@@
+
+@@.player;"Uh, are you sure, Norm?"@@
+
+@@.male;"Yeah, they'll be fine without me,"@@ Norm says, sighing.
+
+You feel a little bad. Your lie kept Norm from going to his geeky math club. But on the plus side, you get to participate in the panty raid!
+
+[[Finish up school|Evening]]
+
+::Language Project Raid
+@@.player;"Me and some guys from the football team are going to do a panty raid then,"@@ you whisper. @@.thought;Fuck it, best to tell the truth, right?@@
+
+Mrs. Garcia stopped talking midway through your sentence, leaving your voice as the only one in the room. Mrs. Garcia doesn't say anything, but you're sure everyone heard.
+
+The teacher turns her back to write something on the board. @@.female;"Gross. And no, we can't reschedule,"@@ your partner whispers. @@.female;"I already moved my shift. I can't move it back?"@@
+
+@@.player;"What about another time? When's your shift?"@@
+
+@@.female;"Thursday afternoon. But Norm's busy on the weekend. And she,"@@ she says, pointing at the other girl in the group, @@.female;"is busy wednesday. Maybe friday?"@@
+
+@@.player;"No, friday's the game,"@@ you say, groaning. You haven't been paying a lot of attention to football lately, but you'd never forget when the game was.
+
+@@.female;"So no panty raid."@@
+
+@@.player;"Okay."@@ You sigh. Unless you blow off the group project, you won't be able to take part in the panty raid.
+
+[[Finish up school|Evening]]
+
+::LanguageProjectPressure
+In Spanish class, you're ambushed by your group.
+
+@@.male;"You're going to be at the meeting, right?"@@
+
+@@.player;"Of course!"@@ <<if not visited("Language Project Family")>><<if visited("Panty Raid Commit")>>You look away guiltily. You're //not// going to be at the meeting tonight. You promised Sam that you were going to be at the raid.
+
+@@.player;"Hey, listen, can we move it to another time?"@@
+
+@@.female;"No. All of us are busy."@@
+
+@@.player;"Fine."@@ It was worth a shot. Now you're going to have to break a promise.<<else>>You mean it. You already told Sam that the group project is more important. And after the weird dream you had last night, you want to stay as far away from the panty raid as possible.<</if>><<else>>You look away guiltily. You lied to your group so they would move the project, and you feel kind of bad about it.
+
+@@.thought;If I come clean about it now, they'll know I lied to them. I have to go to the panty raid.@@<</if>>
+
+@@.female;"We're meeting <<if visited("Language Project Family")>>sunday<<else>>today<</if>> at seven."@@
+
+@@.player;"Yeah, I know,"@@ you say impatiently. @@.player;"Where are we meeting? The library?"@@
+
+@@.male;"Yeah,"@@ Norm says. @@.male;"It's the best place! We can do so much research there!"@@ You roll your eyes. He's such a nerd.
+
+[[Finish school|Evening]]
+
+::LanguageProjectBlamed
+<<if visited("Panty Raid Start")>><<if visited("Panty Raid Normal Confrontation")>>You're not looking forward to this class. And sure enough, Julie is glaring at you when you walk into Spanish. You avert your eyes, hoping that she doesn't make a scene.
+
+You're not that lucky. <<if visited("Language Project Family")>>@@.female;"<<print $player.firstname>> told me he couldn't work on our project because he was seeing his family!"@@ Julie says loudly. The rest of the class turns around to look. You cringe internally.
+
+@@.female;"But he was lying! I caught him in my room, trying to take my underwear!"@@ Julie continues. Technically, she caught you outside of her room, but you don't think bringing it up would help your case.
+
+@@.female;"<<print $player.firstname>>, is this true?"@@ Mrs. Garcia asks you.
+
+@@.player;"Uh, yeah,"@@ you admit, slinking into your seat.
+
+@@.female;"That's unacceptable. Your group is working hard, and you lie to them so you can go into their rooms and take their clothes?"@@
+
+When she puts it that way, it does seem pretty bad.
+
+@@.female;"I'm going to dock your grade on this assignment. And I want you to see me after school for detention."@@
+
+You know it won't be any use to argue. @@.player;"Sure, Mrs. Garcia,"@@ you say flatly.<<set $player.academics to $player.academics-5>><<else>>@@.female;"<<print $player.firstname>>, you just skipped our meeting,"@@ Julie says. Luckily, she's whispering, so the rest of the class can't hear.
+
+@@.male;"Seriously?"@@ Norm asks.
+
+@@.female;"Yeah! And then I caught him in my room, taking my underwear!"@@
+
+The three of them look at you with accusing glares.
+
+@@.player;"The football team was doing a panty raid,"@@ you say, trying to explain. @@.player;"I couldn't miss it. I was going to return them."@@ They don't look impressed, but luckily they drop it. For now.
+
+When class is over, however, your group stays behind.
+
+@@.female;"Can I help you?"@@ Mrs. Garcia asks.
+
+@@.female;"Yeah. <<print $player.firstname>> keeps skipping our meetings."@@ Luckily, Julie doesn't say anything about //why// you were skipping the meetings.
+
+@@.female;"Is this true, <<print $player.firstname>>?"@@ You nod.
+
+@@.female;"Well, that's not fair to your group. I'm going to dock your grade."@@
+
+At least it wasn't anything worse.<</if>><<else>>You look at your group guiltily as you walk into Spanish class. <<if visited("Language Project Family")>>You told them you were going to see your family so you could get out of working on your project and do the panty raid.
+
+@@.male;"How was your family, <<print $player.firstname>>?"@@ Norm asks.
+
+@@.player;"Uh, good,"@@ you say, unable to look at him.
+
+Luckily, he drops it and class passes quickly.<<else>>They glare back at you, but don't say anything.
+
+Luckily, class passes pretty quickly.<</if>><</if>><<else>>@@.female;"Thanks for working on the project,"@@ one of the girls tells you. @@.female;"I was worried you weren't going to make it."@@
+
+@@.thought;She was worried? What does that mean? Well, I guess I considered doing the panty raid instead.@@
+
+@@.player;"Uh, sure,"@@ you tell her. @@.player;"I'm not going to let my group down."@@<</if>>
+
+[[Finish school|Evening]]
+
+::PepRally
+<<showQBSkill true>>You're about to head towards Spanish, when you see everyone walking in the opposite direction. @@.thought;That's right! The pep rally. No school for the rest of the day!@@
+
+Smiling, you join the other students, and walk back into the gym, <<if $player.skillCurse is 4>>filing into the bleachers with everyone else who isn't on a team.
+
+@@.thought;This is new. I'm always with the football team.@@
+
+You look longingly towards the locker room where you know the football team are huddled, imagining them laughing and joking around. @@.thought;It would be nice if I was still on the team. Even if they're making fun of me more now, I still know them more than the people I'm in the bleachers with. @@<<if $player.crush and $player.crush is $qb.firstname>>@@.thought;And <<print $qb.firstname>> will be there. But at least this way, I can see him when the football team comes out. I bet he looks good in his jersey.@@<<else>>@@.thought;But at least this way, I'll have a good view of <<print $girlfriend.firstname>>. When I was on the team, I never got a good view of the cheerleeaders.@@<</if>><<else>>and back into the locker room with the rest of the football team.
+
+@@.thought;I can't believe I'm done with school, //and// I get to hang out with my friends. @@<<if $player.qbSkill<40>>@@.thought;Even if they make fun of me, they're still my friends.@@ <</if>>@@.thought;I'd rather hang out with them for the rally than random people in the bleachers.@@ <<if $player.crush and $player.crush is $qb.firstname>>@@.thought;And I'll get to spend time with <<print $qb.firstname>>.@@<<else>>@@.thought;It's too bad I won't get a good view of <<print $girlfriend.firstname>> and the other cheerleaders though.@@<</if>><</if>>
+
+Just then, the band starts to play.
+
+[[The rally is starting|PepRally Start]]
+
+::PepRally Start
+Everybody falls silent as the band plays the school's fight song. They're actually pretty good, and you can't help but feel yourself getting pumped up<<if $player.skillCurse is 4>>, even though you're not even on the team.<<elseif $playerStarter is false>>, even though you'll barely be playing.<<else>> for the game.<</if>> @@.thought;We're going to beat Summerville! We can do it!@@
+
+After the band finishes, the cheerleaders run out onto the gym. <<if $player.skillCurse<4>>You and the rest of the team make your way to the hallway so you'll be ready to run out when the football team is introduced. @@.thought;Which won't be for a while.@@
+
+You don't have a good view of the cheerleaders: you're only able to watch the action through a set of windowed double doors. You are able to recognize <<print $girlfriend.firstname>>, Morgan, and a couple other friends, though, and they look like they're all having a great time as they do their dance numbers and energize the crowd.<<else>>Your seat in the second row of the bleachers gives you a very good view of them. You recognize <<print $girlfriend.firstname>>, Morgan, and a couple of your other friends. All of them look hot with their short purple skirts, tops, and pom poms. You had always thought they looked hot, of course: most of your girlfriends had been cheerleaders. But now, as you watch them energize the crowd and perform their dance numbers with big smiles on their faces, you have a different sort of appreciation.
+
+@@.thought;They're all having so much fun. I wonder what it would be like to be one of them.@@
+
+You instantly clap a hand overe your mouth, even though you didn't speak. @@.thought;No no no, I didn't mean that. I don't want to be a cheerleader! It's just that they're all so sexy and confident. They can strut their stuff and the whole school will be watching them. I don't want anyone to be looking at me like that!@@ you think, noticing several of the <<if $player.masculinity>=50>>other <</if>>guys sitting around you are ogling the cheerleaders with lustful expressions.<</if>>
+
+The cheerleaders finish their dance and then start dividing themselves into groups of four or five girls. You lean forward, <<if $player.masculinity>=25>>eager<<else>>curious<</if>> to see what they're doing. After a little while, each group hoists a cheerleader into the air.
+
+@@.female;"Go Pinewood!"@@ they scream as they stand on one leg. You catch a glimpse of Morgan, who's enthusiastically waving her pom poms. @@.thought;I don't see <<print $girlfriend.firstname>> though. She must be one of the ones supporting the other cheerleaders.@@
+
+In unison, the cheerleaders do a flip and are caught by their teammates. Everyone applauds, and the cheerleaders scurry out of the gym.
+
+As they leave, one image remains burned into your mind: as Morgan was doing her flip, <<if $player.skillCurse<4>>even from your poor angle, <</if>>you caught a glimpse of her pink panties.
+
+[[The other teams do their introductions|PepRally Continue]]
+
+::PepRally Continue
+You watch the cross country and soccer teams do their introductions, which mostly consist of them running out into the gym, the team captain hyping up their team, and everyone on the team saying their names.
+
+You start off trying to pay attention, but you end up <<if $player.skillCurse<4>>spending most of the rally joking with the other football players.<<else>>spacing out.<</if>> It's pretty boring, although you find yourself checking out some of the more attractive <<if $player.homosexuality>=75>>guys<<else>>girls<</if>> on the cross country team.
+
+<<if $player.skillCurse<4>>@@.male;"Hey,"@@ one of the other <<if $player.masculinity>=50>>guys<<else>>football players<</if>> whispers. @@.male;"We're up next."@@
+
+[[Get ready|PepRally Football Participate]]<<else>>@@.male;"Up next, the Pinewood Prep football team!"@@ Coach's voice booms.
+
+[[Pay attention|PepRally Football Watch]]<</if>>
+
+::PepRally Football Participate
+<<getTfProgress voice>>@@.male;"Up next, the Pinewood Prep football team!"@@ Coach's voice booms.
+
+You run into the gym with the rest of the football team. The cheerleaders wave their pom poms and the students in the bleachers start cheering. <<if $playerStarter>>You beam to yourself. You know that the cheers aren't //really// for you: they're for the whole team. But you're the starting quarterback, and you can't help but feel moved by the reaction from your classmates.<<else>>They're not cheering for you of course -- they're cheering for <<print $qb.firstname>> and the rest of the team. You're just a backup. But you're still feeling pumped up.<</if>>
+
+<<if $playerStarter>>Sam takes the microphone. @@.male;"Thank you, thank you!"@@ he says. @@.male;"My name is Sam and we're the Stallions football team. Our next game is tonight after school. If you want to support us..."@@ He continues on, but you're looking at Coach. @@.thought;I'm the starting quarterback. Why does Sam get to announce the team?@@<<else>><<print $qb.firstname>> takes the microphone. @@.qb;"Thank you, thank you!"@@ he says. @@.qb;"I'm <<print $qb.firstname>>, the starting quarterback for the Stallions football team. Our next game is tonight after school. If you want to support us..."@@ He continues on, but you're <<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>too busy looking at <<print $qb.firstname>> to hear what he's saying. @@.thought;He's gotten so confident. He wouldn't be able to speak to the whole school at the start of the year.@@<<else>>too lost in thought to pay attention. @@.thought;I should be the one speaking@@ you think. @@.thought;I used to be the starter and their leader.@@<</if>><</if>>
+
+After <<if $playerStarter>>Sam<<else>><<print $qb.firstname>><</if>> finishes, they pass the microphone down the line. Each boy says their name. <<if $player.confidence<25>>You wait nervously as the microphone gets closer and closer to you. You don't want to speak in front of the whole school!<<else>>You wait impatiently as the microphone slowly makes its way to you. @@.thought;I never knew there were so many people on the team.@@<</if>>
+
+Finally, it's your turn.
+
+<<if $tempTfValue>=3>>@@.player;"<<print $player.firstname>> <<print $player.lastname>>,"@@ you say in your girly voice.
+
+You spot a few chuckles from the other students. @@.thought;Dammit! I forgot to pitch my voice down!@@<<set $team.respect to $team.respect-2>><<elseif $tempTfValue>=2>>@@.player;"<<print $player.firstname>> <<print $player.lastname>>,"@@ you say in a squeaky voice.
+
+You spot a few chuckles from the other students. @@.thought;Dammit! My voice sounds so girly!@@<<set $team.respect to $team.respect-1>><<elseif $player.confidence<25>>@@.player;"<<print $player.firstname>> <<print $player.lastname>>,"@@ you say in a shaky voice.
+
+@@.thought;I sounded too nervous there.@@ You look around, trying to see if anyone noticed, but the <<if $player.masculinity>=50>>other <</if>>guys just continue going down the line.<<else>>@@.player;"<<print $player.firstname>> <<print $player.lastname>>,"@@ you say confidently.<</if>>
+
+[[Finally, the pep rally is over|Evening]]
+
+::PepRally Football Watch
+<<getTfProgress voice>>@@.male;"Up next, the Pinewood Prep football team!"@@ Coach's voice booms.
+
+The other students stand up and clap, so you do too. <<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>As the football players jog in, you scan them, trying to find <<print $qb.firstname>>.
+
+@@.thought;There he is!@@
+
+<<if $player.crush is $qb.firstname>>@@.player;"Woooo! Go <<print $qb.firstname>>!"@@ you yell.<<if $tempTfValue>=3>>
+
+@@.male;"Damn. Some girl really likes <<print $qb.firstname>>,"@@ a guy in front of you says. You blush. @@.thought;Do I really sound that feminine?@@<<else>> You hear a couple chuckles. You know that most guys don't cheer like that for other guys, but you don't really care what they think.<</if>><<else>>You clap even louder. You know <<print $qb.firstname>> won't be able to tell, but you want to support him.<</if>>
+
+The football players arrange themselves in a line, with <<print $qb.firstname>> at the head.
+
+@@.thought;Is he the captain now?@@<<else>>The football players arrange themselves in a line, with <<print $qb.firstname>> at the head.<</if>>
+
+He takes the microphone. @@.qb;"Thank you, thank you!"@@ he says. @@.qb;"I'm <<print $qb.firstname>>, the starting quarterback for the Stallions football team. Our next game is tonight after school. If you want to support us..."@@ He continues on, but you're <<if visited("QB Practice 4 Sex") or visited("QB Practice 5 Sex") or visited("Team Practice 4 Blowjob Start")>>too busy looking at <<print $qb.firstname>> to hear what he's saying. @@.thought;He's gotten so confident. He wouldn't be able to speak to the whole school at the start of the year.@@<<else>>too lost in thought to pay attention. @@.thought;I was the one who spoke at the last pep rally@@ you think. @@.thought;I used to be the starter and their leader.@@<</if>>
+
+After <<print $qb.firstname>> finishes, the other boys go down the line, saying their name.
+
+[[Finally, the pep rally is over|Evening]]

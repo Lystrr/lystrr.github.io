@@ -1,0 +1,1354 @@
+::Sex Shop
+The sex shop is off campus and a good walk away. Luckily, you have a car. You get in and drive there, feeling almost giddy. @@.thought;Once I buy it, I'll be able to fuck <<print $girlfriend.firstname>> whenever I want!@@ You try to imagine how that will feel.
+
+It's a little difficult to imagine. @@.thought;Wait, why can't I imagine it? I've had a dick for all my life, and a pussy for only <<print $day-4+1>> <<if $day-4+1>1>>days<<else>>day<</if>>. I should be able to picture what it'd be like to fuck someone!@@ You're starting to get stressed out, so you convince yourself that getting a dick, even if it's only a plastic one, would be great.
+
+You find parking a block away, and step out of your car. Once you're outside, you quickly realize that you're in a seedy part of town. Ordinarily, this wouldn't faze you. It's only a block away, and you could take care of yourself. But now, without your muscles, you're feeling very vulnerable.
+
+@@.thought;This is for <<print $girlfriend.firstname>>@@. You start walking towards the shop, and see a young, tough-looking guy walking straight towards you. Your breath catches but he walks straight by, giving you only a cursory glance.
+
+[[Walk the rest of the way and enter the shop|Sex Shop Enter]]
+
+::Sex Shop Enter
+The door closes behind you as you step into the shop. A girl with blue spiky hair gives you a once over. @@.female;"Can I help you?"@@
+
+You glance around. There's nobody else here. @@.player;"I'm looking for..."@@ you start to say before catching yourself. Do you really want to tell a stranger that you want a strap-on?
+
+@@.female;"Yes?"@@
+
+[[Ask her for help|Sex Shop Strap On]]
+[[Go look for the strap on yourself|Sex Shop Browse]]
+
+::Sex Shop Strap On
+@@.player;"I'm looking for a strap-on,"@@ you tell her, blushing. @@.player;"Do you know where I can find one?"@@
+
+@@.female;"I didn't take you for that type,"@@ she giggles. You look down, blushing even harder.
+
+@@.player;"Can you just get it for me? Please?"@@
+
+@@.female;"I'm just messing with you. Follow me."@@ You follow her down one of the aisles. She bends over and hunts through the lowest shelf. You have an excellent view of her ass from this angle.
+
+@@.female;"Here you go,"@@ she says, straightening up. You look away quickly, hoping that she didn't notice that you were staring at her.
+
+@@.player;"Thanks,"@@ you say, taking the strap on from her hands and heading for the door. You're already picturing using it on <<print $girlfriend.firstname>>.
+
+@@.female;"Aren't you forgetting something?"@@
+
+@@.player;"Hmm?"@@
+
+@@.female;"You need to pay for that."@@
+
+@@.player;"Oh yeah."@@ With a blush, you give her your card. With that done, you exit the store and drive back to campus.
+
+<<link "Continue" $currentPassage>><<increaseArousal 5>><<set $player.hasStrapon to true>><</link>>
+
+::Sex Shop Browse
+<<getTfProgress ass>><<if not visited("Sex Shop Browse")>>@@.player;"I'm just browsing,"@@ you tell the clerk. She nods, and you step into the main part of the store.<<else>>@@.player;I can't tell her I'm looking for a strap-on! I'll keep looking myself.@@<</if>>
+
+You look at one of the aisles. You see a collection of <<print either("fleshlights", "handcuffs", "vibrators", "dildos")>>, but no strap-ons.
+
+[[Keep browsing|Sex Shop Browse]]
+[[Admit defeat and ask for help|Sex Shop Strap On]]
+
+::Mall
+<<getTfProgress ass>>You are on level 1.
+
+[[Women's Clothing|AfterSchoolShopping Mall WomensOuterwear]]
+[[Men's Clothing|AfterSchoolShopping Mall MensOuterwear]]
+[[Women's Lingerie|AfterSchoolShopping Mall WomensLingerie]]
+[[Shoe Store|AfterSchoolShopping Mall Shoes]]
+
+[[Level 2]]
+
+<<if $braShoppingActive>><<if $player.hasBra and visited("Witch Bra Start")>>[[Leave|Witch Bra Finish]]<<elseif $player.hasBra>>[[Leave|Girlfriend Bra Results]]<<else>>==Leave== (Not before you've finished shopping)<</if>><<elseif $day is 31 and $costume and $player.ownsMakeup is false>>==Leave== (Not before you've finished shopping)<<else>><<if $timeOfDay is 1 and $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">><<if ($tempTfValue is 4 and $player.pants.female is false) or ($player.feet>1 and $player.shoes.female is false)>>==Go back to class== (Not before you're done shopping)<<else>>[[Go back to class|MorningClassPants Return]]<</if>><<elseif $player.isWearingTampon is false and $day>=18 and $day<=24>>==Leave== (Not before you've finished shopping)<<else>>[[Leave|AfterSchoolShopping Finish]]<</if>><</if>>
+
+::AfterSchoolShopping Mall WomensLingerie
+<<getTfProgress boobs>>Your face turns beet red as soon as you step inside this store. <<if $braShoppingActive and $player.hasBra>>It was embarrassing enough to come in here and get fitted for a bra. You're not spending any more time in here if you don't have to.
+
+[[Go back outside|Mall]]<<else>>You've been here <<if visited("AfterSchoolShopping Mall WomensLingerie Buy")>>to buy panties, and it was a humiliating experience.<<elseif visited("AfterSchoolShopping Mall Womens Lingerie")>1>>a couple of times to window shop, but the most you bought was a present for an old girlfriend.<<else>>once before, to buy a present for an old girlfriend. That was an awkward experience: you were fortunate enough to know her size, but you had trouble navigating around the store, and you felt embarrassed to be the only male in a girls underwear store.<</if>>
+
+<<if $braShoppingActive or ($player.hasBra is false and $tempTfValue>=3)>><<if $player.hasBra>>You step in, and catch the eye of the salesgirl from earlier. You flush. @@.thought;Nope. It was a mistake to come in here.@@<<else>>Ths visit is about to be a whole lot more awkward. This time, you're here to buy a bra. For yourself.
+
+<<if visited("Witch Bra Start")>>You turn and look at the bras. There's so many of them, of all different sizes and colors. You look at <<print $witch.firstname>> helplessly.
+
+@@.witch;"Okay,"@@ she says, staring at your tits. @@.witch;"I think you're about a@@<<if $tempTfValue>4>>@@.witch; double D@@<<elseif $tempTfValue is 4>>@@.witch; C@@<<elseif $tempTfValue is 3>>@@.witch; B@@<<else>>@@.witch;n A@@<</if>> @@.witch;cup."@@
+
+@@.thought;How did she just know that?@@
+
+@@.witch;"Now, we're going to need to find the type of bra for you. When are you going to be wearing it?"@@
+
+@@.player;"I don't know. I guess my...my boobs are the most uncomfortable when I'm playing football. I have to run or throw or lift weights."@@
+
+@@.witch;"You probably want a sports bra then."@@
+
+She guides you towards a shelf in the back. @@.witch;"Okay, some girls will look down on you if your bra and panties don't match. I try to match but usually, I'll just wear whatever's closest."@@
+
+@@.thought;She's sharing a lot. I feel a little uncomfortable but she doesn't seem bothered at all. It feels like this is the kind of conversation she'd have with a little sister who she's taking bra shopping.@@
+
+@@.witch;"So what color are your panties?"@@ <<print $witch.firstname>> is asking.
+
+[[Tell her|Mall Witch Panties]]
+[[Say that it's private|Mall Witch Private]]<<elseif visited("Girlfriend Bra Start")>>You turn and look at the bras. There's so many of them, of all different sizes and colors. You look at <<print $girlfriend.firstname>> helplessly.
+
+@@.girlfriend;"Okay,"@@ <<print $girlfriend.firstname>> says, taking charge. @@.girlfriend;"Do you know your size?"@@
+
+@@.player;"No."@@
+
+<<if $girlfriend.sawBoobs>>@@.girlfriend;"Okay. You look like you're about <<if $tempTfValue>=4>>a C<<elseif $tempTfValue is 3>>a B<<else>>an A<</if>> cup to me, but I don't know your band size."@@
+
+@@.player;"Band size?"@@
+
+@@.girlfriend;"Yeah,"@@ she says impatiently. @@.girlfriend;"But we can just asks a salesgirl."@@<<else>>@@.girlfriend;"Okay, then we'll have to ask a salesgirl."@@<</if>>
+
+@@.player;"You're going to ask someone?"@@ you ask, panicking. You just wanted this to be between you and <<print $girlfriend.firstname>>! You don't want anyone else to know that you have boobs!
+
+@@.girlfriend;"Let's find a bra for you first."@@
+
+@@.player;"Okay,"@@ you say. She said that @@.girlfriend;for you@@ part too loudly for your comfort. There are other customers here. You think you see one woman looking your way, and your face turns beet red.
+
+@@.girlfriend;"Do you know what type of bra you want? There's strapless, sports bras, push ups, demi-bras, padded bras, wireless bras, bralettes."@@
+
+@@.player;"Uh, I don't know. It's for when I'm playing football or working out."@@
+
+@@.girlfriend;"Okay. So a sports bra then."@@ You follow her over to the sports bra section.
+
+<<if $girlfriend.sawInPanties>>@@.girlfriend;"You're wearing your <<print $player.panties.informalName>>, right?"@@
+<<if $player.isWearingPanties is true>>
+[[Nod|Mall Girlfriend Nod]]<</if>>
+[[Deny it|Mall Girlfriend Deny]]<<else>>@@.girlfriend;"Do you have panties?"@@
+<<if $player.hasWornPanties>>
+[[Yes|Mall Girlfriend Nod]]<</if>>
+[[No|Mall Girlfriend Deny]]<</if>><<else>>You turn and look at the bras. There's so many of them, of all different sizes and colors. You look around helplessly.
+
+<<if $player.feminine>=18>>@@.female;"Hello?"@@ a salesgirl asks you. @@.female;"What are you looking for?"@@<<else>>@@.female;"Hello?"@@ a salesgirl asks, approaching you hesitantly. @@.female;"Are you here to buy something?"@@<</if>>
+
+@@.player;"Um, yeah,"@@ you say, feeling embarrassed. @@.player;"I'm here to get a bra for my, uh, my friend."@@
+
+<<if $player.feminine>=18>>@@.female;"Okay, and is she about the same size as you?"@@
+
+You turn red. @@.thought;She must have seen through my lie. Either that or she thinks I'm a girl.@@<<else>>@@.female;"Okay, and what size is she?"@@<</if>>
+
+<<if $player.feminine>=18>>@@.player;"Yeah. @@<<else>>@@.player;"@@<</if>>@@.player;About a @@<<if $tempTfValue is 5>>@@.player;double D cup."@@<<elseif $tempTfValue is 4>>@@.player;C cup."@@<<else>>@@.player;B cup."@@<</if>>
+
+@@.female;"And in what color?"@@
+
+@@.player;"Color?"@@ you ask blankly. You weren't expecting to have to answer this many questions.
+
+<<if $player.underwear.properName is "Plain White Panties">><<set $underwearColor to "White">><<set $underwearColorLowercase to "white">><<elseif $player.underwear.properName is "Blue French Cut Panties">><<set $underwearColor to "Blue">><<set $underwearColorLowercase to "blue">><<elseif $player.underwear.properName is "Lacey purple panties" or $player.underwear.properName is "Purple hipster panties">><<set $underwearColor to "Purple">><<set $underwearColorLowercase to "purple">><<elseif $player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts">><<set $underwearColor to "Black">><<set $underwearColorLowercase to "black">><<elseif $player.underwear.properName is "Forest green bikini-style panties">><<set $underwearColor to "Green">><<set $underwearColorLowercase to "green">><<elseif $player.underwear.properName is "Grey Bikini Panties">><<set $underwearColor to "Grey">><<set $underwearColorLowercase to "grey">><<else>><<set $underwearColor to "none">><</if>><<if $player.feminine>=18>>@@.female;"Yeah. I always try to match my bra and my panties."@@
+
+@@.thought;She's sharing a lot. I feel a little uncomfortable but she doesn't seem bothered at all. It feels like this is the kind of conversation she'd have with a female customer.@@
+
+@@.female;"What color are your panties?"@@
+
+<<if $player.isWearingPanties is true>>@@.player;"<<print $underwearColorLowercase>>,"@@ you say automatically.
+
+@@.thought;Oh my god, why did I say that? I just admitted that I was wearing panties!@@
+
+The salesgirl doesn't have any reaction. @@.female;"Okay, let me get a <<print $underwearColorLowercase>> bra for you,"@@ she says, grabbing one off the shelf.
+
+[[Follow her into the changing room|Mall Girlfriend Salesgirl Measure]]<<else>>@@.player;"Oh, I'm not wearing panties,"@@ you say automatically.
+
+Her eyes widen and you realize in horror that she really does think that you're a girl who's going commando.
+
+@@.player;"Uh, a black bra is fine,"@@ you say quickly.
+
+[[She picks one out and disappears into the changing room|Mall Girlfriend Salesgirl Measure]]<</if>><<else>>@@.female;"Yeah. Some girls like to match. She must have told you what color she wanted?"@@
+
+@@.player;"Uh, no."@@
+
+<<if $player.isWearingPanties is true>>She leans in close. @@.female;"There isn't a friend, right?"@@ she whispers.
+
+@@.player;"Uh..."@@ you stutter, fighting the urge to flee out of the store. @@.thought;She knows that I'm buying a bra! For myself! She must think I'm a sissy!@@
+
+@@.female;"It's okay,"@@ she says, trying to calm you down. @@.female;"We get more sissies in here than you'd think."@@
+
+@@.thought;Really?@@
+
+@@.female;"Now, what color are your panties?"@@
+
+@@.player;"They're <<print $underwearColorLowercase>>,"@@ you say quietly.<<else>>@@.female;"How about black then?"@@
+
+@@.player;"Uh, yeah, I guess."@@<</if>>
+
+[[She picks out a bra and disappears into the changing room|Mall Girlfriend Salesgirl Measure]]<</if>><</if>><</if>><<elseif not visited("Mall WomensLingerie Bra") and visited("MorningClassHeat Remove")>>This time, the visit is about to be a lot more awkward. You're going to buy a bra. Again.
+
+@@.thought;Okay. I can do this. I did it before. But @@<<if visited("Witch Bra Start")>>@@.thought;that was when I looked like a girl. More like a girl. And I could do it because there wasn't anything to be embarrassed about.@@<<else>>@@.thought;that was when <<print $girlfriend.firstname>> was there helping me out. Now that I'm alone, I feel like I'm doing something wrong.@@<</if>>
+
+You pace back and forth outside the shop. If you go in, people are going to see you. You won't be able to pretend you're buying a bra for someone else, not when you have these orbs on your chest. And you don't even //need// a bra, not really. Sure, it was embarrassing when everyone saw your bra, but that was a one-time thing. And you already have a bra. @@.thought;It's uncomfortable, though, when I wear it for a while.@@
+
+@@.female;"Hello, @@<<if $player.feminine>=18>>@@.female;miss?"@@
+
+It takes a moment for you to realize that she's talking to you.<<elseif $player.feminine>=14>>@@.female;miss...I mean sir."@@<<else>>@@.female;sir?"@@<</if>> a salesgirl asks you.
+
+@@.player;"Uh, yes?"@@
+
+@@.female;"I saw you walking back and forth outside the shop. Do you want to come in?"@@
+
+You hesitate, feeling scared and ashamed. But if she can tell that you're thinking about going into the store, then other people can too, and besides, she isn't making fun of you.<<if $player.feminine>=18>> @@.thought;She even thinks I'm a girl.@@<</if>>
+
+[[Walk inside|Mall WomensLingerie Bra]]<<elseif $player.underwear.panties is false and (not $pantyRaid or $pantyRaid.takenFrom is "")>>This visit is about to be a lot more awkward. This time, you're here to buy panties. For yourself.
+
+@@.female;"Hi,"@@ a salesgirl says. @@.female;"Can I help you?"@@
+
+@@.thought;Okay, play it cool.@@
+
+@@.player;"Uh, hi,"@@ you reply. @@.player;"I'm here to get something for...my friend."@@
+
+@@.female;"Oh, okay,"@@ she says, not seeming to notice how nervous you are. @@.female;"What are you going to get her? Panties, bras, stockings, lingerie?"@@
+
+@@.player;"Panties,"@@ you say firmly.
+
+@@.female;"Sure, the panties section is over here,"@@ she says, leading you to the opposite end of the store. @@.thought;Why did it have to be all the way over here?@@ you wonder, as you pass what feels like every customer in the store. You wonder if they know why you're there.
+
+@@.female;"Can I help you find a pair?"@@
+
+@@.player;"Uh, sure."@@
+
+@@.female;"Do you know what her size is?"@@
+
+You know what size boxers you wore, but you get the feeling that won't be relevant. @@.thought;I wore large boxers so it would fit my dick, but I don't have that anymore.@@
+
+@@.player;"Um, medium?"@@
+
+She gestures towards a selection of panties.
+
+[[Plain white panties|AfterSchoolShopping Mall WomensLingerie Buy][$player.panties to "Plain white panties"]]
+[[Forest green bikini-style panties|AfterSchoolShopping Mall WomensLingerie Buy][$player.panties to "Forest green bikini-style panties"]]
+[[Purple hipster panties|AfterSchoolShopping Mall WomensLingerie Buy][$player.panties to "Purple hipster panties"]]
+[[Lacy black boyshorts|AfterSchoolShopping Mall WomensLingerie Buy][$player.panties to "Lacy black boyshorts"]]
+[[You change your mind and run out|AfterSchoolShopping Mall WomensLingerie Refuse]]<<elseif $tempTfValue>=2>>You could use a bra, but now isn't the time. You've got to get a tampon.
+
+@@.female;"Hi,"@@ a salesgirl says. @@.female;"Can I help you?"@@
+
+@@.player;"Um, no thanks,"@@ you say, quickly backing out of the store. @@.thought;I was so awkward.@@
+
+[[Look around the mall|Mall]]<<else>>Now, this store feels a lot more intimidating. You wonder if you're going to be shopping here regularly.
+
+@@.thought;I don't need anything@@ you think, trying to reassure yourself.<<if $player.isWearingTampon is false and $day>=18 and $day<=24>> @@.thought;I need to go find a tampon.@@<<else>> @@.thought;Besides, if I bought panties for no reason, I'm pretty sure I'd change again.@@<</if>>
+
+[[Go back outside|Mall]]<</if>><</if>>
+
+::Mall Girlfriend Nod
+<<if $player.underwear.properName is "Plain white panties">><<set $underwearColor to "White">><<set $underwearColorLowercase to "white">><<elseif $player.underwear.properName is "Blue French Cut Panties">><<set $underwearColor to "Blue">><<set $underwearColorLowercase to "blue">><<elseif $player.underwear.properName is "Lacey purple panties" or $player.underwear.properName is "Purple hipster panties">><<set $underwearColor to "Purple">><<set $underwearColorLowercase to "purple">><<elseif $player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts">><<set $underwearColor to "Black">><<set $underwearColorLowercase to "black">><<elseif $player.underwear.properName is "Forest green bikini-style panties">><<set $underwearColor to "Green">><<set $underwearColorLowercase to "green">><<elseif $player.underwear.properName is "Grey Bikini Panties">><<set $underwearColor to "Grey">><<set $underwearColorLowercase to "grey">><<else>><<set $underwearColor to "none">><</if>>You nod, feeling ashamed to admit that you're wearing panties. <<if $curseActive is false>>@@.thought;There's nothing making me wear them. Why am I doing it?@@<<else>>@@.thought;As soon as I break the curse, I'm getting out of them.@@<</if>> On the other hand, you're in a female underwear store, shopping for a bra with a girl. Wearing panties isn't even the most feminine thing you'll be doing today.
+
+<<if $underwearColor is not "none">>@@.girlfriend;"Okay. I like to match my bra and panties. They look really cute that way. I'd tell you to buy some bras to match all of your underwear, but since you only have one pair..."@@
+
+You're worried that she's about to suggest you buy more panties. Thankfully, she goes in a different direction.
+
+@@.girlfriend;"Well, I think you should match it. That would mean a <<print $underwearColorLowercase>> sports bra, right?"@@
+
+You nod.<<else>>@@.girlfriend;"I like to match my bra and panties. What color are your panties, again?"@@
+
+You blush. @@.player;"I don't have any."@@
+
+@@.girlfriend;"Okay. Let's get you, uh, how does red sound?"@@
+
+@@.thought;I don't like it. But I guess a red bra is better than a bra in a color like pink.@@ @@.player;"Fine."@@<</if>>
+
+@@.girlfriend;"Okay. Let's go find a salesgirl."@@
+
+@@.player;"No. Please."@@
+
+@@.girlfriend;"What?"@@
+
+@@.player;"I can't have anyone seeing me buy me a bra."@@
+
+She chuckles. @@.girlfriend;"You're in a public store. I think everyone knows why you're here. But if you want, I guess I could measure you myself."@@
+
+[[That sounds good|Mall Girlfriend Girlfriend]]
+<<if $player.relationship is "">>[[You don't want your ex-girlfriend touching your boobs|Mall Girlfriend Salesgirl]]<<else>>[[You don't want your girlfriend touching your boobs|Mall Girlfriend Salesgirl]]<</if>>
+
+::Mall Girlfriend Girlfriend
+@@.player;"Okay, that sounds good."@@
+
+She nods. @@.girlfriend;"I thought you might say that. So I put a tape measure in my purse just in case."@@
+
+@@.player;"Wow. You think of everything."@@
+
+She smiles at that, picks up a couple of bras, and walks over to a salesgirl. @@.girlfriend;"We're going to use the changing room. Is that alright?"@@
+
+The girl glances at the bra in <<print $girlfriend.firstname>>'s hand, and then at her chest. @@.female;"I don't think that's going to fit you. No offense. Do you want me to measure you?"@@
+
+@@.girlfriend;"No. We're okay."@@
+
+The salesgirl looks confused and then her face changes. You hurry into the changing room before you can get embarrassed any more.
+
+[[Take off your shirt|Mall Girlfriend Measure]]
+
+::Mall Girlfriend Measure
+@@.girlfriend;"Okay,"@@ she says, taking the tape measure out of her purse while you take off your shirt. Even though it's just the two of you, you feel exposed. She's wearing all of her clothes, and your boobs are on display!
+
+She steps behind you and presses the tape measure to your back. It feels cold on your skin. She wraps it around your chest, just under your boobs and writes something on her phone.
+
+Just when you think it's over, she puts the tape measure back and measures you again. This time, it goes all the way around your <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> breasts. You shiver, feeling turned on in spite of yourself.
+
+@@.girlfriend;"Hold still,"@@ she mutters. @@.girlfriend;"Okay. There we go."@@
+
+She removes the tape measure and hands you one of the bras. @@.girlfriend;"You know how to put this on, right?"@@
+
+@@.player;"Umm, I'm supposed to put ir on backwards first, right?"@@
+
+@@.girlfriend;"Not for a sports bra. Let me show you. First you put your arms through, like this,"@@ she says, putting your arms through the arm holes.
+
+@@.girlfriend;"And slide it up to your shoulder."@@ You move the bra up your arms. It feels like there's a tight rubber band over your shoulders. You have no idea how it's going to fit on your chest
+
+@@.girlfriend;"And then you reach up and put your head in."@@
+
+You manage to get your head through the head hole, and then lower the bra until it covers your boobs, feeling disturbingly feminine as you do so. @@.thought;That wasn't that bad. It was like putting on a really tight shirt.@@
+
+@@.girlfriend;"All done!"@@ she says. @@.girlfriend;"How are you doing?"@@
+
+You're not doing too well. <<link "You can already feel yourself changing." TfPassagePicker>><<set $tfRecoverPassage to "Mall Girlfriend Recover">><<set $tfReason to "bra">><<set $tfCircumstances.location to "changing room">><<set $tfCircumstances.locationType to "">><<set $tfCircumstances.witnesses to $girlfriend.firstname>><<set $tfCircumstances.extraClothing to "bra">><</link>>
+<<set $beforeSexClothes.shirt to $player.shirt>><<set $player.shirt to null>>
+
+::Mall Girlfriend Deny
+@@.player;"No,"@@ you say.
+
+<<if $player.isWearingPanties is true>>You're wearing panties right now, but you're in the middle of a store! You can't possibly admit that.<<elseif $player.hasWornPanties>>@@.thought;Why would I ever wear panties again? Though...they did feel comfortable.@@<<else>>@@.thought;And I don't plan to wear them.@@<</if>>
+
+@@.girlfriend;"Okay,"@@ she says, looking a little disappointed.
+
+@@.thought;She must be disappointed because it would be easier for her if I //was// wearing panties.@@
+
+@@.girlfriend;"Okay,"@@ she says. @@.girlfriend;"How about, oh, a red bra?"@@
+
+@@.thought;I don't like it. But I guess a red bra is better than a bra in a color like pink.@@ @@.player;"Fine."@@
+
+@@.girlfriend;"Okay. Let's go find a salesgirl."@@
+
+@@.player;"No. Please."@@
+
+@@.girlfriend;"What?"@@
+
+@@.player;"I can't have anyone seeing me buy me a bra."@@
+
+She chuckles. @@.girlfriend;"You're in a public store. I think everyone knows why you're here. But if you want, I guess I could measure you myself."@@
+
+[[That sounds good|Mall Girlfriend Girlfriend]]
+<<if $player.relationship is "">>[[You don't want your ex-girlfriend touching your boobs|Mall Girlfriend Salesgirl]]<<else>>[[You don't want your girlfriend touching your boobs|Mall Girlfriend Salesgirl]]<</if>>
+
+::Mall Girlfriend Salesgirl
+@@.player;"It would be kind of weird,"@@ you say hesitantly.
+
+@@.girlfriend;"Okay."@@ She walks up to a salesgirl, with you following close behind.
+
+@@.female;"Can I help you? Do you need to try on a bra?"@@
+
+@@.girlfriend;"It's not for me. It's for him,"@@ she says, pointing to you.
+
+You want to hide under a rock.
+
+She giggles, then quickly catches herself. @@.female;"Sorry. I would be happy to help you, si...uh, just follow me to the changing room."@@
+
+[[You follow her|Mall Girlfriend Salesgirl Measure]]
+
+::Mall Girlfriend Salesgirl Measure
+@@.female;"Okay, take off your shirt,"@@ she says. It's clear that she's trying to act professionally, but you keep catching her sneaking peeks at you.
+
+@@.thought;I don't really want to take off my shirt for her. But I guess I have to.@@
+
+You take off your shirt, exposing your <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> breasts.
+
+<<if $player.feminine<18 or visited("Girlfriend Bra Start")>>@@.female;"Wow! I didn't think you would have breasts already. That's so great!"@@
+
+@@.player;"It is?"@@
+
+@@.female;"Yeah! You're so brave!"@@
+
+@@.thought;Okay. She thinks I'm transitioning. But she's being supportive so I don't want to correct her. And she at least doesn't recognize me. I don't recognize her either.@@<<else>>@@.female;"You have nice boobs. I'm jealous."@@
+
+@@.player;"Uh, thank you?"@@ you say, trying to comprehend the fact that an actual female is jealous of you.<</if>>
+
+<<if $player.isWearingPanties is true>>@@.female;"And those are some cute panties you're wearing!"@@ she continues.
+
+You look down, and realize that the waistband of your <<print $player.underwear.informalName>> is showing.<<else>>@@.female;"This bra would go great with a matching pair of panties."@@<</if>>
+
+@@.thought;Fuck.@@
+
+@@.player;"Can you just measure me?"@@
+
+She nods, takes the tape measure and stretches it around your chest, right under your boobs. She then moves it up a few inches higher and does the same thing. You blush at the touch from a complete stranger.
+
+@@.female;"This bra is the best fit for you,"@@ she says, handing you one.
+
+@@.female;"I'll be outside. Just let me know if you need anything, and stop by the register when you're done. You can wear it out."@@
+
+[[Thank her and get changed|Mall Salesgirl Change]]
+<<set $beforeSexClothes.shirt to $player.shirt>><<set $player.shirt to null>>
+
+::Mall Salesgirl Change
+You pick up the bra. It's just a simple piece of clothing, but it feels so significant in your hands. <<if $player.isWearingPanties is true>>@@.thought;I'm already wearing panties. And now I'm going to be wearing a bra too.@@<</if>> You can hear someone getting changed in the room next to yours. You wonder if she's trying on a bra too. @@.thought;We'll both be wearing the same thing under our shirts. No, focus!@@
+
+You pick up the bra, and close your eyes, trying to recall <<print $girlfriend.firstname>> putting her bra back on after sex. An image comes to mind, but you dismiss it. @@.thought;This one doesn't have a clasp. So do I just pull it over my head or what?@@
+
+You decide to try. It feels weird and scary, and you feel foolish and feminine as you pull the bra over your head, but you're grateful that you at least don't have to deal with a clasp.
+
+Finally, you get it on.
+
+As soon as you do so, <<link "you begin to change" TfPassagePicker>><<set $tfRecoverPassage to "Mall Girlfriend Recover">><<set $tfReason to "bra">><<set $tfCircumstances.location to "changing room">><<set $tfCircumstances.locationType to "">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "bra">><</link>>
+
+::Mall Girlfriend Recover
+Now that your transformation is done, you take a look at yourself in the mirror.
+
+<<if $player.face is 0>>A boy<<elseif $player.face is 1>>A feminine boy<<else>>An androgynous boy<</if>> with <<if $player.hair is 0>>short hair<<elseif $player.hair is 1>>a cute pixie cut<<else>>long hair<</if>> and a scared expression on his face looks back at you.
+
+He's shirtless, and is only wearing a <<if $underwearColor is "none">>black<<else>><<print $underwearColorLowercase>><</if>> bra that does a good job of covering his <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> tits.
+
+On his legs, he's wearing a pair of <<print $player.pants.informalName>>.<<if $player.isWearingPanties is true>> The waistband of a <<if (visited("Mall Witch Panties") and $underwearColor is not "none") or (visited("Mall Witch Private") and ($player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts"))>>matching <</if>>pair of <<print $player.underwear.informalName>><<else>>The waistband of a pair of <<print $player.underwear.informalName>><</if>> peeks through.
+
+You blush and pull your <<print $player.pants.informalName>> up higher. @@.thought;I hope no one can see my panties. And can they see my bra?@@
+
+There's nothing left for you to do in this room. [[Time to buy the bra|Mall Girlfriend Bra Buy]]
+<<if $underwearColor is "none">><<set $braBought = {
+	"properName": "Red sports bra",
+	"informalName": "red sports bra",
+	"images": ["images/clothes/bras/sports_bra_small_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png"],
+	"school": true,
+	"football": true,
+	"casual": true
+}>><<else>><<set $braBought = {
+	"properName": $underwearColor + " sports bra",
+	"informalName": $underwearColorLowercase + " sports bra",
+	"images": ["images/clothes/bras/sports_bra_small_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png"],
+	"school": true,
+	"football": true,
+	"casual": true
+}>><<if $underwearColorLowercase is "blue">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png"]>><<elseif $underwearColorLowercase is "green">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png"]>><<elseif $underwearColorLowercase is "purple">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png"]>><<elseif $underwearColorLowercase is "white">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png"]>><</if>><</if>>
+<<set $clothesInventory.bra.push($braBought)>>
+<<set $player.hasBra to true>>
+<<set $player.bra to $braBought>>
+
+::Mall Girlfriend Bra Buy
+You walk out nervously, trying not to think about the bra that now sits on your chest. The salesgirl waves you over and you step up to the counter.
+
+There are a couple of customers in the store, and it feels like their eyes are locked on you. You do your best to ignore them.
+
+You give her your card, and she gives it back to you, telling you to have a nice day.<<if visited("Girlfriend Bra Start") or $player.feminine<18>> In a lower voice, she wishes you good luck.<</if>>
+
+<<if visited("Girlfriend Bra Start")>>@@.girlfriend;"I'm proud of you, <<print $player.firstname>>,"@@ <<print $girlfriend.firstname>> tells you.
+
+<</if>>@@.thought;I did it. I bought a bra.@@
+
+[[Walk out|Mall]]
+<<set $player.shirt to $beforeSexClothes.shirt>>
+
+::Mall Witch Panties
+You instantly know the answer to that question. You've thought about them every time you put them on. <<if $player.underwear.properName is "Plain White Panties">><<set $underwearColor to "White">><<set $underwearColorLowercase to "white">><<elseif $player.underwear.properName is "Blue French Cut Panties">><<set $underwearColor to "Blue">><<set $underwearColorLowercase to "blue">><<elseif $player.underwear.properName is "Lacey purple panties" or $player.underwear.properName is "Purple hipster panties">><<set $underwearColor to "Purple">><<set $underwearColorLowercase to "purple">><<elseif $player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts">><<set $underwearColor to "Black">><<set $underwearColorLowercase to "black">><<elseif $player.underwear.properName is "Forest green bikini-style panties">><<set $underwearColor to "Green">><<set $underwearColorLowercase to "green">><<elseif $player.underwear.properName is "Grey Bikini Panties">><<set $underwearColor to "Grey">><<set $underwearColorLowercase to "grey">><<else>><<set $underwearColor to "none">><</if>>
+
+<<if $underwearColor is "none">>@@.player;"Actually, I'm not wearing panties,"@@ you say shyly.
+
+@@.witch;"What? You went bra-shopping without wearing panties?"@@
+
+<<if $player.hasWornPanties>>@@.player;"Hey, I'm not just some girl. This trip was just to pick out a bra. I can wear whatever I want!"@@ Halfway through, you realize that some of the shoppers have heard you. You finish the rest of your rant in a low whisper.
+
+@@.witch;"Fine,"@@ <<print $witch.firstname>> says with a shrug.<<else>>@@.player;"No. Bra, fine, I need it. But I'm never going to wear panties."@@
+
+@@.witch;"You've never worn panties?"@@ she asks in disbelief. @@.witch;"We're here. We could always get you some...never mind, we can talk about this later."@@<</if>>
+
+@@.witch;"Well, I think this black bra looks cute."@@
+
+@@.player;"Um, okay."@@<<else>>@@.player;"<<print $underwearColor>>,"@@ you whisper.
+
+<<print $witch.firstname>> rifles through the items, finally picking a small <<print $underwearColorLowercase>> bra.<</if>>
+
+@@.witch;"I'm off to the magic store. Come get me if you need anything,"@@ she says, walking off.
+
+@@.player;"But there isn't..."@@
+
+@@.female;"Hi!"@@ a perky voice says. @@.female;"Do you need anything?"@@
+
+[[Turn around to face her|Mall Bra Salesperson]]
+
+::Mall Witch Private
+@@.player;"That's private!"@@
+
+She rolls her eyes. @@.witch;"Fine. How about this black bra?"@@ she asks, picking it up. @@.witch;"I think it looks cute."@@
+
+You grab it. You don't want "cute" to describe anything that you're wearing, but all of these bras are really feminine and you're already ready for this shopping trip to be over.
+
+@@.witch;"I'm off to the magic store. Come get me if you need anything,"@@ she says, walking off.
+
+@@.player;"But there isn't..."@@
+
+@@.female;"Hi!"@@ a perky voice says. @@.female;"Do you need anything?"@@
+
+[[Turn around to face her|Mall Bra Salesperson]]
+
+::Mall Bra Salesperson
+@@.player;"Um, hi,"@@ you say, turning around to look at her. She's a short, perky girl. <<if $temporarilyTransformed>>You wait for her to say something, to tell you that you're not allowed to hold a bra or to call you a pervert.
+
+Instead she smiles, and asks, @@.female;"Do you want to try it on?"@@
+
+@@.thought;That's right. I look like a real girl.@@
+
+@@.player;"Sure,"@@ you say in a feminine voice.
+
+@@.female;"The changing rooms are in the back,"@@ she says. @@.female;"Do you need any help with finding the right size?"@@
+
+@@.player;"Um, I have @@<<getTfProgress boobs>><<if $tempTfValue>4>>@@.player;double D@@<<elseif $tempTfValue is 4>>@@.player;C@@<<elseif $tempTfValue is 3>>@@.player;B@@<<else>>@@.player;A@@<</if>> @@.player;cups,"@@ you say, embarrassed.<<if $player.masculinity<25>> Your gaze flicks over to her chest, where her much larger breasts are displayed.<</if>>
+
+@@.female;"Do you know your band size?"@@ When you don't respond, she says, @@.female;"I'll take that as a no."@@
+
+You catch her looking at you strangely. @@.player;"All of my bras are old,"@@ you lie. @@.player;"I might have outgrown my last one."@@
+
+@@.female;"Don't worry. Let's just go to the changing room and I can get your size."@@<<else>>@@.female;"Is this a gift for a sister or a girlfriend?"@@
+
+@@.player;"Yeah,"@@ you say, grateful for the out. @@.player;"My girlfriend."@@
+
+@@.female;"And this is the right size?"@@
+
+@@.player;"Yeah. She has @@<<getTfProgress boobs>><<if $tempTfValue>4>>@@.player;double D@@<<elseif $tempTfValue is 4>>@@.player;C@@<<elseif $tempTfValue is 3>>@@.player;B@@<<else>>@@.player;A@@<</if>> @@.player;cups."@@
+
+@@.female;"What about her band size?"@@
+
+@@.player;"Uh..."@@
+
+@@.female;"I don't want you to buy something that won't fit. Why don't you ask her for her size, and then let me know."@@
+
+@@.thought;Is that how far it is around my chest? I don't know that!@@<<if visited("Witch Bra Start")>>@@.thought; I don't want to ask <<print $witch.firstname>> to measure it either.@@<<else>>@@.thought; I could ask <<print $girlfriend.firstname>> to measure it, but there's no good place to do that in a mall.@@<</if>>
+
+@@.player;"Can't I just take it into the changing room and see if it's not the right size?"@@
+
+@@.female;"Why would you...Oh!"@@ You blush, cursing yourself for slipping up.
+
+Lowering her voice, she says, @@.female;"Don't be embarrassed, this is more common than you think. Why don't we go into the changing room."@@
+
+You nod nervously, embarrassed at having your secret discovered, but also excited to be alone with a cute girl.<</if>>
+
+[[Follow her to the changing room|Mall Bra ChangingRoom]]
+
+::Mall Bra ChangingRoom
+The girl closes the door and turns to you. @@.female;"Can you take off your shirt?"@@
+
+You gulp. <<if $temporarilyTransformed>>@@.thought;I look like a girl. She's not going to see anything that would give me away.@@<<else>>@@.thought;She already knows my secret.@@<</if>> Shyly, you remove your <<print $player.shirt.informalName>>, exposing your chest and modest boobs.
+
+<<if $temporarilyTransformed>>She doesn't look fazed.<<else>>@@.female;"Wow! These are really developed!"@@ She studies your face and body, while you blush under her gaze. <<if $player.feminine>=14>>@@.female;"Your transition's going so well. If I didn't know, I might think you were a girl!"@@<<else>>@@.female;"You're going to look so pretty once you transition."@@<</if>><</if>>
+
+She takes a tape measure, and wraps it around your chest, just under your boobs. She does a couple more measurements, but you're not paying attention to what's being measured. You're more concerned with not becoming aroused as she touches your chest and your breasts. She's so close, but her touch remains professional.<<if $temporarilyTransformed>> You get the impression that she's used to this, and doesn't see this as anything out of the ordinary.<</if>>
+
+@@.female;"That's actually the right size for you,"@@ she finally tells you. @@.female;"Do you want to wear it out?"@@
+
+@@.player;"Uh, sure."@@
+
+@@.female;"Okay. Just stop by the register when you're done and I'll ring you up."@@
+
+And then she's gone, leaving you alone in the changing room with the bra.
+
+[[Put it on|Mall Bra Wear]]
+<<increaseArousal 5>><<set $beforeSexClothes.shirt to $player.shirt>><<set $player.shirt to null>>
+
+::Mall Bra Wear
+You pick up the bra. It's just a simple piece of clothing, but it feels so significant in your hands. <<if $player.isWearingPanties is true>>@@.thought;I'm already wearing panties. And now I'm going to be wearing a bra too.@@<</if>> You can hear someone getting changed in the room next to yours. You wonder if she's trying on a bra as well. @@.thought;We'll both be wearing the same thing under our shirts. No, focus!@@
+
+You pick up the bra, and close your eyes, trying to recall <<print $girlfriend.firstname>> putting her bra back on after sex. An image comes to mind, but you dismiss it. @@.thought;This one doesn't have a clasp. So do I just pull it over my head or what?@@
+
+You decide to try. It feels weird and scary, and you feel foolish and feminine as you pull the bra over your head, but you're grateful that you at least don't have to deal with a clasp.
+
+Finally, you get it on and look in the [[mirror|Mall Bra Mirror]]
+<<if $underwearColor is "none">><<set $braBought = {
+	"properName": "Black sports bra",
+	"informalName": "black sports bra",
+	"images": ["images/clothes/bras/sports_bra_small_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png", "images/clothes/bras/sports_bra_large_breasts_black.png"],
+	"school": true,
+	"football": true,
+	"casual": true
+}>><<else>><<set $braBought = {
+	"properName": $underwearColor + " sports bra",
+	"informalName": $underwearColorLowercase + " sports bra",
+	"images": ["images/clothes/bras/sports_bra_small_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png", "images/clothes/bras/sports_bra_large_breasts_red.png"],
+	"school": true,
+	"football": true,
+	"casual": true
+}>><<if $underwearColorLowercase is "blue">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png", "images/clothes/bras/sports_bra_large_breasts_blue.png"]>><<elseif $underwearColorLowercase is "green">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png", "images/clothes/bras/sports_bra_large_breasts_green.png"]>><<elseif $underwearColorLowercase is "purple">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png", "images/clothes/bras/sports_bra_large_breasts_purple.png"]>><<elseif $underwearColorLowercase is "white">><<set $braBought.images to ["images/clothes/bras/sports_bra_small_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png", "images/clothes/bras/sports_bra_large_breasts_white.png"]>><</if>><</if>>
+<<set $clothesInventory.bra.push($braBought)>>
+<<set $player.hasBra to true>>
+<<if $temporarilyTransformed>><<set $player.bra to $braBought>><</if>>
+
+::Mall Bra Mirror
+<<if $temporarilyTransformed>>A scared girl looks back at you. It takes a second before it clicks that she's you. She has big, blue eyes, and a face that would be cute if she were able to relax.
+
+She's shirtless, and is only wearing by a <<if $underwearColor is "none">>black<<else>><<print $underwearColorLowercase>><</if>> bra that does a good job of covering her <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> tits.
+
+On her legs, she's wearing a baggy, ill-fitting pair of <<print $player.pants.informalName>>.<<if $player.isWearingPanties is true>> The waistband of a <<if (visited("Mall Witch Panties") and $underwearColor is not "none") or (visited("Mall Witch Private") and ($player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts"))>>matching <</if>>pair of <<print $player.underwear.informalName>> peeks through.
+
+You blush and pull your <<print $player.pants.informalName>> up higher, but they immediately fall back down once you let go. @@.thought;Everyone will be able to see my panties. And can they see my bra?@@<<else>>
+
+@@.thought;Will anyone be able to see that I'm wearing a bra?@@<</if>>
+
+You put your <<print $beforeSexClothes.shirt.informalName>> back on, turn around, and look over your shoulder. @@.thought;Yeah, it's visible through my shirt.@@ For the first time, you're comforted by the thought of everyone seeing you as a girl. If a girl's bra strap shows through her shirt, it's normal. If people saw you as a guy, you'd be made fun of. Still, the thought of everyone seeing you walking around, wearing a bra<<if $player.isWearingPanties is true>> and panties<</if>> is humiliating.<<else>><<if $player.face is 0>>A boy<<elseif $player.face is 1>>A feminine boy<<else>>An androgynous boy<</if>> with <<if $player.hair is 0>>short hair<<elseif $player.hair is 1>>a cute pixie cut<<else>>long hair<</if>> and a scared expression on his face looks back at you.
+
+He's shirtless, and is only wearing by a <<if $underwearColor is "none">>black<<else>><<print $underwearColorLowercase>><</if>> bra that does a good job of covering his <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> tits.
+
+On his legs, he's wearing a pair of <<print $player.pants.informalName>>.<<if $player.isWearingPanties is true>> The waistband of a <<if (visited("Mall Witch Panties") and $underwearColor is not "none") or (visited("Mall Witch Private") and ($player.underwear.properName is "Black Bikini Bottoms" or $player.underwear.properName is "Lacy black boyshorts"))>>matching <</if>>pair of <<print $player.underwear.informalName>> peeks through.
+
+You blush and pull your <<print $player.pants.informalName>> up higher. @@.thought;I hope no one can see my panties. And can they see my bra?@@<<else>>
+
+@@.thought;Will anyone be able to see that I'm wearing a bra?@@<</if>>
+
+You put your <<print $beforeSexClothes.shirt.informalName>> back on, turn around, and look over your shoulder. @@.thought;Yeah, it's visible through my shirt.@@ Your stomach drops. You're going to walk out of here, surrounded by people you know, wearing a bra<<if $player.isWearingPanties is true>> and panties<</if>>. The salesgirl was cool, but you don't know if anyone else will be.
+
+@@.thought;Fuck it. I'll just buy the bra at the register.@@<</if>>
+
+[[Head out|Mall Bra Finish]]
+
+::Mall Bra Finish
+You walk out nervously, <<if $temporarilyTransformed>>trying not to think about the bra that now sits on your chest<<else>>clutching the bra<</if>>. The girl who helped you waves you over and you step up to the counter.
+
+<<if $temporarilyTransformed>>There are a couple of customers in the store but none of them give you a second look. You don't know whether to be comforted or terrified by that.<<else>>There are a couple of customers in the store, and it feels like their eyes are locked on you.<</if>>
+
+You give her your card, and she gives it back to you, telling you to have a nice day. <<if $temporarilyTransformed is false>> he lowers her voice and wishes you luck.<<else>>She puts the bra into a bag, and you take it, relieved to not have to carry a bra around the mall. That would be embarrassing.<</if>>
+
+@@.thought;I did it. I bought a bra.@@
+
+[[Walk out|Mall]]
+<<set $player.shirt to $beforeSexClothes.shirt>>
+
+::Mall WomensLingerie Bra
+You walk in, and look around. Women of all ages are walking around, looking at different bras and panties. Some of them have brought boyfriends with them, <<if $player.feminine>=14>>but they're not giving you a second look.<<else>>and they're looking at you curiously.<</if>>
+
+@@.female;"Now, what are you looking for?"@@
+
+@@.player;"A bra,"@@ you answer. @@.player;"I have a sports bra but I'm looking for one for, uh..."@@
+
+@@.female;"Everyday wear?"@@
+
+You nod.
+
+@@.female;"How about an underwire bra?"@@ she asks, leading you across the store.
+
+@@.player;"Uh, sure,"@@ you say. @@.player;"How about this white one?"@@ you ask, indicating it. @@.thought;My dress shirt is white, so this is going to be hard for anyone to see.@@
+
+<<if visited("Mall Girlfriend Salesgirl")>>@@.female;"And you're a B cup, right?"@@
+
+@@.thought;Why would she say that? Oh wait, she's the salesgirl who helped me before!@@
+
+@@.player;"I'm sorry. I didn't recognize you. Uh, I think my boobs have grown, and now I'm a C cup."@@<<else>>@@.female;"And what's your size?"@@
+
+@@.player;"Size?"@@ you ask, confused. @@.player;"Oh. I'm a C cup."@@<</if>>
+
+@@.female;"Okay. I'll just grab a couple bras, and then we can measure you."@@
+
+[[Follow her into the changing room|Mall WomensLingerie Bra Measure]]
+
+::Mall WomensLingerie Bra Measure
+You follow her into the changing room, still not quite believing that you're in this situation: in a store that sells womens underwear, about to be measured for a bra.
+
+@@.female;"Okay. Take off your top and your bra."@@
+
+You look at her quizzically, but she just shrugs. @@.female;"There's nothing to worry about. I've seen it all."@@
+
+@@.thought;I doubt that@@ you think, but you still take off your <<print $beforeSexClothes.shirt.informalName>> and your <<print $player.bra.informalName>>, leaving you standing topless.
+
+@@.female;"Okay,"@@ she says, holding up a tape measure. @@.female;"Now I'm just going to measure you."@@ She presses the tape measure to your back and then wraps it around your chest, just under your boobs. You can't do anything but stand there as she touches you. Her touch is professional, and you know that she must measure dozens of women every day, but you still feel vulnerable, standing there like this while she's fully clothed.
+
+She removes the tape measure, and you reach for your clothes. @@.female;"Not so fast. I'm not done measuring."@@
+
+You sigh and stand there while she continues measuring you. This time, her tape measure goes over your boobs, and you can't help but shiver a little.
+
+@@.female;"All done!"@@ she says, finally stepping away and showing you one of the bras she's holding. @@.female;"Do you want to wear this out?"@@
+
+[[Yes|Mall WomensLingerie Bra Wear]]
+[[No|Mall WomensLingerie Bra Buy]]
+<<set $underwireBra = {
+	"properName": "White Underwire Bra",
+	"informalName": "white underwire bra",
+	"images": ["images/clothes/bras/white_A-AA.png", "images/clothes/bras/white_B-C.png", "images/clothes/bras/white_B-C.png", "images/clothes/bras/white_D-DD.png"],
+	"school": true,
+	"football": false,
+	"casual": true
+}>>\
+<<set $clothesInventory.bra.push($underwireBra)>>\
+
+::Mall WomensLingerie Bra Wear
+@@.player;"Sure, I'll wear it out,"@@ you say.
+
+<<if $player.feminine<18>>She just stands there. @@.player;"Uhh..."@@
+
+@@.female;"I don't think you've worn many bras, have you?"@@
+
+@@.player;"Uh, no,"@@ you admit.
+
+@@.female;"It's nothing to be ashamed of. Good for you for coming in here! It's not easy."@@
+
+@@.player;"Uhh..."@@
+
+@@.female;"And if you ever come back here, just find me and I'll be happy to help you out again."@@
+
+@@.thought;Does she think I'm transitioning?@@
+
+Before you can correct her, she steps back in front of you, still holding the bra. @@.female;"Okay, you're going to want to put it on backwards,"@@ she says, putting it up to your chest. @@.female;"Then, do the clasp."@@
+
+You fasten the bra. @@.female;"Now, turn it around."@@ You do so.
+
+@@.female;"And then, you just have to put your boobs in the cups,"@@ she says, reaching into your bra and doing it for you. You feel small and weak as she moves your boobs. The fact that you're just standing there in a bra--your bra--doesn't help.
+
+@@.female;"Great! Now you can do it by yourself. Come see me by the register when you're done."@@<<else>>@@.female;"Okay, come see me by the register when you're done,"@@ she says, before leaving.
+
+@@.thought;She's being really nice about all this. She hasn't even said anything embarrassing. Wait. Does she think I'm a girl?@@
+
+You stare at the bra she left in the changing room. @@.thought;Okay, now I have to put this on. Why did she have to go? I don't know how to do this!@@ You poke your head out, but you can't see her.
+
+@@.thought;Okay, <<print $girlfriend.firstname>> has put on a bra in front of me before. I just have to do what she did.@@
+
+You pick it up, feeling a little uncomfortable to be holding such a feminine piece of clothing. @@.thought;Okay, focus. I remember that she put it on backwards.@@ You turn the bra around and put it up to your chest so the cups are behind you.
+
+@@.thought;Now I have to clasp it shut.@@ It takes a couple tries before you're able to fasten it. @@.thought;I need more practice. Which I guess I'm going to get.@@
+
+Next, you rotate it around and take a look in the mirror. @@.thought;This doesn't look right. My boobs aren't all the way in.@@ You reach into the bra cups and pull your boobs forward.
+
+@@.thought;I think I did it!@@ you think, taking a moment to admire your work in the mirror. With your new bra--//your// bra--and your boobs, your chest looks fully female.<</if>>
+
+[[Pay for the bra|Mall WomensLingerie Bra Buy]]
+<<set $player.bra to $underwireBra>>
+
+::Mall WomensLingerie Bra Buy
+<<if visited("Mall WomensLingerie Bra Wear")>>You put your <<print $player.shirt.informalName>> back on and walk outside, looking around to see if anyone noticed the new bra that you're no wearing.<<else>>You walk outside, awkwardly holding your new bra behind your back so nobody can see it. You don't think you're doing a very good job, but nobody says anything.<</if>>
+
+You step into line, realizing that you're standing behind <<if $player.masculinity<0>>other <</if>>women who may have bought the same type of bra that you did. @@.thought;This is so embarrassing. I just hope this line moves quickly.@@
+
+Luckily, it does, and you step up to the register. The salesgirl who helped you rings you up, and you swipe your parent's credit card.
+
+@@.female;"Come back soon!"@@ she tells you with a smile.
+
+@@.player;"I will!"@@ you say automatically, before you realize what you just said.
+
+@@.thought;Maybe I actually will come back. It could have gone a lot worse. She was so helpful, and nobody said anything. I was treated just like @@<<if $player.feminine>=18>>@@.thought;any other girl@@<<else>>@@.thought;any other customer@@<</if>> @@.thought;who wanted to buy a bra.@@
+
+[[You leave the shop in high spirits|Mall]]
+<<set $player.confidence to $player.confidence+10>>
+
+::Mall Intro
+You hop on the shuttle bus, and settle in as it drives into town. There are several other people on the bus, but you're not paying attention to them.
+
+Soon, the bus pulls to a stop, and you get out.
+
+[[Go into the mall|Mall]]
+
+::AfterSchoolShopping Mall WomensOuterwear
+<<getTfProgress ass>>Tentatively, you enter the store. There's not a lot of people in here at this hour, but you recognize some girls from school.<<if $temporarilyTransformed>> None of them seem to recognize you.<</if>>
+
+Your eyes drift towards the clothes. You see a school uniform, dresses, skirts, blouses, and tops.
+
+<<if $temporarilyTransformed>>@@.female;"Can I help you, miss?"@@ a sales associate asks you. You look around, confused about who she's talking to, until you realize that it's you.
+
+@@.player;"No...no thank you,"@@ you say quickly.
+
+@@.female;"Are you sure? You look like you could use a wardrobe upgrade."@@
+
+You look down at your outfit, which is comically too big for you. @@.thought;Yeah, I could. But these clothes wouldn't fit me when I changed back. And I don't want girl clothes!@@
+
+[[Head back outside|Mall]]<<elseif $tempTfValue>=4 and $player.ownsGirlPants is false>><<if $checkedGuysPants>>@@.thought;I can't believe I'm doing this. And I can't believe I'll find clothes that fit here.@@ You glance down over your hourglass form. Maybe you can.
+
+@@.thought;I'm going to transform from doing this, right? But...what else can I do? I can't fit into my @@<<if $player.masculinity>25>>@@.thought;normal@@<<else>>@@.thought;guy@@<</if>> @@.thought;clothes. Even if I transform, that's better than not having pants.@@
+
+[[A salesgirl spots you|AfterSchoolShopping Mall WomensOuterwear Salesgirl]]<<else>>@@.thought;Why am I here? They sell womens pants!@@
+
+You glance over your feminized hips and ass. Maybe these clothes will fit.
+
+@@.thought;No. If I try these clothes on, I might transform. I have to check the guys clothes first.@@
+
+[[Head back outside|Mall]]<</if>><<else>>@@.female;"Can I help you, sir?"@@ a sales associate asks you. You think you recognize her from school.
+
+@@.player;"No thanks,"@@ you say. Sure, your body is changing, but you can't imagine wearing any of these clothes outside. Anybody could see! <<if $braShoppingActive>>At least a bra would be hidden by your shirt.<<elseif $player.hasWornPanties>>At least with panties, only you and anyone you share a bed with will know.<</if>>
+
+Now that the girl doesn't see you as a potential customer, she's lost interest in you.<<if $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+[[Head back outside|Mall]]<</if>>
+
+::AfterSchoolShopping Mall WomensOuterwear Salesgirl
+@@.female;"Can I help you@@<<if $player.feminine>=22>>@@.female;, miss?"@@
+
+You can't tell if the upward inflection she ended the last word on was because she was asking a question, or because she wasn't sure if you're a miss. You're not sure either.<<elseif $player.feminine>=14>>@@.female;...uh...sir?"@@
+
+Your face turns beet red. You already feel so humiliated, and you haven't even tried on anything.<<else>>@@.female;, sir?"@@<</if>>
+
+@@.player;"Uh, yeah. I'm looking for pants."@@
+
+A look of surprise crosses her face, but it's gone before you can react to it. Professionally, she asks, @@.female;"Certainly. What kind are you looking for?"@@
+
+@@.player;"I need a uniform. Let's start with that."@@
+
+@@.female;"So you go to Pinewood?"@@
+
+You nod.
+
+She leads you over to a table, on which is a collection of purple knee-length skirts.
+
+You look at them with horror. @@.player;"What? No. I don't want that!"@@
+
+@@.female;"This is the only Pinewood uniform we sell. If you want a Pinewood uniform with pants, you'd have to go next door."@@
+
+@@.thought;I already tried that.@@
+
+@@.player;"Okay,"@@ you say, trying another tack. @@.player;"Do you have any dress pants?"@@
+
+@@.female;"We have slacks. Is that okay?"@@
+
+@@.player;"Uh, sure,"@@ you say. @@.thought;This is the best I'm going to get.@@
+
+She walks to a different part of the store, and handing you a pair of pants. @@.female;"Why don't you try these on?"@@
+
+[[Try them on|AfterSchoolShopping Mall WomensOuterwear DressPants]]
+
+::AfterSchoolShopping Mall WomensOuterwear DressPants
+You walk into a changing room, and take another look at the slacks. They look pretty similar to your regular dress pants. Sure, there's more room in the hips, and less room in the legs, but nobody's going to be looking //that// closely at your clothes.
+
+@@.thought;Maybe this won't be so bad.@@
+
+You slip out of your <<print $player.pants.informalName>>, and pull up the slacks.
+
+They fit perfectly.
+
+That's not the worst part.
+
+<<set $womensSlacks = {
+    "properName": "Womens Slacks",
+	"informalName": "womens slacks",
+	"womanImage": "images/clothes/pants/womens_slacks_woman_legs.png",
+	"school": true,
+	"football": false,
+	"casual": false,
+	"dress": false,
+	"female": true
+}>><<set $player.pants to $womensSlacks>><<link "You start to transform" TfPassagePicker>><<set $tfRecoverPassage to "AfterSchoolShopping Mall WomensOuterwear Buy">><<set $tfReason to "pants">><<set $player.pants to $womensSlacks>><<set $tfCircumstances.location to "changing room">><<set $tfCircumstances.locationType to "">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>>
+
+::AfterSchoolShopping Mall WomensOuterwear Buy
+Once you've recovered, you step out of the changing room and walk up to the salesgirl. She gives you a tight, professional smile. @@.female;"Are you going to be wearing those out?"@@
+
+You're tempted to say yes, and end this humiliating encounter. @@.thought;Wait. My jeans don't fit either.@@
+
+[[Try on jeans|AfterSchoolShopping Mall WomensOuterwear Jeans]]
+[[Just get out of here|Mall]]
+<<set $clothesInventory.pants.push($womensSlacks)>>
+<<set $player.ownsGirlPants to true>>
+
+::AfterSchoolShopping Mall WomensOuterwear Jeans
+@@.player;"Actually,"@@ you say. @@.player;"Could I look at jeans too?"@@
+
+<<if $player.feminine<18>>A small smile appears on her blank face. She<<else>>You wait for her to laugh at you, but she just<</if>> leads you over to the jeans section, and looks closely at your legs.
+
+@@.female;"Here,"@@ she says, picking a hanger off the rack, and handing it to you. @@.female;"Try that pair on."@@
+
+You nod, and hurry back into the changing room, eager to be away from everyone's eyes.
+
+You slip out of the slacks, and pull the jeans up to your waist. <<if $player.isWearingPanties is true>>@@.thought;The only male piece of clothing I have on is my shirt.<<else>>The jeans feel weird next to your baggy boxers.<</if>>
+
+Wait, this doesn't feel right. You were expecting these jeans to be tight, but they're really loose, especially in the crotch.
+
+@@.thought;Oh@@ you realize, pulling the jeans even higher up. @@.thought;These have a higher waist.@@
+
+The jeans fit better now. In fact, they almost fit too well. You dread seeing what you look like.
+
+[[Look in the mirror|AfterSchoolShopping Mall WomensOuterwear Jeans Mirror]]
+<<set $girlsJeans = {
+    "properName": "Girls Jeans",
+	"informalName": "girls jeans",
+	"womanImage": "images/clothes/pants/high_rise_jeans_woman_legs.png",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"dress": false,
+	"female": true
+}>>
+<<set $clothesInventory.pants.push($girlsJeans)>>
+<<set $player.pants to $girlsJeans>>
+
+::AfterSchoolShopping Mall WomensOuterwear Jeans Mirror
+You draw in a breath when you see yourself. The jeans do a great job of emphasizing your curves. There's no way you're going to be able to hide your new ass.
+
+There's no room in the legs, either. Every inch of your legs are clearly visible in the jeans. @@.thought;Did I get skinny jeans?@@
+
+Above your ankles, there's a couple inches of <<if $player.legs is 3>>smooth <</if>>leg before the jeans end.
+
+@@.thought;These are obviously womens jeans. But maybe if I saw them from further away...@@ You take a step back in the mirror, and try to decide whether you'd clock them as girls jeans. @@.thought;I still can. But that's because I know I'm wearing girls jeans. Other people won't know what they're looking for.@@
+
+You're not as confident about that as you would like.
+
+[[Buy the jeans|AfterSchoolShopping Mall WomensOuterwear Buy Jeans]]
+
+::AfterSchoolShopping Mall WomensOuterwear Buy Jeans
+You find the salesgirl, and tell her that you want to pay. She rings you up, and you finally step out of the store, wearing your girly jeans.
+
+You look around. People pass by, some of them giving you occasional side glances. @@.thought;Do they know?@@
+
+You sigh. It doesn't matter. These are the pants you're stuck with. You go to put your phone in your pocket, but are surprised when barely a quarter of it fits.
+
+@@.thought;These aren't pockets!@@ you think, sticking your hand in them. @@.thought;How come girls clothes don't have pockets? That's bullshit!@@
+
+You think back to when some of your female friends were complaining about their lack of pockets. At the time, you had dismissed their concerns as silly. But now that you realize how little pocket space you actually have, you understand them better.
+
+@@.thought;I'd better get back@@ you think, sticking your phone in your back pocket.
+
+[[Mall]]
+<<set $player.masculinity to $player.masculinity-1>>
+
+::AfterSchoolShopping Mall MensOuterwear
+<<getTfProgress ass>><<if $temporarilyTransformed>>You wander the store for a while before anyone approaches you.
+
+@@.male;"Hello,"@@ a man with a deep voice says. @@.male;"Are you looking for something for a boyfriend?"@@
+
+You flush, hurt by the implication that the only reason you'd be in a men's store is to get something for someone else. No, not just someone else. A boyfriend.
+
+@@.thought;It's just because I'm in this body.@@
+
+[[Head back outside|Mall]]<<elseif $tempTfValue>=4 and $player.ownsGirlPants is false>><<if $checkedGuysPants is not true>>You walk inside, and take a look at the pants.
+
+@@.male;"What's up?"@@ a young worker asks, approaching you. @@.male;"What are you looking for?"@@
+
+@@.player;"Um, I guess I'll start with some dress pants."@@
+
+@@.male;"Okay. You know your size?"@@
+
+You realize that you don't.
+
+@@.male;"No worries. Here,"@@ the guy says, handing you a pair of pants without looking.
+
+[[Try them on|AfterSchoolShopping Mall MensOuterwear TryFail]]<<else>>You go back into the men's store, hoping that they'll have somehow gotten new pants in the time that you've been gone. They haven't.
+
+@@.thought;I can't believe I have to go get women's pants.@@
+
+[[Back|Mall]]<</if>><<else>><<getTfProgress height>><<set $tempHeight to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>>Now this is a store you're familiar with. You remember coming in at the beginning of the school year. You had outgrown your old school uniform, and needed to get a new one. <<if $tempHeight>0>>@@.thought;That reminds me. I'm shorter now. Does this uniform still fit?@@ You check the time. @@.thought;I'll worry about that later. I need to get what I came here for.@@<<elseif $tempBoobs>1>>@@.thought;I might have outgrown this uniform too. But not because I got taller@@ you think, touching your chest.<</if>>
+
+You look around the store some more, and realize that you don't actually need anything from here.
+
+[[Head back outside|Mall]]<</if>><<if $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+::AfterSchoolShopping Mall MensOuterwear TryFail
+You head to the changing room, take off your <<print $player.pants.informalName>>, and attempt to try on the dress pants.
+
+They don't fit. There's not enough room in the hips for you.
+
+@@.player;"Um, hello?"@@ you ask cautiously, approaching the guy once you've put your <<print $player.pants.informalName>> back on. @@.player;"These don't fit."@@
+
+@@.male;"Too small?"@@ You nod. @@.male;"Why don't you try these on?"@@ he asks, handing you a larger pair.
+
+You go back into the changing room, hoping you can get them up. To your surprise, you do. Unfortunately, the pants are too big. They fit in your hips, but your legs have disappeared under the fabric, and, if it weren't for your hands holding them up, they would probably fall down.
+
+@@.player;"These don't fit either,"@@ you say, handing them back to the guy. @@.player;"Too small?"@@
+
+For the first time, he takes a look at you. @@.male;"I don't think we have any pants that fit you,"@@ he says. @@.male;"You might want to try the store next door,"@@ he says.
+
+@@.thought;That's the women's store. He can't mean that!@@ But as you look at the dress pants all around you, you realize that he's right. None of them are going to fit. It wouldn't hurt to just try them on, right?
+
+[[Head outside|Mall]]
+<<set $checkedGuysPants to true>>
+
+::AfterSchoolShopping Mall Shoes
+<<if $player.feet is 2 and $player.ownsGirlShoes is false>>As you step inside, your eyes scan the merchandise. Your face falls as you take in all the heels, boots and flats that they have in stock. @@.thought;Wait! In the back! There's the men's section!@@
+
+You walk quickly towards the mens section, and quickly catch the eye of a salesperson.
+
+@@.male;"Do you know your size?"@@
+
+You start to give him your old size, and then stop yourself. You don't know how much your feet have shrunk. @@.player;"No, sorry."@@
+
+He looks surprised. @@.male;"Well, I can figure that out for you. Can you take off your shoes?"@@
+
+You do so, and his mouth opens as he takes in the sight of your small feet next to your larger shoes. @@.male;"I see why you came in,"@@ he says after a moment. @@.male;"Let me measure you. Just stick your foot out."@@
+
+You do so, waiting as he measures you. @@.male;"You're a size 4. I don't know if we carry that. Just sit tight. I'll find some shoes for you."@@
+
+[[He disappears|AfterSchoolShopping Mall Shoes Wait]]<<else>>The name of the store implies that it's for both boys and girls, but it's clear as soon as you step in that this is a store for women. There's a section for men's shoes tucked into one corner, but the rest of the store is selling heels, flats, and lots more shoes that you don't know the name of.
+
+<<if $temporarilyTransformed>>@@.female;"Hi!"@@ a saleswoman says, as soon as you walk in. Her eyes glance down at your feet. @@.female;"Honey, I see why you came in. Those shoes are too big for you. Now, what are you looking for today? Something fancy?"@@ she asks, pointing to the selection of high heels. @@.female;"Something for everyday wear?"@@ she points to the women's sneakers section.
+
+@@.player;"I'm...I'm good,"@@ you say. @@.player;"But, um, maybe later."@@
+
+Part of you worries that you //will// be coming back to this store later. @@.thought;No. Don't think about that.@@<<if visited("Mall Bra Finish")>>@@.thought; I got what I needed. Now I should go.@@<<else>>@@.thought; I need to get a bra.@@<</if>><<else>>@@.thought;I don't need shoes.@@<</if>><<if $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+[[Back to the mall|Mall]]<</if>>
+
+::AfterSchoolShopping Mall Shoes Wait
+You quickly grow bored as you wait for him to return, and you decide to do some people watching. There aren't any <<if $player.masculinity>=50>>other <</if>>guys in the store, but there are a group of girls. They're taking turns trying on different pairs of boots, and talking amongst themselves.
+
+The salesperson is taking a while. You got some new shoes this summer, and you're certain that it didn't take anywhere near as long for the salesperson to find some shoes for you.
+
+After you spend some time playing with your phone, the salesperson reappears. @@.male;"We didn't have any shoes in size 4, so I got you a size 5. Why don't you try it on?"@@ he says, handing you a box.
+
+@@.player;"What's in the other boxes?"@@ you ask, confused.
+
+@@.male;"That's if these shoes don't fit."@@
+
+You shrug and open up the box that he gave you, and try on the shoes. They look small when they're sitting in the box, but it quickly becomes clear that even they are too big for your feet.
+
+@@.player;"I think these can work,"@@ you say, frowning. @@.player;"I'm not slipping out of them like I did with my last pair."@@
+
+@@.male;"No, these are too big,"@@ he tells you firmly. @@.male;"You'll get all kinds of problems."@@
+
+@@.player;"Should I try on the shoes in the other box?"@@
+
+[[He hesitates|AfterSchoolShopping Mall Shoes Girls]]
+
+::AfterSchoolShopping Mall Shoes Girls
+@@.male;"Well, you have two options,"@@ he says, after a pause. @@.male;"You could get some kids shoes. We don't carry them..."@@
+
+@@.player;"So I'd have to go into the city,"@@ you finish, shaking your head. That's fifty miles away, and you don't even have your own car. @@.thought;I'd have to ask to borrow <<print $girlfriend.firstname>>'s car and tell her I need kids shoes. And I need these shoes for tomorrow. I can't have my feet keep falling out of my <<print $player.shoes.informalName>>.@@
+
+@@.player;"What's my other option?"@@
+
+@@.male;"Well, you could try on the shoes I brought out for you. But they're girls shoes."@@
+
+You nod. @@.thought;I should have expected this. I'd rather go to the city and get shoes, but I need new shoes by tomorrow. It's just not possible to make such a long trip right now. I know. I'll buy these shoes, and then if I don't like them, I can go to the city @@<<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">>@@.thought;next week.@@<<else>>@@.thought;on the weekend.@@<</if>>
+
+@@.player;"I'll try on the shoes you brought out."@@
+
+He nods and hands you a box. You open it, revealing a pair of white Keds. Your mind rebels a little at how feminine they are, but you start to slip them on.
+
+<<if $player.socks is null>>@@.male;"If you get them, make sure you never wear them with socks."@@
+
+You look at him, confused, but continue putting on the Keds.<<else>>@@.male;"Take off your socks first."@@
+
+You look at him, confused, but take your <<print $player.socks.informalName>> off, and start putting on the Keds.<</if>>
+
+Once you have the shoes on, you realize that he was right. Unlike the shoes you <<if $player.masculinity<=0>>wore when you were a guy<<else>>used to wear<</if>>, these Keds are a lot more form fitting. They show off your ankles and look good <<if $player.legs is 3>>against your hairless legs<<else>>on your small feet<</if>>.
+
+The salesperson instructs you to stand up and walk back and forth. You do so, amazed at how well these shoes fit you.
+
+@@.male;"So you're going to be buying them?"@@
+
+@@.player;"Yeah. They fit me really well,"@@ you say.
+
+He nods. @@.male;"Will that be all?"@@
+
+You think for a moment. <<if $player.skillCurse<4>>@@.thought;Coach wanted me to get new shoes to play football in. These aren't really football shoes. And my Oxfords don't fit me either.@@<<else>>@@.thought;I need new shoes for school.@@<</if>>
+
+[[Tell him you need more shoes|AfterSchoolShopping Mall Shoes More]]
+<<set $player.socks to null>>
+
+::AfterSchoolShopping Mall Shoes More
+@@.player;"Actually, I think I need more shoes,"@@ you say. @@.player;"Do you have any oxfords in my size?"@@
+
+He shakes his head. @@.male;"No. I looked all over for mens shoes in your size. I didn't find any."@@
+
+@@.player;"I need shoes for school."@@
+
+You can sense that he's curious why you came in with such oversized shoes, and why you suddenly need a whole new collection, but luckily he doesn't ask you any awkward questions. @@.male;"You're probably going to want flats then."@@
+
+@@.player;"Flats? Aren't they girls shoes?"@@
+
+@@.male;"From the womens section. They're the only shoes that fit you and will be dressy enough for school. Unless you feel like wearing high heels?"@@
+
+@@.player;"No. Flats are fine. Thanks."@@
+
+<<if $player.skillCurse<4>>He starts to leave when you stop him. @@.player;"Can you look for any cleats? For football?"@@
+
+@@.male;"I'll look, but I don't think I'll find anything."@@
+
+<</if>>[[He disappears again|AfterSchoolShopping Mall Shoes Flats]]
+
+::AfterSchoolShopping Mall Shoes Flats
+<<getTfProgress voice>>The salesman returns carrying <<if $player.skillCurse<4>>two boxes.<<else>>a box.<</if>>
+
+You take <<if $player.skillCurse<4>>the first box<<else>>it<</if>> from him and open it up, revealing a small pair of flats. You frown as you inspect it. <<if $player.ownsGirlPants>>@@.thought;Most people won't notice if I wear womens pants, but this@@<<else>>@@.thought;This@@<</if>> @@.thought;is so obviously a girl's shoe. Even I can tell.@@
+
+Nevertheless, you put it on. @@.thought;This is so easy. I just have to slip my feet inside, and it's on. I don't even have to tie them.@@
+
+You take some experimental steps around the store, making sure that you stay far away from the girls who are trying on boots.
+
+@@.thought;These aren't bad. They're comfortable, and they fit well. I just wish that they weren't so obviously feminine. It shows off my ankle and like half of my foot. But I don't have anything else to wear to school that fits, so I don't have a choice.@@
+
+<<if $player.skillCurse<4>>With a feeling of dread, you walk back to the salesman and open up the second box. They're a pair of cleats that look exactly like your old ones, except they're smaller and hot pink.
+
+@@.player;"Did you have any other colors?"@@
+
+@@.male;"No. I looked, but these are the only ones in your size."@@
+
+You shake your head in disbelief. @@.thought;How come girls cleats have to automatically be pink? They're the same shoe! Why can't @@<<if $player.masculinity<=0 and $tempTfValue>=4>>@@.thought;we wear the same black cleats boys wear?@@<<else>>@@.thought;I wear black cleats like I used to?@@<</if>>
+
+You start to put on the cleats. @@.thought;I don't have a choice. I have to wear cleats for football, and these are the only ones in my size. Man, the @@<<if $player.masculinity>=50>>@@.thought;other@@ <</if>>@@.thought;guys are going to give me so much shit.@@
+
+@@.male;"Looks like they fit."@@
+
+You nod. You had been secretly hoping that they wouldn't fit, but then you wouldn't have had anything to wear to practice.@@<</if>>
+
+[[Finish shopping|AfterSchoolShopping Mall Shoes Finish]]
+
+::AfterSchoolShopping Mall Shoes Finish
+@@.male;"Will that be it?"@@
+
+@@.player;"Yeah. Uh, do you mind if I wear the @@<<if $player.skillCurse<4>>@@.player;Keds@@<<else>>@@.player;flats@@<</if>> @@.player;out? The ones I have don't fit me."@@
+
+Once again, he looks like he wants to ask why you were wearing shoes that didn't fit, but he keeps his mouth shut. @@.male;"Sure. Just come to the front counter and I'll ring you up."@@
+
+You slip on your <<if $player.skillCurse<4>>Keds<<else>>flats<</if>> and walk to the front of the store, passing by the girls who were trying on boots.
+
+@@.female;"That reminds me. I need to get some sneakers too."@@
+
+@@.female;"Girl, you just want to try on more shoes."@@
+
+@@.female;"Well, maybe. But they looked so good on @@<<if $player.feminine>=14>>@@.female;her."@@<<else>>@@.female;him."@@<</if>>
+
+You're about to keep your head down and walk past them when you realize that they didn't say anything embarrassing. <<if $player.feminine>=14>>@@.thought;Sure, they thought I was a girl, but I'm wearing girls shoes...and I don't look very manly.@@<<else>>@@.thought;They @@<<if $player.masculinity<25>>@@.thought;thought I was@@<<else>>@@.thought;knew I'm@@<</if>> @@.thought;a guy, but they weren't judging me.@@<</if>> @@.thought;And they even liked my shoes!@@
+
+You swipe your card and walk out carrying <<if $player.skillCurse<4>>the flats and cleats<<else>>the Keds<</if>>.
+
+@@.thought;These Keds feel so much nicer to walk in than my old shoes. And nobody is even commenting about them!@@
+
+Feeling more confident, you dump your $player.shoes.informalName into the trash.
+
+<<link "Suddenly, you start to transform" "TfPassagePicker">><<set $tfRecoverPassage to "Mall">><<set $tfReason to "shoes">><<set $tfCircumstances.location to "mall">><<set $tfCircumstances.locationType to "public">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>>
+<<nobr>><<set $keds = {
+	"properName": "White Keds",
+	"informalName": "keds",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"female": true,
+}>>
+<<set $clothesInventory.shoes.push($keds)>>
+<<set $flats = {
+	"properName": "Flats",
+	"informalName": "flats",
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"female": true,
+}>>
+<<set $clothesInventory.shoes.push($flats)>>
+<<if $player.skillCurse<4>><<set $cleats = {
+	"properName": "Pink Cleats",
+	"informalName": "pink cleats",
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"female": true,
+}>>
+<<set $clothesInventory.shoes.push($cleats)>><</if>>
+<<set $player.feet to 2>>
+<<set $player.ownsGirlShoes to true>>
+<<for _i to 0; _i lt $clothesInventory.shoes.length; _i++>>
+    <<capture _i>><<if $clothesInventory.shoes[_i].properName is $player.shoes.properName>><<set $clothesInventory.shoes.splice(_i,1)>><</if>><</capture>>
+<</for>>
+<<if $player.skillCurse<4>><<set $player.shoes to $keds>><<else>><<set $player.shoes to $flats>><</if>>
+<<if $schoolUniform.shoes.female is false>><<set $schoolUniform.shoes to null>><</if>><<if $footballUniform.shoes.female is false>><<set $footballUniform.shoes to null>><</if>><<if $casualClothes.shoes.female is false>><<set $casualClothes.shoes to null>><</if>>
+<<set $player.confidence to $player.confidence+5>><</nobr>>
+
+::AfterSchoolShopping Mall WomensLingerie Refuse
+@@.player;"Actually, I don't think I want anything right now."@@
+
+@@.female;"Okay,"@@ the girl says, looking surprised. @@.female;"Wait, did you say that //you// didn't want anything? I thought this was for your friend?"@@
+
+@@.player;"Yeah, that's what I meant,"@@ you say, departing for the exit.
+
+[[Leave|Mall]]
+
+::AfterSchoolShopping Mall WomensLingerie Buy
+@@.player;"I think I'll get the <<print $player.panties>>."@@
+
+@@.female;"Good choice,"@@ the girl says. You get the feeling she'd say that no matter what you chose.
+
+You follow her to the register, and she rings you up. You're shocked by how, well, normal everything is. If she realizes that you're buying it for yourself, she doesn't let on. You get the feeling that people are looking at you more than they would be if you were in a mens store, but you're not sure if you're just self-conscious. Regardless, nobody is laughing or pointing at you.
+
+@@.female;"Have a good day,"@@ she says, handing the panties to you. You thank her and put it in your backpack. She looks a bit confused as you do that, but you're gone before she can comment.
+
+@@.thought;Okay, now I just need to change.@@ You leave the store and spot a bathroom. You change quickly, and put the boxers into your backpack.
+
+<<if $player.hasWornPanties>>[[Return to the the mall|Mall]]<<else>><<link "You feel yourself start to change" TfPassagePicker>><<set $tfRecoverPassage to "Mall">><<set $tfReason to "panties">><<set $tfCircumstances.location to "boys bathroom stall">><<set $tfCircumstances.locationType to "stall">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><<set $tfCircumstances.boys to true>><</link>><</if>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<if $player.panties is "Plain white panties">><<set $player.panties = {
+	"properName": "Plain White Panties",
+	"informalName": "plain white panties",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>><<elseif $player.panties is "Forest green bikini-style panties">><<set $player.panties = {
+	"properName": "Forest Green Bikini-style Panties",
+	"informalName": "green bikini panties",
+	"manImage": "images/clothes/underwears/green_bikini_panties_man_legs.png",
+	"womanImage": "images/clothes/underwears/green_bikini_panties_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>><<elseif $player.panties is "Purple hipster panties">><<set $player.panties = {
+	"properName": "Purple Hipster Panties",
+	"informalName": "purple hipster panties",
+	"manImage": "images/clothes/underwears/purple_boyshorts_man_legs.png",
+	"womanImage": "images/clothes/underwears/purple_boyshorts_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>><<else>><<set $player.panties = {
+	"properName": "Lacy Black Boyshorts",
+	"informalName": "lacy black boyshorts",
+	"manImage": "images/clothes/underwears/black_boyshorts_man_legs.png",
+	"womanImage": "images/clothes/underwears/black_boyshorts_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"panties": true
+}>><</if>>
+<<set $player.underwear to $player.panties>>
+<<set $clothesInventory.underwear.push($player.panties)>>
+
+::Level 2
+You are on Level 2.
+
+[[Food Court|AfterSchoolShopping Mall Food]]
+[[Men's Personal Care Store|AfterSchoolShopping Mall MensCare]]
+[[Women's Personal Care Store|AfterSchoolShopping Mall WomensCare]]
+[[Jewelry Store|AfterSchoolShopping Mall Jewelry]]
+
+[[Level 1|Mall]]
+
+::AfterSchoolShopping Mall Jewelry
+Unlike the rest of the mall, the jewelry store is pretty small. You get the impression that they don't have a lot of jewelry to sell. The ones that are on display look nice, though. At least, you think they do. You don't know a lot about jewelry.
+
+Then you look at the prices. @@.thought;No thanks. My mom lent me some money, but she won't be happy if I spend it on this!@@<<if $temporarilyTransformed>>
+
+@@.female;"Hello, ma'am. What can I get for you?"@@ a middle aged woman asks you.
+
+@@.player;"Umm..."@@
+
+@@.female;"I see that you're not wearing earrings. We have quite a selection of them,"@@ she says, directing your attention towards a set of ornate earrings.
+
+@@.thought;No thanks. My ears aren't even pierced. And nobody would take me seriously if I was wearing earrings.@@
+
+You politely decline.<<elseif $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+[[Go back to the mall|Level 2]]
+
+::AfterSchoolShopping Mall Food
+All this shopping has made you hungry, and the food court smells really good. @@.thought;I should get what I came here for, but@@ you check the time. @@.thought;I've still got time. I'll just have a hot dog and then I'll get back to shopping.@@
+
+You order a hot dog, sit down and start working on it. All too soon, it's finished.
+
+<<if $temporarilyTransformed>>As you're eating, you notice that a group of guys are looking your way and talking amongst themselves.
+
+You can't hear what they're talking about, but you know it's something bad. @@.thought;They're all talking to each other about me. They've figured out who I really am, and they're making fun of me.@@
+
+One of the boys rises up and walks towards you. You can hear your heart pounding as he approaches. @@.thought;Maybe he needs to use the bathroom or something.@@
+
+@@.male;"Hey,"@@ the boy says. @@.male;"Me and my friends saw you eating by yourself and, uh, we were wondering if you wanted to come over to our table."@@ He glances back at his friends, all of whom are watching the interaction play out.
+
+@@.thought;He's hitting on me!@@ You abruptly stand up, and dash off, leaving your half-eaten food behind.<<set $humiliatedAtFoodCourt to true>><<elseif $braShoppingActive and visited("Mall Bra Finish")>>As you're eating, you notice that the girls at the next table are whispering and giggling.
+
+You try to concentrate on what they're saying. You're not able to hear much, but you can make out some snippets of conversation.
+
+@@.female;"...saw the bra in his bag..."@@
+
+@@.female;"Can you believe it?"@@
+
+<<if $player.feminine>14>>@@.female;"Is that a girl?"@@
+
+@@.female;"...don't think so."@@<<else>>@@.female;"getting it for...girlfriend?"@@
+
+@@.female;"No...He's blushing."@@<</if>>
+
+That's enough for you. You run out of the food court, leaving your half-eaten hot dog behind.<<set $humiliatedAtFoodCourt to true>><<elseif $braShoppingActive>>As you're eating, you notice that the girls at the next table are whispering and giggling.
+
+You try to concentrate on what they're saying. You're not able to hear much, but you can make out some snippets of conversation.
+
+@@.female;"...saw the bra strap..."@@
+
+@@.female;"Can you believe it?"@@
+
+You flush and adjust your shirt.
+
+@@.female;"...girl with him?"@@
+
+@@.female;"Don't know...gay best friend."@@
+
+@@.girlfriend;"Don't worry about them,"@@ <<print $girlfriend.firstname>> says, when she sees what's happening. @@.girlfriend;"They could be talking about anyone."@@
+
+@@.female;"looks like...<<print $player.lastname>>."@@
+
+That's enough for you. You run out of the food court, leaving your half-eaten hot dog behind.<<set $humiliatedAtFoodCourt to true>>@@.thought;Okay, I guess I should get back to shopping now.@@<</if>>
+
+[[Get back to shopping|Level 2]]
+
+::AfterSchoolShopping Mall MensCare
+This store is pretty small. @@.thought;How come all the womens stores are bigger than the mens?@@
+
+You look at the merchandise to see what they have to sell. @@.thought;Hmm, a razor.@@ <<if $player.legs>1 or $player.controlQuestIntroduced is true>>You wouldn't mind getting a female razor. @@.thought;A razor to help shave my legs. Not a female razor.@@ You don't have much use for one of these razors, though. Ever since the curse, your beard growth has been nonexistent.<<else>>@@.thought;I don't need this, though. Ever since the curse, my beard hasn't grown at all.@@<</if>><<if $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+[[Leave the store|Level 2]]
+
+::AfterSchoolShopping Mall WomensCare
+<<if $day is 31>>You hesitate in the entrance to the store, and then step in. You can't believe that you're in the mall, shopping for makeup. <<if $player.hasWornMakeup>>@@.thought;I've worn makeup before at least. The only thing that's new is buying it.@@<<else>>@@.thought;I hope I don't mess it up. I've never worn makeup before.@@<</if>>
+
+A salesgirl walks over to you. <<if $player.feminine>=18>>@@.female;"Hello miss!@@<<elseif $player.feminine>=14>>@@.female;"Hello miss...sir.@@<<else>>@@.female;"Hello sir!@@<</if>> @@.female;Can I help you with anything?@@
+
+Blushing, you shake your head. @@.player;"No, I think I know what I'm looking for."@@
+
+It's only when you get to the makeup aisle that you realize you //don't// know what you're looking for. There's so much makeup on display, and you have no idea which one to get.
+
+@@.player;"Uh, excuse me,"@@ you say, finding the salesgirl. @@.player;"I, uh, think I need help. I'm...not sure which makeup I should get."@@
+
+<<if $player.feminine>=18>>@@.female;"Of course!"@@ she says, treating you no differently than a female customer.<<else>>If she finds it weird that you're shopping for makeup, she doesn't show it. @@.female;"Of course!"@@ she says.<</if>> @@.female;"What's the occasion?"@@
+
+@@.player;"The halloween party."@@
+
+@@.female;"Oh, that's so much fun! I remember when I was at Pinewood..."@@ She trails off, lost in memories. @@.female;"What are you going as?"@@
+
+<<if $costume is "Wonder Woman">>@@.player;"<<print $costume>>."@@<<else>>@@.player;"A <<print $costume>>."@@<</if>>
+
+<<if $player.feminine>=18>>She looks unfazed<<else>>She raises an eyebrow, but says nothing<</if>>. @@.female;"Let's get you some makeup. Let's see..."@@ she says, scanning the shelves. You have no idea what she's looking for, so you just stand back. @@.female;"How about this?"@@ she says finally. @@.female;"It's a full makeup kit. Is that okay?"@@
+
+@@.player;"It's perfect,"@@ you say, <<if $player.feminine>=18>>not wanting to mention that you don't have any makeup.<<else>>wanting to get out of the store.<</if>>
+
+As she rings you up, she asks, @@.female;"Do you want me to do your makeup?"@@
+
+You're tempted to say yes. @@.thought;She knows what she's doing, and I wouldn't have to make a mess of my face. But I still have to get back to my dorm, and I don't want anyone to see me before the party.@@
+
+You shake your head, and she wishes you luck.
+
+[[Go back to your dorm|Halloween Makeup Shuttle]]<<set $player.ownsMakeup to true>><<elseif $player.isWearingTampon>>@@.thought;I already have tampons. Maybe I'll need to go back later to get more, but...no. I don't want to think about this now.@@<<if $braShoppingActive and visited("Girlfriend Bra Start")>>
+
+@@.girlfriend;"Come on, <<print $player.firstname>>. Let's go."@@<</if>>
+
+[[Leave the store|Level 2]]<<elseif $day>=18 and $day<=24 and $braShoppingActive is false>>You can tell as soon as you step in that you're in the right store. Your squeamishness, and the confused looks of the other patrons at your presence give it away.
+
+@@.thought;Ignore them. I'm just going to get a tampon and then leave.@@
+
+It's not hard to find a tampon. They're all over the store. You end up taking several, just in case you need them. The clerk gives you a look when you go to the checkout counter and pay.
+
+@@.player;"It's for my, uh, friend,"@@ you say, in response to her unanswered question.
+
+She just shrugs.
+
+[[Head to the bathroom|AfterSchoolShopping Mall Tampon]]<<elseif $braShoppingActive is true>>You step inside, and immediately feel overwhelmed. You can accept that you're about to get a bra--your boobs have been getting bigger, and it's about time. But to get tampons on this same trip...@@.thought;No. I'll have to come back later.@@
+
+[[You back out of the store|Level 2]]<<elseif $day>24>>@@.thought;Oh my god, I'm going to have to get tampons and go through another period @@<<if $day>30>>@@.thought;this@@<<else>>@@.thought;next@@<</if>> @@.thought;month!@@ you realize.
+
+This //would// be a good time to stock up, but just being in this store reminds you that you have a pussy. @@.thought;I'll come back. Later@@ you decide.
+
+[[You back out of the store|Level 2]]<<else>>You can tell as soon as you step in that you're in the wrong store. @@.thought;This store sells tampons!@@ you think, feeling squeamish. <<if $player.expectsPeriod or $day>=18>>You might get a period one day (now that's a horrible thought), but you don't want to think about this right now.<<else>>@@.thought;Can I get a period? I hope not.@@<</if>>
+
+[[You back out of the store immediately|Level 2]]<</if>>
+
+::AfterSchoolShopping Mall Tampon
+You breathe a sigh of relief once you're safely inside the bathroom. Nobody had given you a hard time, but you definitely got looks as you were shopping around. It's nice to be alone.
+
+That's when you realize the obvious: you have no idea how to use a tampon.
+
+You rack your brains, trying to remember anything your friends said about using a tampon. @@.thought;I don't remember anyone mentioning it. They just complained about how much periods sucked. They never talked about how to stick the tampon up...up...@@ You trail off, unable to believe what you're thinking about doing.
+
+Taking a deep breath, you pull out your phone and search for a how-to video on using a tampon. You find a lot of videos on YouTube, most of them talking about how to find the right one, but none of them show the actual putting-it-in-you part. @@.thought;Are they not allowed to show it or something? That's stupid. This is something normal all girls have to learn!@@ you think indignantly, not realizing that you just referred to yourself as a girl.
+
+Several videos later, you find a video where a girl demonstrates using a stuffed animal. @@.thought;This is disturbing, but it's the best video I've found.@@
+
+You restart the video and watch it again, more intently this time. It doesn't seem that difficult. @@.thought;Girls do this all the time. Why can't I?@@ You line the tampon up with your pussy with one hand, while you open it up with the other. This is the first time, you've paid this much attention to your pussy. When you masturbated, you would just stick a finger in there, seeing it as a turn-off to examine your new sex.
+
+You check your phone to make sure you have the right end lined up, and then slowly slide the tampon in. Then, you pull the outer tube out, leaving only a string hanging out of your pussy.
+
+@@.thought;I did it!@@ You never thought that you'd be happy about successfully inserting a tampon into your vagina, but you feel accomplished. This was really hard, and you did it.
+
+<<link "Before you can leave, you feel another draft" TfPassagePicker>><<set $tfRecoverPassage to "Level 2">><<set $tfReason to "tampon">><<set $tfCircumstances.location to "boys bathroom stall">><<set $tfCircumstances.locationType to "stall">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "tampon">><<set $tfCircumstances.boys to true>><</link>>
+<<set $player.isWearingTampon to true>>

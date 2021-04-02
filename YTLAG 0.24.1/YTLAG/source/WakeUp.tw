@@ -1,0 +1,513 @@
+::WakeUp2
+You wake up in a cold sweat. You know you just had a disturbing dream, but as you try to recall what happened, it slips away.
+
+You rub your eyes and sit up. Marco and Patrick are still asleep. You're the only one up. You check the clock. 8:13. @@.thought;I'm never up this early on a saturday.@@
+
+You're feeling a little strange, and decide to go to the shower to clear your head.<<nobr>>
+<<set $player.cock to 5>>
+<<set $player.armStrength to $player.armStrength-60>>
+<<set $player.accuracy to $player.accuracy-25>>
+<<set $player.masculinity to $player.masculinity-5>>
+<<set $player.confidence to $player.confidence-5>>
+<</nobr>>
+
+::WakeUp3
+You awake with a start. You know that your dream was important, but once again, it starts to drift away as soon as you start thinking about it. Desperately, you focus, trying to remember what was so disturbing...
+
+@@.thought;I had a pussy!@@ you think with a start. @@.thought;In Psychology, I learned that you dream about whatever you were thinking before you went to sleep. That must be it.@@
+
+Marco, Patrick, and their girlfriends are still asleep. You're the only one awake. You feel a pang of jealousy for Marco and Patrick. Not only did they have sex, they still have their cocks. @@.thought;Of course I still have my cock!@@ you tell yourself.
+
+As you're lying in bed, you realize that you need to pee. That thought is a little scary. If you really do have a pussy now, you're going to find out.
+
+But you really need to go.
+
+Eventually, your need to pee wins out over your desire to not see your junk, and you reluctantly head to the bathroom.<<nobr>>
+<<set $player.cock to 3>>
+<<set $player.armStrength to $player.armStrength-40>>
+<<set $player.accuracy to $player.accuracy-25>>
+<<increaseArousal 10>>
+<<set $player.masculinity to $player.masculinity-5>>
+<<set $player.confidence to $player.confidence-5>><</nobr>>
+
+::WakeUp4
+You awake with a start, trying to remember your dream. For some reason, you feel like it's important. Unfortunately, it's of no use. It fades away from your memory, leaving you frustrated and feeling slightly disturbed.
+
+@@.thought;Crap. It's monday@@ you remember. @@.thought;I've got school, and football practice. And my biology test!@@ You had wanted to lie in bed, but you know from experience that you would never want to wake up.
+
+Grudgingly, you stumble out of bed, and grab a towel. As your feet hit the ground, you realize that you're feeling pretty shitty. Actually, it's more than that. You're feeling strange, and something seems different //down there//.
+
+@@.male;"What? You're not going to flash us this morning?"@@
+
+You force yourself to laugh. @@.player;"Why? Did you want me to?"@@ You briefly consider flashing them, but decide against it. @@.thought;Who knows what my body looks like now?@@
+
+But you think you know. Now that you're slightly more awake, you're aware how different it feels between your legs. Usually, you can just //feel// your penis hanging between your legs. You don't have to think about it, you just know that it's there. Today is different though. Instead of the comforting feeling of your penis, you instead feel...nothing. Your stomach drops. @@.thought;Do I still have a dick?@@
+
+There's only one way to find out. You need to take a shower.<<nobr>><<set $player.cock to 0>>
+<<set $player.masculinity to $player.masculinity-15>>
+<<set $player.accuracy to $player.accuracy-25>>
+<<set $player.confidence to $player.confidence-30>><</nobr>>
+
+::WakeUp5
+Yawning lazily, you sit up in your bed. You remember having an amazing dream, but you struggle to remember it.
+
+Suddenly, it comes to you. @@.thought;I had a cock! My cock is back!@@ You lean back again, and give a contented sigh as your head hits the pillow. Your cock is back, the curse is gone, and everything is going to be okay.
+
+Something seems wrong, though. You can't //feel// your cock. Instead, you feel...nothing. @@.thought;Oh no@@ you think, starting to panic. @@.thought;I've got to have a cock. Fuck!@@
+
+As you lie in bed, another sensation hits you. You didn't pee at all yesterday, mainly out of hope that if you put it off, you wouldn't need to deal with it. Your hopes have been dashed, however, and you really need to go.
+
+@@.thought;If my cock is back, then it's okay.@@
+
+::WakeUp7
+You wake up, feeling disoriented. You just had a really disturbing dream. What was it? You rub your eyes, trying to remember.
+
+It all comes flooding back to you. You were doing the panty raid, and you got a pair of panties, and then you...tried them on? @@.thought;Why would I do that?@@ You rack your brains, but you can't remember your reason. You just...did it.
+
+@@.thought;That's really weird. But I'm not going to try them on. I don't belong in panties!@@ You glance down at your flat crotch. Just because you have a pussy doesn't mean that you're going to wear panties!
+
+Eager to take your mind off of the dream, you get out of bed and walk to the shower.
+
+::WakeUp8
+You awake with a start, and shut your alarm off. You stand up, and immediately get hit with the memory of your dream. You <<if visited("Spanish Project Start") or not $pantyRaid or $pantyRaid.takenFrom is "">>wanted to wear<<else>>wore<<set $player.hasPanties to true>><<set $player.panties to $pantyRaid.panties>><</if>> panties!
+
+@@.male;"Everything okay, man?"@@
+
+@@.player;"Uh yeah, Patrick. Everything's fine. Just waking up."@@
+
+Patrick nods and you go take a shower.
+
+::WakeUp14
+You wake up to a knock at your door. @@.thought;Who wants to see me this early?@@
+
+Feeling groggy, you force yourself to get up and open the door. But instead of finding a person there, you see a large package. It's wrapped with red wrapping paper, and there's a card attached.
+
+You carry the package back to your bed, surprised by the ease with which you carried it. You wonder if your strength is coming back, before realizing that whatever's inside probably just doesn't weigh that much.
+
+@@.thought;I wonder who sent this to me@@ you think, looking at the <<linkappend "card.">>
+
+You grab the card and begin to read it:
+
+//Dear <<print $player.firstname>>,
+
+I was cleaning out the garage and I saw Teddy. I can't believe we still have him! He's not doing any good sitting in this dusty garage so I sent him over to you. Maybe it's silly. I know you're a big boy now. If you don't want him, just send him back.
+
+How are you doing? It's been a while since I heard from you.
+
+Love,
+Mom//
+
+You feel a little guilty when you read that card. You haven't talked to her in a while.
+
+@@.thought;At least I know what it is now.@@ Teddy was the teddy bear you used to have when you were little. You remember him being bigger than you. Now that's no longer true, but he's still huge for a teddy bear.
+
+@@.thought;Why would she give me that? I'm not four anymore. I'm eighteen. I should just send it back.@@ As you move to pick up the package, you hesitate. You're no longer an eighteen year old boy. Well, not exactly. And you've gone through a lot. Maybe a stuffed animal to cuddle while you sleep wouldn't be so bad.
+
+[[Send him back the first chance you get|Shower]]
+[[Keep him|Keep Teddy]]<</linkappend>>
+
+::Keep Teddy
+@@.thought;My roommates will give me shit, but fuck them. I've been through a lot, and I deserve a present, even if it's just a stuffed animal.@@
+
+You tear off the wrapping paper. The teddy bear shows some signs of use. There's cotton coming out of one of his ears, and he's a little faded, but he reminds you of when you were a little kid. Things were so uncomplicated back then. You didn't have to worry about transformations, or not letting your team down in football games.
+
+@@.thought;Get a hold of yourself@@ you think. Still, you gently lift Teddy out of the wrapping paper and put him at the head of your bed.
+
+@@.male;"What's going on?"@@ Marco asks sleepily.
+
+@@.player;"Nothing. I mean, my mom just sent me a present."@@
+
+Marco raises his head to look at it. @@.male;"A teddy bear? Shit, you're getting girlier and girlier."@@
+
+@@.player;"Hey, fuck you,"@@ you say, trying to laugh it off. His words still sting. @@.thought;Is a teddy bear even girly? I guess I don't know any guys that sleep with a stuffed animal, but Teddy always calmed me down when I was little.@@
+
+Marco leaves to take a shower, and you cuddle next to your old stuffed animal. Sure enough, you do feel calmer.
+
+[[Go take a shower|Shower]]
+<<set $team.respect to $team.respect-6>>
+
+::WakeUp18
+You wake up, and rub your eyes. You're not feeling very good today. In fact, you're positively exhausted. @@.thought;That's weird. I didn't stay up that late last night. Maybe I'm getting sick.@@
+
+You mentally count what day it is, hoping that it'll somehow still be the weekend. @@.thought;Okay, the game was on friday, and that was one...two...three days ago. Dammit.@@
+
+Looks like you're stuck going to class.
+
+::WakeUpMarco
+<<getTfProgress height>>You wake up and look around. Marco and Patrick are still asleep. Suddenly, the dream you had last night comes rushing back to you, and you hang your head in shame. You know that Marco's asleep and can't see you, but even still, you don't want to look at him right now.
+
+@@.thought;I imagined that I was being fucked by him!@@ A thought crosses your mind, and you reach down to your pussy. Yes, it's wet.
+
+@@.thought;Oh my god! I had a wet dream! About a guy!@@
+
+Tentatively, you raise your head and look at Marco. He's sleeping shirtless, and you can see his bare, muscular chest. He's a little smaller than <<if $tempTfValue>0>>you used to be<<else>>you<</if>>, but that just makes his muscles look more pronounced.
+
+@@.thought;<<print $girlfriend.firstname>> is a very lucky girl@@ you think, before realizing how foreign that thought should be to you.<<increaseArousal 10>><<set $player.homosexuality to $player.homosexuality+3>><<set $wakeUpMarco to true>>
+
+::WakeUp SkillCurse
+You yawn and cover your face with a pillow as your alarm goes off. Your bed feels nice, comfy, and safe. You want to stay here forever.
+
+Then you remember what happened yesterday, and you sink further into the bed. @@.thought;I lost all my strength. And my accuracy. And this is permanent!@@
+
+With a long sigh, you push the covers off of you, only to stop in surprise. The blankets were heavier than you expected. Not much: they're only blankets, after all. But it's //different//,  and it reminds you that you're in a new body.
+
+::WashThoroughly2
+You soap up your body and rinse off. You're already feeling a lot better and cleaner.
+
+You look down at your body to check for any spots that you missed, and you see something strange.
+
+Your body looks different.
+
+Usually when you look down at your body, you're greeted with a view of the impressive muscles you spent years developing. Your muscles aren't exactly //gone//, but they're not that impressive. They look like the muscles of a pretty fit high schooler, not the muscles of one of the best quarterbacks in the state.
+
+Just to make sure, you flex your biceps. Yep. They'd look pretty good on a normal guy, but nothing compared to the ones you had last night.
+
+@@.thought;Fuck. Fuck. FUCK!@@
+
+You stand in the shower, unmoving, for a full minute as the shower continues to run.
+
+In your head, you can hear <<print $witch.firstname>>'s chanting voice: 
+@@.witch;"Take it all away
+Make his strength diminish."@@
+
+@@.thought;It can't be...witchcraft. Right?@@ But you have no logical explanation for why your body looks like this.
+
+::Shower3
+The men's room is empty except for one football player standing at the urinal. You've hung out with him a couple times, but you don't //really// know him that well.
+
+He gives you a nod as you walk into the bathroom. You head for the urinals, but pause. There's only two urinals in the men's room, so you would be standing right next to him. And if you //do// have a pussy, well, that would be awkward. On the other hand, it's unmanly to pee in a stall.
+
+[[Go to the urinals|Urinal]]
+[[Play it safe and use the stall|Stall]]
+<<set $player.cock to 3>>
+
+::Urinal
+@@.player;"Hey!"@@ you greet him, standing next to him at the urinal.
+
+As you prepare for the moment of truth, you can't help but look at his dick. It's huge. Not as massive as yours was two days ago, but still well above average.
+
+With a sigh, you fish for your penis in your boxers...And you find it!
+
+@@.player;"Fuck yes!"@@ you say, forgetting that you're not alone.
+
+@@.male;"What was that?"@@
+
+@@.player;"Uh, nothing,"@@ you say, your face flushed.
+
+Both of you pee in silence. As you're finishing up, you reach down to shake off your dick but notice something very weird. It's there, but it's much smaller than usual. It used to be 8 inches, it was average sized yesterday, and now it's tiny, maybe 3 inches if it were fully erect.
+
+@@.male;"Look at Mr. Babydick over here!"@@ he laughs, his tone indicating that he's teasing you. You try hard not to react. With one comment, he hurt you right where you were most vulnerable.
+
+@@.player;"So you're looking at my dick?"@@ you ask, recovering nicely. @@.player;"What are you, gay?"@@
+
+@@.male;"I thought guys were supposed to get morning wood, not morning, uh..."@@ he trails off, looking for the right word.
+
+You smile. You won. You're still glad when he leaves the bathroom, though.
+
+<<link "Change" "Get Dressed">><</link>>
+<<set $team.respect to $team.respect-12>>
+
+::Stall
+You return the other guy's nod, and walk past him. He doesn't look surprised, probably because he assumes you need to poop. Fingers trembling, you close the stall door and latch it shut.
+
+You sit down on the toilet, and play with the waistband of your boxers. @@.thought;This is the moment of truth.@@
+
+Taking a deep breath, you lower your boxers, revealing...a dick!
+
+@@.player;"Fuck yeah!"@@ you say, forgetting that there's someone else in the bathroom. @@.thought;I don't know why I was worrying. <<print $witch.firstname>> just took away my strength, not my cock.@@
+
+Relaxed, you start peeing. But as you do so, you notice something weird. Your dick is definitely there, but it's gotten even smaller. Yesterday, it was only average size. Now, it's tiny. You're not hard, of course, but it can't be more than three inches erect.
+
+@@.thought;What's happening to me?@@ you think, feeling genuine fear.
+
+It's only when you stop peeing that you realize that you just peed sitting down. @@.thought;Like a girl.@@
+
+<<link "Change" "Get Dressed">><</link>>
+<<set $team.respect to $team.respect-3>>
+<<set $player.submission to $player.submission+1>>
+<<set $player.confidence to $player.confidence-6>>
+
+::ShowerRealizePussy
+The shower feels warm and relaxing. You wouldn't mind just staying here for half an hour, decompressing from the stressful weekend you had.
+
+You came here for a reason, though. @@.thought;I can't avoid this forever. I just need to look and rip this band-aid off, and do it quickly.@@
+
+You think you know what you're going to find, and you're right. A quick look down reveals that your dick, the eight inch monster which you were so proud of, is gone. Completely, totally gone.
+
+@@.player;"FUCK!"@@ you yell, not caring who hears you.
+
+@@.male;"Are you okay, <<print $player.firstname>>?"@@ comes a voice from the other shower.
+
+@@.player;"Yeah, totally fine,"@@ you say. It would be great if there was someone to talk about this with, but this random guy isn't the right person. @@.thought;How can I just tell someone I magically have a pussy now?@@
+
+Well, you're not actually sure that you do have a pussy. You only looked at your crotch for a split second. You force yourself to look back down, and spread your lips to confirm. @@.thought;Yep, I have a pussy now.@@
+
+You'd better stop touching it if you want to get to class on time.
+
+::Shower5
+You get out of bed and stumble to the boys bathroom. It's empty, except for a guy at one of the urinals.
+
+[[Use the stall|Stall5]]
+[[Take the other urinal|Urinal5]]
+
+::Urinal5
+@@.male;"Morning,"@@ the other guy says to you as you approach the urinal.
+
+@@.player;"Morning,"@@ you reply back. You're not in the mood to chat.
+
+Keeping your eyes fixed in front of you, you fish in your boxers for your penis. You can't find it. Desperately, your hand fumbles around your crotch, finally touching your pussy.
+
+@@.thought;So it was just a dream@@ you think, deflated. You feel eyes on you. Turning back to the other guy, you see that he's looking at you, an eyebrow raised.
+
+@@.thought;He must be wondering what's taking me so long.@@ Without a word, you remove your hand and head for the stalls. While you were looking at him, however, you couldn't help but notice his above average cock.
+
+How do you feel?
+
+[[Jealous|Day 5 Bathroom Jealous]]
+[[Humiliated|Day 5 Bathroom Humiliated]]
+<<set $team.suspicion to $team.suspicion+1>>
+
+::Day 5 Bathroom Jealous
+You feel a pang of envy as you walk towards the stall. In spite of yourself, you turn your head as you walk away, catching one last glimpse of his above average cock.
+
+@@.thought;How come he has a big cock, and I'm stuck with a pussy? It's not fair!@@ you think angrily.
+
+[[Sit down and pee|Day 5 Bathroom End]]
+<<set $player.masculinity to $player.masculinity+2>>
+<<set $player.confidence to $player.confidence+3>>
+
+::Day 5 Bathroom Humiliated
+Your eyes well up as you think of the cock you just saw. You knew that all the other guys still had dicks, of course, but this is the first one you've seen since your transformation.
+
+Seeing it just makes you think of the slit between your legs, and reminds you of what you've lost. @@.thought;Every dude in this dorm has a dick, except for me@@ you think miserably. @@.thought;What does that make me? I'm still a dude, right?@@
+
+[[Sit down and pee|Day 5 Bathroom End]]
+<<set $player.masculinity to $player.masculinity-2>>
+<<set $player.confidence to $player.confidence-7>>
+
+::Day 5 Bathroom End
+You sit down on the toilet seat. You can't see your new pussy from this angle, but maybe that's for the best. You really don't want to think about that right now.
+
+You try to make yourself pee like you would have when you were a guy, but the pee doesn't come. @@.thought;How am I supposed to do this? How do girls do this?@@
+
+After sitting there for a while, you eventually relax and suddenly, the pee flows out of you. You can't do anything but stare straight ahead, hoping that it will all be over soon.
+
+Finally, it's done, and you rip off some toilet paper and wipe your new vagina. @@.thought;I'll never get used to this.@@
+
+You hop in the shower, hoping it will clear your mind. The feeling of the hot water against your skin is pleasant, but anytime you look at your naked body, you're reminded of your transformation.
+
+<<link "Change" "Get Dressed">><</link>>
+
+::Stall5
+You look at the other guy, and walk straight past him into the stall, slamming the door shut behind you.
+
+Hands shaking, you undo your pants, hoping that somehow you'll find that your huge penis is back. It isn't, but that doesn't surprise you. You knew this would happen when you chose to use the stalls.
+
+You try to make yourself pee like you would have when you were a guy, but the pee doesn't come. @@.thought;How am I supposed to do this? How do girls do this?@@
+
+After sitting there for a while, you eventually relax and suddenly, the pee flows out of you. You can't do anything but stare straight ahead, hoping that it will all be over soon.
+
+Finally, it's done, and you rip off some toilet paper and wipe your new vagina. @@.thought;I'll never get used to this.@@
+
+How are you feeling?
+
+[[Humiliated|Day 5 Stall Humiliated]]
+[[Concerned|Day 5 Stall Concerned]]
+<<set $player.submission to $player.submission+1>>
+
+::Day 5 Stall Humiliated
+Your eyes well up as you think of what you just did. Everyone else in this building uses the urinal like a normal male, but you just peed like a girl.
+
+@@.thought;Well, I am...I have a pussy.@@ No. You're not a girl, but you don't feel like much of a man right now.
+
+You hop in the shower, hoping it will clear your mind. The feeling of the hot water against your skin is pleasant, but anytime you look at your naked body, you're reminded of your transformation.
+
+<<link "Change" "Get Dressed">><</link>>
+<<set $player.confidence to $player.confidence-15>>
+
+::Day 5 Stall Concerned
+@@.thought;So is this what I'm going to have to do from now on? Pee like a girl?@@
+
+In your mind, you picture yourself using the stall for the next twelve weeks, until the season's over. @@.thought;Will anyone notice? Will it sound the same?@@
+
+You hop in the shower, hoping it will clear your mind. The feeling of the hot water against your skin is pleasant, but anytime you look at your naked body, you're reminded of your transformation.
+
+<<link "Change" "Get Dressed">><</link>>
+
+::ShowerMasturbate2
+You quickly wash your body. Once you're satisfied you did a good enough job, you turn your attention to something much more interesting: your cock.
+
+<<if visited("Lake")>>You didn't get to cum last night with <<print $girlfriend.firstname>>, and you're really horny<<else>>You missed your chance to have sex with <<print $girlfriend.firstname>> last night, and you're a little horny. In your defense, you had a lot on your mind<</if>>. Your cock looks a little smaller than usual now, but it's probably because of the shower.
+
+Unfazed, you take your cock in your right hand and start stroking. //In your mind, you're alone in your dorm room with <<print $girlfriend.firstname>>. She slowly strips down to her bra and panties and winks at you.//
+
+Your cock's hard now, and you keep stroking as the scene in your mind continues.
+
+//<<print $girlfriend.firstname>> lies down on your bed, and you lie on top of her. You quickly take off your jeans, revealing your massive cock.//
+
+The cock you hold in your hand is smaller than the one you have in your mind, but you don't notice.
+
+//You thrust into her, and she moans. Faster and faster you go. <<print $girlfriend.firstname>> is calling your name, and you feel a surge of power run through you as you fuck her. Finally, you cum.//
+
+You cum at the same time, splashing the walls of the shower. Spent, you lean back against the shower wall and regain your composure.
+
+Something seems wrong though. Your orgasm was great, but it wasn't as explosive as the other times you jerked off in the shower. Then you look down at your cock.
+
+@@.thought;Fuck!@@ It's still mostly hard, but it's nowhere near as big as you're used to. It looks like it's only slightly above average. @@.thought;This is the worst. Fuck! Well, maybe it's because I just jerked off and it's not as hard? I'm sure it's nothing.@@
+
+In your head, you can hear <<print $witch.firstname>>'s chanting voice: 
+@@.witch;"Take it all away
+Make his strength diminish."@@
+
+@@.thought;Even if she is a witch, she said nothing about my cock.@@
+
+Something still seems wrong.
+
+::ShowerMasturbateFemale
+You reach down and explore your new anatomy. @@.thought;I'm just going to see what I have, and then I'll stop@@ you tell yourself. You look between your legs. It's hard to see: whenever you looked at a pussy before, it was from a different angle. @@.thought;I can't see it. There's nothing wrong with feeling it quickly.@@ Your hand reaches down and cups it. It feels pretty weird, but at the same time, it's also kind of pleasant.
+
+Tentatively, you insert a finger in, and a low moan escapes your lips. It was pretty loud. If that guy was still in the shower, he would have definitely heard that, but you don't care. You're too lost in the sensations of your new pussy.
+
+When you had a dick, a shower was quick and simple. Jerking off was awkward. You had to stand so the water wasn't raining down on your dick, while also leaving enough space so your cum could shoot against the shower walls. Now, masturbating is much easier and more natural. @@.thought;If only I had boobs to rub while I fingered myself.@@
+
+That thought clears your mind. @@.thought;What the fuck did I just think?@@ You're not horny anymore. You //would// like to have sex, but only if you can insert your penis somewhere, and that's not possible at the moment.
+
+Trying not to cry, you wrap a towel around your lower body and hurry back to your dorm room. Despite yourself, you find yourself thinking that you should do this properly next time.
+
+::Changing4
+<<if visited("ShowerMasturbateFemale")>>You finish up the shower and dry off. <</if>>You're trying your best to not look at your body, but you accidentally catch a glimpse of yourself in the mirror in your dorm room.
+
+It looks...almost comical, really. Even without any muscles, your face and body shape clearly mark you as a man. The vagina that sits between your legs looks really out of place. You would laugh if you weren't so scared.
+
+You check the clock on the wall: 8:01. @@.thought;Shit. I'm already late.@@
+
+::Wear2
+You dry off and head back to your room. Sometimes when you were feeling lazy, you'd walk back naked, but this time you wrap a towel around your waist. You're a little relieved when you don't see anyone in the hallway.
+
+Once you're in your room, you check that Patrick and Marco are still asleep, and then drop the towel and quickly change. The clothes are pretty average, just a t-shirt and jeans, but you're able to pull off a cool, "I don't care" type of look.
+
+Finishing dressing, you sigh. You don't have anything planned for this saturday besides the homecoming dance, but what happened in the shower freaked you out, and you want to do something about it. You're not sure what, but you're feeling a little antsy.
+
+::Wear3
+You quickly change into your casual clothes, putting on the same t-shirt and jeans that you wore yesterday. @@.thought;I should get some more clothes.@@
+
+As you're changing, you notice something else. Your muscles are gone. Literally gone. Your biceps and pecs are all gone, and your chest looks like that of a twelve year old boy's.
+
+You stare down at yourself in shock. You were upset yesterday, when you had lost most of the impressive, rippling muscles you had spent years building up, but now your body is unrecognizable. If someone looked at you now, they would never guess that you were on the football team.
+
+@@.thought;I've got to see <<print $witch.firstname>>.@@
+
+::Wear4
+<<if $player.pants.school is true>>Checking to make sure that your roommates are gone, you quickly get dressed in your uniform. You've always hated it, but it's extra uncomfortable today. The boxers don't fit, and the way they loosely hang on your skin bothers you.<<else>>In a daze, you put on the same clothes you wore yesterday: jeans and a t-shirt. Too late, you realize your mistake, but you're already late. @@.thought;Fuck it, I'll just head to math.@@<</if>>
+
+::Wear5
+Once again, you get dressed in your school uniform. @@.thought;I still don't like it.@@ You're grateful that it at least fits, though. Despite the other changes, your body is still the same as it was before the curse.
+
+::Wear8
+<<if $player.underwear.properName is "Plain white panties">>You step into <<print $witch.firstname>>'s panties. <<if visited("Panty Raid Witch Tell Panties")>>You remember what <<print $witch.firstname>> told you. She put a curse on those panties to force you to wear them. It's no use fighting it.
+
+Just to make sure, you try tugging the panties down your legs. They don't budge. You shiver, remembering the dream that you had.<<else>><<print $witch.firstname>> talked about placing a ward on the panties. You're not sure what she meant, but you feel like the safest thing is just to wear them.<</if>>
+
+Feeling defeated, you look down, and your eyes fall on your panty-clad crotch. It looks just like a girl's, but the illusion is spoiled by the rest of your body.
+
+@@.thought;Nobody will see these panties@@ you tell yourself. But you make sure to pull up your <<print $player.pants.informalName>> extra high, just in case.
+
+<<link "You're about to head out of your room when you feel it. Oh no!" TfPassagePicker>><<set $player.hasWornPanties to true>><<set $tfRecoverPassage to "Go to class">><<set $tfReason to "panties">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<elseif $player.underwear.properName is "Lacey purple panties">>You hesitate as you look at your underwear drawer. Elvira basically told you that you were stuck wearing her panties until she felt like removing the curse. You could try to wear your boxers, but they'd probably just turn into her panties anyway. You're running a little late, and you don't have time to test the curse.
+
+With a sigh, you step into the <<print $player.underwear.informalName>>. Just to make sure, you try tugging the panties down your legs. They don't budge. You shiver, remembering the dream that you had. @@.thought;So I'm stuck wearing these, for who knows how long. Fuck!@@
+
+Feeling defeated, you look down, and your eyes fall on your panty-clad crotch. It looks just like a girl's, but the illusion is spoiled by the rest of your body.
+
+@@.thought;Nobody will see these panties@@ you tell yourself. But you make sure to pull up your <<print $player.pants.informalName>> extra high, just in case.
+
+@@.thought;How am I going to get out of these panties? I could just wait until Elvira gets bored and removes the curse. But how long will that take?@@ You sigh. @@.thought;Wait a minute! If I can figure out the magic behind this, maybe I could remove them myself?@@
+
+<<link "You're about to head out of your room when you feel it. Oh no!" TfPassagePicker>><<set $player.hasWornPanties to true>><<set $tfRecoverPassage to "Go to class">><<set $tfReason to "panties">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<elseif $player.underwear.properName is "Blue French Cut Panties">>You step into <<print $girlfriend.firstname>>'s panties, and look down at yourself. Your flat, panty-clad crotch looks like a girl's, but the illusion is spoiled by the rest of your body.
+
+<<if $player.expectsPeriod>>@@.thought;I'm just doing this because I don't want to get a period when I'm wearing boxers@@ you tell yourself. @@.thought;I don't //want// to wear these panties!@@<<else>>@@.thought;I'm just doing this because...@@ you try to tell yourself, but you stop. Why //are// you doing this? Even though you have a pussy, you're still a guy. And guys don't wear panties.<</if>>
+
+@@.thought;Nobody will see these panties@@ you tell yourself. But you make sure to pull up your <<print $player.pants.informalName>> extra high, just in case.
+
+<<link "You're about to head out of your room when you feel it. Oh no!" TfPassagePicker>><<set $tfReason to "panties">><<set $player.hasWornPanties to true>><<set $tfRecoverPassage to "Go to class">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<elseif visited("Panty Raid Intro") and $pantyRaid.panties is not null and $pantyRaid.panties.properName is "Plain White Panties">>You're not going to wear <<print $witch.firstname>>'s panties! <<if visited("Panty Raid Witch Tell Panties")>>Sure, she told you she put a spell on them to force you to wear it, but what if it was a bluff? You're not going to wear them if you don't have to!<<else>>She said something about putting a ward on them, but you're not sure what that means. @@.thought;Whatever. Why am I even thinking about wearing them?@@<</if>>
+
+You reach into your underwear drawer, and your hand emerges holding the <<print $pantyRaid.panties.informalName>>. @@.thought;What?@@ You definitely meant to get your boxers.
+
+You put the panties back and then reach into the drawer one more time. You reach for the boxers, but your hand moves on its own towards the panties.
+
+@@.thought;Fuck! So they really are cursed!@@ It seems like you're going to be forced to wear the panties.
+
+@@.thought;Unless I throw them away! But would that even work?@@ You take a look at the clock. You're still on time, but you won't be if you dawdle.
+
+[[Throw them away|Cursed Panties Throw]]
+[[It's not going to work. Just wear them|Wear Cursed Panties]]<<elseif visited("Panty Raid Elvira Plead")>>You hesitate in front of your underwear drawer. @@.thought;Elvira basically said I'd be forced to wear these panties. But, what if I'm not?@@ You imagine putting on the panties, only for Elvira to reveal that they weren't cursed and that you wore them anyway.
+
+@@.thought;I'm not wearing any panties!@@ you think defiantly. You reach into your underwear drawer, and your hand emerges holding the <<print $pantyRaid.panties.informalName>>. @@.thought;What?@@ You definitely meant to get your boxers.
+
+You put the panties back and then reach into the drawer one more time. You reach for the boxers, but your hand moves on its own towards the panties.
+
+@@.thought;Fuck! So they really are cursed!@@ It seems like you're going to be forced to wear the panties.
+
+@@.thought;Unless I throw them away! But would that even work?@@ You take a look at the clock. You're still on time, but you won't be if you dawdle.
+
+[[Throw them away|Cursed Panties Throw]]
+[[It's not going to work. Just wear them|Wear Cursed Panties]]<<else>><<if visited("Panty Raid Intro") and $pantyRaid.takenFrom is "">>You put the dream out of your head. Of course you're not going to wear panties!<<else>>@@.thought;What would it be like to wear <<print $girlfriend.firstname>>'s panties? No, what am I thinking? I'm not going to do that!@@<</if>>
+
+You slide the familiar looking boxers up your legs and over your crotch. It looks kind of weird, and it feels kind of weird too. There's too much room. But it's much better than wearing panties.
+
+[[Continue|Go to class]]<</if>>
+
+::Wear Cursed Panties
+@@.thought;It's not going to work. They'd just reappear in my dresser or something. And I don't want to be late@@ you think.
+
+You look at the panties again. @@.thought;Fuck it.@@ You try to quickly slide them up your legs, but you're not able to avoid catching a glimpse of your flat crotch in panties. It looks weird on your hairy, masculine body, but at the same time, the panties seem to fit really well. It certainly fits better than your huge, airy boxers.
+
+@@.thought;Nobody will see these panties@@ you tell yourself. But you make sure to pull up your <<print $player.pants.informalName>> extra high, just in case.
+
+<<if visited("Panty Raid Elvira Plead")>>@@.thought;I've got to figure out a way to get out of this curse. Could I ask Elvira? No, I don't want to beg her. Maybe I could go to the library and try to figure out how to undo the curse.@@
+
+<</if>><<if not visited("Panties Transformation")>><<link "You're about to head out of your room when you feel it. Oh no!" "Panties Transformation">><<set $tfReason to "panties">><<set $player.hasWornPanties to true>><<set $tfRecoverPassage to "Go to class">><<set $tfCircumstances.location to "your room">><<set $tfCircumstances.locationType to "room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "">><</link>><<else>>You wait for the numbness and the ice cold feeling to overtake you, but it doesn't. @@.thought;So I'm not going to transform?@@ you think hopefully.
+
+You wait a minute, just to be sure. It would be so awkward to transform in front of everyone.
+
+[[When nothing happens, you go to class|Go to class]]<</if>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+<<if $witchPanties>><<set $player.underwear to $witchPanties>><<else>><<set $player.underwear to $elviraPanties>><</if>>
+
+::Cursed Panties Throw
+You're not going to wear these panties! You just have to get rid of them. But where?
+
+@@.thought;There's a trash can in the hallway. I'll just throw them away. Then I can put on my boxers and go to class.@@
+
+Feeling more confident now that you have a plan, you stuff <<print $witch.firstname>>'s panties in your pocket and leave your room.
+
+Your stomach sinks. Halfway on your way to the trash can, another guy opens his door behind you and starts walking in your direction.
+
+Well, you're certainly not going to take out the panties in front of him. You get to the trash can and stand there awkwardly, waiting for him to pass. He does a double take at your strange behavior, but continues walking.
+
+Once he's far enough ahead of you, you throw them in and hurry back to your dorm.
+
+Now you just have to put on your boxers. You reach into your dresser and pull out...a pair of <<print $pantyRaid.panties.informalName>>. @@.thought;Huh?@@ How did they get here? You're pretty sure, no, you definitely threw them away. How did they get there?
+
+You throw the panties across the room, and then turn back to your dresser. Yeah, they're still there.
+
+@@.thought;Fuck!@@ you think, realizing that you're going to be forced to wear them. @@.thought;Whatever.@@ You close your eyes and slide them up your legs, being careful to avoid looking at the sight of your crotch in panties.
+
+<<if visited("Panty Raid Elvira Plead")>>@@.thought;I've got to figure out a way to get out of this curse. Could I ask Elvira? No, I don't want to beg her. Maybe I could go to the library and try to figure out how to undo the curse.@@
+
+<</if>>[[Go to class]]
+<<set $player.underwear to $pantyRaid.panties>>
+<<set $player.hasWornPanties to true>>
+<<set $player.isWearingPanties to true>>
+
+::WearTorn
+You put on your <<print $player.pants.informalName>>, casting a nervous glance at your wardrobe. @@.thought;I need to get more pants. And will my teachers even let me wear these @@<<if $player.pants.football is true>>@@.thought;football@@<<else>>@@.thought;torn@@<</if>> @@.thought;pants? That's not part of my uniform.@@
+
+An idea crosses your mind. @@.thought;Wait a minute! @@<<if $dayOfWeek is "Saturday" or $dayOfWeek is "Sunday">>@@.thought;I can use this weekend to buy pants! I can get some from the mall.@@<<else>>@@.thought;I have some time before class. I could buy pants from the mall!@@<</if>>
+
+[[Go to the mall|Mall]]<<if $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">>
+[[It's not worth it|Go to class]]<</if>>
+<<set $checkedGuysPants to false>>\
+
+::WeekendPlan2
+@@.thought;What am I even thinking? I can't seriously be worried about <<print $witch.firstname>> being a witch. I should just play video games and blow off steam.@@

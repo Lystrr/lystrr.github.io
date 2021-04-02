@@ -1,0 +1,135 @@
+body {
+	background-color: black;
+	color: white;
+	font-size: 125%;
+}
+#story {
+	margin-right: 20em;
+}
+a {
+	color: red;
+	font-size: 140%,
+}
+a:hover {
+	color: Crimson;
+	border-bottom: 5px solid blue;
+	text-decoration: none;
+}
+.player {
+	color: orange;
+}
+.witch {
+	color: #DA96F2;
+}
+.qb {
+	color: #ff5C5C;
+}
+.girlfriend {
+	color: yellow;
+}
+.female {
+	color: pink;
+}
+.male {
+	color: cyan;
+}
+.thought {
+	color: orange;
+	font-style: italic;
+}
+.center {
+	text-align: center;
+}
+.leftalign {
+	text-align: left;
+}
+.girlfriend {
+	color: yellow;
+}
+.female {
+	color: pink;
+}
+.male {
+	color: cyan;
+}
+.thought {
+	color: orange;
+	font-style: italic;
+}
+.center {
+	text-align: center;
+}
+.leftalign {
+	text-align: left;
+}
+.passage input[type="text"] {
+	min-width: 50px;
+	width: 150px;
+}
+#right-ui-bar {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	right: 0;
+	width: 17.5em;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: left .2s ease-in;
+	-o-transition: left .2s ease-in;
+	transition: left .2s ease-in;
+}
+#avatar {
+	top:25px;
+	left:20px;
+	position: absolute;
+	height:504px;
+	width:232px;
+}
+.avatar img {
+	position: relative;
+	display: inline-block;
+	top: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5em;
+	width: 100%;
+	overflow: hidden;  
+}
+.storyinfo {
+	position: absolute; 
+	top: 50px; 
+	left: 38px; 
+	width:217px; 
+	height:27px; 
+	background: #ff7bac; 
+	color: #ffffff; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	padding-top: 7px; 
+	text-align: center; 
+}
+.avatarinfobot { position: absolute; top: 570px; left: 38px; width:217px; height:27px; background: #ff7bac; color: #ffffff; font-weight: bold; font-size: 10pt; padding-top: 7px; text-align: center;}
+.avatar {  position: absolute;  top: 50px;  left: 10px; }
+.avatar head { z-index: 1; }
+.avatar eyes { z-index: 2; }
+.avatar mouth { z-index: 3; }
+.avatar makeup { z-index: 4; }
+.avatar hair { z-index: 5; }
+.avatar torso { z-index: 6; }
+.avatar left-arm { z-index: 7; }
+.avatar right-arm { z-index: 8; }
+.avatar tits { z-index: 9; }
+.avatar legs { z-index: 10; }
+.avatar genitals { z-index: 11; }
+.avatar pubic-hair { z-index: 12; }
+.avatar underwear { z-index: 13; }
+.avatar bra { z-index: 14; }
+.avatar pants { z-index: 15; }
+.avatar shirt1 { z-index: 16; }
+.avatar shirt2 { z-index: 17; }
+.avatar shirt3 { z-index: 18; }
+.avatar headgear { z-index: 19; }
+.avatar one-piece { z-index: 20; }
+.avatar hand { z-index: 21; }

@@ -1,0 +1,2600 @@
+:: StoryData
+{
+        "ifid": "0AA25CA5-D784-4EAE-83A8-C24CD1DA266C",
+        "Start": "Disclaimer"
+}
+
+::StoryTitle
+You Throw Like A Girl
+
+::Widgets [widget]
+<<widget "passTime">><<nobr>>
+	<<if $timeOfDay is 4>>
+		<<set $timeOfDay to 1>>
+		<<set $day to $day+1>>
+		<<if $dayOfWeek is "Friday">><<set $dayOfWeek to "Saturday">><<elseif $dayOfWeek is "Saturday">><<set $dayOfWeek to "Sunday">><<elseif $dayOfWeek is "Sunday">><<set $dayOfWeek to "Monday">><<elseif $dayOfWeek is "Monday">><<set $dayOfWeek to "Tuesday">><<elseif $dayOfWeek is "Tuesday">><<set $dayOfWeek to "Wednesday">><<elseif $dayOfWeek is "Wednesday">><<set $dayOfWeek to "Thursday">><<else>><<set $dayOfWeek to "Friday">><</if>>
+	<<else>>
+		<<set $timeOfDay to $timeOfDay+1>>
+	<</if>>
+	<<increaseArousal 10>>
+<</nobr>><</widget>>
+
+<<widget "updateAvatar">><<nobr>>
+	<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress ass>><<set $tempAss to $tempTfValue>>
+	<<set $eyesImage="images/body/eyes/blue_default.png">>
+	<<set $handImage to null>>
+	<<if $tempFace>3 or $temporarilyTransformed>>
+		<<set $headImage to "images/body/head/woman.png">>
+	<<elseif $tempFace is 3>>
+		<<set $headImage to "images/body/head/partial_woman.png">>
+	<<elseif $tempFace is 2>>
+		<<set $headImage to "images/body/head/androgenous.png">>
+	<<elseif $tempFace is 1>>
+		<<set $headImage to "images/body/head/partial_man.png">>
+	<<else>>
+		<<set $headImage to "images/body/head/man.png">>
+	<</if>><<if $player.isWearingMakeup>>
+		<<set $mouthImage to "images/body/mouth/lipstick_default.png">>
+	<<elseif $tempFace<2>>
+		<<set $mouthImage to "images/body/mouth/nude_man.png">>
+	<<else>>
+		<<set $mouthImage to "images/body/mouth/nude_default.png">>
+	<</if>><<if $tempHair>=4 or $temporarilyTransformed>>
+		<<set $hairImage to "images/body/hair/shoulder_length_blonde.png">>
+	<<elseif $tempHair is 3>>
+		<<set $hairImage to "images/body/hair/shoulder_length_blonde.png">>
+	<<elseif $tempHair is 2>>
+		<<set $hairImage to "images/body/hair/stylish_blonde.png">>
+	<<elseif $tempHair is 1>>
+		<<set $hairImage to "images/body/hair/short_combed_blonde.png">>
+	<<else>>
+		<<set $hairImage to "images/body/hair/short_scruffy_blonde.png">>
+	<</if>><<if $day<3>>
+		<<set $torsoImage to "images/body/torso/man.png">>
+	<<else>>
+		<<set $torsoImage to "images/body/torso/woman.png">>
+	<</if>><<if $day is 1>>
+		<<set $leftArmImage to "images/body/arms_left/muscular.png">>
+		<<set $rightArmImage to "images/body/arms_right/muscular.png">>
+	<<else>>
+		<<set $leftArmImage to "images/body/arms_left/default.png">>
+		<<set $rightArmImage to "images/body/arms_right/default.png">>
+	<</if>><<if $day<2>>
+		<<set $titsImage to "images/body/tits/pecs.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket.png">>
+	<<elseif $tempBoobs is 0>>
+		<<set $titsImage to "images/body/tits/flat.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket.png">>
+	<<elseif $tempBoobs is 1>>
+		<<set $titsImage to "images/body/tits/AA.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket.png">>
+	<<elseif $tempBoobs is 2>>
+		<<set $titsImage to "images/body/tits/A.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket_small_breasts.png">>
+	<<elseif $tempBoobs is 3>>
+		<<set $titsImage to "images/body/tits/B.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket_small_breasts.png">>
+	<<elseif $tempBoobs is 4>>
+		<<set $titsImage to "images/body/tits/C.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket_large_breasts.png">>
+	<<else>>
+		<<set $titsImage to "images/body/tits/DD.png">>
+		<<set $jacketImage to "images/clothes/shirts/school_jacket_large_breasts.png">>
+	<</if>><<if $tempAss is 4 or $temporarilyTransformed>>
+		<<if $player.legs>=3>>
+			<<set $legsImage to "images/body/legs/woman.png">>
+		<<else>>
+			<<set $legsImage to "images/body/legs/woman_hairy.png">>
+	<</if>><<elseif $player.legs>=3>>
+		<<set $legsImage to "images/body/legs/man.png">>
+	<<else>>
+		<<set $legsImage to "images/body/legs/man_hairy.png">>
+	<</if>><<if $day is 1 and $player.arousal>=75>>
+		<<set $genitalsImage to "images/body/genitalia/penis_erect.png">>
+	<<elseif $day is 1>>
+		<<set $genitalsImage to "images/body/genitalia/dick.png">>
+	<<elseif $day is 2>>
+		<<set $genitalsImage to "images/body/genitalia/smaller_dick_1.png">>
+	<<elseif $day is 3>>
+		<<set $genitalsImage to "images/body/genitalia/smaller_dick_2.png">>
+	<<else>>
+		<<set $genitalsImage to "images/body/genitalia/slit.png">>
+	<</if>><<if visited("Girlfriend Beach Trim")>>
+		<<set $pubicHairImage to "images/body/pubic hair/landing_strip.png">>
+	<<else>>
+		<<set $pubicHairImage to "images/body/pubic hair/growing.png">>
+	<</if>><<if $player.underwear and $tempAss<4 and not $temporarilyTransformed>>
+		<<set $underwearImage to $player.underwear.manImage>>
+	<<elseif $player.underwear>>
+		<<set $underwearImage to $player.underwear.womanImage>>
+	<</if>><<if $player.bra>>
+		<<if $tempBoobs<=2>>
+			<<set $braImage to $player.bra.images[0]>>
+		<<elseif $tempBoobs is 3>>
+			<<set $braImage to $player.bra.images[1]>>
+		<<elseif $tempBoobs is 4>>
+			<<set $braImage to $player.bra.images[2]>>
+		<<else>>
+			<<set $braImage to $player.bra.images[3]>>
+	<</if>><</if>><<if $player.pants and not $player.pants.onepiece>>
+		<<if $tempAss is 4>>
+			<<set $pantsImage to $player.pants.womanImage>>
+		<<else>>
+			<<set $pantsImage to $player.pants.manImage>>
+	<</if>><</if>><<if $player.shirt and not $player.shirt.onepiece>>
+		<<if $tempBoobs is 0>>
+			<<set $shirtImage to $player.shirt.images[0]>>
+		<<elseif $tempBoobs<=2>>
+			<<set $shirtImage to $player.shirt.images[1]>>
+		<<elseif $tempBoobs<=4>>
+			<<set $shirtImage to $player.shirt.images[2]>>
+		<<else>>
+			<<set $shirtImage to $player.shirt.images[3]>>
+	<</if>><</if>><<if $player.shirt and $player.shirt.properName is "Stallions Jersey and Pads">>
+		<<set $headgearImage to "images/clothes/headgear/football_helmet.png">>
+	<<elseif $player.shirt and $player.shirt.costume and $player.pants and $player.pants.costume>>
+		<<if $player.shirt.properName is "Princess Dress" and $player.pants.properName is "Princess Dress">>
+			<<set $headgearImage to "images/clothes/headgear/tiara.png">>
+		<<elseif $player.shirt.properName is "Wonder Woman costume" and $player.pants.properName is "Wonder Woman costume">>
+			<<set $headgearImage to "images/clothes/headgear/wonder_woman_headband.png">>
+			<<set $braImage to null>>
+		<<else>>
+			<<set $headgearImage to null>>
+		<</if>>
+	<<else>>
+		<<set $headgearImage to null>>
+	<</if>><<if $player.towel is 0>>
+		<<set $onePieceImage to "">>
+	<<elseif $player.towel is 1>>
+		<<set $onePieceImage to "images/clothes/onepieces/towel_legs.png">>
+	<<elseif $player.towel is 2 and $tempBoobs<2>>
+		<<set $onePieceImage to "images/clothes/onepieces/towel_no_breasts.png">>
+	<<elseif $player.towel is 2 and $tempBoobs<5>>
+		<<set $onePieceImage to "images/clothes/onepieces/towel_small_breasts.png">>
+	<<elseif $player.towel is 2>>
+		<<set $onePieceImage to "images/clothes/onepieces/towel_large_breasts.png">>
+	<</if>><<if $player.shirt and $player.shirt.onepiece is true>>
+		<<if $tempBoobs<2>>
+			<<set $onePieceImage to $player.shirt.images[0]>>
+		<<elseif $tempBoobs is 2>>
+			<<set $onePieceImage to $player.shirt.images[1]>>
+		<<elseif $tempBoobs<=4>>
+			<<set $onePieceImage to $player.shirt.images[2]>>
+		<<else>>
+			<<set $onePieceImage to $player.shirt.images[3]>>
+	<</if>><</if>><<if $player.shirt and $player.shirt.costume and $player.pants and $player.pants.costume>>
+		<<if $player.shirt.properName is "Cheerleaders top" and $player.pants.properName is "Cheerleading Skirt">>
+			<<set $handImage to "images/clothes/handwear/pom_poms.png">>
+		<</if>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "handleTf">><<nobr>>
+<<set $player.feminine to $player.feminine+1>>
+<<set $keys to Object.keys($tfs)>>
+<<set $lastTf to $args[0]>>
+<<for _i to 0;_i<$keys.length;_i++>>
+	<<if $keys[_i] is $args[0]>>
+		<<set $tfProgress[_i] to $tfProgress[_i]+1>>
+	<</if>>
+<</for>>
+<</nobr>><</widget>>
+
+<<widget "getTfProgress">><<nobr>>
+<<set $keys to Object.keys($tfs)>>
+<<for _i to 0;_i<$keys.length;_i++>>
+	<<if $keys[_i] is $args[0]>>
+		<<set $tempTfValue to $tfProgress[_i]>>
+	<</if>>
+<</for>>
+<</nobr>><</widget>>
+
+<<widget "setUpSexScene">><<nobr>>
+	<<set $movesTakenDuringSex to -1>>
+	<<set $sexDescription to "">>
+	<<if $player.arousal>=99>><<set $player.arousal to 99>><</if>>
+	<<set $playerCame to false>>
+	<<set $partnerCame to false>>
+	<<set $beforeSexClothes.shirt to $player.shirt>>
+	<<set $beforeSexClothes.bra to $player.bra>>
+	<<set $beforeSexClothes.underwear to $player.underwear>>
+	<<set $beforeSexClothes.pants to $player.pants>>
+	<<set $beforeSexClothes.shoes to $player.shoes>>
+	<<set $beforeSexClothes.socks to $player.socks>>
+	<<if $args[0] is "girlfriend">>
+		<<if $player.arousal>50>>
+			<<set $girlfriend.arousal to $player.arousal-10>>
+		<<else>>
+			<<set $girlfriend.arousal to $player.arousal+10>>
+		<</if>>
+	<<else>>
+		<<if $player.arousal>50>>
+			<<set $qb.arousal to $player.arousal-10>>
+		<<else>>
+			<<set $qb.arousal to $player.arousal+10>>
+		<</if>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "finishSexScene">><<nobr>>
+	<<set $player.shirt to $beforeSexClothes.shirt>>
+	<<set $player.bra to $beforeSexClothes.bra>>
+	<<set $player.underwear to $beforeSexClothes.underwear>>
+	<<set $player.pants to $beforeSexClothes.pants>>
+	<<set $player.shoes to $beforeSexClothes.shoes>>
+	<<set $player.socks to $beforeSexClothes.socks>>
+	<<set $sexDescription to "">>
+	<<if $player.arousal>=100>>
+		<<set $player.arousal to 0>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "showFootballScore">><<nobr>>
+<<if $stallionsscore>=$defensescore>>//Stallions: <<print $stallionsscore>>, <<print $opponent>>: <<print $defensescore>>//
+<<else>>//<<print $opponent>>: <<print $defensescore>>, Stallions <<print $stallionsscore>>//<</if>>
+<</nobr>>
+<</widget>>
+
+<<widget "increaseArousal">><<nobr>>
+<<if $player.arousal+$args[0]>75>>
+	<<set $player.arousal to 75>>
+<<else>>
+	<<set $player.arousal to $player.arousal+$args[0]>>
+<</if>>
+<</nobr>><</widget>>
+
+<<widget "showArousal">><<if $player.arousal>=75 and $day>=4>><<if $timeOfDay == 1>><<if $dayOfWeek is "Monday" or $dayOfWeek is "Tuesday" or $dayOfWeek is "Wednesday" or $dayOfWeek is "Thursday" or $dayOfWeek is "Friday">>\
+			You're so horny and your <<print $player.underwear.informalName>> is soaking wet. You look around. Class is going on normally, and nobody is paying any attention to you. You look at the clock. @@.thought;Just five minutes left.@@ You have to hold it, and then you can run to your dorm room and take care of your itch.
+			
+			@@.male;"May I use the bathroom, Miss Williams?"@@ The teacher nods her agreement, and the student stands up. As he walks to the bathroom, you admire his toned physique, now so different than your own, and his firm ass. You have just enough time to wonder why you're checking a guy out, and then you come.
+			
+			@@.female;"Is there something you want to share with us, Mr. <<print $player.lastname>>?"@@ You shake your head no, cheeks burning. You can tell that everyone else is laughing at you. You just hope that nobody is looking closely at the lack of a bulge in your <<print $player.pants.informalName>>.<<set $player.arousal to 0>><<set $friends.relationship to $friends.relationship-2>>
+		
+		<</if>><<else>>\
+			''<<if $player.underwear>>//You feel like you're about to burst. You're so horny, and your <<print $player.underwear.informalName>> is soaking wet.//<<else>>//You're so horny you feel like you're about to burst.//<</if>> <<if $player.feminine>=2>>//You're afraid that you'll transform again if you masturbate. But then how are you going to get off?//<<else>>//Maybe you could take care of that when you get a chance.//<</if>>/
+
+		<</if>>\
+<</if>><</widget>>
+
+<<widget "spyOnClub">><<nobr>>
+	<<if $dayOfWeek is "Tuesday" or $dayOfWeek is "Saturday">>
+		<<if $timeOfDay is 3 and not visited("Witch Club Spy 1") and visited("Girlfriend Spy Plan")>>
+			''The Witchcraft Club is starting soon!''
+			<<link "Hide in the woods" "Witch Club Spy 1">><</link>>
+		<<elseif $timeOfDay is 3 and not visited("Witch Club Spy 2") and visited("Witch Club Spy 1")>>
+			''The Witchcraft Club is starting soon!''
+			<<link "Hide in the woods" "Witch Club Spy 2">><</link>>
+		<<elseif $timeOfDay is 3 and not visited("Witch Club Spy 3") and $witch.knowsAboutBreakup>>
+			''The Witchcraft Club is starting soon!''
+			<<link "Hide in the woods" "Witch Club Spy 3">><</link>>
+		<<elseif $timeOfDay is 3 and $player.hasButtplug is false and visited("Witch Club Spy 3 Caught") and $player.feminine>=14>>
+			''The Witchcraft Club is starting soon!''
+			@@.thought;Should I go? Elvira threatened me with a buttplug...but she probably wasn't being serious.@@
+
+			<<link "Hide in the woods" "Witch Club Spy Buttplug">><</link>><<set $witchClub to 4>>
+		<<elseif $timeOfDay is 3 and visited("Witch Club Spy 3") and not visited("Witch Club Spy 4") and $player.hasButtplug is false>>
+			''The Witchcraft Club is starting soon!''<<if visited("Witch Club Spy 3 Caught")>>
+			@@.thought;Should I go? Last time I got caught.@@<</if>>
+
+			<<link "Hide in the woods" "Witch Club Spy 4">><</link>><<set $witchClub to 4>>
+		<<elseif $timeOfDay is 3 and visited("Witch Club Spy 3") and not visited("Witch Club Spy 4")>>
+			The Witchcraft Club is starting soon, but there's no way you're going back there.
+		<<elseif $timeOfDay is 4 and not visited("Witch Club 4 Discuss") and $witchClub is 4>>
+			''You can now discuss the Witchcraft Club with <<print $girlfriend.firstname>>''
+
+			<<link "Go to her room" "Witch Club 4 Discuss">><</link>>
+		<</if>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "shouldSeeTherapist">><<nobr>>
+	<<set $shouldSeeTherapist to false>>
+	<<if visited("MorningClassPeriod Garcia") and $garcia.suspicion>=2 and $dayOfWeek is "Thursday">>
+		<<set $shouldSeeTherapist to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "showQBSkill">><<nobr>><<if $args[0] is true>>
+	<<set $var to $player.armStrength*0.35>>
+	<<set $var to $var+$player.accuracy*0.35>>
+	<<set $var to $var+$player.speed*0.1>>
+	<<set $var to $var+$player.confidence*0.1>>
+	<<set $var to $var+$team.respect*0.1>>
+	<<set $player.qbSkill to Math.round($var)>>
+	<<else>>
+	<<set $var to $qb.armStrength*0.35>>
+	<<set $var to $var+$qb.accuracy*0.35>>
+	<<set $var to $var+$qb.speed*0.1>>
+	<<set $var to $var+$qb.confidence*0.1>>
+	<<set $var to $var+$team.qbRespect*0.1>>
+	<<set $qb.qbSkill to Math.round($var)>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsQBContentAvailable">><<nobr>>
+	<<set $qb.contentAvailable to false>>
+	<<if not visited("QB Discuss Spell") and visited("Witch Discuss QBSkillSpell")>>
+		<<set $qb.contentAvailable to true>>
+	<<elseif visited("QB Discuss Spell NotReady") and not visited("QB SpellChallenge Intro")>>
+		<<set $qb.contentAvailable to true>>
+	<<elseif visited("QB SpellChallenge Results") and not visited("QB Spell AfterCompetition")>>
+		<<set $qb.contentAvailable to true>>
+	<</if>><<if $timeOfDay is 4 and visited("Girlfriend Girltalk AskOutQB") and $player.homosexuality>=20 and (visited("QB Practice 5 Sex") or visited("QB Practice 4 Sex") or visited("Team Practice 4 Blowjob Start"))>>
+		<<set $qb.contentAvailable to true>>
+	<</if>><<if $timeOfDay<4 and ($player.skillCurse<4 or $player.ownsGirlPants is true)>>
+		<<set $qb.contentAvailable to true>>
+	<</if>><<if ($visitedQBPractice<7 or ($visitedQBPractice is 7 and $player.crush is $qb.firstname and visited("Lunch QB Morgan Witch") and visited("Lunch Friends Morgan Overhear"))) and $timeOfDay<4>>
+		<<set $qb.contentAvailable to true>> 
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsGFContentAvailable">><<nobr>>
+	<<getTfProgress boobs>>
+	<<set $girlfriend.contentAvailable to false>>
+	<<if $player.relationship is not "" or not visited("Girlfriend Results Discussion Dorm")>>
+		<<if $girlfriend.knowsSecret is false>>
+			<<set $girlfriend.contentAvailable to true>>
+		<<elseif $player.hasStrapon>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if visited("Girlfriend Hang Out")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<<else>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if visited("Gym Day 7 Lose Trunks") and not visited("Girlfriend Swim Intro")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if visited("Backstory Intro") and $girlfriend.knowsSecret and not visited("Girlfriend Witch")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<<elseif not visited("Witch Club Spy 1")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if not visited("Witch Club Spy 1") and visited("Girlfriend Spy Plan") and ($dayOfWeek is "Tuesday" or $dayOfWeek is "Saturday")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if visited("Therapist 1 Boobs") and $player.hasBra is false>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>>
+	<<else>>
+		<<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if $girlfriend.dateMarcoPermission is 2 and not visited("Girlfriend Girltalk")>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>><<if visited("Therapist 1 Boobs") and $player.hasBra is false>>
+			<<set $girlfriend.contentAvailable to true>>
+		<</if>>
+	<</if>>
+	<<if $player.relationship is $girlfriend.firstname and not visited("Girlfriend Beach TryOn") and $tempTfValue>1>>
+		<<set $girlfriend.contentAvailable to true>>
+	<<elseif $qb.date is $player.firstname and $day>$dayOfDate and not visited("Girlfriend Beach TryOn") and $tempTfValue>1>>
+		<<set $girlfriend.contentAvailable to true>>
+	<<elseif $qb.date is "Morgan" and $day>$dayOfDate and not visited("Girlfriend Beach TryOn") and $tempTfValue>1>>
+		<<set $girlfriend.contentAvailable to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsWitchContentAvailable">><<nobr>>
+	<<getTfProgress voice>>
+	<<set $tempVoice to $tempTfValue>>
+	<<getTfProgress boobs>>
+	<<set $tempBoobs to $tempTfValue>>
+	<<set $witch.contentAvailable to false>>
+	<<if not visited("Backstory Intro")>>
+		<<set $witch.contentAvailable to true>>
+	<<elseif not visited("Witch Encounter 2") and $day>2>>
+		<<set $witch.contentAvailable to true>>
+	<</if>><<if $curseActive is true and $pantyRaid.takenFrom is not "Elvira" and $day>7>>
+		<<set $witch.contentAvailable to true>>
+	<</if>><<if $tempVoice>0 and $player.controlQuestIntroduced is false and $witch.relationship>=35>>
+		<<set $witch.contentAvailable to true>>
+	<<elseif $player.controlQuestIntroduced is true and $player.controlQuestCompleted is false>>
+		<<set $witch.contentAvailable to true>>
+	<<elseif $player.controlQuestCompleted is true and $player.feet is 0>>
+		<<set $witch.contentAvailable to true>>
+	<</if>><<if (visited("Therapist 1 Boobs") or $tempBoobs>=3) and $player.hasBra is false>>
+		<<set $witch.contentAvailable to true>>
+	<</if>><<if not visited("Witch Discuss QBSkillSpell") and visited("Game 4 Witch Proposal")>>
+		<<set $witch.contentAvailable to true>>
+	<</if>><<if visited("QB Spell Benefit Hair") and $player.skillCurse is 0>>
+		<<set $witch.contentAvailable to true>>
+	<<elseif visited("QB Spell Sacrifice Collect") and $player.skillCurse is 0>>
+		<<set $witch.contentAvailable to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsNewGFContentAvailable">><<nobr>>
+	<<set $girlfriend.newContentAvailable to false>>
+	<<if $girlfriend.knowsSecret is false and not visited("Girlfriend Encounter Day 4")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Girlfriend Strapon Fucked Start")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Girlfriend Strapon")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Hang Out")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Girlfriend Hang Out 2")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Swim Intro")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Witch")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Girlfriend Spy")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Witch Club Spy 1")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<<elseif not visited("Girlfriend Results Discussion")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Bra Start")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Girltalk")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if $qb.date and $qb.date is $player.firstname and $qb.dateHelp is $girlfriend.firstname and not visited("QBDate Girlfriend Makeover")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>><<if not visited("Girlfriend Beach TryOn")>>
+		<<set $girlfriend.newContentAvailable to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsNewWitchContentAvailable">><<nobr>>
+	<<set $witch.newContentAvailable to false>>
+	<<if not visited("Backstory Intro")>>
+		<<set $witch.newContentAvailable to true>>
+	<<elseif not visited("Witch Encounter 2")>>
+		<<set $witch.newContentAvailable to true>>
+	<</if>><<if not visited("Witch Apologize Intro") and $pantyRaid and $pantyRaid.takenFrom is not "Elvira" and $pantyRaid.takenFrom is not "">>
+		<<set $witch.newContentAvailable to true>>
+	<</if>><<if $player.controlQuestIntroduced is false and not visited("Witch ControlTf Intro")>>
+		<<set $witch.newContentAvailable to true>>
+	<<elseif $player.controlQuestCompleted is false and not visited("Witch ControlTf")>>
+		<<set $witch.newContentAvailable to true>>
+	<<elseif $player.feet is 0 and not visited("Witch ControlSpell")>>
+		<<set $witch.newContentAvailable to true>>
+	<<elseif not visited("Lunch Witch Breakup")>>
+		<<set $witch.newContentAvailable to true>>
+	<<elseif not visited("Witch Bra Start") and $player.hasBra is false>>
+		<<set $witch.newContentAvailable to true>>
+	<</if>><<if not visited("Witch Discuss QBSkillSpell")>>
+		<<set $witch.newContentAvailable to true>>
+	<</if>><<if not visited("Witch QBSkillSpell Improve") and not visited("Witch QBSkillSpell Sacrifice")>>
+		<<set $witch.newContentAvailable to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "IsNewQBContentAvailable">><<nobr>>
+	<<set $qb.newContentAvailable to false>>
+	<<if $visitedQBPractice<8>>
+		<<set $qb.newContentAvailable to true>>
+	<</if>><<if not visited("QB Lake")>>
+		<<set $qb.newContentAvailable to true>>
+	<</if>><<if not visited("QB Spell Benefit Hair") and not visited("QB Spell Sacrifice Collect")>>
+		<<set $qb.newContentAvailable to true>>
+	<</if>><<if $qb.date and $qb.date is $player.firstname and not visited("QBDate Start")>>
+		<<set $qb.newContentAvailable to true>>
+	<</if>>
+<</nobr>><</widget>>
+
+<<widget "AreNewTfsAvailable">><<nobr>>
+	<<set $totalTransformations to 0>>
+	<<for _i to 0;_i<$tfProgress.length;_i++>>
+		<<set $totalTransformations to $totalTransformations+$tfProgress[_i]>>
+	<</for>>
+	<<set $maxTransformations to $tfLimits.face+$tfLimits.ass+$tfLimits.boobs+$tfLimits.voice+$tfLimits.hands+$tfLimits.hair+$tfLimits.height>>
+	<<set $newTfsAvailable to $totalTransformations<$maxTransformations>>
+<</nobr>><</widget>>
+
+<<widget "skillCurse">><<nobr>>
+	<<if $player.armStrength>20>><<set $qb.armStrength to $qb.armStrength+20>><<else>><<set $qb.armStrength to $qb.armStrength+$player.armStrength>><</if>>
+	<<if $player.accuracy>20>><<set $qb.accuracy to $qb.accuracy+20>><<else>><<set $qb.accuracy to $qb.accuracy+$player.accuracy>><</if>>
+	<<set $player.armStrength to 0>>
+	<<set $player.accuracy to 0>>
+<</nobr>><</widget>>
+
+<<widget "canPlayerWearOutfit">><<nobr>>
+	<<getTfProgress ass>><<set $tempAss to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>>
+	<<set $playerCanWearOutfit to "">>
+	<<if $player.shirt is null or $player.pants is null>>
+		<<set $playerCanWearOutfit to "You need to get dressed">>
+	<<elseif $player.pants.torn is true or ($tempAss is 4 and $player.pants.female is false and $player.pants.properName is not "White Polyester Pants" and not $player.pants.costume)>>
+		<<set $playerCanWearOutfit to "You can't wear these pants again. Better change your outfit.">>
+	<<elseif $player.socks is null and ($player.feet<2 or ($player.shoes is not null and $player.shoes.female is false))>>
+		<<set $playerCanWearOutfit to "You need socks">>
+	<<elseif $player.shoes and $player.shoes.female and $player.shoes.properName is not "Pink Cleats" and $player.socks is not null>>
+		<<set $playerCanWearOutfit to "You shouldn't wear socks with your $player.shoes.informalName">>
+	<<elseif $player.underwear is null>>
+		<<if $player.hasWornPanties or ($pantyRaid.panties and $pantyRaid.panties is not null)>>
+			<<set $playerCanWearOutfit to "You don't want to wear panties, but your skin gets itchy when you go commando">>
+		<<else>>
+			<<set $playerCanWearOutfit to "You need underwear">>
+		<</if>>
+	<<elseif $player.isWearingDress and ($player.shirt.costume is false or $day is not 31)>>
+		<<set $playerCanWearOutfit to "There's no way you're going to go outside wearing a dress!">>
+	<<elseif $tempBoobs>=3 and $player.bra is null and $player.hasBra>>
+		<<set $playerCanWearOutfit to "You need a bra">>
+	<<elseif $args[0] is "school">>
+		<<if $player.shirt.school is false>>
+			<<set $playerCanWearOutfit to "You can't wear that shirt to school!">>
+		<<elseif $player.pants.school is false>>
+			<<set $playerCanWearOutfit to "You can't wear those pants to school!">>
+		<<elseif $player.underwear.school is false>>
+			<<if $player.underwear.panties is true>>
+				<<set $playerCanWearOutfit to "You can't wear those panties to school!">>
+			<<else>>
+				<<set $playerCanWearOutfit to "You can't wear those boxers to school!">>
+			<</if>>
+		<<elseif $player.shoes and $player.shoes.school is false>>
+			<<set $playerCanWearOutfit to "You can't wear those shoes to school!">>
+		<<elseif $player.socks and $player.socks.school is false>>
+			<<set $playerCanWearOutfit to "You can't wear those socks to school!">>
+		<</if>>
+	<<elseif $args[0] is "football">>
+		<<if $player.shirt.football is false>>
+			<<set $playerCanWearOutfit to "You can't play football in that shirt!">>
+		<<elseif $player.pants.football is false>>
+			<<set $playerCanWearOutfit to "You can't play football in those pants!">>
+		<<elseif $player.underwear.football is false>>
+			<<if $player.underwear.panties is true>>
+				<<set $playerCanWearOutfit to "You can't play football with those panties!">>
+			<<else>>
+				<<set $playerCanWearOutfit to "You can't play football with those boxers!">>
+			<</if>>
+		<<elseif $player.shoes and $player.shoes.football is false>>
+			<<set $playerCanWearOutfit to "You can't play football with those shoes!">>
+		<<elseif $player.socks and $player.socks.football is false>>
+			<<set $playerCanWearOutfit to "You can't play football with those socks!">>
+		<</if>>
+	<<elseif $args[0] is "casual">>
+		<<if $player.shirt.casual is false>>
+			<<set $playerCanWearOutfit to "That shirt isn't comfortable!">>
+		<<elseif $player.pants.casual is false>>
+			<<if $tempAss<4 or visited("AfterSchoolShopping Mall WomensOuterwear Jeans")>>
+				<<set $playerCanWearOutfit to "Those pants aren't comfortable!">>
+			<<elseif $player.pants.properName is "Dress Pants">>
+				<<set $playerCanWearOutfit to "Those pants aren't comfortable!">>
+			<</if>>
+		<<elseif $player.underwear.casual is false>>
+			<<if $player.underwear.panties is true>>
+				<<set $playerCanWearOutfit to "Those panties aren't comfortable!">>
+			<<else>>
+				<<set $playerCanWearOutfit to "Those boxers aren't comfortable!">>
+			<</if>>
+		<<elseif $player.shoes and $player.shoes.casual is false>>
+			<<set $playerCanWearOutfit to "Those shoes aren't comfortable!">>
+		<<elseif $player.socks and $player.socks.casual is false>>
+			<<set $playerCanWearOutfit to "Those socks aren't comfortable!">>
+		<</if>>
+	<<elseif $args[0] is "workout">>
+		<<if $player.shirt.workout is false>>
+			<<set $playerCanWearOutfit to "You can't wear that shirt while working out!">>
+		<<elseif $player.pants.workout is false>>
+			<<set $playerCanWearOutfit to "You can't wear those pants while working out!">>
+		<<elseif $player.underwear.workout is false>>
+			<<if $player.underwear.panties is true>>
+				<<set $playerCanWearOutfit to "You can't wear those panties while working out!">>
+			<<else>>
+				<<set $playerCanWearOutfit to "You can't wear those boxers while working ou!">>
+			<</if>>
+		<<elseif $player.shoes and $player.shoes.workout is false>>
+			<<set $playerCanWearOutfit to "You can't wear those shoes while working ou!">>
+		<<elseif $player.socks and $player.socks.workout is false>>
+			<<set $playerCanWearOutfit to "You can't wear those socks while working ou!">>
+		<</if>>
+	<<elseif $args[0] is "costume">>
+		<<if $player.shirt.properName is "Stallions Jersey and Pads" and $player.pants.properName is "White Polyester Pants" and $costume is "football player">>
+		<<elseif not $player.shirt.costume>>
+			<<set $playerCanWearOutfit to "You can't wear that shirt to the party!">>
+		<<elseif not $player.pants.costume>>
+			<<set $playerCanWearOutfit to "You can't wear those pants to the party!">>
+		<<elseif not $player.underwear.panties and $boughtGirlsCostume>>
+			<<set $playerCanWearOutfit to "Those $player.underwear.informalName will show. You need panties!">>
+		<</if>>
+	<</if>>
+	<<if $playerCanWearOutfit is "" and $player.shoes is null>>
+		<<set $playerCanWearOutfit to "You need shoes">>
+	<<elseif $playerCanWearOutfit is "" and $player.feet is 2 and $player.shoes and $player.shoes.female is false>>
+		<<set $playerCanWearOutfit to "Those shoes are too big for you">>
+	<</if>>
+<</nobr>><</widget>>
+
+::StoryAuthor
+By Vim
+
+::StoryInit
+
+<<set $schoolShirt = {
+	"properName": "Dress Shirt and Jacket",
+	"informalName": "dress shirt",
+	"images": ["images/clothes/shirts_under/school_uniform_shirt_with_crest.png", "images/clothes/shirts_under/school_uniform_shirt_with_crest.png", "images/clothes/shirts_under/school_uniform_shirt_with_crest_breast_bulge.png", "images/clothes/shirts_under/school_uniform_shirt_with_crest_large_breasts.png"],
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false
+}>>
+<<set $footballShirt = {
+	"properName": "Stallions Jersey and Pads",
+	"informalName": "jersey",
+	"images": ["images/clothes/shirts_under/football_jersey.png", "images/clothes/shirts_under/football_jersey_small_breasts.png", "images/clothes/shirts_under/football_jersey_large_breasts.png", "images/clothes/shirts_under/football_jersey_large_breasts.png"],
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"dress": false
+}>>
+<<set $casualShirt = {
+	"properName": "Plain White Tee",
+	"informalName": "t-shirt",
+	"images": ["images/clothes/shirts_under/white_shirt.png", "images/clothes/shirts_under/white_shirt_small_breasts.png", "images/clothes/shirts_under/white_shirt_medium_breasts.png", "images/clothes/shirts_under/white_shirt_large_breasts.png"],
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"dress": false
+}>>
+<<set $schoolPants = {
+	"properName": "Dress Pants",
+	"informalName": "dress pants",
+	"manImage": "images/clothes/pants/school_uniform_pants_man_legs.png",
+	"womanImage": "images/clothes/pants/school_uniform_pants_man_legs.png",
+	"school": true,
+	"football": false,
+	"casual": false,
+	"workout": false,
+	"dress": false,
+	"torn": false,
+	"female": false
+}>>
+<<set $footballPants = {
+	"properName": "White Polyester Pants",
+	"informalName": "white polyester pants",
+	"manImage": "images/clothes/pants/football_pants_man_legs.png",
+	"womanImage": "images/clothes/pants/football_pants_default_legs.png",
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"dress": false,
+	"torn": false,
+	"female": false
+}>>
+<<set $casualPants = {
+	"properName": "Jeans",
+	"informalName": "jeans",
+	"manImage": "images/clothes/pants/jeans_man_legs.png",
+	"womanImage": "images/clothes/pants/jeans_man_legs.png",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false,
+	"torn": false,
+	"female": false
+}>>
+<<set $blueBoxers = {
+	"properName": "Blue Boxers",
+	"informalName": "blue boxers",
+	"manImage": "images/clothes/underwears/blue_boxer_briefs_man_legs.png",
+	"womanImage": "images/clothes/underwears/blue_boxer_briefs_woman_legs.png",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": false
+}>>
+<<set $footballUnderwear = {
+	"properName": "Jock Strap",
+	"informalName": "jock strap",
+	"manImage": "images/clothes/underwears/black_boxer_briefs_man_legs.png",
+	"womanImage": "images/clothes/underwears/black_boxer_briefs_woman_legs.png",
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"panties": false
+}>>
+<<set $schoolShoes = {
+	"properName": "Oxfords",
+	"informalName": "oxfords",
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"female": false,
+}>>
+<<set $footballShoes = {
+	"properName": "Football Cleats",
+	"informalName": "cleats",
+	"school": false,
+	"football": true,
+	"casual": false,
+	"workout": true,
+	"female": false,
+}>>
+<<set $casualShoes = {
+	"properName": "Sneakers",
+	"informalName": "sneakers",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"female": false,
+}>>
+<<set $whiteSocks = {
+	"properName": "White Socks",
+	"informalName": "white socks",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true
+}>>
+<<set $greySocks = {
+	"properName": "Grey Socks",
+	"informalName": "grey socks",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true
+}>>
+<<set $schoolUniform = {
+	"shirt": $schoolShirt,
+	"underwear": $blueBoxers,
+	"bra": null,
+	"pants": $schoolPants,
+	"shoes": $schoolShoes,
+	"socks": $whiteSocks,
+}>>
+<<set $footballUniform = {
+	"shirt": $footballShirt,
+	"underwear": $footballUnderwear,
+	"bra": null,
+	"pants": $footballPants,
+	"shoes": $footballShoes,
+	"socks": $whiteSocks,
+}>>
+<<set $casualClothes = {
+    "shirt": $casualShirt,
+    "underwear": $blueBoxers,
+	"bra": null,
+    "pants": $casualPants,
+    "shoes": $casualShoes,
+    "socks": $greySocks,
+}>>
+<<set $beforeSexClothes = {
+	"shirt": $casualShirt,
+	"underwear": $blueBoxers,
+	"pants": $casualPants,
+	"shoes": $casualShoes,
+	"socks": $whiteSocks,
+}>>
+<<set $clothesInventory = {
+	"shirt": [$schoolShirt, $footballShirt, $casualShirt],
+	"underwear": [$blueBoxers, $footballUnderwear],
+	"bra": [],
+	"pants": [$schoolPants, $footballPants, $casualPants],
+	"shoes": [$schoolShoes, $footballShoes, $casualShoes],
+	"socks": [$whiteSocks, $greySocks],
+}>>
+<<set $girlfriendDress = {
+	"properName": "Elegant Green Dress",
+	"informalName": "elegant green dress",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": true,
+	"female": true
+}>>
+<<set $qbShirt = {
+	"properName": "Green T-Shirt",
+	"informalName": "green t-shirt",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"dress": false
+}>>
+<<set $girlfriendShirt = {
+	"properName": "Tank top",
+	"informalName": "tank top",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"dress": false
+}>>
+<<set $girlfriendTShirt = {
+	"properName": "Low-cut T-Shirt",
+	"informalName": "low-cut t-shirt",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false
+}>>
+<<set $girlfriendSleevelessTShirt = {
+	"properName": "Sleeveless T-Shirt",
+	"informalName": "sleeveless t-shirt",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"dress": false
+}>>
+<<set $qbPants = {
+	"properName": "Blue Jeans",
+	"informalName": "jeans",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false,
+	"torn": false,
+	"female": false
+}>>
+<<set $girlfriendPants = {
+	"properName": "Yoga Pants",
+	"informalName": "yoga pants",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": true,
+	"dress": false,
+	"torn": false,
+	"female": true
+}>>
+<<set $girlfriendShorts = {
+	"properName": "Short shorts",
+	"informalName": "short shorts",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false,
+	"torn": false,
+	"female": true
+}>>
+<<set $girlfriendJeans = {
+	"properName": "Skinny jeans",
+	"informalName": "skinny jeans",
+	"school": false,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false,
+	"torn": false,
+	"female": true
+}>>
+<<set $qbUnderwear = {
+	"properName": "Grey Boxers",
+	"informalName": "grey boxers",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": false
+}>>
+<<set $girlfriendUnderwear = {
+	"properName": "Lacy black panties",
+	"informalName": "lacy black panties",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": true
+}>>
+<<set $girlfriendThong = {
+	"properName": "Red thong",
+	"informalName": "red thong",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": true
+}>>
+<<set $girlfriendBoyshorts = {
+	"properName": "Black Boyshorts",
+	"informalName": "black boyshorts",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": true
+}>>
+<<set $girlfriendBikiniPanties = {
+	"properName": "Pink Bikini Panties",
+	"informalName": "pink bikini panties",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"panties": true
+}>>
+<<set $qbShoes = {
+	"properName": "Sneakers",
+	"informalName": "sneakers",
+	"school": false,
+	"football": true,
+	"casual": true,
+	"workout": true,
+	"female": false,
+}>>
+<<set $girlfriendShoes = {
+	"properName": "Sandals",
+	"informalName": "sandals",
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"female": true,
+}>>
+<<set $girlfriendHeels = {
+	"properName": "Red Heels",
+	"informalName": "red heels",
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"female": true,
+}>>
+<<set $qbSocks = {
+	"properName": "Grey Socks",
+	"informalName": "grey socks",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": true
+}>>
+<<set $girlfriendBra = {
+	"properName": "Red bra",
+	"informalName": "red bra",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": false
+}>>
+<<set $girlfriendWhiteBra = {
+	"properName": "White bra",
+	"informalName": "white bra",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": false
+}>>
+<<set $girlfriendBlackBra = {
+	"properName": "Black bra",
+	"informalName": "black bra",
+	"school": true,
+	"football": true,
+	"casual": true,
+	"workout": false
+}>>
+<<set $player = {
+	"firstname": "Corey",
+	"lastname": "Redmond",
+	"arousal": 50,
+	"submission": 0,
+	"dominance": 0,
+	"exhibition": 0,
+	"pants": null,
+	"underwear": null,
+	"bra": null,
+	"shirt": null,
+	"shoes": null,
+	"socks": null,
+	"cock": 8,
+	"masculinity": 99,
+	"homosexuality": 0,
+	"academics": 20,
+	"legs": 0,
+	"feet": 0,
+	"feminine": 0,
+	"acceptance": 0,
+	"armStrength": 100,
+	"accuracy": 90,
+	"speed": 10,
+	"footballIQ": 90,
+	"confidence": 90,
+	"arcana": 0,
+	"skillCurse": 0,
+	"crush": "",
+	"hasUsedWomensBathroom": false,
+	"trimmedPubicHair": false,
+	"expectsPeriod": false,
+	"controlQuestIntroduced": false,
+	"controlQuestCompleted": false,
+	"controlQuestKnowledge": false,
+	"wearsShirtForSwimming": false,
+	"wearsOnepiece": false,
+	"hasPanties": false,
+	"hasBra": false,
+	"isWearingPanties": false,
+	"hasWornPanties": false,
+	"hasWornBra": false,
+	"checkedGuysPants": false,
+	"ownsGirlPants": false,
+	"ownsGirlShoes": false,
+	"isWearingTampon": false,
+	"hasStrapon": false,
+	"hasCondoms": false,
+	"suckedDick": false,
+	"gotFucked": false,
+	"gotFuckedByCock": false,
+	"isWearingButtplug": false,
+	"hasButtplug": false,
+	"isWearingMakeup": false,
+	"hasWornMakeup": false,
+	"ownsMakeup": false,
+	"buttplugCurse": false,
+	"towel": 0,
+	"panties": null,
+	"qbSkill": 85
+}>>
+<<set $girlfriend = {
+	"firstname": "Jessica",
+	"lastname": "Carlson",
+	"relationship": 70,
+	"arousal": 55,
+	"pants": $girlfriendShorts,
+	"underwear": $girlfriendBikiniPanties,
+	"shirt": $girlfriendShirt,
+	"shoes": $girlfriendShoes,
+	"bra": $girlfriendWhiteBra,
+	"isWearingStrapon": false,
+	"knowsSecret": false,
+	"sawInPanties": false,
+	"sawBoobs": false,
+	"contentAvailable": true,
+	"newContentAvailable": true,
+	"dateMarcoPermission": 0,
+}>>
+<<set $witch = {
+	"firstname": "Raven",
+	"lastname": "Coventry",
+	"relationship": 40,
+	"questions": 5,
+	"invitation": false,
+	"ignored": false,
+	"knowsSecret": false,
+	"pantiesCurse": false,
+	"knowsAboutBreakup": false,
+	"contentAvailable": true,
+	"newContentAvailable": true,
+	"hasNumber": false
+}>>
+<<set $qb = {
+	"firstname": "Griffin",
+	"lastname": "Coventry",
+	"relationship": 50,
+	"arousal": 50,
+	"invitation": false,
+	"armStrength": 50,
+	"accuracy": 0,
+	"speed": 10,
+	"footballIQ": 25,
+	"confidence": 5,
+	"movie": false,
+	"usedGirlsLockerRoom": false,
+	"knowsSecret": false,
+	"sawPanties": false,
+	"sawBoobs": false,
+	"sawBra": false,
+	"promisedPractice": false,
+	"suckedDick": false,
+	"pants": $footballPants,
+	"underwear": $qbUnderwear,
+	"shirt": $footballShirt,
+	"shoes": $footballShoes,
+	"socks": $qbSocks,
+	"qbSkill": 20,
+	"playerWonCompetition": false,
+}>>
+<<set $coach = {
+	"suspicion": 0,
+}>>
+<<set $garcia = {
+	"suspicion": 0,
+	"detention": false,
+	"therapy": false,
+}>>
+<<set $marco = {
+	"suspicion": 0,
+}>>
+<<set $friends = {
+	"relationship": 65,
+	"suspicion": 0,
+}>>
+<<set $team = {
+	"respect": 80,
+	"relationship": 70,
+	"suspicion": 0,
+	"qbRespect": 5,
+	"wins": 0,
+	"losses": 0,
+	"playerOnTeam": true,
+}>>
+<<set $endPassage = {
+	"game": "Game 3 Diner End",
+	"tf": "Height2",
+	"qb": "QB Practice Standard",
+	"team": "Team Practice 4",
+}>>
+<<set $tfs = {
+	"face": ["Masturbate Day 4 Change", "Face2", "Face3", "Face4"],
+	"ass": ["Masturbate 2 Change", "Ass2", "Ass3", "Ass4"],
+	"boobs": ["Boobs1", "Boobs2", "Boobs3", "Boobs4"],
+	"voice": ["Voice1", "Voice2", "Voice3", "Voice4"],
+	"hands": ["Hands1", "Hands2", "Hands3"],
+	"hair": ["Hair1", "Hair2", "Hair3"],
+	"height": ["Height1", "Height2", "Height3"]
+}>>
+<<set $tfProgress = [0, 0, 0, 0, 0, 0, 0]>>
+<<set $tfLimits = {
+	"face": 4,
+	"ass": 4,
+	"boobs": 4,
+	"voice": 4,
+	"hands": 3,
+	"hair": 3,
+	"height": 3,
+}>>
+<<set $tfCircumstances = {
+	"setting": "",
+	"reason": "",
+	"witnesses": "",
+	"extraClothing": ""
+}>>
+<<set $lastTf to "">>
+<<set $stallionsscore to 0>>
+<<set $defensescore to 0>>
+<<set $opponent to "Bear Valley">>
+<<set $visitedQBPractice to 0>>
+<<set $timeOfDay to 1>>
+<<set $day to 1>>
+<<set $dayOfWeek to "Friday">>
+<<set $readBook1 to false>>
+<<set $activity1 to "">>
+<<set $activity2 to "">>
+<<set $terms to false>>
+<<set $changeInOpen to false>>
+
+<<set $videogamesPassage to "VideoGames2">>
+<<set $libraryPassage to "Library">>
+<<set $currentPassage to "">>
+<<set $tfRecoverPassage to "">>
+<<set $tfPassageIntro to "Masturbate Day 4">>
+<<set $tfPassageChange to "Masturbate Day 4 Change">>
+<<set $lunchwitchPassage to "Lunch Day 4 Witch">>
+<<set $lunchfriendsPassage to "Lunch Day 4 Friends">>
+<<set $workoutPassage to "Work Out">>
+<<set $homeworkPassage to "Homework">>
+<<set $therapistPassage to "Therapist 1">>
+<<set $curseActive to false>>
+<<set $sexShopUnlocked to false>>
+<<set $playerStarter to true>>
+<<set $lastMaleSexDay to 0>>
+<<set $playerCame to false>>
+<<set $partnerCame to false>>
+<<set $witchClub = 0>>
+<<set $braShoppingActive to false>>
+
+<<set $headImage="images/body/head/man.png">>
+<<set $eyesImage="images/body/eyes/blue_default.png">>
+<<set $mouthImage="images/body/mouth/nude_man.png">>
+<<set $hairImage="images/body/hair/short_scruffy_blonde.png">>
+<<set $torsoImage="images/body/torso/man.png">>
+<<set $leftArmImage="images/body/arms_left/muscular.png">>
+<<set $rightArmImage="images/body/arms_right/muscular.png">>
+<<set $titsImage="images/body/tits/pecs.png">>
+<<set $legsImage="images/body/legs/man_hairy.png">>
+<<set $genitalsImage="images/body/genitalia/dick.png">>
+<<set $pubicHairImage="images/body/pubic hair/growing.png">>
+<<set $makeupImage to "images/body/makeup/the_works.png">>
+<<set $underwearImage to null>>
+<<set $braImage to null>>
+<<set $pantsImage to null>>
+<<set $shirtImage to null>>
+<<set $tieImage to "images/clothes/neck/purple_stripe.png">>
+<<set $jacketImage to "images/clothes/shirts/school_jacket.png">>
+<<set $headgearImage to null>>
+<<set $onePieceImage to null>>
+<<set $handImage to null>>
+
+::StoryMenu
+[[You]]
+[[Stats]]
+[[Hints]]
+[[Support]]
+[[Credits]]
+
+::StoryCaption
+<<silently>>
+<<showQBSkill true>>
+<<showQBSkill false>>
+<</silently>><<print $dayOfWeek>> <<if $day<=31>>October <<print $day>><<elseif $day<=61>>November <<print $day-31>><<elseif $day<=91>>December <<print $day-61>><<else>>January <<print $day-92>><</if>>, <<if $timeOfDay is 1>>Morning<<elseif $timeOfDay is 2>>Afternoon<<elseif $timeOfDay is 3>>Evening<<else>>Night<</if>>
+
+Name: <<print $player.firstname>> <<print $player.lastname>>
+Arousal: <<if $player.arousal>100>>100<<else>><<print $player.arousal>><</if>>
+Masculinity: <<if $player.masculinity<0>>0<<else>><<print $player.masculinity>><</if>>
+Homosexuality: <<print $player.homosexuality>>
+Submission: <<print $player.submission>>
+QB Skill: <<print $player.qbSkill>>
+<<print $qb.firstname>>'s Skill: <<print $qb.qbSkill>>
+
+::StoryRightSidebar
+<<if settings.avatar>><<updateAvatar>><<if visited("Start")>>
+<div class="avatar head">[img[$headImage]]</div>
+<div class="avatar eyes">[img[$eyesImage]]</div>
+<div class="avatar mouth">[img[$mouthImage]]</div><<if $player.isWearingMakeup>>
+<div class="avatar makeup">[img[$makeupImage]]</div><</if>>
+<div class="avatar hair">[img[$hairImage]]</div>
+<div class="avatar torso">[img[$torsoImage]]</div>
+<div class="avatar left-arm">[img[$leftArmImage]]</div>
+<div class="avatar right-arm">[img[$rightArmImage]]</div>
+<div class="avatar tits">[img[$titsImage]]</div>
+<div class="avatar legs">[img[$legsImage]]</div><<if $player.cock is 0 or $player.underwear is null>>
+<div class="avatar genitals">[img[$genitalsImage]]</div><</if>>
+<div class="avatar pubic-hair">[img[$pubicHairImage]]</div><<if $player.underwear>>
+<div class="avatar underwear">[img[$underwearImage]]</div><</if>><<if $player.bra and $braImage>>
+<div class="avatar bra">[img[$braImage]]</div><</if>><<if $player.pants and not $player.pants.onepiece>>
+<div class="avatar pants">[img[$pantsImage]]</div><</if>><<if $player.shirt and not $player.shirt.onepiece>>
+<div class="avatar shirt1">[img[$shirtImage]]</div><<if $player.shirt.properName is "Dress Shirt and Jacket">>
+<div class="avatar shirt2">[img[$tieImage]]</div>
+<div class="avatar shirt3">[img[$jacketImage]]</div><</if>><</if>><<if $headgearImage>>
+<div class="avatar headgear">[img[$headgearImage]]</div><</if>><<if $player.towel or ($player.shirt and $player.shirt.onepiece)>>
+<div class="avatar one-piece">[img[$onePieceImage]]</div><</if>><<if $handImage>>
+<div class="avatar hand">[img[$handImage]]</div><</if>><</if>><</if>>
+
+::You
+<<getTfProgress height>><<set $tempHeight to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>><<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress ass>><<set $tempAss to $tempTfValue>>Your name is <<print $player.firstname>> <<print $player.lastname>>. You're the star quarterback of the Pinewood Prep Stallions, and the most popular guy in school. Life is great<<if $day>1>>, or it was until you got hit by a curse<</if>>.
+
+<<if $player.pants is null and $player.shirt is null and $player.bra is null and $player.underwear is null and $player.socks is null and $player.shoes is null>>You are completely naked<<if $player.arousal>50>> and visibly horny<</if>>.<<else>>You are <<if $player.isWearingDress>>wearing a <<print $player.shirt.informalName>><<if $player.underwear is not null and $player.bra is not null>> with <<print $player.underwear.informalName>> and a <<print $player.bra.informalName>> underneath.<<elseif $player.underwear is not null>> with a pair of <<print $player.underwear.informalName>> underneath.<<elseif $player.bra is not null>> with a <<print $player.bra.informalName>> underneath.<<else>>. You are wearing nothing underneath.<</if>><<else>><<if $player.shirt is not null>>wearing a <<print $player.shirt.informalName>><<else>>shirtless<</if>><<if $player.pants is not null>> with <<print $player.pants.informalName>> covering your legs<<if $player.underwear is not null>> and <<print $player.underwear.informalName>> underneath<</if>>.<<else>> with your lower body exposed<<if $player.underwear is not null>> save for <<print $player.underwear.informalName>> covering your genitals<<else>><<if $player.arousal>50>> and visibly horny<</if>><</if>><</if>><</if>><</if>>
+
+On your feet, you <<if $player.shoes is not null>>wear <<print $player.shoes.informalName>>.<<elseif $player.socks is not null>>wear <<print $player.socks.informalName>>.<<else>>are barefoot.<</if>>
+
+You're <<if $tempHeight is 4 or $temporarilyTransformed>>five foot two<<elseif $tempHeight is 3>>five foot five<<elseif $tempHeight is 2>>five foot seven<<elseif $tempHeight is 1>>five foot ten<<else>>six feet tall<</if>>, with <<if $tempHair is 4 or $temporarilyTransformed>>long blond<<if $player.masculinity<=0>>e<</if>> hair<<elseif $tempHair is 3>>shoulder-length blond<<if $player.masculinity<=0>>e<</if>> hair styled in a feminine cut<<elseif $tempHair is 2>>medium-long blond hair<<elseif $tempHair is 1>>blond hair styled in a pixie cut<<else>>close cropped blond hair<</if>>, blue eyes, a <<if $tempFace>=2 or $temporarilyTransformed>>sweet<<else>>killer<</if>> smile that shows off your perfect white teeth, and a<<if $player.isWearingMakeup is false>><<if $tempFace>=3 or $temporarilyTransformed>> feminine<<elseif $tempFace is 2>>n androgynous<<elseif $tempFace is 1>> mostly masculine<<else>> masculine<</if>> face<<else>><<if $tempFace>=3 or $temporarilyTransformed>>made-up, feminine face<<elseif $tempFace is 2>>n androgynous face that looks feminine with your makeup<<elseif $tempFace is 1>> mostly masculine face. Now that you're wearing makeup, though, you look like you could be a butch lesbian<<else>> masculine face that looks strange with your makeup<</if>><</if>>.
+
+<<if $day is 1>>You're quite proud of your rippling muscles. You've spent a lot of time in the gym, and it shows.<<elseif $day is 2>>Your body looks pretty good. You're no longer the adonis you once were, but you've still got some muscles, and it's obvious that you work out.<<elseif $tempBoobs>=4 or $temporarilyTransformed>>You definitely have boobs. They look like they're a <<if $tempBoobs>=5 or $temporarilyTransformed>>DD<<else>>C<</if>> cup for now. Your nipples are round and perky. They're very sensitive and no way you can hide it<<if $player.masculinity<=25>>, but why you want to do that?<<else>>.<</if>><<elseif $tempBoobs is 3>>You definitely have boobs. They look like they're a B cup for now. Your nipples are round and perky. They're very sensitive and no way you can hide it<<if $player.masculinity<=25>>, but why you want to do that?<<else>>.<</if>><<elseif $tempBoobs is 2>>Your smooth chest has grown two boobs. They're probably around A cup for now. It's embarrassing, but it's relatively safe to hide.<<elseif $tempBoobs is 1>>Your chest is unimpressive. It looks like you've never seen the inside of a gym before. Even more alarming are the two large nipples that you have.<<else>>Your chest is unimpressive. It looks like you've never seen the inside of a gym before.<</if>>
+
+Between your legs is your <<if $player.cock>0>><<print $player.cock>> inch cock. <<if $player.arousal>80>>It's standing fully at attention.<<elseif $player.arousal>50>>You feel yourself starting to become aroused.<<elseif $player.pants is not null>>It rests comfortably in your <<print $player.pants.informalName>>.<<elseif $player.underwear is not null>>It sits comfortably in your <<print $player.underwear.informalName>>.<<else>>It hangs down, unaroused.<</if>><<else>>new vagina. <<if $player.arousal>50>>It feels damp, and you realize <<if $player.acceptance<50>>in horror <</if>>that you're turned on.<</if>><</if>> You have a <<if $tempAss>=3 or $temporarilyTransformed>>round, soft, padded<<elseif $tempAss is 2>>round and soft<<elseif $tempAss is 1>>pert<<else>>tight, firm<</if>> butt<<if $tempAss>=4 or $temporarilyTransformed>>, with womanly hips<</if>>.
+
+Your legs are <<if $day is 1>>muscular<<elseif $day is 2>>pretty muscular<<elseif $tempAss>=2>>curvy and round<<else>>average<</if>>, and <<if $player.legs is 0>>covered in hair<<elseif $player.legs is 1>>mostly hairy, though there is a small patch where they're hairless<<elseif $player.legs is 2>>odd-looking. The left leg is hairy, while the right leg is about a quarter shaven. The overall effect is comical<<else>>soft and smooth<</if>>.
+
+<<if $player.masculinity>=75>>You <<if $day>=4>>still <</if>>think of yourself as a boy.<<elseif $player.masculinity>=50>>You'll do the occasional feminine thing, but you still think of yourself as a boy.<<elseif $player.masculinity>=25>>You think of yourself as a...well, you're not sure. You know you //should// think of yourself as a boy, but a boy wouldn't let all of this happen to him, would he?<<elseif $player.masculinity>=10>>You feel more like a girl than a boy, and you've realized that it's not so bad. However, you're still hanging onto whatever masculinity you have left.<<elseif $player.masculinity>0>>You think of yourself as a girl, for now. Once you lift the curse, who knows?<<else>>You think of yourself as a girl.<</if>> <<if $player.feminine>=21 or $temporarilyTransformed>>You look like a girl.<<elseif $player.feminine>=14>>You look androgynous. If someone who didn't know you saw you, they wouldn't be sure whether you were a girl or a boy.<<elseif $player.feminine>=7>>You look like a boy who's in touch with his feminine side.<<else>>You look like a boy.<</if>> You are <<if $player.homosexuality<25>>attracted to girls<<elseif $player.homosexuality<50>>still attracted to girls, but you feel turned on whenever you look at a handsome boy<<elseif $player.homosexuality<75>>attracted to both boys and girls, but you prefer boys<<else>>attracted to boys<</if>>.
+
+<<back>>
+
+::Stats
+<<silently>>
+<<showQBSkill true>>
+<<showQBSkill false>>
+<</silently>>''<<print $player.firstname>> <<print $player.lastname>>:''
+Arousal: <<if $player.arousal>100>>100<<elseif $player.arousal<0>>0<<else>><<print $player.arousal>><</if>>
+Masculinity: <<if $player.masculinity>100>>100<<elseif $player.masculinity<0>>0<<else>><<print $player.masculinity>><</if>>
+Homosexuality: <<print $player.homosexuality>>
+Dominance: <<print $player.dominance>>
+Submission: <<print $player.submission>>
+Exhibitionism: <<print $player.exhibition>>
+Academics: <<if $player.academics>100>>100<<elseif $player.academics<0>>0<<else>><<print $player.academics>><</if>>
+<<if $player.arcana>0>>Arcana: <<print $player.arcana>><</if>>
+<<if visited("Math")>><<if $player.relationship is "">>You are single<<if $qb.date and $qb.date is $player.firstname>>, but you're going to go on a date with <<print $qb.firstname>><<elseif $player.crush and $player.crush is $qb.firstname>>, but you have a crush on <<print $qb.firstname>><</if>>.<<else>>You are in a relationship with <<print $player.relationship>>.<</if>><</if>>
+
+''Your relationships'':
+<<if visited("History")>><<print $witch.firstname>> <<print $witch.lastname>>: <<if $witch.relationship>100>>100<<elseif $witch.relationship<0>>0<<else>><<print $witch.relationship>><</if>>
+<</if>><<if visited("Lunch")>><<print $qb.firstname>> <<print $qb.lastname>>: <<if $qb.relationship>100>>100<<elseif $qb.relationship<0>>0<<else>><<print $qb.relationship>><</if>>
+<</if>><<if visited("Gym Intro")>><<print $girlfriend.firstname>> <<print $girlfriend.lastname>>: <<if $girlfriend.relationship>100>>100<<elseif $girlfriend.relationship<0>>0<<else>><<print $girlfriend.relationship>><</if>>
+<</if>>Your other friends: <<if $friends.relationship>100>>100<<elseif $friends.relationship<0>>0<<else>><<print $friends.relationship>><</if>>
+The football team: <<if $team.relationship>100>>100<<elseif $team.relationship<0>>0<<else>><<print $team.relationship>><</if>>
+
+''Football Stats'':
+
+''You'':
+<<linkappend "Show Stats">>
+
+Arm Strength: <<print $player.armStrength>>
+Accuracy: <<print $player.accuracy>>
+Speed: <<print $player.speed>>
+Leadership: <<print $team.respect>>
+Confidence: <<print $player.confidence>><</linkappend>>
+Overall: <<print $player.qbSkill>>
+
+''<<print $qb.firstname>>'':
+<<linkappend "Show Stats">>
+
+Arm Strength: <<print $qb.armStrength>>
+Accuracy: <<print $qb.accuracy>>
+Speed: <<print $qb.speed>>
+Leadership: <<print $team.qbRespect>>
+Confidence: <<print $qb.confidence>><</linkappend>>
+Overall: <<print $qb.qbSkill>>
+
+<<back>>
+
+::Map
+[img[https://i.imgur.com/0UfKuzl.gif]]
+
+::Support
+Support me on [[SubscribeStar|https://subscribestar.adult/vim]] or [[Patreon|https://www.patreon.com/vimgames]] to access to releases of You Throw Like A Girl three weeks before it's released to the public!
+
+::Credits
+Game by ''Vim''
+Avatar by ''Danielle Dennett''
+
+<<back>>
+
+::Hints
+<<linkappend "How do I get asked out by $qb.firstname?">>
+* You'll need to do lots of practices with him. At the end of the eighth practice, he has a chance of asking you out
+* <<linkappend "I practiced with him a lot but now I'm getting the default practice">>
+* You'll need to have done the girltalk scene and told <<print $girlfriend.firstname>> you had a crush on him
+* <<linkappend "How do I get the girltalk scene?">>
+* Break up with her
+* <<linkappend "How do I do that?">>
+* Keep spying on the Witchcraft Club. Eventually, you'll get the option to break up with her
+<</linkappend>>
+* Give <<print $girlfriend.firstname>> and Marco your permission for them to date each other
+* Hang out with her<</linkappend>>
+* You'll need two Morgan-related conversations at lunch
+* <<linkappend "How do I do that?">>
+* Go to lunch, sit with <<print $witch.firstname>> and <<print $qb.firstname>> and talk about Morgan
+* The next day, go to lunch, sit with your friends, and listen in on the conversation
+* You can do this in any order
+<</linkappend>>
+* Now, practice with <<print $qb.firstname>> again<</linkappend>>
+* <<linkappend "I got to the practice, but $qb.firstname is going on a date with Morgan instead">>
+* Here are some things that will make <<print $qb.firstname>> choose you over Morgan (you don't need all of them):
+* Doing lots of transformations
+* Using the girls locker room
+* Doing the spell to give him your football ability
+* A relationship with him of 100
+* Homosexuality above 60
+<</linkappend>><</linkappend>>
+
+<<linkappend "How do I have sex with $qb.firstname at the lake?">>
+* It needs to be night
+* You need to have told <<print $girlfriend.firstname>> that you have a crush on him during the girltalk scene
+* <<linkappend "How do I get the girltalk scene?">>
+* Break up with her
+* <<linkappend "How do I do that?">>
+* Keep spying on the Witchcraft Club. Eventually, you'll get the option to break up with her
+<</linkappend>>
+* Give <<print $girlfriend.firstname>> and Marco your permission for them to date each other
+* Hang out with her<</linkappend>>
+* Your homosexuality needs to be at least 20
+* You need to have had sex with him during practice 4, practice 5, or in the shower after the team practice
+* He can't be dating Morgan
+<</linkappend>>
+
+<<linkappend "I don't have any way of progressing my relationship with $qb.firstname!">>
+* If you don't have sex with him during practice 4, practice 5, or in the shower after the team practice, you're locked out of his path
+<</linkappend>>
+
+<<linkappend "How do I do yoga?">>
+* First, you need to have sent <<print $qb.firstname>> a selfie
+* <<linkappend "How do I send him a selfie?">>
+* You need to have done all the ass transformations
+* You need to have told <<print $girlfriend.firstname>> that you like <<print $qb.firstname>> during the girltalk scene
+* <<linkappend "How do I get the girltalk scene?">>
+* Break up with her
+* <<linkappend "How do I do that?">>
+* Keep spying on the Witchcraft Club. Eventually, you'll get the option to break up with her
+<</linkappend>>
+* Give <<print $girlfriend.firstname>> and Marco your permission for them to date each other
+* Hang out with her<</linkappend>>
+* You need to have a masculinity of 25 or less
+* Go to the gym and work out your hips
+<</linkappend>>
+* You need yoga pants
+* <<linkappend "How do I find them?">>
+* Practice with <<print $qb.firstname>>, change in the girls locker room, and take the yoga pants
+* <<linkappend "I'm not seeing a practice where I can change in the girls locker room">>
+* You'll need two Morgan-related conversations at lunch
+* <<linkappend "How do I do that?">>
+* Go to lunch, sit with <<print $witch.firstname>> and <<print $qb.firstname>> and talk about Morgan
+* The next day, go to lunch, sit with your friends, and listen in on the conversation
+* You can do this in any order
+<</linkappend>>
+* Now, practice with <<print $qb.firstname>> until you can change in the girls locker room
+<</linkappend>><</linkappend>>
+* Go to the gym and see what's going on with the yoga class<</linkappend>>
+
+<<linkappend "How do I break up with $girlfriend.firstname?">>
+* Keep spying on the Witchcraft Club and talking to <<print $girlfriend.firstname>>
+* Eventually, you'll get an option for the two of you to break up in order to get <<print $girlfriend.firstname>> into the club
+<</linkappend>>
+
+<<linkappend "How do I get the girltalk scene?">>
+* Break up with <<print $girlfriend.firstname>>
+* <<linkappend "How do I do that?">>
+* Keep spying on the Witchcraft Club. Eventually, you'll get the option to break up with her
+<</linkappend>>
+* Give <<print $girlfriend.firstname>> and Marco your permission for them to date each other
+* Hang out with her<</linkappend>>
+
+::Clothes
+<<getTfProgress ass>>''Outfit:''
+<<if $curseActive>><<if $schoolUniform.shirt.onepiece>>[[School Uniform|Clothes][$outfit to "school";$player.shirt to $schoolUniform.shirt;$player.pants to $schoolUniform.pants;$player.bra to $schoolUniform.bra;$player.shoes to $schoolUniform.shoes;$player.socks to $schoolUniform.socks]]<<else>>[[School Uniform|Clothes][$outfit to "school";$player.shirt to $schoolUniform.shirt;$player.pants to $schoolUniform.pants;$player.bra to $schoolUniform.bra;$player.shoes to $schoolUniform.shoes;$player.socks to $schoolUniform.socks]]<</if>><<else>><<if $schoolUniform.shirt.onepiece>>[[School Uniform|Clothes][$outfit to "school";$player.shirt to $schoolUniform.shirt;$player.pants to $schoolUniform.pants;$player.underwear to $schoolUniform.underwear;$player.bra to $schoolUniform.bra;$player.shoes to $schoolUniform.shoes;$player.socks to $schoolUniform.socks]]<<else>>[[School Uniform|Clothes][$outfit to "school";$player.shirt to $schoolUniform.shirt;$player.pants to $schoolUniform.pants;$player.underwear to $schoolUniform.underwear;$player.bra to $schoolUniform.bra;$player.shoes to $schoolUniform.shoes;$player.socks to $schoolUniform.socks]]<</if>><</if>><<if $outfit is "school">> [[(Set)|Clothes][$schoolUniform.shirt to $player.shirt;$schoolUniform.pants to $player.pants;$schoolUniform.underwear to $player.underwear;$schoolUniform.bra to $player.bra;$schoolUniform.shoes to $player.shoes;$schoolUniform.socks to $player.socks]]<</if>><<if $player.skillCurse<4>>
+<<if $curseActive>><<if $footballUniform.shirt.onepiece>>[[Football Uniform|Clothes][$outfit to "football";$player.shirt to $footballUniform.shirt;$player.pants to $footballUniform.pants;$player.bra to $footballUniform.bra;$player.shoes to $footballUniform.shoes;$player.socks to $footballUniform.socks]]<<else>>[[Football Uniform|Clothes][$outfit to "football";$player.shirt to $footballUniform.shirt;$player.pants to $footballUniform.pants;$player.bra to $footballUniform.bra;$player.shoes to $footballUniform.shoes;$player.socks to $footballUniform.socks]]<</if>><<else>><<if $footballUniform.shirt.onepiece>>[[Football Uniform|Clothes][$outfit to "football";$player.shirt to $footballUniform.shirt;$player.pants to $footballUniform.pants;$player.underwear to $footballUniform.underwear;$player.bra to $footballUniform.bra;$player.shoes to $footballUniform.shoes;$player.socks to $footballUniform.socks]]<<else>>[[Football Uniform|Clothes][$outfit to "football";$player.shirt to $footballUniform.shirt;$player.pants to $footballUniform.pants;$player.underwear to $footballUniform.underwear;$player.bra to $footballUniform.bra;$player.shoes to $footballUniform.shoes;$player.socks to $footballUniform.socks]]<</if>><</if>><<if $outfit is "football">> [[(Set)|Clothes][$footballUniform.shirt to $player.shirt;$footballUniform.pants to $player.pants;$footballUniform.underwear to $player.underwear;$footballUniform.bra to $player.bra;$footballUniform.shoes to $player.shoes;$footballUniform.socks to $player.socks]]<</if>><</if>>
+<<if $curseActive>><<if $casualClothes.shirt.onepiece>>[[Casual Clothes|Clothes][$outfit to "casual";$player.shirt to $casualClothes.shirt;$player.pants to $casualClothes.pants;$player.bra to $casualClothes.bra;$player.shoes to $casualClothes.shoes;$player.socks to $casualClothes.socks]]<<else>>[[Casual Clothes|Clothes][$outfit to "casual";$player.shirt to $casualClothes.shirt;$player.pants to $casualClothes.pants;$player.bra to $casualClothes.bra;$player.shoes to $casualClothes.shoes;$player.socks to $casualClothes.socks]]<</if>><<else>><<if $casualClothes.shirt.onepiece>>[[Casual Clothes|Clothes][$outfit to "casual";$player.shirt to $casualClothes.shirt;$player.pants to $casualClothes.pants;$player.underwear to $casualClothes.underwear;$player.bra to $casualClothes.bra;$player.shoes to $casualClothes.shoes;$player.socks to $casualClothes.socks]]<<else>>[[Casual Clothes|Clothes][$outfit to "casual";$player.shirt to $casualClothes.shirt;$player.pants to $casualClothes.pants;$player.underwear to $casualClothes.underwear;$player.bra to $casualClothes.bra;$player.shoes to $casualClothes.shoes;$player.socks to $casualClothes.socks]]<</if>><</if>><<if $outfit is "casual">> [[(Set)|Clothes][$casualClothes.shirt to $player.shirt;$casualClothes.pants to $player.pants;$casualClothes.underwear to $player.underwear;$casualClothes.bra to $player.bra;$casualClothes.shoes to $player.shoes;$casualClothes.socks to $player.socks]]<</if>>
+
+Shirt: <<if $player.shirt is not null>><<print $player.shirt.properName>><<else>>Shirtless<</if>> [[(Change)|ChangeShirt]]<<if $player.shirt is not null>> <<if $player.shirt.onepiece>>[[(Remove)|Clothes][$player.shirt to null;$player.pants to null]]<<else>>[[(Remove)|Clothes][$player.shirt to null]]<</if>><</if>>
+Pants: <<if $player.pants is not null>> <<if $player.pants.torn is true>>(Torn)<</if>><<print $player.pants.properName>><<else>>None<</if>> [[(Change)|ChangePants]]<<if $player.pants is not null>> <<if $player.pants.onepiece>>[[(Remove)|Clothes][$player.pants to null;$player.shirt to null]]<<else>>[[(Remove)|Clothes][$player.pants to null]]<</if>><</if>>
+<<if $curseActive and $player.underwear is null>><<set $player.underwear to $player.panties>><</if>>Underwear: <<if $player.underwear is null>>None<<else>><<print $player.underwear.properName>><</if>> <<if $curseActive and $player.underwear.panties is true>>(cursed)<<else>>[[(Change)|ChangeUnderwear]]<</if>><<if $player.underwear is not null and not $curseActive>> [[(Remove)|Clothes][$player.underwear to null]]<</if>><<if $player.hasBra>>
+Bra: <<if not $player.bra>>None<<else>><<print $player.bra.properName>><</if>> [[(Change)|ChangeBra]]<</if>><<if $player.bra is not null>> [[(Remove)|Clothes][$player.bra to null]]<</if>>
+Shoes: <<if $player.shoes>><<print $player.shoes.properName>><<else>>None<</if>> [[(Change)|ChangeShoes]]<<if $player.shoes is not null>> [[(Remove)|Clothes][$player.shoes to null]]<</if>>
+Socks: <<if $player.socks is not null>><<print $player.socks.properName>><<else>>None<</if>> [[(Change)|ChangeSocks]]<<if $player.socks is not null>> [[(Remove)|Clothes][$player.socks to null]]<</if>><<if $player.hasButtplug>>
+
+<<if $player.isWearingButtplug>>Buttplug: <<if $player.buttplugCurse>>(cursed)<<else>>[[(Remove)|Clothes][$player.isWearingButtplug to false;$clothesDescription to "You pop the buttplug out of your ass with a whimper. You know that it's wrong, but it felt so good to feel full.";$player.arousal to $player.arousal-5]]<</if>><<else>>None [[(Wear Buttplug)|Clothes][$player.isWearingButtplug to true;$clothesDescription to "Carefully, you insert the buttplug into your ass, gasping as it stretches you. You don't know why you're doing this: Elvira's curse is no longer active, and you might as well throw the thing out. But here it is, in your butt. Even worse, you're feeling turned on!";$player.arousal to $player.arousal+5]]<</if>><</if>><<if $clothesDescription and $clothesDescription is not "">>
+
+<<print $clothesDescription>><</if>>
+
+<<if $tempTfValue>=4 and $player.pants and $player.pants.female is false and $player.ownsGirlPants is false>><<if $player.pants.properName is "White Polyester Pants">><<if $timeOfDay is 1 and $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">>You know that you're not supposed to wear these pants to school, but you don't have any other choice.
+
+<</if>><<link "Continue" $changeEndPassage>><<set $clothesDescription to "">><</link>><<elseif $player.skillCurse is 4>><<if $timeOfDay is 1 and $dayOfWeek is not "Saturday" and $dayOfWeek is not "Sunday">>You wince at the thought of wearing these torn pants to school, but you don't have anything else. If you were still on the team, you'd have your white polyester pants, but those are gone too.
+
+<<link "Continue" $changeEndPassage>><<set $clothesDescription to "">><</link>><<else>>You wince at the thought of wearing these torn pants to school, but you don't have anything else. If you were still on the team, you'd have your white polyester pants, but those are gone too.
+
+<<link "Continue" $changeEndPassage>><<set $clothesDescription to "">><</link>><</if>><<else>>==Continue== (Not with these pants)<</if>><<else>><<canPlayerWearOutfit $expectedOutfit>><<if $playerCanWearOutfit is "">><<link "Continue" $changeEndPassage>><</link>><<elseif $playerCanWearOutfit is "Those shoes are too big for you" or ($playerCanWearOutfit is "You need shoes" and $player.feet>=2)>><<set _noFemaleShoes to true>><<for _i to 0; _i lt $clothesInventory.shoes.length; _i++>><<capture _i>><<if $clothesInventory.shoes[_i].female is true>><<set _noFemaleShoes to false>><</if>><</capture>><</for>><<if _noFemaleShoes>>==Continue== (<<print $playerCanWearOutfit>>)
+
+<<if $timeOfDay is 1>>[[Try to make it to class|MorningClassShoes]]<<else>>[[Go buy shoes at the mall|Mall]]<</if>><<else>>==Continue== (<<print $playerCanWearOutfit>>)<</if>><<else>>==Continue== (<<print $playerCanWearOutfit>>)<</if>><</if>><<if $player.shirt and $player.shirt.dress>><<set $player.isWearingDress to true>><<else>><<set $player.isWearingDress to false>><</if>>
+
+::ChangeShirt
+Wearing: <<if $player.shirt is null>>No shirt<<else>><<print $player.shirt.properName>><</if>>
+
+Inventory:
+<<for _i to 0; _i lt $clothesInventory.shirt.length; _i++>><<capture _i>>
+<<if $player.shirt and $player.shirt.onepiece>><<if $clothesInventory.shirt[_i].onepiece>>[[$clothesInventory.shirt[_i].properName|ChangeShirt][$player.shirt to $clothesInventory.shirt[_i];$player.pants to $clothesInventory.shirt[_i]]]<<else>>[[$clothesInventory.shirt[_i].properName|ChangeShirt][$player.shirt to $clothesInventory.shirt[_i];$player.pants to null]]<</if>><<else>><<if $clothesInventory.shirt[_i].onepiece>>[[$clothesInventory.shirt[_i].properName|ChangeShirt][$player.shirt to $clothesInventory.shirt[_i];$player.pants to $clothesInventory.shirt[_i]]]<<else>>[[$clothesInventory.shirt[_i].properName|ChangeShirt][$player.shirt to $clothesInventory.shirt[_i]]]<</if>><</if>><</capture>><</for>>
+
+[[Back|Clothes]]
+<<if $player.shirt and $player.shirt.dress>><<set $player.isWearingDress to true>><<set $player.hasWornDress to true>><</if>>\
+
+::ChangePants
+Wearing: <<if $player.pants is null>>No pants<<else>><<print $player.pants.properName>><</if>>
+
+Inventory:
+<<for _i to 0; _i lt $clothesInventory.pants.length; _i++>><<capture _i>>
+<<if $clothesInventory.pants[_i].torn is true>>$clothesInventory.pants[_i].properName (you don't think you can get it on)<<elseif $player.pants and $player.pants.onepiece>><<if $clothesInventory.pants[_i].onepiece>>[[$clothesInventory.pants[_i].properName|ChangePants][$player.pants to $clothesInventory.pants[_i];$player.shirt to $clothesInventory.pants[_i]]]<<else>>[[$clothesInventory.pants[_i].properName|ChangePants][$player.pants to $clothesInventory.pants[_i];$player.shirt to null]]<</if>><<else>><<if $clothesInventory.pants[_i].onepiece>>[[$clothesInventory.pants[_i].properName|ChangePants][$player.pants to $clothesInventory.pants[_i];$player.shirt to $clothesInventory.pants[_i]]]<<else>>[[$clothesInventory.pants[_i].properName|ChangePants][$player.pants to $clothesInventory.pants[_i]]]<</if>><</if>><</capture>><</for>>
+
+[[Back|Clothes]]
+<<if $player.pants and $player.pants.dress>><<set $player.isWearingDress to true>><<set $player.hasWornDress to true>><</if>>\
+
+::ChangeUnderwear
+Wearing: <<if $player.underwear is null>>No underwear<<else>><<print $player.underwear.properName>><</if>><<if $curseActive>> (cursed)<<else>>
+
+Inventory:
+<<for _i to 0; _i lt $clothesInventory.underwear.length; _i++>><<capture _i>>
+[[$clothesInventory.underwear[_i].properName|ChangeUnderwear][$player.underwear to $clothesInventory.underwear[_i]]]<</capture>><</for>><</if>>
+
+[[Back|Clothes]]
+<<if $player.underwear and $player.underwear.panties is true>><<set $player.hasWornPanties to true>><<set $player.isWearingPanties to true>><<else>><<set $player.isWearingPanties to false>><</if>>
+
+::ChangeShoes
+Wearing: <<if $player.shoes>><<print $player.shoes.properName>><<else>>No shoes<</if>>
+
+Inventory:
+<<for _i to 0; _i lt $clothesInventory.shoes.length; _i++>><<capture _i>>
+<<if $player.feet is 2 and $clothesInventory.shoes[_i].female is false>>==$clothesInventory.shoes[_i].properName== (they're too big for you)<<else>>[[$clothesInventory.shoes[_i].properName|ChangeShoes][$player.shoes to $clothesInventory.shoes[_i]]]<</if>><</capture>><</for>>
+
+[[Back|Clothes]]
+
+::ChangeSocks
+Wearing: <<if $player.socks is null>>Nothing<<else>><<print $player.socks.properName>><</if>>
+
+Inventory:<<if $player.ownsGirlShoes>>
+[[No socks|ChangeSocks][$player.socks to null]]<</if>><<for _i to 0; _i lt $clothesInventory.socks.length; _i++>><<capture _i>>
+[[$clothesInventory.socks[_i].properName|ChangeSocks][$player.socks to $clothesInventory.socks[_i]]]<</capture>><</for>>
+
+[[Back|Clothes]]
+
+::ChangeBra
+Wearing: <<if $player.bra is null>>No bra<<else>><<print $player.bra.properName>><</if>>
+
+Inventory:
+[[No bra|ChangeBra][$player.bra to null]]<<for _i to 0; _i lt $clothesInventory.bra.length; _i++>><<capture _i>>
+[[$clothesInventory.bra[_i].properName|ChangeBra][$player.bra to $clothesInventory.bra[_i];$player.hasWornBra to true]]<</capture>><</for>>
+
+[[Back|Clothes]]
+
+::Disclaimer
+This is an adult game which contains adult content, including feminization, sexual intercourse, and underage drinking.
+
+If you are underage or would not like to see this content, please exit the game now.
+
+This game takes place in a high school, but all named characters are at least 18 years old.
+
+[[I am at least 18 years old|Start]]
+
+::Start
+@@.male;"You ready for the game, man?"@@ Patrick asks as you step into the dorm room.
+
+@@.player;"Are you kidding?"@@ you grin, rubbing your wet hair with a towel. @@.player;"Bear Valley doesn't stand a chance."@@
+
+It's the morning before the homecoming football game. Next to you, your roommates Patrick and Marco are putting on their school uniforms and getting ready for the day. You're not thrilled about the uniforms: the suit and tie are stuffy and uncomfortable. But it's not all bad. The girls look pretty cute in their skirts.
+
+You drop your towel to the ground and start looking for your boxers. Why does your side of the room have to be such a mess?
+
+@@.male;"Dude!"@@ says Marco. @@.male;"Why are you showing us your dick?"@@
+
+@@.player;"Why are you looking?"@@ you reply. Truthfully though, you like showing it off. It's an absolute monster, and you've never lacked for female attention. Even flaccid, it's about five inches. Erect, it's much longer.
+
+@@.male;"Are you going to stand there with your cock out or are you going to get dressed?"@@ Patrick snaps.
+
+@@.thought;That's right. I should @@[[get dressed|Get Dressed Intro]]
+
+::Get Dressed Intro
+<<set $expectedOutfit to "school">><<set $changeEndPassage to "Wear Intro">><<set $outfit to "school">><<display Clothes>>
+
+::Wear Intro
+With a heavy sigh, you pull on your dress shirt and jacket, pull up your dress pants and tie your tie. You think you're ready for the day, but you feel you need to check the mirror to be sure. Either that or you liked looking at yourself.
+
+While your roommates file out to get to first period, you hurry to the floor bathroom. Standing at the sink, you look into the mirror, and size yourself up:
+
+Your name is <<textbox "$player.firstname" "Corey" autofocus>> <<textbox "$player.lastname" "Redmond">>, and you're the most popular guy in school. You're six feet tall, with rippling muscles, close cropped blond hair, a handsome face, and a killer right arm. In your junior year, you led the Pinewood Prep Stallions to the state playoffs. Now that you're a senior, you're thinking you can win the whole thing.
+
+You're dating the hottest girl in school, <<textbox "$girlfriend.firstname" "Jessica">> <<textbox "$girlfriend.lastname" "Carlson">>, and it's all but official that the two of you are going to be homecoming king and queen.
+
+The bell rings, and you turn away from the mirror, ready to slog through [[class|Math]] so you can get to the game and the homecoming dance. Life is good. Little do you know that this is going to be the worst day of your life.
+
+::Math
+Leisurely, you stroll into the classroom ten seconds after the last bell rings. The math teacher, Mrs. Reed, glares at you but says nothing.
+
+@@.female;"Okay class. Time for our quiz."@@ There are a few groans. @@.female;"No complaining. You knew it was coming."@@
+
+You take a thick packet and stare blankly at it. You have only the vaguest idea of what the questions are even asking. Maybe you should have studied, but you were too preoccupied with the game and with your campaign to be Homecoming King.
+
+You look at the clock. @@.thought;49 minutes to go. How am I going to get through this quiz?@@
+
+It seems like you only have three options.
+
+[[Try Your Best]]
+[[Answer Randomly]]
+[[Cheat]]
+<<set $player.relationship to $girlfriend.firstname>>
+
+::Try Your Best
+You're not very good at math, and this test doesn't even really matter anyway. You've noticed scouts showing up at your games, and you're pretty sure you're going to get a scholarship offer. But you're a competitive guy, and you're not going to just give up.
+
+You stare at the thick packet. @@.thought;Okay, here's a triangle. And these numbers by the triangles are angles. Okay, so we're doing trig after all.@@
+
+You're proud of yourself for a moment, until you realize that the top of the test says ''MATH 300 TEST 1 - TRIGONOMETRY''
+
+Sheepishly, you look at the first question: ''1) What is the sine of angle x?''
+
+Now that you know what the test is on, you rack your brains trying to recall everything you remember Mrs. Reed said about trig. It's hard -- when you did make it to class, you spent most of your time goofing off and talking to your friends.
+
+Finally, you remember something. To get the sine of the angle, you were supposed to divide one of the sides of the triangle by another side, but you can't remember which ones.
+
+Skipping that question, you look at the next one. That one asks you to find the cosine. And so does the next.
+
+Frustrated, you look up at the rest of the class. Somehow, 20 minutes have already passed. Everyone else is diligently working. That nerd Norm Frederickson is already done. You sigh and turn back to the packet. @@.thought;I'd better just make my best guess. I don't have a lot of time.@@
+
+You try your best to remember what Mrs. Reed taught you, but a lot of it is just guesswork. Mercifully, you finish and hand your test in.
+
+@@.thought;That could have gone so much better. But I don't think I failed.@@ You try to put trig out of your mind as you head to your next class. You don't like to try something if you're not going to be the best at it, and you feel pretty stupid right now. But at least you didn't give up.
+
+[[Go to your next class|History]]
+<<set $player.academics to $player.academics+5>>\
+
+::Answer Randomly
+You're not very good at math, and this test doesn't even really matter anyway. You've noticed scouts showing up at your games, and you're pretty sure you're going to get a scholarship offer. @@.thought;This is just bullshit I have to do so I can graduate and don't get kicked off the team.@@
+
+You look at the test: ''MATH 300 TEST 1 - TRIGONOMETRY''. @@.thought;So it is trig.@@
+
+You thumb through the packet. You don't remember any of this. Whenever you did make it to class, you spent most of your time goofing off and talking to your friends.
+
+@@.thought;It's multiple choice at least.@@ Quickly, you fill out C for every answer and get up to hand in your test. Looking around, you note that you're the first one done. Even the nerd, Norm Frederickson is still working.
+
+@@.female;"Done already, <<print $player.firstname>>?"@@ Mrs. Reed asks. Then she looks at your answer sheet. @@.female;"Oh."@@ You look at her, expecting her to say something, but another kid has asked her a question. You take advantage of the moment to leave.
+
+@@.thought;I feel bad. I could have done better.@@ You're a pretty competitive guy, and it bothers you to be bad at something, even if it's something you don't care about.
+
+[[Head to your next class|History]]
+<<set $player.academics to $player.academics-5>>
+
+::Cheat
+You glance at the test: ''MATH 300 TEST 1 - TRIGONOMETRY''. @@.thought;So it is trig.@@
+
+You thumb through the packet. You don't remember any of this. Whenever you did make it to class, you spent most of your time goofing off and talking to your friends.
+
+You sigh. You're going to bomb this test. Not that it //really// matters. You've noticed scouts showing up at your games, and you're pretty sure you're going to get a scholarship offer. But you've got an hour to kill, and you're a competitive guy. It bothers you to be bad at something.
+
+To your right, the class nerd, Norm Frederickson is scribbling furiously. You look up at Mrs. Reed. She's distracted by another student and isn't paying any attention to you.
+
+You let your eyes move over to the right. The desks are pretty close together, and it's easy to glance at Norm's paper. You start copying down his answers. D, B, B, C, A...
+
+Suddenly, he looks straight at you. You freeze, waiting for him to call Mrs. Reed, but he just glares at you and turns back to his sheet. @@.thought;Interesting. He didn't even move it. So I can keep copying from him?@@
+
+Soon, Norm is done. You make a few deliberate errors so your answer sheet doesn't look exactly like Norm's, wait an appropriate amount of time, and turn your test in. You've gotten pretty good at cheating, and you know what you have to do so you don't get caught.
+
+@@.thought;I did good. Either a B or A.@@ You feel a little guilty, but you try to shake it off. @@.thought;If he didn't want me to copy off him, he could have moved his paper.@@
+
+[[Soon, it's time for your next class.|History]]
+<<set $player.academics to $player.academics+3>>
+
+::History
+Your next couple of classes pass uneventfully. You're barely paying attention, too busy thinking about the big game and the homecoming dance. You and your current girlfriend, <<print $girlfriend.firstname>> <<print $girlfriend.lastname>> are running for homecoming king and queen. They're going to announce it at the end of the day, but it's all but official that you won.
+
+The last class before lunch is history. Your teacher is droning on and on, and the classroom is hot and humid. You look at the clock. Still 45 minutes left.
+
+@@.thought;The only good part is that I'm sitting right behind @@<<textbox "$witch.firstname" "Raven" autofocus>> <<textbox "$witch.lastname" "Coventry">>@@.thought;.@@ You're not usually into goth girls, but her bra strap is peeking out of her thin shirt, and she looks pretty hot.
+
+You're dating <<print $girlfriend.firstname>>, of course, but there's nothing wrong with looking at the menu every once in a while.
+
+As you're looking at the goth girl again, your phone loudly goes off. Then it goes off again. She turns to look at you, and you try to play it off like you were looking at the teacher.
+
+@@.thought;I hope she didn't catch me staring at her. She's crazy.@@ You mean that literally. She's the president of the Witchcraft Club. Everyone knows it's nonsense, but that doesn't seem to bother her.
+
+Your phone goes off for a third time. @@.thought;I'll check it when I get out of class.@@
+
+[[Finally, it's time for lunch.|Lunch Intro]]
+<<set $witch.relationship to $witch.relationship-10>>
+
+::Lunch Intro
+You smile, looking forward to a break from boring classes, and getting to hang out with your friends.
+
+You swipe in and grab your food. Just as you do that, your phone goes off again. @@.thought;Oh yeah, I was going to check it when I got out of class.@@ You reach into your bag and read the messages that you missed.
+
+@@.female;Do you guys want to go to Archie's for lunch?@@
+@@.male;Sounds fun@@
+@@.male;Yeah, I'm down@@
+@@.female;On my way@@
+
+@@.thought;Fuck. My friends went to Archie's without me, and I'm stuck in this cafeteria.@@
+
+You send off a quick text, letting them know that you can't make it, and then turn your attention to the lunch room. You spot lots of familiar faces, and you know that everyone would be happy for you to sit with them.
+
+Patrick catches your eyes. He's sitting with Marco, and a couple other teammates. With a game coming up, it would be natural for you to [[sit with the rest of the football team.|Lunch With Team]] But you also spot <<print $witch.firstname>> and her brother <<textbox "$qb.firstname" "Griffin" autofocus>> sitting by themselves. @@.thought;Maybe I should@@ [[sit with them|Lunch with Witch]] @@.thought;and apologize?@@
+<<set $qb.lastname to $witch.lastname>>
+
+::Lunch With Team
+You take a seat with your roommates. You didn't know them very well before this year, but they're pretty cool, and you like hanging out with them.
+
+@@.male;"Well, look who decided to come sit with us,"@@ Marco greets you, laughing.
+
+@@.male;"Yeah, King <<print $player.firstname>>,"@@ Patrick chimes in.
+
+You laugh. @@.player;"//Homecoming// King <<print $player.firstname>>,"@@ you correct.
+
+@@.male;"You think you're going to get it, man?"@@ Patrick asks.
+
+@@.player;"Hell yeah. Who else is even running?"@@
+
+Patrick thinks for a second. @@.male;"Hmm, I don't know. That one rich kid. What was his name?"@@
+
+@@.male;"You guys are lucky,"@@ Marco says. @@.male;"I don't even have a date."@@
+
+@@.player;"What about Katie? You guys have been going out."@@
+
+@@.male;"Yeah, but I haven't asked her out yet."@@
+
+@@.player;"What? But it's today. Are you shy?"@@ you tease.
+
+@@.male;"No! It's just, you know, everyone else is doing these cute proposals and I don't have any ideas."@@
+
+@@.male;"Man, look at you being all romantic and shit,"@@ Patrick says.
+
+@@.male;"Oh yeah? Then how did you ask your girl?"@@
+
+@@.male;"It was late at night, and we were drinking. And, I don't know, man, it just seemed like the right time. But I drank so much that the next day, I forgot I had asked her, so I asked her to homecoming again."@@ The three of you break out into raucous laughter.
+
+@@.male;"What about you, <<print $player.firstname>>? How did you ask out <<print $girlfriend.firstname>>?"@@ Marco asks you.
+
+[[After sex]]
+[[I just asked her]]
+[[She asked me]]
+<<set $team.relationship to $team.relationship+1>>
+
+::Lunch with Witch
+@@.player;"Hey, mind if I sit here?"@@ you ask as you approach <<print $witch.firstname>> and <<print $qb.firstname>>.
+
+<<print $witch.firstname>> looks like she's about to say something, but her brother speaks first. @@.qb;"Go ahead <<print $player.firstname>>. What's up?"@@
+
+@@.player;"Just excited about the game. How about you?"@@
+
+@@.qb;"Hell yeah! You're going to do great!"@@
+
+@@.player;"Thanks,"@@ you say. @@.player;"So will you,"@@ you add.
+
+He laughs. @@.qb;"I'm your backup. I'm not going to do much."@@
+
+@@.player;"Hey, you never know,"@@ you say.
+
+The three of you make small talk for a while. For the first time in a while, you feel awkward. You want to tell <<print $witch.firstname>> that you're sorry for staring at her, but you don't know how to do that with her brother there.
+
+At that moment, <<print $qb.firstname>> stands up. @@.qb;"I'm going to the bathroom. <<print $player.firstname>>, don't break her heart, okay?"@@ You laugh.
+
+He walks away, and you turn to <<print $witch.firstname>>. She meets your eyes and folds her arms across her chest.
+
+@@.thought;Do I say something? If she didn't catch me, then I'd be apologizing for nothing.@@
+
+[[Say sorry]]
+[[Say nothing]]
+<<set $team.relationship to $team.relationship-1>>
+
+::After sex
+A smile comes to your lips as you think about the memory. @@.player;"We were making out. Things were getting hot and heavy, and then I started fucking her..."@@
+
+@@.male;"Do you ever talk about anything else, man?"@@ Patrick interrupts.
+
+@@.player;"Hey, he asked me! What do you want me to do, lie?"@@
+
+@@.male;"Just keep going,"@@ Marco says.
+
+@@.player;"Okay. So we had sex, and it was amazing."@@ You ignore the look Patrick is giving you. @@.player;"Probably the best of all the girls I've fucked. And then we had finished, and we were both laying there, and I was thinking, you know, that she was hot, and I liked her, so I asked her right then."@@
+
+There's silence as you finish telling your story. Marco looks like he's thinking.
+
+@@.player;"So Marco, what do you say? Are you going to ask Katie?"@@
+
+Marco's about to respond, but then the bell rings, signalling the end of lunch.
+
+[[Gym|Gym Intro]]
+<<increaseArousal 5>>
+
+::I just asked her
+@@.male;"What do you mean, you just asked her?"@@ Marco asks, confused.
+
+@@.player;"That's what I mean. We were walking back from class. It was a beautiful day, and she looked so hot. So I asked her right then."@@
+
+@@.male;"And she said yes?"@@
+
+@@.player;"No, she said no, so I'm going with her twin. Moron, of course she said yes."@@
+
+Marco's silent for a while. @@.male;"So I can just ask out Katie? I don't need to do any fancy shit?"@@
+
+@@.male;"That's what we're trying to tell you, man,"@@ Patrick says.
+
+The bell rings, signalling the end of lunch. You groan. You enjoyed hanging out with Patrick and Marco. The three of you tease each other all the time, but underneath it you care for each other. It's great.
+
+[[Gym|Gym Intro]]
+<<set $player.dominance to $player.dominance+1>>
+<<set $player.confidence to $player.confidence+2>>
+
+::She asked me
+@@.male;"What?"@@ Patrick asks, clearly shocked.
+
+@@.male;"I guess we know who wears the pants,"@@ Marco adds.
+
+@@.player;"I kept putting off asking her out. Kind of like you, Marco."@@ Marco shuts up. @@.player;"I guess I was waiting for the right moment. She got so fed up she just asked me herself."@@
+
+@@.male;"Damn. And that wasn't a turn off?"@@ Marco asks.
+
+@@.player;"No way. Why would it be? I wanted us to go together, and we are."@@
+
+@@.male;"I think it's hot,"@@ Patrick offers.
+
+The bell rings, signalling the end of lunch. You groan. You enjoyed hanging out with Patrick and Marco. The three of you tease each other all the time, and it's great.
+
+[[Gym|Gym Intro]]
+<<set $player.masculinity to $player.masculinity-1>>
+<<set $player.confidence to $player.confidence-2>>
+
+::Say sorry
+@@.player;"I'm sorry,"@@ you say suddenly.
+
+<<print $witch.firstname>> looks up at you. @@.witch;"For what?"@@
+
+@@.thought;Crap. Did she not notice? Am I blowing it if I admit it to her?@@ She looks at you questioningly. @@.thought;Oh, fuck it. It's the right thing to do.@@
+
+@@.player;"I'm sorry for, uh, staring at you earlier. In history."@@ You look at her, waiting for her reaction. You're not usually this nervous. No girl at Pinewood Prep would mind if you checked her out. But something feels different about this girl.
+
+@@.witch;"I know."@@
+
+@@.player;"What?"@@
+
+@@.witch;"I know. I caught you staring at me."@@
+
+@@.player;"Why...uh, okay,"@@ you say, confused why she didn't just say that.
+
+@@.witch;"I have a boyfriend. And don't you have a girlfriend? <<print $girlfriend.firstname>>?"@@
+
+@@.player;"Yeah. I'm not interested. I mean, I'm interested in her but not in you. Uh, look, I like looking at the menu but I'm not going to order."@@
+
+<<print $witch.firstname>> looks at you with a mixture of shock and disgust. You're about to defend yourself, but at that moment, <<print $qb.firstname>> rejoins you.
+
+@@.qb;"Did I miss anything?"@@
+
+@@.player;"No,"@@ you and <<print $witch.firstname>> say at the same time.
+
+The three of you make some more small talk, and you're glad when the bell rings, signalling the end of the lunch period. You feel like you did the right thing, @@.thought;especially since she knew all along@@, but being around <<print $witch.firstname>> made you feel pretty fucking weird.
+
+[[Gym|Gym Intro]]
+<<set $witch.relationship to $witch.relationship+5>>
+
+::Say nothing
+She says nothing too, and the two of you sit in uncomfortable silence. @@.player;"So about the game..."@@ you begin.
+
+@@.witch;"What?"@@
+
+@@.player;"Are you excited?"@@
+
+@@.witch;"Not really."@@
+
+@@.thought;Okay, I definitely feel like she caught me. Should I just say sorry?@@
+
+As you're thinking, <<print $qb.firstname>> comes back, and the moment is gone.
+
+[[The bell rings, and you head to gym.|Gym Intro]]
+<<set $witch.relationship to $witch.relationship-5>>\
+
+::Gym Intro
+You file into the gymnasium, and head towards the boys locker room. Gym's your favorite class, but you're looking forward to this unit more than most. Coach has just started the swimming unit. You're a natural in the pool, and it lets you show off your muscular body. Some of the girls look pretty hot in their swimsuits too. Especially <<print $girlfriend.firstname>>.
+
+The other guys are in various states of undress, as they quickly change into their swim trunks. Some of the less confident guys go to the stalls to change.
+
+You take your time. You're proud of your body, and the heat flowing into the locker room feels nice.
+
+Finally, you finish changing, and head to the pool with the rest of the boys. <<print $girlfriend.firstname>> is waiting for you as you step out.
+
+@@.girlfriend;"I didn't know you'd look so hot in just your swim trunks,"@@ she says, touching your chest.
+
+@@.player;"You're looking pretty hot too,"@@ you flirt back. It's true. She's wearing a small blue bikini that shows off her long, smooth legs, and her flat stomach.
+
+@@.male;"Okay! Stop flirting! Boys to the boys side, girls to the girls side!"@@ your coach yells.
+
+Reluctantly, you step away from <<print $girlfriend.firstname>> and sit with the other guys. Across the pool, the girls sit together, all wearing bikinis, and showing a lot of skin.
+
+@@.male;"Okay,"@@ the coach begins once everyone is seated, going into his customary lecture. @@.male;"We're going to start something new. We're going to be diving."@@ There's an equal mixture of cheers and groans. @@.male;"Now, I know that some of you are better swimmers than others, so it's okay if you don't want to dive. You can stay in the shallow end. But what I'm grading on is effort. If you're going to dive, you better commit to it. And if you're in the shallow end, don't think it means that you can slack off."@@
+
+You line up with the divers. Even though you're a strong swimmer, you're not very confident about diving. But you're not going to go to the shallow end like a pussy. You look over and note that some of the guys and most of the girls are over there.
+
+<<print $girlfriend.firstname>> is first, and she executes a perfect swan dive into the pool. She's got a tight, athletic body, and is on both the swim team and the cheerleaders.
+
+The other kids in front of you take their turns diving with less success. Finally, it's your turn. You step onto the diving board and stare down. It's a good drop into the pool.
+
+@@.girlfriend;"You can do it, <<print $player.firstname>>!"@@ <<print $girlfriend.firstname>> yells.
+
+You take a deep breath and [[jump.|Pool]]
+<<set $girlfriend.relationship to $girlfriend.relationship+1>>
+
+::Pool
+<<set $timeOfDay to 2>>You hit the water with a splash. You come up, gasping for air. Looking at the faces around you, nobody seems that surprised. @@.thought;Maybe I'm better at this than I thought.@@
+
+Unfortunately, there isn't enough time left in the period for you to get another chance to dive. @@.male;"Okay, I'm letting you guys go early. Make sure you take a shower,"@@ the coach says.
+
+You hit the showers, laughing it up with the other guys. The warm water feels amazing on your sweaty skin, and you let it run over you for a while.
+
+@@.male;"Hey, <<print $player.lastname>>! Hurry it up in there! They're about to announce homecoming king!"@@ comes your coach's voice. You quickly finish the shower and step out. It's only once you're out of your stall that you remember that you're naked. You quickly wrap a towel around your waist but it doesn't seem like anyone cared.
+
+Changing quickly, you head out of the locker room and into the hallways, just in time to catch the announcement coming over the PA.
+
+@@.female;"Make sure you go to the football game tonight. Tickets are only three dollars and can be sold at the door. Go Stallions! And after that is our homecoming dance. Congratulations to homecoming queen <<print $girlfriend.firstname>> <<print $girlfriend.lastname>> and homecoming king <<print $player.firstname>> <<print $player.lastname>>!"@@
+
+@@.thought;Me and <<print $girlfriend.firstname>> won!@@ You're not that surprised, but it's nice. @@.thought;Now to beat Bear Valley.@@
+
+[[Get ready for the game|Game]]
+
+::Game
+After putting your stuff away, you head back to the locker room to get ready for the game. Most of the team is already there. They're in the process of changing into their uniforms and putting on their pads and cleats.
+
+You joke around with the other guys as they head for the showers. You don't feel like you need one...you just took a shower after all.
+
+Your phone goes off and you look down.
+
+It's from <<print $girlfriend.firstname>>. @@.girlfriend;Good luck baby!@@ You smile.
+
+@@.male;"Okay boys, let's get going!"@@ your coach says, entering the locker room.
+
+[[Get Dressed|Pregame Changing]]
+
+::Pregame Changing
+<<set $changeEndPassage to "Pregame">>
+<<set $expectedOutfit to "football">><<display Clothes>>
+
+::Pregame
+You change into your Stallions uniform, and join the rest of your teammates. Coach is in the middle of explaining the game plan.
+
+@@.male;"Good, <<print $player.lastname>>, you're finally here."@@ You catch some smirks on the other players faces. @@.male;"Okay boys, we've got this. Their quarterback hurt his ankle doing a kegstand."@@
+
+You laugh with the rest of your team. You'd never do something stupid like that. Probably. It's great news though. Their quarterback is really good, almost as good as you. Without him, they'll be easy to beat.
+
+@@.male;"That doesn't mean that we can take this easy!"@@ your coach is saying. @@.male;"I want you boys to give it your all."@@ He gets some nods. @@.male;"But if we get a big lead, I'm going to let the backups play."@@
+
+This is met with a chorus of groans. @@.male;"No complaining! Winning is important, but it's even more important to have good sportsmanship."@@ You don't agree with that, but you don't dare interrupt coach when he's in the middle of one of his pep talks. @@.male;"I want you guys to do so good that you force me to put the backups in. That's our goal."@@ He pauses for a moment. @@.male;"Now let's get them!"@@
+
+[[Gametime]]
+
+::Gametime
+<<showFootballScore>>
+You and the Stallions run out onto the field to the beat of some dance music. You can feel the energy of the crowd and you're pumped...only to immediately head to the bench. The Bears will get the football first.
+
+As you wait, you scan the crowd. The stands are packed. All of Pinewood Prep must be at the game. On the sidelines, you can see the cheerleaders. You spot <<print $girlfriend.firstname>> and she gives you a little wave. You wave back and continue scanning the crowd. You see <<print $witch.firstname>> watching intently. @@.thought;Weird, I didn't think she was into football. I guess her brother is on the team.@@
+
+Luckily, the Bears backup quarterback is struggling, and the Stallions defense easily stops them. You jog out onto the field, feeling all eyes upon you. You're the starting quarterback and the star of the team, and you're ready to destroy the Bears.
+
+You fire off a couple quick passes, and Everett Smith, the running back, breaks off a couple nice runs. Before you know it, you're in scoring position. You get ready to pass, and see a couple options.
+
+Everett is open. You can throw a safe pass to him. It wouldn't get a touchdown, but you would keep moving.
+
+Ryan Callahan, a 6 foot 5 wide receiver is being covered by a defender. It would be a tougher throw, but if you made it, it would be a touchdown. And he's a big guy, so he //should// be able to jump higher and catch the ball.
+
+[[Take the safe pass|Early Field Goal]]
+[[Go for the touchdown|Early Touchdown]]
+
+::Early Field Goal
+<<showFootballScore>>
+You're doing a good job so far. You don't want to take a big risk and lose all the progress that you've made. Besides, Smith is open. You throw a quick, short pass to him. He catches it and runs for a little bit before getting tackled.
+
+Unfortunately, the rest of your throws don't go as well. You're still doing pretty good, but coach is forced to settle for the field goal instead of going for the touchdown.
+
+@@.thought;I could have gotten a touchdown. Oh well. At least we scored.@@
+
+You head to the bench and watch the Stallions defense take over, waiting for your next chance to play. You don't have to wait that long. The Bears backup quarterback is pretty bad, and your defense easily stops him.
+
+[[You run out onto the field again, eager to get a touchdown this time.|Second Drive]]
+<<set $stallionsscore to $stallionsscore+3>>
+<<set $player.confidence to $player.confidence-2>>
+
+::Early Touchdown
+<<showFootballScore>>
+You know you can take the safe pass to Smith, but you don't want to do that. You're energized by the noise of the crowd, and you can feel adrenaline coursing through your veins. @@.thought;Fuck it.@@
+
+You set your eyes on Callahan, and loft the ball at him. It's a perfect spiral. He leaps up at the same time as the defender...and comes down with the football. Touchdown!
+
+You're not able to keep the smile from your face as you jog back to the sideline. The crowd is going wild, and the cheerleaders are in the middle of a dance. Once you're back with your team, you get a round of pats on your back. @@.thought;I did it. I knew I could get a touchdown, and I did.@@
+
+The Stallions defense comes onto the field now, letting you get a little bit of rest. But the rest doesn't last long. The Bears offense gets stopped easily. Their backup quarterback must be pretty bad.
+
+@@.thought;My turn. I'll try to get another touchdown.@@
+
+[[Take the field|Second Drive]]
+<<set $stallionsscore to $stallionsscore+7>>
+<<set $player.confidence to $player.confidence+5>>
+<<set $team.respect to $team.respect+5>>
+
+::Second Drive
+<<showFootballScore>>
+Your second drive <<if $stallionsscore is 3>>is a lot easier than<<else>>goes just as well as<</if>> your first. You have the momentum now, and everything's clicking. Your receivers keep getting open, and you keep throwing perfect passes to them. Smith runs it in for a touchdown.
+
+The third time you get the ball, it's more of the same. You're in a rhythm, and the Bears defense just can't stop you. You throw a touchdown pass to Callahan as the second half ends<<if $stallionsscore is 3>>, your first touchdown pass of the game<</if>>.
+
+@@.male;"Okay boys,"@@ your coach says, as you head to the locker room for halftime. @@.male;"We're up <<print $stallionsscore+14>> to nothing. You're doing great. Keep it up. But..."@@ he pauses. @@.male;"I'm going to let the backups play."@@
+
+@@.player;"What?"@@
+
+@@.male;"You heard me, <<print $player.lastname>>. We're winning. We don't want to embarrass them. <<print $qb.lastname>>, you're our quarterback."@@
+
+<<print $qb.firstname>> gulps. He's the backup quarterback for a reason. He's not //bad//. Well, okay, he's pretty bad. He does have a really strong arm. His problem is that he just isn't accurate. At all. @@.thought;I got us a big lead, and their quarterback isn't good. We'll be fine, right?@@
+
+As he heads out of the locker room, you realize that you're in his way. He looks at you, obviously expecting you to say something.
+
+@@.player;"Good luck bro,"@@ you say to him as he passes you.
+
+<<print $qb.firstname>> looks at you in surprise. He must have thought you'd be pissed off that you're being benched. And you are. But it's not his fault.
+
+It looks like he's about to say something. He opens his mouth. @@.qb;"Th...thank..."@@
+
+@@.player;"You're welcome?"@@ @@.thought;Man, he seems really nervous. Poor guy.@@
+
+[[Watch the game from the bench]]
+<<set $stallionsscore to $stallionsscore+14>>
+
+::Watch the game from the bench
+<<showFootballScore>>
+The backups run out onto the field, and you sit down miserably on the bench. Yeah, your team is up by a lot, and you love playing football, but that's not why you're so disappointed.
+
+You've spotted a middle aged man in the stands. He looks deeply immersed in the game and he's taking notes on a clipboard. Pinewood Prep is a pretty small school. You've met all the parents of the other players, and you're sure he's not one of them. His clothes are casual enough, but that only makes him stand out more when everyone else is wearing Stallions purple.
+
+@@.thought;Is that a scout?@@ You groan internally. This was a great chance to impress him and earn a scholarship, and your coach blew it by benching you.
+
+@@.male;"That's okay guys, we'll get them next time!"@@ your coach yells. Startled, you look up. <<print $qb.firstname>> and the rest of the offense are taking their spots on the bench. @@.thought;They were stopped already?@@
+
+@@.qb;"I'm sorry, <<print $player.firstname>>,"@@ a quiet voice comes from your right. You look over and realize it came from <<print $qb.firstname>>. @@.qb;"I don't want to blow your lead. Uh, can you help me?"@@
+
+@@.player;"What do you mean?"@@
+
+@@.qb;"I mean, do you have any advice?"@@
+
+How do you want to respond?
+
+[[Advise him to rely on his arm strength, his best trait|Arm Strength]]
+[[Advise him to fix his accuracy, his worst trait|Accuracy]]
+[[Make fun of him]]
+
+::Arm Strength
+<<showFootballScore>>
+@@.player;"Listen,"@@ you tell him. @@.player;"You're not going to blow the lead. Bear Valley sucks without their quarterback."@@
+
+<<print $qb.firstname>> smiles weakly, but he still looks pale.
+
+@@.thought;He might actually blow this lead if he's so nervous.@@ You quickly make a decision and turn to him again. @@.player;"Hey, <<print $qb.firstname>>. Don't be so nervous. You're a,"@@ you pause for the right choice of words, @@.player;"decent quarterback. You can take home this win for us."@@
+
+@@.qb;"Really?"@@
+
+@@.player;"Yeah! What's your best trait? Your strong arm, right?"@@ He nods. @@.player;"So remember that. Play to your strengths."@@
+
+He smiles and looks a little less nervous, although you're not sure how much he believes you. @@.qb;"Thanks, <<print $player.firstname>>,"@@ he says.
+
+@@.male;"And that's a field goal for the Bears!"@@ the annoncer's voice cuts in, interrupting your moment.
+
+@@.player;"That's alright,"@@ you tell him. @@.player;"Now go get 'em."@@
+
+[[Continue Watching]]
+<<set $qb.relationship to $qb.relationship+3>>\
+<<set $advice to "strength">>\
+<<set $qb.armStrength to $qb.armStrength+3>>\
+
+::Accuracy
+<<showFootballScore>>
+@@.player;"Listen,"@@ you tell him. @@.player;"You're not going to blow the lead. Bear Valley sucks without their quarterback."@@
+
+<<print $qb.firstname>> smiles weakly, but he still looks pale.
+
+@@.thought;He might actually blow this lead if he's so nervous.@@ You quickly make a decision and turn to him again. @@.player;"Hey, <<print $qb.firstname>>. Don't be so nervous. You're a,"@@ you pause for the right choice of words, @@.player;"decent quarterback. You can take home this win for us."@@
+
+@@.qb;"Really?"@@
+
+@@.player;"Yeah! But you're too nervous and you're rushing your throws. Just take it easy and make sure you're accurate."@@
+
+@@.qb;"Relax and be accurate,"@@ <<print $qb.firstname>> repeats. You nod encouragingly. @@.male;"Thanks, <<print $player.firstname>>,"@@ he says.
+
+@@.male;"And that's a field goal for the Bears!"@@ the annoncer's voice cuts in, interrupting your moment.
+
+@@.player;"That's alright,"@@ you tell him. @@.player;"Now go get 'em."@@
+
+[[Continue Watching]]
+<<set $qb.relationship to $qb.relationship+3>>\
+<<set $advice to "accuracy">>\
+<<set $qb.accuracy to $qb.accuracy+3>>\
+
+::Make fun of him
+<<showFootballScore>>
+You ignore <<print $qb.firstname>> and turn to your left to face Patrick and Marco. @@.player;"How did our offense get stopped so fast?"@@
+
+@@.male;"They're missing their best quarterback,"@@ Marco laughs.
+
+@@.male;"Yeah, that last drive was pathetic, man."@@ Patrick says. @@.male;"I don't even know who our quarterback -- what's his name?"@@
+
+@@.player;"<<print $qb.firstname>>,"@@ you say helpfully.
+
+@@.male;"Yeah. He couldn't hit //anything//, man. We might as well have had a girl throwing the ball."@@
+
+@@.player;"Hey, I'll give him this much. He can throw the ball farther than a girl."@@
+
+@@.male;"Hey guys, look,"@@ Marco cuts in. He points to the field, where the Bears are about to kick a field goal.
+
+@@.male;"And that's a field goal for the Bears!"@@ the announcer's booming voice cuts in.
+
+@@.player;"He better not blow that lead we got,"@@ you say.
+
+You look around to see your offense preparing to take the field. For a second, you think you see tears streaking down <<print $qb.firstname>>'s face, and then his helmet is back on.
+
+@@.player;"Shit. I feel bad now."@@
+
+@@.male;"We shit talk each other all the time, man."@@
+
+@@.player;"Yeah, I know. But when I shit talk you, I do it to your face."@@
+
+@@.male;"He was right there, man!"@@ Patrick cuts in.
+
+@@.male;"We're saying what's true,"@@ Marco says. @@.male;"If he were better, our lead would be safe."@@
+
+@@.player;"Yeah, I guess,"@@ you say, but you feel a little uneasy.
+
+[[Continue Watching]]
+<<set $qb.relationship to $qb.relationship-10>>
+<<set $advice to "humiliation">>
+<<set $qb.confidence to $qb.confidence-5>>
+<<set $team.qbRespect to $team.qbRespect-5>>
+<<set $team.respect to $team.respect+2>>
+
+::Continue Watching
+<<showFootballScore>>
+You nervously watch the offense take the field, <<if $qb.relationship>50>>hoping your advice paid off<<else>>hoping <<print $qb.firstname>> can get over your insults<</if>>.
+
+Things are looking okay at first. <<print $qb.firstname>> still seems nervous, but he completes a pass this time, and Everett breaks off a couple nice runs, but it quickly unravels.
+
+<<if $advice is "strength">><<print $qb.firstname>> heaves a mighty throw down the field...and nobody is there to catch it.
+
+@@.male;"What's he doing?"@@ Marco asks.
+
+@@.thought;I told you to rely on your arm strength. But you've got to throw the football //to// people.@@<<elseif $advice is "accuracy">><<print $qb.firstname>> takes the ball, and gets ready to throw. But instead of throwing it, he just stares down the field.
+
+@@.male;"What's he doing?"@@ Marco asks.
+
+@@.thought;Is he waiting for the right opportunity?@@ @@.player;"Don't wait too long!@@ you yell. As you say that, he's tackled by a Bears defender for a sack.<<else>><<print $qb.firstname>> looks rattled. He fires off a quick pass that's almost caught by a Bears defender.<</if>>
+
+The rest of the drive is more of the same. <<print $qb.firstname>> can't connect on a single pass, and the offense heads back to the sidelines dejected.
+
+@@.male;"Uh oh,"@@ Ryan Callahan says. You follow his eyes. The Bears star quarterback, Trent Palmer, has just entered the game. @@.player;"I thought he was injured? Didn't he twist his ankle doing a kegstand?"@@ Ryan shrugs.
+
+You can't do anything but watch as Palmer leads the Bears to one score after another. The Stallions still have the lead, but it's close.
+
+[[Ask the coach to put you in]]
+<<set $defensescore to $defensescore+15>>
+
+::Ask the coach to put you in
+<<showFootballScore>>
+It starts to rain as you walk over to coach. @@.thought;Just great@@ you think.
+
+@@.player;"Coach? Can you put me in?"@@
+
+He shakes his head. @@.male;"Sorry, <<print $player.firstname>>. We can't run up the score."@@
+
+@@.player;"But they're //Bear Valley//! <<print $qb.firstname>> is going to lose us this game!"@@
+
+@@.male;"I know he's struggled, but we're up <<print $stallionsscore>> to <<print $defensescore>>, the game's almost over, and we have the ball."@@
+
+You trudge back to your seat. This is so unfair! As soon as you sit down, <<print $qb.firstname>> throws the ball right to a Bears defender. He catches it and runs it back for a touchdown. The Bears are winning.
+
+@@.male;"Okay, <<print $player.lastname>>, you got your wish,"@@ the coach tells you. @@.male;"Go back in there and win us the game."@@
+
+[[Play aggressively]]
+[[Play it safe]]
+<<set $defensescore to $defensescore+7>>
+
+::Play aggressively
+<<showFootballScore>>
+The game is almost over and you need a touchdown to win it. You've got a strong arm and this is your chance to show it off, especially since the college scout is here.
+
+You throw a long, beautiful pass, just out of Ryan Callahan's reach. Your next pass is knocked down by a Bears defender. The third pass is dropped.
+
+@@.thought;This damn rain. That could have been a touchdown.@@
+
+It's fourth down. This is your last chance.
+
+You look to pass, and spot Ryan open downfield. It's a long throw, but you know you're strong enough to make it. You throw a perfect pass and hold your breath.
+
+Ryan catches it, and there's no one near him. He runs in for a touchdown, and you relax. You did it!
+
+The next couple of minutes are a blur. You find yourself mobbed by your teammates, and they hoist you up on their shoulders. You're beaming, your anger at <<print $qb.firstname>> and your excitement about the scout forgotten. You're the hero and you're on top of the world.
+
+[[Head to the Locker Room]]
+<<set $team.relationship to $team.relationship+15>>\
+<<set $player.confidence to $player.confidence+5>>\
+<<set $team.respect to $team.respect+5>>\
+<<set $stallionsscore to $stallionsscore+7>>\
+
+::Play it safe
+<<showFootballScore>>
+You know you have a strong arm, but you have to be smart about this. And with the rain, it's better to be safe.
+
+Methodically, you march the Stallions downfield. You throw short, crisp passes that find their target, and you're almost there, just twenty yards shy of the touchdown. Unfortunately, the game is almost over. There's only three seconds left on the clock. This is your last chance. If you can get a touchdown, you win the game.
+
+You look to pass, and find Everett sort of open. You throw the ball and hold your breath.
+
+The Bears defender makes a valiant effort, but Everett comes down with the football. You've done it!
+
+The next couple of minutes are a blur. You find yourself mobbed by your teammates, and they hoist you up on their shoulders. You're beaming, your anger at <<print $qb.firstname>> and your excitement about the scout forgotten. You're the hero and you're on top of the world.
+
+[[Head to the Locker Room]]
+<<set $team.relationship to $team.relationship+15>>\
+<<set $stallionsscore to $stallionsscore+7>>\
+
+::Head to the Locker Room
+<<set $timeOfDay to 3>><<showFootballScore>>
+You're in a great mood as you head to the locker room. You single-handedly won the game, you beat Bear Valley, and now you can enjoy the homecoming dance.
+
+@@.male;"Didn't you hear, <<print $player.firstname>>? It was raining so hard they cancelled the dance!"@@
+
+@@.male;"Don't listen to him, man,"@@ Patrick says. @@.male;"They moved it to tomorrow."@@
+
+You're stunned. Who would have thought that holding the homecoming dance outdoors would have been a bad idea? You were the Homecoming King, and now what will you do this evening?
+
+@@.thought;Well, I could fuck <<print $girlfriend.firstname>>@@ you think, a smile coming to your lips.
+
+You hit the showers, enjoying the feeling of warm water cascading down your sweaty body. With the dance cancelled, you don't have anywhere to be, and you take your time in the shower. The locker room is empty by the time you're finally done.
+
+Well, almost empty. You hear a soft set of footsteps.
+
+@@.player;"Hello?"@@ you call, stepping into the main part of the locker room, wearing just your towel. @@.thought;It's just a teammate@@ you tell yourself. But your hairs are all standing on end.
+
+A girl steps out. @@.witch;"Hello, <<print $player.firstname>>,"@@ <<print $witch.firstname>> <<print $witch.lastname>> says. @@.witch;"We need to talk."@@
+
+[[Talk about the incident in History Class|Witch Ogle]]
+[[Talk about her brother|Witch QB]]
+[[Talk about the game|Witch Game]]
+<<set $team.wins to 1>>\
+<<set $team.respect to $team.respect+5>>\
+
+::Witch Ogle
+@@.witch;"You perved on me in History."@@ Her tone is flat, and she's looking at you like she wants to drill a hole through your skull.
+
+<<if $witch.relationship is 30>>@@.thought;Crap. She caught me.@@
+
+@@.player;"Uh, I'm sorry,"@@ you offer weakly.<<elseif $witch.relationship<35>>@@.thought;I should have apologized when I had the chance.@@
+
+@@.player;"Uh, I'm sorry,"@@ you offer weakly.<<else>>@@.player;"But I apologized to you,"@@ you say, confused. You thought you had cleared it up. Why is she in the boys locker room now?<</if>>
+
+@@.witch;"So you think you can just say sorry and I'm supposed to forgive you?"@@
+
+@@.player;"Well, uh, yeah,"@@ you say, confused. That was apparently the wrong thing to say, and her eyes flash dangerously. You're starting to feel a little uncomfortable.
+<<if not visited("Witch QB")>>
+[[Talk about her brother|Witch QB]]<</if>><<if not visited("Witch Game")>>
+[[Talk about the game|Witch Game]]<</if>>
+
+[[Get out of here|Get out of Here]]
+
+::Witch QB
+@@.witch;"You humiliated <<print $qb.firstname>>."@@
+
+<<if $qb.relationship<50>>@@.thought;So <<print $qb.firstname>> told his sister I talked shit about him. And he sent her to talk to me. Not cool.@@
+
+@@.player;"Look, we're guys. We talk shit about our friends all the time."@@
+
+She looks at you skeptically. @@.witch;"He's not your friend, though."@@
+
+You wince. She's right.
+
+@@.player;"Fine,"@@ you say. @@.player;"I'm sorry. Better?"@@
+
+She glares at you. That might not have been the best response, but she's tiny. You're not afraid of her. Well, okay, maybe you're a little afraid.<<else>>@@.player;"Humiliated?"@@ you ask, confused. You were nice to him earlier.
+
+@@.witch;"Yeah. You gave him bad advice and then the Bears kicked his ass."@@
+
+@@.player;"What? I gave him good advice! It's not my fault he sucks!"@@
+
+She glares at you. It might not have been wise to tell <<print $witch.firstname>> that her brother sucks, but it's true. And she's tiny. What's the worst she could do?<</if>>
+<<if not visited("Witch Ogle")>>
+[[Talk about the incident in History Class|Witch Ogle]]<</if>><<if not visited("Witch Game")>>
+[[Talk about the game|Witch Game]]<</if>>
+
+[[Get out of here|Get out of Here]]
+
+::Witch Game
+<<print $witch.firstname>> takes a step forward, and the spacious locker room suddenly seems small and cramped.
+
+@@.player;"So, uh, how about the game?"@@ you ask, trying to change the subject. @@.player;"Pretty crazy, right? Did you see that last touchdown?"@@
+
+@@.witch;"I saw you show up <<print $qb.firstname>>,"@@ she says.
+
+@@.player;"So that's my fault?"@@
+
+@@.witch;"Yeah."@@ <<print $witch.firstname>> pauses. @@.witch;"<<print $qb.firstname>> should be the quarterback,"@@ she finally says. @@.witch;"He works so much harder."@@
+
+@@.player;"So?"@@ you snort. @@.player;"Did you watch the game? If it wasn't for me, we would have lost."@@
+
+One look at her face tells you that she doesn't see it that way.
+<<if not visited("Witch Ogle")>>
+[[Talk about the incident in History Class|Witch Ogle]]<</if>><<if not visited("Witch QB")>>
+[[Talk about her brother|Witch QB]]<</if>>
+
+[[Get out of here|Get out of Here]]
+
+::Get out of Here
+You've had enough. <<print $witch.firstname>> is glaring at you with pure hatred. She couldn't do anything to you physically, but you've heard the rumors. She's the president of the Witchcraft Club at Pinewood Prep. You don't believe in that, of course, but still.
+
+@@.player;"Well, it was nice talking to you,"@@ you say before she can say anything else. @@.player;"I'm going to get back to my dorm."@@
+
+@@.witch;"Don't go, <<print $player.firstname>>"@@ she calls after you.
+
+You ignore her and stride towards the exit, the wind at your back.
+
+Wait. @@.thought;Wind?@@ You're inside.
+
+You spin around and see <<print $witch.firstname>> chanting.
+
+@@.witch;"By the light of the night
+And the strength of the bull
+I call upon thee tonight
+Grant me my wishes full."@@
+
+You're no longer feeling unsettled. You're full on terrified. You turn around and try to dart for the exit, but you're unable to. It's like you're in a dream, and however much you try to run, your feet feel like they are made of molasses.
+
+@@.witch;"<<print $player.firstname>> <<print $player.lastname>>, symbol of masculinity, bright as day
+To harm him I wish
+Take it all away
+Make his strength diminish."@@
+
+With those words, you feel a punch in the gut and you double over.
+
+@@.witch;"At the dawn of morning, let this curse begin
+To never reverse until the championship Pinewood wins."@@
+
+With those words, <<print $witch.firstname>> collapses on the locker room floor.
+
+[[Flee]]
+[[Check on her]]
+
+::Flee
+<<set $timeOfDay to 4>><<print $witch.firstname>> looks unconscious, but you're not going to stick around and find out. You give her one last glance, and then take off, running out the locker room, through the gym, and across campus.
+
+You get some strange looks as you run past the other students, but you ignore them. Finally, you reach your dorm room. It's not until you hurtle inside and lock the door do you relax.
+
+@@.thought;Why did I do that? She's not a witch. She's just crazy...and I totally freaked out. Damn.@@
+
+Behind you, you hear a laugh. @@.male;"Why were you running, <<print $player.firstname>>?"@@ Marco asks. @@.male;"You look like you've seen a ghost."@@
+
+@@.thought;I thought I was alone.@@ @@.player;"I heard you were having a party in here, and I didn't want to be late,"@@ you say, giving a forced laugh.
+
+@@.male;"No, no party here,"@@ Marco says. @@.male;"Though that's a good idea. We could invite our friends, get some booze..."@@
+
+@@.player;"I'm not feeling like partying anymore, man. Hey, have you seen <<print $girlfriend.firstname>>?"@@
+
+@@.male;"Yeah, she came by here earlier, looking for you. I think she's in her room. Are you okay? You're acting kind of weird."@@
+
+[[Look for your girlfriend]]
+[[Go to sleep early|Go to sleep]]
+
+::Check on her
+<<set $timeOfDay to 4>>@@.thought;There's no such thing as magic@@ you tell yourself. Finding that you're able to walk normally, you turn around and walk over to <<print $witch.firstname>>.
+
+She's passed out, unconscious on the locker room floor. Despite her trying to curse you, you feel a twinge of pity. Nobody's going to be in the locker room until tomorrow at least.
+
+@@.thought;She'll be fine. Why should I help someone who tried to do...whatever that just was to me?@@
+
+Your brain is screaming at you to [[leave her there|Flee]] and get out, but you know that [[helping her]] is the right thing to do.
+
+::Look for your girlfriend
+You're feeling better now. Either <<print $witch.firstname>> is crazy, or she was pulling a prank. @@.thought;Then why didn't I tell Marco what happened?@@
+
+You walk across campus without any incidents, though you're relieved when you get to the girls dorm. @@.thought;I need to chill out. What's wrong with me?@@ You send <<print $girlfriend.firstname>> a quick text, and the door opens almost immediately.
+
+@@.girlfriend;"I thought you went to a party without me,"@@ <<print $girlfriend.firstname>> says, giving you a hug.
+
+@@.player;"No,"@@ you say. @@.player;"I was just taking a shower."@@
+
+@@.girlfriend;"That's a long shower,"@@ she laughs. You give another forced laugh. @@.girlfriend;"Anyway, do you want to, you know..."@@
+
+@@.player;"Fuck?"@@
+
+She nods eagerly. That's one of the things you like about her. She's always horny, and she loves taking your dick.
+
+@@.girlfriend;"My roommate's in our room. Why don't we go to the lake?"@@
+
+You nod. The lake is the spot all the couples go to have sex.
+
+[[Lake]]
+<<setUpSexScene "girlfriend">>
+
+::helping her
+With a groan, you hoist <<print $witch.firstname>>'s unconscious body over your shoulders and hobble towards the exit. In her spell, she mentioned taking your strength, but you're able to handle her just fine. @@.thought;Of course she coudln't sap my strength. I can't believe I was worried.@@
+
+Reaching the exit to the locker room, you gently lean her against the wall, while you fish your phone out of your pocket. You scroll down until you get to <<print $qb.firstname>>'s number. There aren't a lot of messages between the two of you, just him telling you @@.qb;This is <<print $qb.firstname>>@@ and you saying @@.player;Ok@@.
+
+You quickly send a text to him: @@.player;Hey, your sister passed out in the locker room. What should I do?@@
+
+He responds almost immediately. @@.qb;I'll be right over@@
+
+With nothing to do, you lean back against the wall and play with your phone, waiting for him to show up.
+
+Eventually, he does. @@.qb;"Sorry I'm late,"@@ he says, sounding a little out of breath. He puts an arm around his sister, and the two of you start to walk her back to her dorm.
+
+@@.qb;"I went to the girls locker room first,"@@ <<print $qb.firstname>> continues.
+
+@@.player;"You went to the girls locker room?"@@ you ask, surprised.
+
+@@.qb;"Hell yeah. She's my sister. And it's so late. No one was there."@@
+
+@@.player;"Okay, fair enough."@@ The two of you succeed in marching <<print $witch.firstname>> out of the gym and begin helping her across campus.
+
+@@.qb;"So why was she in the boys locker room anyway? And why did she pass out?"@@
+
+You look at him. He looks back intently. He knows her better than anyone, and if you told him what happened, maybe he could help you if she really was a witch. @@.thought;Wait, what am I saying? Of course she's not a witch! He would just laugh at me.@@
+
+[[Tell the truth]]
+[[Play it off]]
+<<set $witch.relationship to $witch.relationship+5>>
+
+::Play it off
+@@.player;"I don't know. I was taking a shower and when I got out, she was on the ground."@@
+
+@@.qb;"Oh. Do you think someone might have, you know?"@@
+
+@@.player;"Taken advantage of her?"@@ He nods. @@.player;"No. Nobody on the football team would do that."@@
+
+@@.qb;"Okay,"@@ <<print $qb.firstname>> says, looking relieved. @@.qb;"Then why would...oh no."@@
+
+@@.player;"What?"@@ you ask, curious. <<print $qb.firstname>> looks pretty scared.
+
+@@.qb;"Don't worry about it, <<print $player.firstname>>,"@@ he tells you. @@.qb;"I can take her the rest of the way."@@
+
+@@.player;"Uh, okay,"@@ you say. <<print $qb.firstname>> and <<print $witch.firstname>> disappear around a corner, leaving you alone in the girls dorm.
+
+@@.thought;Well, that was weird@@ you think as you walk back to your dorm. @@.thought;What spooked him? Could it have been...no, that's ridiculous.@@
+
+[[Go to sleep]]
+
+::Tell the truth
+@@.player;"Yeah, I was with her when it happened. But you're not going to believe me."@@
+
+You look at <<print $qb.firstname>> to see his reaction, but he's silent.
+
+@@.player;"So I've just gotten out of the shower and she's waiting for me in the locker room. And then we, uh, had an argument."@@
+
+A group of girls walk by, giggling. You stop and let them pass. Telling <<print $qb.firstname>> is one thing, but you don't want the whole school to know. @@.player;"I tried to leave but she started chanting. It sounded kind of like a spell."@@
+
+You look at <<print $qb.firstname>>, waiting for him to laugh at you, but his reaction is even worse. His face has gone white, and he's stopped helping you carry <<print $witch.firstname>>.
+
+@@.player;"What? Are you saying she did a real spell?"@@
+
+@@.qb;"Let's talk when we get to her room,"@@ he says. It's your turn to look scared. But you're not getting any answers yet, so the two of you carry <<print $witch.firstname>> the rest of the way.
+
+@@.player;"Okay,"@@ you say, shutting the door as <<print $qb.firstname>> helps her into bed. @@.player;"What's going on?"@@
+
+[[Continue]]
+
+::Continue
+@@.qb;"Well, I'm not sure, uh, I don't know how to say it,"@@ <<print $qb.firstname>> stammers.
+
+@@.player;"Just tell me!"@@ you say, losing your patience. @@.player;"Is she a witch? Yes or no?"@@
+
+<<print $qb.firstname>> nods.
+
+You lean back and sigh. @@.player;"Are you fucking with me? If you're fucking with me, I'll beat your ass."@@
+
+@@.qb;"N...no, <<print $player.firstname>>, I'm not fucking with you."@@
+
+@@.player;"So you're saying she cursed me?"@@ you shout, your voice rising an octave.
+
+@@.qb;"What did she say, exactly?"@@ <<print $qb.firstname>> asks, leaning forward.
+
+@@.player;"She wanted to take away my strength. And something about a bull."@@
+
+@@.qb;"You carried <<print $witch.firstname>> here,"@@ <<print $qb.firstname>> offers. @@.qb;"You're still strong."@@
+
+@@.player;"That's right! It didn't work!"@@ you say, beaming. <<print $qb.firstname>> smiles. @@.player;"Wait,"@@ you say, as a horrible thought occurs to you. @@.player;"She said it started at dawn."@@
+
+@@.qb;"Well, that's okay!"@@ <<print $qb.firstname>> says, giving a slightly weaker smile. @@.qb;"By morning, you'll know if it worked or not."@@
+
+@@.player;"Yeah, I guess,"@@ you say, dejectedly.
+
+There's a lull in the conversation.
+
+[[Ask him if she's a good witch|Witch Power]]
+[[Ask him how close he is to her|Witch Relationship]]
+<<set $qb.relationship to $qb.relationship+3>>
+
+::Witch Power
+@@.player;"When <<print $witch.firstname>> casts a spell,"@@ you begin, looking at her unconscious body. @@.player;"Does it usually work?"@@
+
+@@.qb;"Yeah, it usually does,"@@ he says, shrugging. @@.qb;"She's a good witch."@@
+
+You groan.
+
+@@.qb;"But not always!"@@ he says quickly. @@.qb;"Her spells have some side effects."@@
+
+@@.player;"Side effects?"@@
+
+@@.qb;"Yeah. Once, we were at her birthday party, and I wanted the last slice of cake. She wanted it too, so I tried to eat it really fast. She cast a spell, but she said //Keep your mouth shut//. I couldn't talk for a week."@@
+
+@@.player;"Wow,"@@ you say, suddenly feeling terrified. @@.player;"She sounds powerful."@@
+
+@@.qb;"Yeah. But she's not a bad person! When she wakes up, I'm sure we can talk to her."@@
+
+@@.player;"Thanks,"@@ you say, grateful for his help. @@.thought;I can't lose my strength. I couldn't play football!@@
+
+@@.qb;"Don't worry about it. Just, uh, can you promise not to talk about this?"@@
+
+@@.player;"I wasn't going to,"@@ you say. @@.player;"I should get back to my dorm though."@@
+
+@@.qb;"Of course. I'll text you when she wakes up, okay?"@@
+
+You nod, and head back to your dorm.
+
+[[Continue|Go to sleep]]
+<<set $qb.invitation to true>>
+
+::Witch Relationship
+@@.player;"How close are you to <<print $witch.firstname>>?"@@ you ask.
+
+@@.qb;"What do you mean?"@@
+
+@@.player;"Well, she's...a witch,"@@ you say. It sounds so weird hearing those words come out of your mouth. @@.player;"It must be hard."@@
+
+@@.qb;"Yeah,"@@ he sighs. @@.qb;"Once, we were at her birthday party, and I wanted the last slice of cake. She wanted it too, so I tried to eat it really fast. She cast a spell, but she said "//Keep your mouth shut//". I couldn't talk for a week."@@
+
+@@.player;"Holy shit!"@@ you say.
+
+@@.qb;"Yeah. I learned to let her have her way after that."@@ He gives a forced laugh.
+
+@@.player;"Wow, I had no idea,"@@ you say. You can't imagine what it would have been like to grow up like that, afraid that if you said the wrong thing, you'd be cursed.
+
+@@.qb;"It's not that bad,"@@ <<print $qb.firstname>> says, reading your expression. @@.qb;"She's a good person."@@
+
+@@.player;"Mhm,"@@ you say, unconvinced. @@.player;"Then why did she curse me?"@@
+
+<<print $qb.firstname>> looks like he wants to say something, but he stops himself. @@.qb;"Let's talk to her when she gets up,"@@ he says.
+
+@@.player;"Thanks."@@ @@.thought;I can't lose my strength! How can I play football?@@
+
+You have a lot on your mind as you head back to your dorm room.
+
+[[Continue|Go to sleep]]
+<<set $qb.invitation to true>>
+
+::Lake [Sex]
+<<if ($player.arousal<100 and $girlfriend.arousal<100) or $movesTakenDuringSex<2>><<set $movesTakenDuringSex to $movesTakenDuringSex+1>>Your Arousal: <<print $player.arousal>>
+<<print $girlfriend.firstname>>'s Arousal: <<print $girlfriend.arousal>>
+
+You are wearing:
+Legs: <<if $player.pants is not null>><<print $player.pants.properName>> [[(Remove)|Lake][$temp to $player.pants;$sexDescription to "You slide your $temp.informalName down your legs and slip out of them, revealing your $player.underwear.informalName and your hairy legs. $girlfriend.firstname looks at your hardening crotch.";$player.pants to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+3]]<<elseif $player.underwear is not null>><<print $player.underwear.properName>> [[(Remove)|Lake][$temp to $player.underwear;$sexDescription to "$girlfriend.firstname tugs your $temp.informalName down, freeing your cock. It's five inches long already and is semi-erect. A look of desire crosses her face, and she waits to see what you do next.";$player.underwear to null;$player.arousal to $player.arousal+2;$girlfriend.arousal to $girlfriend.arousal+2]]<<else>>Nothing, revealing your <<if $player.arousal>60>>hard<<else>>semi-hard<</if>> cock.<</if>>
+Chest: <<if $player.shirt is not null>><<print $player.shirt.properName>> [[(Remove)|Lake][$temp to $player.shirt;$sexDescription to "You pull your $temp.informalName over your head and toss it to the side. $girlfriend.firstname kisses your rippling muscles.";$player.shirt to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+5]]<<else>>Bare, revealing your bulging muscles.<</if>>
+Feet: <<if $player.shoes is not null>><<print $player.shoes.properName>> [[(Remove)|Lake][$sexDescription to "You untie your shoes and place them off to the side, out of reach. They're nice shoes and you don't want them to get ruined. $girlfriend.firstname looks a little bored.";$player.shoes to null;$girlfriend.arousal to $girlfriend.arousal-1]]<<elseif $player.socks is not null>><<print $player.socks.properName>> [[(Remove)|Lake][$sexDescription to "Remembering how $girlfriend.firstname said that having your socks on while having sex was gross, you pull them off. The grass feels nice on your bare feet.";$player.socks to null;$player.arousal to $player.arousal+1;$girlfriend.arousal to $girlfriend.arousal+1]]<<else>>Barefoot<</if>>
+
+<<print $girlfriend.firstname>> is wearing:
+Legs: <<if $girlfriend.pants is not null>><<print $girlfriend.pants.properName>> [[(Remove)|Lake][$sexDescription to "Smiling, you unbutton her denim short shorts and slowly pull them down. You always had a thing for those kinds of shorts, and her smooth legs look fantastic in it. Impatiently, she kicks the shorts off of her legs. The only thing covering her pussy is her pink bikini panties.";$girlfriend.pants to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal+3]]<<elseif $girlfriend.underwear is not null>><<print $girlfriend.underwear.properName>> [[(Remove)|Lake][$sexDescription to "$girlfriend.firstname whispers to you to take off her panties. You obey instantly, grabbing the pink bikini-cut panties and pulling them down her legs. $girlfriend.firstname is sexy, and she looks even better naked. Her pussy looks like it's already wet. Shyly, she looks around. But if anyone else was at the lake, they'd probably be having sex too.";$girlfriend.underwear to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal+5]]<<else>>Bare, revealing her pretty pussy.<</if>>
+Chest: <<if $girlfriend.shirt is not null>><<print $girlfriend.shirt.properName>> [[(Remove)|Lake][$sexDescription to "You reach for her shirt, and she puts her arms straight in the air, allowing you to easily take her blouse off of her. Her C cup breasts look inviting in just her bra.";$girlfriend.shirt to null;$player.arousal to $player.arousal+3;$girlfriend.arousal to $girlfriend.arousal+2]]<<elseif $girlfriend.bra is not null>><<print $girlfriend.bra.properName>> [[(Remove)|Lake][$sexDescription to "You reach behind her for the clasp to undo her white bra. You always had trouble with it, but you're determined to do it right this time. After fumbling around for a minute, you eventually get it, revealing her perfect C cup breasts.";$girlfriend.bra to null;$player.arousal to $player.arousal+4;$girlfriend.arousal to $girlfriend.arousal-1]]<<else>>Bare, revealing her C cup breasts.<</if>>
+Feet: <<if $girlfriend.shoes is not null>><<print $girlfriend.shoes.properName>> [[(Remove)|Lake][$sexDescription to "$girlfriend.firstname kicks off her sandals.";$girlfriend.shoes to null]]<<else>>Barefoot [[(Lick)|Lake][$sexDescription to "You can't believe you're doing this, but you reach for $girlfriend.firstname's bare foot and put it in your mouth. She looks at you with surprise, but that look quickly changes as she gets into it. @@.thought;Why did I do that? Though I guess she likes it...@@";$player.submission to $player.submission+1;$player.arousal to $player.arousal-3;$girlfriend.arousal to $girlfriend.arousal+7]]<</if>>
+
+[[Kiss|Lake][$sexDescription to "You lean in and kiss her tenderly. She kisses back, and you take the opportunity to run your hands over her perfect body. She moans slightly, and just as you're wondering whether you should have gone for a more passionate kiss, she breaks it off and looks meaningfully at your crotch.";$player.arousal to $player.arousal+5;$girlfriend.arousal to $girlfriend.arousal+3]]
+<<if $player.underwear is null and $player.arousal > 60>>
+[[Ask for a handjob|Lake][$sexDescription to "You place your large, masculine hand on top of her smaller, manicured one and guide it to your dick. She tries to grab it but only part of it fits in her hand. This doesn't seem to bother her, and she strokes it eagerly. You enjoy the handjob, but it's a little quicker than you would have liked.";$player.arousal to $player.arousal+7;$girlfriend.arousal to $girlfriend.arousal + 5]]<</if>><<if $player.underwear is null and $player.arousal>70 and $girlfriend.arousal>70>>
+[[Make her suck your dick|Lake][$sexDescription to "You motion downward and $girlfriend.firstname eagerly drops down to her knees. You apply a little pressure to the back of her head, bringing her closer to your dick. She kisses the head, and then takes it in her mouth, bobbing back and forth as she slurps noisily. You give a little groan and lean back, enjoying her talented tongue.";$player.arousal to $player.arousal+10;$girlfriend.arousal to $girlfriend.arousal+7]]<</if>><<if $player.underwear is null and $girlfriend.underwear is null and $player.arousal>80 and $girlfriend.arousal > 80>>
+[[Try to fuck her|Lake][$sexDescription to "You whisper that you'd like to fuck her. She smiles and lies on the ground, and you get on top of her. Moments later, she motions that she wants to get up. You realize why: the rain has cleared up but the ground is wet. It wouldn't be fun having sex now. Maybe some other time."]]<</if>>
+
+<<print $sexDescription>>
+
+<<else>><<print $sexDescription>>
+
+<<if $movesTakenDuringSex<2>><<if $playerCame>>You're so horny, but you already came and you know that there's nothing left inside you. You're having too much fun to stop though.
+
+<<elseif $player.arousal>=100>><<set $playerCame to true>>@@.girlfriend;"I can't wait for you to fuck me,"@@ <<print $girlfriend.firstname>> says.
+
+You've been pent up during the day, and the sound of her saying that pushes you over the edge. <<print $girlfriend.firstname>> looks disappointed, but you don't notice.<<set $girlfriend.relationship to $girlfriend.relationship-1>>
+
+<</if>><<if $partnerCame>><<print $girlfriend.firstname>> shudders and has another orgasm. You don't get how girls can do that.<<elseif $girlfriend.arousal>=100>><<set $partnerCame to true>>@@.player;"I can't wait to fuck you,"@@ you tell her.
+
+As it turns out, you're going to have to wait, because as soon as you say that, <<print $girlfriend.firstname>>'s body trembles.
+
+You feel disappointed, and start to get up, but <<print $girlfriend.firstname>> stops you. @@.girlfriend;"I'm going to take care of you,"@@ she reassures you.<</if>><</if>>
+
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>>[[You both cum|Cum]]<<elseif $player.arousal>=100>>[[You cum|Cum]]<<elseif $girlfriend.arousal >= 100>>[[She cums|Cum]]<</if>><</if>>
+
+::Cum
+<<if $player.arousal>=100 and $girlfriend.arousal>=100>>You gasp, realizing that you're close. <<if $playerCame>>Yet no cum comes out.<<else>>@@.player;"<<print $girlfriend.firstname>>, I'm going...I'm going to cum!"@@ you pant.
+
+She points your cock away from her and continues stroking your dick. You give a final gasp and then feel sweet release as cum shoots out onto the grass.<</if>>
+
+You look back to <<print $girlfriend.firstname>>. Her eyes roll back in her head and she lets out a loud moan before collapsing on the ground.
+
+@@.player;"Are you ok, babe?"@@ you ask, sitting down next to her.
+
+@@.girlfriend;"Yeah, I just...that was amazing."@@<<if $playerCame is false>>
+
+@@.player;"I know. I can't believe we came at the same time!"@@
+
+@@.girlfriend;"Yeah, I thought that only happened in porn."@@<</if>>
+
+The two of you spend some time cuddling together on the wet grass before deciding to call it a night.<<set $girlfriend.relationship to $girlfriend.relationship+5>><<set $player.arousal to 0>><<set $girlfriend.arousal to 25>><<if $player.submission is 0>><<set $player.masculinity to $player.masculinity+1>><</if>><<elseif $player.arousal>=100>>You gasp, realizing that you're close. @@.player;"<<print $girlfriend.firstname>>, I'm going...I'm going to cum!"@@ you pant.
+
+She points your cock away from her and continues stroking your dick. You give a final gasp and then <<if $playerCame is false>>feel frustrated as you fail to cum.<<else>>feel sweet release as cum shoots out onto the grass.<</if>>
+
+You look back to <<print $girlfriend.firstname>>. She gives you a smile.
+
+@@.player;"How was that for you?"@@ you ask.
+
+@@.girlfriend;"Pretty good!"@@
+
+@@.player;"Only pretty good?"@@
+
+@@.girlfriend;"Well, I didn't come."@@
+
+@@.player;"Oh, sorry,"@@ you say. @@.player;"It's getting pretty late though, should we call it a night?"@@
+
+@@.girlfriend;"Sure,"@@ she says, not meeting your eyes.
+
+The two of you walk back to campus in silence. It's only after you've kissed <<print $girlfriend.firstname>> good night that you realize she wanted you to help her come.<<set $girlfriend.relationship to $girlfriend.relationship-2>><<set $player.arousal to 0>><<if $player.submission is 0>><<set $player.masculinity to $player.masculinity+1>><</if>><<else>><<print $girlfriend.firstname>> shudders. She places a trembling hand on your dick and a hand between her legs. Realizing she's about to orgasm, you take a step back.
+
+@@.girlfriend;"Wow, that was great, <<print $player.firstname>>"@@ <<print $girlfriend.firstname>> says when she regains her composure.
+
+@@.player;"Yeah.@@<<if $partnerCame>>@@.player; You came twice."@@<<else>>@@.player;"@@<</if>>
+
+@@.girlfriend;"Do you want me to help you?"@@
+
+@@.player;"It's okay,"@@ you say. @@.player;"It's getting late."@@
+
+@@.girlfriend;"Okay, if you're sure,"@@ she says hesitantly. The two of you walk back hand in hand. When you get to campus, she gives you an enthusiastic kiss on the lips before heading back to her dorm.<<set $girlfriend.relationship to $girlfriend.relationship+2>><<set $girlfriend.arousal to 0>><</if>>
+
+[[Go to sleep]]
+<<set $lastMaleSexDay to 1>>
+<<finishSexScene>>
+
+::Go to sleep
+You've had a long day, with school, the game, <<if $player.arousal is not 50>>having sex, <</if>>and getting cursed. Patrick and Marco try to make conversation with you, but you're too tired to engaged. @@.thought;At least tomorrow is saturday@@ is your last thought before you hit the pillow.
+
+[[Dream|Dream Intro]]
+<<set $girlfriend.pants to $girlfriendDress>>
+<<set $girlfriend.shirt to $girlfriendDress>>
+<<set $girlfriend.underwear to $girlfriendBoyshorts>>
+<<set $girlfriend.shoes to $girlfriendHeels>>
+<<set $girlfriend.bra to $girlfriendBlackBra>>
+
+::Dream Intro
+//The first thing you see is the giant cauldron in front of you. Behind it stand three shadowy figures. They're stirring it with a giant ladle and sprinkling foul-smelling ingredients in.
+
+@@.thought;I've got to get out of here!@@ You try to run but you can't. Looking closer, you realize that you're tied to a tree.
+
+@@.witch;"What's the matter, <<print $player.firstname>>?"@@ the one in the center asks mockingly. She takes off her hood. It's <<print $witch.firstname>>.
+
+@@.player;"No!"@@
+
+She steps up to you. @@.witch;"Let's give you a chance,"@@ she says as she unties the ropes binding you to the tree. Once you're free, you try to run away, but she catches you easily and starts dragging you over to the cauldron. You try to fight back but nothing happens.
+
+Then, <<print $witch.firstname>> picks you up and tosses you into the cauldron.//
+
+[[Wake up]]

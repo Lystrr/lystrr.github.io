@@ -1,0 +1,481 @@
+::VideoGames2
+You fire up your computer, and load up your favorite game, Mad Den Football. Soon, all your troubles are forgotten, and you're having fun scoring touchdowns and destroying defenses. @@.thought;Just like real life.@@
+
+<<if $qb.invitation is true and $day<=3>>All of a sudden, a loud ringing shatters your concentration, and the other team scores a touchdown. Cursing internally, you reach for your phone and pick it up. You're getting a call from <<print $qb.firstname>>.
+
+Putting the game on pause, you accept the call. @@.player;"Hey <<print $qb.firstname>>."@@
+
+@@.qb;"Hey, <<print $player.firstname>>. Do you still want to come over?"@@
+
+@@.player;"What?"@@ Then it comes back to you. The curse. Your body looking different. <<print $qb.firstname>>'s invitation to come over once <<print $witch.firstname>> woke up. @@.player;"Yeah, sorry man. I totally spaced out."@@
+
+@@.qb;"Oh,"@@ he says, sounding relieved. @@.qb;"I thought you didn't want to come. <<print $witch.firstname>> is awake if you want to talk to her."@@
+
+[[Tell him you'll be right over|Backstory Intro]]
+[[Tell him you changed your mind|VideoGamesIgnoreQB]]<<else>>One game of Mad Den quickly turns into two and then three, and before you know it, it's time for <<if $timeOfDay is 1>>morning<<elseif $timeOfDay is 2>>afternoon<<elseif $timeOfDay is 3>>evening<<else>>night<</if>>.
+
+@@.thought;Damn. I wasted this <<if $timeOfDay is 1>>morning<<elseif $timeOfDay is 2>>afternoon<<elseif $timeOfDay is 3>>evening<<else>>night<</if>>.@@
+
+<<link "Continue" $currentPassage>><</link>><</if>>
+<<set $videogamesPassage to "VideoGamesStandard">>
+
+::VideoGamesIgnoreQB
+@@.player;"Sorry, man. I'm in the middle of something"@@ you tell him.
+
+@@.qb;"Oh, okay,"@@ he says, with an odd tone in his voice. He sounds a little...disappointed?
+
+@@.thought;I really should go see <<print $qb.firstname>>. I'll do it once I finish the game@@ you promise yourself.
+
+You take the game off of pause, and have a great time playing it. You're having so much fun, in fact, that when you finish, you start a new game without thinking.
+
+Soon, it's time for lunch. You had a great time and are feeling more relaxed, but you do feel a little bad about keeping <<print $qb.firstname>> waiting.
+
+<<link "Eat lunch" $currentPassage>><</link>>
+<<set $qb.relationship to $qb.relationship-3>>
+<<increaseArousal 3>>
+
+::VideoGamesStandard
+You fire up your computer, and load up your favorite game, Mad Den Football. Soon, all your troubles are forgotten, and you're having fun scoring touchdowns and destroying defenses. @@.thought;Just like real life.@@
+
+One game of Mad Den quickly turns into two and then three, and before you know it, it's time for <<if $timeOfDay is 1>>lunch<<else>>dinner<</if>>.
+
+@@.thought;Damn. I wasted this <<if $timeOfDay is 1>>morning<<elseif $timeOfDay is 2>>afternoon<<elseif $timeOfDay is 3>>evening<<else>>night<</if>>.@@
+
+<<link "Continue" $currentPassage>><</link>>
+
+::ExploreCampus2
+You put your shoes on and hurry out of your room, not sure where you're going as much as that you want to do //something.// Once outside, you take in the warm, pleasant air and see other students lounging around without a care in the world. @@.thought;Am I just imagining things? I wasn't feeling like myself in the shower?@@
+
+Nevertheless, you're outside, and you might as well actually do something. You take a moment to pause and consider your options.
+
+@@.thought;She mentioned taking away my strength. I could go lift weights. Or maybe I can do some research about witches. The library would be a good place. If I can remember where it is.@@<<if $qb.invitation is true>> One last thought occurs to you. @@.thought;<<print $qb.firstname>> said I should come over when <<print $witch.firstname>> is awake.@@<</if>>
+
+<<link "Library" $libraryPassage>><<set $activity1 to "library">><</link>><<if $qb.invitation is true>>
+@@.thought;I really should take <<print $qb.firstname>> up on his offer.@@ [[Text him|Backstory Intro][$activity1 to "witch"]]<</if>>
+
+::ExploreCampus3
+Okay! What do you want to do?
+
+<<link "Play video games" $videogamesPassage>><<set $activity1 to "videogames">><</link>>
+<<if not visited("Library")>><<link "Research Witches" $libraryPassage>><<set $activity1 to "library">><</link>><<else>><<link "Read the book you got yesterday" $libraryPassage>><<set $activity1 to "library">><</link>> @@.thought;What was it called? //How Witchraft Works// or something?@@<</if>>
+<<IsWitchContentAvailable>><<if $witch.contentAvailable>>@@.thought;I should go see <<print $witch.firstname>> and@@ <<link "ask her about what's happening to me" "WitchPassagePicker">><<set $activity1 to "witch">><</link>><</if>><<set $currentPassage to "Lunch">>
+
+::ExploreCampusNormal
+<<link "Play video games" $videogamesPassage>><<set $activity1 to "videogames">><</link>><<if not visited("Library")>>
+<<link "Research Witches" $libraryPassage>><<set $activity1 to "library">><</link>><<else>>
+<<link "Read the library book" $libraryPassage>><<set $activity1 to "library">><</link>><</if>><<if $curseActive and $pantyRaid.takenFrom is "Elvira" and $day>7>>
+<<link "Ask Elvira to remove the curse" "Elvira Panties Remove Intro">><<set $currentPassage to "Lunch">><</link>><<if not visited("Library Elvira Panties Read")>>
+<<link "Go to the library and figure it out yourself" "Library Elvira Panties">><<set $currentPassage to "Lunch">><</link>><</if>><</if>><<IsWitchContentAvailable>><<IsGFContentAvailable>><<if $witch.contentAvailable>>
+<<link "Talk to $witch.firstname" "WitchPassagePicker">><</link>><</if>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>><<if $sexShopUnlocked is true and $player.hasStrapon is false>>
+<<link "You've heard about a sex shop off campus" "Sex Shop">><</link>><</if>>
+<<set $currentPassage to "Lunch">>
+
+::Lunch2
+You settle into the cafeteria and sit with your friends. They're discussing yesterday's football game, and the homecoming dance tonight. You try to contribute to the conversation, but your heart isn't in it.
+
+@@.male;"Are you okay, <<print $player.firstname>>? You're pretty quiet."@@
+
+@@.player;"Yeah, I'm fine, I'm just tired from the game."@@
+
+@@.male;"You think you're going to have energy for homecoming?"@@
+
+@@.female;"Yeah, imagine if the homecoming king skipped the dance."@@
+
+@@.player;"Don't worry, I'll be fine."@@
+
+@@.female;"Did you guys hear about Chris?"@@
+
+Your friends spend the rest of lunch, gossiping about Chris, who apparently asked one girl to homecoming, and then changed his mind the day before and asked a different girl. You're grateful to not be the topic of conversation, and spend the rest of the time thinking about <<if visited("VideoGames")>>what could have found out if you weren't playing video games<<else>>what you found out this morning<</if>>.
+
+Eventually, lunch is over, and everyone goes their separate ways. @@.thought;I've still got some time to do more research before homecoming.@@<<if $qb.invitation is false>>
+
+As you're trying to decide what to do, your phone buzzes. You've got a text from <<print $witch.firstname>>.
+
+@@.witch;Hey <<print $player.firstname>>. Sorry about last night. If you come over to <<print $qb.firstname>>'s dorm, I can answer any questions.@@
+
+@@.thought;That would be really helpful. But I don't know if I can trust her.<</if>>
+
+Where do you want to spend your afternoon?
+<<IsWitchContentAvailable>><<if not visited("Backstory Intro")>><<if $qb.invitation is false>>
+<<link "Take her up on her offer" "Backstory Intro">><<set $activity2 to "witch">><</link>><<elseif $witch.contentAvailable>>
+<<link "The other dorm" "WitchPassagePicker">><<set $activity2 to "witch">><</link>>, to ask <<print $qb.firstname>> and <<print $witch.firstname>> some questions.<</if>><</if>><<if not visited("Library")>>
+<<link "Library" $libraryPassage>><<set $activity2 to "library">><</link>>, to research witches<</if>><<if not visited("Weight Room")>>
+[[Gym|Weight Room][$activity2 to "gym"]], to see if you've lost any strength<</if>>
+<<set $qb.invitation to false>>\
+<<set $witch.hasNumber to true>>\
+
+::Lunch3
+You haven't worked //that// hard today, but you're exhausted. And when you think about going to the cafeteria and eating with your friends, your stomach gets queasy. @@.thought;There's no way they can tell what happened to me@@ you tell yourself, but you're not totally sure.
+
+@@.thought;I'll just order in for lunch.@@ You call up the nearby pizza place and order a big cheese pizza. Half an hour later, you're happily devouring it, your troubles forgotten for the moment.
+
+All too soon, the pizza is gone, and your face turns into a frown. You don't have anything to distract you now. @@.thought;Unless I play video games.@@
+
+<<IsWitchContentAvailable>><<link "Play video games" $videogamesPassage>><<set $activity2 to "videogames">><</link>><<if not visited("Weight Room")>>
+[[Work out|Weight Room][$activity2 to "gym"]] @@.thought;I need to know just how weak I am.@@<</if>>
+<<link "Continue researching witches" $libraryPassage>><<set $activity2 to "library">><</link>><<if (not visited("Backstory Intro") or not visited("Witch Encounter 2")) and $witch.contentAvailable>>
+<<link "Go ask $witch.firstname some questions" "WitchPassagePicker">><<set $activity2 to "witch">><</link>><</if>>
+<<if visited("Witchcraft Club Spy")>>@@.thought;What did that witch say? That we have a bio test tomorrow?@@<<else>>@@.thought;Oh crap! I almost forgot I have a bio test tomorrow!@@<</if>> @@.thought;I should@@ <<link "study" "Bio Study">><<set $activity2 to "study">><</link>> @@.thought;for it.
+<<set $currentPassage to "Afternoon">>
+
+::LunchWeekday
+<<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress face>><<set $tempFace to $tempTfValue>>A cacophony of chattering greets you as you enter the cafeteria. After you get your lunch, you start to walk over to your friends. You always sit by them, after all.
+
+Halfway there, <<print $qb.firstname>> and <<print $witch.firstname>> catch your eye. They're sitting by themselves, but it doesn't seem to bother them.
+
+Your eyes narrow at the sight of <<print $witch.firstname>>. You haven't forgotten that she did this to you. @@.thought;All she had to do was leave me alone and everything would have been fine. But she had to get involved, and now I'm a...a...@@ You pause, troubled. You're not sure what you are. You've got a pussy<<if $tempBoobs>=2>> and boobs<</if>>, but you still <<if $tempFace>=3>>feel like a guy, even if you don't look like one.<<else>>look like and feel like a guy.<</if>>
+
+<<print $qb.firstname>> waves to you. @@.thought;He seems nice enough I guess. It couldn't hurt to sit with them. Maybe <<print $witch.firstname>> can answer my questions.@@
+
+<<link "Sit with them" LunchWitchPicker>><</link>>
+<<link "Sit with your friends" LunchFriendsPicker>><</link>>
+
+::LunchWeekend
+You go to the food court and pick out a meal. It's bland like usual, but it's food.
+
+You go and sit by your friends from the football team, but you're unable to feel engaged with their conversation. They're talking about how it feels to have sex with their girlfriends. There was a time when you would eagerly join this conversation and talk about fucking <<print $girlfriend.firstname>>, but now you're wondering what it would feel to be fucked.
+
+@@.male;"Hey, <<print $player.firstname>>, you alright?"@@ one guy asks.
+
+You nod. There's no way you can tell your team what's going on. They wouldn't believe you. And even if they did, they'd just laugh at you.
+<<if $day>3>>
+[[Mall|Mall Intro]]<</if>><<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">>
+<<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>>
+<<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Lunch">><</link>><</if>><<else>>
+==Masturbate== (You're not in the mood)<</if>>
+[[Work out|Work Out]]
+<<link "Continue researching witches" $libraryPassage>><<set $activity2 to "library">><</link>><<if $curseActive and $pantyRaid.takenFrom is "Elvira" and $day>7>>
+<<link "Ask Elvira to remove the curse" "Elvira Panties Remove Intro">><<set $currentPassage to "Lunch">><</link>><<if not visited("Library Elvira Panties Read")>>
+<<link "Go to the library and figure it out yourself" "Library Elvira Panties">><<set $currentPassage to "Lunch">><</link>><</if>><</if>><<IsWitchContentAvailable>><<if $witch.contentAvailable>>
+<<link "Go see $witch.firstname" "WitchPassagePicker">><</link>><</if>><<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<link "Now that it's the afternoon, see if $qb.firstname wants to practice" QBPassagePicker>><<set $activity2 to "qb">><</link>><</if>>
+<<set $currentPassage to "Afternoon">>
+<<set $team.respect to $team.respect-1>>
+
+::Lunch Halloween
+You go to the food court, pick out a meal, and sit down with your friends. You're expecting them to talk about football and gossip like usual, but you're surprised when the conversation takes off in a different direction.
+
+@@.male;"Are you ready for the party today, man?"@@
+
+@@.male;"Hell yeah! It's going to be so much fun!"@@
+
+@@.thought;Party? What party?@@
+
+@@.male;"What's your costume going to be?"@@
+
+@@.male;"We're not supposed to say!"@@
+
+@@.male;"Yeah, I know, but come on."@@
+
+@@.thought;Costume? It can't be halloween already!@@ You pull out your phone and confirm that, yes, today is halloween.
+
+@@.thought;How did I forget? I guess I just had so much going on that it slipped my mind. Shit. I'll have to get a costume. I hope they still have some left.@@
+
+You stand up abruptly.
+
+@@.female;"You okay, <<print $player.firstname>>?"@@
+
+@@.player;"I forgot to get a costume."@@
+
+The <<if $player.masculinity>=50>>other <</if>>guys laugh. @@.male;"You better hurry."@@
+
+[[Run to the shuttle|Halloween Shuttle]]
+
+::AfterSchool4
+Your classes done, your thoughts turn to what to do next. The team practice isn't until 6 PM, which gives you two hours to kill. <<if visited("Lunch Day 4 Witch Agree")>>You promised <<print $qb.firstname>> that you would help him practice.
+
+<<link "Keep your promise" QBPassagePicker>><<set $currentPassage to "Team Practice 1">><</link>><<elseif visited("Lunch Day 4 Witch Excuse")>><<print $qb.firstname>> wanted you to help him practice, but you told him you were going to study. You suppose you could text him saying you changed your mind, but you made an excuse for a reason, right?
+
+<<link "Text him anyway" QBPassagePicker>><<set $currentPassage to "Team Practice 1">><</link>><<elseif visited("Backstory Main")>>You remember <<print $witch.firstname>> asking you to help <<print $qb.firstname>> get better. @@.thought;I can't do that! He's trying to take my job! But he's probably a better quarterback than me now, and I really need to end this curse.@@
+
+<<link "Text him that you'll help him practice" QBPassagePicker>><<set $currentPassage to "Team Practice 1">><</link>><<else>>As you're pondering what to do, your phone goes off. You just got a text from <<print $qb.firstname>>.
+
+@@.qb;Hey, <<print $player.firstname>>. Do you want to throw the football with me?@@
+
+<<link "Agree" QBPassagePicker>><<set $currentPassage to "Team Practice 1">><</link>><</if>>
+<<link "Do homework" "Homework4">><<set $currentPassage to "Team Practice 1">><</link>><<if not visited("Backstory Intro")>>
+<<link "You need to talk to $witch.firstname" "Backstory Intro">><<set $currentPassage to "Team Practice 1">><</link>><<elseif not visited("Witch Encounter 2")>>
+<<link "You need to talk to $witch.firstname" "Witch Encounter 2">><<set $currentPassage to "Team Practice 1">><</link>><</if>><<if $tfPassageIntro is "End of Current Content">>
+<<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>>
+<<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Masturbate Day 4 End">><</link>><</if>>
+
+::AfterSchool5
+The rest of your classes pass uneventfully, and you've got a whole evening to yourself. With no football practice today, you've got lots of time.
+<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<if $qb.promisedPractice>>Your phone lights up with a text. @@.qb;I'm free now. Want to practice?@@
+
+@@.thought;Oh crap, I forgot I promised him that I would practice today.@@<<else>>@@.thought;I wonder if <<print $qb.firstname>> would want to practice today.@@<</if>>
+
+<<link "Practice with him" QBPassagePicker>><</link>><</if>><<getTfProgress voice>><<if $tempTfValue>0 and $player.controlQuestIntroduced is false and $witch.relationship>=35>>
+<<link "Talk to $witch.firstname about your transformations" "Witch ControlTf Intro">><</link>> @@.thought;Maybe she'll even help me.@@<<elseif $player.controlQuestIntroduced is true and $player.controlQuestCompleted is false>>
+<<link "Look into controlling your transformations" "Witch ControlTf">><</link>><<elseif $player.controlQuestCompleted is true and $player.feet is 0>>
+<<link "Now that you have the hair, see if $witch.firstname will do the spell" "Witch ControlSpell">><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>><<if $sexShopUnlocked is true and not visited("Sex Shop")>>
+<<link "You've heard about a sex shop off campus" "Sex Shop">><</link>><</if>><<IsGFContentAvailable>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>>
+<<set $currentPassage to "Night">>
+
+::AfterSchool6
+The rest of your classes pass uneventfully. You have a smile on your face as the last bell rings, signalling the end of the school day. @@.thought;Okay, I have time to do one thing before practice.@@
+<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<if $qb.promisedPractice>>Your phone lights up with a text. @@.qb;I'm free now. Want to practice?@@
+
+@@.thought;Oh crap, I forgot I promised him that I would practice today.@@<<else>>@@.thought;I wonder if <<print $qb.firstname>> would want to practice today.@@<</if>>
+
+<<link "Practice with him" QBPassagePicker>><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Team Practice 2">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>>
+<<set $currentPassage to "Team Practice 2">>
+
+::AfterSchool8
+<<if visited("Panty Raid Normal Confrontation") and visited("Language Project Family")>>You won't be able to do anything this afternoon before the game. You've got to see Mrs. Garcia for detention.
+
+[[Go to detention|Detention]]<<else>>Alright! You have time for one activity before the big game. What's it going to be?
+<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+@@.thought;I wonder if <<print $qb.firstname>> wants to practice before the game.@@ <<link "Practice with him" QBPassagePicker>><</link>><</if>><<if $player.relationship is not "">>
+<<link "Go see your girlfriend" "GirlfriendPassagePicker">><</link>><<elseif visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><</link>><<else>>
+<<linkappend "Go see $girlfriend.firstname">>. @@.thought;I can't risk it. If <<print $witch.firstname>> sees us together, our plan will be ruined.@@<</linkappend>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Game 2">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>>
+<<set $currentPassage to "Game 2">><</if>>
+
+::AfterSchoolGame
+Alright! You have time for one activity before the big game. What's it going to be?
+<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+@@.thought;I wonder if <<print $qb.firstname>> wants to practice before the game.@@ <<link "Practice with him" QBPassagePicker>><</link>><</if>><<getTfProgress voice>><<if $tempTfValue>0 and $player.controlQuestIntroduced is false and $witch.relationship>=35>>
+<<link "Talk to $witch.firstname about your transformations" "Witch ControlTf Intro">><</link>> @@.thought;Maybe she'll even help me.@@<<elseif $player.controlQuestIntroduced is true and $player.controlQuestCompleted is false>>
+<<link "Look into controlling your transformations" "Witch ControlTf">><</link>><<elseif $player.controlQuestCompleted is true and $player.feet is 0>>
+<<link "Now that you have the hair, see if $witch.firstname will do the spell" "Witch ControlSpell">><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<if $day is 15>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Game 3">><</link>><<elseif $day is 22>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Game 4">><</link>><<elseif $day is 29>><<if $player.skillCurse<4>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Game 5">><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Game 5 NotAllowed">><</link>><</if>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>><<if $sexShopUnlocked is true and not visited("Sex Shop")>>
+<<link "You've heard about a sex shop off campus" "Sex Shop">><</link>><</if>><<IsGFContentAvailable>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>>
+<<if $day is 15>><<set $currentPassage to "Game 3">><<elseif $day is 22>><<set $currentPassage to "Game 4">><<elseif $day is 29>><<set $currentPassage to "Night">><</if>>
+
+::Detention
+@@.thought;Great. I can't practice or work out or...or masturbate. I have to go to detention.@@ You start to trudge over there when you suddenly realize something. @@.thought;Pinewood does corporal punishment! She's going to spank me!@@
+
+You consider turning back, but you know from experience that it will only make things worse. You'll have to make up the detention later, and you won't be allowed to play in the game. No. Better to get it over with.
+
+@@.player;"Hi, Mrs. Garcia?"@@ you say, knocking on her office door. @@.player;"I'm here for detention."@@
+
+@@.female;"Yes, come on in, <<print $player.firstname>>,"@@ Mrs. Garcia says, looking up from her desk.
+
+You enter.
+
+@@.female;"As you know, Pinewood Prep believes in corporal punishment. I have mixed feelings about it, but I work here, so I have to follow the rules. Undo your pants."@@
+
+<<if $player.isWearingPanties is true>>Wait, you can't do that! If you do that, Mrs. Garcia will see your <<print $player.underwear.informalName>>!
+
+@@.female;"<<print $player.firstname>>? We don't have all day."@@ When that doesn't make you move, she says, @@.female;"Lower them or I'll do it for you."@@
+
+That makes you jump into action. Your face is red as you lower your uniform, leaving you standing in your shirt and <<if $pantyRaid>><<print $pantyRaid.takenFrom>>'s<</if>> panties.
+
+Mrs. Garcia puts her hand in front of her mouth. @@.female;"Oh! So //that// was why you were in Julie's room. I had no idea. There's nothing wrong with wanting to wear panties. But next time, you don't have to sneak around. I'd be happy to help. In fact..."@@
+
+As Mrs. Garcia rambles on, you become aware of the fact that she believes that you //want// to wear panties. Maybe she even thinks you're transitioning. You should definitely set her straight. But as you start to open your mouth, you notice that her tone has changed. She seems a lot more compassionate now. Maybe she'd let you get out of a spanking?
+
+[[Correct her|Detention Spank]]
+[[Don't say anything and try to get out of detention|Detention Sympathy]]<<set $garcia.suspicion to $garcia.suspicion+1>><<else>>You lower your pants, leaving you standing there in your shirt and boxers.
+
+@@.female;"[[Let's get to it|Detention Spank]]"@@ Mrs. Garcia says.<</if>>
+
+::Detention Spank
+<<if $player.isWearingPanties is true>>@@.player;"No, Mrs. Garcia,"@@ you say quickly, cutting her off. @@.player;"That's not why I'm wearing, uh, this. I was in Julie's room because the team was doing a panty raid."@@
+
+Mrs. Garcia frowns. @@.female;"Then why are you wearing girl's underwear?"@@
+
+You blush. <<if $player.underwear.properName is "Plain white panties">>You're wearing them because <<print $witch.firstname>> put a curse on them, but you can't tell a teacher that<<else>>Why //are// you wearing <<print $girlfriend.firstname>>'s panties?<</if>>
+
+@@.player;"Uh, the reason is because, um..."@@
+
+@@.female;"You know what? I don't need to hear why. All I know is that you bailed on your group so you could snoop in their rooms. If it was because you were transitioning, that's one thing. I'd let you out of detention then. But now, I have to give you a spanking."@@
+
+@@.thought;Damn! Although, I don't want anyone to think that I //want// to be a girl. I guess I made the right choice?@@
+
+<</if>>Mrs. Garcia tells you to lean over, and then approaches you from behind with a paddle. @@.female;"Okay, I'm going to count to ten."@@ You nod, and hope that it will be over soon.
+
+@@.female;"One!"@@ That wasn't that bad.
+
+@@.female;"Two!"@@ That one was a little harder.
+
+@@.female;"Three!"@@ Okay, that one hurt.
+
+@@.female;"Four!"@@ You give a little yelp in pain.
+
+By the time she's done, your butt is red and feeling sore. But you don't feel too bad. In fact, you kind of...enjoyed it? @@.thought;No, definitely not@@ you think.
+
+At least she didn't ask you to take off your <<print $player.underwear.informalName>>, since that would have exposed your pussy.
+
+[[Get ready for the game|Night]]
+
+::Detention Sympathy
+You don't say a word, and let Mrs. Garcia talk.
+
+@@.female;"I'm so sorry. When I heard you were in that girl's room, I had no idea. It never occured to me. I guess since you were a jock and always seemed so manly..."@@
+
+@@.thought;She thinks I'm manly? That's great.@@
+
+<<getTfProgress hair>><<if $tempTfValue>0>>@@.female;"...Although you've been looking a little different lately. I couldn't put my finger on it..."@@
+
+@@.thought;Shit.@@
+
+<</if>>@@.female;"Anyway, don't tell anyone I did this, but I'll let you out of detention. Is there anything I can do to make it easier for you, with you, uh..."@@
+
+@@.player;"No, Mrs. Garcia. But thank you,"@@ you say, eager to end the conversation.
+
+[[Get ready for the game|Night]]
+<<set $garcia.suspicion to $garcia.suspicion+1>>
+
+::AfterSchool11
+The rest of your classes pass by uneventfully, and you find yourself with some time to kill before practice.
+<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<link "Practice with $qb.firstname" QBPassagePicker>><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<if $day is 11>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Team Practice 3">><</link>><<elseif $day is 18>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Team Practice 4">><</link>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>>
+<<if $day is 11>><<set $currentPassage to "Team Practice 3">><<else>><<set $currentPassage to "Team Practice 4">><</if>>
+
+::AfterSchoolDetention
+The last bell of the day rings. Ordinarily, you would be happily walking back towards your dorm, excited to be finished with another day of school. Instead, your heart is pounding in your chest. You've got detention with Mrs. Garcia. <<if visited("Detention")>>You already had detention with her once, and she spanked you.<<else>>You haven't had detention with her yet, but she's known for corporal punishment.<</if>>
+
+@@.female;"<<print $player.firstname>>, I'm so happy you decided to come."@@
+
+@@.player;"I didn't have much of a choice,"@@ you mumble.
+
+@@.female;"You could have always skipped it."@@
+
+You shrug. You're glad that at least you're the only one there. @@.thought;Nobody's here to see me get humiliated.@@
+
+@@.female;"Okay, <<print $player.firstname>>. You know the drill."@@
+
+<<if $player.isWearingPanties is true>>You look at her, wide-eyed. @@.thought;Is she asking for me to drop my pants? But then she'll see that I'm wearing panties!@@
+
+@@.female;"Lower your pants!"@@ she says when you don't move. @@.female;"I'm going to spank you. But don't worry, it won't be hard."@@
+
+@@.thought;That's not what I'm worried about.@@
+
+Mrs. Garcia stares at you, waiting for you to lower your pants. Not seeing much of a choice, you comply.
+
+As soon as she sees the waistband of your panties, her expression changes. @@.female;"Oh my god. I'm so sorry, I had no idea. When I saw you in the girls bathroom, I thought you were pulling some prank. I didn't know..."@@
+
+@@.thought;What is she saying? Does she think that I want to be a girl?@@
+
+@@.female;"You're a football player, and so masculine."@@ You blush, glad that somebody is noticing your masculinity, even if it's only a teacher. @@.female;"Of course, you've been looking a little different lately."@@
+
+@@.thought;Shit.@@
+
+@@.female;"Anyway, I'll let you out of detention."@@
+
+Anxious to get out of there, you thank her and hurry back to your dorm. It's only once you've left that you realize that you should have denied that you were transitioning.<<set $garcia.suspicion to $garcia.suspicion+2>><<else>>You look down, nervously. @@.thought;If I dropped my pants, that wouldn't expose my tampon. I'll just have to be careful.@@
+
+You carefully lower your pants, exposing your <<print $player.underwear.informalName>>. 
+
+Mrs. Garcia tells you to lean over, and then approaches you from behind with a paddle. @@.female;"Okay, I'm going to count to ten."@@ You nod, and hope that it will be over soon.
+
+@@.female;"One!"@@ That wasn't that bad.
+
+@@.female;"Two!"@@ That one was a little harder.
+
+@@.female;"Three!"@@ Okay, that one hurt.
+
+@@.female;"Four!"@@ You give a little yelp in pain.
+
+By the time she's done, your butt is red and feeling sore. But you don't feel too bad. In fact, you kind of...enjoyed it? @@.thought;No, definitely not@@ you think.
+
+At least she didn't ask you to take off your <<print $player.underwear.informalName>>, since that would have exposed your period.<</if>>
+
+[[Go to practice|Team Practice 5][$currentPassage to "Sleep"]]
+
+::AfterSchoolShopping
+The rest of your classes pass uneventfully, and you've got <<if $day is 18>>some time to yourself. You have to go to practice later, but you have enough time to do one thing before then<<else>>the evening to yourself. With no practice today, you have a lot of time<</if>>.
+
+You glance down at your pants. <<if $player.isWearingTampon is false>>You promised yourself that you would get a tampon after school. Now's your chance.<<else>>The tampon seems to be working fine, but you'd be more comfortable in panties. Now's your chance.<</if>> There's a shopping mall in town.
+
+[[Go shopping|AfterSchoolShopping Start]]<<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<link "Practice with $qb.firstname" QBPassagePicker>><</link>><</if>><<getTfProgress voice>><<if $tempTfValue>0 and $player.controlQuestIntroduced is false and $witch.relationship>=35>>
+<<link "Talk to $witch.firstname about your transformations" "Witch ControlTf Intro">><</link>> @@.thought;Maybe she'll even help me.@@<<elseif $player.controlQuestIntroduced is true and $player.controlQuestCompleted is false>>
+<<link "Look into controlling your transformations" "Witch ControlTf">><</link>><<elseif $player.controlQuestCompleted is true and $player.feet is 0>>
+<<link "Now that you have the hair, see if $witch.firstname will do the spell" "Witch ControlSpell">><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>><<if $sexShopUnlocked is true and not visited("Sex Shop")>>
+<<link "You've heard about a sex shop off campus" "Sex Shop">><</link>><</if>><<IsGFContentAvailable>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>>
+<<set $currentPassage to "Night">>
+
+::AfterSchoolShopping Start
+You think of all the fun things you could be doing tonight. Then, a jolt of pain shoots through your stomach, and you're brought back to reality. @@.thought;I need to take care of this.@@
+
+There's a shuttle bus that goes into town. You grab a bag from your dorm to hold any purchases, and then hop on. There's only a couple of people on the bus. @@.thought;Nobody feels the need to make a mid-week supply run. I guess if any girls are having their periods now, they already stocked up.@@
+
+That's a weird thought. With all of the students who attend Pinewood Prep, there have to be a lot of girls who are having their period now, yet you have no idea which ones. @@.thought;If I don't know, then nobody else knows about my period.@@ You glance around at the few girls on the shuttle bus, trying to tell which ones are on their period. You imagine bonding over the shared experience.
+
+@@.thought;Who am I kidding? I can never tell anyone about this.@@
+
+The bus takes off and makes its way along the winding road into town. The ride is silent. Everyone else is focused on their phone. You're glad about that. You don't want to have to answer any awkward questions about why you're going into town or what you're planning on buying.
+
+The bus pulls to a stop, and you get out.
+
+[[Go to the mall|Mall]]
+
+::AfterSchoolShopping Finish
+Now that you have what you came for, you take a seat back on the bus. The ride back is even quieter than the ride here, which is something you're grateful for. You're petrified that people will realize what you have underneath your <<print $player.pants.informalName>>.
+
+Nobody pays any attention to you, and soon you're back on campus.
+
+<<if $timeOfDay is 4>>[[Go to bed|Sleep]]<<else>>[[Continue|Night]]<</if>>
+
+::AfterSchool Therapist
+The rest of your classes pass uneventfully, and you've got a whole evening to yourself. With no football practice today, you've got lots of time.
+
+@@.thought;I wonder how I'll spend it. I could practice with <<print $qb.firstname>>, or see <<print $girlfriend.firstname>>, or...no. I shouldn't masturbate.@@
+
+Your phone suddenly pings. You have a new email in your inbox. With a sigh, you check it.
+
+@@.female;//Hi <<print $player.firstname>> <<print $player.lastname>>,
+
+I wanted to remind you that your therapy session with my husband is today. We look forward to seeing you.//@@
+
+@@.thought;That's right. I should go see him. But did she have to email me like that? What if someone saw my phone? They'd know I was getting therapy.@@
+
+You consider that for a moment and then laugh. With all of your problems, you seeing a therapist feels like a very small secret.
+
+<<link "Go to therapy" $therapistPassage>><</link>>
+<<getTfProgress voice>><<if $tempTfValue>0 and $player.controlQuestIntroduced is false and $witch.relationship>=35>><<link "Talk to $witch.firstname about your transformations" "Witch ControlTf Intro">><</link>> @@.thought;Maybe she'll even help me.@@<<elseif $player.controlQuestIntroduced is true and $player.controlQuestCompleted is false>><<link "Look into controlling your transformations" "Witch ControlTf">><</link>><<elseif $player.controlQuestCompleted is true and $player.feet is 0>><<link "Now that you have the hair, see if $witch.firstname will do the spell" "Witch ControlSpell">><</link>><</if>>
+<<link "Work out in the gym" $workoutPassage>><</link>>
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+<<link "Play video games" $videogamesPassage>><</link>><<if $sexShopUnlocked is true and not visited("Sex Shop")>>
+<<link "You've heard about a sex shop off campus" "Sex Shop">><</link>><</if>><<IsGFContentAvailable>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>>
+<<set $currentPassage to "Night">>
+
+::DinnerWeekend
+You go to the cafeteria, and steadily eat your food. The chicken is dry and tasteless, but that's par for the course for this school.
+
+With your dinner done, you try to think of something to do. You'll only have time to do one last activity today.
+
+<<if $player.arousal>50>><<if $tfPassageIntro is "End of Current Content">><<linkappend "Masturbate">>. @@.thought;No way! I'll transform again!@@<</linkappend>><<else>><<link "Masturbate" $tfPassageIntro>><<set $tfRecoverPassage to "Night">><</link>><</if>><<else>>==Masturbate== (You're not in the mood)<</if>>
+[[Work out|Work Out]]
+<<link "Do homework" $homeworkPassage>><<set $activity3 to "homework">><</link>><<IsQBContentAvailable>><<if $qb.contentAvailable>>
+<<link "See if $qb.firstname wants to practice" QBPassagePicker>><<set $activity3 to "qb">><</link>><</if>><<IsGFContentAvailable>><<if $girlfriend.contentAvailable>><<if visited("Witch Club Spy 3 Discuss") and $girlfriend.dateMarcoPermission is 0>>
+<<link "Tell $girlfriend.firstname that she can date Marco" "Girlfriend Marco Permission">><<set $activity1 to "girlfriend">><</link>><<else>>
+<<link "Go see $girlfriend.firstname" "GirlfriendPassagePicker">><<set $activity1 to "girlfriend">><</link>><</if>><</if>>
+
+::DinnerHalloween
+You go to the cafeteria, and steadily eat your food. The chicken is dry and tasteless, but that's par for the course for this school.
+
+@@.thought;Okay, time for the party!@@
+
+[[Go back to your dorm and put on your costume|Halloween Costume Wear]]

@@ -1,0 +1,1098 @@
+::GymNormal
+<<getTfProgress boobs>><<if $player.isWearingPanties is true>><<set $team.respect to $team.respect-1>>You go inside the locker room, and fidget with the waistband of your panties. Nope, you're not going to change in the locker room today. The other guys may not have seen your pussy if you changed quickly, but there's no way they'd miss your panties.
+
+You unlock your locker, take your swim trunks and head for the stalls.
+
+@@.male;"Why is <<print $player.firstname>> changing in the stalls?"@@ you hear a guy ask his friend. You ignore them.
+
+Once you're in the stalls, you take a sigh of relief and drop your pants. Your <<print $player.underwear.informalName>> are <<if $player.arousal>50>>slick with your juices<<elseif $player.isWearingPanties is true>>a pretty comfortable fit<<else>>almost falling off of you<</if>><<if $tempTfValue>=2>>, and your boobs feel a little uncomfortable and sore<</if>>.<<else>>You're used to gym class making you either energized or anxious. Instead, it does neither. You've gotten used to changing <<if $changeInOpen>>quickly in front of everyone<<else>>in the stall<</if>>, and you know that nobody is going to look closely. A couple of the guys give you nods as you walk to your locker, but none of them notice the lack of an outline of your dick.<</if>>
+
+You change into your swim trunks, head out to the pool, and do a couple of dives before changing back. Overall, gym class went okay, but you're still happy when it's over, and you can go back to wearing your uncomfortable uniform.
+
+[[Continue|AfternoonClass]]
+<<set $team.respect to $team.respect-1>>
+
+::Gym4
+Gym was always your favorite class. Instead of sitting down and pretending to pay attention, you got to run around and do sports. But today, you're dreading gym. Your class is still swimming, which means that you have to get changed.
+
+Usually, all the boys change into their swim trunks inside the locker room while following an unwritten rule to not watch each other. But for obvious reasons, you don't feel comfortable doing that. You don't want to even imagine what would happen if everyone found out you had a pussy.
+
+The alternative would be changing in the stalls. Only the overweight and nerdy boys do that, and it would definitely stand out if you did it too. But it's not like you can change in front of everyone.
+
+Or can you? You try to remember where your eyes were when the other guys were changing. You can't remember ever seeing a dick. @@.thought;If I can do it fast, and act natural, maybe I can get away with it?@@
+
+[[Head for the stalls|Gym Stalls]]
+[[Change in the locker room|Gym Change Open]]
+
+::Gym Stalls
+It would be foolish to risk someone seeing your junk. Or your lack of junk. Better to play it safe and have people wonder why you're changing in the stalls than have your secret exposed.
+
+Without looking at anyone, you grab your trunks and make a beeline for the stalls. You //try// to change quickly, but as you're lowering your boxers, you get another glimpse of your pussy. It looks out of place on your masculine body. Even if you don't have muscles. @@.thought;I'll never get used to seeing that.@@
+
+When you're finished changing, you emerge from the stalls, ignoring the questioning looks you get from the other guys.
+
+[[Swim|AfternoonClass]]<<set $player.submission to $player.submission+1>>
+<<set $changeInOpen to false>>
+<<set $team.respect to $team.respect-5>>
+<<set $player.confidence to $player.confidence-5>>
+
+::Gym Change Open
+@@.thought;Okay, <<print $player.firstname>>, you can do this@@ you tell yourself. Get your trunks, drop your boxers, pull up your trunks. If you do it right, you'll be done in a couple seconds.
+
+Your hands are shaking so bad that it takes a couple tries to get your locker open. @@.thought;Trunks, drop boxers, pull up trunks.@@ You grab the trunks from your locker. Step 1.
+
+The other guys in the locker room aren't paying any attention. @@.thought;If I wait too long, everyone will be done changing. I've got to do this now.@@
+
+As quickly as you can, you drop your boxers and pull the swim trunks up your legs. When you're done, you raise your head, expecting to see questioning eyes and hear taunts.
+
+Instead, nothing happens. The world goes on.
+
+@@.thought;Holy shit, I just pulled that off!@@ you think happily. You don't consider that four days ago, if someone told you that you would change in the boys locker room without revealing your new vagina and that you'd be //happy// about that, you'd have called them crazy.
+
+[[Swim|AfternoonClass]]
+<<set $player.exhibition to $player.exhibition+1>>\
+<<set $changeInOpen to true>>\
+<<set $player.confidence to $player.confidence+7>>\
+
+::Gym5
+You enter the boys locker room with some hesitation. What used to be your favorite class has quickly turned into the one you dread the most.
+
+Like yesterday, you <<if $changeInOpen>>change quickly in the open locker room. After surviving it yesterday, you're feeling a little more confident, and once again it goes off without a hitch. Your heart is still pounding in your chest after you pull up your swim trunks, though.<<else>>make a beeline for the safety of the stalls, getting a couple strange looks as you do so. Everyone is used to the <<print $player.firstname>> <<print $player.lastname>> who changed in the open gym and flashed everyone, but you certainly can't risk flashing anyone now.<</if>>
+
+<<if $player.relationship is "">><<print $girlfriend.firstname>> avoids your eyes as you walk into the pool area, and a wave of sadness washes over you. Your relationship with the hottest and coolest girl in the school is over. @@.thought;I'm single now, I guess. But I can't date anyone else, right? What will I do when they want to fuck?@@<<elseif $girlfriend.knowsSecret is true>>As you walk into the pool area, someone ambushes you from behind and two skinny arms are wrapped around you. You turn around, only to see <<print $girlfriend.firstname>> giving you a bear hug.
+
+@@.girlfriend;"I'm glad you told me,"@@ she says. @@.girlfriend;"I wanted you to know that."@@
+
+@@.player;"Yeah, sure, thanks,"@@ you say, hoping that <<print $girlfriend.firstname>> doesn't reveal anything.
+
+You relax and enjoy the feeling of a hot girl in a bikini giving you a hug. If you still had your dick, you would be sporting a major erection right now. @@.thought;That's the only silver lining to this.@@
+
+@@.male;"Alright, break it up!"@@ the coach says, and you retreat to the side of the pool with the other guys.<<else>><<print $girlfriend.firstname>> looks at you as you walk into the pool area, but doesn't move from where she's sitting.
+
+@@.thought;She must still be mad. I don't know how to make it better, unless I reveal my secret.@@ You feel a momentary panic.<</if>>
+
+@@.male;"Okay, boys and girls!"@@ the coach's booming voice yells. @@.male;"You know the drill. I want to see everybody diving! I'll be in the pool if anyone needs help."@@
+
+The coach proceeds to explain the proper diving technique. You just tune him out. You've already done this twice. It's not that hard.
+
+Soon, you're standing on the diving board looking down at the pool, your laughably huge swim trunks almost falling off you.
+
+[[Jump in|AfternoonClass]]
+
+::Gym7
+You change <<if $changeInOpen>>quickly in the open locker room, confident that nobody will notice anything.<<else>>in the stall. You hear laughter as you close the stall door, and you wonder if it's directed at you.
+
+@@.thought;They're just laughing at something else. Other guys change in the stall too.@@<</if>>
+
+Once you're finished changing, you go to the pool, sit through coach's speech, and then wait in line until you can dive. It's strange how gym class has quickly become so boring. Now, you just want to get your dives in and then get changed.
+
+The diving part is fun, at least. But now you've started hanging onto your trunks so they wouldn't fall off, and diving is much less fun.
+
+[[Dive normally|Gym Day 7 Lose Trunks]]
+[[Hang onto them, just in case|Gym Day 7 Dive]]
+<<if $changeInOpen is false>><<set $team.respect to $team.respect-3>><</if>>
+
+::Gym Day 7 Lose Trunks
+<<setUpSexScene>><<set $player.pants to null>><<set $player.underwear to null>><<set $player.shirt to null>><<set $player.bra to null>>You hit the water with a splash, and sink deep beneath the surface. As you approach the bottom, your huge trunks slip down your legs, falling off your body and sinking to the bottom.
+
+You only realize that they're missing once you come up for air. @@.thought;Shit! Not now!@@ There's a loud chorus of laughter from the boys, and most of the girls turn away, obviously expecting you to flash them. Interestingly, some of the girls keep their eyes fixed on you.
+
+You can't believe that this happened. You //never// lost your trunks when you had a dick, and now it happens during your first week with a pussy?
+
+@@.thought;Okay, what are my options?@@ you think to yourself. @@.thought;I can't get out and flash everyone. I could dive down and get my trunks, but I'm not a good diver.@@
+
+You look down at your pussy. Your pussy. Then it hits you. You're in clear water! Anyone could see! You have to get out of the water!
+
+[[Dive down and try to get your trunks|Gym Day 7 Retrieve Trunks]]
+[[You spot a pillar you could hide behind until someone gets your trunks|Gym Day 7 Wait]]
+
+::Gym Day 7 Dive
+Maybe it wouldn't be so bad to just do a normal dive, for once. You step up onto the diving board, pulling up your swim trunks as they start to slip. You imagine your trunks falling off as you dive in, in front of everyone. @@.thought;Better not risk it.@@
+
+You dive into the pool, one hand holding your trunks. But instead of diving beneath the surface, there's a loud thud as your stomach absorbs the impact.
+
+There's raucous laughter all around you. @@.male;"Belly flop! Belly flop!"@@ someone says.
+
+Your cheeks are burning as you hoist yourself out of the water. If someone laughs at you, you would tell them off. But with everyone laughing at you, you're not sure who to yell at.
+
+The laughter dies down after a while, and the students go back to diving. Soon, it's your turn again. Your heart is pounding, and you want to back down the diving board and run into the locker room. @@.thought;No! I'm not going to pussy out of this!@@
+
+You dive into the water, one hand clutching your trunks. It's a bit awkward, but you pull off the dive and resurface. You look back at the line and see some people snickering about your form.
+
+@@.thought;I can't win.@@
+
+Finally, gym class is over.
+
+[[Go to your next class|AfternoonClass]]
+<<set $team.respect to $team.respect-5>>\
+<<set $player.confidence to $player.confidence-5>>\
+
+::Gym Day 7 Retrieve Trunks
+You're not going to sit around and hope somebody else gets your trunks. You're going to find them yourself.
+
+Your eyes scan the pool. There! A splotch of red, against the corner. You swim over, and see that you're right. Your trunks have sunk to the bottom of the pool, but they're there! All you have to do is dive down and get it.
+
+You take a deep breath and then dive down. Your thighs rub together, and you're reminded of why you need to get these trunks. You're painfully aware of how exposed you are right now. @@.thought;I hope nobody sees me.@@
+
+You can't quite make it, and you're forced to resurface. Coach yells something to you, but you've already started your next dive. You're at the bottom, you've almost made it. Your hand scrapes the bottom of the pool. Where were they? You feel yourself start to panic.
+
+Then your hand comes into contact with fabric. You're running out of air though, and you're not sure which direction to swim in.
+
+You see a light, and swim towards it. Moments later, you break the surface and take a big breath, glad to have your swim trunks and be alive.
+
+That brings up a new problem. Now you have to get your trunks on. It would be easier if you got out of the water, but there's no way you're going to do that. It's difficult since they're so waterlogged, but you manage to get them over your hips.
+
+@@.thought;I did it!@@ You're so glad to have your trunks safely covering your crotch.
+
+You hear laughing close by. Really close. You turn around. The line of classmates who were waiting to dive were behind you this whole time!
+
+@@.thought;I wonder if they saw anything!@@ The pool's clear after all. Everyone is laughing, but that's probably just because you lost your trunks.
+
+You're humiliated, but you feel weirdly thrilled. This is the first time you've flashed anyone since your transformation, and you've missed it.
+
+@@.male;"Okay everyone! Great job today! Why don't you all get changed early?"@@ At least gym class is over.
+
+[[Go to your next class|AfternoonClass]]
+<<set $player.armStrength to $player.armStrength+2>>\
+<<set $player.exhibition to $player.exhibition+1>>\
+<<set $player.confidence to $player.confidence+10>>\
+
+::Gym Day 7 Wait
+Thinking quickly, you swim over to where the pillar is, and then hoist yourself out of the pool. You cover your pussy, hoping nobody sees that the cup your fingers make around your crotch is smaller than it should be.
+
+Luckily, the pillar is in the maintenance section of the pool, so it's hard for your classmates to get a good view of you. From their point of view, they can only see your naked <<getTfProgress ass>><<if $tempTfValue>=1>>, pert <</if>> butt, since the front of you is pressed against the pillar.
+
+@@.player;"Can someone get my swim trunks!"@@ you yell. @@.player;"Please?"@@
+
+<<if $girlfriend.relationship>55>><<print $girlfriend.firstname>><<else>>Somebody<</if>> dives into the pool. You close your eyes, hoping that this will be over soon. It's really humiliating, standing here naked in front of everyone. You feel helpless: your trunks have come off and you have to wait for <<if $girlfriend.relationship>55>>your girlfriend<<else>>some guy<</if>> to find them. You can't do anything to help, and you can't even really see what's going on from this angle.
+
+@@.thought;Why did I get out of the pool?@@ You don't know what you were thinking. There's no way anyone would see your crotch if you dived down really fast, right?
+
+Gym class has ground to a halt, and everyone is watching the spectacle play out. You've never been so embarrassed before. Finally, <<if $girlfriend.relationship>55>><<print $girlfriend.firstname>> emerges from the pool with your trunks.
+
+@@.girlfriend;"Here,"@@ she says. <<if $girlfriend.knowsSecret>>She stands behind you, shielding you from the view of your classmates. You're grateful for that, and you change in relative privacy.
+
+@@.player;"Thank you,"@@ you tell her gratefully when you're finished.<<else>>She makes sure that you're okay, and then backs off, standing close enough that she can see you change but not close enough for her to block the view of your classmates. You want to tell her that you need help, but you don't know how to do that without revealing your secret.
+
+@@.player;"<<print $girlfriend.firstname>>? Can I have some privacy?"@@
+
+She looks at you in surprise, but turns away. As quickly as you can, you slide the trunks up your legs, praying that you didn't flash anyone more than you have already.
+
+@@.player;"Thanks for getting it,"@@ you say when you're done.<</if>><<set $player.confidence to $player.confidence-7>><<else>>your classmate emerges from the pool with your trunks, and throws them at you. Luckily, you're reflexes are still good enough to catch them. You shudder as you picture yourself having to bend over to pick them up.
+
+Now comes another problem. Putting them on. If your classmates looked at you now, they'd just think that your dick was pressed up against the wall. But if you shift your body to put your trunks on, some of the sharper eyed ones might see that you have a pussy.
+
+@@.thought;Fuck it.@@ You just want this moment to end. You slide your trunks up your legs really quickly, and turn to face the class. Nobody meets your eyes.<<set $player.confidence to $player.confidence-15>><</if>>
+
+@@.male;"Okay everyone! Great job today! Why don't you all get changed early?"@@
+
+You breathe a sigh of relief. At least gym class is over.
+
+[[Go to your next class|AfternoonClass]]
+<<set $player.submission to $player.submission+1>>\
+<<set $team.respect to $team.respect-10>>\
+
+::GymPeriod
+You go inside the locker room, take one look at the guys and decide to change in the stalls. <<if $player.isWearingTampon>>There's no chance you're going to let them realize that you're menstruating.<<else>>If you changed in front of them, they would see the wad of toilet paper you stuffed in your underwear, and that would lead to a lot of questions that you don't want to answer.<</if>>
+
+You unlock your locker, take your <<if $player.wearsOnepiece>>one-piece<<else>>swim trunks<</if>> and head for the stalls.
+
+@@.male;"Why is <<print $player.firstname>> changing in the stalls?"@@ you hear a guy ask his friend. You ignore them.
+
+Once you're in the stalls, you take a sigh of relief and drop your pants. <<if $player.underwear.panties is true and $player.isWearingTampon>>Your panties are holding in the tampon well. You notice one small bloodstain on them, but other than that, they look clean.<<elseif $player.isWearingTampon>>The tampon seems to be working, but a small spattering of blood did manage to escape. Your boxers weren't able to hold it in, and it dried on your leg. Ewww.<<else>>The good news is that since you put the wad of toilet paper in your underwear, it's doing a much better job of catching the blood. The bad news is that it's not enough. The toilet paper is a bloody mess, and there's some dried blood on your leg. Ewww.
+
+@@.thought;I'll have to get a real tampon after school.@@<</if>>
+
+<<if $player.isWearingTampon>>You're nervous about changing into your <<if $player.wearsOnepiece>>one-piece swimsuit, especially since you're still on your period<<else>>swim trunks<</if>>, but you check your phone and are assured that it's possible to swim even while you're on your period. You shrug, change into your <<if $player.wearsOnepiece>>swimsuit<<else>>swim trunks<</if>>, and head out to the pool.
+
+You're nervous when it's your turn to dive. You picture the tampon coming out, and the pool filling up with blood.
+
+@@.male;"Come on! I want to dive!"@@
+
+You're startled to hear the sound of another voice, and you fall off the diving board. Seconds later, you splash down into the pool. When you resurface, you look around. There's no blood, and as far as you can tell, your tampon is still in.
+
+@@.thought;This wasn't so bad.@@
+
+You do a couple more uneventful dives before Coach lets everyone leave early.<<set $team.respect to $team.respect-1>><<else>>You throw the old wad into the toilet, and put a new wad into your <<if $player.isWearingPanties is true>>panties<<else>>underwear<</if>>. Suddenly, you freeze. You're supposed to be changing into your <<if $player.wearsOnepiece>>one-piece<<else>>swim trunks<</if>>. You won't be able to wear your underwear in the pool.
+
+@@.thought;What's going to happen when I dive? Everyone will see! Even if they don't notice that I'm on my period, they'll see all the toilet paper.@@
+
+You pace in the crowded stall. You know one thing for sure: you won't be diving today.
+
+@@.player;"Coach, I'm, um, feeling sick today."@@
+
+@@.male;"Seriously? You know we have practice."@@
+
+@@.player;"Yeah. I can't swim."@@
+
+Coach lets out a loud groan. @@.male;"Fine. You can sit on the bench."@@
+
+And that's what you do. There's one other person sitting on the bench with you, a fat kid who's skipped the entire swimming unit so far. He's not sure what to make of you: a jock who's voluntarily sitting out of class.
+
+@@.player;"I told you. I'm sick,"@@ you say, after you catch him staring at you.
+
+@@.male;"The <<print $player.firstname>> I know would never skip practice."@@
+
+@@.player;"I don't know what to tell you, man. Well, why do you always skip swimming?"@@ you ask, trying to change the subject.
+
+@@.male;"Look at me. I'm not going to show everyone how I look without a shirt. They'd all laugh."@@ He looks suspiciously at you, as if he's waiting for you to burst out laughing.
+
+You nod sympathetically. His issue isn't that much different than yours. He's afraid people will laugh at his body, and you're afraid people will laugh at your new one. @@.thought;I have more to worry about than him. @@<<if $player.feminine>=4>>@@.thought;I'm the one who looks way more girly. And has a period.@@<<else>>@@.thought;I'm the one who has to cover up a pussy. And a period.@@<</if>>
+
+You think about it some more. @@.thought;Actually, I'm not sure. I'm the kind of person he's worried about laughing at him. I don't think I've laughed at him before.@@ You remember some of your friends laughing at another fat kid, though. You didn't join in, but you remember laughing along. @@.thought;Shit.@@<<set $team.respect to $team.respect-4>><</if>>
+
+[[Go to your next class|AfternoonClass]]
+
+::Gym Bra
+<<getTfProgress boobs>>You walk into the locker room, and then stop dead in your tracks. You just realized that you're wearing a bra! You take in the room, as guys in various states of undress chat and talk with each other. You don't feel like you belong in here. @@.thought;I don't know where to go. The only other locker room is the girls room...No. I'm not doing that. Ever.@@
+
+You look at the stalls. @@.thought;That's the only choice I have.@@
+
+You half-run to your locker, ignoring the questioning glances from the <<if $player.acceptance<50>>other <</if>>guys. The stalls are pretty popular with all of the guys who are self-conscious about their bodies. Even though your gym class is mostly jocks, there are still a few of those people. @@.thought;I guess I'm one of them now.@@
+
+Luckily, there's still a stall open once you've grabbed your trunks. Your heart doesn't stop beating until you've pulled them up. @@.thought;That wasn't so bad.@@
+
+You look over your body to make sure that everything looks okay. It doesn't. In fact, you have two problems.
+
+The first is that your <<if $tempTfValue>=4>>large<<elseif $tempTfValue is 3>>medium-sized<<else>>small<</if>> boobs are visible. It's not that obvious, and you'll be in the water for most of the time, but if someone was paying attention, they would definitely notice.
+
+@@.thought;I don't have a choice. I just have to hope nobody notices. I'll stay in the water as much as I can.@@
+
+Your second problem is your bra. Specifically, it's with you in the stall, and you need to put it back in your locker.
+
+@@.thought;I guess I could hide it here...somewhere. But what if someone finds it?@@
+
+[[Sneak it back to your locker|Gym Bra Sneak]]
+[[Hide it in the stall|Gym Bra Hide]]
+
+::Gym Bra Hide
+@@.thought;I'm not going to step back into that locker room holding a bra.@@
+
+You look over the stall, trying to find the perfect place to hide it. The stall isn't very large, and there aren't a lot of spots. You settle for hiding it behind the toilet.
+
+@@.thought;That's kind of dirty@@ you think. @@.thought;And I'll have to wear it after.@@
+
+You put it on a thin layer of toilet paper. It's not much, but you don't have many options, and you're terrified of getting caught holding a bra by all those guys.
+
+[[Walk onto the pool deck|Gym Bra Start]]
+
+::Gym Bra Sneak
+Carefully, you fold your <<print $player.bra.informalName>> into your <<print $player.pants.informalName>>, and arrange it so the bra isn't visible.
+
+Trying to look nonchalant, you step out of the stall and walk back to your locker. You make it there successfully, and stuff your clothes inside.
+
+[[Walk onto the pool deck|Gym Bra Start]]
+
+::Gym Bra Start
+You sit on the bench with the <<if $player.acceptance<50>>other <</if>>guys and tune the Coach's speech out. Instead, your eyes are fixed on the girls who are sitting on the other edge of the pool.
+
+@@.thought;They all look so good in their bikinis@@<<if $player.homosexuality>=15>>, but your thoughts aren't lustful. In fact, you don't feel much of anything when you look at them.<<else>> you think, glad that you're still turned on by women.<<increaseArousal 5>><</if>>
+
+The Coach's speech is dragging on, and you find your mind wandering. @@.thought;Those girls have boobs just like me. Theirs are bigger, but mine are still there. And when gym class is over, they're going to put on their bras. Just like me.@@
+
+@@.male;"Okay, everyone get in the pool! We're going to swim some laps!@@
+
+Everyone groans, but you're secretly happy. If you're swimming laps, you can be in the pool the whole time, and hide your budding breasts.
+
+@@.thought;And nobody has noticed them@@ you think. @@.thought;I've been lucky.@@
+
+As you think that, you catch a boy giving you a sideways glance. You can't tell what he's thinking, but you're nervous. When the Coach finally stops talking, you're the first to jump in the pool.
+
+[[Swim|Gym Bra Swim]]
+
+::Gym Bra Swim
+For all of your worries, swimming is pretty anticlimatic. You and the other students just swim back and forth. It's tedious, and you're starting to wonder if you would have been better off if Coach made everyone dive, even if it meant you would be more likely to be noticed.
+
+The only consolation is that everyone is getting tired, and nobody has the energy to notice anything different about you. They're all focused on getting through the class.
+
+@@.male;"Okay, that's enough!"@@ Coach yells.
+
+You can almost feel the relief of all the students.
+
+You're relieved too, until you realize that you'll have to get out of the pool.
+
+@@.thought;I can't stay in here forever. I'll have to get out of eventually. And I might as well get out with everyone and not make a big deal out of it.@@
+
+[[Get out of the pool|Gym Bra Return]]
+
+::Gym Bra Return
+You walk awkwardly back to the locker room. You can hear a couple girls laughing behind you, but you can't hear what they're laughing about, and you don't dare turn around.
+
+Eventually, the girls turn left towards their locker room, and you feel a little better once you're out of earshot.
+
+Once you're back in the locker room, you go take a quick shower. You're trying to be as efficient as possible, so you can <<if visited("Gym Bra Sneak")>>get out of there<<else>>grab your bra before anyone finds it<</if>>. You can't help yourself from noticing your naked body, so different from the <<if $player.acceptance<50>>other <</if>>guys. Your hand drifts to your breasts, and you close your eyes as you enjoy your touch.
+
+@@.thought;Gotta focus.@@
+
+It takes a lot of effort, but you finish the shower and wrap a towel around your body.
+
+<<if visited("Gym Bra Sneak")>>[[Head to your locker|Gym Bra Locker Gather]]<<else>>[[Head to the stall|Gym Bra Hide Gather]]<</if>>
+<<increaseArousal 5>>
+
+::Gym Bra Hide Gather
+You quickly head for the stalls, terrified that somebody will get there before you. You look behind the toilet, and discover...nothing.
+
+Your heart skips a beat, until you realize that in your hurry, you went  into the wrong stall. You open the door, but somebody's already in the stall you left the bra.
+
+You wait with bated breath, praying that whoever's in there doesn't notice the bra. Some of the <<if $player.acceptance<50>>other <</if>>guys give you strange looks. You imagine how you must look, hovering outside of a stall while there's an open one right next to you.
+
+Eventually, the boy in there finishes up and you walk in and close the door. To your relief, the bra is still there.
+
+@@.thought;Good. That could have turned out so much worse.@@
+
+You quickly change into your clothes, trying not to think about how good you're getting at putting on the bra.
+
+[[Continue|AfternoonClass]]
+<<set $team.suspicion to $team.suspicion+1>>
+
+::Gym Bra Locker Gather
+Your shower was pretty quick, and there aren't a lot of guys in the locker room by the time you're done. You're still nervous though, and you sweep your clothes up into your arms and head for the stalls.
+
+You were too quick. As soon as you've taken a couple steps, your bra falls onto the floor.
+
+<<if $player.acceptance<50>>Another<<else>>A<</if>> guy turns his head, and you quickly pick it up and hurry for the stalls.
+
+@@.thought;That was so embarrassing. Did he notice what it was?@@
+
+You quickly change into your clothes, trying not to think about how good you're getting at putting on the bra.
+
+[[Continue|AfternoonClass]]
+<<set $team.respect to $team.respect-1>>
+
+::Gym Shirt Introduce
+You considered pretending like you were sick and trying to skip gym, but you know that Coach wouldn't let you get away with that. You never look forward to swimming, but you know that today is going to be even worse.
+
+Before, you could at least hide the changes that were happening to your body. Even when you had small boobs, you could just cross your hands in front of your chest until you could get into the water.
+
+But now our boobs are too big for that to work. You shudder as you imagine the macho guys in your class seeing your boobs and making fun of you. @@.thought;I'll never live this down.@@
+
+@@.thought;Maybe it's not too late to back out of this. I can just say that I forgot my trunks.@@
+
+[[Change in the stalls|Gym Shirt Stalls]]
+[[Pretend you lost your trunks|Gym Shirt Lost]]
+
+::Gym Shirt Stalls
+<<if visited("Gym Shirt Lost")>>@@.thought;Coach must think I'm an idiot. Or that I don't want to swim. Well, that part is true.@@
+
+You don't want to change into your trunks, but you don't have any choice now. Coach caught you once. If you try to get out of this again, he's going to lose patience with you.
+
+@@.thought;I just have to get in and out of the locker room. And I have to get through the coach's speech while I'm sitting with all the @@<<if $player.masculinity>=50>> @@.thought;other @@<</if>>@@.thought;guys.@@
+
+When you think of it like that, it sounds impossible.
+
+@@.thought;I don't have a choice. I need to do this.@@<<else>>@@.thought;I'm not going to back out of this. I used to like swimming. And I'll be spending most of my time in the water. I just have to get in and out of the locker room. And I have to get through the coach's speech while I'm sitting with all the @@<<if $player.masculinity>=50>> @@.thought;other @@<</if>>@@.thought;guys.@@
+
+When you think of it like that, it sounds impossible.
+
+@@.thought;I can't think like that.@@ You take a deep breath. @@.thought;It's not manly of me to run from my problems. I need to face this.@@<</if>>
+
+You gather your clothes from your locker and go to the stalls. Nobody makes a comment, they're all used to you changing there. You drop your pants and <<if $player.isWearingPanties is true>>panties<<else>>boxers<</if>> and change into your ill-fitting trunks, and remove your shirt<<if $player.bra>> and bra<</if>>, and then hesitate.
+
+Your boobs are hanging out. It's no use calling them anything else: they're boobs, and anyone who looks at them will be able to tell.
+
+[[Wait until everyone leaves, and then head out|Gym Shirt Deck]]
+[[Stay in here and hope they forget about you|Gym Shirt Hide]]
+
+::Gym Shirt Lost
+You open the door to the pool and see Coach out on the pool deck, waiting for people to show up. @@.thought;It's better if I find him than if he finds me@@ you think, and you step out of the locker room.
+
+@@.male;"You're not changed, <<print $player.lastname>>,"@@ Coach says, surprised.
+
+@@.player;"Yeah. Uh, I lost my trunks,"@@ you tell him.
+
+@@.male;"That's not good. Where did you see them last?"@@
+
+@@.player;"Uh...last time I went swimming, I guess."@@
+
+@@.male;"Then let's check your locker,"@@
+
+Your speechless as you follow Coach back into the locker room. @@.thought;I should have thought this through more.@@
+
+Coach asks you to open your locker, and you do so, revealing your trunks.
+
+You see Coach shaking his head as he walks away. @@.thought;That was embarrassing.@@
+
+You don't have any choice but to [[put on the trunks|Gym Shirt Stalls]]
+
+::Gym Shirt Deck
+You wait until the locker room is quiet, and then leave the stall, crossing your arms over your chest as you do so. @@.thought;I just need to get through Coach's speech, and then I'll be in the water.@@
+
+You feel several pairs of eyes on you as you make your way over to the boys bench, but you can't tell if that's just your imagination.
+
+You take your seat and look straight ahead, not daring to look at the <<if $player.masculinity>=50>>other boys<<else>>boys sitting around you<</if>>. 
+
+@@.male;"We're going to be practicing swimming today. No diving."@@
+
+@@.thought;This is good. If I had to dive, I'd have to stand out in the open. With my boobs on display.@@
+
+Coach drones on, but you're not listening to him. Finally, he says, @@.male;"Get to swimming!"@@ and everyone stands up.
+
+You wait for Coach to walk over to the side of the pool he usually stands at, where he can watch everything that's going on.
+
+But that's not where he's headed.
+
+[[He's walking straight towards you|Gym Shirt Coach]]
+
+::Gym Shirt Coach
+@@.player;"Uh, hi, Coach,"@@ you say nervously.
+
+@@.male;"What's going on, <<print $player.lastname>>?"@@
+
+@@.player;"What do you mean?"@@
+
+@@.male;"Your boobs."@@
+
+Your heart sinks. @@.thought;So he noticed. And if he noticed, the others must have noticed too.@@
+
+@@.player;"Uh..."@@
+
+@@.male;"You know, whatever you're doing to yourself, I don't want to know."@@
+
+@@.thought;Does he think I'm trans?@@
+
+@@.male;"But I can't have you swimming like this,"@@ he says. @@.male;"The guys would get distracted."@@
+
+<<if $player.homosexuality>=15>>You imagine what the <<if $player.masculinity>=50>>other <</if>>guys would do if they caught you like this. Humiliate you, probably. @@.thought;Would they get turned on?@@<<else>>You shudder at the thought of <<if $player.masculinity>=50>>other <</if>>guys getting distracted by your boobs. The Coach is right.<</if>>
+
+@@.male;"I need you to put on a shirt. Come on, follow me."@@
+
+[[Follow him into the locker room|Gym Shirt Change]]
+
+::Gym Shirt Change
+<<getTfProgress height>>You follow him into the locker room. He disappears into his office for a moment, leaving you alone. You feel scared and unsure. You were at least able to hide your changes before, but now you've been transformed too much, and people are starting to notice.
+
+@@.male;"Here,"@@ Coach says, thrusting an oversized white t-shirt towards you. You put it on<<if $tempTfValue>=2>>, feeling ridiculous with the oversized shirt on your smaller frame.<</if>>
+
+@@.male;"Okay, let's get back to the pool."@@
+
+[[You follow him without another word.|Gym Shirt Swim]]
+
+::Gym Shirt Hide
+You're quiet as everyone leaves the locker room. Nobody seems to notice that you're not there. You would be offended by it, if you weren't so relieved.
+
+It's boring sitting here alone. There's nothing to do but sit here in silence and listen to the sounds of people laughing and having fun in the pool. You're bored, and you're beginning to regret your choice. Then you imagine everyone seeing your boobs, and decide you made the right choice.
+
+You're startled by a knock on your stall door. @@.qb;"<<print $player.firstname>>?"@@
+
+@@.player;"<<print $qb.firstname>>?"@@
+
+@@.qb;"Yeah. Can I come in?"@@
+
+You look around. You're wearing your swim trunks, and your boobs are on display<<if $qb.sawBoobs>>, but he's seen them already.
+
+@@.player;"Sure, you can come in."@@<<else>>.
+
+@@.player;"No."@@<</if>>
+
+@@.qb;"What's wrong?"@@
+
+@@.player;"I'm so embarrassed. Everyone is going to see these,"@@ you say, looking at your boobs.<<if $qb.sawBoobs is false>>
+
+@@.qb;"See what?"@@
+
+You sigh. You guess he should know. @@.player;"I have boobs now. And everyone is going to see them, and laugh at me, and..."@@
+
+@@.qb;"Slow down,"@@ he says. @@.qb;"Can I come in?"@@
+
+You didn't want him in before, but now you could use a friend. @@.player;"Sure,"@@ you say.<<set $qb.sawBoobs to true>><</if>>
+
+@@.qb;"Oh,"@@ he says, looking at them. You blush under his gaze. @@.qb;"I have an idea,"@@ he says, and disappears, leaving you alone in the stall.
+
+[[Wait for him to come back|Gym Shirt QB Change]]
+
+::Gym Shirt QB Change
+He comes back holding an oversized white t-shirt. @@.qb;"This is the best I could find."@@
+
+@@.player;"Thank you,"@@ you say gratefully, putting it on.
+
+@@.qb;"Are you ready?"@@
+
+@@.player;"No,"@@ you answer nervously.
+
+@@.qb;"Do you want to hide out here until class is over?"@@
+
+@@.player;"No,"@@ you sigh. @@.player;"It was really boring waiting here before. And I should be fine now that they can't see my boobs,"@@
+
+<<print $qb.firstname>> nods, and both of you [[step out of the locker room|Gym Shirt Swim]]
+
+::Gym Shirt Swim
+You notice some people looking at you. You imagine how ridiculous you look, standing here in the oversized t-shirt, breasts possibly on display.
+
+@@.thought;I need to get into the pool!@@
+
+You jump in, and instantly feel more at peace. Now, you can swim without worrying about people seeing your boobs, or worrying about what they will think.
+
+You relax and swim around for a while, letting the time pass. The other kids have bunched up into groups and you're alone, but that doesn't bother you. You'd rather be alone than have to answer any awkward questions.
+
+Up ahead, you hear a couple of girls laughing.
+
+@@.female;"I know! I saw too!"@@
+
+@@.female;"He should be wearing a top like us!"@@
+
+@@.thought;Fuck! Everyone knows!@@
+
+You don't enjoy swimming as much after that. When Coach yells for everyone to go back to the locker room, you eagerly get out of the pool.
+
+Only then do you realize your problem.
+
+You're standing there in a white t-shirt. A wet white t-shirt.
+
+[[Go back to the locker room|Gym Shirt Finish]]
+
+::Gym Shirt Finish
+You try your best to blend in with the <<if $player.masculinity>=50>>other <</if>>boys as they walk back to the locker room.
+
+You can't tell if it's working. From the snickers you hear around you, probably not.
+
+Blushing, you make a beeline for the showers, eager to be by yourself. You enjoy the feeling of the warm water on your back, and you comfort yourself with the thought of almost being done with gym for the day.
+
+The snickers have died down when you finish the shower, but they start back up when you emerge, still wearing the white t-shirt. @@.thought;I didn't have any choice. It was either that or show everyone my boobs.@@
+
+Trying not to look at anyone, you dash to your locker, grab your clothes, dash back to the stalls, and change.
+
+Only when you're in the privacy of the stalls do you start to cry.
+
+[[Finally, gym class is over|AfternoonClass]]
+<<set $team.respect to $team.respect-10>>
+<<set $player.wearsShirtForSwimming to true>>
+
+::Gym Onepiece Start
+You're not looking forward to gym class. Last time, <<if visited("Gym Shirt Change")>>Coach made you<<else>><<print $qb.firstname>> asked you to<</if>> wear an oversized white t-shirt while you swam, which got wet and exposed your boobs. @@.thought;And then I cried after.@@ You're worried about what's in store for you during this class.
+
+The locker room is strangely quiet as you walk towards your locker. @@.thought;Maybe this time will be better. They've already seen me in the t-shirt, so maybe the novelty will wear off.@@
+
+You open your locker, reaching for your trunks and the t-shirt.
+
+They're not in there.
+
+Instead, you find a flimsy piece of blue fabric.
+
+[[See what it is|Gym Onepiece Realize]]
+
+::Gym Onepiece Realize
+You take it out and unroll it, trying to see what it is. As soon as you do so, the previously quiet locker room erupts in laughter.
+
+It's a one-piece swimsuit. A //woman's// one-piece swimsuit.
+
+You can't meet the faces of the <<if $player.masculinity>=50>>other <</if>> boys. @@.thought;They must have seen my boobs last time and took away my trunks and shirt as a prank.@@
+
+Their prank //is// fitting, you have to give them that. Even more fitting than they know. And you //were// uncomfortable in your trunks: they didn't fit you, and you got nervous every time you dove.
+
+@@.thought;No. I can't seriously be considering wearing this!@@
+
+[[Put it on|Gym Onepiece Change]]
+[[Complain to Coach|Gym Onepiece Coach]]
+[[Confront the guys|Gym Onepiece Confront]]
+
+::Gym Onepiece Change
+<<getTfProgress ass>><<set $tempAss to $tempTfValue>>@@.thought;Nobody's seriously expecting me to wear it.@@ You glance at the group of guys who are still watching you, and suddenly aren't so sure about that anymore. @@.thought;But if I wear it, I'll show that their prank doesn't bother me.@@
+
+@@.thought;They used to respect me. And now they're pulling pranks like this. If I act like it bothers me, they'll keep doing it.@@
+
+You don't know whether you're making the right choice, but your mind is made up, for better or for worse. You take the swimsuit and head for the stalls, trying to tune out the snickers that come when people see you carrying the swimsuit.
+
+You double check that the stall door is locked, and then strip off your clothes. Now you're naked, holding the one-piece swimsuit in front of you, and you look down at yourself and hesitate. From this angle, you can see your feminine swimsuit, your boobs, and the emptiness where your dick should be. If anyone else was watching this, they would think they were watching a girl put on her swimsuit.
+
+@@.thought;Don't think about it. Just put it on.@@
+
+You take a deep breath and step into it, struggling to put it on. The first thing you notice is how tight it is. If the trunks were so loose they kept threatening to fall off your body, this is the opposite. <<if $tempAss<3>>The one place it doesn't fit as well is in your hips, which is a relief. You're used to wearing loose-fitting clothes, and wearing something so tight feels weird.<<else>>You're used to wearing loose-fitting clothes, and wearing something so tight feels weird. It even feels tight in your hips.<</if>>
+
+<<if not visited("Girlfriend Beach TryOn")>><<link "You start to transform" TfPassagePicker>><<set $tfRecoverPassage to "Gym Onepiece Recover">><<set $tfReason to "swimsuit">><<set $tfCircumstances.location to "boys locker room">><<set $tfCircumstances.locationType to "locker room">><<set $tfCircumstances.witnesses to "">><<set $tfCircumstances.extraClothing to "one piece">><<set $tfCircumstances.boys to true>><</link>><<else>>[[Take a deep breath|Gym Onepiece Recover]]<</if>>
+<<set $onepiece = {
+    "properName": "Blue One-Piece Swimsuit",
+	"informalName": "blue onepiece",
+    "images": ["images/clothes/onepieces/swimsuit_small_breasts.png", "images/clothes/onepieces/swimsuit_small_breasts.png", "images/clothes/onepieces/swimsuit_medium_breasts.png", "images/clothes/onepieces/swimsuit_large_breasts.png"],
+	"school": true,
+	"football": false,
+	"casual": true,
+	"workout": false,
+	"dress": false,
+	"female": true,
+    "onepiece": true
+}>>
+<<setUpSexScene>><<set $player.shirt to $onepiece>><<set $player.pants to $onepiece>><<set $player.underwear to null>><<set $player.bra to null>>
+
+::Gym Onepiece Recover
+You take a deep breath, and force yourself to calm down. It was stupid to wear this swimsuit. Of course it would make you transform. But you were too concerned about looking cool to worry about that.
+
+@@.thought;There's nothing I can do now but wear it out.@@
+
+You unlock the stall door and step out. You were worried that the <<if $player.masculinity>=50>>other <</if>>boys would have gathered by your stall to see your new swimsuit, but thankfully most of them have cleared out.
+
+You're about to leave the gym bathroom when you notice the mirror on the wall. You're curious to see what you look like in this new swimsuit, but you don't think you'd like what you saw.
+
+[[Look in the mirror|Gym Onepiece Mirror]]
+[[Ignore it|Gym Onepiece Benches]]
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress hands>><<set $tempHands to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>>
+<<set $femScore to 2*$tempFace+2*$tempBoobs+2*$player.legs+2*$tempHair+$tempHands>>
+<<set $player.submission to $player.submission+1>>
+
+::Gym Onepiece Mirror
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress hands>><<set $tempHands to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>>You don't //want// to look at yourself in your girly swimsuit, but you feel a morbid curiosity. Before you know it, you're in front of the mirror, and you take a good look at yourself.
+
+This is the first time you've worn nothing but female clothes<<if visited("Girlfriend Swim")>> since you went to the beach<</if>>. You've usually been able to hide your feminine appearance behind more masculine clothes, but this is different.
+
+You see a<<if $player.feminine>=18>> girl<<elseif $player.feminine>=11>>n androgynous person<<elseif $player.feminine>=7>> feminine boy<<else>> boy<</if>> looking back at you. Your <<if $tempBoobs is 4>>large<<else>>medium-sized<</if>> boobs fill out your swimsuit well, and the tightness of the suit makes it obvious that you no longer have a bulge. <<if $player.legs is 3>>Your smooth legs add to the illusion. If someone saw you from the waist down - no, the shoulders down, they would be convinced you were a girl.<<else>>The only thing spoiling the illusion is the hair on your legs.<</if>>
+
+You shift your gaze upwards. Your <<if $tempFace>=3>>feminine face looks back at you. You barely recognize the person in the mirror.<<elseif $tempFace is 2>>androgynous face looks back at you. You're sure that if you went to the beach with your new swimsuit, your androgynous face could pass for a girly one.<<else>><<if $tempFace is 1>>face<<else>>masculine face<</if>> looks back at you. It looks a little ridiculous on your body, especially with the one-piece swimsuit on.<</if>> It's framed by your <<if $tempHair>=3>>shoulder-length<<elseif $tempHair is 2>>long, shaggy<<elseif $tempHair is 1>>short, feminine<<else>>short<</if>> blond<<if $player.masculinity<=0>>e<</if>> hair.
+
+Surprised by your appearance, you bring your hand up to your mouth. <<if $tempHands>=2>>Even your hand looks feminine.<<else>>You're glad that at least your hand looks masculine<<if $tempHands is 1>> enough<</if>>.<</if>>
+
+You sigh and imagine how your classmates will react. <<if $femScore>=27>>Actually, you're not sure //if// they will react. Now that you're wearing girl clothes, you look just like any other girl in the class.<<elseif $femScore>=22>>Actually, you're not sure //if// they will react. Now that you're wearing girl clothes, you look pretty similar to the girls in the class at first glance.<<elseif $femScore>=18>>You normally look pretty androgynous. But in your girl's swimsuit, you look more similar to the girls in the class than to the <<if $player.masculinity>=50>>other <</if>>guys in the class.<<elseif $femScore>=9>>You normally would look like a boy who's in touch with his feminine side. But in your girl's swimsuit, you look like a crossdresser.<<else>>You look a little silly. Besides the girls swimsuit, everything else looks masculine enough. The only thing that gives you away is your lack of a bulge.<</if>>
+
+@@.thought;Everyone's going to tease me for sure.@@
+
+<<if visited("Gym Onepiece Regular")>>[[Go to class|Gym Onepiece Regular Swim]]<<else>>[[Go to class|Gym Onepiece Benches]]<</if>>
+
+::Gym Onepiece Benches
+You take a deep breath and step out onto the pool deck, bracing yourself for everyone to laugh at you.
+
+<<if $femScore>=27>>Instead, there's no reaction. Nobody turns to stare at you, and you don't hear any laughter. @@.thought;What's going on?@@
+
+You head over to the boys bench and sit down.
+
+@@.male;"What's she doing here?"@@
+
+@@.male;"I've never seen her before."@@
+
+@@.male;"Hey, uh..."@@ says one of the guys, turning to you. @@.male;"Shouldn't you be over at the other bench?"@@
+
+You can't believe it. They think you're a girl. You turn to face him, and he goes red. @@.male;"...<<print $player.firstname>>?"@@
+
+@@.player;"...yes,"@@ you squeak.
+
+@@.male;"Holy shit! You look, uh..."@@
+
+You roll your eyes and turn away from him. How do these people not have any reaction when you dress in baggy guy clothes and then suddenly see you as a girl when you put on a girl's swimsuit? Your looks haven't changed at all. @@.thought;Okay, I did transform in the stall, but still.@@<<elseif $femScore>=18>>They don't let you down. As soon as you step out, every eye turns to you. You blush and walk over to the guys bench. A couple of them are talking in hushed voices, but you can still hear them.
+
+@@.male;"I didn't think he'd look this good!"@@
+
+@@.male;"You sound gay, man."@@
+
+@@.male;"I know. But...but look at him!"@@
+
+Someone turns towards you, and you quickly turn away. You were prepared for people to laugh at you. This is worse.
+
+You look over to the girls bench, only to see that they're staring at you too. @@.thought;Or are they? It's hard to tell when they're so far away.@@
+
+One girl beckons for you to come over to their bench, and you blush. @@.thought;So they were staring at me.@@ Not knowing where else to look, you turn to Coach.<<else>>They don't let you down. As soon as you step out, every eye turns to you. People start laughing as they take in the sight of your mostly masculine body clad in the girly swimsuit.
+
+As you walk to the boys bench, you overhear some guys walking in the same direction as you.
+
+@@.male;"I can't believe he did it!"@@
+
+@@.male;"I know. This is so funny."@@
+
+@@.thought;Well, that reaction isn't that bad.@@
+
+@@.male;"Hey, where's his dick? I can't see it in the swimsuit."@@
+
+@@.male;"Dude! Why are you looking?"@@
+
+You walk quickly to the bench and sit down.<</if>>
+
+[[Coach clears his throat|Gym Onepiece Swim]]
+
+::Gym Onepiece Coach
+@@.player;"Coach!"@@ you yell.
+
+@@.male;"What is it, <<print $player.lastname>>?"@@ Coach asks with a sigh, walking into the locker room. The laughter dies down.
+
+@@.player;"The @@<<if $player.masculinity>=50>>@@.player;other @@<</if>>@@.player;guys took away my trunks. And they gave me this!"@@ you say, thrusting the swimsuit into the Coach's hands.
+
+@@.male;"Who did this?"@@ Coach asks everyone. Nobody speaks up.
+
+Turning to you, he says, @@.male;"What do you want me to do?"@@
+
+@@.player;"Can I get out of swimming?"@@
+
+He sighs. @@.male;"Fine."@@
+
+@@.thought;Just like that? That was easy!@@
+
+Coach leans in closer to you. @@.male;"You should think about wearing that swimsuit,"@@ he tells you in a softer voice.
+
+@@.player;"What?"@@
+
+@@.male;"My teammates did the same thing to me when I was a freshman in college. I got out of practice, and the only thing in my locker was a dress."@@
+
+@@.player;"So what did you do?"@@
+
+@@.male;"I wore it. I figured that they were going to find some way to make fun of me, so why not get it over with?"@@
+
+@@.player;"What happened?"@@
+
+@@.male;"Everyone laughed. But I think they gained some respect for me for actually going through with it. And the next day, my clothes were back and they did the same thing to another freshman."@@
+
+You consider what the coach said. @@.thought;If I wear this swimsuit, will they gain respect for me? I'm different than the Coach, though. He's really manly, and I'm...not.@@
+
+[[Wear the swimsuit|Gym Onepiece Change]]
+[[Sit out of class|Gym Onepiece Skip]]
+
+::Gym Onepiece Skip
+<<if visited("Gym DecideNoToOnepiece")>>@@.thought;I'm going to sit out of class. I won't let myself be humiliated.@@<<else>>@@.player;"I'm going to skip swimming,"@@ you tell him.
+
+Coach looks a little disappointed, but he shrugs and leaves the locker room.<</if>>
+
+@@.male;"What's the matter, <<print $player.lastname>>?"@@ someone mocks you as you leave. @@.male;"Couldn't handle the heat?"@@
+
+You do your best to ignore him, and sit in the stands.
+
+Coach tells everyone that they're going to do diving today, and then you watch with boredom as everyone takes turns jumping into the water. They all look like they're having fun, and you wish that you could join them. You wonder if you made the right decision in skipping this class.
+
+Finally, the class ends and you head straight out. Not changing for swimming means that you don't have to change or shower afterwards.
+
+[[Continue|AfternoonClass]]
+<<set $team.respect to $team.respect-2>>
+
+::Gym Onepiece Confront
+@@.player;"Who did this?"@@ you yell.
+
+Nobody meets your gaze. You scan the faces, trying to figure out who did it. Obviously, a lot of them knew about it, but there had to be a leader.
+
+You walk over to Daniel, who's on the football team and <<if visited("Team Practice 3 Caught Panties")>>caught you wearing panties during practice<<elseif visited("Team Practice 3 Caught Bra")>>caught you wearing a bra during practice<<else>>is someone you've never gotten along with<</if>>. Your gut tells you that he's the one to confront.
+
+@@.player;"What do you know about this?"@@
+
+@@.male;"Nothing!"@@
+
+@@.player;"I don't believe you!"@@
+
+@@.male;"Okay, fine. We saw your boobs last class and thought that it would be funny if you wore a girls swimsuit. Happy?"@@
+
+@@.player;"No. Give me my swimsuit back."@@
+
+@@.male;"//Your// swimsuit is in your locker."@@ The <<if $player.masculinity>=50>>other <</if>>guys laugh at this.
+
+@@.player;"You know what I mean. My trunks. And my shirt."@@ @@.thought;It's better to wear a shirt than to wear that swimsuit or have my boobs on display.@@
+
+@@.male;"You're no fun,"@@ Daniel says, and throws you your clothes. You take them and head to the stalls to put them on.
+
+[[Change and start swimming|Gym Onepiece Trunks]]
+<<set $player.submission to $player.submission-1>>
+
+::Gym Onepiece Trunks
+<<getTfProgress height>>You hear people laughing at you as you enter the stall, but you don't pay attention to it. @@.thought;They would have laughed at me more if they saw me in that swimsuit.@@
+
+You put on your trunks and your swimsuit, taking a moment to see how bad both of them fit you: the trunks are way too loose and the shirt is <<if $tempTfValue>=2>>way too <</if>>large. For a second, you wonder how you would have looked in that swimsuit, before you force yourself to think about something else.
+
+You emerge from the stall, and head out to the pool deck, sitting down with the <<if $player.masculinity>=50>>other <</if>>guys as you listen to Coach. You feel a little out of place here: everyone is shirtless<<if $player.homosexuality>=15>>, and some of them look really good with their shirt off<</if>>. On the other hand, you have your shirt on. Even the guy with man-boobs isn't wearing a shirt. You feel self conscious, and you quickly turn your attention towards Coach.
+
+@@.male;"Today, we're going to be diving! Okay everyone, line up behind the diving boards."@@
+
+You fail to suppress a groan. @@.thought;If I was swimming, I could have hid my body underwater. Now I'll be spending most of my time in line, where anyone can see me.@@
+
+You don't have a choice though, so you line up with the others. You can hear some people laughing behind you, and you don't know whether it's at you, or about something else.
+
+The line moves forward, and suddenly you're in front of the diving board. You climb up and dive in, anxious for even a few moments away from everyone looking at your shirt.
+
+It's a bad dive. You were too busy holding onto your trunks out of fear of them falling off to drive gracefully, and you struggle to the surface. You swim back to the end of the line and get out.
+
+[[Look down at your shirt|Gym Onepiece Trunks Finish]]
+
+::Gym Onepiece Trunks Finish
+Your shirt is soaked, and the outline of your boobs are clearly visible. From the laughter up ahead, you're sure that the others have noticed it too.
+
+@@.thought;Fuck.@@
+
+Feeling defeated, you stand in line and dive again, not wanting to look at anyone.
+
+It's a big relief when class is over, and you hurry to the locker room and get changed. Nobody bothers you in there, but when you go to your locker to put your trunks away, you notice that the one-piece swimsuit is still there.
+
+@@.thought;Would it have gone better if I wore it? Should I wear it next time? No, it would only be worse, right?@@
+
+[[Go to your next class|AfternoonClass]]
+
+::Gym Onepiece Swim
+@@.male;"Okay, time to get started. Let me see if everyone's here,"@@ he says, scanning the benches. His eye turns to you, and you shrink under his gaze.
+
+<<if $femScore>=27>>@@.male;"Who are you?"@@
+
+@@.player;"Uh, <<print $player.firstname>> <<print $player.lastname>>."@@
+
+He looks closely at you. Finally, his face shows a sign of recognition, and he gets back to his speech.<<elseif $femScore>=18>>He looks at you for a couple seconds, before asking, @@.male;"<<print $player.lastname>>?"@@
+
+You nod.<<else>>He chuckles and finishes taking attendance.<</if>>
+
+@@.male;"We're going to be diving, today. Let's get to it! Everybody line up, single file."@@
+
+You get in line, eager to be with the rest of the students. You felt strange sitting with the <<if $player.masculinity>=50>>other <</if>>guys, being the only one wearing a one-piece swimsuit. Everyone else was shirtless<<if $player.homosexuality>=15>>, and some of them looked really good with their shirts off<</if>>.
+
+A little while later, you find yourself on the diving platform. You take a look around and see everyone looking at you. You know that it's because they're all waiting for you to dive, but you feel uncomfortable. You want to know what they're thinking. And what they see.
+
+[[Dive|Gym Onepiece Dive]]
+
+::Gym Onepiece Dive
+You dive into the pool. It's a good, graceful dive, and you sink beneath the surface before coming up for air.
+
+@@.thought;That was the best dive I've done in a while. Is it the swimsuit? When I had the swim trunks on, I was more worried about keeping them on than doing a good dive. But when I dove in this one-piece, it felt, I don't know, more comfortable.@@
+
+You swim back to the end of the line, and get in a couple dives before class ends. You're surprised by how quickly people stopped focusing on you. Now you're just another student. Everyone else is talking and laughing, but you get the sense that they're not laughing at you.
+
+Coach whistles the class to the end, and you head to the locker room.
+
+@@.male;"You should be in the other locker room, <<print $player.firstname>>,"@@ one of the <<if $player.masculinity>=50>>other <</if>>guys says, laughing, but nobody else gives you a hard time.<<if visited("Gym DecideNoToOnepiece") and visited("Gym Onepiece Confront")>>
+
+The only thing that bothers you is that when you get back to your locker, your regular swim trunks aren't there.<</if>>
+
+<<link "Change and go to your next class" "AfternoonClass">>]<<set $player.confidence to $player.confidence+5>><<set $player.wearsOnepiece to true>><<finishSexScene>><</link>>
+
+::Gym DecideNoToOnepiece
+You walk into the locker room, groaning at the thought of another gym class full of humiliation.
+
+<<if visited("Gym Onepiece Confront")>>Your trunks and shirt are in your locker, as is your onepiece. @@.thought;Should I just use the onepiece?@@<<else>>@@.thought;Maybe my trunks and shirt are back in my locker@@ you think.
+
+You open your locker. The trunks and shirt aren't there, but the onepiece is. @@.thought;Dammit.@@<</if>>
+
+You see some of the <<if $player.masculinity>=50>>other <</if>>guys looking at you.
+
+[[Wear the onepiece|Gym Onepiece Change]]
+<<if visited("Gym Onepiece Confront")>>[[Wear your trunks|Gym Onepiece Trunks]]<<else>>[[Sit out of gym class|Gym Onepiece Skip]]<</if>>
+
+::Gym Onepiece Regular
+You walk into gym class, go to your locker, grab your one-piece swimsuit, and head to the stalls.
+
+@@.male;"Is he wearing it again?"@@ you hear someone ask. You try to act like that comment doesn't bother you, but it does.
+
+@@.thought;First they put it in my locker, then they laugh at me when I wear it. I can't win.@@
+
+You push that interaction out of your head, and get changed. As you're walking back, you notice the mirror hanging on the bathroom wall.
+
+[[Look in the mirror|Gym Onepiece Mirror]]
+[[Ignore it|Gym Onepiece Regular Swim]]
+<<getTfProgress face>><<set $tempFace to $tempTfValue>><<getTfProgress boobs>><<set $tempBoobs to $tempTfValue>><<getTfProgress hands>><<set $tempHands to $tempTfValue>><<getTfProgress hair>><<set $tempHair to $tempTfValue>>
+<<set $femScore to 2*$tempFace+2*$tempBoobs+2*$player.legs+2*$tempHair+$tempHands>>
+<<setUpSexScene>><<set $player.pants to $onepiece>><<set $player.shirt to $onepiece>><<set $player.underwear to null>><<set $player.bra to null>>
+
+::Gym Onepiece Regular Swim
+You walk out onto the pool deck, ignoring the giggles from the girls and the mocking from the guys as you walk by.
+
+@@.thought;They'll get used to it. And besides, I'm much better in this swimsuit than in my old swim trunks.@@
+
+You take a seat by the <<if $player.masculinity>=50>>other <</if>>guys. <<if $player.homosexuality>=15>>You try your best to avoid looking at them, but you can't help it. They look so good without their shirts. Their muscles are clearly visible, and you're reminded of your body before any of this started.
+
+You imagine one of them pushing you to your knees with his strong arms and lowering his trunks while you open your mouth...<<else>>For the first time, you realize how good these guys look without their shirts. Most of them are jacked!
+
+And then it occurs to you: after swim class is over, you're going to go back to the locker room with them. You try not to think about what they could do to you...<</if>>
+
+@@.male;"Let's get started!"@@ Coach yells, and you look around, embarrassed at yourself for letting your imagination run wild.
+
+Diving itself is pretty uneventful. You get a couple of good dives in, and you're thankful for the new swimsuit. Now that you can actually concentrate on diving, you feel like you're getting better at it. You're aware of a couple people mocking you, but most people don't pay any attention to you.
+
+Coach blows his whistle, and you head to the locker room with the <<if $player.masculinity>=50>>rest of the <</if>>guys.
+
+<<link "Change and go to your next class" "AfternoonClass">><<finishSexScene>><</link>>
+
+::Swimming4
+Heading out of the locker room, you sit down with the other boys. @@.thought;This ritual we do is ridiculous. Why do we need to sit separately?@@ You look across the pool at the girls in their bikinis. It's a nice view. Your gaze shifts back to your side of the pool, where everyone is wearing their swim trunks. That seems kind of ridiculous too, you wearing these heavy trunks to contain a package you no longer have.
+
+@@.male;"Okay!"@@ the coach barks, interrupting your thoughts. @@.male;"You know the drill. We're going to be doing more diving today. Line up at the high board and take your turn. Make sure the pool is clear before you jump. If you want to go to the shallow end, fine, but I want you diving by tomorrow!"@@
+
+@@.thought;I might as well dive. I did it on friday@@ you remember.
+
+You have a pretty good time diving. The only negatives are the long wait between dives, and your swim trunks. They feel uncomfortable and too heavy on your new body.
+
+[[Head to the locker room|Locker Room Changing]]
+
+::Locker Room Changing
+When the period is over, you head back to the locker room, feeling good about yourself. The diving was a nice escape. Then, reality hits you. You have to change again.
+
+For a moment, you consider skipping the shower and changing while everyone is busy. @@.thought;I don't want to smell like chlorine all day.@@
+
+Tentatively, you step inside the shower, close the curtain and step out of your trunks. The sight of your body doesn't startle you as much this time, but it still feels weird. You're not used to looking down and seeing nothing there.
+
+@@.thought;Don't think about it. Just get clean and get out of here.@@ And that's what you do. You still want to properly explore your new anatomy, but that will have to wait until later.
+
+Changing back into your clothes is much easier than changing out of them was. All you have to do is wrap a towel around your waist, go to your locker, and put your boxers on under the towel. You're a little nervous that someone will notice the lack of an outline of your dick, but no one does.
+
+Relieved, you button your dress pants and head out of the locker room, glad that gym is over. @@.thought;I'll have to do this all over again tomorrow though. And every schoolday after that.@@
+
+The rest of the school day passes uneventfully. At 4 PM, the last bell rings, signalling the end of classes for the day.
+
+[[Finish school|Evening]]
+
+::Swimming5
+You hit the water with a splash, and you sink deep beneath the surface. As you reach the bottom of your dive, your large swim trunks start to shift on your body, and you're overcome with a sudden panic. @@.thought;What if they fall off?@@
+
+Before you can think about that possibility, you've surfaced, gasping for air. Mercifully, your trunks are still on.
+
+@@.male;"Everything okay, <<print $player.firstname>>?"@@ your coach asks.
+
+You nod your head, still in disbelief about how close you came to total catastrophe. @@.thought;I'll have to be more careful next time.@@
+
+You do have to dive again, though. Your knees go weak as you stand on top of the diving board. You can just imagine actually losing your trunks this time, and having to dive back down to find them, with only the clear water hiding your pussy from the rest of the class.
+
+You settle for holding onto your trunks with one hand as you jump in. The result is a rough, awkward dive. Your classmate's laughter rings in your ears as you resurface.
+
+[[Change and go to your next class|Language Project Start]]
+
+::Gym Morgan
+You get changed into your <<if $player.wearsOnepiece>>one-piece swimsuit in the stalls. You still get some weird looks from the <<if $player.masculinity>=50>>other <</if>>guys, but you ignore them. Now that you've gotten used to wearing the swimsuit, it doesn't feel so wrong anymore.
+
+@@.thought;I need to cover up my boobs, and boring old trunks won't do that.@@<<if $player.masculinity<25>> @@.thought;Besides, I look cute in it.@@<</if>>
+
+Once you're changed, you walk out onto the deck, towards the guys bench.<<else>>trunks and then walk out onto the deck, towards the guys bench.<</if>>
+
+@@.female;"Hey!"@@
+
+You keep walking. @@.thought;There's no way a girl wants to talk to me. Not with how I look now.@@
+
+@@.female;"<<print $player.firstname>>!"@@
+
+That makes you turn around. Morgan Harper is trying to get your attention. You look at her in confusion. You had dated her last year, if going out for a week counts as dating. She's a beautiful petite blonde cheerleader, and you have no idea what she wants to talk to you about.
+
+@@.male;"<<print $player.lastname>>! Sit your ass down and we can start class!"@@
+
+You scurry over to the boys bench, as the class laughs.
+
+[[Coach starts speaking|Gym Morgan Talk]]
+<<setUpSexScene>><<set $player.shirt to $onepiece>><<set $player.pants to $onepiece>><<set $player.underwear to null>><<set $player.bra to null>>
+
+::Gym Morgan Talk
+@@.male;"Alright, boys and girls. I know a lot of you don't like standing in line while you wait your turn to dive. But your fellow students are working hard on their own dives, and I expect you to give them your full attention. Okay, let's get started."@@
+
+When he finishes talking, everyone rushes to get in line. Unfortunately, you wind up near the back.
+
+@@.thought;I'll have to wait a while before I get to dive@@ you think glumly.
+
+@@.female;"Psst!"@@
+
+@@.player;"Uh, hi...Morgan,"@@ you say, turning around to see who was talking.
+
+@@.female;"Hey, <<print $player.firstname>>. I'm glad I caught you. I have a question."@@
+
+[[Coach said we're supposed to watch the divers|Gym Morgan Divers]]
+[[What is it?|Gym Morgan Question]]
+
+::Gym Morgan Divers
+@@.player;"Coach said we're supposed to watch the divers,"@@ you point out.
+
+@@.female;"Look at everyone else. Do they look like they're paying attention?"@@
+
+You take a look. She's right. Everyone is talking to their friends. Coach is focusing on the divers, shouting constructive criticism at them.
+
+@@.player;"You're right. What's up?"@@
+
+<<display "Gym Morgan Question">>
+
+::Gym Morgan Question
+@@.female;"It's about <<print $qb.firstname>>,"@@ she says, playing with her long blonde hair. @@.female;"I never realized how cute he is."@@
+
+<<if $playerStarter>>@@.thought;Yeah. He's now the most manly of our quarterbacks@@<<else>>@@.thought;Yeah, because he was a backup until recently@@<</if>> you think. @@.thought;I've been here for him this whole time.@@
+
+@@.female;"Anyway, he's single, right?"@@
+
+@@.player;"Uhhh..."@@ you say, not liking where this is going. @@.thought;Me and <<print $qb.firstname>> aren't going out. Not officially.@@
+
+@@.female;"I know you and <<print $qb.firstname>> have hooked up,"@@ she continues, leaning in. @@.female;"Do you like him? Like //like// him? Or are you just fuckbuddies?"@@
+
+[[I like him|Gym Morgan Like]]
+[[We're fuckbuddies|Gym Morgan Fuckbuddies]]
+[[Tell her you haven't hooked up|Gym Morgan Deny]]
+
+::Gym Morgan Like
+<<getTfProgress boobs>>@@.player;"Uh, yeah,"@@ you say, your face turning red. @@.player;"I like like him."@@ You can hardly believe what you're saying. Here you are, in front of a beautiful girl who's wearing nothing but a bikini, and you're admitting that you like <<if $player.masculinity>=50>>another guy!<<else>>a //guy!//@@<</if>><<if $player.wearsOnepiece>> You feel even more feminine when you realize that you're talking about a guy while wearing a one-piece swimsuit.<</if>>
+
+@@.female;"That's what I thought. You seemed straight when we were dating, but I guess not. I'm usually a pretty good judge about these things."@@
+
+The line moves forward and you move with it, grateful to put some space between you and Morgan. She takes another step forward and keeps talking to you.
+
+<<if $player.wearsOnepiece>>@@.female;"Now, it's obvious that you're gay. No straight guy would wear that swimsuit you're wearing. No //guy// would wear that swimsuit you're wearing."@@<<elseif $tempTfValue>=2>>@@.female;"Now it's obvious though. I can't believe you gave yourself boobs."@@<<else>>@@.female;"Now, it's obvious that you're gay. You've got that whole effeminate look going on."@@<</if>>
+
+She's not whispering anymore. The kids next to you in line are looking at the two of you. You want to jump in the pool and disappear from everyone.
+
+@@.player;"So you're not going to pursue him?"@@ you ask, trying to change the subject.
+
+@@.female;"No. I won't."@@
+
+@@.player;"Good. Thank y..."@@
+
+@@.female;"I'm going to let him come to me. Or maybe he'll ask you out,"@@ she says in a tone of voice indicating thqt she thinks it's unlikely.
+
+@@.male;"<<print $player.lastname>>! Stop gossipping with Miss Harper and jump in the pool already!"@@
+
+You blink, realizing that you made it to the front of the line. @@.thought;Finally!@@
+
+[[Eager to get away, you climb up the stairs and jump into the pool.|Gym Morgan Dive]]
+<<set $player.homosexuality to $player.homosexuality+1>>
+
+::Gym Morgan Fuckbuddies
+@@.player;"Uh, no. We're just fuckbuddies,"@@ you tell her. You can't believe that you just admitted to a popular girl that you're fucking a guy, even if she already knew.
+
+@@.female;"Good,"@@ she says, giving a small smile. In some ways, that reaction is even worse than if she'd laughed at you. That would mean she at least thought of you as a gay male. Instead, it seems like she sees you as a rival. An effeminate rival.
+
+@@.female;"You seemed straight when we were dating, but I guess not. I'm usually a pretty good judge about these things."@@
+
+@@.thought;There it is. But, I guess it's good that she thinks I'm gay?@@
+
+<<if $player.wearsOnepiece>>@@.female;"Now, it's obvious that you're gay. No straight guy would wear that swimsuit you're wearing. No //guy// would wear that swimsuit you're wearing."@@<<elseif $tempTfValue>=2>>@@.female;"Now it's obvious though. I can't believe you gave yourself boobs."@@<<else>>@@.female;"Now, it's obvious that you're gay. You've got that whole wannabe-girl look going on."@@<</if>>
+
+She's not whispering anymore. The kids next to you in line are looking at the two of you. You want to jump in the pool and disappear from everyone.
+
+@@.player;"So, uh, you like him then?"@@ you ask, changing the subject.
+
+@@.female;"Duh! He's hot, and he's @@<<if $playerStarter>>@@.female;a quarterback."@@<<else>>@@.female;the starting quarterback!@@<</if>> @@.female;Who wouldn't like him?@@
+
+@@.thought;She's so shallow. Would she still have dated me if I wasn't the starting quarterback?@@
+
+She leans in close. @@.female;"Anyway, I wanted to warn you. When I start dating <<print $qb.firstname>>, I don't want him seeing or fucking anyone else."@@
+
+@@.thought;What a bitch.@@
+
+@@.male;"<<print $player.lastname>>! Stop gossipping with Miss Harper and jump in the pool already!"@@
+
+You blink, realizing that you made it to the front of the line. @@.thought;Finally!@@
+
+[[Eager to get away, you climb up the stairs and jump into the pool.|Gym Morgan Dive]]
+
+::Gym Morgan Deny
+@@.player;"Uh, no,"@@ you lie. @@.player;"We haven't hooked up."@@
+
+She looks confused. @@.female;"I heard that you did."@@
+
+@@.player;"No, we haven't. I'm straight."@@
+
+<<if $player.wearsOnepiece>>She laughs at that. @@.female;"That's obviously not true. If you were straight, you wouldn't be wearing a girls swimsuit."@@
+
+You blush. @@.player;"That's not my fault! The @@<<if $player.masculinity>=50>>@@.player;other @@<</if>>@@.player;guys put it in my locker!"@@
+
+She shrugs. @@.female;"It doesn't look like you're fighting it."@@<<elseif $tempTfValue>=2>>@@.female;"So you're a girl then?"@@
+
+Your heart stops. @@.player;"What?"@@
+
+@@.female;"Your boobs. No straight guy would give himself boobs."@@<<else>>@@.female;"You could have fooled me. You've got that whole effeminate look going on. I thought you wanted to be hit on by some manly guy."@@<</if>>
+
+She's not whispering anymore. The kids next to you in line are looking at the two of you. You want to jump in the pool and disappear from everyone.
+
+@@.player;"So, uh, you like him then?"@@ you ask, changing the subject.
+
+@@.female;"Duh! He's hot, and he's @@<<if $playerStarter>>@@.female;a quarterback."@@<<else>>@@.female;the starting quarterback!@@<</if>> @@.female;Who wouldn't like him?@@
+
+@@.thought;She's so shallow. Would she still have dated me if I wasn't the starting quarterback?@@
+
+She leans in close. @@.female;"I'm glad you don't like him. Because if he asks me out, I don't want him seeing anyone else."@@
+
+@@.thought;Is that true? Is <<print $qb.firstname>> going to ask her out? He never mentioned her.@@
+
+@@.male;"<<print $player.lastname>>! Stop gossipping with Miss Harper and jump in the pool already!"@@
+
+You blink, realizing that you made it to the front of the line. @@.thought;Finally!@@
+
+[[Eager to get away, you climb up the stairs and jump into the pool.|Gym Morgan Dive]]
+<<set $player.homosexuality to $player.homosexuality-1>>
+
+::Gym Morgan Dive
+<<if $player.wearsOnepiece>>You dive into the pool and sink below the surface. Strangely, you seem to have gotten better at this. It must be all the practice. Wearing a swimsuit that actually fits you doesn't hurt either.<<else>>Awkwardly holding your swim trunks, you flop into the pool and sink below the surface.<</if>>
+
+When you come up for air, Morgan is standing on the diving board. You take in how <<if $player.homosexuality>=35>>pretty<<else>>hot<</if>> she looks, with her long, toned legs, and her bikini which barely contains her boobs.
+
+Unfortunately, you're so busy looking at her that you don't have time to move out of the way. A wave of water smacks you in the face as she does a perfect cannonball into the pool.
+
+@@.thought;She's so perfect. How could <<print $qb.firstname>> choose me over her?@@
+
+You do a couple more dives, but your heart isn't in it. You're more focused on looking at the girls. But instead of looking at them with desire, you feel envy. They all look so good with their bikinis, wet hair, and long, smooth legs.
+
+<<if $player.wearsOnepiece>>@@.thought;And here I am, wearing this one-piece. It's growing on me, but it's not as cute. Not that I want to wear a bikini! It's just, if I was a guy again, I know who I'd choose between me and Morgan.@@<<else>>@@.thought;And I'm still wearing these trunks that don't even fit. How is <<print $qb.firstname>>, or any guy, really, supposed to like me when @@<<if $player.masculinity>=25>>@@.thought;I'm one of them?@@<<else>>@@.thought;they think I'm one of them?@@<</if>><</if>>
+
+<<link "Go to your next class" "AfternoonClass">><<finishSexScene>><</link>>
