@@ -1,0 +1,11 @@
+1.3.0
+Restored Additional Information scene to the correct location
+Fixed a bug that was preventing random encounters from happening sometimes
+Tweaked encounter chance downwards to compensate for bug fix
+Tweaked item cost down to compensate for bug fix
+Added unique game over scene for Claudia from perving on her.
+Added unique game over scene for Claudia from the pool.
+Added unique game over scene for Dakota.
+Added unique game over scene for Ashley.
+Added unique image for Alina with associated background tidbit.
+
